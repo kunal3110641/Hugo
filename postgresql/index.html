@@ -1,0 +1,3394 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: PostgreSQL</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="PostgreSQL" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/postgresql/" />
+
+
+    
+    
+    <link rel="stylesheet" href="/css/layouts/list.css">
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+  
+  
+    
+  
+
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="search" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a style="width:100%;" class="btn btn-dark" href="/subjects" data-filter="all">Subjects</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/how-to-become-a-better-programmer/" title="Day-1 How to become a better programmer">Day-1 How to become a better programmer</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/day2/" title="Day-2 How to become a better programmer">Day-2 How to become a better programmer</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/pragmatic-programmer/" title="Pragmatic Programmer">Pragmatic Programmer</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/angular/" title="Angular">Angular</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/angular-2/" title="Angular 2">Angular 2</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/aws/" title="AWS">AWS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/css/" title="CSS">CSS</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/devops/" title="Devops">Devops</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/django/" title="Django">Django</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/exercise/" title="Exercise">Exercise</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/fastapi/" title="Fastapi">Fastapi</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/gitlab/" title="Gitlab">Gitlab</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/html/" title="HTML">HTML</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/insurance-health-ic-27/" title="Insurance Health IC - 27">Insurance Health IC - 27</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/insurance-life-ic-02/" title="Insurance life IC - 02">Insurance life IC - 02</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/insurance-motor-ic-72/" title="Insurance Motor IC - 72">Insurance Motor IC - 72</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/itx/" title="ITX">ITX</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/javascript/" title="Javascript">Javascript</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/jira/" title="Jira">Jira</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/kafka/" title="Kafka">Kafka</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/machine-learning/" title="machine learning">machine learning</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/mongodb/" title="mongodb">mongodb</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/postgresql/" title="PostgreSQL">PostgreSQL</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/power-bi/" title="Power BI">Power BI</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-agent-duniya/" title="Project Agent Duniya">Project Agent Duniya</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-d2d/" title="Project D2D">Project D2D</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-dossier/" title="Project Dossier">Project Dossier</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-go/" title="Project GO">Project GO</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-rb/" title="Project RB">Project RB</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/project-spear/" title="Project Spear">Project Spear</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/python/" title="Python">Python</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/react/" title="React">React</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/robotics_process_automation/" title="Robotics_Process_Automation">Robotics_Process_Automation</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/scrum/" title="Scrum">Scrum</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/typescript/" title="Typescript">Typescript</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/unix/" title="Unix">Unix</a></li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content container-fluid" id="content" style="margin-top: 30px;">
+    <div class="page-list-wrapper">
+      
+      <h2 class="title-main title-main-dark title-main-center" style="margin-top: 20px">PostgreSQL</h2>
+      <hr>
+      
+      
+      
+
+      <h3>PostgreSQL</h3>
+      <ul class="list-group list-group-flush">
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql-tutorial-/">PostgreSQL Tutorial </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/what-is-postgresql--introduction-/">What is PostgreSQL -- Introduction </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/install-postgresql-on-windows-/">Install PostgreSQL on Windows </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/install-postgresql-on-mac-/">Install PostgreSQL on Mac </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-database-/">PostgreSQL -- Create Database </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--loading-a-database-/">PostgreSQL -- Loading a Database </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--alter-database-/">PostgreSQL -- ALTER DATABASE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--rename-database-/">PostgreSQL -- Rename Database </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--show-databases-/">PostgreSQL -- Show Databases </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--data-types-/">PostgreSQL -- Data Types </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--boolean-data-type-/">PostgreSQL -- Boolean Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--char-data-type-/">PostgreSQL -- CHAR Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--varchar-data-type-/">PostgreSQL -- VARCHAR Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--numeric-data-type-/">PostgreSQL -- NUMERIC Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--date-data-type-/">PostgreSQL -- Date Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--time-data-type-/">PostgreSQL -- TIME Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--json-data-type-/">PostgreSQL -- JSON Data Type </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-domain-/">PostgreSQL -- CREATE DOMAIN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--select-/">PostgreSQL -- SELECT </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--order-by-clause-/">PostgreSQL -- ORDER BY clause </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--where-clause-/">PostgreSQL -- WHERE clause </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--fetch-clause-/">PostgreSQL -- FETCH clause </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--in-operator-/">PostgreSQL -- IN operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--having-clause-/">PostgreSQL -- HAVING clause </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--group-by-clause-/">PostgreSQL -- GROUP BY clause </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--like-operator-/">PostgreSQL -- LIKE operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--between-operator-/">PostgreSQL -- BETWEEN operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-table-/">PostgreSQL -- CREATE TABLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--select-into-/">PostgreSQL -- SELECT INTO </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-sequence-/">PostgreSQL -- CREATE SEQUENCE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--alter-table-/">PostgreSQL -- ALTER TABLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--add-column-/">PostgreSQL -- ADD COLUMN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-column-/">PostgreSQL -- DROP COLUMN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--rename-table-/">PostgreSQL -- Rename Table </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-table-/">PostgreSQL -- DROP TABLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--truncate-table-/">PostgreSQL -- TRUNCATE TABLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--copy-a-table-/">PostgreSQL -- Copy a Table </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--comparing-tables-/">PostgreSQL -- Comparing Tables </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--show-tables-/">PostgreSQL -- Show Tables </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--insert-/">PostgreSQL -- INSERT </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--insert-multiple-values-in-various-rows-/">PostgreSQL -- Insert Multiple Values in Various Rows </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--update-/">PostgreSQL -- UPDATE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--delete-/">PostgreSQL -- DELETE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--upsert-/">PostgreSQL -- Upsert </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--case-/">PostgreSQL -- CASE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--coalesce-/">PostgreSQL -- COALESCE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--nullif-function-/">PostgreSQL -- NULLIF() Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--cast-/">PostgreSQL -- CAST </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--if-statement-/">PostgreSQL -- IF Statement </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--case-statement-/">PostgreSQL -- CASE Statement </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--loop-statement-/">PostgreSQL -- Loop Statement </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--while-loops-/">PostgreSQL -- While Loops </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--exit-/">PostgreSQL -- Exit </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--continue-/">PostgreSQL -- Continue </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--transactions-/">PostgreSQL -- Transactions </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--commit-/">PostgreSQL -- COMMIT </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--primary-key-/">PostgreSQL -- Primary Key </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--foreign-key-/">PostgreSQL -- Foreign Key </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--check-constraint-/">PostgreSQL -- CHECK Constraint </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--unique-constraint-/">PostgreSQL -- UNIQUE Constraint </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--not-null-constraint-/">PostgreSQL -- NOT NULL Constraint </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--joins-/">PostgreSQL -- Joins </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--left-join-/">PostgreSQL -- LEFT JOIN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--inner-join-/">PostgreSQL -- INNER JOIN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--full-outer-join-/">PostgreSQL -- FULL OUTER JOIN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--self-join-/">PostgreSQL -- SELF JOIN </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--schema-/">PostgreSQL -- Schema </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-schema-/">PostgreSQL -- CREATE SCHEMA </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-schema-/">PostgreSQL -- DROP SCHEMA </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--alter-schema-/">PostgreSQL -- ALTER SCHEMA </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-role-/">PostgreSQL -- CREATE ROLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--alter-role-/">PostgreSQL -- ALTER ROLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-role-/">PostgreSQL -- DROP ROLE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--grant-/">PostgreSQL -- GRANT </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--revoke-/">PostgreSQL -- REVOKE </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--role-membership-/">PostgreSQL -- Role Membership </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--union-operator-/">PostgreSQL -- UNION operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--intersect-operator-/">PostgreSQL -- INTERSECT Operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--except-operator-/">PostgreSQL -- EXCEPT Operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--any-operator-/">PostgreSQL -- ANY Operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--all-operator-/">PostgreSQL -- ALL Operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--exists-operator-/">PostgreSQL -- EXISTS Operator </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-function-statement-/">PostgreSQL -- CREATE FUNCTION Statement </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--function-overloading-/">PostgreSQL -- Function Overloading </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-function-/">PostgreSQL -- Drop Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--max-function-/">PostgreSQL -- MAX() Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--min-function-/">PostgreSQL -- MIN() Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--sum-function-/">PostgreSQL -- SUM() Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--count-function-/">PostgreSQL -- COUNT() Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--extract-function-/">PostgreSQL -- EXTRACT Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--replace-function-/">PostgreSQL -- REPLACE Function </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--errors-and-messages-/">PostgreSQL -- Errors and Messages </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--assert-/">PostgreSQL -- Assert </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--dollar-quoted-string-constants-/">PostgreSQL -- Dollar-Quoted String Constants </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--block-structure-/">PostgreSQL -- Block Structure </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--variables-/">PostgreSQL -- Variables </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--introduction-to-stored-procedures-/">PostgreSQL -- Introduction to Stored Procedures </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--trigger-/">PostgreSQL -- Trigger </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-trigger-/">PostgreSQL -- CREATE TRIGGER </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--drop-trigger-/">PostgreSQL -- DROP TRIGGER </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--disabling-a-trigger-/">PostgreSQL -- Disabling a Trigger </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--enabling-a-trigger-/">PostgreSQL -- Enabling a Trigger </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--create-index-/">PostgreSQL -- CREATE INDEX </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--list-indexes-/">PostgreSQL -- List Indexes </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/postgresql--unique-index-/">PostgreSQL -- UNIQUE Index </a></li>
+
+        
+
+          
+          
+          
+          
+
+          
+          
+
+          
+
+          
+
+          
+          
+          
+          
+          
+          
+          
+
+          <li class="list-group-item "><a style="display: block; text-decoration:none;" href="/postgresql/exception-handling-in-plsql-/">Exception Handling in PL|SQL </a></li>
+
+        
+      </ul>
+      
+
+    </div>
+  </div>
+</section>
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+    <script src="/js/list.js"></script>
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

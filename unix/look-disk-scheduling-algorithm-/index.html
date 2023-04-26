@@ -1,0 +1,8869 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: LOOK Disk Scheduling Algorithm </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="LOOK Disk Scheduling Algorithm " />
+<meta property="og:description" content="LOOK Disk Scheduling Algorithm Prerequisite: Disk Scheduling Algorithms
+The LOOK disk scheduling algorithm is a variation of the SCAN algorithm for disk scheduling. It is used to reduce the amount of time it takes to access data on a hard disk drive by minimizing the seek time between read/write operations. The LOOK algorithm operates by scanning the disk in a specific direction, but instead of going all the way to the end of the disk before reversing direction like the SCAN algorithm, it reverses direction as soon as it reaches the last request in the current direction." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/unix/look-disk-scheduling-algorithm-/" /><meta property="article:section" content="unix" />
+
+
+
+
+    
+    
+	<meta name="description" content="LOOK Disk Scheduling Algorithm " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/unix/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Unix</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/unix/introduction-to-unix-system-/"><div class="panelist" >Introduction to UNIX System </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/important-linux-commands-leave-diff-cal-ncal-locate-and-ln-/"><div class="panelist" >Important Linux Commands (leave, diff, cal, ncal, locate and ln) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/process-states-and-transitions-in-a-unix-process-/"><div class="panelist" >Process states and Transitions in a UNIX Process </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/the-linux-kernel-/"><div class="panelist" >The Linux Kernel </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/kernel-io-subsystem-in-operating-system-/"><div class="panelist" >Kernel IO Subsystem in Operating System </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/monolithic-kernel-and-key-differences-from-microkernel-/"><div class="panelist" >Monolithic Kernel and key differences from Microkernel </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/introduction-of-system-call-/"><div class="panelist" >Introduction of System Call </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/getset-process-resource-limits-in-c-/"><div class="panelist" >GetSet process resource limits in C </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/dual-mode-operations-in-os-/"><div class="panelist" >Dual Mode operations in OS </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/privileged-and-non-privileged-instructions-in-operating-system-/"><div class="panelist" >Privileged and Non-Privileged Instructions in Operating System </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/introduction-of-process-management-/"><div class="panelist" >Introduction of Process Management </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/states-of-a-process-in-operating-systems-/"><div class="panelist" >States of a Process in Operating Systems </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/process-table-and-process-control-block-pcb-/"><div class="panelist" >Process Table and Process Control Block (PCB) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/process-schedulers-in-operating-system-/"><div class="panelist" >Process Schedulers in Operating System </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/cpu-scheduling-in-operating-systems-/"><div class="panelist" >CPU Scheduling in Operating Systems </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/preemptive-and-non-preemptive-scheduling-/"><div class="panelist" >Preemptive and Non-Preemptive Scheduling </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/measure-the-time-spent-in-context-switch-/"><div class="panelist" >Measure the time spent in context switch? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/difference-between-dispatcher-and-scheduler-/"><div class="panelist" >Difference between dispatcher and scheduler </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/difference-between-spooling-and-buffering-/"><div class="panelist" >Difference between Spooling and Buffering </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/free-space-management-in-operating-system-/"><div class="panelist" >Free space management in Operating System </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/disk-scheduling-algorithms-/"><div class="panelist" >Disk Scheduling Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/program-for-sstf-disk-scheduling-algorithm-/"><div class="panelist" >Program for SSTF disk scheduling algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/scan-elevator-disk-scheduling-algorithms-/"><div class="panelist" >SCAN (Elevator) Disk Scheduling Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/c-scan-disk-scheduling-algorithm-/"><div class="panelist" >C-SCAN Disk Scheduling Algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/look-disk-scheduling-algorithm-/"><div class="panelist" id="activetab">LOOK Disk Scheduling Algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/sed-command-in-linuxunix-with-examples-/"><div class="panelist" >Sed Command in LinuxUnix with examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/awk-command-in-unixlinux-with-examples-/"><div class="panelist" >AWK command in UnixLinux with examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/grep-command-in-unixlinux-/"><div class="panelist" >grep command in UnixLinux </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/cut-command-in-linux-with-examples-/"><div class="panelist" >cut command in Linux with examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/unix/cp-command-in-linux-with-examples-/"><div class="panelist" >cp command in Linux with examples </div></a>
+              
+            
+            </div>
+            
+            
+            
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="look-disk-scheduling-algorithm">LOOK Disk Scheduling Algorithm</h2>
+<p>Prerequisite: Disk Scheduling Algorithms</p>
+<p>The LOOK disk scheduling algorithm is a variation of the SCAN algorithm for disk scheduling. It is used to reduce the amount of time it takes to access data on a hard disk drive by minimizing the seek time between read/write operations. The LOOK algorithm operates by scanning the disk in a specific direction, but instead of going all the way to the end of the disk before reversing direction like the SCAN algorithm, it reverses direction as soon as it reaches the last request in the current direction.</p>
+<h2 id="here-are-the-basic-steps-involved-in-the-look-algorithm">Here are the basic steps involved in the LOOK algorithm:</h2>
+<p>Determine the initial direction of disk head movement.</p>
+<p>Sort the pending disk requests in the order in which they will be serviced.</p>
+<p>Scan the disk in the chosen direction, servicing requests as they are encountered.</p>
+<p>When the last request in the current direction has been serviced, reverse direction and continue scanning until all requests have been serviced.</p>
+<h2 id="advantages-of-the-look-disk-scheduling-algorithm">Advantages of the LOOK disk scheduling algorithm:</h2>
+<p>It can provide better performance than the FCFS (first-come, first-served) and SSTF (shortest-seek-time-first) algorithms because it reduces the number of head movements required to access data on the disk.</p>
+<p>It is relatively simple to implement and does not require a large amount of memory or processing power.</p>
+<p>It is efficient in terms of disk usage because it scans only the areas of the disk where data is located.</p>
+<h2 id="disadvantages-of-the-look-disk-scheduling-algorithm">Disadvantages of the LOOK disk scheduling algorithm:</h2>
+<p>It may not be optimal in situations where there are large amounts of data to be read or written in one direction, as it could lead to a large number of requests being queued up in the opposite direction.</p>
+<p>It may not be suitable for real-time systems where fast response times are critical, as it does not prioritize requests based on their urgency or importance.</p>
+<p>It may lead to starvation of requests that are located far away from the current position of the disk head.</p>
+<p>Given an array of disk track numbers and initial head position, our task is to find the total number of seek operations done to access all the requested tracks if LOOK disk scheduling algorithm is used. Also, write a program to find the seek sequence using LOOK disk scheduling algorithm.</p>
+<p>LOOK Disk Scheduling Algorithm: LOOK is the advanced version of SCAN (elevator) disk scheduling algorithm which gives slightly better seek time than any other algorithm in the hierarchy (FCFS-&gt;SRTF-&gt;SCAN-&gt;C-SCAN-&gt;LOOK). The LOOK algorithm services request similarly as SCAN algorithm meanwhile it also &ldquo;looks&rdquo; ahead as if there are more tracks that are needed to be serviced in the same direction. If there are no pending requests in the moving direction the head reverses the direction and start servicing requests in the opposite direction.The main reason behind the better performance of LOOK algorithm in comparison to SCAN is because in this algorithm the head is not allowed to move till the end of the disk.</p>
+<p>Algorithm: </p>
+<p>Let Request array represents an array storing indexes of tracks that have been requested in ascending order of their time of arrival. &lsquo;head&rsquo; is the position of disk head.</p>
+<p>The initial direction in which head is moving is given and it services in the same direction.</p>
+<p>The head services all the requests one by one in the direction head is moving.</p>
+<p>The head continues to move in the same direction until all the request in this direction are finished.</p>
+<p>While moving in this direction calculate the absolute distance of the track from the head.</p>
+<p>Increment the total seek count with this distance.</p>
+<p>Currently serviced track position now becomes the new head position.</p>
+<p>Go to step 5 until we reach at last request in this direction.</p>
+<p>If we reach where no requests are needed to be serviced in this direction reverse the direction and go to step 3 until all tracks in request array have not been serviced.</p>
+<p>Examples: </p>
+<pre><code>Input:  
+Request sequence = {176, 79, 34, 60, 92, 11, 41, 114}
+Initial head position = 50
+Direction = right (We are moving from left to right)
+
+Output:
+Initial position of head: 50
+Total number of seek operations = 291
+Seek Sequence is
+60
+79
+92
+114
+176
+41
+34
+11
+</code></pre>
+<p>The following chart shows the sequence in which requested tracks are serviced using LOOK. </p>
+<p><img src="/images/uniximg/wp-content/uploads/20190830184834/fcfs-1.png" alt="targets"></p>
+<p>Therefore, the total seek count is calculated as: </p>
+<pre><code>= (60-50)+(79-60)+(92-79)
+              +(114-92)+(176-114)
+              +(176-41)+(41-34)+(34-11)
+</code></pre>
+<p>Implementation: Implementation of LOOK algorithm is given below.</p>
+<p>Note: The distance variable is used to store the absolute distance between the head and current track position. disk_size is the size of the disk. Vectors left and right stores all the request tracks on the left-hand side and the right-hand side of the initial head position respectively.</p>
+<h2 id="c">C++</h2>
+<pre><code>// C++ program to demonstrate
+// LOOK Disk Scheduling algorithm
+int size = 8;
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+ 
+// Code by Vikram Chaurasia
+ 
+int disk_size = 200;
+ 
+void LOOK(int arr[], int head, string direction)
+{
+    int seek_count = 0;
+    int distance, cur_track;
+    vector&lt;int&gt; left, right;
+    vector&lt;int&gt; seek_sequence;
+ 
+    // appending values which are
+    // currently at left and right
+    // direction from the head.
+    for (int i = 0; i &lt; size; i++) {
+        if (arr[i] &lt; head)
+            left.push_back(arr[i]);
+        if (arr[i] &gt; head)
+            right.push_back(arr[i]);
+    }
+ 
+    // sorting left and right vectors
+    // for servicing tracks in the
+    // correct sequence.
+    std::sort(left.begin(), left.end());
+    std::sort(right.begin(), right.end());
+ 
+    // run the while loop two times.
+    // one by one scanning right
+    // and left side of the head
+    int run = 2;
+    while (run--) {
+        if (direction == &quot;left&quot;) {
+            for (int i = left.size() - 1; i &gt;= 0; i--) {
+                cur_track = left[i];
+ 
+                // appending current track to seek sequence
+                seek_sequence.push_back(cur_track);
+ 
+                // calculate absolute distance
+                distance = abs(cur_track - head);
+ 
+                // increase the total count
+                seek_count += distance;
+ 
+                // accessed track is now the new head
+                head = cur_track;
+            }
+            // reversing the direction
+            direction = &quot;right&quot;;
+        }
+        else if (direction == &quot;right&quot;) {
+            for (int i = 0; i &lt; right.size(); i++) {
+                cur_track = right[i];
+                // appending current track to seek sequence
+                seek_sequence.push_back(cur_track);
+ 
+                // calculate absolute distance
+                distance = abs(cur_track - head);
+ 
+                // increase the total count
+                seek_count += distance;
+ 
+                // accessed track is now new head
+                head = cur_track;
+            }
+            // reversing the direction
+            direction = &quot;left&quot;;
+        }
+    }
+ 
+    cout &lt;&lt; &quot;Total number of seek operations = &quot;
+         &lt;&lt; seek_count &lt;&lt; endl;
+ 
+    cout &lt;&lt; &quot;Seek Sequence is&quot; &lt;&lt; endl;
+ 
+    for (int i = 0; i &lt; seek_sequence.size(); i++) {
+        cout &lt;&lt; seek_sequence[i] &lt;&lt; endl;
+    }
+}
+ 
+// Driver code
+int main()
+{
+ 
+    // request array
+    int arr[size] = { 176, 79, 34, 60,
+                      92, 11, 41, 114 };
+    int head = 50;
+    string direction = &quot;right&quot;;
+ 
+    cout &lt;&lt; &quot;Initial position of head: &quot;
+         &lt;&lt; head &lt;&lt; endl;
+ 
+    LOOK(arr, head, direction);
+ 
+    return 0;
+}
+</code></pre>
+<h2 id="java">Java</h2>
+<pre><code>// Java program to demonstrate
+// LOOK Disk Scheduling algorithm
+import java.util.*;
+ 
+class GFG{
+     
+static int size = 8;
+static int disk_size = 200;
+ 
+public static void LOOK(int arr[], int head,
+                        String direction)
+{
+    int seek_count = 0;
+    int distance, cur_track;
+     
+    Vector&lt;Integer&gt; left = new Vector&lt;Integer&gt;();
+    Vector&lt;Integer&gt; right = new Vector&lt;Integer&gt;();
+    Vector&lt;Integer&gt; seek_sequence = new Vector&lt;Integer&gt;();
+   
+    // Appending values which are
+    // currently at left and right
+    // direction from the head.
+    for(int i = 0; i &lt; size; i++)
+    {
+        if (arr[i] &lt; head)
+            left.add(arr[i]);
+        if (arr[i] &gt; head)
+            right.add(arr[i]);
+    } 
+   
+    // Sorting left and right vectors
+    // for servicing tracks in the
+    // correct sequence.
+    Collections.sort(left); 
+    Collections.sort(right); 
+     
+    // Run the while loop two times.
+    // one by one scanning right
+    // and left side of the head
+    int run = 2;
+    while (run-- &gt; 0)
+    {
+        if (direction == &quot;left&quot;)
+        {
+            for(int i = left.size() - 1;
+                    i &gt;= 0; i--)
+            {
+                cur_track = left.get(i);
+   
+                // Appending current track to
+                // seek sequence
+                seek_sequence.add(cur_track);
+   
+                // Calculate absolute distance
+                distance = Math.abs(cur_track - head);
+   
+                // Increase the total count
+                seek_count += distance;
+   
+                // Accessed track is now the new head
+                head = cur_track;
+            }
+             
+            // Reversing the direction
+            direction = &quot;right&quot;;
+        }
+        else if (direction == &quot;right&quot;)
+        {
+            for(int i = 0; i &lt; right.size(); i++)
+            {
+                cur_track = right.get(i);
+                 
+                // Appending current track to
+                // seek sequence
+                seek_sequence.add(cur_track);
+   
+                // Calculate absolute distance
+                distance = Math.abs(cur_track - head);
+   
+                // Increase the total count
+                seek_count += distance;
+   
+                // Accessed track is now new head
+                head = cur_track;
+            }
+             
+            // Reversing the direction
+            direction = &quot;left&quot;;
+        }
+    }
+     
+    System.out.println(&quot;Total number of seek &quot; +
+                       &quot;operations = &quot; + seek_count);
+   
+    System.out.println(&quot;Seek Sequence is&quot;);
+   
+    for(int i = 0; i &lt; seek_sequence.size(); i++)
+    {
+        System.out.println(seek_sequence.get(i));
+    }
+}
+ 
+// Driver code
+public static void main(String[] args) throws Exception
+{
+     
+    // Request array
+    int arr[] = { 176, 79, 34, 60,
+                  92, 11, 41, 114 };
+    int head = 50;
+    String direction = &quot;right&quot;;
+   
+    System.out.println(&quot;Initial position of head: &quot; +
+                        head);
+   
+    LOOK(arr, head, direction);
+}
+}
+ 
+// This code is contributed by divyesh072019
+</code></pre>
+<h2 id="python3">Python3</h2>
+<pre><code># Python3 program to demonstrate
+# LOOK Disk Scheduling algorithm
+size = 8
+disk_size = 200
+ 
+def LOOK(arr, head, direction):
+     
+    seek_count = 0
+    distance = 0
+    cur_track = 0
+ 
+    left = []
+    right = []
+  
+    seek_sequence = []
+ 
+    # Appending values which are
+    # currently at left and right
+    # direction from the head.
+    for i in range(size):
+        if (arr[i] &lt; head):
+            left.append(arr[i])
+        if (arr[i] &gt; head):
+            right.append(arr[i])
+ 
+    # Sorting left and right vectors
+    # for servicing tracks in the
+    # correct sequence.
+    left.sort()
+    right.sort()
+ 
+    # Run the while loop two times.
+    # one by one scanning right
+    # and left side of the head
+    run = 2
+    while (run):
+        if (direction == &quot;left&quot;):
+            for i in range(len(left) - 1, -1, -1):
+                cur_track = left[i]
+ 
+                # Appending current track to
+                # seek sequence
+                seek_sequence.append(cur_track)
+ 
+                # Calculate absolute distance
+                distance = abs(cur_track - head)
+ 
+                # Increase the total count
+                seek_count += distance
+ 
+                # Accessed track is now the new head
+                head = cur_track
+ 
+            # Reversing the direction
+            direction = &quot;right&quot;
+             
+        elif (direction == &quot;right&quot;):
+            for i in range(len(right)):
+                cur_track = right[i]
+ 
+                # Appending current track to
+                # seek sequence
+                seek_sequence.append(cur_track)
+ 
+                # Calculate absolute distance
+                distance = abs(cur_track - head)
+                 
+                # Increase the total count
+                seek_count += distance
+ 
+                # Accessed track is now new head
+                head = cur_track
+ 
+            # Reversing the direction
+            direction = &quot;left&quot;
+             
+        run -= 1
+ 
+    print(&quot;Total number of seek operations =&quot;,
+          seek_count)
+    print(&quot;Seek Sequence is&quot;)
+ 
+    for i in range(len(seek_sequence)):
+        print(seek_sequence[i])
+ 
+# Driver code
+ 
+# Request array
+arr = [ 176, 79, 34, 60, 92, 11, 41, 114 ]
+head = 50
+ 
+direction = &quot;right&quot;
+ 
+print(&quot;Initial position of head:&quot;, head)
+ 
+LOOK(arr, head, direction)
+ 
+# This code is contributed by rag2127
+</code></pre>
+<h2 id="c-1">C#</h2>
+<pre><code>// C# program to demonstrate
+// LOOK Disk Scheduling algorithm
+using System;
+using System.Collections.Generic;
+ 
+class GFG{
+     
+static int size = 8;
+ 
+static void LOOK(int[] arr, int head,
+                 string direction)
+{
+    int seek_count = 0;
+    int distance, cur_track;
+      
+    List&lt;int&gt; left = new List&lt;int&gt;();
+    List&lt;int&gt; right = new List&lt;int&gt;();
+    List&lt;int&gt; seek_sequence = new List&lt;int&gt;();
+    
+    // Appending values which are
+    // currently at left and right
+    // direction from the head.
+    for(int i = 0; i &lt; size; i++)
+    {
+        if (arr[i] &lt; head)
+            left.Add(arr[i]);
+        if (arr[i] &gt; head)
+            right.Add(arr[i]);
+    }
+    
+    // Sorting left and right vectors
+    // for servicing tracks in the
+    // correct sequence.
+    left.Sort(); 
+    right.Sort(); 
+    
+    // Run the while loop two times.
+    // one by one scanning right
+    // and left side of the head
+    int run = 2;
+    while (run-- &gt; 0)
+    {
+        if (direction == &quot;left&quot;)
+        {
+            for(int i = left.Count - 1; i &gt;= 0; i--)
+            {
+                cur_track = left[i];
+    
+                // Appending current track to
+                // seek sequence
+                seek_sequence.Add(cur_track);
+    
+                // Calculate absolute distance
+                distance = Math.Abs(cur_track - head);
+    
+                // Increase the total count
+                seek_count += distance;
+    
+                // Accessed track is now the new head
+                head = cur_track;
+            }
+              
+            // Reversing the direction
+            direction = &quot;right&quot;;
+        }
+        else if (direction == &quot;right&quot;)
+        {
+            for(int i = 0; i &lt; right.Count; i++)
+            {
+                cur_track = right[i];
+                  
+                // Appending current track to
+                // seek sequence
+                seek_sequence.Add(cur_track);
+    
+                // Calculate absolute distance
+                distance = Math.Abs(cur_track - head);
+    
+                // Increase the total count
+                seek_count += distance;
+    
+                // Accessed track is now new head
+                head = cur_track;
+            }
+              
+            // Reversing the direction
+            direction = &quot;left&quot;;
+        }
+    }
+      
+    Console.WriteLine(&quot;Total number of seek &quot; +
+                       &quot;operations = &quot; + seek_count);
+    
+    Console.WriteLine(&quot;Seek Sequence is&quot;);
+    
+    for(int i = 0; i &lt; seek_sequence.Count; i++)
+    {
+        Console.WriteLine(seek_sequence[i]);
+    }
+}
+ 
+// Driver code
+static void Main()
+{
+     
+    // Request array
+    int[] arr = { 176, 79, 34, 60,
+                  92, 11, 41, 114 };
+    int head = 50;
+    string direction = &quot;right&quot;;
+    
+    Console.WriteLine(&quot;Initial position of head: &quot; +
+                       head);
+    
+    LOOK(arr, head, direction);
+}
+}
+ 
+// This code is contributed by divyeshrabadiya07
+</code></pre>
+<h2 id="javascript">Javascript</h2>
+<pre><code>&lt;script&gt;
+    // Javascript program to demonstrate
+    // LOOK Disk Scheduling algorithm
+     
+    let size = 8;
+  
+    function LOOK(arr, head, direction)
+    {
+        let seek_count = 0;
+        let distance, cur_track;
+ 
+        let left = [];
+        let right = [];
+        let seek_sequence = [];
+ 
+        // Appending values which are
+        // currently at left and right
+        // direction from the head.
+        for(let i = 0; i &lt; size; i++)
+        {
+            if (arr[i] &lt; head)
+                left.push(arr[i]);
+            if (arr[i] &gt; head)
+                right.push(arr[i]);
+        }
+ 
+        // Sorting left and right vectors
+        // for servicing tracks in the
+        // correct sequence.
+        left.sort(function(a, b){return a - b});
+        right.sort(function(a, b){return a - b});
+ 
+        // Run the while loop two times.
+        // one by one scanning right
+        // and left side of the head
+        let run = 2;
+        while (run-- &gt; 0)
+        {
+            if (direction == &quot;left&quot;)
+            {
+                for(let i = left.length - 1; i &gt;= 0; i--)
+                {
+                    cur_track = left[i];
+ 
+                    // Appending current track to
+                    // seek sequence
+                    seek_sequence.push(cur_track);
+ 
+                    // Calculate absolute distance
+                    distance = Math.abs(cur_track - head);
+ 
+                    // Increase the total count
+                    seek_count += distance;
+ 
+                    // Accessed track is now the new head
+                    head = cur_track;
+                }
+ 
+                // Reversing the direction
+                direction = &quot;right&quot;;
+            }
+            else if (direction == &quot;right&quot;)
+            {
+                for(let i = 0; i &lt; right.length; i++)
+                {
+                    cur_track = right[i];
+ 
+                    // Appending current track to
+                    // seek sequence
+                    seek_sequence.push(cur_track);
+ 
+                    // Calculate absolute distance
+                    distance = Math.abs(cur_track - head);
+ 
+                    // Increase the total count
+                    seek_count += distance;
+ 
+                    // Accessed track is now new head
+                    head = cur_track;
+                }
+ 
+                // Reversing the direction
+                direction = &quot;left&quot;;
+            }
+        }
+ 
+        document.write(&quot;Total number of seek &quot; +
+            &quot;operations = &quot; + seek_count + &quot;&lt;/br&gt;&quot;);
+ 
+        document.write(&quot;Seek Sequence is&quot; + &quot;&lt;/br&gt;&quot;);
+ 
+        for(let i = 0; i &lt; seek_sequence.length; i++)
+        {
+            document.write(seek_sequence[i] + &quot;&lt;/br&gt;&quot;);
+        }
+    }
+     
+    // Request array
+     
+    let arr = [176, 79, 34, 60, 92, 11, 41, 114];
+    let head = 50;
+    let direction = &quot;right&quot;;
+     
+    document.write(&quot;Initial position of head: &quot; + head + &quot;&lt;/br&gt;&quot;);
+     
+    LOOK(arr, head, direction);
+     
+&lt;/script&gt;
+</code></pre>
+<p>Output: </p>
+<pre><code>Initial position of head: 50
+Total number of seek operations = 291
+Seek Sequence is
+60
+79
+92
+114
+176
+41
+34
+11
+</code></pre>
+<p> </p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/unix/c-scan-disk-scheduling-algorithm-/" title="C-SCAN Disk Scheduling Algorithm " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/unix/sed-command-in-linuxunix-with-examples-/" title="Sed Command in LinuxUnix with examples " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

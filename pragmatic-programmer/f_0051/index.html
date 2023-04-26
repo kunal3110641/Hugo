@@ -1,0 +1,9511 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Topic 30 Transforming Programming</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Topic 30 Transforming Programming" />
+<meta property="og:description" content="Transforming Programming If you can&rsquo;t describe what you are doing as a process, you don&rsquo;t know what you&rsquo;re doing. :::
+W. Edwards Deming, (attr) :::
+All programs transform data, converting an input into an output. And yet when we think about design, we rarely think about creating transformations. Instead we worry about classes and modules, data structures and algorithms, languages and frameworks.
+We think that this focus on code often misses the point: we need to get back to thinking of programs as being something that transforms inputs into outputs." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/pragmatic-programmer/f_0051/" /><meta property="article:section" content="Pragmatic Programmer" />
+
+
+
+
+    
+    
+	<meta name="description" content="Topic 30 Transforming Programming" />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/pragmatic-programmer/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">The Pragmatic Programmer</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/pragmatic-programmer/f_0017/"><div class="panelist" >Chapter 1 A Pragmatic Philosophy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0018/"><div class="panelist" >Topic 1 It&#39;s Your Life</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0019/"><div class="panelist" >Topic 2 The Cat Ate My Source Code</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0020/"><div class="panelist" >Topic 3 Software Entropy</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0021/"><div class="panelist" >Topic 4 Software Entropy</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0022/"><div class="panelist" >Topic 5 Good-Enough Software  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0023/"><div class="panelist" >Topic 6 Your Knowledge Portfolio </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0024/"><div class="panelist" >Topic 7 Communicate! </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0025/"><div class="panelist" >Chapter 2 A Pragmatic Approach</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0026/"><div class="panelist" >Topic 8 The Essence of Good Design</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0027/"><div class="panelist" >Topic 9 DRY---The Evils of Duplication</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0028/"><div class="panelist" >Topic 10 Orthogonality  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0029/"><div class="panelist" >Topic 11 Reversibility  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0030/"><div class="panelist" >Topic 12 Tracer Bullets </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0031/"><div class="panelist" >Topic 13 Prototypes and Post-it Notes</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0032/"><div class="panelist" >Topic 14 Domain Languages</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0033/"><div class="panelist" >Topic 15 Estimating </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0034/"><div class="panelist" >Chapter 3 The Basic Tools</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0035/"><div class="panelist" >Topic 16 The Power of Plain Text</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0036/"><div class="panelist" >Topic 17 Shell Games   </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0037/"><div class="panelist" >Topic 18 Power Editing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0038/"><div class="panelist" >Topic 19 Version Control</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0039/"><div class="panelist" >Topic 20 Debugging</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0040/"><div class="panelist" >Topic 21 Text Manipulation</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0041/"><div class="panelist" >Topic 22 Engineering Daybooks</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0042/"><div class="panelist" >Chapter 4 Pragmatic Paranoia</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0043/"><div class="panelist" >Topic 23 Design by Contract </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0044/"><div class="panelist" >Topic 24 Dead Programs Tell No Lies  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0045/"><div class="panelist" >Topic 25 Assertive Programming  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0046/"><div class="panelist" >Topic 26 How to Balance Resources  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0047/"><div class="panelist" >Topic 27 Don&#39;t Outrun Your Headlights </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0048/"><div class="panelist" >Chapter 5 Bend, or Break</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0049/"><div class="panelist" >Topic 28  Decoupling</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0050/"><div class="panelist" >Topic 29  Juggling the Real World  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0051/"><div class="panelist" id="activetab">Topic 30 Transforming Programming</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0052/"><div class="panelist" >Topic 31 Inheritance Tax</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0053/"><div class="panelist" >Topic 32 Configuration</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0054/"><div class="panelist" >Chapter 6 Concurrency</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0055/"><div class="panelist" > Everything Is Concurrent </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0056/"><div class="panelist" >  Topic 33 Breaking Temporal Coupling </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0057/"><div class="panelist" >  Topic 34 Shared State Is Incorrect State </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0058/"><div class="panelist" >  Topic 35 Actors and Processes</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0059/"><div class="panelist" >  Topic 36 Blackboards</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0060/"><div class="panelist" > Chapter 7 While You Are Coding</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0061/"><div class="panelist" >  Topic 37  Listen to Your Lizard Brain</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0062/"><div class="panelist" >  Topic 38  Programming by Coincidence</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0063/"><div class="panelist" >  Topic 39 Algorithm Speed  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0064/"><div class="panelist" >  Topic 40 Refactoring</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0065/"><div class="panelist" >  Topic 41 Test to Code</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0066/"><div class="panelist" >  Topic 42 Property-Based Testing</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0067/"><div class="panelist" >  Topic 43 Stay Safe Out There </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0068/"><div class="panelist" >  Topic 44 Naming Things</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0069/"><div class="panelist" > Chapter 8 Before the Project</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0070/"><div class="panelist" >  Topic 45 The Requirements Pit</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0071/"><div class="panelist" >  Topic 46 Solving Impossible Puzzles </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0072/"><div class="panelist" >  Topic 47 Working Together </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0073/"><div class="panelist" >  Topic 48 The Essence of Agility  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0074/"><div class="panelist" > Chapter 9 Pragmatic Projects </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0075/"><div class="panelist" >Topic 49 Pragmatic Teams  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0076/"><div class="panelist" >Topic 50 Coconuts Don&#39;t Cut It   </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0077/"><div class="panelist" >Topic 51 Pragmatic Starter Kit  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0078/"><div class="panelist" >Topic 52 Delight Your Users  </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0079/"><div class="panelist" >Topic 53 Pride and Prejudice </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0080/"><div class="panelist" >The Moral Compass</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0081/"><div class="panelist" >Imagine the Future you Want</div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/pragmatic-programmer/f_0082/"><div class="panelist" >Appendix 1 Bibliography</div></a>
+              
+            
+            </div>
+            
+            
+            
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="transforming-programming">Transforming Programming</h2>
+<p>If you can&rsquo;t describe what you are doing as a process, you don&rsquo;t know
+what you&rsquo;re doing.
+:::</p>
+<p>W. Edwards Deming, (attr)
+:::</p>
+<p>All programs transform data, converting an input into an output. And yet
+when we think about design, we rarely think about creating
+transformations. Instead we worry about classes and modules, data
+structures and algorithms, languages and frameworks.</p>
+<p>We think that this focus on code often misses the point: we need to get
+back to thinking of programs as being something that transforms inputs
+into outputs. When we do, many of the details we previously worried
+about just evaporate. The structure becomes clearer, the error handling
+more consistent, and the coupling drops way down.</p>
+<p>To start our investigation, let&rsquo;s take the time machine back to the
+1970s and ask a Unix programmer to write us a program that lists the
+five longest files in a directory tree, where longest means &ldquo;having the
+largest number of lines.&rdquo;</p>
+<p>You might expect them to reach for an editor and start typing in C. But
+they wouldn&rsquo;t, because they are thinking about this in terms of what we
+have (a directory tree) and what we want (a list of files). Then they&rsquo;d
+go to a terminal and type something like:</p>
+<hr>
+<p>​    ​$ ​​<strong>find</strong>​​ ​​**.<strong>​​ ​​</strong>-type<strong>​​ ​​</strong>f<strong>​​ ​​</strong>|<strong>​​ ​​</strong>xargs<strong>​​ ​​</strong>wc<strong>​​ ​​</strong>-l<strong>​​ ​​</strong>|<strong>​​ ​​</strong>sort<strong>​​ ​​</strong>-n<strong>​​ ​​</strong>|<strong>​​ ​​</strong>tail<strong>​​ ​​</strong>-5**​</p>
+<hr>
+<p>This is a series of transformations:</p>
+<dl>
+<dt>find . -type f</dt>
+<dd>
+<p>Write a list of all the files (-type f) in or below the current
+directory (.) to standard output.</p>
+</dd>
+<dt>xargs wc -l</dt>
+<dd>
+<p>Read lines from standard input and arrange for them all to be passed
+as arguments to the command wc -l. The wc program with the -l
+option counts the number of lines in each of its arguments and writes
+each
+result as &ldquo;count filename&rdquo; to standard output.</p>
+</dd>
+<dt>sort -n</dt>
+<dd>
+<p>Sort standard input assuming each line starts with a number (-n),
+writing the result to standard output.</p>
+</dd>
+<dt>tail -5</dt>
+<dd>
+<p>Read standard input and write just the last five lines to standard
+output.</p>
+</dd>
+</dl>
+<p>Run this in our book&rsquo;s directory and we get</p>
+<hr>
+<p>​    470 ./test_to_build.pml
+​    487 ./dbc.pml
+​    719 ./domain_languages.pml
+​    727 ./dry.pml
+​    9561 total</p>
+<hr>
+<p>That last line is the total number of lines in all the files (not just
+those shown), because that&rsquo;s what wc does. We can strip it off by
+requesting one more line from tail, and then ignoring the last line:</p>
+<hr>
+<p>​    ​$ ​​<strong>find</strong>​​ ​​**.<strong>​​ ​​</strong>-type<strong>​​ ​​</strong>f<strong>​​ ​​</strong>|<strong>​​ ​​</strong>xargs<strong>​​ ​​</strong>wc<strong>​​ ​​</strong>-l<strong>​​ ​​</strong>|<strong>​​ ​​</strong>sort<strong>​​ ​​</strong>-n<strong>​​ ​​</strong>|<strong>​​ ​​</strong>tail<strong>​​ ​​</strong>-6<strong>​​ ​​</strong>|<strong>​​ ​​</strong>head<strong>​​ ​​</strong>-5**​
+​    470 ./debug.pml
+​    470 ./test_to_build.pml
+​    487 ./dbc.pml
+​    719 ./domain_languages.pml
+​    727 ./dry.pml</p>
+<hr>
+<p><img src="../Images/wc-pipeline.png" alt="Figure 1. The find pipeline as a series of transformations">{#d24e14067 width=&ldquo;464&rdquo; height=&ldquo;260&rdquo;}</p>
+<p>Let&rsquo;s look at this in terms of the data that flows between the
+individual steps.
+Our original requirement, &ldquo;top 5 files in terms of lines,&rdquo; becomes a
+series of transformations (also show in the figure).</p>
+<p>directory name<br>
+→ list of files<br>
+→ list with line numbers<br>
+→ sorted list<br>
+→ highest five + total<br>
+→ highest five</p>
+<p>It&rsquo;s almost like an industrial assembly line: feed raw data in one end
+and the finished product (information) comes out the other.</p>
+<p>And we like to think about all code this way.</p>
+<hr>
+<p>Tip 49   Programming Is About Code, But Programs Are About Data</p>
+<hr>
+<h3 id="finding-transformations">Finding Transformations</h3>
+<p>Sometimes the easiest way to find the transformations is to start with
+the requirement and determine its inputs and outputs. Now you&rsquo;ve
+defined the function representing the overall program. You can then
+find steps that lead you from input to output. This is a top-down
+approach.</p>
+<p>For example, you want to create a website for folks playing word
+games that finds all the words that can be made from a set of letters.
+Your input here is a set of letters, and your output is a list of three-letter words, four-letter words, and so on:</p>
+<div>
+<div>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| &quot;lvyin&quot;             | is transformed to →   | 3 =&gt; ivy, lin, nil,  |
+|                       |                       | yin\                  |
+|                       |                       | 4 =&gt; inly, liny,     |
+|                       |                       | viny\                 |
+|                       |                       | 5 =&gt; vinyl           |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+</div>
+</div>
+<p>(Yes, they are all words, at least according to the macOS dictionary.)</p>
+<p>The trick behind the overall application is simple: we have a dictionary
+which groups words by a signature, chosen so that all words containing
+the same letters will have the same signature. The simplest signature
+function is just the sorted list of letters in the word. We can then
+look up an input string by generating a signature for it, and then
+seeing which words (if any) in the dictionary have that same signature.</p>
+<p>Thus the anagram finder breaks down into four separate
+transformations:</p>
+<p>+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Step                  | Transformation        | Sample data           |
++=======================+=======================+=======================+
+| Step 0:               | Initial input         | &quot;ylvin&quot;             |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Step 1:               | All combinations of   | vin, viy,             |
+|                       | three or more letters | vil, vny, vnl, vyl,   |
+|                       |                       | iny, inl, iyl, nyl,   |
+|                       |                       | viny,                 |
+|                       |                       | vinl, viyl, vnyl,     |
+|                       |                       | inyl, vinyl           |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Step 2:               | Signatures of the     | inv, ivy, ilv, nvy,   |
+|                       | combinations          | lnv, lvy, iny, iln,   |
+|                       |                       | ily, lny, invy, ilnv, |
+|                       |                       | ilvy,                 |
+|                       |                       | lnvy, ilny, ilnvy     |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Step 3:               | List of all           | ivy, yin, nil, lin,   |
+|                       | dictionary words      | viny, liny, inly,     |
+|                       | which match any of    | vinyl                 |
+|                       | the                   |                       |
+|                       | signatures            |                       |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+
+| Step 4:               | Words grouped by      | 3 =&gt; ivy, lin, nil,  |
+|                       | length                | yin\                  |
+|                       |                       | 4 =&gt; inly, liny,     |
+|                       |                       | viny\                 |
+|                       |                       | 5 =&gt; vinyl           |
++&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;+</p>
+<h4 id="transformations-all-the-way-down">Transformations All the Way Down</h4>
+<p>Let&rsquo;s start by looking at step 1, which takes a word and creates a list
+of all combinations of three or more letters. This step can itself be
+expressed as a list of transformations:</p>
+<p>Step        Transformation                            Sample data</p>
+<hr>
+<p>Step 1.0:   Initial input                             &quot;vinyl&quot;
+Step 1.1:   Convert to characters                     v, i, n, y, l
+Step 1.2:   Get all subsets                           [],
+[v],
+[i],
+&hellip;
+[v,i],
+[v,n],
+[v,y],
+&hellip;
+[v,i,n],
+[v,i,y],
+&hellip;
+[v,n,y,l],
+[i,n,y,l],
+[v,i,n,y,l]
+Step 1.3:   Only those longer than three characters   [v,i,n],
+[v,i,y],
+&hellip;
+[i,n,y,l],
+[v,i,n,y,l]
+Step 1.4:   Convert back to strings                   [vin,viy, &hellip; inyl,vinyl]</p>
+<p>We&rsquo;ve now reached the point where we can easily implement each
+transformation in code (using Elixir in this case):</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/anagrams.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defp</strong>​ all_subsets_longer_than_three_characters(word) ​<strong>do</strong>​
+​    word
+​    |&gt; String.codepoints()
+​    |&gt; Comb.subsets()
+​    |&gt; Stream.filter(​<strong>fn</strong>​ subset -&gt; length(subset) &gt;= 3 ​<strong>end</strong>​)
+​    |&gt; Stream.map(&amp;List.to_string(&amp;1))
+​    ​<strong>end</strong>​</p>
+<hr>
+<h4 id="whats-with-the--operator">What&rsquo;s with the |&gt; Operator?</h4>
+<p>Elixir, along with many other functional languages, has a pipeline
+operator, sometimes called a forward pipe or just
+a pipe.^[41]^ All it does is take the value on its
+left and insert it as the
+first parameter of the function on its right, so</p>
+<hr>
+<p>​    ​*&quot;<em>​​</em>vinyl&quot;*​ |&gt; String.codepoints |&gt; Comb.subsets()</p>
+<hr>
+<p>is the same as writing</p>
+<hr>
+<p>​    Comb.subsets(String.codepoints(​*&quot;<em>​​</em>vinyl&quot;*​))</p>
+<hr>
+<p>(Other languages may inject this piped value as the last parameter of
+the next function&mdash;it largely depends on the style of the built-in
+libraries.)</p>
+<p>You might think that this is just syntactic sugar. But in a very real
+way the pipeline operator is a revolutionary opportunity
+to think differently. Using a pipeline means that you&rsquo;re automatically
+thinking in terms of transforming data; each time you see |&gt; you&rsquo;re
+actually seeing a place where data is flowing between one transformation
+and the next.</p>
+<p>Many languages have something similar: Elm, F#, and Swift have |&gt;, Clojure has -&gt; and -&gt;&gt; (which work a little differently), R has %&gt;%. Haskell both has pipe operators and makes it easy to declare new ones. As we write this, there&rsquo;s talk of adding |&gt; to JavaScript.</p>
+<p>If your current language supports something similar, you&rsquo;re in luck. If
+it doesn&rsquo;t, see ​<em>Language X Doesn&rsquo;t Have Pipelines</em>​.</p>
+<p>Anyway, back to the code.</p>
+<h4 id="keep-on-transforming">Keep on Transforming&hellip;</h4>
+<p>Now look at Step 2 of the main program, where we convert the subsets
+into signatures. Again, it&rsquo;s a simple transformation&mdash;a list of subsets
+becomes a list of signatures:</p>
+<p>Step        Transformation          Sample data</p>
+<hr>
+<p>Step 2.0:   initial input           vin, viy, &hellip; inyl, vinyl
+Step 2.1:   convert to signatures   inv, ivy &hellip; ilny, inlvy</p>
+<p>The Elixir code in the following listing is just as simple:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/anagrams.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defp</strong>​ as_unique_signatures(subsets) ​<strong>do</strong>​
+​    subsets
+​    |&gt; Stream.map(&amp;Dictionary.signature_of/1)
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>Now we transform that list of signatures: each signature gets mapped to
+the list of known words with the same signature, or nil if there are
+no such words. We then have to remove the nils and flatten the nested
+lists into a single level:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/anagrams.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defp</strong>​ find_in_dictionary(signatures) ​<strong>do</strong>​
+​    signatures
+​    |&gt; Stream.map(&amp;Dictionary.lookup_by_signature/1)
+​    |&gt; Stream.reject(&amp;is_nil/1)
+​    |&gt; Stream.concat(&amp;(&amp;1))
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>Step 4, grouping the words by length, is another simple transformation,
+converting our list into a map where the keys are the lengths, and the
+values are all words with that length:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/anagrams.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defp</strong>​ group_by_length(words) ​<strong>do</strong>​
+​    words
+​    |&gt; Enum.sort()
+​    |&gt; Enum.group_by(&amp;String.length/1)
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>::: {#sb-no-pipelines .sidebar}
+::: {.sidebar-title}
+Language X Doesn't Have Pipelines
+:::</p>
+<p>::: {.sidebar-content}
+Pipelines have been around for a long time, but only in niche languages. They&rsquo;ve only moved into the mainstream recently, and many popular languages still don&rsquo;t support the concept.</p>
+<p>The good news is that thinking in transformations doesn&rsquo;t require a particular language syntax: it&rsquo;s more a philosophy of design. You still construct your code as transformations, but you write them as a series of assignments:</p>
+<hr>
+<p>​    ​<strong>const</strong>​ content = File.read(file_name);
+​    ​<strong>const</strong>​ lines = find_matching_lines(content, pattern)
+​    ​<strong>const</strong>​ result = truncate_lines(lines)</p>
+<hr>
+<p>It&rsquo;s a little more tedious, but it gets the job done.
+:::
+:::</p>
+<h4 id="putting-it-all-together">Putting It All Together</h4>
+<p>We&rsquo;ve written each of the individual transformations. Now it&rsquo;s time to
+string them all together into our main function:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/anagrams.ex
+:::</p>
+<hr>
+<p>​    ​<strong>def</strong>​ anagrams_in(word) ​<strong>do</strong>​
+​    word
+​    |&gt; all_subsets_longer_than_three_characters()
+​    |&gt; as_unique_signatures()
+​    |&gt; find_in_dictionary()
+​    |&gt; group_by_length()
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>Does it work? Let&rsquo;s try it:</p>
+<hr>
+<p>​    ​iex(1)&gt;​ Anagrams.anagrams_in ​*&quot;<em>​​</em>lyvin&quot;*​
+​    %{
+​    3 =&gt; [&quot;ivy&quot;, &quot;lin&quot;, &quot;nil&quot;, &quot;yin&quot;],
+​    4 =&gt; [&quot;inly&quot;, &quot;liny&quot;, &quot;viny&quot;],
+​    5 =&gt; [&quot;vinyl&quot;]
+​    }</p>
+<hr>
+<h3 id="pg-donthoard">Why Is This So Great?</h3>
+<p>Let&rsquo;s look at the body of the main function again:</p>
+<hr>
+<p>​    word
+​    |&gt; all_subsets_longer_than_three_characters()
+​    |&gt; as_unique_signatures()
+​    |&gt; find_in_dictionary()
+​    |&gt; group_by_length()</p>
+<hr>
+<p>It&rsquo;s simply a chain of the transformations needed to meet our
+requirement, each taking input from the previous transformation and
+passing output to the next. That comes about as close to literate code
+as you can get.</p>
+<p>But there&rsquo;s something deeper, too. If your background is object-oriented
+programming, then your reflexes demand that you hide data, encapsulating
+it inside objects. These objects then chatter back and forth, changing
+each other&rsquo;s state. This introduces a lot of coupling, and it is a big
+reason that OO systems can be hard to change.</p>
+<hr>
+<p>Tip 50   Don&rsquo;t Hoard State; Pass It Around</p>
+<hr>
+<p>In the transformational model, we turn that on its head. Instead of little pools of data spread all over the system, think of data as a mighty river, a flow. Data becomes a
+peer to functionality: a pipeline is a sequence of code → data →
+code → data&hellip;. The data is no longer tied to a particular group of
+functions, as it is in a class definition. Instead it is free to
+represent the unfolding progress of our application as it transforms
+its inputs into its outputs. This means that we can greatly reduce
+coupling: a function can be used (and reused) anywhere its parameters
+match the output of some other function.</p>
+<p>Yes, there is still a degree of coupling, but in our experience it&rsquo;s
+more manageable than the OO-style of command and control. And, if you&rsquo;re
+using a language with type checking, you&rsquo;ll get compile-time warnings
+when you try to connect two incompatible things.</p>
+<h3 id="what-about-error-handling">What About Error Handling?</h3>
+<p>So far our transforms have worked in a world where nothing goes wrong.
+How can we use them in the real world, though? If we can only build
+linear chains, how can we add all that conditional logic that we need
+for error checking?</p>
+<p>There are many ways of doing this, but they all rely on a basic
+convention: we never pass raw values between transformations. Instead,
+we wrap them in a data structure (or type) which also tells us if the
+contained value is valid. In Haskell, for example, this wrapper is
+called Maybe. In F# and Scala it&rsquo;s Option.</p>
+<p>How you use this concept is language specific. In general, though, there
+are two basic ways of writing the code: you can handle checking for
+errors inside your transformations or outside them.</p>
+<p>Elixir, which we&rsquo;ve used so far, doesn&rsquo;t have this support built in. For
+our purposes this is a good thing, as we get to show an implementation
+from the ground up. Something similar should work in most other
+languages.</p>
+<h4 id="first-choose-a-representation">First, Choose a Representation</h4>
+<p>We need a representation for our wrapper (the data structure that
+carries around a value or an error indication). You can use structures
+for this, but Elixir already has a pretty strong convention: functions
+tend to return a tuple containing either {:ok, value} or {:error,
+reason}. For example, File.open returns either :ok and an IO
+process or :error and a reason code:</p>
+<hr>
+<p>​    ​iex(1)&gt;​ File.open(​*&quot;<em>​​</em>/etc/passwd&quot;<em>​)
+​    {:ok, #PID&lt;0.109.0&gt;}
+​    ​iex(2)&gt;​ File.open(​</em>&quot;<em>​​</em>/etc/wombat&quot;*​)
+​    {:error, :enoent}</p>
+<hr>
+<p>We&rsquo;ll use the :ok/:error tuple as our wrapper when passing things
+through a pipeline.</p>
+<h4 id="then-handle-it-inside-each-transformation">Then Handle It Inside Each Transformation</h4>
+<p>Let&rsquo;s write a function that returns all the lines in a file that contain
+a given string, truncated to the first 20 characters. We want to write
+it as a transformation, so the input will be a file name and a string to
+match, and the output will be either an :ok tuple with a list of lines
+or an :error tuple with some kind of reason. The top-level function
+should look something like this:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/grep.ex
+:::</p>
+<hr>
+<p>​    ​<strong>def</strong>​ find_all(file_name, pattern) ​<strong>do</strong>​
+​    File.read(file_name)
+​    |&gt; find_matching_lines(pattern)
+​    |&gt; truncate_lines()
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>There&rsquo;s no explicit error checking here, but if any step in the pipeline
+returns an error tuple then the pipeline will return that error without
+executing the functions that follow.^[42]^ We do this using Elixir&rsquo;s
+pattern matching:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/grep.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defp</strong>​ find_matching_lines({​*:ok<em>​, content}, pattern) ​<strong>do</strong>​
+​    content
+​    |&gt; String.split(​</em>~r/\n/<em>​)
+​    |&gt; Enum.filter(&amp;String.match?(&amp;1, pattern))
+​    |&gt; ok_unless_empty()
+​    ​<strong>end</strong>​
+​ <br>
+​    ​<strong>defp</strong>​ find_matching_lines(error, _), ​<strong>do</strong>​: error
+​ <br>
+​    ​</em># ----------<em>​
+​ <br>
+​    ​<strong>defp</strong>​ truncate_lines({ ​</em>:ok<em>​, lines }) ​<strong>do</strong>​
+​    lines
+​    |&gt; Enum.map(&amp;String.slice(&amp;1, 0, 20))
+​    |&gt; ok()
+​    ​<strong>end</strong>​
+​ <br>
+​    ​<strong>defp</strong>​ truncate_lines(error), ​<strong>do</strong>​: error
+​ <br>
+​    ​</em># ----------<em>​
+​ <br>
+​    ​<strong>defp</strong>​ ok_unless_empty([]), ​<strong>do</strong>​: error(​</em>&quot;<em>​​</em>nothing found&quot;<em>​)
+​    ​<strong>defp</strong>​ ok_unless_empty(result), ​<strong>do</strong>​: ok(result)
+​ <br>
+​    ​<strong>defp</strong>​ ok(result), ​<strong>do</strong>​: { ​</em>:ok<em>​, result }
+​    ​<strong>defp</strong>​ error(reason), ​<strong>do</strong>​: { ​</em>:error*​, reason }</p>
+<hr>
+<p>Have a look at the function find_matching_lines. If its first
+parameter is an :ok tuple, it uses the content in that tuple to find
+lines matching the pattern. However, if the first parameter is not an
+:ok tuple, the second version of the function runs, which just returns
+that parameter. This way the function simply forwards an error down the
+pipeline. The same thing applies to truncate_lines.</p>
+<p>We can play with this at the console:</p>
+<hr>
+<p>​    ​iex&gt;​ Grep.find_all ​*&quot;<em>​​</em>/etc/passwd&quot;<em>​, ​</em>~r/www/<em>​
+​    {:ok, [&quot;_www:​</em>**<strong>​:70:70:World W&quot;, &quot;_wwwproxy:​</strong>***​:252:252:&quot;]}</p>
+<hr>
+<hr>
+<p>​    ​iex&gt;​ Grep.find_all ​*&quot;<em>​​</em>/etc/passwd&quot;<em>​, ​</em>~r/wombat/<em>​
+​    {:error, &quot;nothing found&quot;}
+​    ​iex&gt;​ Grep.find_all ​</em>&quot;<em>​​</em>/etc/koala&quot;<em>​, ​</em>~r/www/*​
+​    {:error, :enoent}</p>
+<hr>
+<p>You can see that an error anywhere in the pipeline immediately becomes
+the value of the pipeline.</p>
+<h4 id="or-handle-it-in-the-pipeline">Or Handle It in the Pipeline</h4>
+<p>You might be looking at the find_matching_lines and truncate_lines
+functions thinking that we&rsquo;ve moved the burden of error handling into
+the transformations. You&rsquo;d be right. In a language which uses pattern
+matching in function calls, such as Elixir, the effect is lessened, but
+it&rsquo;s still ugly.</p>
+<p>It would be nice if Elixir had a version of the pipeline operator |&gt;
+that knew about the :ok/:error tuples and which short-circuited
+execution when an error occurred.^[43]^ But the fact that it
+doesn&rsquo;t allows us to add something similar, and in a way that is
+applicable to a number of other languages.</p>
+<p>The problem we face is that when an error occurs we don&rsquo;t want to run
+code further down the pipeline, and that we don&rsquo;t want that code to know
+that this is happening. This means that we need to defer running
+pipeline functions until we know that previous steps in the pipeline
+were successful. To do this, we&rsquo;ll need to change them from function
+calls into function values that can be called later. Here&rsquo;s one
+implementation:</p>
+<p>::: {.livecodelozenge}
+function-pipelines/anagrams/lib/grep1.ex
+:::</p>
+<hr>
+<p>​    ​<strong>defmodule</strong>​ Grep1 ​<strong>do</strong>​
+​ <br>
+​    ​<strong>def</strong>​ and_then({ ​*:ok<em>​, value }, func), ​<strong>do</strong>​: func.(value)
+​    ​<strong>def</strong>​ and_then(anything_else, _func), ​<strong>do</strong>​: anything_else
+​ <br>
+​    ​<strong>def</strong>​ find_all(file_name, pattern) ​<strong>do</strong>​
+​    File.read(file_name)
+​    |&gt; and_then(&amp;find_matching_lines(&amp;1, pattern))
+​    |&gt; and_then(&amp;truncate_lines(&amp;1))
+​    ​<strong>end</strong>​
+​ <br>
+​    ​<strong>defp</strong>​ find_matching_lines(content, pattern) ​<strong>do</strong>​
+​    content
+​    |&gt; String.split(​</em>~r/\n/<em>​)
+​    |&gt; Enum.filter(&amp;String.match?(&amp;1, pattern))
+​    |&gt; ok_unless_empty()
+​    ​<strong>end</strong>​
+​ <br>
+​    ​<strong>defp</strong>​ truncate_lines(lines) ​<strong>do</strong>​
+​    lines
+​    |&gt; Enum.map(&amp;String.slice(&amp;1, 0, 20))
+​    |&gt; ok()
+​    ​<strong>end</strong>​
+​ <br>
+​ <br>
+​    ​<strong>defp</strong>​ ok_unless_empty([]), ​<strong>do</strong>​: error(​</em>&quot;<em>​​</em>nothing found&quot;<em>​)
+​    ​<strong>defp</strong>​ ok_unless_empty(result), ​<strong>do</strong>​: ok(result)
+​ <br>
+​    ​<strong>defp</strong>​ ok(result), ​<strong>do</strong>​: { ​</em>:ok<em>​, result }
+​    ​<strong>defp</strong>​ error(reason), ​<strong>do</strong>​: { ​</em>:error*​, reason }
+​    ​<strong>end</strong>​</p>
+<hr>
+<p>The and_then function is an example of a bind function: it takes a
+value wrapped in something, then applies a function to that value,
+returning a new wrapped value. Using the and_then function in the
+pipeline takes a little extra punctuation because Elixir needs to be
+told to convert function calls into function values, but that extra
+effort is offset by the fact that the transforming functions become
+simple: each just takes a value (and any extra parameters) and returns
+{:ok, new_value} or {:error, reason}.</p>
+<h3 id="transformations-transform-programming">Transformations Transform Programming</h3>
+<p>Thinking of code as a series of (nested) transformations can be a
+liberating approach to programming. It takes a while to get used to, but
+once you&rsquo;ve developed the habit you&rsquo;ll find your code becomes cleaner,
+your functions shorter, and your designs flatter.</p>
+<p>Give it a try.</p>
+<h3 id="related-sections-include">Related Sections Include</h3>
+<ul>
+<li>Topic 8, ​<em>The Essence of Good Design</em>​</li>
+<li>Topic 17, ​<em>Shell Games</em>​</li>
+<li>Topic 26, ​<em>How to Balance Resources</em>​</li>
+<li>Topic 28, ​<em>Decoupling</em>​</li>
+<li>Topic 35, ​<em>Actors and Processes</em>​</li>
+</ul>
+<h3 id="exercises">Exercises</h3>
+<p><strong>Exercise 21</strong> (possible answer)</p>
+<p>Can you express the following requirements as a top-level
+transformation? That is, for each, identify the input and the output.</p>
+<ol>
+<li>Shipping and sales tax are added to an order</li>
+<li>Your application loads configuration information from a named
+file</li>
+<li>Someone logs in to a web application</li>
+</ol>
+<p><strong>Exercise 22</strong> (possible answer)</p>
+<p>You&rsquo;ve identified the need to validate and convert an input field from a
+string into an integer between 18 and 150. The overall transformation is described by</p>
+<hr>
+<p>​    field contents as string
+​    → [validate &amp; convert]
+​    → {:ok, value} | {:error, reason}</p>
+<hr>
+<p>Write the individual transformations that make up validate &amp; convert.</p>
+<p><strong>Exercise 23</strong> (possible answer)</p>
+<p>In ​<em>Language X Doesn&rsquo;t Have Pipelines</em>​ we wrote:</p>
+<hr>
+<p>​    ​<strong>const</strong>​ content = File.read(file_name);
+​    ​<strong>const</strong>​ lines = find_matching_lines(content, pattern)
+​    ​<strong>const</strong>​ result = truncate_lines(lines)</p>
+<hr>
+<p>Many people write OO code by chaining together method calls, and might
+be tempted to write this as something like:</p>
+<hr>
+<p>​    ​<strong>const</strong>​ result = content_of(file_name)
+​    .find_matching_lines(pattern)
+​    .truncate_lines()</p>
+<hr>
+<p>What&rsquo;s the difference between these two pieces of code? Which do you
+think we prefer?
+:::
+:::</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/pragmatic-programmer/f_0050/" title="Topic 29  Juggling the Real World  " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/pragmatic-programmer/f_0052/" title="Topic 31 Inheritance Tax" class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

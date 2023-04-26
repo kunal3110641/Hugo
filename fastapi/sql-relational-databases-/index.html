@@ -1,0 +1,10487 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: SQL (Relational) Databases </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="SQL (Relational) Databases " />
+<meta property="og:description" content="SQL (Relational) Databases FastAPI doesn&#39;t require you to use a SQL (relational) database.
+But you can use any relational database that you want.
+Here we&#39;ll see an example using SQLAlchemy.
+You can easily adapt it to any database supported by SQLAlchemy, like:
+PostgreSQL
+MySQL
+SQLite
+Oracle
+Microsoft SQL Server, etc.
+In this example, we&#39;ll use SQLite, because it uses a single file and Python has integrated support. So, you can copy this example and run it as is." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/fastapi/sql-relational-databases-/" /><meta property="article:section" content="fastapi" />
+
+
+
+
+    
+    
+	<meta name="description" content="SQL (Relational) Databases " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/fastapi/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/fastapi/tutorial-user-guide-intro/"><div class="panelist" >Tutorial - User Guide - Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/first-steps/"><div class="panelist" >First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters/"><div class="panelist" >Path Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters/"><div class="panelist" >Query Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-body/"><div class="panelist" >Request Body </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations-/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters-and-numeric-validations-/"><div class="panelist" >Path Parameters and Numeric Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-multiple-parameters/"><div class="panelist" >Body - Multiple Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-fields/"><div class="panelist" >Body - Fields </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-nested-models/"><div class="panelist" >Body - Nested Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data-/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-data-types/"><div class="panelist" >Extra Data Types </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cookie-parameters/"><div class="panelist" >Cookie Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/header-parameters/"><div class="panelist" >Header Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-model-return-type/"><div class="panelist" >Response Model - Return Type </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-models/"><div class="panelist" >Extra Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-status-code/"><div class="panelist" >Response Status Code </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/form-data/"><div class="panelist" >Form Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-files/"><div class="panelist" >Request Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-forms-and-files/"><div class="panelist" >Request Forms and Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/handling-errors/"><div class="panelist" >Handling Errors </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-operation-configuration-/"><div class="panelist" >Path Operation Configuration </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/json-compatible-encoder/"><div class="panelist" >JSON Compatible Encoder </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-updates/"><div class="panelist" >Body - Updates </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-first-steps/"><div class="panelist" >Dependencies - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/classes-as-dependencies/"><div class="panelist" >Classes as Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sub-dependencies/"><div class="panelist" >Sub-dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-in-path-operation-decorators-/"><div class="panelist" >Dependencies in path operation decorators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/global-dependencies/"><div class="panelist" >Global Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-with-yield/"><div class="panelist" >Dependencies with yield </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-intro/"><div class="panelist" >Security Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-first-steps/"><div class="panelist" >Security - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/get-current-user/"><div class="panelist" >Get Current User </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/simple-oauth2-with-password-and-bearer-/"><div class="panelist" >Simple OAuth2 with Password and Bearer </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/oauth2-with-password-and-hashing-bearer-with-jwt-tokens-/"><div class="panelist" >OAuth2 with Password (and hashing), Bearer with JWT tokens </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/middleware/"><div class="panelist" >Middleware </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cors-cross-origin-resource-sharing-/"><div class="panelist" >CORS (Cross-Origin Resource Sharing) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sql-relational-databases-/"><div class="panelist" id="activetab">SQL (Relational) Databases </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/bigger-applications-multiple-files/"><div class="panelist" >Bigger Applications - Multiple Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/background-tasks/"><div class="panelist" >Background Tasks </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/metadata-and-docs-urls/"><div class="panelist" >Metadata and Docs URLs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/static-files/"><div class="panelist" >Static Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/testing/"><div class="panelist" >Testing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/debugging/"><div class="panelist" >Debugging </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="sql-relational-databases">SQL (Relational) Databases</h2>
+<p>FastAPI doesn't require you to use a SQL (relational) database.</p>
+<p>But you can use any relational database that you want.</p>
+<p>Here we'll see an example using SQLAlchemy.</p>
+<p>You can easily adapt it to any database supported by SQLAlchemy, like:</p>
+<p>PostgreSQL</p>
+<p>MySQL</p>
+<p>SQLite</p>
+<p>Oracle</p>
+<p>Microsoft SQL Server, etc.</p>
+<p>In this example, we'll use SQLite, because it uses a single file and
+Python has integrated support. So, you can copy this example and run it
+as is.</p>
+<p>Later, for your production application, you might want to use a database
+server like PostgreSQL.</p>
+<p>Tip</p>
+<p>There is an official project generator with FastAPI and PostgreSQL, all
+based on Docker, including a frontend and more tools:
+<a href="https://github.com/tiangolo/full-stack-fastapi-postgresql">https://github.com/tiangolo/full-stack-fastapi-postgresql</a></p>
+<p>Note</p>
+<p>Notice that most of the code is the standard SQLAlchemy code you would
+use with any framework.</p>
+<p>The FastAPI specific code is as small as always.</p>
+<h2 id="orms">ORMs</h2>
+<p>FastAPI works with any database and any style of library to talk to the
+database.</p>
+<p>A common pattern is to use an &quot;ORM&quot;: an &quot;object-relational mapping&quot;
+library.</p>
+<p>An ORM has tools to convert (&quot;map&quot;) between objects in code and
+database tables (&quot;relations&quot;).</p>
+<p>With an ORM, you normally create a class that represents a table in a
+SQL database, each attribute of the class represents a column, with a
+name and a type.</p>
+<p>For example a class Pet could represent a SQL table pets.</p>
+<p>And each instance object of that class represents a row in the database.</p>
+<p>For example an object orion_cat (an instance of Pet) could have an
+attribute orion_cat.type, for the column type. And the value of that
+attribute could be, e.g. &quot;cat&quot;.</p>
+<p>These ORMs also have tools to make the connections or relations between
+tables or entities.</p>
+<p>This way, you could also have an attribute orion_cat.owner and the
+owner would contain the data for this pet's owner, taken from the table
+owners.</p>
+<p>So, orion_cat.owner.name could be the name (from the name column in the
+owners table) of this pet's owner.</p>
+<p>It could have a value like &quot;Arquilian&quot;.</p>
+<p>And the ORM will do all the work to get the information from the
+corresponding table owners when you try to access it from your pet
+object.</p>
+<p>Common ORMs are for example: Django-ORM (part of the Django framework),
+SQLAlchemy ORM (part of SQLAlchemy, independent of framework) and Peewee
+(independent of framework), among others.</p>
+<p>Here we will see how to work with SQLAlchemy ORM.</p>
+<p>In a similar way you could use any other ORM.</p>
+<p>Tip</p>
+<p>There's an equivalent article using Peewee here in the docs.</p>
+<h2 id="file-structure">File structure</h2>
+<p>For these examples, let's say you have a directory named
+my_super_project that contains a sub-directory called sql_app with a
+structure like this:</p>
+<pre><code>.
+└── sql_app
+    ├── __init__.py
+    ├── crud.py
+    ├── database.py
+    ├── main.py
+    ├── models.py
+    └── schemas.py
+</code></pre>
+<p>The file __init__.py is just an empty file, but it tells Python that
+sql_app with all its modules (Python files) is a package.</p>
+<p>Now let's see what each file/module does.</p>
+<h2 id="install-sqlalchemy">Install SQLAlchemy</h2>
+<p>First you need to install SQLAlchemy:</p>
+<pre><code>$ pip install sqlalchemy
+
+---&gt; 100%
+</code></pre>
+<h2 id="create-the-sqlalchemy-parts">Create the SQLAlchemy parts</h2>
+<p>Let's refer to the file sql_app/database.py.</p>
+<h2 id="import-the-sqlalchemy-parts">Import the SQLAlchemy parts</h2>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<h2 id="create-a-database-url-for-sqlalchemy">Create a database URL for SQLAlchemy</h2>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<p>In this example, we are &quot;connecting&quot; to a SQLite database (opening a
+file with the SQLite database).</p>
+<p>The file will be located at the same directory in the file sql_app.db.</p>
+<p>That's why the last part is ./sql_app.db.</p>
+<p>If you were using a PostgreSQL database instead, you would just have to
+uncomment the line:</p>
+<pre><code>SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+</code></pre>
+<p>...and adapt it with your database data and credentials (equivalently
+for MySQL, MariaDB or any other).</p>
+<p>Tip</p>
+<p>This is the main line that you would have to modify if you wanted to use
+a different database.</p>
+<h2 id="create-the-sqlalchemy-engine">Create the SQLAlchemy engine</h2>
+<p>The first step is to create a SQLAlchemy &quot;engine&quot;.</p>
+<p>We will later use this engine in other places.</p>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<h2 id="note">Note</h2>
+<p>The argument:</p>
+<pre><code>connect_args={&quot;check_same_thread&quot;: False}
+</code></pre>
+<p>...is needed only for SQLite. It's not needed for other databases.</p>
+<p>Technical Details</p>
+<p>By default SQLite will only allow one thread to communicate with it,
+assuming that each thread would handle an independent request.</p>
+<p>This is to prevent accidentally sharing the same connection for
+different things (for different requests).</p>
+<p>But in FastAPI, using normal functions (def) more than one thread could
+interact with the database for the same request, so we need to make
+SQLite know that it should allow that with
+connect_args={&quot;check_same_thread&quot;: False}.</p>
+<p>Also, we will make sure each request gets its own database connection
+session in a dependency, so there's no need for that default mechanism.</p>
+<h2 id="create-a-sessionlocal-class">Create a SessionLocal class</h2>
+<p>Each instance of the SessionLocal class will be a database session. The
+class itself is not a database session yet.</p>
+<p>But once we create an instance of the SessionLocal class, this instance
+will be the actual database session.</p>
+<p>We name it SessionLocal to distinguish it from the Session we are
+importing from SQLAlchemy.</p>
+<p>We will use Session (the one imported from SQLAlchemy) later.</p>
+<p>To create the SessionLocal class, use the function sessionmaker:</p>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<h2 id="create-a-base-class">Create a Base class</h2>
+<p>Now we will use the function declarative_base() that returns a class.</p>
+<p>Later we will inherit from this class to create each of the database
+models or classes (the ORM models):</p>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<h2 id="create-the-database-models">Create the database models</h2>
+<p>Let's now see the file sql_app/models.py.</p>
+<h2 id="create-sqlalchemy-models-from-the-base-class">Create SQLAlchemy models from the Base class</h2>
+<p>We will use this Base class we created before to create the SQLAlchemy
+models.</p>
+<p>Tip</p>
+<p>SQLAlchemy uses the term &quot;model&quot; to refer to these classes and
+instances that interact with the database.</p>
+<p>But Pydantic also uses the term &quot;model&quot; to refer to something
+different, the data validation, conversion, and documentation classes
+and instances.</p>
+<p>Import Base from database (the file database.py from above).</p>
+<p>Create classes that inherit from it.</p>
+<p>These classes are the SQLAlchemy models.</p>
+<pre><code>from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
+
+from .database import Base
+
+
+class User(Base):
+    __tablename__ = &quot;users&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    is_active = Column(Boolean, default=True)
+
+    items = relationship(&quot;Item&quot;, back_populates=&quot;owner&quot;)
+
+
+class Item(Base):
+    __tablename__ = &quot;items&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    description = Column(String, index=True)
+    owner_id = Column(Integer, ForeignKey(&quot;users.id&quot;))
+
+    owner = relationship(&quot;User&quot;, back_populates=&quot;items&quot;)
+</code></pre>
+<p>The __tablename__ attribute tells SQLAlchemy the name of the table
+to use in the database for each of these models.</p>
+<h2 id="create-model-attributescolumns">Create model attributes/columns</h2>
+<p>Now create all the model (class) attributes.</p>
+<p>Each of these attributes represents a column in its corresponding
+database table.</p>
+<p>We use Column from SQLAlchemy as the default value.</p>
+<p>And we pass a SQLAlchemy class &quot;type&quot;, as Integer, String, and
+Boolean, that defines the type in the database, as an argument.</p>
+<pre><code>from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
+
+from .database import Base
+
+
+class User(Base):
+    __tablename__ = &quot;users&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    is_active = Column(Boolean, default=True)
+
+    items = relationship(&quot;Item&quot;, back_populates=&quot;owner&quot;)
+
+
+class Item(Base):
+    __tablename__ = &quot;items&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    description = Column(String, index=True)
+    owner_id = Column(Integer, ForeignKey(&quot;users.id&quot;))
+
+    owner = relationship(&quot;User&quot;, back_populates=&quot;items&quot;)
+</code></pre>
+<h2 id="create-the-relationships">Create the relationships</h2>
+<p>Now create the relationships.</p>
+<p>For this, we use relationship provided by SQLAlchemy ORM.</p>
+<p>This will become, more or less, a &quot;magic&quot; attribute that will contain
+the values from other tables related to this one.</p>
+<pre><code>from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
+
+from .database import Base
+
+
+class User(Base):
+    __tablename__ = &quot;users&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    is_active = Column(Boolean, default=True)
+
+    items = relationship(&quot;Item&quot;, back_populates=&quot;owner&quot;)
+
+
+class Item(Base):
+    __tablename__ = &quot;items&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    description = Column(String, index=True)
+    owner_id = Column(Integer, ForeignKey(&quot;users.id&quot;))
+
+    owner = relationship(&quot;User&quot;, back_populates=&quot;items&quot;)
+</code></pre>
+<p>When accessing the attribute items in a User, as in my_user.items, it
+will have a list of Item SQLAlchemy models (from the items table) that
+have a foreign key pointing to this record in the users table.</p>
+<p>When you access my_user.items, SQLAlchemy will actually go and fetch
+the items from the database in the items table and populate them here.</p>
+<p>And when accessing the attribute owner in an Item, it will contain a
+User SQLAlchemy model from the users table. It will use the owner_id
+attribute/column with its foreign key to know which record to get from
+the users table.</p>
+<h2 id="create-the-pydantic-models">Create the Pydantic models</h2>
+<p>Now let's check the file sql_app/schemas.py.</p>
+<p>Tip</p>
+<p>To avoid confusion between the SQLAlchemy models and the Pydantic
+models, we will have the file models.py with the SQLAlchemy models, and
+the file schemas.py with the Pydantic models.</p>
+<p>These Pydantic models define more or less a &quot;schema&quot; (a valid data
+shape).</p>
+<p>So this will help us avoiding confusion while using both.</p>
+<h2 id="create-initial-pydantic-models--schemas">Create initial Pydantic models / schemas</h2>
+<p>Create an ItemBase and UserBase Pydantic models (or let's say
+&quot;schemas&quot;) to have common attributes while creating or reading data.</p>
+<p>And create an ItemCreate and UserCreate that inherit from them (so they
+will have the same attributes), plus any additional data (attributes)
+needed for creation.</p>
+<p>So, the user will also have a password when creating it.</p>
+<p>But for security, the password won't be in other Pydantic models, for
+example, it won't be sent from the API when reading a user.</p>
+<pre><code>from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: str | None = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import List, Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: List[Item] = []
+
+    class Config:
+        orm_mode = True
+</code></pre>
+<h2 id="sqlalchemy-style-and-pydantic-style">SQLAlchemy style and Pydantic style</h2>
+<p>Notice that SQLAlchemy models define attributes using =, and pass the
+type as a parameter to Column, like in:</p>
+<pre><code>name = Column(String)
+</code></pre>
+<p>while Pydantic models declare the types using :, the new type annotation
+syntax/type hints:</p>
+<pre><code>name: str
+</code></pre>
+<p>Have it in mind, so you don't get confused when using = and : with
+them.</p>
+<h2 id="create-pydantic-models--schemas-for-reading--returning">Create Pydantic models / schemas for reading / returning</h2>
+<p>Now create Pydantic models (schemas) that will be used when reading
+data, when returning it from the API.</p>
+<p>For example, before creating an item, we don't know what will be the ID
+assigned to it, but when reading it (when returning it from the API) we
+will already know its ID.</p>
+<p>The same way, when reading a user, we can now declare that items will
+contain the items that belong to this user.</p>
+<p>Not only the IDs of those items, but all the data that we defined in the
+Pydantic model for reading items: Item.</p>
+<pre><code>from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: str | None = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import List, Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: List[Item] = []
+
+    class Config:
+        orm_mode = True
+</code></pre>
+<p>Tip</p>
+<p>Notice that the User, the Pydantic model that will be used when reading
+a user (returning it from the API) doesn't include the password.</p>
+<h2 id="use-pydantics-orm_mode">Use Pydantic's orm_mode</h2>
+<p>Now, in the Pydantic models for reading, Item and User, add an internal
+Config class.</p>
+<p>This Config class is used to provide configurations to Pydantic.</p>
+<p>In the Config class, set the attribute orm_mode = True.</p>
+<pre><code>from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: str | None = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import List, Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: List[Item] = []
+
+    class Config:
+        orm_mode = True
+</code></pre>
+<p>Tip</p>
+<p>Notice it's assigning a value with =, like:</p>
+<p>orm_mode = True</p>
+<p>It doesn't use : as for the type declarations before.</p>
+<p>This is setting a config value, not declaring a type.</p>
+<p>Pydantic's orm_mode will tell the Pydantic model to read the data even
+if it is not a dict, but an ORM model (or any other arbitrary object
+with attributes).</p>
+<p>This way, instead of only trying to get the id value from a dict, as in:</p>
+<pre><code>id = data[&quot;id&quot;]
+</code></pre>
+<p>it will also try to get it from an attribute, as in:</p>
+<pre><code>id = data.id
+</code></pre>
+<p>And with this, the Pydantic model is compatible with ORMs, and you can
+just declare it in the response_model argument in your path operations.</p>
+<p>You will be able to return a database model and it will read the data
+from it.</p>
+<h2 id="technical-details-about-orm-mode">Technical Details about ORM mode</h2>
+<p>SQLAlchemy and many others are by default &quot;lazy loading&quot;.</p>
+<p>That means, for example, that they don't fetch the data for
+relationships from the database unless you try to access the attribute
+that would contain that data.</p>
+<p>For example, accessing the attribute items:</p>
+<pre><code>current_user.items
+</code></pre>
+<p>would make SQLAlchemy go to the items table and get the items for this
+user, but not before.</p>
+<p>Without orm_mode, if you returned a SQLAlchemy model from your path
+operation, it wouldn't include the relationship data.</p>
+<p>Even if you declared those relationships in your Pydantic models.</p>
+<p>But with ORM mode, as Pydantic itself will try to access the data it
+needs from attributes (instead of assuming a dict), you can declare the
+specific data you want to return and it will be able to go and get it,
+even from ORMs.</p>
+<h2 id="crud-utils">CRUD utils</h2>
+<p>Now let's see the file sql_app/crud.py.</p>
+<p>In this file we will have reusable functions to interact with the data
+in the database.</p>
+<p>CRUD comes from: Create, Read, Update, and Delete.</p>
+<p>...although in this example we are only creating and reading.</p>
+<h2 id="read-data">Read data</h2>
+<p>Import Session from sqlalchemy.orm, this will allow you to declare the
+type of the db parameters and have better type checks and completion in
+your functions.</p>
+<p>Import models (the SQLAlchemy models) and schemas (the Pydantic models /
+schemas).</p>
+<p>Create utility functions to:</p>
+<p>Read a single user by ID and by email.</p>
+<p>Read multiple users.</p>
+<p>Read multiple items.</p>
+<pre><code>from sqlalchemy.orm import Session
+
+from . import models, schemas
+
+
+def get_user(db: Session, user_id: int):
+    return db.query(models.User).filter(models.User.id == user_id).first()
+
+
+def get_user_by_email(db: Session, email: str):
+    return db.query(models.User).filter(models.User.email == email).first()
+
+
+def get_users(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.User).offset(skip).limit(limit).all()
+
+
+def create_user(db: Session, user: schemas.UserCreate):
+    fake_hashed_password = user.password + &quot;notreallyhashed&quot;
+    db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+
+def get_items(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.Item).offset(skip).limit(limit).all()
+
+
+def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
+    db_item = models.Item(**item.dict(), owner_id=user_id)
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+</code></pre>
+<p>Tip</p>
+<p>By creating functions that are only dedicated to interacting with the
+database (get a user or an item) independent of your path operation
+function, you can more easily reuse them in multiple parts and also add
+unit tests for them.</p>
+<h2 id="create-data">Create data</h2>
+<p>Now create utility functions to create data.</p>
+<p>The steps are:</p>
+<p>Create a SQLAlchemy model instance with your data.</p>
+<p>add that instance object to your database session.</p>
+<p>commit the changes to the database (so that they are saved).</p>
+<p>refresh your instance (so that it contains any new data from the
+database, like the generated ID).</p>
+<pre><code>from sqlalchemy.orm import Session
+
+from . import models, schemas
+
+
+def get_user(db: Session, user_id: int):
+    return db.query(models.User).filter(models.User.id == user_id).first()
+
+
+def get_user_by_email(db: Session, email: str):
+    return db.query(models.User).filter(models.User.email == email).first()
+
+
+def get_users(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.User).offset(skip).limit(limit).all()
+
+
+def create_user(db: Session, user: schemas.UserCreate):
+    fake_hashed_password = user.password + &quot;notreallyhashed&quot;
+    db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+
+def get_items(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.Item).offset(skip).limit(limit).all()
+
+
+def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
+    db_item = models.Item(**item.dict(), owner_id=user_id)
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+</code></pre>
+<p>Tip</p>
+<p>The SQLAlchemy model for User contains a hashed_password that should
+contain a secure hashed version of the password.</p>
+<p>But as what the API client provides is the original password, you need
+to extract it and generate the hashed password in your application.</p>
+<p>And then pass the hashed_password argument with the value to save.</p>
+<p>Warning</p>
+<p>This example is not secure, the password is not hashed.</p>
+<p>In a real life application you would need to hash the password and never
+save them in plaintext.</p>
+<p>For more details, go back to the Security section in the tutorial.</p>
+<p>Here we are focusing only on the tools and mechanics of databases.</p>
+<p>Tip</p>
+<p>Instead of passing each of the keyword arguments to Item and reading
+each one of them from the Pydantic model, we are generating a dict with
+the Pydantic model's data with:</p>
+<p>item.dict()</p>
+<p>and then we are passing the dict's key-value pairs as the keyword
+arguments to the SQLAlchemy Item, with:</p>
+<p>Item(**item.dict())</p>
+<p>And then we pass the extra keyword argument owner_id that is not
+provided by the Pydantic model, with:</p>
+<p>Item(**item.dict(), owner_id=user_id)</p>
+<h2 id="main-fastapi-app">Main FastAPI app</h2>
+<p>And now in the file sql_app/main.py let's integrate and use all the
+other parts we created before.</p>
+<h2 id="create-the-database-tables">Create the database tables</h2>
+<p>In a very simplistic way create the database tables:</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<h2 id="alembic-note">Alembic Note</h2>
+<p>Normally you would probably initialize your database (create tables,
+etc) with Alembic.</p>
+<p>And you would also use Alembic for &quot;migrations&quot; (that's its main
+job).</p>
+<p>A &quot;migration&quot; is the set of steps needed whenever you change the
+structure of your SQLAlchemy models, add a new attribute, etc. to
+replicate those changes in the database, add a new column, a new table,
+etc.</p>
+<p>You can find an example of Alembic in a FastAPI project in the templates
+from Project Generation - Template. Specifically in the alembic
+directory in the source code.</p>
+<h2 id="create-a-dependency">Create a dependency</h2>
+<p>Now use the SessionLocal class we created in the sql_app/database.py
+file to create a dependency.</p>
+<p>We need to have an independent database session/connection
+(SessionLocal) per request, use the same session through all the request
+and then close it after the request is finished.</p>
+<p>And then a new session will be created for the next request.</p>
+<p>For that, we will create a new dependency with yield, as explained
+before in the section about Dependencies with yield.</p>
+<p>Our dependency will create a new SQLAlchemy SessionLocal that will be
+used in a single request, and then close it once the request is
+finished.</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<p>Info</p>
+<p>We put the creation of the SessionLocal() and handling of the requests
+in a try block.</p>
+<p>And then we close it in the finally block.</p>
+<p>This way we make sure the database session is always closed after the
+request. Even if there was an exception while processing the request.</p>
+<p>But you can't raise another exception from the exit code (after yield).
+See more in Dependencies with yield and HTTPException</p>
+<p>And then, when using the dependency in a path operation function, we
+declare it with the type Session we imported directly from SQLAlchemy.</p>
+<p>This will then give us better editor support inside the path operation
+function, because the editor will know that the db parameter is of type
+Session:</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<p>Technical Details</p>
+<p>The parameter db is actually of type SessionLocal, but this class
+(created with sessionmaker()) is a &quot;proxy&quot; of a SQLAlchemy Session,
+so, the editor doesn't really know what methods are provided.</p>
+<p>But by declaring the type as Session, the editor now can know the
+available methods (.add(), .query(), .commit(), etc) and can provide
+better support (like completion). The type declaration doesn't affect
+the actual object.</p>
+<h2 id="create-your-fastapi-path-operations">Create your FastAPI path operations</h2>
+<p>Now, finally, here's the standard FastAPI path operations code.</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<p>We are creating the database session before each request in the
+dependency with yield, and then closing it afterwards.</p>
+<p>And then we can create the required dependency in the path operation
+function, to get that session directly.</p>
+<p>With that, we can just call crud.get_user directly from inside of the
+path operation function and use that session.</p>
+<p>Tip</p>
+<p>Notice that the values you return are SQLAlchemy models, or lists of
+SQLAlchemy models.</p>
+<p>But as all the path operations have a response_model with Pydantic
+models / schemas using orm_mode, the data declared in your Pydantic
+models will be extracted from them and returned to the client, with all
+the normal filtering and validation.</p>
+<p>Tip</p>
+<p>Also notice that there are response_models that have standard Python
+types like List[schemas.Item].</p>
+<p>But as the content/parameter of that List is a Pydantic model with
+orm_mode, the data will be retrieved and returned to the client as
+normally, without problems.</p>
+<h2 id="about-def-vs-async-def">About def vs async def</h2>
+<p>Here we are using SQLAlchemy code inside of the path operation function
+and in the dependency, and, in turn, it will go and communicate with an
+external database.</p>
+<p>That could potentially require some &quot;waiting&quot;.</p>
+<p>But as SQLAlchemy doesn't have compatibility for using await directly,
+as would be with something like:</p>
+<pre><code>user = await db.query(User).first()
+</code></pre>
+<p>...and instead we are using:</p>
+<pre><code>user = db.query(User).first()
+</code></pre>
+<p>Then we should declare the path operation functions and the dependency
+without async def, just with a normal def, as:</p>
+<pre><code>@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    ...
+</code></pre>
+<p>Info</p>
+<p>If you need to connect to your relational database asynchronously, see
+Async SQL (Relational) Databases.</p>
+<p>Very Technical Details</p>
+<p>If you are curious and have a deep technical knowledge, you can check
+the very technical details of how this async def vs def is handled in
+the Async docs.</p>
+<h2 id="migrations">Migrations</h2>
+<p>Because we are using SQLAlchemy directly and we don't require any kind
+of plug-in for it to work with FastAPI, we could integrate database
+migrations with Alembic directly.</p>
+<p>And as the code related to SQLAlchemy and the SQLAlchemy models lives in
+separate independent files, you would even be able to perform the
+migrations with Alembic without having to install FastAPI, Pydantic, or
+anything else.</p>
+<p>The same way, you would be able to use the same SQLAlchemy models and
+utilities in other parts of your code that are not related to FastAPI.</p>
+<p>For example, in a background task worker with Celery, RQ, or ARQ.</p>
+<h2 id="review-all-the-files">Review all the files</h2>
+<p>Remember you should have a directory named my_super_project that
+contains a sub-directory called sql_app.</p>
+<p>sql_app should have the following files:</p>
+<p>sql_app/__init__.py: is an empty file.</p>
+<p>sql_app/__init__.py: is an empty file.</p>
+<p>sql_app/database.py:</p>
+<p>sql_app/database.py:</p>
+<pre><code>from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+SQLALCHEMY_DATABASE_URL = &quot;sqlite:///./sql_app.db&quot;
+# SQLALCHEMY_DATABASE_URL = &quot;postgresql://user:password@postgresserver/db&quot;
+
+engine = create_engine(
+    SQLALCHEMY_DATABASE_URL, connect_args={&quot;check_same_thread&quot;: False}
+)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+Base = declarative_base()
+</code></pre>
+<p>sql_app/models.py:</p>
+<pre><code>from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
+
+from .database import Base
+
+
+class User(Base):
+    __tablename__ = &quot;users&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    is_active = Column(Boolean, default=True)
+
+    items = relationship(&quot;Item&quot;, back_populates=&quot;owner&quot;)
+
+
+class Item(Base):
+    __tablename__ = &quot;items&quot;
+
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, index=True)
+    description = Column(String, index=True)
+    owner_id = Column(Integer, ForeignKey(&quot;users.id&quot;))
+
+    owner = relationship(&quot;User&quot;, back_populates=&quot;items&quot;)
+</code></pre>
+<p>sql_app/schemas.py:</p>
+<pre><code>from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: str | None = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: list[Item] = []
+
+    class Config:
+        orm_mode = True
+
+from typing import List, Union
+
+from pydantic import BaseModel
+
+
+class ItemBase(BaseModel):
+    title: str
+    description: Union[str, None] = None
+
+
+class ItemCreate(ItemBase):
+    pass
+
+
+class Item(ItemBase):
+    id: int
+    owner_id: int
+
+    class Config:
+        orm_mode = True
+
+
+class UserBase(BaseModel):
+    email: str
+
+
+class UserCreate(UserBase):
+    password: str
+
+
+class User(UserBase):
+    id: int
+    is_active: bool
+    items: List[Item] = []
+
+    class Config:
+        orm_mode = True
+</code></pre>
+<p>sql_app/crud.py:</p>
+<pre><code>from sqlalchemy.orm import Session
+
+from . import models, schemas
+
+
+def get_user(db: Session, user_id: int):
+    return db.query(models.User).filter(models.User.id == user_id).first()
+
+
+def get_user_by_email(db: Session, email: str):
+    return db.query(models.User).filter(models.User.email == email).first()
+
+
+def get_users(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.User).offset(skip).limit(limit).all()
+
+
+def create_user(db: Session, user: schemas.UserCreate):
+    fake_hashed_password = user.password + &quot;notreallyhashed&quot;
+    db_user = models.User(email=user.email, hashed_password=fake_hashed_password)
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
+
+
+def get_items(db: Session, skip: int = 0, limit: int = 100):
+    return db.query(models.Item).offset(skip).limit(limit).all()
+
+
+def create_user_item(db: Session, item: schemas.ItemCreate, user_id: int):
+    db_item = models.Item(**item.dict(), owner_id=user_id)
+    db.add(db_item)
+    db.commit()
+    db.refresh(db_item)
+    return db_item
+</code></pre>
+<p>sql_app/main.py:</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+# Dependency
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<h2 id="check-it">Check it</h2>
+<p>You can copy this code and use it as is.</p>
+<p>Info</p>
+<p>In fact, the code shown here is part of the tests. As most of the code
+in these docs.</p>
+<p>Then you can run it with Uvicorn:</p>
+<pre><code>$ uvicorn sql_app.main:app --reload
+
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+</code></pre>
+<p>And then, you can open your browser at http://127.0.0.1:8000/docs.</p>
+<p>And you will be able to interact with your FastAPI application, reading
+data from a real database:</p>
+<p><img src="/img/tutorial/sql-databases/image01.png" alt=""></p>
+<h2 id="interact-with-the-database-directly">Interact with the database directly</h2>
+<p>If you want to explore the SQLite database (file) directly,
+independently of FastAPI, to debug its contents, add tables, columns,
+records, modify data, etc. you can use DB Browser for SQLite.</p>
+<p>It will look like this:</p>
+<p><img src="/img/tutorial/sql-databases/image02.png" alt=""></p>
+<p>You can also use an online SQLite browser like SQLite Viewer or
+ExtendsClass.</p>
+<h2 id="alternative-db-session-with-middleware">Alternative DB session with middleware</h2>
+<p>If you can't use dependencies with yield -- for example, if you are
+not using Python 3.7 and can't install the &quot;backports&quot; mentioned
+above for Python 3.6 -- you can set up the session in a &quot;middleware&quot;
+in a similar way.</p>
+<p>A &quot;middleware&quot; is basically a function that is always executed for
+each request, with some code executed before, and some code executed
+after the endpoint function.</p>
+<h2 id="create-a-middleware">Create a middleware</h2>
+<p>The middleware we'll add (just a function) will create a new SQLAlchemy
+SessionLocal for each request, add it to the request and then close it
+once the request is finished.</p>
+<pre><code>from fastapi import Depends, FastAPI, HTTPException, Request, Response
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+@app.middleware(&quot;http&quot;)
+async def db_session_middleware(request: Request, call_next):
+    response = Response(&quot;Internal server error&quot;, status_code=500)
+    try:
+        request.state.db = SessionLocal()
+        response = await call_next(request)
+    finally:
+        request.state.db.close()
+    return response
+
+
+# Dependency
+def get_db(request: Request):
+    return request.state.db
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=list[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=list[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+
+from typing import List
+
+from fastapi import Depends, FastAPI, HTTPException, Request, Response
+from sqlalchemy.orm import Session
+
+from . import crud, models, schemas
+from .database import SessionLocal, engine
+
+models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI()
+
+
+@app.middleware(&quot;http&quot;)
+async def db_session_middleware(request: Request, call_next):
+    response = Response(&quot;Internal server error&quot;, status_code=500)
+    try:
+        request.state.db = SessionLocal()
+        response = await call_next(request)
+    finally:
+        request.state.db.close()
+    return response
+
+
+# Dependency
+def get_db(request: Request):
+    return request.state.db
+
+
+@app.post(&quot;/users/&quot;, response_model=schemas.User)
+def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
+    db_user = crud.get_user_by_email(db, email=user.email)
+    if db_user:
+        raise HTTPException(status_code=400, detail=&quot;Email already registered&quot;)
+    return crud.create_user(db=db, user=user)
+
+
+@app.get(&quot;/users/&quot;, response_model=List[schemas.User])
+def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    users = crud.get_users(db, skip=skip, limit=limit)
+    return users
+
+
+@app.get(&quot;/users/{user_id}&quot;, response_model=schemas.User)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    db_user = crud.get_user(db, user_id=user_id)
+    if db_user is None:
+        raise HTTPException(status_code=404, detail=&quot;User not found&quot;)
+    return db_user
+
+
+@app.post(&quot;/users/{user_id}/items/&quot;, response_model=schemas.Item)
+def create_item_for_user(
+    user_id: int, item: schemas.ItemCreate, db: Session = Depends(get_db)
+):
+    return crud.create_user_item(db=db, item=item, user_id=user_id)
+
+
+@app.get(&quot;/items/&quot;, response_model=List[schemas.Item])
+def read_items(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    items = crud.get_items(db, skip=skip, limit=limit)
+    return items
+</code></pre>
+<p>Info</p>
+<p>We put the creation of the SessionLocal() and handling of the requests
+in a try block.</p>
+<p>And then we close it in the finally block.</p>
+<p>This way we make sure the database session is always closed after the
+request. Even if there was an exception while processing the request.</p>
+<h2 id="about-requeststate">About request.state</h2>
+<p>request.state is a property of each Request object. It is there to store
+arbitrary objects attached to the request itself, like the database
+session in this case. You can read more about it in Starlette's docs
+about Request state.</p>
+<p>For us in this case, it helps us ensure a single database session is
+used through all the request, and then closed afterwards (in the
+middleware).</p>
+<h2 id="dependencies-with-yield-or-middleware">Dependencies with yield or middleware</h2>
+<p>Adding a middleware here is similar to what a dependency with yield
+does, with some differences:</p>
+<p>It requires more code and is a bit more complex.</p>
+<p>The middleware has to be an async function. If there is code in it that
+has to &quot;wait&quot; for the network, it could &quot;block&quot; your application
+there and degrade performance a bit. Although it's probably not very
+problematic here with the way SQLAlchemy works. But if you added more
+code to the middleware that had a lot of I/O waiting, it could then be
+problematic.</p>
+<p>If there is code in it that has to &quot;wait&quot; for the network, it could
+&quot;block&quot; your application there and degrade performance a bit.</p>
+<p>Although it's probably not very problematic here with the way
+SQLAlchemy works.</p>
+<p>But if you added more code to the middleware that had a lot of I/O
+waiting, it could then be problematic.</p>
+<p>A middleware is run for every request. So, a connection will be created
+for every request. Even when the path operation that handles that
+request didn't need the DB.</p>
+<p>So, a connection will be created for every request.</p>
+<p>Even when the path operation that handles that request didn't need the
+DB.</p>
+<p>Tip</p>
+<p>It's probably better to use dependencies with yield when they are
+enough for the use case.</p>
+<p>Info</p>
+<p>Dependencies with yield were added recently to FastAPI.</p>
+<p>A previous version of this tutorial only had the examples with a
+middleware and there are probably several applications using the
+middleware for database session management.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/fastapi/cors-cross-origin-resource-sharing-/" title="CORS (Cross-Origin Resource Sharing) " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/fastapi/bigger-applications-multiple-files/" title="Bigger Applications - Multiple Files " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

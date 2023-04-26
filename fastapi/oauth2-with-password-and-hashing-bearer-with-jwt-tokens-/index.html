@@ -1,0 +1,11649 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: OAuth2 with Password (and hashing), Bearer with JWT tokens </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="OAuth2 with Password (and hashing), Bearer with JWT tokens " />
+<meta property="og:description" content="OAuth2 with Password (and hashing), Bearer with JWT tokens Now that we have all the security flow, let&#39;s make the application actually secure, using JWT tokens and secure password hashing.
+This code is something you can actually use in your application, save the password hashes in your database, etc.
+We are going to start from where we left in the previous chapter and increment it.
+About JWT JWT means &quot;JSON Web Tokens&quot;." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/fastapi/oauth2-with-password-and-hashing-bearer-with-jwt-tokens-/" /><meta property="article:section" content="fastapi" />
+
+
+
+
+    
+    
+	<meta name="description" content="OAuth2 with Password (and hashing), Bearer with JWT tokens " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/fastapi/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/fastapi/tutorial-user-guide-intro/"><div class="panelist" >Tutorial - User Guide - Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/first-steps/"><div class="panelist" >First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters/"><div class="panelist" >Path Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters/"><div class="panelist" >Query Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-body/"><div class="panelist" >Request Body </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations-/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters-and-numeric-validations-/"><div class="panelist" >Path Parameters and Numeric Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-multiple-parameters/"><div class="panelist" >Body - Multiple Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-fields/"><div class="panelist" >Body - Fields </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-nested-models/"><div class="panelist" >Body - Nested Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data-/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-data-types/"><div class="panelist" >Extra Data Types </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cookie-parameters/"><div class="panelist" >Cookie Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/header-parameters/"><div class="panelist" >Header Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-model-return-type/"><div class="panelist" >Response Model - Return Type </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-models/"><div class="panelist" >Extra Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-status-code/"><div class="panelist" >Response Status Code </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/form-data/"><div class="panelist" >Form Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-files/"><div class="panelist" >Request Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-forms-and-files/"><div class="panelist" >Request Forms and Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/handling-errors/"><div class="panelist" >Handling Errors </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-operation-configuration-/"><div class="panelist" >Path Operation Configuration </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/json-compatible-encoder/"><div class="panelist" >JSON Compatible Encoder </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-updates/"><div class="panelist" >Body - Updates </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-first-steps/"><div class="panelist" >Dependencies - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/classes-as-dependencies/"><div class="panelist" >Classes as Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sub-dependencies/"><div class="panelist" >Sub-dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-in-path-operation-decorators-/"><div class="panelist" >Dependencies in path operation decorators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/global-dependencies/"><div class="panelist" >Global Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-with-yield/"><div class="panelist" >Dependencies with yield </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-intro/"><div class="panelist" >Security Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-first-steps/"><div class="panelist" >Security - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/get-current-user/"><div class="panelist" >Get Current User </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/simple-oauth2-with-password-and-bearer-/"><div class="panelist" >Simple OAuth2 with Password and Bearer </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/oauth2-with-password-and-hashing-bearer-with-jwt-tokens-/"><div class="panelist" id="activetab">OAuth2 with Password (and hashing), Bearer with JWT tokens </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/middleware/"><div class="panelist" >Middleware </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cors-cross-origin-resource-sharing-/"><div class="panelist" >CORS (Cross-Origin Resource Sharing) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sql-relational-databases-/"><div class="panelist" >SQL (Relational) Databases </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/bigger-applications-multiple-files/"><div class="panelist" >Bigger Applications - Multiple Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/background-tasks/"><div class="panelist" >Background Tasks </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/metadata-and-docs-urls/"><div class="panelist" >Metadata and Docs URLs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/static-files/"><div class="panelist" >Static Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/testing/"><div class="panelist" >Testing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/debugging/"><div class="panelist" >Debugging </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="oauth2-with-password-and-hashing-bearer-with-jwt-tokens">OAuth2 with Password (and hashing), Bearer with JWT tokens</h2>
+<p>Now that we have all the security flow, let's make the application
+actually secure, using JWT tokens and secure password hashing.</p>
+<p>This code is something you can actually use in your application, save
+the password hashes in your database, etc.</p>
+<p>We are going to start from where we left in the previous chapter and
+increment it.</p>
+<h2 id="about-jwt">About JWT</h2>
+<p>JWT means &quot;JSON Web Tokens&quot;.</p>
+<p>It's a standard to codify a JSON object in a long dense string without
+spaces. It looks like this:</p>
+<pre><code>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+</code></pre>
+<p>It is not encrypted, so, anyone could recover the information from the
+contents.</p>
+<p>But it's signed. So, when you receive a token that you emitted, you can
+verify that you actually emitted it.</p>
+<p>That way, you can create a token with an expiration of, let's say, 1
+week. And then when the user comes back the next day with the token, you
+know that user is still logged in to your system.</p>
+<p>After a week, the token will be expired and the user will not be
+authorized and will have to sign in again to get a new token. And if the
+user (or a third party) tried to modify the token to change the
+expiration, you would be able to discover it, because the signatures
+would not match.</p>
+<p>If you want to play with JWT tokens and see how they work, check
+<a href="https://jwt.io">https://jwt.io</a>.</p>
+<h2 id="install-python-jose">Install python-jose</h2>
+<p>We need to install python-jose to generate and verify the JWT tokens in
+Python:</p>
+<pre><code>$ pip install &quot;python-jose[cryptography]&quot;
+
+---&gt; 100%
+</code></pre>
+<p>Python-jose requires a cryptographic backend as an extra.</p>
+<p>Here we are using the recommended one: pyca/cryptography.</p>
+<p>Tip</p>
+<p>This tutorial previously used PyJWT.</p>
+<p>But it was updated to use Python-jose instead as it provides all the
+features from PyJWT plus some extras that you might need later when
+building integrations with other tools.</p>
+<h2 id="password-hashing">Password hashing</h2>
+<p>&quot;Hashing&quot; means converting some content (a password in this case) into
+a sequence of bytes (just a string) that looks like gibberish.</p>
+<p>Whenever you pass exactly the same content (exactly the same password)
+you get exactly the same gibberish.</p>
+<p>But you cannot convert from the gibberish back to the password.</p>
+<h2 id="why-use-password-hashing">Why use password hashing</h2>
+<p>If your database is stolen, the thief won't have your users' plaintext
+passwords, only the hashes.</p>
+<p>So, the thief won't be able to try to use that password in another
+system (as many users use the same password everywhere, this would be
+dangerous).</p>
+<h2 id="install-passlib">Install passlib</h2>
+<p>PassLib is a great Python package to handle password hashes.</p>
+<p>It supports many secure hashing algorithms and utilities to work with
+them.</p>
+<p>The recommended algorithm is &quot;Bcrypt&quot;.</p>
+<p>So, install PassLib with Bcrypt:</p>
+<pre><code>$ pip install &quot;passlib[bcrypt]&quot;
+
+---&gt; 100%
+</code></pre>
+<p>Tip</p>
+<p>With passlib, you could even configure it to be able to read passwords
+created by Django, a Flask security plug-in or many others.</p>
+<p>So, you would be able to, for example, share the same data from a Django
+application in a database with a FastAPI application. Or gradually
+migrate a Django application using the same database.</p>
+<p>And your users would be able to login from your Django app or from your
+FastAPI app, at the same time.</p>
+<h2 id="hash-and-verify-the-passwords">Hash and verify the passwords</h2>
+<p>Import the tools we need from passlib.</p>
+<p>Create a PassLib &quot;context&quot;. This is what will be used to hash and
+verify passwords.</p>
+<p>Tip</p>
+<p>The PassLib context also has functionality to use different hashing
+algorithms, including deprecated old ones only to allow verifying them,
+etc.</p>
+<p>For example, you could use it to read and verify passwords generated by
+another system (like Django) but hash any new passwords with a different
+algorithm like Bcrypt.</p>
+<p>And be compatible with all of them at the same time.</p>
+<p>Create a utility function to hash a password coming from the user.</p>
+<p>And another utility to verify if a received password matches the hash
+stored.</p>
+<p>And another one to authenticate and return a user.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Annotated
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Annotated, Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+from typing_extensions import Annotated
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Note</p>
+<p>If you check the new (fake) database fake_users_db, you will see how
+the hashed password looks like now:
+&quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;.</p>
+<h2 id="handle-jwt-tokens">Handle JWT tokens</h2>
+<p>Import the modules installed.</p>
+<p>Create a random secret key that will be used to sign the JWT tokens.</p>
+<p>To generate a secure random secret key use the command:</p>
+<pre><code>$ openssl rand -hex 32
+
+09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7
+</code></pre>
+<p>And copy the output to the variable SECRET_KEY (don't use the one in
+the example).</p>
+<p>Create a variable ALGORITHM with the algorithm used to sign the JWT
+token and set it to &quot;HS256&quot;.</p>
+<p>Create a variable for the expiration of the token.</p>
+<p>Define a Pydantic Model that will be used in the token endpoint for the
+response.</p>
+<p>Create a utility function to generate a new access token.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Annotated
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Annotated, Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+from typing_extensions import Annotated
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<h2 id="update-the-dependencies">Update the dependencies</h2>
+<p>Update get_current_user to receive the same token as before, but this
+time, using JWT tokens.</p>
+<p>Decode the received token, verify it, and return the current user.</p>
+<p>If the token is invalid, return an HTTP error right away.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Annotated
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Annotated, Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+from typing_extensions import Annotated
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<h2 id="update-the-token-path-operation">Update the /token path operation</h2>
+<p>Create a timedelta with the expiration time of the token.</p>
+<p>Create a real JWT access token and return it</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Annotated
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Annotated, Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+
+from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+from typing_extensions import Annotated
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: Annotated[str, Depends(oauth2_scheme)]):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(get_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(
+    form_data: Annotated[OAuth2PasswordRequestForm, Depends()]
+):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: timedelta | None = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from datetime import datetime, timedelta
+from typing import Union
+
+from fastapi import Depends, FastAPI, HTTPException, status
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from jose import JWTError, jwt
+from passlib.context import CryptContext
+from pydantic import BaseModel
+
+# to get a string like this run:
+# openssl rand -hex 32
+SECRET_KEY = &quot;09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7&quot;
+ALGORITHM = &quot;HS256&quot;
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+fake_users_db = {
+    &quot;johndoe&quot;: {
+        &quot;username&quot;: &quot;johndoe&quot;,
+        &quot;full_name&quot;: &quot;John Doe&quot;,
+        &quot;email&quot;: &quot;johndoe@example.com&quot;,
+        &quot;hashed_password&quot;: &quot;$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW&quot;,
+        &quot;disabled&quot;: False,
+    }
+}
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+
+class TokenData(BaseModel):
+    username: Union[str, None] = None
+
+
+class User(BaseModel):
+    username: str
+    email: Union[str, None] = None
+    full_name: Union[str, None] = None
+    disabled: Union[bool, None] = None
+
+
+class UserInDB(User):
+    hashed_password: str
+
+
+pwd_context = CryptContext(schemes=[&quot;bcrypt&quot;], deprecated=&quot;auto&quot;)
+
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl=&quot;token&quot;)
+
+app = FastAPI()
+
+
+def verify_password(plain_password, hashed_password):
+    return pwd_context.verify(plain_password, hashed_password)
+
+
+def get_password_hash(password):
+    return pwd_context.hash(password)
+
+
+def get_user(db, username: str):
+    if username in db:
+        user_dict = db[username]
+        return UserInDB(**user_dict)
+
+
+def authenticate_user(fake_db, username: str, password: str):
+    user = get_user(fake_db, username)
+    if not user:
+        return False
+    if not verify_password(password, user.hashed_password):
+        return False
+    return user
+
+
+def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None):
+    to_encode = data.copy()
+    if expires_delta:
+        expire = datetime.utcnow() + expires_delta
+    else:
+        expire = datetime.utcnow() + timedelta(minutes=15)
+    to_encode.update({&quot;exp&quot;: expire})
+    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    return encoded_jwt
+
+
+async def get_current_user(token: str = Depends(oauth2_scheme)):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail=&quot;Could not validate credentials&quot;,
+        headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        username: str = payload.get(&quot;sub&quot;)
+        if username is None:
+            raise credentials_exception
+        token_data = TokenData(username=username)
+    except JWTError:
+        raise credentials_exception
+    user = get_user(fake_users_db, username=token_data.username)
+    if user is None:
+        raise credentials_exception
+    return user
+
+
+async def get_current_active_user(current_user: User = Depends(get_current_user)):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail=&quot;Inactive user&quot;)
+    return current_user
+
+
+@app.post(&quot;/token&quot;, response_model=Token)
+async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+    user = authenticate_user(fake_users_db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=&quot;Incorrect username or password&quot;,
+            headers={&quot;WWW-Authenticate&quot;: &quot;Bearer&quot;},
+        )
+    access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+    access_token = create_access_token(
+        data={&quot;sub&quot;: user.username}, expires_delta=access_token_expires
+    )
+    return {&quot;access_token&quot;: access_token, &quot;token_type&quot;: &quot;bearer&quot;}
+
+
+@app.get(&quot;/users/me/&quot;, response_model=User)
+async def read_users_me(current_user: User = Depends(get_current_active_user)):
+    return current_user
+
+
+@app.get(&quot;/users/me/items/&quot;)
+async def read_own_items(current_user: User = Depends(get_current_active_user)):
+    return [{&quot;item_id&quot;: &quot;Foo&quot;, &quot;owner&quot;: current_user.username}]
+</code></pre>
+<h2 id="technical-details-about-the-jwt-subject-sub">Technical details about the JWT &quot;subject&quot; sub</h2>
+<p>The JWT specification says that there's a key sub, with the subject of
+the token.</p>
+<p>It's optional to use it, but that's where you would put the user's
+identification, so we are using it here.</p>
+<p>JWT might be used for other things apart from identifying a user and
+allowing them to perform operations directly on your API.</p>
+<p>For example, you could identify a &quot;car&quot; or a &quot;blog post&quot;.</p>
+<p>Then you could add permissions about that entity, like &quot;drive&quot; (for
+the car) or &quot;edit&quot; (for the blog).</p>
+<p>And then, you could give that JWT token to a user (or bot), and they
+could use it to perform those actions (drive the car, or edit the blog
+post) without even needing to have an account, just with the JWT token
+your API generated for that.</p>
+<p>Using these ideas, JWT can be used for way more sophisticated scenarios.</p>
+<p>In those cases, several of those entities could have the same ID, let's
+say foo (a user foo, a car foo, and a blog post foo).</p>
+<p>So, to avoid ID collisions, when creating the JWT token for the user,
+you could prefix the value of the sub key, e.g. with username:. So, in
+this example, the value of sub could have been: username:johndoe.</p>
+<p>The important thing to have in mind is that the sub key should have a
+unique identifier across the entire application, and it should be a
+string.</p>
+<h2 id="check-it">Check it</h2>
+<p>Run the server and go to the docs: http://127.0.0.1:8000/docs.</p>
+<p>You'll see the user interface like:</p>
+<p><img src="/img/tutorial/security/image07.png" alt=""></p>
+<p>Authorize the application the same way as before.</p>
+<p>Using the credentials:</p>
+<p>Username: johndoe Password: secret</p>
+<p>Check</p>
+<p>Notice that nowhere in the code is the plaintext password &quot;secret&quot;, we
+only have the hashed version.</p>
+<p><img src="/img/tutorial/security/image08.png" alt=""></p>
+<p>Call the endpoint /users/me/, you will get the response as:</p>
+<pre><code>{
+  &quot;username&quot;: &quot;johndoe&quot;,
+  &quot;email&quot;: &quot;johndoe@example.com&quot;,
+  &quot;full_name&quot;: &quot;John Doe&quot;,
+  &quot;disabled&quot;: false
+}
+</code></pre>
+<p><img src="/img/tutorial/security/image09.png" alt=""></p>
+<p>If you open the developer tools, you could see how the data sent only
+includes the token, the password is only sent in the first request to
+authenticate the user and get that access token, but not afterwards:</p>
+<p><img src="/img/tutorial/security/image10.png" alt=""></p>
+<p>Note</p>
+<p>Notice the header Authorization, with a value that starts with Bearer.</p>
+<h2 id="advanced-usage-with-scopes">Advanced usage with scopes</h2>
+<p>OAuth2 has the notion of &quot;scopes&quot;.</p>
+<p>You can use them to add a specific set of permissions to a JWT token.</p>
+<p>Then you can give this token to a user directly or a third party, to
+interact with your API with a set of restrictions.</p>
+<p>You can learn how to use them and how they are integrated into FastAPI
+later in the Advanced User Guide.</p>
+<h2 id="recap">Recap</h2>
+<p>With what you have seen up to now, you can set up a secure FastAPI
+application using standards like OAuth2 and JWT.</p>
+<p>In almost any framework handling the security becomes a rather complex
+subject quite quickly.</p>
+<p>Many packages that simplify it a lot have to make many compromises with
+the data model, database, and available features. And some of these
+packages that simplify things too much actually have security flaws
+underneath.</p>
+<p>FastAPI doesn't make any compromise with any database, data model or
+tool.</p>
+<p>It gives you all the flexibility to choose the ones that fit your
+project the best.</p>
+<p>And you can use directly many well maintained and widely used packages
+like passlib and python-jose, because FastAPI doesn't require any
+complex mechanisms to integrate external packages.</p>
+<p>But it provides you the tools to simplify the process as much as
+possible without compromising flexibility, robustness, or security.</p>
+<p>And you can use and implement secure, standard protocols, like OAuth2 in
+a relatively simple way.</p>
+<p>You can learn more in the Advanced User Guide about how to use OAuth2
+&quot;scopes&quot;, for a more fine-grained permission system, following these
+same standards. OAuth2 with scopes is the mechanism used by many big
+authentication providers, like Facebook, Google, GitHub, Microsoft,
+Twitter, etc. to authorize third party applications to interact with
+their APIs on behalf of their users.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/fastapi/simple-oauth2-with-password-and-bearer-/" title="Simple OAuth2 with Password and Bearer " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/fastapi/middleware/" title="Middleware " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

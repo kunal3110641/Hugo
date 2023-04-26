@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on SATHEE</title>
+    <link>/postgresql/</link>
+    <description>Recent content in PostgreSQL on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/postgresql/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>PostgreSQL Tutorial </title>
+      <link>/postgresql/postgresql-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql-tutorial-/</guid>
+      <description>PostgreSQL Tutorial PostgreSQL is one of the most advanced general-purpose object-relational database management systems, and it is open-source. Being open-source software, its source code is available under PostgreSQL license, a liberal open source license. Anyone with the right skills is free to use, modify, and distribute PostgreSQL in any form.
+Contemporary relational databases like MySQL, MariaDB, Apache Hive, etc all operate on the similar principle of establishing relationships among data, but PostgreSQL has additional features like table inheritance and function overloading as PostgreSQL supports the concept of Data objects.</description>
+    </item>
+    
+    <item>
+      <title>What is PostgreSQL -- Introduction </title>
+      <link>/postgresql/what-is-postgresql--introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/what-is-postgresql--introduction-/</guid>
+      <description>What is PostgreSQL &amp;ndash; Introduction This is an introductory article for the PostgreSQL database management system. In this we will look into the features of PostgreSQL and why it stands out among other relational database management systems.
+Brief History of PostgreSQL: PostgreSQL also known as Postgres, was developed by Michael Stonebraker of the University of California, Berkley. It started as the Ingres Project and later evolved into Postgresql as we know today.</description>
+    </item>
+    
+    <item>
+      <title>Install PostgreSQL on Windows </title>
+      <link>/postgresql/install-postgresql-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/install-postgresql-on-windows-/</guid>
+      <description>Install PostgreSQL on Windows This is a step-by-step guide to install PostgreSQL on a windows machine. Since PostgreSQL version 8.0, a window installer is available to make the installation process fairly easier. We will be installing PostgreSQL version 11.3 on Windows 10 in this article. There are three crucial steps for the installation of PostgreSQL as follows: Download PostgreSQL installer for Windows Install PostgreSQL Verify the installation Downloading PostgreSQL Installer for Windows You can download the latest stable PostgreSQL Installer specific to your Windows by clicking here Installing the PostgreSQL installer After downloading the installer double click on it and follow the below steps: Step 1: Click the Next button Step 2: Choose the installation folder, where you want PostgreSQL to be installed, and click on Next.</description>
+    </item>
+    
+    <item>
+      <title>Install PostgreSQL on Mac </title>
+      <link>/postgresql/install-postgresql-on-mac-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/install-postgresql-on-mac-/</guid>
+      <description>Install PostgreSQL on Mac This is a step-by-step guide to install PostgreSQL on a Mac OS machine. We will be installing PostgreSQL version 11.3 on Mac using the installer provided by EnterpriseDB in this article. There are three crucial steps for the installation of PostgreSQL as follows: Download PostgreSQL EnterpriseDB installer for Mac
+Install PostgreSQL
+Verify the installation
+Downloading PostgreSQL Installer for Mac You can download the latest stable PostgreSQL Installer specific to your Mac OS by clicking here.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Create Database </title>
+      <link>/postgresql/postgresql--create-database-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-database-/</guid>
+      <description>PostgreSQL &amp;ndash; Create Database PostgreSQL has multiple ways to create a database. In this article we will discuss multiple ways to do so.
+1. Using psql Shell:
+To create a database through the psql shell we make the use of the CREATE DATABASE statement as below:
+CREATE DATABASE db_name OWNER = role_name TEMPLATE = template ENCODING = encoding LC_COLLATE = collate LC_CTYPE = ctype TABLESPACE = tablespace_name CONNECTION LIMIT = max_concurrent_connection The various options provided by the CREATE DATABASE statement are explained below:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Loading a Database </title>
+      <link>/postgresql/postgresql--loading-a-database-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--loading-a-database-/</guid>
+      <description>PostgreSQL &amp;ndash; Loading a Database In this article we will look into the process of loading a PostgreSQL database into the PostgreSQL database server. Before moving forward we just need to make sure of two things: PostgreSQL database server is installed on your system. A sample database. For the purpose of this article, we will be using a sample database which is DVD rental database. You can download the sample dvdrental database from here.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ALTER DATABASE </title>
+      <link>/postgresql/postgresql--alter-database-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--alter-database-/</guid>
+      <description>PostgreSQL &amp;ndash; ALTER DATABASE PostgreSQL has an ALTER DATABASE statement that is used for modifying an existing database. The features of a database, once created can be changed using the ALTER DATABASE statement. Syntax: ALTER DATABASE target_database action; As the above syntax depicts, the database where modifications are to be done are mentioned after the ALTER DATABASE statement followed by the action that is to be performed on the database. Below is the list of actions that PostgreSQL allows: Rename a database: The ALTER DATABASE RENAME TO statement is used to rename a database as follows: ALTER DATABASE target_database RENAME TO new_database; Change owner of the database: The ALTER DATABASE OWNER TO statement is used to change the owner of a database as follows: ALTER DATABASE target_database OWNER TO new_owner; It is important to note that only the superuser or the owner of the database can perform this action.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Rename Database </title>
+      <link>/postgresql/postgresql--rename-database-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--rename-database-/</guid>
+      <description>PostgreSQL &amp;ndash; Rename Database In PostgreSQL, the ALTER DATABASE RENAME TO statement is used to rename a database. The below steps need to be followed while renaming a database: Disconnect from the database that you want to rename by connecting to a different database.
+Terminate all connections, connected to the database to be renamed.
+Now you can use the ALTER DATABASE statement to rename the database. Now let&amp;rsquo;s look into the below example to see how to rename a database in PostgreSQL.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Show Databases </title>
+      <link>/postgresql/postgresql--show-databases-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--show-databases-/</guid>
+      <description>PostgreSQL &amp;ndash; Show Databases In PostgreSQL, there are couple of ways to list all the databases present on the server. In this article, we will explore them.
+Using the pSQL command: To list all the database present in the current database server use one of the following commands:
+Syntax: \l or \l+ Example:
+First log into the PostgreSQL server using the pSQL shell:
+Now use the below command to list all databases using a superuser such as postgres:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Data Types </title>
+      <link>/postgresql/postgresql--data-types-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--data-types-/</guid>
+      <description>PostgreSQL &amp;ndash; Data Types In this article, we will look into the various data types available in PostgreSQL. The following data types are supported by PostgreSQL: Boolean
+Character Types [ such as char, varchar, and text]
+Numeric Types [ such as integer and floating-point number]
+Temporal Types [ such as date, time, timestamp, and interval]
+UUID [ for storing UUID (Universally Unique Identifiers) ]
+Array [ for storing array strings, numbers, etc.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Boolean Data Type </title>
+      <link>/postgresql/postgresql--boolean-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--boolean-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; Boolean Data Type In this article, we will look into the PostgreSQL Boolean data type and it&amp;rsquo;s implementation while designing a database table. PostgreSQL boolean data type has 3 states namely TRUE&amp;lt; FALSE and NULL. It uses single byte for storing boolean value and can be abbreviated as BOOL.The below table depicts all valid literal values for TRUE and FALSE in PostgreSQL:
+Now, let&amp;rsquo;s look into a few examples.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CHAR Data Type </title>
+      <link>/postgresql/postgresql--char-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--char-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; CHAR Data Type PostgreSQL supports a character data type called CHAR. This data type is used to store character of limited length. It is represented as char(n) in PostgreSQL, where n represents the limit of the length of the characters. If n is not specified it defaults to char(1) or character(1). Any attempt to store a longer string in the column that defined with char(n) results in PostgreSQL issuing an error.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- VARCHAR Data Type </title>
+      <link>/postgresql/postgresql--varchar-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--varchar-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; VARCHAR Data Type PostgreSQL supports a character data type called VARCHAR. This data type is used to store characters of limited length. It is represented as varchar(n) in PostgreSQL, where n represents the limit of the length of the characters. If n is not specified it defaults to varchar which has unlimited length. Any attempt to store a longer string in the column that defined with varchar(n) results in PostgreSQL issuing an error.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- NUMERIC Data Type </title>
+      <link>/postgresql/postgresql--numeric-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--numeric-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; NUMERIC Data Type PostgreSQL supports the NUMERIC type for storing numbers with a very large number of digits. Generally NUMERIC type are used for the monetary or amounts storage where precision is required.
+Syntax: NUMERIC(precision, scale) Where, Precision: Total number of digits. Scale: Number of digits in terms of a fraction. The NUMERIC value can have up to 131, 072 digits before the decimal point of 16, 383 digits after the decimal point.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Date Data Type </title>
+      <link>/postgresql/postgresql--date-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--date-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; Date Data Type PostgreSQL supports a DATE data type to store date values. It takes 4 bytes of storage and ranges from 4713 BC to 5874897 AD. PostgreSQL uses the yyyy-mm-dd format for storing and inserting date values. If you create a table that has a DATE column and you want to use the current date as the default value for the column, you can use the CURRENT_DATE after the DEFAULT keyword.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- TIME Data Type </title>
+      <link>/postgresql/postgresql--time-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--time-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; TIME Data Type PostgreSQL provides user with TIME data type that is used to handle time values. It requires 8 bytes of storage and can have precision up to 6 digits. It can range from 00:00:00 to 24:00:00.
+Syntax: column_name TIME(precision); The common TIME formats are illustrated below:
+HH:MM HH:MM:SS HHMMSS If precision is required the following format needs to be followed:
+MM:SS.pppppp HH:MM:SS.pppppp HHMMSS.pppppp For instance below are sample TIME value formats:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- JSON Data Type </title>
+      <link>/postgresql/postgresql--json-data-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--json-data-type-/</guid>
+      <description>PostgreSQL &amp;ndash; JSON Data Type JSON stands for JavaScript Object Notation. It is used to store data in the form of key-value pairs and is generally used for communicating between the server and the client. Contrary to other formats, JSON is human-readable text.PostgreSQL has support for native JSON data type since version 9.2. It offers numerous functions and operators for handling JSON data.
+Syntax: variable_name json; Now let&amp;rsquo;s look into a few examples for demonstration.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE DOMAIN </title>
+      <link>/postgresql/postgresql--create-domain-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-domain-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE DOMAIN PostgreSQL supports the creation of user-defined data types using the following statements: CREATE DOMAIN:It creates a user-defined data type that can have optional constraints. CREATE TYPE:It is often applied to create a composite type (data type that are mixes of two or more data types) using stored procedures. CREATE DOMAIN: In PostgreSQL, a domain is a data type that has optional constraints. It is a must to have a unique name and a well-defined schema range.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- SELECT </title>
+      <link>/postgresql/postgresql--select-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--select-/</guid>
+      <description>PostgreSQL &amp;ndash; SELECT In this article we will be looking into the basic use of PostgreSQL SELECT statement to query data from the database table. For the sake of this article we will be using the sample DVD rental database, which is explained here and can be downloaded by clicking on this link.
+The SELECT statement is as complex and flexible as it can get for a query statement. It can be used with various clauses which increases it&amp;rsquo;s flexibility and use cases to query data from a table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ORDER BY clause </title>
+      <link>/postgresql/postgresql--order-by-clause-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--order-by-clause-/</guid>
+      <description>PostgreSQL &amp;ndash; ORDER BY clause The PostgreSQL ORDER BY clause is used to sort the result query set returned by the SELECT statement. As the query set returned by the SELECT statement has no specific order, one can use the ORDER BY clause in the SELECT statement to sort the results in the desired manner.
+Syntax:SELECTcolumn_1,column_2FROMtable_nameORDER BYcolumn_1 [ASC | DESC],column_2 [ASC | DESC];
+Let&amp;rsquo;s analyze the above syntax:
+Firstly we specify the column or the expression that we want to be sorted.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- WHERE clause </title>
+      <link>/postgresql/postgresql--where-clause-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--where-clause-/</guid>
+      <description>PostgreSQL &amp;ndash; WHERE clause The PostgreSQL WHERE clause is used to filter results returned by the SELECT statement.
+Syntax: SELECT select_list FROM table_name WHERE condition;
+Let&amp;rsquo;s analyze the above syntax:
+The WHERE clause appears right after the FROM clause of the SELECT statementThe condition evaluates to true, false, or unknown. It can either be a Boolean expression or a combination of Boolean expressions where AND and OR operators are used.The WHERE clause can also be used with the UPDATE and DELETE statement to specify rows to be updated or deleted.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- FETCH clause </title>
+      <link>/postgresql/postgresql--fetch-clause-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--fetch-clause-/</guid>
+      <description>PostgreSQL &amp;ndash; FETCH clause The PostgreSQL FETCH clause has a functionality similar to the PostgreSQL LIMIT clause. It is used to retrieve a portion of rows returned by a query. As the LIMIT clause is not a standard SQL-command, PostgreSQL provides a standard way of fetching a subset of results from a query.
+Syntax:OFFSET start { ROW | ROWS }FETCH { FIRST | NEXT } [ row_count ] { ROW | ROWS } ONLY</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- IN operator </title>
+      <link>/postgresql/postgresql--in-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--in-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; IN operator The PostgreSQL IN operator is used with the WHERE clause to check against a list of values.
+The syntax for using IN operator with the WHERE clause to check against a list of values which returns a boolean value depending upon the match is as below:
+Syntax: value IN (value1, value2, &amp;hellip;)
+The syntax for using IN operator to return the matching values in contrast with the SELECT statement is as below:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- HAVING clause </title>
+      <link>/postgresql/postgresql--having-clause-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--having-clause-/</guid>
+      <description>PostgreSQL &amp;ndash; HAVING clause PostgreSQL has a HAVING clause that is used to eliminate groups of rows that do not meet specific criteria or conditions. Ii generally used in conjunction with the GROUP BY clause to filter group rows that do not satisfy a specified condition.
+Syntax: SELECT column_1, aggregate_function (column_2) FROM tbl_name GROUP BY column_1 HAVING condition; Now let&amp;rsquo;s analyze the above syntax:
+In the above syntax the aggregate_function represents functions like SUM(), COUNT() etc.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- GROUP BY clause </title>
+      <link>/postgresql/postgresql--group-by-clause-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--group-by-clause-/</guid>
+      <description>PostgreSQL &amp;ndash; GROUP BY clause The PostgreSQL GROUP BY clause is used to divide rows returned by SELECT statement into different groups. The speciality of GROUP BY clause is that one can use Functions like SUM() to calculate the sum of items or COUNT() to get the total number of items in the groups.
+Syntax: SELECT column_1, column_2, computing_function(column_3) FROM table_name GROUP BY column_1, column_2; It is important to note that The GROUP BY clause must exactly appear after the FROM or WHERE clause.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- LIKE operator </title>
+      <link>/postgresql/postgresql--like-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--like-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; LIKE operator The PostgreSQL LIKE operator is used query data using pattern matching techniques. Its result include strings that are case-sensitive and follow the mentioned pattern.It is important to know that PostgreSQL provides with 2 special wildcard characters for the purpose of patterns matching as below:
+Percent ( %) for matching any sequence of characters.Underscore ( _) for matching any single character.
+Underscore ( _) for matching any single character.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- BETWEEN operator </title>
+      <link>/postgresql/postgresql--between-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--between-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; BETWEEN operator PostgreSQL BETWEEN operator is used to match a value against a range of values.
+Syntax: value BETWEEN low AND high; Or, Syntax: value &amp;gt;= low and value; The BETWEEN operator is used generally with WHERE clause with association with SELECT, INSERT, UPDATE or DELETE statement.For the sake of this article we will be using the sample DVD rental database, which is explained here and can be downloaded by clicking on this link in our examples.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE TABLE </title>
+      <link>/postgresql/postgresql--create-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-table-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE TABLE In PostgreSQL, the CREATE TABLE clause as the name suggests is used to create new tables.
+Syntax: CREATE TABLE table_name ( column_name TYPE column_constraint, table_constraint table_constraint ) INHERITS existing_table_name; Let&amp;rsquo;s analyze the syntax above:
+First, you define the name of the new table after the CREATE TABLE clause. The TEMPORARY keyword is for creating a temporary table.Next, one has to list the column name, its data type, and column constraint.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- SELECT INTO </title>
+      <link>/postgresql/postgresql--select-into-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--select-into-/</guid>
+      <description>PostgreSQL &amp;ndash; SELECT INTO In PostgreSQL, the SELECT INTO statement allows users to create a new table and inserts data returned by a query. The new table columns have names and data types linked with the output columns of the SELECT clause. Unlike the SELECT statement, the SELECT INTO statement does not return data to the client.
+Syntax: SELECT column_list INTO [ TEMPORARY | TEMP | UNLOGGED ] [ TABLE ] new_table_name FROM table_name WHERE condition; In the process of creating a new table with the structure and data derived from a query result set, one has to specify the new table name in the INTO clause.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE SEQUENCE </title>
+      <link>/postgresql/postgresql--create-sequence-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-sequence-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE SEQUENCE A sequence in PostgreSQL is a user-defined schema-bound object that yields a sequence of integers based on a specified specification. The CREATE SEQUENCE statement is used to create sequences in PostgreSQL.
+Syntax: CREATE SEQUENCE [ IF NOT EXISTS ] sequence_name [ AS { SMALLINT | INT | BIGINT } ] [ INCREMENT [ BY ] increment ] [ MINVALUE minvalue | NO MINVALUE ] [ MAXVALUE maxvalue | NO MAXVALUE ] [ START [ WITH ] start ] [ CACHE cache ] [ [ NO ] CYCLE ] [ OWNED BY { table_name.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ALTER TABLE </title>
+      <link>/postgresql/postgresql--alter-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--alter-table-/</guid>
+      <description>PostgreSQL &amp;ndash; ALTER TABLE In PostgreSQL, the structure of an existing table can be modified using the ALTER TABLE statement.
+Syntax: ALTER TABLE table_name action; PostgreSQL supports the various actions to perform with ALTER TABLE as listed below:
+Add a column to an existing table as below:ALTER TABLE table_name ADD COLUMN new_column_name TYPE;Drop a column from an existing table as below:ALTER TABLE table_name DROP COLUMN column_name;Rename a column from an existing table as below:ALTER TABLE table_name RENAME COLUMN column_name TO new_column_name;Change the default value of a column from an existing table as below:ALTER TABLE table_name ALTER COLUMN column_name [SET DEFAULT value | DROP DEFAULT];Change NOT NULL constraint as below:ALTER TABLE table_name ALTER COLUMN column_name [SET NOT NULL| DROP NOT NULL];Add CHECK constraints to a column as below:ALTER TABLE table_name ADD CHECK expression;Add a constraint as below:ALTER TABLE table_name ADD CONSTRAINT constraint_name constraint_definition;Rename an existing table as below:ALTER TABLE table_name RENAME TO new_table_name;</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ADD COLUMN </title>
+      <link>/postgresql/postgresql--add-column-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--add-column-/</guid>
+      <description>PostgreSQL &amp;ndash; ADD COLUMN PostgreSQL has an ADD COLUMN statement to add one or more columns to an existing database table. To add a new column to an existing table, you use the ALTER TABLE ADD COLUMN statement.
+Syntax: ALTER TABLE table_name ADD COLUMN new_column_name data_type; Let&amp;rsquo;s analyze the above syntax:
+First, specify the table that you want to add a new column in the ALTER TABLE clause.Second, indicate the column name with its attribute such as data type, default value, etc.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DROP COLUMN </title>
+      <link>/postgresql/postgresql--drop-column-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-column-/</guid>
+      <description>PostgreSQL &amp;ndash; DROP COLUMN PostgreSQL also supports the DROP COLUMN clause in the ALTER TABLE statement to remove one or more columns of a table. When you remove a column from a table, PostgreSQL will automatically remove all of its indexes and constraints involving the column.
+Syntax: ALTER TABLE table_name DROP COLUMN column_name; Now let&amp;rsquo;s look into an example.
+Example:First, we create a few tables (say, books, categories, and publishers ) for demonstration having the below depicted relationships:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Rename Table </title>
+      <link>/postgresql/postgresql--rename-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--rename-table-/</guid>
+      <description>PostgreSQL &amp;ndash; Rename Table PostgreSQL has a RENAME clause that is used with the ALTER TABLE statement to rename the name of an existing table.
+Syntax: ALTER TABLE table_name RENAME TO new_table_name; In the above syntax:
+First, specify the name of the table which you want to rename after the ALTER TABLE clause.Second, give the new table name after the RENAME TO clause.
+Second, give the new table name after the RENAME TO clause.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DROP TABLE </title>
+      <link>/postgresql/postgresql--drop-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-table-/</guid>
+      <description>PostgreSQL &amp;ndash; DROP TABLE PostgreSQL has a DROP TABLE statement that is used to remove an existing table or tables from the database.
+Syntax: DROP TABLE [IF EXISTS] table_name [CASCADE | RESTRICT]; Let&amp;rsquo;s analyze the above syntax:
+We specify the table name after the DROP TABLE keyword to remove the table permanently from the database.In case the table that you want to remove is used in views, constraints, or any other objects, the CASCADE allows users to remove those dependent objects together with the table automatically.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- TRUNCATE TABLE </title>
+      <link>/postgresql/postgresql--truncate-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--truncate-table-/</guid>
+      <description>PostgreSQL &amp;ndash; TRUNCATE TABLE PostgreSQL supports the TRUNCATE TABLE statement to remove all data from large tables quickly. To remove all data from a table, you use the DELETE statement. However, for a large table, it is more efficient to use the TRUNCATE TABLE statement. The TRUNCATE TABLE statement removes all rows from a table without scanning it. This is the reason why it is faster than the DELETE statement. In addition, the TRUNCATE TABLE statement reclaims the storage right away so the user does not have to perform a subsequent VACUUM operation, which is useful in case of large tables.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Copy a Table </title>
+      <link>/postgresql/postgresql--copy-a-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--copy-a-table-/</guid>
+      <description>PostgreSQL &amp;ndash; Copy a Table This article will be focusing on copying an existing table to a new table in PostgreSQL. This might come in handy while creating new tables that would either have the same data or data of the same table with certain operations performed on them.
+We will discuss the following 3 cases:
+Copy Table with the same structure and data.
+Copy Table with the same structure and no data.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Comparing Tables </title>
+      <link>/postgresql/postgresql--comparing-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--comparing-tables-/</guid>
+      <description>PostgreSQL &amp;ndash; Comparing Tables In PostgreSQL, there are several ways to compare two tables to find the difference between them. In this article, we will look into the two most commonly used techniques. 1. Comparison using EXCEPT and UNION operators
+First, let&amp;rsquo;s create table two tables named foo and bar, and insert some sample data for the demonstration.
+CREATE TABLE foo ( ID INT PRIMARY KEY, NAME VARCHAR (50) ); INSERT INTO foo (ID, NAME) VALUES (1, &#39;a&#39;), (2, &#39;b&#39;); CREATE TABLE bar ( ID INT PRIMARY KEY, NAME VARCHAR (50) ); INSERT INTO bar (ID, NAME) VALUES (1, &#39;a&#39;), (2, &#39;b&#39;); The foo table has the same structure and data as the bar table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Show Tables </title>
+      <link>/postgresql/postgresql--show-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--show-tables-/</guid>
+      <description>PostgreSQL &amp;ndash; Show Tables PostgreSQL does not support the SHOW TABLES statement directly like MySQL does but provides users with an alternative. In this article, we will explore them in detail.
+Using Psql Shell: One way to list all the tables in a database is to use the below command after logging into the database:
+Syntax: \dt Example:
+In this example, we will query for the list of all tables in the sample database, ie, dvdrental.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- INSERT </title>
+      <link>/postgresql/postgresql--insert-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--insert-/</guid>
+      <description>PostgreSQL &amp;ndash; INSERT In PostgreSQL, the INSERT statement is used to add new rows to a database table. As one creates a new database, it has no data initially. PostgreSQL provides the INSERT statement to insert data into the database.
+Syntax: INSERT INTO table(column1, column2, …) VALUES (value1, value2, …); The below rules must be followed while using the PostgreSQL INSERT statement:
+First thing to do is specify the table name followed by the columns where you want to insert the data or rows.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Insert Multiple Values in Various Rows </title>
+      <link>/postgresql/postgresql--insert-multiple-values-in-various-rows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--insert-multiple-values-in-various-rows-/</guid>
+      <description>PostgreSQL &amp;ndash; Insert Multiple Values in Various Rows PostgreSQL is a type of relational database (RDBMS) similar to MySQL. Relational Database stores data in the form of a table in which each row is a record and each column is one attribute. In this article, we will look into the process of inserting multiple rows in a PostgreSQL database. In general, we use the INSERT statement to insert values in a database.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- UPDATE </title>
+      <link>/postgresql/postgresql--update-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--update-/</guid>
+      <description>PostgreSQL &amp;ndash; UPDATE PostgreSQL has an UPDATE statement that is used to update or modify an existing data in the table.
+Syntax: UPDATE table SET column1 = value1, column2 = value2, ... WHERE condition; Let&amp;rsquo;s analyze the above syntax:
+First step is to specify the table where the changes are supposed to be made.Then we list the columns whose value is to be updated using the SET clause.The final step is to determine which rows you want to update exactly using the WHERE clause.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DELETE </title>
+      <link>/postgresql/postgresql--delete-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--delete-/</guid>
+      <description>PostgreSQL &amp;ndash; DELETE To delete data from a table PostgreSQL has a DELETE statement.
+Syntax: DELETE FROM table WHERE condition; The below rules need to be followed while using the DELETE statement:
+First, specify the table from which you want to delete data in the DELETE FROM clause.Second, specify which rows to delete by using the condition in the WHERE clause. The WHERE clause is optional. However, if you omit it, the DELETE statement will delete all rows in the table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Upsert </title>
+      <link>/postgresql/postgresql--upsert-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--upsert-/</guid>
+      <description>PostgreSQL &amp;ndash; Upsert The UPSERT statement is a DBMS feature that allows a DML statement&amp;rsquo;s author to either insert a row or if the row already exists, UPDATE that existing row instead. That is why the action is known as UPSERT (simply a mix of Update and Insert).To achieve the functionality of UPSERT, PostgreSQL uses the INSERT ON CONFLICT statement.
+Syntax: INSERT INTO table_name(column_list) VALUES(value_list) ON CONFLICT target action; If we analyze the above syntax:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CASE </title>
+      <link>/postgresql/postgresql--case-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--case-/</guid>
+      <description>PostgreSQL &amp;ndash; CASE PostgreSQL has a conditional expression called CASE to form conditional queries. The PostgreSQL CASE expression is the same as IF/ELSE statement in other programming languages. PostgreSQL provides two forms of the CASE expressions.
+Syntax: CASE WHEN condition_1 THEN result_1 WHEN condition_2 THEN result_2 [WHEN ...] [ELSE result_n] END For examples we will be using the sample database (ie, dvdrental).
+Example 1:Here we will work on the film table of the sample database.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- COALESCE </title>
+      <link>/postgresql/postgresql--coalesce-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--coalesce-/</guid>
+      <description>PostgreSQL &amp;ndash; COALESCE In PostgreSQL, the COALESCE function returns the first non-null argument. It is generally used with the SELECT statement to handle null values effectively.
+Syntax: COALESCE (argument_1, argument_2, …); The COALESCE function accepts an unlimited number of arguments. It returns the first argument that is not null. If all arguments are null, the COALESCE function will return null. he COALESCE function evaluates arguments from left to right until it finds the first non-null argument.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- NULLIF() Function </title>
+      <link>/postgresql/postgresql--nullif-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--nullif-function-/</guid>
+      <description>PostgreSQL &amp;ndash; NULLIF() Function PostgreSQL has a NULLIF function to handle null values. The NULLIF function is one of the most common conditional expressions provided by PostgreSQL.
+Syntax:NULLIF(argument_1,argument_2); The NULLIF function returns a null value if argument_1 equals to argument_2, otherwise it returns argument_1.
+Example :
+First, we create a table named posts as follows:
+CREATE TABLE posts ( id serial primary key, title VARCHAR (255) NOT NULL, excerpt VARCHAR (150), body TEXT, created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMP ); Now we insert some sample data to the table as follows:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CAST </title>
+      <link>/postgresql/postgresql--cast-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--cast-/</guid>
+      <description>PostgreSQL &amp;ndash; CAST PostgreSQL supports a CAST operator that is used to convert a value of one type to another.
+Syntax: CAST ( expression AS target_type ); Let&amp;rsquo;s analyze the above syntax:
+First, specify an expression that can be a constant, a table column, an expression that evaluates to a value.
+Then, specify the target data type to which you want to convert the result of the expression.
+Example 1:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- IF Statement </title>
+      <link>/postgresql/postgresql--if-statement-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--if-statement-/</guid>
+      <description>PostgreSQL &amp;ndash; IF Statement PostgreSQL has an IF statement executes `statements` if a condition is true. If the condition evaluates to false, the control is passed to the next statement after the END IF part.
+Syntax: IF condition THEN statements; END IF; The above conditional statement is a boolean expression that evaluates to either true or false.
+Example 1:
+In this example, we declare two variables a and b. In the body of the block, we compare the value of a and b using the comparison operator &amp;gt;, &amp;lt; and = in the boolean expressions of the IF statements.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CASE Statement </title>
+      <link>/postgresql/postgresql--case-statement-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--case-statement-/</guid>
+      <description>PostgreSQL &amp;ndash; CASE Statement PostgreSQL provides you with CASE statements that allow you to execute a block of code conditionally. There are two forms of the CASE statement: Simple CASE statement
+Searched CASE statement
+Simple CASE statement Syntax: CASE search-expression WHEN expression_1 [, expression_2, ...] THEN when-statements [ ... ] [ELSE else-statements ] END CASE; The search-expression is an expression that will evaluate with the expression in each WHEN branch using equality operand (=).</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Loop Statement </title>
+      <link>/postgresql/postgresql--loop-statement-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--loop-statement-/</guid>
+      <description>PostgreSQL &amp;ndash; Loop Statement The loop statement is used to simply define an unconditional loop that executes statements of code repeatedly until it is terminated after encountering a return or exit statement.
+Syntax:
+&amp;lt;&amp;gt; loop statements/body; end loop; In the above syntax, we must ideally do the following :
+Condition for termination: We should try to define a condition in the body of the loop until which our loop runs. As soon as this condition fails, the loop will be terminated.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- While Loops </title>
+      <link>/postgresql/postgresql--while-loops-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--while-loops-/</guid>
+      <description>PostgreSQL &amp;ndash; While Loops PostgreSQL provides the loop statement which simply defines an unconditional loop that executes repeatedly a block of code until terminated by an exit or return statement. The while loop statement executes a block of code till the condition remains true and stops executing when the conditions become false.
+The syntax of the loop statement:
+[ &amp;lt;&amp;gt; ] while condition loop statements; end loop; If we analyze the above syntax:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Exit </title>
+      <link>/postgresql/postgresql--exit-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--exit-/</guid>
+      <description>PostgreSQL &amp;ndash; Exit In PostgreSQL, The EXIT statement is used to terminate all types of loops like unconditional loops, a while loop, or a for loop or terminate a block of code specified by the begin..end keywords.
+Using EXIT for loops We can use the exit to terminate looping statements using the following syntax:
+Syntax: exit [label] [when condition] If we analyze the above syntax:
+Label: The label is used to signify the loop which we want to exit.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Continue </title>
+      <link>/postgresql/postgresql--continue-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--continue-/</guid>
+      <description>PostgreSQL &amp;ndash; Continue In PostgreSQL ,The continue statement is used to skip the current iteration prematurely and directly move on to the next iteration. The continue statement is used in conjecture with all types of loops including unconditional loops, while loops and for loops.
+Syntax:
+CONTINUE [ label ] [ WHEN boolean-expression ]; If we analyze the above syntax:
+label: If no label is present, the next iteration of the loop starts.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Transactions </title>
+      <link>/postgresql/postgresql--transactions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--transactions-/</guid>
+      <description>PostgreSQL &amp;ndash; Transactions The Transaction is not a new word we are hearing. We heard that word many times like &amp;ldquo;Cash Transaction&amp;rdquo;. Banks usually deal with cash i.e sending or receiving cash, hence we coin the term as a cash transaction. So simply transaction is a unit of work. In this article, we are going to learn about transactions in the PostgreSQL database language. Transactions are important in any database language, whenever we want to add, delete and update then transactions are used for keeping the integrity of data and several other reasons.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- COMMIT </title>
+      <link>/postgresql/postgresql--commit-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--commit-/</guid>
+      <description>PostgreSQL &amp;ndash; COMMIT PostgreSQL COMMIT command is used to save changes and reflect it database whenever we display the required data. For suppose we updated data in the database but we didn&amp;rsquo;t give COMMIT then the changes are not reflected in the database. To save the changes done in a transaction, we should COMMIT that transaction for sure.
+Syntax :
+COMMIT TRANSACTION; (or) COMMIT; (or) END TRANSACTION; Unlike other database languages in PostgreSQL, we commit the transaction in 3 different forms which are mentioned above.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Primary Key </title>
+      <link>/postgresql/postgresql--primary-key-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--primary-key-/</guid>
+      <description>PostgreSQL &amp;ndash; Primary Key In this article we will look into the PostgreSQL Primary key constraints using SQL statements. A primary key is a column or a group of columns used to identify a row uniquely in a table. Technically speaking a primary key constraint is the blend of a not-null constraint and a UNIQUE constraint. Only one primary key must exist in a table. PostgreSQL produces a unique B-tree index on the column or a group of columns used that defines the primary key whenever a primary key is added to the table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Foreign Key </title>
+      <link>/postgresql/postgresql--foreign-key-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--foreign-key-/</guid>
+      <description>PostgreSQL &amp;ndash; Foreign Key In this article, we will look into the PostgreSQL Foreign key constraints using SQL statements. A foreign key is a column or a group of columns used to identify a row uniquely of a different table. The table that comprises the foreign key is called the referencing table or child table. And the table to that the foreign key references is known as the referenced table or parent table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CHECK Constraint </title>
+      <link>/postgresql/postgresql--check-constraint-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--check-constraint-/</guid>
+      <description>PostgreSQL &amp;ndash; CHECK Constraint In PostgreSQL, the CHECK constraint is primarily used to specify if a value in a column necessarily meets a specific requirement. The CHECK constraint utilizes a Boolean expression to assess the values before performing an insert or update operation to the column. If the values pass the check, PostgreSQL allows the insertion or update of those values into the column. It is primarily used while creating a table.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- UNIQUE Constraint </title>
+      <link>/postgresql/postgresql--unique-constraint-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--unique-constraint-/</guid>
+      <description>PostgreSQL &amp;ndash; UNIQUE Constraint PostgreSQL provides the user with a UNIQUE constrain that is used to make sure that values stored in a column or a group of columns are unique across rows in a table. Every time the user inserts a new row, PostgreSQL checks if the value already exists in the table if UNIQUE constraints are used. If it discovers that the new value is already present, it denies the change and issues an error.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- NOT NULL Constraint </title>
+      <link>/postgresql/postgresql--not-null-constraint-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--not-null-constraint-/</guid>
+      <description>PostgreSQL &amp;ndash; NOT NULL Constraint PostgreSQL Not-Null constraint as the name suggests is used to ensure that any value in the respective column is not null. In the world of database, NULL is unknown or missing information. The NULL value is separate from an empty string or the number zero. For instance, one can ask a person for an email address, if you don&amp;rsquo;t know, you use the NULL value for inserting it into the email column.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Joins </title>
+      <link>/postgresql/postgresql--joins-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--joins-/</guid>
+      <description>PostgreSQL &amp;ndash; Joins A PostgreSQL Join statement is used to combine data or rows from one(self-join) or more tables based on a common field between them. These common fields are generally the Primary key of the first table and Foreign key of other tables.There are 4 basic types of joins supported by PostgreSQL, namely:
+Inner JoinLeft JoinRight JoinFull Outer Join
+Left JoinRight JoinFull Outer Join
+Right JoinFull Outer Join
+Full Outer Join</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- LEFT JOIN </title>
+      <link>/postgresql/postgresql--left-join-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--left-join-/</guid>
+      <description>PostgreSQL &amp;ndash; LEFT JOIN The PostgreSQL LEFT JOIN returns all the rows of the table on the left side of the join and matching rows for the table on the right side of the join. The rows for which there is no matching row on the right side, the result-set will contain null. LEFT JOIN is also known as LEFT OUTER JOIN.
+Syntax: SELECT table1.column1, table1.column2, table2.column1, .... FROM table1 LEFT JOIN table2 ON table1.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- INNER JOIN </title>
+      <link>/postgresql/postgresql--inner-join-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--inner-join-/</guid>
+      <description>PostgreSQL &amp;ndash; INNER JOIN In PostgreSQL the INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies. This keyword will create the result-set by combining all rows from both the tables where the condition satisfies i.e value of the common field will be the same.
+Syntax: SELECT table1.column1, table1.column2, table2.column1, .... FROM table1 INNER JOIN table2 ON table1.matching_column = table2.matching_column; table1: First table. table2: Second table matching_column: Column common to both the tables.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- FULL OUTER JOIN </title>
+      <link>/postgresql/postgresql--full-outer-join-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--full-outer-join-/</guid>
+      <description>PostgreSQL &amp;ndash; FULL OUTER JOIN The PostgreSQL FULL OUTER JOIN or FULL JOIN creates the result-set by combining the result of both LEFT JOIN and RIGHT JOIN. The result-set will contain all the rows from both the tables. The rows for which there is no matching, the result-set will contain NULL values.
+Syntax: SELECT table1.column1, table1.column2, table2.column1, .... FROM table1 FULL JOIN table2 ON table1.matching_column = table2.matching_column; or, SELECT table1.column1, table1.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- SELF JOIN </title>
+      <link>/postgresql/postgresql--self-join-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--self-join-/</guid>
+      <description>PostgreSQL &amp;ndash; SELF JOIN PostgreSQL has a special type of join called the SELF JOIN which is used to join a table with itself. It comes in handy when comparing the column of rows within the same table. As, using the same table name for comparison is not allowed in PostgreSQL, we use aliases to set different names of the same table during self-join.
+It is also important to note that there is no such keyword as SELF JOIN, but it is achieved with the help of LEFT JOIN, RIGHT JOIN or INNER JOIN using aliases.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Schema </title>
+      <link>/postgresql/postgresql--schema-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--schema-/</guid>
+      <description>PostgreSQL &amp;ndash; Schema In PostgreSQL, a schema is a namespace that contains named database objects such as tables, views, indexes, data types, functions, and operators.To access an object of a schema, users need to qualify its name with the schema name as a prefix as shown below:
+Syntax: schema_name.object_name A database can contain one or multiple schemas while each schema belongs to only one database. Two schemas can have different objects that share the same name.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE SCHEMA </title>
+      <link>/postgresql/postgresql--create-schema-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-schema-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE SCHEMA PostgreSQL has a CREATE SCHEMA statement that is used to create a new schema in a database.
+Syntax: CREATE SCHEMA [IF NOT EXISTS] schema_name; Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the schema after the CREATE SCHEMA keywords. The schema name must be unique within the current database.Second, optionally use IF NOT EXISTS to conditionally create the new schema only if it does not exist.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DROP SCHEMA </title>
+      <link>/postgresql/postgresql--drop-schema-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-schema-/</guid>
+      <description>PostgreSQL &amp;ndash; DROP SCHEMA PostgreSQL also supports the deletion of a schema and its objects using the DROP SCHEMA statement.
+Syntax: DROP SCHEMA [IF EXISTS] schema_name [ CASCADE | RESTRICT ]; Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the schema from which you want to remove after the DROP SCHEMA keywords.Second, use the IF EXISTS option to conditionally to delete schema only if it exists.Third, use CASCADE to delete schema and all of its objects, and in turn, all objects that depend on those objects.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ALTER SCHEMA </title>
+      <link>/postgresql/postgresql--alter-schema-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--alter-schema-/</guid>
+      <description>PostgreSQL &amp;ndash; ALTER SCHEMA PostgreSQL has A ALTER SCHEMA statement that is used to modify the definition of an existing schema.
+Syntax: ALTER SCHEMA schema_name ACTION xyz; Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the schema that you want to modify after the ALTER SCHEMA keywords.Second, specify the operation you need to perform.ACTION can be any valid PostgreSQL operation like RENAME, DROP etc.
+Second, specify the operation you need to perform.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE ROLE </title>
+      <link>/postgresql/postgresql--create-role-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-role-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE ROLE PostgreSQL uses roles to represent user accounts. It doesn&amp;rsquo;t use the user concept like other database systems. Typically, roles can log in are called login roles. They are equivalent to users in other database systems. When roles contain other roles, they are called group roles. When you create a role, it is valid in all databases in the database server (or cluster).
+To create a new role, you use the CREATE ROLE statement as follows:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ALTER ROLE </title>
+      <link>/postgresql/postgresql--alter-role-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--alter-role-/</guid>
+      <description>PostgreSQL &amp;ndash; ALTER ROLE In PostgreSQL, the ALTER ROLE statement is used to manage and modify roles. It can be used to modify the name of a role, the attributes of a role, and alter a role&amp;rsquo;s session default for a configuration variable.
+Syntax: ALTER ROLE role_name [WITH] option; The following functions are available with ALTER ROLE statement:
+SUPERUSER | NOSUPERUSER &amp;ndash; It is used to determine if the role is a superuser.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DROP ROLE </title>
+      <link>/postgresql/postgresql--drop-role-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-role-/</guid>
+      <description>PostgreSQL &amp;ndash; DROP ROLE In PostgreSQL the DROP ROLE statement to remove a role.
+Syntax: DROP ROLE [IF EXISTS] target_role; Let&amp;rsquo;s analyze the above syntax:
+After the DROP ROLE keywords add the role name that is to be deleted.
+Use the IF EXISTS option can be used to issue a notice instead of an error when a request to remove a role that does not exist is made.
+it is important to note that to remove a superuser role, one needs to be a superuser.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- GRANT </title>
+      <link>/postgresql/postgresql--grant-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--grant-/</guid>
+      <description>PostgreSQL &amp;ndash; GRANT In PostgreSQL, the GRANT statement is used to grant privileges to a role to alter on database objects like tables, views, functions, etc.
+The following shows the syntax of the GRANT statement:
+Syntax: GRANT privilege_list | ALL ON table_name TO role_name; Let&amp;rsquo;s analyze the above syntax:
+Some elements of the privilege_list are SELECT, INSERT, UPDATE, DELETE, TRUNCATE, etc. The ALL option to grant all available privileges to a role.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- REVOKE </title>
+      <link>/postgresql/postgresql--revoke-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--revoke-/</guid>
+      <description>PostgreSQL &amp;ndash; REVOKE In PostgreSQL, the REVOKE statement is used to revoke previously granted privileges on database objects through a role.
+The following shows the syntax of the REVOKE statement:
+Syntax: REVOKE privilege | ALL ON TABLE tbl_name | ALL TABLES IN SCHEMA schema_name FROM role_name; Let&amp;rsquo;s analyze the above syntax:
+First, specify the privileges that is to be revoked. Use the ALL option to revoke all previously granted privileges.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Role Membership </title>
+      <link>/postgresql/postgresql--role-membership-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--role-membership-/</guid>
+      <description>PostgreSQL &amp;ndash; Role Membership In this article, we will look into PostgreSQL group roles and their uses to manage privileges in a PostgreSQL database more effectively. It is a standard practice to create group roles as it can significantly reduce the complexity and time required to grant or invoke privileges on the database. But there is a catch in this technique. By convention, a group role does not have the LOGIN privilege.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- UNION operator </title>
+      <link>/postgresql/postgresql--union-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--union-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; UNION operator The PostgreSQL UNION operator is used to combine result sets of multiple queries into a single set of result. It is used to combine result sets of two or more SELECT statements into a single result set.
+Syntax: SELECT column_1, column_2 FROM table_name_1 UNION SELECT column_1, column_2 FROM table_name_2; The below rules need to be followed while using a UNION operator:
+Both queries must return the same number of columns.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- INTERSECT Operator </title>
+      <link>/postgresql/postgresql--intersect-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--intersect-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; INTERSECT Operator PostgreSQL has an INTERSECT operator that is used to combine two or more result sets returned by the SELECT statement and provide with the common data among the tables into a single result set. Syntax: SELECT column_list FROM A INTERSECT SELECT column_list FROM B; The below rules must be followed while using the INTERSECT operator with the SELECT statement: The number of columns and their order in the SELECT clauses must be the same.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- EXCEPT Operator </title>
+      <link>/postgresql/postgresql--except-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--except-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; EXCEPT Operator In PostgreSQL, the EXCEPT operator is used to return distinct rows from the first (left) query that are not in the output of the second (right) query while comparing result sets of two or more queries.
+Syntax: SELECT column_list FROM A WHERE condition_a EXCEPT SELECT column_list FROM B WHERE condition_b; The below rules must be obeyed while using the EXCEPT operator:
+The number of columns and their orders must be the same in the two queries.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ANY Operator </title>
+      <link>/postgresql/postgresql--any-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--any-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; ANY Operator PostgreSQL has an ANY operator that is used to compare a scalar value with a set of values returned by a subquery.
+Syntax: expression operator ANY(subquery) The below rules must be followed while using PostgreSQL ANY operator:
+The subquery must return exactly one column.The ANY operator must be preceded by one of the following comparison operator =, &amp;lt;=, &amp;gt;, &amp;lt;, &amp;gt; and &amp;lt;&amp;gt;The ANY operator returns true if any value of the subquery meets the condition, otherwise, it returns false.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- ALL Operator </title>
+      <link>/postgresql/postgresql--all-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--all-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; ALL Operator The PostgreSQL ALL operator is used for comparing a value with a list of values returned by a subquery.
+Syntax: comparison_operator ALL (subquery) The below rules need to be followed while using the ALL operator:
+The ALL operator always needs to be preceded by a comparison operator(=, !=, &amp;lt;, &amp;gt;, &amp;gt;=, &amp;lt;=).It must always be followed by a subquery surrounded by parentheses.
+It must always be followed by a subquery surrounded by parentheses.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- EXISTS Operator </title>
+      <link>/postgresql/postgresql--exists-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--exists-operator-/</guid>
+      <description>PostgreSQL &amp;ndash; EXISTS Operator In PostgreSQL, the EXISTS operator is used to test for the existence of rows in a subquery.It is generally used with correlated subqueries. If the subquery returns at least one row, the result of EXISTS is true. In case the subquery returns no row, the result is of EXISTS is false.
+Syntax: EXISTS (subquery) For the sake of this article we will be using the sample DVD rental database, which is explained here and can be downloaded by clicking on this link in our examples.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE FUNCTION Statement </title>
+      <link>/postgresql/postgresql--create-function-statement-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-function-statement-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE FUNCTION Statement In PostgreSQL CREATE FUNCTION statement to develop user-defined functions.
+Syntax: create [or replace] function function_name(param_list) returns return_type language plpgsql as $$ declare -- variable declaration begin -- logic end; $$ Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the function after the create function keywords. If you want to replace the existing function, you can use the replace keywords.
+Then, specify the function parameter list surrounded by parentheses after the function name.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Function Overloading </title>
+      <link>/postgresql/postgresql--function-overloading-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--function-overloading-/</guid>
+      <description>PostgreSQL &amp;ndash; Function Overloading PostgreSQL allows more than one function to have the same name, so long as the arguments are different. If more than one function has the same name, we say those functions are overloaded. When a function is called, PostgreSQL determines the exact function is being called based on the input arguments.
+Let&amp;rsquo;s take a look at the following get_rental_duration() function applied to the sample dvdrental database.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Drop Function </title>
+      <link>/postgresql/postgresql--drop-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-function-/</guid>
+      <description>PostgreSQL &amp;ndash; Drop Function In PostgreSQL, the Drop function statement is used to remove a function.
+Syntax: drop function [if exists] function_name(argument_list) [cascade | restrict] Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the function that you want to remove after the drop function keywords.
+Second, use the if exists option if you want to instruct PostgreSQL to issue a notice instead of an error in case the function does not exist.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- MAX() Function </title>
+      <link>/postgresql/postgresql--max-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--max-function-/</guid>
+      <description>PostgreSQL &amp;ndash; MAX() Function PostgreSQL MAX() function is an aggregate function that returns the maximum value in a set of values.
+Syntax: MAX(expression); The MAX() function can be used with SELECT, WHERE and HAVING clause.
+Now let&amp;rsquo;s look into some examples.For examples we will be using the sample database (ie, dvdrental).Example 1:The below query gets us the maximum amount paid by customers in the payment table:
+SELECT MAX(amount) FROM payment; Output:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- MIN() Function </title>
+      <link>/postgresql/postgresql--min-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--min-function-/</guid>
+      <description>PostgreSQL &amp;ndash; MIN() Function PostgreSQL MIN() function is an aggregate function that returns the minimum value in a set of values.
+Syntax: MIN(expression); The MIN() function can be used with SELECT, WHERE and HAVING clause.
+Now let&amp;rsquo;s look into some examples.For examples we will be using the sample database (ie, dvdrental).Example 1:The below query gets us the minimum amount paid by customers in the payment table:
+SELECT MIN(amount) FROM payment; Output:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- SUM() Function </title>
+      <link>/postgresql/postgresql--sum-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--sum-function-/</guid>
+      <description>PostgreSQL &amp;ndash; SUM() Function PostgreSQL provides with a SUM() function that is used to get the addition of values of a numeric column.
+Syntax: SUM(column) The following points needs to be kept in mind while using the above function:
+It ignores all NULL values.If used with DISTINCT operator as SUM(DISTINCT column), it skips duplicate values.Using SUM() function with SELECT clause returns NULL instead of Zero.
+If used with DISTINCT operator as SUM(DISTINCT column), it skips duplicate values.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- COUNT() Function </title>
+      <link>/postgresql/postgresql--count-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--count-function-/</guid>
+      <description>PostgreSQL &amp;ndash; COUNT() Function The COUNT() function is an aggregate function that enables users to get the number of rows that match a particular requirement of a query.Depending upon the user requirements the COUNT() function can have the following syntaxes:
+Syntax: COUNT(*) Returns: All rows including NULL and Duplicates Syntax: COUNT(column) Returns: All rows except NULL. Syntax: COUNT(DISTINCT column) Returns: All rows without NULL and Duplicates The COUNT() function is used with the SELECT statement.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- EXTRACT Function </title>
+      <link>/postgresql/postgresql--extract-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--extract-function-/</guid>
+      <description>PostgreSQL &amp;ndash; EXTRACT Function The PostgreSQL EXTRACT() function is used to query for field associated with date and time such as a year, month, and day from a date/time value.
+Syntax: EXTRACT(field FROM source) Let&amp;rsquo;s analyze the above syntax:
+In the above syntax the field argument is used to specify fields that is to be extracted from the date/time value.
+The source is generally either a TIMESTAMP type or an INTERVAL type.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- REPLACE Function </title>
+      <link>/postgresql/postgresql--replace-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--replace-function-/</guid>
+      <description>PostgreSQL &amp;ndash; REPLACE Function In PostgreSQL, the REPLACE function is used to search and replace all occurrences of a string with a new one.
+Syntax: REPLACE(source, old_text, new_text ); Let&amp;rsquo;s analyze the above syntax:
+The source is a string where you want to replace the existing string.
+The old_text is the string that is to be searched and subsequently replaced. The old_text can occur multiple times and each of them gets replaced on the function is executed.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Errors and Messages </title>
+      <link>/postgresql/postgresql--errors-and-messages-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--errors-and-messages-/</guid>
+      <description>PostgreSQL &amp;ndash; Errors and Messages In this article, we will look into the Errors in that are inbuilt in PostgreSQL and the process of raising an error in PostgreSQL through RAISE statement and to use the ASSERT statement to insert debugging checks into PL/pgSQL blocks.
+To raise an error message user can implement the RAISE statement as follows:
+Syntax: RAISE level format; Let&amp;rsquo;s explore into the raise statement a bit more.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Assert </title>
+      <link>/postgresql/postgresql--assert-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--assert-/</guid>
+      <description>PostgreSQL &amp;ndash; Assert PostgreSQL provides the ASSERT statement for inserting important debugging checks in the PL/pgSQL code.It is an important tool for checking logical errors and may be used to identify problems associated with written code.
+Syntax: assert condition [, message]; If we analyze the above syntax:
+condition: The condition is a boolean expression that is supposed to return true. If the condition returns true, the assert statement does nothing and the program continues to run.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Dollar-Quoted String Constants </title>
+      <link>/postgresql/postgresql--dollar-quoted-string-constants-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--dollar-quoted-string-constants-/</guid>
+      <description>PostgreSQL &amp;ndash; Dollar-Quoted String Constants In PostgreSQL, the dollar-quoted string constants ($$) is used in user-defined functions and stored procedures.
+In PostgreSQL, you use single quotes for a string constant like this:
+select &#39;String constant&#39;; When a string constant contains a single quote (&amp;rsquo;), you need to escape it by doubling up the single quote. For example:
+select &#39;I&#39;&#39;m also a string constant&#39;; If you use an old version of PostgreSQL, one can prepend the string constant with E to declare the postfix escape string syntax and use the backslash \ to escape the single quote like this:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Block Structure </title>
+      <link>/postgresql/postgresql--block-structure-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--block-structure-/</guid>
+      <description>PostgreSQL &amp;ndash; Block Structure PL/pgSQL is a block-structured language, therefore, a PL/pgSQL function or store procedure is organized into blocks.
+Syntax: [ &amp;lt;&amp;gt; ] [ DECLARE declarations ] BEGIN statements; ... END [ label ]; Let&amp;rsquo;s analyze the above syntax:
+Each block has two sections: declaration and body. The declaration section is optional while the body section is required. The block is ended with a semicolon (;) after the END keyword.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Variables </title>
+      <link>/postgresql/postgresql--variables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--variables-/</guid>
+      <description>PostgreSQL &amp;ndash; Variables In PostgreSQL, a variable is a meaningful name for a memory location. A variable holds a value that can be changed through the block or function. A variable is always associated with a particular data type. Before using a variable, you must declare it in the declaration section of the PostgreSQL Block. The following illustrates the syntax of declaring a variable.
+Syntax: variable_name data_type [:= expression]; Let&amp;rsquo;s analyze the above syntax:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Introduction to Stored Procedures </title>
+      <link>/postgresql/postgresql--introduction-to-stored-procedures-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--introduction-to-stored-procedures-/</guid>
+      <description>PostgreSQL &amp;ndash; Introduction to Stored Procedures PostgreSQL allows the users to extend the database functionality with the help of user-defined functions and stored procedures through various procedural language elements, which are often referred to as stored procedures.
+The store procedures define functions for creating triggers or custom aggregate functions. In addition, stored procedures also add many procedural features e.g., control structures and complex calculation. These allow you to develop custom functions much easier and more effective.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Trigger </title>
+      <link>/postgresql/postgresql--trigger-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--trigger-/</guid>
+      <description>PostgreSQL &amp;ndash; Trigger A PostgreSQL trigger is a function invoked automatically whenever an event associated with a table occurs. An event could be any of the following: INSERT, UPDATE, DELETE or TRUNCATE.
+A trigger is a special user-defined function associated with a table. To create a new trigger, you must define a trigger function first, and then bind this trigger function to a table. The difference between a trigger and a user-defined function is that a trigger is automatically invoked when an event occurs.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE TRIGGER </title>
+      <link>/postgresql/postgresql--create-trigger-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-trigger-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE TRIGGER To create a new trigger in PostgreSQL, you follow these steps:
+First, create a trigger function using CREATE FUNCTION statement.
+Second, bind the trigger function to a table by using the CREATE TRIGGER statement.
+A trigger function is similar to an ordinary function. However, a trigger function does not take any argument and has a return value with the type of trigger.
+The following illustrates the syntax of creating a trigger function:</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- DROP TRIGGER </title>
+      <link>/postgresql/postgresql--drop-trigger-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--drop-trigger-/</guid>
+      <description>PostgreSQL &amp;ndash; DROP TRIGGER In PostgreSQL, the DROP TRIGGER statement is used to drop a trigger from a table.
+Syntax: DROP TRIGGER [IF EXISTS] trigger_name ON table_name [ CASCADE | RESTRICT ]; Let&amp;rsquo;s analyze the above syntax:
+First, specify the name of the trigger which you want to delete after the DROP TRIGGER keywords.
+Second, use IF EXISTS to conditionally delete the trigger only if it exists. Attempt to delete a non-existing trigger without specifying the IF EXISTS statement results in an error.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Disabling a Trigger </title>
+      <link>/postgresql/postgresql--disabling-a-trigger-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--disabling-a-trigger-/</guid>
+      <description>PostgreSQL &amp;ndash; Disabling a Trigger In PostgreSQL, there is no specific statement such as DISABLE TRIGGER for disabling an existing trigger. However, one can disable a trigger using the ALTER TABLE statement as follows:
+Syntax: ALTER TABLE table_name DISABLE TRIGGER trigger_name | ALL Let&amp;rsquo;s analyze the above syntax:
+First, you specify the name of the trigger, which you want to disable, after the DISABLE TRIGGER keywords. To disable all triggers associated with a table, you use ALL instead of a particular trigger name.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- Enabling a Trigger </title>
+      <link>/postgresql/postgresql--enabling-a-trigger-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--enabling-a-trigger-/</guid>
+      <description>PostgreSQL &amp;ndash; Enabling a Trigger A PostgreSQL trigger is a function that is invoked automatically whenever an event such as insert, update, or delete happens.PostgreSQL gives us an option to either enable or disable triggers. A disabled trigger does not fire when the triggering event occurs. We must enable it to make sure it fires when the event occurs.
+In PostgreSQL, we use the ALTER TABLE ENABLE TRIGGER statement to enable a trigger.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- CREATE INDEX </title>
+      <link>/postgresql/postgresql--create-index-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--create-index-/</guid>
+      <description>PostgreSQL &amp;ndash; CREATE INDEX To better understand the concept behind indexes in PostgreSQL assume that you need to look up for Raju Kumar&amp;rsquo;s phone number on a phone book. With the understanding that names on the phone book are in alphabetically order, you first look for the page where the last name is Kumar, then look for the first name Raju, and finally get his phone number.
+Suppose the names on the phone book were not ordered alphabetically, you would have to go through all pages, check every name until you find Raju Kumar&amp;rsquo;s phone number.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- List Indexes </title>
+      <link>/postgresql/postgresql--list-indexes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--list-indexes-/</guid>
+      <description>PostgreSQL &amp;ndash; List Indexes In PostgreSQL, we use the pr_indexes view to list the indexes of a database. PostgreSQL does not provide a command like SHOW INDEXES to list the index information of a table or database. If you use psql to access the PostgreSQL database, you can use the \d command to view the index information for a table.
+Using pg_indexes view The pg_indexes view allows you to access useful information on each index in the PostgreSQL database.</description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL -- UNIQUE Index </title>
+      <link>/postgresql/postgresql--unique-index-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/postgresql--unique-index-/</guid>
+      <description>PostgreSQL &amp;ndash; UNIQUE Index In PostgreSQL, the UNIQUE index to ensure the uniqueness of values in one or more columns. To create a UNIQUE index, you can use the following syntax:
+Syntax: CREATE UNIQUE INDEX index_name ON table_name(column_name, [...]); Note: Only B-tree indexes can be declared as unique indexes.
+Example 1:
+The following statement creates a table called employees :
+CREATE TABLE employees ( employee_id SERIAL PRIMARY KEY, first_name VARCHAR(255) NOT NULL, last_name VARCHAR(255) NOT NULL, email VARCHAR(255) UNIQUE ); In this statement, the employee_id is the primary key column and email column has a unique constraint, therefore, PostgreSQL created two UNIQUE indexes, one for each column.</description>
+    </item>
+    
+    <item>
+      <title>Exception Handling in PL|SQL </title>
+      <link>/postgresql/exception-handling-in-plsql-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/postgresql/exception-handling-in-plsql-/</guid>
+      <description>Exception Handling in PL|SQL An exception is an error which disrupts the normal flow of program instructions. PL/SQL provides us the exception block which raises the exception thus helping the programmer to find out the fault and resolve it.
+There are two types of exceptions defined in PL/SQL
+User defined exception.
+System defined exceptions.
+Syntax to write an exception
+WHEN exception THEN statement; DECLAREdeclarations section;
+BEGINexecutable command(s);
+EXCEPTIONWHEN exception1 THENstatement1;WHEN exception2 THENstatement2;[WHEN others THEN]/* default exception handling code */</description>
+    </item>
+    
+    
+  </channel>
+</rss>

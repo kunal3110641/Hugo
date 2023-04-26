@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project Dossier on SATHEE</title>
+    <link>/project-dossier/</link>
+    <description>Recent content in Project Dossier on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/project-dossier/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Project Dossier </title>
+      <link>/project-dossier/dossier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-dossier/dossier/</guid>
+      <description>Dossier A reporting and analytics platform
+Scope of work: It is a service or web application which is responsible for providing data to concerned party.The concerned parties beside sales and management also include HR, OPS, General Sales Manager(GSM), other services like SPEAR. It is helpful to people in following ways-
+It shall allow partners to see their business and be motivated. It shall allow management to see business stats and analyse and make decisions.</description>
+    </item>
+    
+    <item>
+      <title>Dossier ER </title>
+      <link>/project-dossier/dossier-er/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-dossier/dossier-er/</guid>
+      <description>Dossier ER </description>
+    </item>
+    
+    <item>
+      <title>Dossier ER Diagram </title>
+      <link>/project-dossier/dossier-er-diagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-dossier/dossier-er-diagram/</guid>
+      <description>Dossier ER Diagram </description>
+    </item>
+    
+    
+  </channel>
+</rss>

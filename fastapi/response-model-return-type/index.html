@@ -1,0 +1,9658 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Response Model - Return Type </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Response Model - Return Type " />
+<meta property="og:description" content="Response Model - Return Type You can declare the type used for the response by annotating the path operation function return type.
+You can use type annotations the same way you would for input data in function parameters, you can use Pydantic models, lists, dictionaries, scalar values like integers, booleans, etc.
+from fastapi import FastAPI from pydantic import BaseModel app = FastAPI() class Item(BaseModel): name: str description: str | None = None price: float tax: float | None = None tags: list[str] = [] @app." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/fastapi/response-model-return-type/" /><meta property="article:section" content="fastapi" />
+
+
+
+
+    
+    
+	<meta name="description" content="Response Model - Return Type " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/fastapi/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/fastapi/tutorial-user-guide-intro/"><div class="panelist" >Tutorial - User Guide - Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/first-steps/"><div class="panelist" >First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters/"><div class="panelist" >Path Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters/"><div class="panelist" >Query Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-body/"><div class="panelist" >Request Body </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations-/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters-and-numeric-validations-/"><div class="panelist" >Path Parameters and Numeric Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-multiple-parameters/"><div class="panelist" >Body - Multiple Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-fields/"><div class="panelist" >Body - Fields </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-nested-models/"><div class="panelist" >Body - Nested Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data-/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-data-types/"><div class="panelist" >Extra Data Types </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cookie-parameters/"><div class="panelist" >Cookie Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/header-parameters/"><div class="panelist" >Header Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-model-return-type/"><div class="panelist" id="activetab">Response Model - Return Type </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-models/"><div class="panelist" >Extra Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-status-code/"><div class="panelist" >Response Status Code </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/form-data/"><div class="panelist" >Form Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-files/"><div class="panelist" >Request Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-forms-and-files/"><div class="panelist" >Request Forms and Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/handling-errors/"><div class="panelist" >Handling Errors </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-operation-configuration-/"><div class="panelist" >Path Operation Configuration </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/json-compatible-encoder/"><div class="panelist" >JSON Compatible Encoder </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-updates/"><div class="panelist" >Body - Updates </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-first-steps/"><div class="panelist" >Dependencies - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/classes-as-dependencies/"><div class="panelist" >Classes as Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sub-dependencies/"><div class="panelist" >Sub-dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-in-path-operation-decorators-/"><div class="panelist" >Dependencies in path operation decorators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/global-dependencies/"><div class="panelist" >Global Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-with-yield/"><div class="panelist" >Dependencies with yield </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-intro/"><div class="panelist" >Security Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-first-steps/"><div class="panelist" >Security - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/get-current-user/"><div class="panelist" >Get Current User </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/simple-oauth2-with-password-and-bearer-/"><div class="panelist" >Simple OAuth2 with Password and Bearer </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/oauth2-with-password-and-hashing-bearer-with-jwt-tokens-/"><div class="panelist" >OAuth2 with Password (and hashing), Bearer with JWT tokens </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/middleware/"><div class="panelist" >Middleware </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cors-cross-origin-resource-sharing-/"><div class="panelist" >CORS (Cross-Origin Resource Sharing) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sql-relational-databases-/"><div class="panelist" >SQL (Relational) Databases </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/bigger-applications-multiple-files/"><div class="panelist" >Bigger Applications - Multiple Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/background-tasks/"><div class="panelist" >Background Tasks </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/metadata-and-docs-urls/"><div class="panelist" >Metadata and Docs URLs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/static-files/"><div class="panelist" >Static Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/testing/"><div class="panelist" >Testing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/debugging/"><div class="panelist" >Debugging </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="response-model---return-type">Response Model - Return Type</h2>
+<p>You can declare the type used for the response by annotating the path
+operation function return type.</p>
+<p>You can use type annotations the same way you would for input data in
+function parameters, you can use Pydantic models, lists, dictionaries,
+scalar values like integers, booleans, etc.</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+    tags: list[str] = []
+
+
+@app.post(&quot;/items/&quot;)
+async def create_item(item: Item) -&gt; Item:
+    return item
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items() -&gt; list[Item]:
+    return [
+        Item(name=&quot;Portal Gun&quot;, price=42.0),
+        Item(name=&quot;Plumbus&quot;, price=32.0),
+    ]
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: Union[float, None] = None
+    tags: list[str] = []
+
+
+@app.post(&quot;/items/&quot;)
+async def create_item(item: Item) -&gt; Item:
+    return item
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items() -&gt; list[Item]:
+    return [
+        Item(name=&quot;Portal Gun&quot;, price=42.0),
+        Item(name=&quot;Plumbus&quot;, price=32.0),
+    ]
+
+from typing import List, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: Union[float, None] = None
+    tags: List[str] = []
+
+
+@app.post(&quot;/items/&quot;)
+async def create_item(item: Item) -&gt; Item:
+    return item
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items() -&gt; List[Item]:
+    return [
+        Item(name=&quot;Portal Gun&quot;, price=42.0),
+        Item(name=&quot;Plumbus&quot;, price=32.0),
+    ]
+</code></pre>
+<p>FastAPI will use this return type to:</p>
+<p>Validate the returned data. If the data is invalid (e.g. you are missing
+a field), it means that your app code is broken, not returning what it
+should, and it will return a server error instead of returning incorrect
+data. This way you and your clients can be certain that they will
+receive the data and the data shape expected.</p>
+<p>If the data is invalid (e.g. you are missing a field), it means that
+your app code is broken, not returning what it should, and it will
+return a server error instead of returning incorrect data. This way you
+and your clients can be certain that they will receive the data and the
+data shape expected.</p>
+<p>Add a JSON Schema for the response, in the OpenAPI path operation. This
+will be used by the automatic docs. It will also be used by automatic
+client code generation tools.</p>
+<p>This will be used by the automatic docs.</p>
+<p>It will also be used by automatic client code generation tools.</p>
+<p>But most importantly:</p>
+<p>It will limit and filter the output data to what is defined in the
+return type. This is particularly important for security, we'll see
+more of that below.</p>
+<p>This is particularly important for security, we'll see more of that
+below.</p>
+<h2 id="response_model-parameter">response_model Parameter</h2>
+<p>There are some cases where you need or want to return some data that is
+not exactly what the type declares.</p>
+<p>For example, you could want to return a dictionary or a database object,
+but declare it as a Pydantic model. This way the Pydantic model would do
+all the data documentation, validation, etc. for the object that you
+returned (e.g. a dictionary or database object).</p>
+<p>If you added the return type annotation, tools and editors would
+complain with a (correct) error telling you that your function is
+returning a type (e.g. a dict) that is different from what you declared
+(e.g. a Pydantic model).</p>
+<p>In those cases, you can use the path operation decorator parameter
+response_model instead of the return type.</p>
+<p>You can use the response_model parameter in any of the path operations:</p>
+<p>@app.get()</p>
+<p>@app.post()</p>
+<p>@app.put()</p>
+<p>@app.delete()</p>
+<p>etc.</p>
+<pre><code>from typing import Any
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float | None = None
+    tags: list[str] = []
+
+
+@app.post(&quot;/items/&quot;, response_model=Item)
+async def create_item(item: Item) -&gt; Any:
+    return item
+
+
+@app.get(&quot;/items/&quot;, response_model=list[Item])
+async def read_items() -&gt; Any:
+    return [
+        {&quot;name&quot;: &quot;Portal Gun&quot;, &quot;price&quot;: 42.0},
+        {&quot;name&quot;: &quot;Plumbus&quot;, &quot;price&quot;: 32.0},
+    ]
+
+from typing import Any, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: Union[float, None] = None
+    tags: list[str] = []
+
+
+@app.post(&quot;/items/&quot;, response_model=Item)
+async def create_item(item: Item) -&gt; Any:
+    return item
+
+
+@app.get(&quot;/items/&quot;, response_model=list[Item])
+async def read_items() -&gt; Any:
+    return [
+        {&quot;name&quot;: &quot;Portal Gun&quot;, &quot;price&quot;: 42.0},
+        {&quot;name&quot;: &quot;Plumbus&quot;, &quot;price&quot;: 32.0},
+    ]
+
+from typing import Any, List, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: Union[float, None] = None
+    tags: List[str] = []
+
+
+@app.post(&quot;/items/&quot;, response_model=Item)
+async def create_item(item: Item) -&gt; Any:
+    return item
+
+
+@app.get(&quot;/items/&quot;, response_model=List[Item])
+async def read_items() -&gt; Any:
+    return [
+        {&quot;name&quot;: &quot;Portal Gun&quot;, &quot;price&quot;: 42.0},
+        {&quot;name&quot;: &quot;Plumbus&quot;, &quot;price&quot;: 32.0},
+    ]
+</code></pre>
+<p>Note</p>
+<p>Notice that response_model is a parameter of the &quot;decorator&quot; method
+(get, post, etc). Not of your path operation function, like all the
+parameters and body.</p>
+<p>response_model receives the same type you would declare for a Pydantic
+model field, so, it can be a Pydantic model, but it can also be, e.g. a
+list of Pydantic models, like List[Item].</p>
+<p>FastAPI will use this response_model to do all the data documentation,
+validation, etc. and also to convert and filter the output data to its
+type declaration.</p>
+<p>Tip</p>
+<p>If you have strict type checks in your editor, mypy, etc, you can
+declare the function return type as Any.</p>
+<p>That way you tell the editor that you are intentionally returning
+anything. But FastAPI will still do the data documentation, validation,
+filtering, etc. with the response_model.</p>
+<h2 id="response_model-priority">response_model Priority</h2>
+<p>If you declare both a return type and a response_model, the
+response_model will take priority and be used by FastAPI.</p>
+<p>This way you can add correct type annotations to your functions even
+when you are returning a type different than the response model, to be
+used by the editor and tools like mypy. And still you can have FastAPI
+do the data validation, documentation, etc. using the response_model.</p>
+<p>You can also use response_model=None to disable creating a response
+model for that path operation, you might need to do it if you are adding
+type annotations for things that are not valid Pydantic fields, you will
+see an example of that in one of the sections below.</p>
+<h2 id="return-the-same-input-data">Return the same input data</h2>
+<p>Here we are declaring a UserIn model, it will contain a plaintext
+password:</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+# Don't do this in production!
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; UserIn:
+    return user
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+# Don't do this in production!
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; UserIn:
+    return user
+</code></pre>
+<p>Info</p>
+<p>To use EmailStr, first install email_validator.</p>
+<p>E.g. pip install email-validator or pip install pydantic[email].</p>
+<p>And we are using this model to declare our input and the same model to
+declare our output:</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+# Don't do this in production!
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; UserIn:
+    return user
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+# Don't do this in production!
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; UserIn:
+    return user
+</code></pre>
+<p>Now, whenever a browser is creating a user with a password, the API will
+return the same password in the response.</p>
+<p>In this case, it might not be a problem, because it's the same user
+sending the password.</p>
+<p>But if we use the same model for another path operation, we could be
+sending our user's passwords to every client.</p>
+<p>Danger</p>
+<p>Never store the plain password of a user or send it in a response like
+this, unless you know all the caveats and you know what you are doing.</p>
+<h2 id="add-an-output-model">Add an output model</h2>
+<p>We can instead create an input model with the plaintext password and an
+output model without it:</p>
+<pre><code>from typing import Any
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+
+from typing import Any, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+</code></pre>
+<p>Here, even though our path operation function is returning the same
+input user that contains the password:</p>
+<pre><code>from typing import Any
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+
+from typing import Any, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+</code></pre>
+<p>...we declared the response_model to be our model UserOut, that
+doesn't include the password:</p>
+<pre><code>from typing import Any
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+
+from typing import Any, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class UserIn(BaseModel):
+    username: str
+    password: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+class UserOut(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+@app.post(&quot;/user/&quot;, response_model=UserOut)
+async def create_user(user: UserIn) -&gt; Any:
+    return user
+</code></pre>
+<p>So, FastAPI will take care of filtering out all the data that is not
+declared in the output model (using Pydantic).</p>
+<h2 id="response_model-or-return-type">response_model or Return Type</h2>
+<p>In this case, because the two models are different, if we annotated the
+function return type as UserOut, the editor and tools would complain
+that we are returning an invalid type, as those are different classes.</p>
+<p>That's why in this example we have to declare it in the response_model
+parameter.</p>
+<p>...but continue reading below to see how to overcome that.</p>
+<h2 id="return-type-and-data-filtering">Return Type and Data Filtering</h2>
+<p>Let's continue from the previous example. We wanted to annotate the
+function with one type but return something that includes more data.</p>
+<p>We want FastAPI to keep filtering the data using the response model.</p>
+<p>In the previous example, because the classes were different, we had to
+use the response_model parameter. But that also means that we don't
+get the support from the editor and tools checking the function return
+type.</p>
+<p>But in most of the cases where we need to do something like this, we
+want the model just to filter/remove some of the data as in this
+example.</p>
+<p>And in those cases, we can use classes and inheritance to take advantage
+of function type annotations to get better support in the editor and
+tools, and still get the FastAPI data filtering.</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class BaseUser(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: str | None = None
+
+
+class UserIn(BaseUser):
+    password: str
+
+
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; BaseUser:
+    return user
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel, EmailStr
+
+app = FastAPI()
+
+
+class BaseUser(BaseModel):
+    username: str
+    email: EmailStr
+    full_name: Union[str, None] = None
+
+
+class UserIn(BaseUser):
+    password: str
+
+
+@app.post(&quot;/user/&quot;)
+async def create_user(user: UserIn) -&gt; BaseUser:
+    return user
+</code></pre>
+<p>With this, we get tooling support, from editors and mypy as this code is
+correct in terms of types, but we also get the data filtering from
+FastAPI.</p>
+<p>How does this work? Let's check that out. 🤓</p>
+<h2 id="type-annotations-and-tooling">Type Annotations and Tooling</h2>
+<p>First let's see how editors, mypy and other tools would see this.</p>
+<p>BaseUser has the base fields. Then UserIn inherits from BaseUser and
+adds the password field, so, it will include all the fields from both
+models.</p>
+<p>We annotate the function return type as BaseUser, but we are actually
+returning a UserIn instance.</p>
+<p>The editor, mypy, and other tools won't complain about this because, in
+typing terms, UserIn is a subclass of BaseUser, which means it's a
+valid type when what is expected is anything that is a BaseUser.</p>
+<h2 id="fastapi-data-filtering">FastAPI Data Filtering</h2>
+<p>Now, for FastAPI, it will see the return type and make sure that what
+you return includes only the fields that are declared in the type.</p>
+<p>FastAPI does several things internally with Pydantic to make sure that
+those same rules of class inheritance are not used for the returned data
+filtering, otherwise you could end up returning much more data than what
+you expected.</p>
+<p>This way, you can get the best of both worlds: type annotations with
+tooling support and data filtering.</p>
+<h2 id="see-it-in-the-docs">See it in the docs</h2>
+<p>When you see the automatic docs, you can check that the input model and
+output model will both have their own JSON Schema:</p>
+<p><img src="/img/tutorial/response-model/image01.png" alt=""></p>
+<p>And both models will be used for the interactive API documentation:</p>
+<p><img src="/img/tutorial/response-model/image02.png" alt=""></p>
+<h2 id="other-return-type-annotations">Other Return Type Annotations</h2>
+<p>There might be cases where you return something that is not a valid
+Pydantic field and you annotate it in the function, only to get the
+support provided by tooling (the editor, mypy, etc).</p>
+<h2 id="return-a-response-directly">Return a Response Directly</h2>
+<p>The most common case would be returning a Response directly as explained
+later in the advanced docs.</p>
+<pre><code>from fastapi import FastAPI, Response
+from fastapi.responses import JSONResponse, RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/portal&quot;)
+async def get_portal(teleport: bool = False) -&gt; Response:
+    if teleport:
+        return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+    return JSONResponse(content={&quot;message&quot;: &quot;Here's your interdimensional portal.&quot;})
+</code></pre>
+<p>This simple case is handled automatically by FastAPI because the return
+type annotation is the class (or a subclass) of Response.</p>
+<p>And tools will also be happy because both RedirectResponse and
+JSONResponse are subclasses of Response, so the type annotation is
+correct.</p>
+<h2 id="annotate-a-response-subclass">Annotate a Response Subclass</h2>
+<p>You can also use a subclass of Response in the type annotation:</p>
+<pre><code>from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/teleport&quot;)
+async def get_teleport() -&gt; RedirectResponse:
+    return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+</code></pre>
+<p>This will also work because RedirectResponse is a subclass of Response,
+and FastAPI will automatically handle this simple case.</p>
+<h2 id="invalid-return-type-annotations">Invalid Return Type Annotations</h2>
+<p>But when you return some other arbitrary object that is not a valid
+Pydantic type (e.g. a database object) and you annotate it like that in
+the function, FastAPI will try to create a Pydantic response model from
+that type annotation, and will fail.</p>
+<p>The same would happen if you had something like a union between
+different types where one or more of them are not valid Pydantic types,
+for example this would fail 💥:</p>
+<pre><code>from fastapi import FastAPI, Response
+from fastapi.responses import RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/portal&quot;)
+async def get_portal(teleport: bool = False) -&gt; Response | dict:
+    if teleport:
+        return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+    return {&quot;message&quot;: &quot;Here's your interdimensional portal.&quot;}
+
+from typing import Union
+
+from fastapi import FastAPI, Response
+from fastapi.responses import RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/portal&quot;)
+async def get_portal(teleport: bool = False) -&gt; Union[Response, dict]:
+    if teleport:
+        return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+    return {&quot;message&quot;: &quot;Here's your interdimensional portal.&quot;}
+</code></pre>
+<p>...this fails because the type annotation is not a Pydantic type and is
+not just a single Response class or subclass, it's a union (any of the
+two) between a Response and a dict.</p>
+<h2 id="disable-response-model">Disable Response Model</h2>
+<p>Continuing from the example above, you might not want to have the
+default data validation, documentation, filtering, etc. that is
+performed by FastAPI.</p>
+<p>But you might want to still keep the return type annotation in the
+function to get the support from tools like editors and type checkers
+(e.g. mypy).</p>
+<p>In this case, you can disable the response model generation by setting
+response_model=None:</p>
+<pre><code>from fastapi import FastAPI, Response
+from fastapi.responses import RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/portal&quot;, response_model=None)
+async def get_portal(teleport: bool = False) -&gt; Response | dict:
+    if teleport:
+        return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+    return {&quot;message&quot;: &quot;Here's your interdimensional portal.&quot;}
+
+from typing import Union
+
+from fastapi import FastAPI, Response
+from fastapi.responses import RedirectResponse
+
+app = FastAPI()
+
+
+@app.get(&quot;/portal&quot;, response_model=None)
+async def get_portal(teleport: bool = False) -&gt; Union[Response, dict]:
+    if teleport:
+        return RedirectResponse(url=&quot;https://www.youtube.com/watch?v=dQw4w9WgXcQ&quot;)
+    return {&quot;message&quot;: &quot;Here's your interdimensional portal.&quot;}
+</code></pre>
+<p>This will make FastAPI skip the response model generation and that way
+you can have any return type annotations you need without it affecting
+your FastAPI application. 🤓</p>
+<h2 id="response-model-encoding-parameters">Response Model encoding parameters</h2>
+<p>Your response model could have default values, like:</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float = 10.5
+    tags: list[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+    tags: list[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+
+from typing import List, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+    tags: List[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+</code></pre>
+<p>description: Union[str, None] = None (or str | None = None in Python
+3.10) has a default of None.</p>
+<p>tax: float = 10.5 has a default of 10.5.</p>
+<p>tags: List[str] = [] as a default of an empty list: [].</p>
+<p>but you might want to omit them from the result if they were not
+actually stored.</p>
+<p>For example, if you have models with many optional attributes in a NoSQL
+database, but you don't want to send very long JSON responses full of
+default values.</p>
+<h2 id="use-the-response_model_exclude_unset-parameter">Use the response_model_exclude_unset parameter</h2>
+<p>You can set the path operation decorator parameter
+response_model_exclude_unset=True:</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float = 10.5
+    tags: list[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+    tags: list[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+
+from typing import List, Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+    tags: List[str] = []
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The bartenders&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {&quot;name&quot;: &quot;Baz&quot;, &quot;description&quot;: None, &quot;price&quot;: 50.2, &quot;tax&quot;: 10.5, &quot;tags&quot;: []},
+}
+
+
+@app.get(&quot;/items/{item_id}&quot;, response_model=Item, response_model_exclude_unset=True)
+async def read_item(item_id: str):
+    return items[item_id]
+</code></pre>
+<p>and those default values won't be included in the response, only the
+values actually set.</p>
+<p>So, if you send a request to that path operation for the item with ID
+foo, the response (not including default values) will be:</p>
+<pre><code>{
+    &quot;name&quot;: &quot;Foo&quot;,
+    &quot;price&quot;: 50.2
+}
+</code></pre>
+<p>Info</p>
+<p>FastAPI uses Pydantic model's .dict() with its exclude_unset parameter
+to achieve this.</p>
+<p>Info</p>
+<p>You can also use:</p>
+<p>response_model_exclude_defaults=True</p>
+<p>response_model_exclude_none=True</p>
+<p>as described in the Pydantic docs for exclude_defaults and
+exclude_none.</p>
+<h2 id="data-with-values-for-fields-with-defaults">Data with values for fields with defaults</h2>
+<p>But if your data has values for the model's fields with default values,
+like the item with ID bar:</p>
+<pre><code>{
+    &quot;name&quot;: &quot;Bar&quot;,
+    &quot;description&quot;: &quot;The bartenders&quot;,
+    &quot;price&quot;: 62,
+    &quot;tax&quot;: 20.2
+}
+</code></pre>
+<p>they will be included in the response.</p>
+<h2 id="data-with-the-same-values-as-the-defaults">Data with the same values as the defaults</h2>
+<p>If the data has the same values as the default ones, like the item with
+ID baz:</p>
+<pre><code>{
+    &quot;name&quot;: &quot;Baz&quot;,
+    &quot;description&quot;: None,
+    &quot;price&quot;: 50.2,
+    &quot;tax&quot;: 10.5,
+    &quot;tags&quot;: []
+}
+</code></pre>
+<p>FastAPI is smart enough (actually, Pydantic is smart enough) to realize
+that, even though description, tax, and tags have the same values as the
+defaults, they were set explicitly (instead of taken from the defaults).</p>
+<p>So, they will be included in the JSON response.</p>
+<p>Tip</p>
+<p>Notice that the default values can be anything, not only None.</p>
+<p>They can be a list ([]), a float of 10.5, etc.</p>
+<h2 id="response_model_include-and-response_model_exclude">response_model_include and response_model_exclude</h2>
+<p>You can also use the path operation decorator parameters
+response_model_include and response_model_exclude.</p>
+<p>They take a set of str with the name of the attributes to include
+(omitting the rest) or to exclude (including the rest).</p>
+<p>This can be used as a quick shortcut if you have only one Pydantic model
+and want to remove some data from the output.</p>
+<p>Tip</p>
+<p>But it is still recommended to use the ideas above, using multiple
+classes, instead of these parameters.</p>
+<p>This is because the JSON Schema generated in your app's OpenAPI (and
+the docs) will still be the one for the complete model, even if you use
+response_model_include or response_model_exclude to omit some
+attributes.</p>
+<p>This also applies to response_model_by_alias that works similarly.</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float = 10.5
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The Bar fighters&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {
+        &quot;name&quot;: &quot;Baz&quot;,
+        &quot;description&quot;: &quot;There goes my baz&quot;,
+        &quot;price&quot;: 50.2,
+        &quot;tax&quot;: 10.5,
+    },
+}
+
+
+@app.get(
+    &quot;/items/{item_id}/name&quot;,
+    response_model=Item,
+    response_model_include={&quot;name&quot;, &quot;description&quot;},
+)
+async def read_item_name(item_id: str):
+    return items[item_id]
+
+
+@app.get(&quot;/items/{item_id}/public&quot;, response_model=Item, response_model_exclude={&quot;tax&quot;})
+async def read_item_public_data(item_id: str):
+    return items[item_id]
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The Bar fighters&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {
+        &quot;name&quot;: &quot;Baz&quot;,
+        &quot;description&quot;: &quot;There goes my baz&quot;,
+        &quot;price&quot;: 50.2,
+        &quot;tax&quot;: 10.5,
+    },
+}
+
+
+@app.get(
+    &quot;/items/{item_id}/name&quot;,
+    response_model=Item,
+    response_model_include={&quot;name&quot;, &quot;description&quot;},
+)
+async def read_item_name(item_id: str):
+    return items[item_id]
+
+
+@app.get(&quot;/items/{item_id}/public&quot;, response_model=Item, response_model_exclude={&quot;tax&quot;})
+async def read_item_public_data(item_id: str):
+    return items[item_id]
+</code></pre>
+<p>Tip</p>
+<p>The syntax {&quot;name&quot;, &quot;description&quot;} creates a set with those two
+values.</p>
+<p>It is equivalent to set([&quot;name&quot;, &quot;description&quot;]).</p>
+<h2 id="using-lists-instead-of-sets">Using lists instead of sets</h2>
+<p>If you forget to use a set and use a list or tuple instead, FastAPI will
+still convert it to a set and it will work correctly:</p>
+<pre><code>from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: str | None = None
+    price: float
+    tax: float = 10.5
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The Bar fighters&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {
+        &quot;name&quot;: &quot;Baz&quot;,
+        &quot;description&quot;: &quot;There goes my baz&quot;,
+        &quot;price&quot;: 50.2,
+        &quot;tax&quot;: 10.5,
+    },
+}
+
+
+@app.get(
+    &quot;/items/{item_id}/name&quot;,
+    response_model=Item,
+    response_model_include=[&quot;name&quot;, &quot;description&quot;],
+)
+async def read_item_name(item_id: str):
+    return items[item_id]
+
+
+@app.get(&quot;/items/{item_id}/public&quot;, response_model=Item, response_model_exclude=[&quot;tax&quot;])
+async def read_item_public_data(item_id: str):
+    return items[item_id]
+
+from typing import Union
+
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+
+class Item(BaseModel):
+    name: str
+    description: Union[str, None] = None
+    price: float
+    tax: float = 10.5
+
+
+items = {
+    &quot;foo&quot;: {&quot;name&quot;: &quot;Foo&quot;, &quot;price&quot;: 50.2},
+    &quot;bar&quot;: {&quot;name&quot;: &quot;Bar&quot;, &quot;description&quot;: &quot;The Bar fighters&quot;, &quot;price&quot;: 62, &quot;tax&quot;: 20.2},
+    &quot;baz&quot;: {
+        &quot;name&quot;: &quot;Baz&quot;,
+        &quot;description&quot;: &quot;There goes my baz&quot;,
+        &quot;price&quot;: 50.2,
+        &quot;tax&quot;: 10.5,
+    },
+}
+
+
+@app.get(
+    &quot;/items/{item_id}/name&quot;,
+    response_model=Item,
+    response_model_include=[&quot;name&quot;, &quot;description&quot;],
+)
+async def read_item_name(item_id: str):
+    return items[item_id]
+
+
+@app.get(&quot;/items/{item_id}/public&quot;, response_model=Item, response_model_exclude=[&quot;tax&quot;])
+async def read_item_public_data(item_id: str):
+    return items[item_id]
+</code></pre>
+<h2 id="recap">Recap</h2>
+<p>Use the path operation decorator's parameter response_model to define
+response models and especially to ensure private data is filtered out.</p>
+<p>Use response_model_exclude_unset to return only the values explicitly
+set.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/fastapi/header-parameters/" title="Header Parameters " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/fastapi/extra-models/" title="Extra Models " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

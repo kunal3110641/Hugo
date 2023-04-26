@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Power BI on SATHEE</title>
+    <link>/power-bi/</link>
+    <description>Recent content in Power BI on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/power-bi/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Power BI Tutorial </title>
+      <link>/power-bi/power-bi-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-tutorial-/</guid>
+      <description>Power BI Tutorial This PowerBI tutorial is your one-stop guide for learning everything about PowerBI. It covers both basic and advanced concepts, providing a comprehensive understanding of the technology for both beginners and professionals. Whether you&amp;rsquo;re new to PowerBI or have some experience with it, this tutorial will help you learn about the different technologies of PowerBI with ease. Power BI is a platform that is used to connect, visualize and share data with other users.</description>
+    </item>
+    
+    <item>
+      <title>What is Business Intelligence? </title>
+      <link>/power-bi/what-is-business-intelligence-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/what-is-business-intelligence-/</guid>
+      <description>What is Business Intelligence? Business Intelligence is the talk of a new changing and growing world that can be defined as a set of concepts and methodologies to improve decision-making in business through the use of facts and fact-based systems. The Goal of Business Intelligence is to improve decision-making in business ideas and analysis. Business Intelligence is not just a concept it&amp;rsquo;s a group of concepts and methodologies. Business Intelligence uses analytics and gut feelings for making decisions.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Rise of Microsoft Power BI as a Data Analytics powerhouse </title>
+      <link>/power-bi/power-bi--rise-of-microsoft-power-bi-as-a-data-analytics-powerhouse-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--rise-of-microsoft-power-bi-as-a-data-analytics-powerhouse-/</guid>
+      <description>Power BI &amp;ndash; Rise of Microsoft Power BI as a Data Analytics powerhouse Today&amp;rsquo;s analytics and machine learning both greatly benefit from data science, which deals with data. Finding patterns and interesting findings is made easier with the use of data science and exploratory data analysis. Through data exploration, EDA enables us to learn about entirely new facets of data. Maximizing earnings while also boosting organizational effectiveness is the main equation in business.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Key Components </title>
+      <link>/power-bi/power-bi--key-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--key-components-/</guid>
+      <description>Power BI &amp;ndash; Key Components Power BI is a Data Visualization and Business Intelligence tool by Microsoft that converts data from different data sources to create various business intelligence reports. It provides interactive visualizations using which end users can create reports and interactive dashboards by themselves. Power BI provides more than enough functionalities which one may require to extract useful insights into their data with as less effort as possible. Some of the key components of the Power-BI software are: Power BI Work area This part is the most important in the Power BI design as this is a free programming through which one can without much of a stretch associate with different information sources, get information, change it and see the changed information in their work areas.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Practical Applications </title>
+      <link>/power-bi/power-bi--practical-applications-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--practical-applications-/</guid>
+      <description>Power BI &amp;ndash; Practical Applications A feature of Microsoft Office 365 called Power BI gives business users access to insights from their data. Users of the software can visualize information using a range of tools, such as graphs and diagrams. In other words, Power BI serves as a link between your data and the individual who will ultimately utilize it to make crucial decisions. Power BI is a tool that businesses frequently utilize for informational purposes.</description>
+    </item>
+    
+    <item>
+      <title>How to Install Power BI on Windows? </title>
+      <link>/power-bi/how-to-install-power-bi-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/how-to-install-power-bi-on-windows-/</guid>
+      <description>How to Install Power BI on Windows? Power BI: Power BI is an analytical software which is developed by Microsoft. BI means business intelligence. It is available only for Windows operating system. It was first released in 2011 and its stable release was in 2021. It is used for a variety of purposes like data visualization, data mining, making graphs and charts of available data, etc. It also gives advanced data warehousing capabilities which include data cleaning, data preparation, data discovery, etc.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Data Sources and its type </title>
+      <link>/power-bi/power-bi--data-sources-and-its-type-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--data-sources-and-its-type-/</guid>
+      <description>Power BI &amp;ndash; Data Sources and its type In this article, we will be looking at Data Sources and their type in Power BI.
+Power BI is an interactive data visualization software developed by Microsoft with a primary focus on business intelligence. It is part of the Microsoft Power Platform.
+The Power BI data sources that are available are as follows:
+Flat Files
+SQL Database
+OData Feed
+Blank Query
+Azure Cloud platform</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Differences Between Microsoft Power BI and SSRS </title>
+      <link>/power-bi/power-bi--differences-between-microsoft-power-bi-and-ssrs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--differences-between-microsoft-power-bi-and-ssrs-/</guid>
+      <description>Power BI &amp;ndash; Differences Between Microsoft Power BI and SSRS In this article, we will cover what is SSRS and Power BI, their Features, Types, and Differences Between Microsoft Power BI and SSRS.
+What is SQL SSRS (Server Reporting Services)? SSRS stands for SQL Server Reporting Services. A tool developed by Microsoft is used to create visualizations and reports on data such as graphs, tables, charts, etc. It consists of a set of tools for creating, distributing, and managing reports.</description>
+    </item>
+    
+    <item>
+      <title>Power BI Free vs Power BI Pro vs Power BI Premium </title>
+      <link>/power-bi/power-bi-free-vs-power-bi-pro-vs-power-bi-premium-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-free-vs-power-bi-pro-vs-power-bi-premium-/</guid>
+      <description>Power BI Free vs Power BI Pro vs Power BI Premium Power BI is a Microsoft software package that allows users to connect to a variety of data sources and produce interactive reports that provide an understanding of the underlying data. The idea for Power BI was first developed in late 2010 and released as &amp;ldquo;Project Crescent&amp;rdquo; the following year. In 2013, the platform&amp;rsquo;s name was changed to &amp;ldquo;Power BI&amp;rdquo; (where &amp;ldquo;BI&amp;rdquo; stands for &amp;ldquo;Business Intelligence&amp;rdquo;).</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to edit in Power BI App? </title>
+      <link>/power-bi/power-bi--how-to-edit-in-power-bi-app-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-edit-in-power-bi-app-/</guid>
+      <description>Power BI &amp;ndash; How to edit in Power BI App? Power BI is a data visualization application that lets you connect, transform and find insights into the most pressing matters of your business. It helps in sourcing your data and creating visual dashboards, KPIs, and reports by editing the data as per your concerns. You can collaborate, share and integrate your data easily across products documentations. It also has a wide range of visualizations, including charts, tables, and maps, and allows users to create interactive dashboards and reports.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Date Functions </title>
+      <link>/power-bi/power-bi--dax-date-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-date-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Date Functions Date operation in Microsoft Excel is comparable to those in Data Analysis Expressions (DAX). However, the DateTime data types utilized by Microsoft SQL Server form the foundation of DAX functions. Microsoft Power BI uses the scripting language Data Analysis Expressions (DAX) to create calculated columns, measurements, and custom tables. It offers a number of useful functions that help create some very cool formulas and expressions that can be applied to a number of data analysis issues.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Add Conditional Columns? </title>
+      <link>/power-bi/power-bi--how-to-add-conditional-columns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-add-conditional-columns-/</guid>
+      <description>Power BI &amp;ndash; How to Add Conditional Columns? Microsoft Power BI is a software program for Interactive Data Visualization with a strong emphasis on Business Intelligence. Power BI is a collection of software services, programs, and links that combine to turn unrelated data from various sources into coherent, aesthetically pleasing, and interactive insights. With Power BI Desktop, you can connect to the world of data, create foundational reports that are appealing, and share your work with others so they can build on it and advance your business intelligence initiatives.</description>
+    </item>
+    
+    <item>
+      <title>DAX Aggregate Functions in Power BI </title>
+      <link>/power-bi/dax-aggregate-functions-in-power-bi-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/dax-aggregate-functions-in-power-bi-/</guid>
+      <description>DAX Aggregate Functions in Power BI Microsoft offers a service for business analytics called Power BI. It seeks to offer business intelligence capabilities and interactive visualizations with a user interface that is straightforward enough for users to build their own reports and dashboards. Here, we are using the dataset that contains information on the library supplies sold by a library manufacturer to different clients. All the relevant details like order date, client name, product name, product unit, etc.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Excel Integration </title>
+      <link>/power-bi/power-bi--excel-integration-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--excel-integration-/</guid>
+      <description>Power BI &amp;ndash; Excel Integration Power BI and Excel Integration use to make connections between Power BI Files and Excel Files. If the user wants to see data of Power BI in excel files then he can analyze and see this data in excel. Following are steps to perform Integration of Power BI with Excel: Step 1: Open the Power BI Workspace and select create data. Next Click to Paste or manually enter.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Dashboard Introduction </title>
+      <link>/power-bi/power-bi--dashboard-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dashboard-introduction-/</guid>
+      <description>Power BI &amp;ndash; Dashboard Introduction Power BI is a Powerful Data discovery tool from Microsoft. It allows users to convert data into visuals and graphics, visually explore and analyze data, collaborate on interactive dashboards and reports, and scale with security. Microsoft revealed that Power BI is now used by 97% of Fortune 500 companies at Microsoft Business Application Summit in 2021. Let&amp;rsquo;s Dive into the blog to know about the Core feature of PowerBI.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Dashboard Actions </title>
+      <link>/power-bi/power-bi--dashboard-actions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dashboard-actions-/</guid>
+      <description>Power BI &amp;ndash; Dashboard Actions A single page, or palette, is what is referred to as a Power BI dashboard and it employs visualizations to convey a story. As it can only fit on one page, a well-designed dashboard delivers only the essentials of the scenario. Dashboards are a feature of the Power BI service. When utilizing Power BI Desktop, they are not available. Mobile devices can be used to view and publish dashboards but not to create them.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a Stacked Bar Chart </title>
+      <link>/power-bi/power-bi--create-a-stacked-bar-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-stacked-bar-chart-/</guid>
+      <description>Power BI &amp;ndash; Create a Stacked Bar Chart Sometimes there is a range of scenarios where it is hard to convey the information in a table and written format. Under such situations, Bar charts make things easier and more understandable.
+What are Stacked Charts &amp;amp; Bar Charts? Stacked charts are a sort of bar chart which are multiple-series in nature where related values are placed atop one another. This feature allows comparing the contribution of worth to a total, either in absolute or percentage terms, and comparing multiple categories and category totals simultaneously.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to add Reports to Dashboards? </title>
+      <link>/power-bi/power-bi--how-to-add-reports-to-dashboards-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-add-reports-to-dashboards-/</guid>
+      <description>Power BI &amp;ndash; How to add Reports to Dashboards? Reports can be transformed into dashboards, for viewing and explaining purposes. One can add a complete report, to the dashboard, or components of it can also be added. We could also add multiple reports and their components in a single dashboard. In this article, we will learn how to add reports to dashboards. Creating a Dashboard in Power BI One can create its own dashboard from the workspace itself.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Report Level Filters </title>
+      <link>/power-bi/power-bi--report-level-filters-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--report-level-filters-/</guid>
+      <description>Power BI &amp;ndash; Report Level Filters Filters in Power BI sort data and knowledge based on some selected criteria. That is, you&amp;rsquo;ll select particular fields or values within fields and view only the information related to them. as an example, you&amp;rsquo;ve got a dataset related to a store&amp;rsquo;s sales. Now, using the filters you&amp;rsquo;ll filter out unnecessary information. you&amp;rsquo;ll view a report having only the data for the selected aspects.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format Matrix? </title>
+      <link>/power-bi/power-bi--how-to-format-matrix-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-matrix-/</guid>
+      <description>Power BI &amp;ndash; How to Format Matrix? Power Bi is an extensively used operation as it helps in storing, assaying, calculating, etc. data. Power Bi contains numerous functions that are used to maintain and show data in a presentable way. Matrix is one of the Power Bi is handy functions, it&amp;rsquo;s a collection of figures that are arranged into several columns and rows. Matrix could contain complex figures still we won&amp;rsquo;t see those numbers.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Slicer </title>
+      <link>/power-bi/power-bi--slicer-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--slicer-/</guid>
+      <description>Power BI &amp;ndash; Slicer Slicers are the interactive filters used to format and analyze the parts of the data more effectively. We can create a slicer easily with 4 steps, as shown in the later stage of the article. We have various options to format slicers, we can change the value of the alt text, title, etc. We can also add various options like slicer headings, hierarchy distribution, and multi-select slicers.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format a Card? </title>
+      <link>/power-bi/power-bi--how-to-format-a-card-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-a-card-/</guid>
+      <description>Power BI &amp;ndash; How to Format a Card? Cards in Power BI help us display a certain value, corresponding to different dynamic scenarios. For example, want to know the total population of the world, and the population of a certain country by a slicer, all can be achieved by cards in Power BI. In this article, we will learn how to format a card in Power BI. Formatting a Card In Power BI After the successful, creation of a card in Power BI.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Multi-Row Card </title>
+      <link>/power-bi/power-bi--format-multi-row-card-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-multi-row-card-/</guid>
+      <description>Power BI &amp;ndash; Format Multi-Row Card Multi-Row cards in Power BI help us display multiple values, corresponding to different dynamic scenarios. For example, want to know the total population of the world, the average world&amp;rsquo;s economy, annual total deaths all in a single card, to achieve such tasks we use multi-row cards. Under the fields section, the first dropped column acts as the rows, and the further addition of columns, under the main column, refers to the columns of that card.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Map? </title>
+      <link>/power-bi/power-bi--how-to-create-a-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-map-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Map? A map only locates the location as a data point, whether it&amp;rsquo;s a continent, country, state, city, etc. Maps can also be plotted with the help of latitude and longitude. Maps can be useful, to know the current running business over different geographical locations. For example, if Renewbuy for Renewbuy want to analyze the number of watch times on their website in different states, then a map can be a useful tool, for better visualization.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format Map </title>
+      <link>/power-bi/power-bi--how-to-format-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-map-/</guid>
+      <description>Power BI &amp;ndash; How to Format Map Maps are the visualizations that display dataset values on the basis of location. The location can be state, country, city, pin code, etc. We have various options to format maps. We can apply different styles to map, add legends, customize the colors of the bubbles, etc. In this article, we will learn how to format a map in Power BI and explore its various options.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Treemap? </title>
+      <link>/power-bi/power-bi--how-to-create-a-treemap-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-treemap-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Treemap? TreeMap in Power BI is the hierarchical chart, which is used to show the parent and child data distribution. TreeMap is shown by a group of rectangles, these rectangles are segregated on the basis of the category. The larger numeric values are present at the top, and lower numeric values are present at the bottom. In this article, we will learn how to create a TreeMap in Power BI using steps.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format Tree Map? </title>
+      <link>/power-bi/power-bi--how-to-format-tree-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-tree-map-/</guid>
+      <description>Power BI &amp;ndash; How to Format Tree Map? Tree Maps are the visualizations that display dataset values in the form of a hierarchical rectangle-cut format. We prefer Tree Map whenever we want to show large hierarchical data, in a limited space, with a better color combination, we have treemap as our first choice, also when we have a correlation between color and size easy to adopt. We have various options to format tree maps.</description>
+    </item>
+    
+    <item>
+      <title>Connect Power BI Desktop with Power BI Service </title>
+      <link>/power-bi/connect-power-bi-desktop-with-power-bi-service-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/connect-power-bi-desktop-with-power-bi-service-/</guid>
+      <description>Connect Power BI Desktop with Power BI Service Power BI Desktop is the system version of Power BI present in the local system, It is downloaded as a free application. The comprehensive report authoring tool for report designers is Power BI Desktop. You can connect to many data sources through the desktop and then turn the data into a data model. The addition of visuals based on the data model is the last step in the report generation process.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a Table </title>
+      <link>/power-bi/power-bi--create-a-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-table-/</guid>
+      <description>Power BI &amp;ndash; Create a Table Tables are a way to represent data in the form of rows and columns. By default, the Power BI desktop creates a table itself, whenever data is dragged under the visualizations section. But, here will learn how to create the table manually, if not created by Power BI, we will also look at some aggregate functions in the tables. Creating a Table in Power BI We are given a dataset, and we want to drag two columns in the Columns section.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format Table? </title>
+      <link>/power-bi/power-bi--how-to-format-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-table-/</guid>
+      <description>Power BI &amp;ndash; How to Format Table? Sometimes we want to show data in tabular format for that we have two options here one is a table and another one is a matrix. This article deals with Tables in Power BI. You can use this dataset to follow along with this article.
+The topic that will be covered in the articles are: Creating a simple table
+Formatting a Table
+Creating a Simple Table Import the table from Your Excel to Power BI.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a Stacked Column Chart </title>
+      <link>/power-bi/power-bi--create-a-stacked-column-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-stacked-column-chart-/</guid>
+      <description>Power BI &amp;ndash; Create a Stacked Column Chart Sometimes there is a range of scenarios where it is hard to convey the information in the form of a table and written format. Under such situations, Column charts make things easier and more understandable. Let&amp;rsquo;s understand what is stacked column chart is and how to create a stacked column chart.
+What are Stacked Column Chart Stacked charts are a sort of bar chart which are multiple-bar in nature where related values are placed at one another.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Format Stacked Column Chart? </title>
+      <link>/power-bi/power-bi--how-to-format-stacked-column-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-format-stacked-column-chart-/</guid>
+      <description>Power BI &amp;ndash; How to Format Stacked Column Chart? Formatting is a technique to enhance the looks of the charts by giving a cosmetic appearance to the chart title and chart legend. Titles are given to the X and Y axis to add clarity for the user. Formatting commands are applied to a chart for the identical reason they&amp;rsquo;re applied to a worksheet: they create the chart easier to read. However, formatting techniques also facilitate chart quality and explain the data in a chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create 100% Stacked Column Chart </title>
+      <link>/power-bi/power-bi--create-100-stacked-column-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-100-stacked-column-chart-/</guid>
+      <description>Power BI &amp;ndash; Create 100% Stacked Column Chart A 100% stacked column chart is formed by bar lines, which show the proportion of each data value in the form of percentages. This chart is generally, used when we want to match the ratios of different column values, with different fields. For example, if we want to compare the salary and bonus of each employee with one another, a 100% stacked column chart can prove to be very helpful.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create 100% Stacked Bar Chart </title>
+      <link>/power-bi/power-bi--create-100-stacked-bar-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-100-stacked-bar-chart-/</guid>
+      <description>Power BI &amp;ndash; Create 100% Stacked Bar Chart Power BI 100% stacked bar chart is used to display the relative percentage of multiple data series in stacked bars, where each stacked bar&amp;rsquo;s total (cumulative) always equals 100%. In other words, A 100% stacked bar chart in power bi is a type designed to show the relative chance of multiple data series in stack bars, where the aggregate( accretive) of each stack bar always equals 100.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Stacked Bar Chart </title>
+      <link>/power-bi/power-bi--format-stacked-bar-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-stacked-bar-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Stacked Bar Chart Formatting is a technique to enhance the looks of the charts by giving a cosmetic appearance to the chart title and chart legend. Titles are given to the X and Y axis to add clarity for the user. Formatting commands are applied to a chart for the identical reason they&amp;rsquo;re applied to a worksheet. they create the chart easier to read. However, formatting techniques also facilitate chart quality and explain the data in a chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Stacked Area Chart </title>
+      <link>/power-bi/power-bi--how-to-create-a-stacked-area-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-stacked-area-chart-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Stacked Area Chart A stacked area chart is formed by combining the line chart, with the shaded area under that line. This chart is generally, used when we want to see the trends, that which field is performing better, in a particular time frame. For example, considering the stock prices of different companies, in the past 5 months, then a stacked area chart can be very useful, to see this trend.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Area Chart </title>
+      <link>/power-bi/power-bi--format-area-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-area-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Area Chart An area chart is a combination of a line chart with an area covered below the line. We could add a secondary y-axis, with just 2 mouse clicks Power BI. We have various options to format area charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like series labels, markers, and data labels in an area chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a Radial Gauge Chart </title>
+      <link>/power-bi/power-bi--create-a-radial-gauge-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-radial-gauge-chart-/</guid>
+      <description>Power BI &amp;ndash; Create a Radial Gauge Chart A radial Gauge chart looks similar to a speedometer of a Car. A gauge chart is a half-circle chart, which tells whether a target is achieved or not. Gauge charts are generally used to measure the progress toward a goal. In this article, we will learn how to create a radial gauge chart in Power BI. Creating a Radial Gauge Chart A Radial Gauge chart has a semi-arc to show its data value.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Explain Key Performance Indicators (KPIs) dashboards </title>
+      <link>/power-bi/power-bi--explain-key-performance-indicators-kpis-dashboards-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--explain-key-performance-indicators-kpis-dashboards-/</guid>
+      <description>Power BI &amp;ndash; Explain Key Performance Indicators (KPIs) dashboards The KPIs evaluate an association&amp;rsquo;s performance in different areas by assessing quantifiable measure values. In businesses, KPIs play an essential part as visual cues that indicate growth by assessing values and measurable pretensions. A KPI always has a base value or measure which is estimated against a target value. That is, comparing the factual performance with the target set. You can estimate the performances in an analysis just by seeing the KPIs.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Clustered Bar Chart </title>
+      <link>/power-bi/power-bi--format-clustered-bar-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-clustered-bar-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Clustered Bar Chart A clustered bar chart is a horizontal chart, which could present multiple bars in the form of a cluster. The horizontal bars basically group together, as they are under the same, y values. We have various options to format clustered bar charts, we can change the value of the x-axis, y-axis, its title, etc. In this article, we will learn how to format a clustered bar chart in Power BI and explore its various options.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Waterfall Chart? </title>
+      <link>/power-bi/power-bi--how-to-create-a-waterfall-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-waterfall-chart-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Waterfall Chart? A waterfall chart shows a running value as quantities are added or subtracted. It&amp;rsquo;s helpful to visualize how an underlying value is influenced by a series of positive and negative changes. The columns are usually encoded using color so that you can quickly identify increments and decrements. In a waterfall chart, a particular bar is positioned at the end of the previous bar and the baseline is based on whether there is an increase or decrease in the previous value.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Waterfall Chart </title>
+      <link>/power-bi/power-bi--format-waterfall-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-waterfall-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Waterfall Chart A waterfall chart is generally used to check the trend in the data, with its ups and downs at particular intervals. We have various options to format waterfall charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like Breakdown, Gridlines, and data labels in a waterfall chart. In this article, we will learn how to format a waterfall chart in Power BI and explore its various options.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a Filled Map </title>
+      <link>/power-bi/power-bi--create-a-filled-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-filled-map-/</guid>
+      <description>Power BI &amp;ndash; Create a Filled Map A filled map is similar to a map in Power BI. A filled map, allocates a certain area of the location mentioned, while a map only locates the location as a data point, whether it&amp;rsquo;s a continent, country, etc. Filled maps can be useful, to know the exact boundaries of a location, whether it is a country, state, district, etc. In this article, we will learn how to create a filled map in Power BI.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Filled Map </title>
+      <link>/power-bi/power-bi--format-filled-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-filled-map-/</guid>
+      <description>Power BI &amp;ndash; Format Filled Map Filled Maps are the visualizations that display dataset values on the basis of location with the area allocated for that region. The difference between a map and a filled map is that a map only shows the data points for the selected location, but a filled map selects the area portion of that location on the map. The location can be state, country, city, pin code, etc.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Scatter Chart? </title>
+      <link>/power-bi/power-bi--how-to-create-a-scatter-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-scatter-chart-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Scatter Chart? A Scatter chart is a chart, representing data points, spread on a graph, to show the column values. It helps us analyze and summarise the data very efficiently. We can also add legends, bubble sizes, and animations to this chart. This graph is widely used because it can show better visualizations in the case of both categorical as well as numeric data.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Scatter Chart </title>
+      <link>/power-bi/power-bi--format-scatter-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-scatter-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Scatter Chart Scatter charts are data distribution charts, in the form of data points. We have various options to format scatter charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like zoom slider, markers, and grid lines in the scatter chart. In this article, we will learn how to format a scatter chart in Power BI and explore its various options.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Line Chart </title>
+      <link>/power-bi/power-bi--format-line-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-line-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Line Chart A Line chart shows data in the form of a line. It is generally used when we have to show, continuous data graphically. We could add a secondary y-axis, with just 2 mouse clicks in Power BI. We have various options to format line charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like series labels, markers, and data labels in this chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create a Shape Map? </title>
+      <link>/power-bi/power-bi--how-to-create-a-shape-map-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-a-shape-map-/</guid>
+      <description>Power BI &amp;ndash; How to Create a Shape Map? A shape map is similar to a map in Power BI. A shape map, shows the comparison between different regions, using different color shades, on a given value. For example, suppose the number of corona cases is higher in Uttar Pradesh, with respect to Haryana. In that case, the Uttar Pradesh state will be shown with a darker color than, the Haryana state.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Donut Chart </title>
+      <link>/power-bi/power-bi--format-donut-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-donut-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Donut Chart A donut chart is a circular chart, which could present values of a dataset in the form of slices of a donut. The donut chart is exactly the same as a pie chart, the only difference is pie chart has a circle, but a donut chart has a hole in the circle. We have various options to format donut charts, we can change the value of the legends, rotation, detail labels, etc.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Pie Chart </title>
+      <link>/power-bi/power-bi--format-pie-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-pie-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Pie Chart A pie chart is a circular chart, which could present values of a dataset in the form of slices of a circle. We have various options to format pie charts, we can change the value of the legends, rotation, detail labels, etc. In this article, we will learn how to format a pie chart in Power BI and explore its various options.
+Formatting a Pie Chart In Power BI After the successful, creation of a pie chart in Power BI, we have multiple options to format it.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Ribbon Chart </title>
+      <link>/power-bi/power-bi--format-ribbon-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-ribbon-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Ribbon Chart A ribbon chart is a type of column chart, with ribbons joining each other. If the legends property is not added to the ribbon chart, then the ribbon chart is the same as the column chart. If we add legends to our chart, then a string of ribbons will be joined for each legend&amp;rsquo;s values, showing the rankings order of high and low values, using different color ribbons.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Create a R Script Visual </title>
+      <link>/power-bi/power-bi--create-a-r-script-visual-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--create-a-r-script-visual-/</guid>
+      <description>Power BI &amp;ndash; Create a R Script Visual An R script is different from R visuals. It helps transform our data into statistical analysis and machine learning algorithms on our datasets. It creates beautiful charts, with statistical measures. To make R Script Visual, we need to have some prerequisites i.e. Installing R in the System, and Checking the Path of R in Power BI. In this article, we will learn how to create an R Script Visual in Power BI.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Line and Stacked Column Chart </title>
+      <link>/power-bi/power-bi--format-line-and-stacked-column-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-line-and-stacked-column-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Line and Stacked Column Chart A Line and Stacked Column chart is a combination of a line chart with a stacked column chart. We could add a secondary y-axis, with just 2 mouse clicks in Power BI. We have various options to format line and stacked column charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like series labels, markers, and data labels in this chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Format Line and Clustered Column Chart </title>
+      <link>/power-bi/power-bi--format-line-and-clustered-column-chart-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--format-line-and-clustered-column-chart-/</guid>
+      <description>Power BI &amp;ndash; Format Line and Clustered Column Chart A Line and Clustered Column chart is a combination of a line chart with a clustered(segregated) column chart. We could add a secondary y-axis, with just 2 mouse clicks in Power BI. We have various options to format line and clustered column charts, we can change the value of the x-axis, y-axis, its title, etc. We can also add various options like series labels, markers, and data labels in this chart.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- How to Create Calculated Columns? </title>
+      <link>/power-bi/power-bi--how-to-create-calculated-columns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--how-to-create-calculated-columns-/</guid>
+      <description>Power BI &amp;ndash; How to Create Calculated Columns? Power BI Desktop there are two data modification options known as Calculated Table and Calculated Column. These two options can add a whole new table referring to existing tables and a column to any existing table using existing columns of the respective table. Calculated Columns and Calculated Tables are generally made by writing a DAX query. Dataset The database we&amp;rsquo;ll be using for implementation purposes is called Superstore dataset by Kaggle.</description>
+    </item>
+    
+    <item>
+      <title>Power BI- Functions </title>
+      <link>/power-bi/power-bi-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-functions-/</guid>
+      <description>Power BI- Functions DAX is a very powerful feature provided with Power BI from Microsoft. DAX stands for Data Analysis Expressions. As we can understand from the name DAX consists of the functions and expressions that are used to manipulate the data or the reports. These expressions help to perform analysis of the data and also do various types of calculations on the data. DAX makes use of various mathematical expressions such as functions, expressions, constants, and mathematical operators to give a feature-rich library to do simple to complex calculations.</description>
+    </item>
+    
+    <item>
+      <title>Power BI- DAX Window Function </title>
+      <link>/power-bi/power-bi-dax-window-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-dax-window-function-/</guid>
+      <description>Power BI- DAX Window Function The filter and value functions in DAX are some of the most complex and powerful and differ greatly from Excel functions. The lookup functions work by using tables and relationships, like a database. The filtering functions let you manipulate data context to create dynamic calculations. The WINDOW function is quite useful for calculations like a Moving Average or a Running Sum since it enables us to do computations based on ranges and get a slice of results using absolute or relative positioning.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Logical Functions </title>
+      <link>/power-bi/power-bi--dax-logical-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-logical-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Logical Functions Data analysis expressions, or DAX, are formulas or expressions used in calculations and data analysis. These expressions contain a variety of different functions, operators, and constants that are all evaluated collectively as a single formula to yield the desired outcomes (value or values). DAX formulas are very beneficial in BI tools like Power BI because they help data analysts get the most out of the data sets they already have.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Information Functions </title>
+      <link>/power-bi/power-bi--dax-information-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-information-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Information Functions Data Analysis Expressions, or DAX, are formulas or expressions that are used for calculations and data analysis. These expressions consist of a number of different functions, operators, and constants that are all evaluated together as a single formula to produce the desired results (value or values). In BI tools like Power BI, DAX formulas are very helpful because they enable data analysts to make the best use possible of the data sets they already have.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX TEXT Functions </title>
+      <link>/power-bi/power-bi--dax-text-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-text-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX TEXT Functions DAX is a collection of operators, constants, and functions that can be used to compute and return one or more values in an expression or formula. To put it simply, DAX gives you the ability to create new data from data that already exist in your model.
+DAX Text Functions Tables and columns can be used with DAX Text or String Functions. You may concatenate string values, search for text with string, and return a portion of a string using DAX Text Functions.</description>
+    </item>
+    
+    <item>
+      <title>Power BI- DAX Index Function </title>
+      <link>/power-bi/power-bi-dax-index-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-dax-index-function-/</guid>
+      <description>Power BI- DAX Index Function Data filtering is one of the most widely used data analysis techniques. Data filtering eliminates the clutter and makes important information visible to everyone, whether they are financial experts, data scientists, marketers, or salespeople. Filtered data often results in a subset of data that may be used to create future studies. Unquestionably, Power BI, the most popular and well-known business intelligence product of our day, offers data filtering through the use of DAX filter capabilities.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Trigonometric Functions </title>
+      <link>/power-bi/power-bi--dax-trigonometric-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-trigonometric-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Trigonometric Functions Microsoft Power BI uses the scripting language Data Analysis Expressions (DAX) to create calculated columns, measurements, and custom tables. It offers a number of useful functions that help create formulas and expressions that can be applied to a number of data analysis issues. You can develop reliable and high-performance data models in Power BI by having a fundamental understanding of when and how to use the DAX functions.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX COUPDAY Financial Function </title>
+      <link>/power-bi/power-bi--dax-coupday-financial-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-coupday-financial-function-/</guid>
+      <description>Power BI &amp;ndash; DAX COUPDAY Financial Function Data Analysis Expressions is referred to as DAX in Power BI. It is an expressive language for formulas that are also utilized in Power BI and other visualization tools. It is utilized to create many kinds of formulae. We have all been utilizing various Excel functions in MS Excel for a very long time. DAX is comparable to Excel&amp;rsquo;s Insert Function. The many formula types used for data modeling Power BI are written in DAX.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Depreciation Functions </title>
+      <link>/power-bi/power-bi--dax-depreciation-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-depreciation-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Depreciation Functions Formulas that do financial computations, including net present value and rate of return, use financial functions in DAX. These features are comparable to those found in Microsoft Excel&amp;rsquo;s financial features. Microsoft added about 50 additional DAX capabilities to Power BI in July 2020. Some users may already be familiar with these features since they are comparable to those in Excel. We intend to go over each of these features in a series of DAX Finance articles for people who are unfamiliar with them so that you can learn what they do and how to utilize them.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- Distinct() function </title>
+      <link>/power-bi/power-bi--distinct-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--distinct-function-/</guid>
+      <description>Power BI &amp;ndash; Distinct() function Data Analysis Expressions (DAX) include many functions that return a table rather than a value. The table isn&amp;rsquo;t displayed but is used to provide input to other functions. For example, you can retrieve a table and then count the distinct values in it or calculate dynamic sums across filtered tables or columns.
+Dataset used: The given data set contains information on the library supplies sold by a library manufacturer to different clients.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Math Functions </title>
+      <link>/power-bi/power-bi--dax-math-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-math-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Math Functions A robust set of cloud-based business analytics tools called Power BI makes it simple to combine data from many sources, analyze and visualize information, and share insights. The Mathematical functions in Excel are quite similar to those in Data Analysis Expressions (DAX). Many functions in the Data Analysis Expression (DAX) return tables as opposed to values. The table is used as input for other functions but is not displayed.</description>
+    </item>
+    
+    <item>
+      <title>Power BI -- DAX Counting Functions </title>
+      <link>/power-bi/power-bi--dax-counting-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi--dax-counting-functions-/</guid>
+      <description>Power BI &amp;ndash; DAX Counting Functions Many functions in the Data Analysis Expressions (DAX) return a table rather than a value. The table is used as an input for other functions, but it is not displayed. For instance, get a table and count the number of distinct values it contains, or you could compute dynamic sums over filtered tables or columns.
+Dataset used: The given data set contains information on the library supplies sold by a library manufacturer to different clients.</description>
+    </item>
+    
+    <item>
+      <title>Power BI- DAX Bitwise Functions </title>
+      <link>/power-bi/power-bi-dax-bitwise-functions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/power-bi/power-bi-dax-bitwise-functions-/</guid>
+      <description>Power BI- DAX Bitwise Functions To generate formulas and expressions in Excel data models for Power BI, Analysis Services, and Power Pivot, Data Analysis Expressions (DAX), a group of functions and operators, can be combined. Data Analysis Expression is a feature of the Power BI toolset that enables business analysts to maximize the value of their datasets. These expressions make the process of creating reports faster and more enjoyable for the data analyst.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

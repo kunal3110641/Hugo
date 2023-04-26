@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ITX on SATHEE</title>
+    <link>/itx/</link>
+    <description>Recent content in ITX on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/itx/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Turtles Proposals Apis proposals</title>
+      <link>/itx/turtles-proposals-apis-proposals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposals-apis-proposals/</guid>
+      <description>app.apis.version1.proposals Async Function [create_endorsement_proposal](#create_endorsement_proposal)
+Creates an endorsement proposal with the given proposal ID.
+Async Function
+[create_proposal](#create_proposal)
+Creates a proposal using the provided CreateProposalRequest object.
+Async Function
+[generate_proposal](#generate_proposal)
+Generates a proposal with the given ID and returns a response object containing the proposal ID and number.
+Async Function
+[get_application_id](#get_application_id)
+Retrieves the application ID associated with a given proposal ID.
+Async Function
+[get_proposal](#get_proposal)
+Returns proposal data for the given proposal ID.
+Async Function</description>
+    </item>
+    
+    <item>
+      <title>Turtles Proposals Apis ckyc</title>
+      <link>/itx/turtles-proposals-apis-ckyc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposals-apis-ckyc/</guid>
+      <description>app.apis.version1.ckyc
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[apis](app.apis.html)`.`[version1](app.apis.version1.html)`.`[ckyc](app.apis.version1.ckyc.html)` Toggle Private API
+module documentation
+Undocumented
+Async Function
+[check_ckyc_status](#check_ckyc_status)
+Checks the status of the CKYC request associated with the given proposal ID.
+Async Function
+[create_ckyc_approval](#create_ckyc_approval)
+Creates a CKYC approval for a motor proposal.
+Async Function
+[fetch_ckyc_data](#fetch_ckyc_data)
+Fetches CKYC data for a given CKYC request.
+Async Function
+[get_ckyc_approval_status](#get_ckyc_approval_status)
+Retrieves a list of CKYC approval statuses that are currently active.
+Async Function
+[get_ckyc_approvals](#get_ckyc_approvals)
+Retrieves a list of CKYC approvals that match the specified query parameters.</description>
+    </item>
+    
+    <item>
+      <title>Turtles Proposals Apis communication</title>
+      <link>/itx/turtles-proposals-apis-communication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposals-apis-communication/</guid>
+      <description>app.apis.version1.communication
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[apis](app.apis.html)`.`[version1](app.apis.version1.html)`.`[communication](app.apis.version1.communication.html)` Toggle Private API
+module documentation
+Undocumented
+Async Function
+[share_policy_preview](#share_policy_preview)
+Share policy preview via email.
+Variable
+[communication_router](#communication_router)
+Undocumented
+Variable
+[logger](#logger)
+Undocumented
+@communication_router.post(&amp;rsquo;/share_policy_preview/&amp;rsquo;)
+async def share_policy_preview(request, background_tasks):
+Share policy preview via email. Args: request (SendPolicyPreviewRequest): A request object containing the necessary data for sharing policy preview. background_tasks (BackgroundTasks): A FastAPI built-in class for handling background tasks. Returns: SendEmailResponse: A response object indicating the status of the email sent.</description>
+    </item>
+    
+    <item>
+      <title>Turtles Proposals Apis routers</title>
+      <link>/itx/turtles-proposals-apis-routers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposals-apis-routers/</guid>
+      <description>::: container ::: navbar-header ::: navlinks [ app API Documentation ]{.navbar-brand} Modules Classes Names ::: ::: :::
+::: container ::: page-header
+app.apis.routers ::: {#showPrivate} Toggle Private API ::: :::
+::: categoryHeader module documentation :::
+::: extrasDocstring :::
+::: moduleDocstring
+Undocumented
+::: ::: {#splitTables}
+Function health_check [No summary]{.undocumented} Variable router [Undocumented]{.undocumented}
+:::
+::: {#childList} ::: basefunction []{#app.apis.routers.health_check} []{#health_check}
+::: functionHeader @router.get([&#39;]{.rst-variable-quote}[/health_check]{.rst-variable-string}[&#39;]{.rst-variable-quote})
+[def]{.py-keyword} [health_check]{.py-defname}(): :::
+::: {.docstring .functionBody}
+Returns: dict: A dictionary containing the following keys: - &amp;quot;status&amp;quot;: An integer indicating the status of the service.</description>
+    </item>
+    
+    <item>
+      <title>Turtles proposal migrations.env</title>
+      <link>/itx/turtles-proposal-migrations.env/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposal-migrations.env/</guid>
+      <description>::: container ::: navbar-header ::: navlinks [ app API Documentation ]{.navbar-brand} Modules Classes Names ::: ::: :::
+::: container ::: page-header
+app.migrations.env ::: {#showPrivate} Toggle Private API ::: :::
+::: categoryHeader module documentation :::
+::: extrasDocstring :::
+::: moduleDocstring
+Undocumented
+::: ::: {#splitTables}
+Function run_migrations_offline Run migrations in &#39;offline&#39; mode. Function run_migrations_online Run migrations in &#39;online&#39; mode. Constant POSTGRES_DATABASE [Undocumented]{.undocumented} Constant POSTGRES_HOST [Undocumented]{.undocumented} Constant POSTGRES_PASSWORD [Undocumented]{.undocumented} Constant POSTGRES_PORT [Undocumented]{.undocumented} Constant POSTGRES_USERNAME [Undocumented]{.</description>
+    </item>
+    
+    <item>
+      <title>Turtles proposal app.main</title>
+      <link>/itx/turtles-proposal-app.main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-proposal-app.main/</guid>
+      <description>::: container ::: navbar-header ::: navlinks [ app API Documentation ]{.navbar-brand} Modules Classes Names ::: ::: :::
+::: container ::: page-header
+app.main ::: {#showPrivate} Toggle Private API ::: :::
+::: categoryHeader module documentation :::
+::: extrasDocstring :::
+::: moduleDocstring
+Undocumented
+::: ::: {#splitTables}
+Async Function authenticate_user Authenticates a user by verifying the supplied credentials against an external authentication service. Function custom_openapi Generates a custom OpenAPI schema for the Turtles service. Async Function exception_handler [No summary]{.</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.sdk.producer.AsyncKafkaProducer</title>
+      <link>/itx/turtles-app.sdk.producer.asynckafkaproducer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.sdk.producer.asynckafkaproducer/</guid>
+      <description>::: container ::: navbar-header ::: navlinks [ app API Documentation ]{.navbar-brand} Modules Classes Names ::: ::: :::
+::: container ::: page-header
+app.sdk.producer.AsyncKafkaProducer ::: {#showPrivate} Toggle Private API ::: :::
+::: categoryHeader class documentation :::
+::: extrasDocstring class AsyncKafkaProducer:
+View In Hierarchy :::
+::: moduleDocstring
+Undocumented
+::: ::: {#splitTables}
+Async Class Method push_data_to_mobile_kafka_topic Pushes data to a Kafka topic using the AIOKafkaProducer library. Async Class Method push_email_to_kafka_topic Pushes email data to a Kafka topic using the AIOKafkaProducer library.</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.api_parser.APIParser</title>
+      <link>/itx/turtles-app.services.api_parser.apiparser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.api_parser.apiparser/</guid>
+      <description>::: container ::: navbar-header ::: navlinks [ app API Documentation ]{.navbar-brand} Modules Classes Names ::: ::: :::
+::: container ::: page-header
+app.services.api_parser.APIParser ::: {#showPrivate} Toggle Private API ::: :::
+::: categoryHeader class documentation :::
+::: extrasDocstring class APIParser:
+View In Hierarchy :::
+::: moduleDocstring
+Undocumented
+::: ::: {#splitTables}
+Async Class Method calculate_tax [No summary]{.undocumented} Async Class Method coverage_detail_parser [No summary]{.undocumented} Async Class Method create_customer_parser [No summary]{.undocumented} Async Class Method create_endorsement_proposal Creating proposal object for received proposal_request :param proposal_id: :return: CreateProposalResponse object Async Class Method create_proposal Creating proposal object for received proposal_request :param proposal_request: :return: MotorProposal object Async Class Method generate_proposal Generating proposal number for received proposal_id :param proposal_id: :return: proposal_number Async Class Method get_addon_or_addon_bundle_premium Calculates the total premium and net premium for an insurance proposal that includes one or more addon bundles.</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.motor_utils.MotorCoverage</title>
+      <link>/itx/turtles-app.services.motor_utils.motorcoverage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.motor_utils.motorcoverage/</guid>
+      <description>app.services.motor_utils.MotorCoverage
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[services](app.services.html)`.`[motor_utils](app.services.motor_utils.html)`.`[MotorCoverage](app.services.motor_utils.MotorCoverage.html)` Toggle Private API
+class documentation
+class MotorCoverage:
+View In Hierarchy
+Undocumented
+Async Class Method
+[create_coverages](#create_coverages)
+Creating coverage objects for received coverage_data :param coverage_data: :return: dict of coverage_ids
+Async Class Method
+[create_geo_extensions](#create_geo_extensions)
+No summary
+Async Class Method
+[get_coverages](#get_coverages)
+Get coverages objects against received coverage_details :param coverage_details: :return: CoverageDetailSchema
+Async Class Method
+[update_coverages](#update_coverages)
+No summary
+Async Class Method
+[update_geo_extensions](#update_geo_extensions)
+No summary
+@classmethod
+async def create_coverages(cls, coverage_data):</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.motor_utils.AddonDetails</title>
+      <link>/itx/turtles-app.services.motor_utils.addondetails/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.motor_utils.addondetails/</guid>
+      <description>app.services.motor_utils.AddonDetails
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[services](app.services.html)`.`[motor_utils](app.services.motor_utils.html)`.`[AddonDetails](app.services.motor_utils.AddonDetails.html)` Toggle Private API
+class documentation
+class AddonDetails:
+View In Hierarchy
+Undocumented
+Async Class Method
+[create_addon](#create_addon)
+Creates addon objects for a proposal, based on a list of selected addon IDs.
+Async Class Method
+[create_addon_bundle](#create_addon_bundle)
+Creates addon bundle objects for a proposal, based on a list of selected addon bundles.
+Async Class Method
+[create_prev_policy_addons](#create_prev_policy_addons)
+Creates a new prev_policy_addon record for each selected addon ID and a given previous policy details ID.</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.motor_utils.Ckyc</title>
+      <link>/itx/turtles-app.services.motor_utils.ckyc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.motor_utils.ckyc/</guid>
+      <description>app.services.motor_utils.Ckyc
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[services](app.services.html)`.`[motor_utils](app.services.motor_utils.html)`.`[Ckyc](app.services.motor_utils.Ckyc.html)` Toggle Private API
+class documentation
+class Ckyc:
+View In Hierarchy
+Undocumented
+Async Class Method
+[fetch_ckyc_details](#fetch_ckyc_details)
+Get ckyc details from bob service against received ckyc request :param ckyc_request: :return: dict
+Async Class Method
+[filter_ckyc_approvals](#filter_ckyc_approvals)
+Filters CKYC approvals based on request criteria.
+Async Class Method
+[get_ckyc_status](#get_ckyc_status)
+Get ckyc details from bob service against received ckyc request :param ckyc_request: :return: dict
+Async Class Method
+[update_ckyc_details](#update_ckyc_details)</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.motor_utils.CleverBridge</title>
+      <link>/itx/turtles-app.services.motor_utils.cleverbridge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.motor_utils.cleverbridge/</guid>
+      <description>app.services.motor_utils.CleverBridge
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[services](app.services.html)`.`[motor_utils](app.services.motor_utils.html)`.`[CleverBridge](app.services.motor_utils.CleverBridge.html)` Toggle Private API
+class documentation
+class CleverBridge:
+View In Hierarchy
+Undocumented
+Async Class Method
+[post_transaction_data](#post_transaction_data)
+Posts data about a transaction to the Cleverbridge API.
+@classmethod
+async def post_transaction_data(cls, transaction_id, proposal_id=None, quote_id=None):
+Posts data about a transaction to the Cleverbridge API. Args: transaction_id (str): The ID of the transaction to post data for. proposal_id (str): The ID of the proposal associated with the transaction, if applicable.</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.services.motor_utils.Customer</title>
+      <link>/itx/turtles-app.services.motor_utils.customer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.services.motor_utils.customer/</guid>
+      <description>app.services.motor_utils.Customer
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[services](app.services.html)`.`[motor_utils](app.services.motor_utils.html)`.`[Customer](app.services.motor_utils.Customer.html)` Toggle Private API
+class documentation
+class Customer:
+View In Hierarchy
+Undocumented
+Async Class Method
+[create_customer](#create_customer)
+Creating customer object in bob service :param customer_data: :return: customer id
+Async Class Method
+[get_customer](#get_customer)
+Get customer object from bob service against received customer id :param customer_id: :return: CustomerDataResponse
+Async Class Method
+[update_customer](#update_customer)
+No summary
+@classmethod
+async def create_customer(cls, customer_data):
+Creating customer object in bob service :param customer_data: :return: customer id</description>
+    </item>
+    
+    <item>
+      <title>Turtles app.main</title>
+      <link>/itx/turtles-app.main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/turtles-app.main/</guid>
+      <description>app.main
+app API Documentation Modules Classes Names
+`[app](app.html)`.`[main](app.main.html)` Toggle Private API
+module documentation
+Undocumented
+Async Function
+[authenticate_user](#authenticate_user)
+Authenticates a user by verifying the supplied credentials against an external authentication service.
+Function
+[custom_openapi](#custom_openapi)
+Generates a custom OpenAPI schema for the Turtles service.
+Async Function
+[exception_handler](#exception_handler)
+No summary
+Function
+[register_admin_models](#register_admin_models)
+Undocumented
+Async Function
+[startup_event](#startup_event)
+Initialize the database connection and Flask-Admin on application startup. This function sets up the SQLAlchemy database connection using the provided connection configuration, creates a Flask-Admin instance using the SQLAlchemy engine, and registers the admin models with it.</description>
+    </item>
+    
+    <item>
+      <title>Quake app.api.version1.quotes</title>
+      <link>/itx/quake-app.api.version1.quotes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/quake-app.api.version1.quotes/</guid>
+      <description>app API Documentation Modules Classes Names **app.api.version1.quotes.QuotationService** Toggle Private API
+class documentation
+class QuotationService:
+View In Hierarchy
+Undocumented
+Async Method get_quotes No summary Async Method initiate_quotes No summary Async Method recalculate_premium Endpoint that recalculates the premium for a given insurance quote. @router.get(&amp;rsquo;/get_quotes/&amp;rsquo;, response_model=GetQuotesResponse) async def get_quotes(self, transaction_id=None, quote_request_id=None, quote_id=None): Fetching quote details in database stored against parsed key :param transaction_id: :param quote_request_id: :param quote_id: :return: quote data if present in database else {&amp;ldquo;query_id&amp;rdquo;: query_param, &amp;ldquo;quotes&amp;rdquo;: []}</description>
+    </item>
+    
+    <item>
+      <title>Quake app.services.kafka_services</title>
+      <link>/itx/quake-app.services.kafka_services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/quake-app.services.kafka_services/</guid>
+      <description>app API Documentation Modules Classes Names **app.services.kafka_services.QuotesServiceUtility** Toggle Private API
+class documentation
+class QuotesServiceUtility:
+View In Hierarchy
+Undocumented
+Async Class Method fetch_insurer_or_plans_details this method is communicating with dataverse for getting the data of insurers and plans. :return: if no exception generated then a list containing insurer codes else empty list Async Class Method process_and_publish_to_kafka this method calls the master service if initiate quote request is received to fetch all active insurer for which workers need to bring the quotes, adds the insurer_id in the quote request and putting it into the kafka queue @classmethod async def fetch_insurer_or_plans_details(cls): this method is communicating with dataverse for getting the data of insurers and plans.</description>
+    </item>
+    
+    <item>
+      <title>Quake app.utils.code_utils</title>
+      <link>/itx/quake-app.utils.code_utils/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/quake-app.utils.code_utils/</guid>
+      <description>app API Documentation Modules Classes Names **app.utils.code_utils** Toggle Private API
+module documentation
+Undocumented
+Async Function calculate_policy_end_date No summary Function calculate_total_idv No summary Function calculate_vehicle_age No summary Async Function calculate_vehicle_idv Undocumented Function generate_request_id this method is used to generate unique string everytime for request id. current logic is to generate unique uuid as request id Function validate_input No summary Function validate_uuid Validating parsed uuid :param uuid_string: :return: uuid else Exception raised. async def calculate_policy_end_date(vehicle_cover_id, policy_start_date): This function takes two arguments: param: vehicle_cover_id: an integer representing the ID of the vehicle cover.</description>
+    </item>
+    
+    <item>
+      <title>Quake app.worker.integration_library.calls</title>
+      <link>/itx/app.worker.integration_library.calls.adaptorcall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/app.worker.integration_library.calls.adaptorcall/</guid>
+      <description>app API Documentation Modules Classes Names **app.worker.integration_library.calls.AdaptorCall** Toggle Private API
+class documentation
+class AdaptorCall:
+View In Hierarchy
+Undocumented
+Async Method get_quote This is an asynchronous method to get a quote from an insurance provider&amp;rsquo;s adaptor using the insurer&amp;rsquo;s code and quote data as inputs. It returns the result of calling the get_quote() method on the appropriate adaptor instance. Class Variable configuration_data Undocumented Class Variable insurer_codes Undocumented async def get_quote(self, insurer, quote_data): This is an asynchronous method to get a quote from an insurance provider&amp;rsquo;s adaptor using the insurer&amp;rsquo;s code and quote data as inputs.</description>
+    </item>
+    
+    <item>
+      <title>Quake app.worker.main.WorkerProcess</title>
+      <link>/itx/quake-app.worker.main.workerprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/quake-app.worker.main.workerprocess/</guid>
+      <description>app API Documentation Modules Classes Names **app.worker.main.WorkerProcess** Toggle Private API
+class documentation
+class WorkerProcess:
+View In Hierarchy
+Undocumented
+Method init Undocumented Async Method process_request No summary def __init__(self): Undocumented
+async def process_request(self, data):
+The method attempts to parse the JSON-encoded data contained in the data argument using the json.loads method. If the parsing is successful, it generates a quote ID if not exist in the data. The method then creates an instance of the AdaptorCallData class with the data, and calls the get_quote method of the AdaptorCall class to retrieve quotes from the insurer.</description>
+    </item>
+    
+    <item>
+      <title>Quake app.worker.main</title>
+      <link>/itx/quake-app.worker.main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/itx/quake-app.worker.main/</guid>
+      <description>app API Documentation Modules Classes Names **app.worker.main** Toggle Private API
+module documentation
+Undocumented
+Class WorkerProcess No class docstring; 1/2 method documented Async Function main No summary Variable logger Undocumented async def main(): This async function that starts a worker process to consume messages from Kafka topics. The initiate_database function is called to establish a connection to a MongoDB database using the configuration provided in settings.CONNECTION_CONFIG. The AIOKafkaConsumer class is instantiated with the bootstrap servers and Kafka topics to consume messages from.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

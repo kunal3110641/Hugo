@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular 2 on SATHEE</title>
+    <link>/angular-2/</link>
+    <description>Recent content in Angular 2 on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/angular-2/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>AngularJS </title>
+      <link>/angular-2/basic-info-doc-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular-2/basic-info-doc-1/</guid>
+      <description>﻿
+whats is angular and advantages, disadvantages
+Angular is an open-source, JavaScript framework
+written in TypeScript. Google maintains it, and its
+primary purpose is to develop single-page
+applications. As a framework, Angular has clear
+advantages while also providing a standard
+structure for developers to work with. It enables
+users to create large applications in a
+maintainable manner.
+what is angular life cycle hooks
+●
+Lifecycle hooks are a special functionality in</description>
+    </item>
+    
+    
+  </channel>
+</rss>

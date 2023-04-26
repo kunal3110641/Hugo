@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on SATHEE</title>
+    <link>/html/</link>
+    <description>Recent content in HTML on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/html/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>HTML Introduction </title>
+      <link>/html/html-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-introduction-/</guid>
+      <description>HTML Introduction HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is the combination of Hypertext and Markup language. Hypertext defines the link between web pages. A markup language is used to define the text document within the tag which defines the structure of web pages. This language is used to annotate (make notes for the computer) text so that a machine can understand it and manipulate text accordingly.</description>
+    </item>
+    
+    <item>
+      <title>HTML full form </title>
+      <link>/html/html-full-form-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-full-form-/</guid>
+      <description>HTML full form HTML stands for Hypertext Markup Language. It is a standard markup language used to design the documents displayed in the browsers as a web page. This language can become more interactive and attractive by using CSS ( Cascading Style Sheet) and JS (JavaScript) within it.
+The HTML word defines some specific meaning within it. Hypertext comes from the Hyperlink which means connections between several pages, Markup means the defined elements will be the page layout and elements within the page.</description>
+    </item>
+    
+    <item>
+      <title>HTML Editors </title>
+      <link>/html/html-editors-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-editors-/</guid>
+      <description>HTML Editors HTML text editors are used to create and modify web pages. HTML codes can be written in any text editors including the notepad. One just needs to write HTML in any text editor and save the file with an extension &amp;ldquo;.html&amp;rdquo; or &amp;ldquo;.htm&amp;rdquo;. Some of the popular HTML text editors are given below:
+Notepad
+Notepad++
+Sublime Text 3
+Atom
+Renewbuy IDE
+Notepad Notepad is a simple text editor. It is an inbuilt desktop application available in Windows OS.</description>
+    </item>
+    
+    <item>
+      <title>HTML Comments </title>
+      <link>/html/html-comments-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-comments-/</guid>
+      <description>HTML Comments The comment tag ( ) is used to insert comments in the HTML code. It is a good practice of coding, so that coder and the reader can get help to understand the code. It is useful to understand steps of the complex code. The comment tag is helpful while the debugging of codes.
+It is a simple piece of code that is wiped off (ignore) by web browsers i.</description>
+    </item>
+    
+    <item>
+      <title>HTML Basics </title>
+      <link>/html/html-basics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-basics-/</guid>
+      <description>HTML Basics In this article, we will see the HTML Basics by understanding all the basic stuff of HTML coding. There are various tags that we must consider and include while starting to code in HTML. These tags help in the organization and basic formatting of elements in our script or web pages. These step-by-step procedures will guide you through the process of writing HTML.
+Basic HTML Document: Below mentioned are the basic HTML tags that divide the whole document into various parts like head, body, etc.</description>
+    </item>
+    
+    <item>
+      <title>HTML | Layout </title>
+      <link>/html/html-layout-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-layout-/</guid>
+      <description>HTML | Layout Page layout is the part of graphic design that deals with the arrangement of visual elements on a page. Page layout is used to make the web pages look better. It establishes the overall appearance, relative importance, and relationships between the graphic elements to achieve a smooth flow of information and eye movement for maximum effectiveness or impact.
+divs have a special class/id associated with them.
+..... .</description>
+    </item>
+    
+    <item>
+      <title>HTML Elements </title>
+      <link>/html/html-elements-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-elements-/</guid>
+      <description>HTML Elements In this article, we will know the HTML Elements, along with understanding the various available elements &amp;amp; their syntax through the examples. An HTML element is the collection of start and end tags with the content inserted in between them.
+Syntax: Contents... Supported Tags: HTML Elements supports almost all HTML Tags.
+HTML Element: The HTML element consist of 3 parts. i) Opening tag: It is used to tell the browser where the content material starts.</description>
+    </item>
+    
+    <item>
+      <title>HTML Heading </title>
+      <link>/html/html-heading-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-heading-/</guid>
+      <description>HTML Heading In this article, we will know HTML Headings, &amp;amp; their implementation through examples. An HTML heading tag is used to define the headings of a page. There are six levels of headings defined by HTML. These 6 heading elements are h1, h2, h3, h4, h5, and h6; with h1 being the highest level and h6 being the least.
+is used for the main heading. (Biggest in size)
+is used for subheadings, if there are further sections under the subheadings then the elements are used.</description>
+    </item>
+    
+    <item>
+      <title>HTML Paragraphs </title>
+      <link>/html/html-paragraphs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-paragraphs-/</guid>
+      <description>HTML Paragraphs In this article, we will know the HTML Paragraph, &amp;amp; its basic implementation through the examples. The
+tag in HTML defines a paragraph. These have both opening and closing tags. So anything mentioned within
+and
+is treated as a paragraph. Most browsers read a line as a paragraph even if we don&amp;rsquo;t use the closing tag i.e,
+, but this may raise unexpected results. So, it is a good convention, and we must use the closing tag.</description>
+    </item>
+    
+    <item>
+      <title>HTML | Quotations </title>
+      <link>/html/html-quotations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-quotations-/</guid>
+      <description>HTML | Quotations The Quotation elements in HTML are used to insert quoted texts in a web page, that is portion of texts different from the normal texts in the web page. Below are some of the most used quotation elements of HTML:
+element: The element is used to set a set of text inside the quotation marks. It has both opening and closing tags. Example: HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Quotations&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h3&amp;gt;Renewbuy&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;The quick brown fox jumps over the lazy dog&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML | Color Styles and HSL </title>
+      <link>/html/html-color-styles-and-hsl-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-color-styles-and-hsl-/</guid>
+      <description>HTML | Color Styles and HSL Colors are used to make the page more attractive. Here are the different styles which can be used to create new colors by the combination of different colors. Hexadecimal Style: In this style, we define the color in 6 digit hexadecimal number (from 0 to F). It is denoted by &amp;lsquo;#&amp;rsquo;. The first two digits indicate red color, the next two green color, and the last two blue color.</description>
+    </item>
+    
+    <item>
+      <title>HTML | Links </title>
+      <link>/html/html-links-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-links-/</guid>
+      <description>HTML | Links What is a link?
+It is a connection from one web resource to another. A link has two ends, An anchor and direction. The link starts at the &amp;ldquo;source&amp;rdquo; anchor and points to the &amp;ldquo;destination&amp;rdquo; anchor, which may be any Web resource such as an image, a video clip, a sound bite, a program, an HTML document or an element within an HTML document. You will find many websites or social media platforms ( Like YouTube, Instagram ) which link an image to a URL or a text to a URL etc.</description>
+    </item>
+    
+    <item>
+      <title>HTML Images </title>
+      <link>/html/html-images-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-images-/</guid>
+      <description>HTML Images In this article, we will know the HTML Image, how to add the image in HTML, along with knowing its implementation &amp;amp; usage through the examples. In earlier times, the web pages only contains textual contents, which made them appear quite boring and uninteresting. Fortunately, it wasn&amp;rsquo;t long enough that the ability to embed images on web pages was added for users. In this article, we will know how to add images to the web page that will make the website attractive &amp;amp; various methods to insert the images.</description>
+    </item>
+    
+    <item>
+      <title>HTML Tables </title>
+      <link>/html/html-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-tables-/</guid>
+      <description>HTML Tables In this article, we will know the HTML Table, various ways to implement it, &amp;amp; will also understand its usage through the examples. HTML Table is an arrangement of data in rows and columns, or possibly in a more complex structure. Tables are widely used in communication, research, and data analysis. Tables are useful for various tasks such as presenting text information and numerical data. It can be used to compare two or more items in the tabular form layout.</description>
+    </item>
+    
+    <item>
+      <title>HTML Lists </title>
+      <link>/html/html-lists-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-lists-/</guid>
+      <description>HTML Lists In this article, we will know the HTML List, along with understanding its types, and various ways to implement them, through the example. A list is a record of short pieces of related information or used to display the data or any information on web pages in the ordered or unordered form. For instance, to purchase the items, we need to prepare a list that can either be ordered or unordered list which helps us to organize the data &amp;amp; easy to find the item.</description>
+    </item>
+    
+    <item>
+      <title>HTML Iframes </title>
+      <link>/html/html-iframes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-iframes-/</guid>
+      <description>HTML Iframes In this article, we will know HTML Iframes, their implementation through the examples. The iframe in HTML stands for Inline Frame. The &amp;quot; iframe &amp;quot; tag defines a rectangular region within the document in which the browser can display a separate document, including scrollbars and borders. An inline frame is used to embed another document within the current HTML document. The HTML iframe name attribute is used to specify a reference for an element.</description>
+    </item>
+    
+    <item>
+      <title>HTML | File Paths </title>
+      <link>/html/html-file-paths-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-file-paths-/</guid>
+      <description>HTML | File Paths A file path specifies the location of a file inside a web folder structure. Its like an address of a file which helps the web browser to access the files. File paths are used to link external resources such as images, videos, style sheets, JavaScript, displaying other web pages etc.To insert a file in a web page its source must be known. For example, the syntax () is used to insert an image file, where the path of the file is mentioned in the source (src).</description>
+    </item>
+    
+    <item>
+      <title>HTML | Viewport meta tag for Responsive Web Design </title>
+      <link>/html/html-viewport-meta-tag-for-responsive-web-design-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-viewport-meta-tag-for-responsive-web-design-/</guid>
+      <description>HTML | Viewport meta tag for Responsive Web Design What is Viewport?A Browser&amp;rsquo;s viewport is the area of web page in which the content is visible to the user. The viewport does not have the same size, it varies with the variation in screen size of the devices on which the website is visible. For a laptop, the viewport has a larger size as compared to a smartphone or tablet.</description>
+    </item>
+    
+    <item>
+      <title>HTML Entities </title>
+      <link>/html/html-entities-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-entities-/</guid>
+      <description>HTML Entities In this article, we will know HTML Entities, along with understanding their implementation through the examples. HTML provides some method to display reserved characters. Reserved characters are those characters that are either reserved for HTML or those which are not present in the basic keyboard. For instance, &amp;lsquo;&amp;lt;&amp;rsquo; is reserved in HTML language. Sometimes this character needs to display on the web page which creates ambiguity in code. Along with these are the characters which are normally not present in basic keyboard ( £, ¥, €, © ), etc.</description>
+    </item>
+    
+    <item>
+      <title>HTML | Charsets </title>
+      <link>/html/html-charsets-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-charsets-/</guid>
+      <description>HTML | Charsets The web browser displays the alphabets, numbers and some other symbols correctly. This is all possible because of the required character set that web browser uses. The character set or character encoding has different character encoding standards which assign some numbers to these character set which can be used in the internet. ASCII: American Standard Code for Information Interchange (ANSII) created this character encoding. This character encoding are used in C/C++ programming.</description>
+    </item>
+    
+    <item>
+      <title>HTML | URL Encoding </title>
+      <link>/html/html-url-encoding-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-url-encoding-/</guid>
+      <description>HTML | URL Encoding A Uniform Resource Locator (URL) is simply the address of a website to access the website content like www.Renewbuy.org. But there are certain characters are allowed to use in the URL like alphabets A-Z and a-z, numbers 0-9 and few special characters. They can be used as it is but the rest of the characters that are not in this list are used after encoding them to a suitable form.</description>
+    </item>
+    
+    <item>
+      <title>HTML | Deprecated Tags </title>
+      <link>/html/html-deprecated-tags-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-deprecated-tags-/</guid>
+      <description>HTML | Deprecated Tags The deprecated tags or attributes are those attributes which are replaced by some other attributes. The tag or attributes deprecated when the same attributes is achieved by some other way.HTML Deprecated Tag: Complete list of deprecated tags are given below:
+HTML Deprecated Attributes: There are some attributes which are deprecated from HTML4. Some of these attributes are given below:</description>
+    </item>
+    
+    <item>
+      <title>HTML Doctypes </title>
+      <link>/html/html-doctypes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-doctypes-/</guid>
+      <description>HTML Doctypes Doctype: A doctype or document type declaration is an instruction that tells the web browser about the markup language in which the current page is written. The Doctype is not an element or tag, it lets the browser know about the version of or standard of HTML or any other markup language that is being used in the document.
+Declaration of a Doctype: A DOCTYPE declaration appears at the top of a web page before all other elements.</description>
+    </item>
+    
+    <item>
+      <title>HTML abbr Tag </title>
+      <link>/html/html-abbr-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-abbr-tag-/</guid>
+      <description>HTML abbr Tag The tag(Abbreviation) in HTML is used to define the abbreviation or short form of an element. The and tags are used as shortened versions and used to represent a series of letters. The abbreviation is used to provide useful information to the browsers, translation systems, and search-engines.Syntax: Short form Attribute: This tag accepts an optional attribute as mentioned above and described below:
+title: It is used to specify extra information about the element.</description>
+    </item>
+    
+    <item>
+      <title>HTML acronym Tag </title>
+      <link>/html/html-acronym-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-acronym-tag-/</guid>
+      <description>HTML acronym Tag The tag in HTML is used to define the acronym. The tag is used to spell out another word. It is used to give useful information to browsers, translation systems, and search-engines. This tag is not supported in HTML 5 otherwise use Tag.
+Syntax: Short Form Attribute: This tag accepts an optional attribute as mentioned above and described below:
+title: It is used to specify extra information about the element.</description>
+    </item>
+    
+    <item>
+      <title>HTML </title>
+      <link>/html/html-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-/</guid>
+      <description>HTML
+Tag
+The
+tag in HTML indicates the contact information of a person or an organization. If
+tag is used inside the
+tag then it represents the contact information of the document and if the
+tag is used inside the
+tag, then it represents the contact information of the article. The text inside the
+tag will display in italic format. Some browsers add a line break before and after the address element.</description>
+    </item>
+    
+    <item>
+      <title>HTML applet Tag </title>
+      <link>/html/html-applet-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-applet-tag-/</guid>
+      <description>HTML applet Tag The tag in HTML was used to embed Java applets into any HTML document. The tag was deprecated in HTML 4.01, and it&amp;rsquo;s support has been completely discontinued starting from HTML 5. Alternatives available in HTML 5 are the and the tags. There are still some browsers that support the tag with the help of some additional plug-ins/installations to work. Internet Explorer 11 and earlier versions with the help of plug-ins.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 </title>
+      <link>/html/html5-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-/</guid>
+      <description>HTML5
+Tag
+The
+tag is used to describe the main object of the web page in a shorter way like a highlighter. It basically identifies the content that is related to the primary content of the web page but does not constitute the main intent of the primary page. The
+tag contains mainly author information, links, related content, and so on.
+vs
+: Both tags have same behavior with different meaning.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Tag </title>
+      <link>/html/html5-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-tag-/</guid>
+      <description>HTML5 Tag Since the release of HTML5, audios can be added to webpages using the &amp;ldquo;audio&amp;rdquo; tag. Previously, audios could be only played on web pages using web plugins like Flash. The &amp;ldquo;audio&amp;rdquo; tag is an inline element that is used to embed sound files into a web page. It is a useful tag if you want to add audio such as songs, interviews, etc. on your webpage.
+Syntax: Attributes: The various attributes that can be used with the &amp;ldquo;audio&amp;rdquo; tag are listed below:</description>
+    </item>
+    
+    <item>
+      <title>HTML Tag </title>
+      <link>/html/html-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-tag-/</guid>
+      <description>HTML Tag The tag in HTML is used to set the default text-color, font-size, font-family of all the text in the browser. It is no longer supported in HTML5. So, as an alternate, we are using CSS in the code example. The tag was supported in Internet Explorer 9, and earlier versions.
+Syntax:
+Attributes: This tag contains three optional attributes which are listed below: color: It is used to specify the default text-color of the document.</description>
+    </item>
+    
+    <item>
+      <title>HTML Tags -- A to Z List </title>
+      <link>/html/html-tags--a-to-z-list-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-tags--a-to-z-list-/</guid>
+      <description>HTML Tags &amp;ndash; A to Z List To start learning HTML you need to start with HTML tags, there are various tags that we must consider and know about while starting to code in HTML.
+HTML Tags: HTML tags are the keywords that are used to produce web pages in various formats. Opening tags and closing tags are found in the majority of tags. The concluding tags contain a forward slash (/), while the language of the beginning tags is the same.</description>
+    </item>
+    
+    <item>
+      <title>HTML Attributes </title>
+      <link>/html/html-attributes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-attributes-/</guid>
+      <description>HTML Attributes In this article, we will know HTML Attributes, and their implementation through examples. All HTML elements have attributes that will provide additional information about that particular element. It takes 2 parameters, ie, a name &amp;amp; a value which define the properties of the element and are placed inside the element tag.
+Points to remember for attributes: Attributes always come in name/value pairs like this: attribute_name=&amp;ldquo;value&amp;rdquo;. Attributes are always added to the start tag of an HTML element.</description>
+    </item>
+    
+    <item>
+      <title>HTML | accept Attribute </title>
+      <link>/html/html-accept-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-accept-attribute-/</guid>
+      <description>HTML | accept Attribute The HTML accept Attribute is used to specifies the type of file that the server accepts. This attribute can be used with element only. This attribute is not used for validation tool because file uploads should be validated on the Server.Syntax: Attribute Values file_extension: It Specify the file extension(s) like .gif, .jpg, .png, .doc) the user can pick from.
+audio/*: The user can pick all sound files.</description>
+    </item>
+    
+    <item>
+      <title>HTML | accesskey Attribute </title>
+      <link>/html/html-accesskey-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-accesskey-attribute-/</guid>
+      <description>HTML | accesskey Attribute The accesskey attribute in HTML is the keyboard shortcuts to activate/focus specific elements. The access key attribute is browser dependent. It may vary from browser to browser.Supported Tags: It supports all HTML elements. Syntax: Shortcut to use access key: The table describes the shortcut to use access key. Note: In HTML4.1, the accesskey attributes can be used with only few elements which include ,
+,
+, , , , and</description>
+    </item>
+    
+    <item>
+      <title>HTML| action Attribute </title>
+      <link>/html/html-action-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-action-attribute-/</guid>
+      <description>HTML| action Attribute The HTML | action Attribute is used to specify where the form data is to be sent to the server after the submission of the form. It can be used in the
+element. Syntax: Attribute Values: URL: It is used to specify the URL of the document where the data is to be sent after the submission of the form. The possible values of the URL are: absolute URL: It points to another website link.</description>
+    </item>
+    
+    <item>
+      <title>HTML align Attribute </title>
+      <link>/html/html-align-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-align-attribute-/</guid>
+      <description>HTML align Attribute The align Attribute in HTML is used to specify the alignment of text content of The Element. this attribute is used in all elements. The Align attribute can also be set using CSS property &amp;ldquo;text-align: &amp;quot; or in &amp;ldquo;vertical-align: &amp;ldquo;.
+Supported Tags: Syntax:
+Attribute Values:
+left: It sets the text left-align.
+right: It sets the text right-align.
+center: It sets the text center-align.
+justify: It stretch the text of paragraph to set the width of all lines equal.</description>
+    </item>
+    
+    <item>
+      <title>HTML | alt attribute </title>
+      <link>/html/html-alt-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-alt-attribute-/</guid>
+      <description>HTML | alt attribute The HTML alt attribute is used to provide an alternate tag that is used to show or display something if the primary attribute i.e., the tag, fails to display the value assigned to it.Supported tags: area
+image
+input
+Attribute Values: It contains single value text which is used to specify the alternative text for supported element, if image is not displaying.
+Example: Img alt attribute. html &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML input autocomplete Attribute </title>
+      <link>/html/html-input-autocomplete-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-input-autocomplete-attribute-/</guid>
+      <description>HTML input autocomplete Attribute The HTML | autocomplete Attribute is used to specify whether the input field has autocompleted would be on or off. When the autocomplete attribute is set to on the browser will automatically complete the values based on which the user entered before. It works with many input fields such as text, search, URL, email, password, date pickers, range, and color.Syntax: Attribute Values: on: It has a default value.</description>
+    </item>
+    
+    <item>
+      <title>HTML autofocus Attribute </title>
+      <link>/html/html-autofocus-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-autofocus-attribute-/</guid>
+      <description>HTML autofocus Attribute The autofocus attribute in HTML is used to specify that the element should get focused when the page loads. It is a boolean attribute.
+Syntax:
+Note: It supports only the following elements:
+, , and
+.
+Supported Tags: Button autofocus Attribute
+Input autofocus Attribute
+Keygen autofocus Attribute
+Select autofocus Attribute
+Textarea autofocus Attribute
+Example 1: In this example, we are using a select autofocus attribute which creates the dropdown for Renewbuy courses.</description>
+    </item>
+    
+    <item>
+      <title>HTML | input autofocus Attribute </title>
+      <link>/html/html-input-autofocus-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-input-autofocus-attribute-/</guid>
+      <description>HTML | input autofocus Attribute The HTML autofocus Attribute is used to specify that the input field must automatically get focused when the page loads which means the cursor will blink to the specified input field. It is a Boolean attribute. Syntax: Example: This Example illustrates the use of autofocus attribute in element. HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; HTML | input autofocus Attribute&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color: green;&amp;quot;&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; HTML | input autofocus Attribute&amp;lt;/h2&amp;gt; Name: &amp;lt;input type=&amp;quot;text&amp;quot; autofocus&amp;gt; &amp;lt;br&amp;gt;&amp;lt;br&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML | autofocus Attribute </title>
+      <link>/html/html-autofocus-attribute-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-autofocus-attribute-/</guid>
+      <description>HTML | autofocus Attribute The HTML | autofocus Attribute is used to specifies that the button should get automatically get focus or not when the page loads. It is a Boolean Attribute.
+Syntax:
+Example: This Example illustrates the use of autofocus attribute in Button Element.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; HTML | &amp;lt;button&amp;gt;autofocus Attribute &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color: green;&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; HTML | &amp;lt;button&amp;gt;autofocus Property &amp;lt;/h2&amp;gt; &amp;lt;!-- Assign id to the Button.</description>
+    </item>
+    
+    <item>
+      <title>HTML | </title>
+      <link>/html/html-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-/</guid>
+      <description>HTML |
+autofocus Attribute
+The HTML
+autofocus Attribute is used to specify that the textarea field should get automatically focus when the page loads. It is a Boolean Attribute.
+Syntax:
+Example: This Example illustrates the use of autofocus attribute in Textarea Element.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; HTML textarea autofocus Attribute &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color: green;&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; HTML &amp;lt;Textarea&amp;gt; autofocus Attribute &amp;lt;/h2&amp;gt; &amp;lt;textarea id=&amp;quot;Renewbuy&amp;quot; autofocus&amp;gt; write something here---- &amp;lt;/textarea&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:</description>
+    </item>
+    
+    <item>
+      <title>HTML Attributes Complete Reference </title>
+      <link>/html/html-attributes-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-attributes-complete-reference-/</guid>
+      <description>HTML Attributes Complete Reference HTML attributes: HTML attributes are the special words placed inside the opening tags and used to define the characteristics of an HTML element. The HTML attributes contain two parts, attribute name, and its value. The attribute pairs (attribute_name, attribute_value) are separated using equal (=) operator. The attribute value is closed inside double quotes (&amp;quot; &amp;ldquo;). The complete list of HTML attributes are given below:
+Example :</description>
+    </item>
+    
+    <item>
+      <title>HTML SVG-Basics </title>
+      <link>/html/html-svg-basics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-svg-basics-/</guid>
+      <description>HTML SVG-Basics In this article, we will know HTML SVG Basics, &amp;amp; their implementation through the examples. SVG stands for Scalable Vector Graphics. It basically defines vector-based graphics in XML format. SVG graphics do NOT lose any quality if they are zoomed or resized. Every element and every attribute in SVG files can be animated.
+Advantages of SVG: Advantages of using SVG over other image formats (like JPEG and GIF) are: SVG images can be created and edited with any text editor.</description>
+    </item>
+    
+    <item>
+      <title>HTML Canvas Basics </title>
+      <link>/html/html-canvas-basics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-canvas-basics-/</guid>
+      <description>HTML Canvas Basics In this article, we will know HTML Canvas Basics, their implementation through the examples. The HTML &amp;ldquo;canvas&amp;rdquo; element is used to draw graphics via JavaScript. The &amp;ldquo;canvas&amp;rdquo; element is only a container for graphics. One must use JavaScript to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images. The canvas would be a rectangular area on an HTML page. By default, a canvas has no border and no content.</description>
+    </item>
+    
+    <item>
+      <title>HTML Geolocation </title>
+      <link>/html/html-geolocation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-geolocation-/</guid>
+      <description>HTML Geolocation In this article, we will know HTML Geolocation, various properties, methods &amp;amp; their implementation through the examples.
+Geo-location in HTML5 is used to share the location with some websites and be aware of the exact location. It is mainly used for local businesses, restaurants, or showing locations on the map. It uses JavaScript to give latitude and longitude to the backend server. Most of the browsers support Geolocation API.</description>
+    </item>
+    
+    <item>
+      <title>HTML Drag and Drop </title>
+      <link>/html/html-drag-and-drop-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-drag-and-drop-/</guid>
+      <description>HTML Drag and Drop In this article, we will know the HTML Drag &amp;amp; Drop, also understand its implementation with the help of examples. Drag and Drop is a very interactive and user-friendly concept that makes it easier to move an object to a different location by grabbing it. This allows the user to click and hold the mouse button over an element, drag it to another location, and release the mouse button to drop the element there.</description>
+    </item>
+    
+    <item>
+      <title>DOM (Document Object Model) </title>
+      <link>/html/dom-document-object-model-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/dom-document-object-model-/</guid>
+      <description>DOM (Document Object Model) In this article, we will discuss Document Object Model(DOM) along with its properties and methods used to manipulate Documents, &amp;amp; understand their implementation through the examples.
+The Document Object Model (DOM) is a programming interface for HTML(HyperText Markup Language) and XML(Extensible markup language) documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+Note: It is called a Logical structure because DOM doesn&amp;rsquo;t specify any relationship between objects.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM activeElement Property </title>
+      <link>/html/html-dom-activeelement-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-activeelement-property-/</guid>
+      <description>HTML | DOM activeElement Property The DOM activeElement property is used to return the currently active elements in the HTML document. This property is read-only. It gives the reference of a focused element object in the document. Syntax: document.activeElement Return Value : A reference to the element object in the document that has focus
+Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h1 { color:green; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;script&amp;gt; function GFG() { // Get Active Element using activeElement // property and assign it value equal to // to its tag var x = document.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM anchors Collection </title>
+      <link>/html/html-dom-anchors-collection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-anchors-collection-/</guid>
+      <description>HTML | DOM anchors Collection The DOM anchors collection is used to return the collection of all element in a HTML document. It only counts those element that has the name attribute only. The name attribute of anchor element does not support in HTML 5. The elements in the collection are sorted that appear in the sourcecode.Syntax: document.anchors Note: DOM anchor collection has been deprecated.
+Property: The anchor collection property contains a value length which returns the number of elements in the document.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM close() Method </title>
+      <link>/html/html-dom-close-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-close-method-/</guid>
+      <description>HTML | DOM close() Method The DOM close() method is used to close the output stream. It is used to indicate the finish of writing on a window. The close() method does not require any parameter. Syntax:
+document.close() Example 1: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;DOM close Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1, h2{ color:green; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;DOM close() Method&amp;lt;/h2&amp;gt; &amp;lt;button onclick=&amp;quot;Renewbuy()&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;script&amp;gt; // This function is called on submit, it opens // a stream, write &amp;quot;PRACTICE&amp;quot; and then closes // the stream.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM baseURI Property </title>
+      <link>/html/html-dom-baseuri-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-baseuri-property-/</guid>
+      <description>HTML | DOM baseURI Property The DOM baseURI property is used to return the base Uniform Resource Identifier (URI) of the document. This property is used for read-only. This property returns a string value that represents the base URI of the page.Syntax: node.baseURI Return Value: It returns a string value that represents the URL of the node&amp;rsquo;s page. Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;title&amp;gt;baseURI property&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color:green; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;DOM baseURI Property&amp;lt;/h2&amp;gt; &amp;lt;/h2&amp;gt; &amp;lt;button onclick = &amp;quot;Renewbuy()&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;p id=&amp;quot;gfg&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; function Renewbuy() { var x = document.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM body Property </title>
+      <link>/html/html-dom-body-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-body-property-/</guid>
+      <description>HTML | DOM body Property The HTML DOM Body property is used to set the document
+element. It only returns the content present in the
+Tag. This property is used to change the present content inside the
+element and sets them with the new specified content. This property does not return the
+element.Syntax: This syntax returns the body property. document.body This syntax is used to set the body property. document.body = Content Return Value: A reference to the Body Object, which represents a</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM createAttribute() Method </title>
+      <link>/html/html-dom-createattribute-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-createattribute-method-/</guid>
+      <description>HTML | DOM createAttribute() Method This createAttribute() method is used to create an attribute with the specified name and returns the attribute object. The attribute.value property is used to set the value of the attribute and the element.setAttribute() method is used to create a new attribute for an element. This method() contains the name of the created attribute as a parameter values. Syntax:
+document.createAttribute( attributename ) Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;DOM createAttribute Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM doctype Property </title>
+      <link>/html/html-dom-doctype-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-doctype-property-/</guid>
+      <description>HTML | DOM doctype Property The DOM doctype property is used to return the doctype of any HTML document. The DocumentType object is the name property used to returns the name of the object. If there is no doctype declared in the document then it returns Null value. Syntax:
+document.doctype Example: html &amp;lt;!DOCTYPE html.5&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;DOM doctype Property&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1, h2 { color:green; font-weight:bold; text-align:center; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center;&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;DOM doctype Property&amp;lt;/h2&amp;gt; &amp;lt;button onclick=&amp;quot;Renewbuy()&amp;quot;&amp;gt;Submit&amp;lt;/button&amp;gt; &amp;lt;p id=&amp;quot;sudo&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; function Renewbuy() { var gfg = document.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM writeln() Method </title>
+      <link>/html/html-dom-writeln-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-writeln-method-/</guid>
+      <description>HTML | DOM writeln() Method The writeln() method is used to write a document with additional property of newline character after each statement. This method is similar to the document.write() method. Syntax:
+document.writeln( exp1, exp2, exp3, ... ) Parameters: This method contain many parameters which is optional. All the expression arguments (exp1, exp2, &amp;hellip;) can be listed and display with the order of occurrence. Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;DOM writeln() Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color:green; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;DOM writeln() Method&amp;lt;/h2&amp;gt; &amp;lt;pre&amp;gt; &amp;lt;script&amp;gt; document.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM console.error() Method </title>
+      <link>/html/html-dom-console.error-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-console.error-method-/</guid>
+      <description>HTML | DOM console.error() Method The console.error() method in HTML is used to display an error message on the console. The console.error() method is used for testing purpose. The error message is sent as a parameter to the console.error() method. Syntax:
+console.error( message ) Parameters: This method accepts single parameter message which is mandatory and used to hold the error message. Below program illustrates the console.error() method in HTML: Example: html &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML DOM URL Property </title>
+      <link>/html/html-dom-url-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-url-property-/</guid>
+      <description>HTML DOM URL Property The DOM URL property in HTML is used to return a string that contains the complete URL of the current document. The string also includes the HTTP protocol such as ( http://).
+Syntax:
+document.URL Return Value: It returns a string value that represents the full URL of the document. Example: In this example, we simply display the Renewbuy URL using DOM URL Property.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt;Renewbuy&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;GfG&amp;quot;&amp;gt;Renewbuy URL: &amp;lt;br/&amp;gt; &amp;lt;span id=&amp;quot;GfG&amp;quot;&amp;gt; https://www.</description>
+    </item>
+    
+    <item>
+      <title>HTML DOM embeds Collection </title>
+      <link>/html/html-dom-embeds-collection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-embeds-collection-/</guid>
+      <description>HTML DOM embeds Collection The DOM embeds collection property in HTML is used to return the collection of all embedded elements. The elements in the collection are sorted that appear in the source code. This property is used for read-only.
+Syntax:
+document.embeds Property: This property contains a value length that returns the number of elements in the document.
+Methods: The DOM embeds collection contains three methods which are given below:</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM console.warn() Method </title>
+      <link>/html/html-dom-console.warn-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-console.warn-method-/</guid>
+      <description>HTML | DOM console.warn() Method The console.warn() method is used to write a warning message in the console. So open the console to display the output (warning message). Syntax:
+console.warn( message ) Parameters: This method accepts single parameter message which is mandatory. This parameter is used to hold the warning message. Example 1: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;console.warn() Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color: green; } body { text-align: center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;HTML console.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM console.trace() Method </title>
+      <link>/html/html-dom-console.trace-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-console.trace-method-/</guid>
+      <description>HTML | DOM console.trace() Method This console.trace() method is used to display the trace which represents how the code ended up at a certain point. Syntax:
+console.trace( label ) Parameters: This method accepts single parameter label. Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;console.trace() Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color:green; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;console.trace() Method&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;Press F12 to view the result&amp;lt;/p&amp;gt; &amp;lt;button onclick=&amp;quot;Function()&amp;quot;&amp;gt;Start Trace&amp;lt;/button&amp;gt; &amp;lt;script&amp;gt; function Function() { OtherFunction(); } function OtherFunction() { console.</description>
+    </item>
+    
+    <item>
+      <title>HTML DOM Complete Reference </title>
+      <link>/html/html-dom-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-complete-reference-/</guid>
+      <description>HTML DOM Complete Reference HTML DOM: The Document Object Model (DOM) is a programming interface for HTML(HyperText Markup Language) and XML(Extensible markup language) documents.
+Example:
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;DOM console.count() Method&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color:green; } h2 { font-family: Impact; } body { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;DOM console.count( ) Method&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt; To view the message in the console press the F12 key on your keyboard. &amp;lt;/p&amp;gt; &amp;lt;p&amp;gt; To count the number of occurrences, double click thebutton below: &amp;lt;/p&amp;gt;&amp;lt;br&amp;gt; &amp;lt;button ondblclick=&amp;quot;count_console()&amp;quot;&amp;gt; Run Loop &amp;lt;/button&amp;gt; &amp;lt;script&amp;gt; function count_console() { for (i = 0; i &amp;lt; 10; i++) { console.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio Object </title>
+      <link>/html/html-dom-audio-object-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-object-/</guid>
+      <description>HTML | DOM Audio Object The Audio object is used for representing an HTML element.The Audio Object is a new object in HTML5.
+Syntax:
+For creating an
+element:var gfg = document.createElement(&amp;quot;AUDIO&amp;quot;)
+var gfg = document.createElement(&amp;quot;AUDIO&amp;quot;) For accessing an
+element:var x = document.getElementById(&amp;quot;myAudio&amp;quot;)
+var x = document.getElementById(&amp;quot;myAudio&amp;quot;) Property Values:
+Audio Object Methods:
+Below programs illustrate the Audio Object :Example-1: Creating a element.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Audio Object&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color: green; } h2 { font-family: Impact; } body { text-align: center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;Audio Object&amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt;Double Click the &amp;quot;Create&amp;quot; button to create an Audio Object.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Video Object </title>
+      <link>/html/html-dom-video-object-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-video-object-/</guid>
+      <description>HTML | DOM Video Object The Video object in HTML DOM represents an element. The video element can be accessed by using getElementById() method. Syntax:
+To access a video object:
+document.getElementById(&amp;quot;videoId&amp;quot;); where id is assigned to the
+tag.
+To create a video object:
+document.createElement(&amp;quot;VIDEO&amp;quot;); Property Values:
+Video Object Methods:
+pause: It is used to pause the currently playing video.
+load: It is used to reloads the video element.
+play: It is used to start playing the video.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Video canPlayType( ) Method </title>
+      <link>/html/html-dom-video-canplaytype-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-video-canplaytype-method-/</guid>
+      <description>HTML | DOM Video canPlayType( ) Method The Video canPlayType() method is used for checking if the browser can play the specified video type or not. The Video canPlayType method returns a string which represents the level of support. Syntax:
+videoObject.canPlayType(type) Parameter Values:
+type : It specifies the video type (and optional codecs) to test support for.
+Return: The Video canPlayType() method generally returns one of the following values:
+&amp;ldquo;probably&amp;rdquo; : It means that this video type is most likely supported for browser.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio audioTracks Property </title>
+      <link>/html/html-dom-audio-audiotracks-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-audiotracks-property-/</guid>
+      <description>HTML | DOM Audio audioTracks Property The Audio audioTracks Property is used for returning an AudioTrackList object. The audio tracks available for a video are represented by the AudioTrackList object. The AudioTrack Object is used to represent an available audio track.Syntax: audioObject.audioTracks Return Values: AudioTrackList Object: It is used to represent the available audio tracks for the audio.
+AudioTrack Object: It is used to represent an audio track.
+Below program illustrates the Audio audioTracks property : Example: Getting the number of available audio tracks.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio autoplay Property </title>
+      <link>/html/html-dom-audio-autoplay-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-autoplay-property-/</guid>
+      <description>HTML | DOM Audio autoplay Property The Audio autoplay property is used for setting or returning whether audio should start playing as soon as it is loaded or not. It can be used to specify that the audio should automatically start playing as soon as it is loaded. Syntax: Return the autoplay property:
+audioObject.autoplay Set the autoplay property:
+audioObject.autoplay = true|false Property Values:
+true|false: It is used to specify whether an audio should automatically start playing as soon as it is loaded or not.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio buffered Property </title>
+      <link>/html/html-dom-audio-buffered-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-buffered-property-/</guid>
+      <description>HTML | DOM Audio buffered Property The Audio buffered property is used for returning a TimeRanges object. The user&amp;rsquo;s buffered ranges of the audio can be represented using the TimeRanges object. The time-range of buffered audio is defined by the buffered range and if the user skips in the audio, it may result in several buffered ranges. Syntax:
+audioObject.buffered Return Values:
+TimeRanges Object: It is used for representing the buffered parts of the audio.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio controls Property </title>
+      <link>/html/html-dom-audio-controls-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-controls-property-/</guid>
+      <description>HTML | DOM Audio controls Property The Audio controls property is used for setting or returning whether audio should display standard audio controls or not. The controls attribute is reflected by this property.The audio controls included in the property are:
+Play
+Pause
+Seeking
+Volume
+Syntax:
+Return the control property:audioObject.controls
+audioObject.controls Set the control property:audioObject.controls = true|false
+audioObject.controls = true|false Property Values:
+true|false: It is used to specify whether an audio should have controls displayed, or not.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio currentSrc Property </title>
+      <link>/html/html-dom-audio-currentsrc-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-currentsrc-property-/</guid>
+      <description>HTML | DOM Audio currentSrc Property The Audio currentSrc property is used for returning the URL of the current audio. The Audio currentSrc property returns an empty string if no audio is specified. The Audio currentSrc property is a read-only property. Syntax:
+audioObject.currentSrc Below program illustrates the Audio currentSrc Property: Example: Getting the URL of the current audio. html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; Audio currentSrc Property &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align: center&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color: green&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;h2 style=&amp;quot;font-family: Impact&amp;quot;&amp;gt; Audio currentSrc Property &amp;lt;/h2&amp;gt; &amp;lt;br&amp;gt; &amp;lt;audio id=&amp;quot;Test_Audio&amp;quot; controls autoplay&amp;gt; &amp;lt;source src=&amp;quot;sample1.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio currentTime Property </title>
+      <link>/html/html-dom-audio-currenttime-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-currenttime-property-/</guid>
+      <description>HTML | DOM Audio currentTime Property The Audio currentTime property is used for setting or returning the current position of the audio playback. The Audio currentTime property returns the audio playback position in the form of seconds.The playback jumps to the specified position when this property is set.
+Syntax:
+Return the currentTime property:audioObject.currentTime
+audioObject.currentTime Set the currentTime property:audioObject.currentTime = seconds
+audioObject.currentTime = seconds Property Values:
+seconds :It is used to specify the position for the playback of the video in seconds.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio defaultMuted Property </title>
+      <link>/html/html-dom-audio-defaultmuted-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-defaultmuted-property-/</guid>
+      <description>HTML | DOM Audio defaultMuted Property The Audio defaultMuted property is used for setting or returning whether the audio should be muted by default or not. The audio defaultMuted property cannot change the current mute state, it only affects the default muted state. Syntax:
+Return the deafaultMuted property:
+audioObject.defaultMuted Set the defaultMuted property:
+audioObject.defaultMuted = true|false Property Values:
+true|false: It is used to specify whether an audio should automatically start playing as soon as it is loaded or not.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio defaultPlaybackRate Property </title>
+      <link>/html/html-dom-audio-defaultplaybackrate-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-defaultplaybackrate-property-/</guid>
+      <description>HTML | DOM Audio defaultPlaybackRate Property The Audio defaultPlaybackRate property is used for setting or returning the default playback speed of the audio. The Audio defaultPlaybackRate property only changes the default playback speed, not the current playback speed. Syntax:
+Return the defaultPlaybackRate property:
+audioObject.defaultPlaybackRate Set the defaultPlaybackRate property:
+audioObject.defaultPlaybackRate = number Property Values:
+Number: It is used to specify the default playback speed of the video. The available options are:1.0 is normal speed.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio duration Property </title>
+      <link>/html/html-dom-audio-duration-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-duration-property-/</guid>
+      <description>HTML | DOM Audio duration Property The Audio duration property is used for returning the length of an audio. The Audio duration property returns the value in seconds. Different browsers return different precision values such as with safari returning up to 14 decimal places followed by opera returning up to 9 decimal places. The Audio duration property is a read-only property. The Audio duration function returns &amp;ldquo;NaN&amp;rdquo; if no video is set whereas if the audio is streamed and has no predefined length, it returns &amp;ldquo;Inf&amp;rdquo; (Infinity).</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio ended Property </title>
+      <link>/html/html-dom-audio-ended-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-ended-property-/</guid>
+      <description>HTML | DOM Audio ended Property The Audio ended property is used for returning whether the playback of the audio has ended or not. When the playback position is at the end of the audio, we consider the audio has ended.
+The Audio ended property returns a boolean true if the audio has ended, else it returns false. The Audio ended property is a read-only property.
+Syntax:
+audioObject.ended Below program illustrates the Audio ended Property:Example: Finding out if the audio has ended.</description>
+    </item>
+    
+    <item>
+      <title>HTML | DOM Audio loop Property </title>
+      <link>/html/html-dom-audio-loop-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audio-loop-property-/</guid>
+      <description>HTML | DOM Audio loop Property The Audio loop property is used for setting or returning whether an audio should start playing over again when it is finished or not.
+Syntax:
+Return the loop property:audioObject.loop
+audioObject.loop Set the loop property:audioObject.loop = true | false
+audioObject.loop = true | false Property Values
+true | false: It is used to specify whether the audio should start playing over again, every time it is finished or not.</description>
+    </item>
+    
+    <item>
+      <title>HTML DOM AudioVideo Complete Reference </title>
+      <link>/html/html-dom-audiovideo-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-dom-audiovideo-complete-reference-/</guid>
+      <description>HTML DOM Audio/Video Complete Reference HTML DOM is an object model for programming interface. It is used to modify the structure, style and content of HTML document. The DOM Audio/Video contain the methods and properties related to audio and video.
+The complete list of HTML DOM Audio/Video methods and properties are given below:
+HTML Audio/Video Methods: HTML | DOM Audio Object
+HTML | DOM Video Object
+HTML | DOM Video canPlayType( ) Method</description>
+    </item>
+    
+    <item>
+      <title>HTML | Spell Check </title>
+      <link>/html/html-spell-check-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-spell-check-/</guid>
+      <description>HTML | Spell Check The Spell Check feature in HTML is used to detect grammatical or spelling mistakes in the text fields.The Spell Check feature can be applied to HTML forms using the spellcheck attribute. The spellcheck attribute is an enumerated attribute which defines whether the HTML element will be checked for errors or not. It can be used with &amp;ldquo;input&amp;rdquo; and &amp;ldquo;textarea&amp;rdquo; fields in HTML.
+Supported Tags: It supports all HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 Complete Reference </title>
+      <link>/html/html5-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-complete-reference-/</guid>
+      <description>HTML5 Complete Reference HTML stands for Hyper Text Markup Language. It is used to design web pages using a markup language. HTML is an abbreviation of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup language is used to define the text document within the tag, which defines the structure of web pages.
+HTML 5 is the fifth and current version of HTML. It has improved the markup available for documents and has introduced application programming interfaces (API) and a Document Object Model (DOM).</description>
+    </item>
+    
+    <item>
+      <title>HTML5 | MathML Introduction </title>
+      <link>/html/html5-mathml-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-mathml-introduction-/</guid>
+      <description>HTML5 | MathML Introduction The MathML comes in the HTML5 the current MathML version is 3 it was introduced in the year of 2015. The MathML stands for Mathematics Markup Language. It is used to represent the mathematical equation or expression in web browsers like other HTML elements. The 1st version of MathML released in the year of 1998 and after that in the 2nd version was released. Basically MathML is a complex mathematical formula or equation visual representation made easy.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 | MathML [ tagThe MathML tag in HTML5 is the most prioritize element. Whatever MathML element you want to use they should wrapped inside of the tag.Syntax:   child elements ]{.math} </title>
+      <link>/html/html5-mathml-tagreaddiscusscoursespracticevideothe-mathml-tag-in-html5-is-the-most-prioritize-element.-whatever-mathml-element-you-want-to-use-they-should-wrapped-inside-of-the-tag.syntax-child-elements-.math-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-mathml-tagreaddiscusscoursespracticevideothe-mathml-tag-in-html5-is-the-most-prioritize-element.-whatever-mathml-element-you-want-to-use-they-should-wrapped-inside-of-the-tag.syntax-child-elements-.math-/</guid>
+      <description>HTML5 | MathML [ tagThe MathML tag in HTML5 is the most prioritize element. Whatever MathML element you want to use they should wrapped inside of the tag.Syntax: child elements ]{.math}
+Attributes: The tag accepts some attributes which are listed below: class|id|style: This attribute is used to hold the styles of the child elements.
+dir: This attributes holds the direction value. It holds two types of direction values ltr for left to right and rtl for right to left.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 | MathML tag </title>
+      <link>/html/html5-mathml-tag-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-mathml-tag-/</guid>
+      <description>HTML5 | MathML tag The MathML tag in HTML5 is used to represent a label in a row, either on the left or on the right side inside of the element. Child of this element is similar to normal table followed by m like
+become .Syntax: element Attributes: This tag accepts some attributes which are listed below: class|id|style: This attribute is used to hold the styles of the child elements.</description>
+    </item>
+    
+    <item>
+      <title>HTML5 MathML Complete Reference </title>
+      <link>/html/html5-mathml-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html5-mathml-complete-reference-/</guid>
+      <description>HTML5 MathML Complete Reference The MathML comes in HTML5 the current MathML version is 3 it was introduced in the year 2015. The MathML stands for Mathematics Markup Language. It is used to represent mathematical equations or expressions in web browsers like other HTML elements. The MathML is used to describe mathematics as a basis for the machine to machine communication, it is intended to be handled by specialized authoring tools such as equation editors and it is meaningful to other applications also.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to HTML CSS | Learn to Design your First Website in Just 1 Week </title>
+      <link>/html/introduction-to-html-css-learn-to-design-your-first-website-in-just-1-week-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/introduction-to-html-css-learn-to-design-your-first-website-in-just-1-week-/</guid>
+      <description>Introduction to HTML CSS | Learn to Design your First Website in Just 1 Week This is an introduction course to HTML and CSS which will help you learn all about the basics of HTML and CSS needed to begin with Web Development.
+Course Overview In this course we will teach you the basics of HTML and CSS along with building a project which will be a single page website. That is by following this course you will also get the chance to practically apply that knowledge to design an actual website.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | First Web Page | Printing Hello World </title>
+      <link>/html/html-course-first-web-page-printing-hello-world-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-first-web-page-printing-hello-world-/</guid>
+      <description>HTML Course | First Web Page | Printing Hello World Course Navigation So far, we already have learned about the structure of an HTML document, tags etc. Let us use this knowledge to create our first web page which will print the text &amp;ldquo;Hello World!&amp;rdquo; on the screen.Open your text editor, and type the below code in it and save it with the name &amp;ldquo;index.html&amp;rdquo;.
+Note: HTML files are saved with the file extension .</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Basics of HTML </title>
+      <link>/html/html-course-basics-of-html-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-basics-of-html-/</guid>
+      <description>HTML Course | Basics of HTML Course Navigation In this article, we will go through all the basic stuff required to write HTML. There are various tags that we must consider and know about while starting to code in HTML. These tags help in organization and basic formatting of elements in our script or web pages. These step by step procedures will guide you through the process of writing HTML.HTML Paragraph These tags help us to write paragraph statements in a webpage.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course -- Starting the Project | Creating Directories </title>
+      <link>/html/html-course--starting-the-project-creating-directories-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course--starting-the-project-creating-directories-/</guid>
+      <description>HTML Course &amp;ndash; Starting the Project | Creating Directories Course Navigation We already have learned a lot of things about HTML. We know: The structure of an HTML Page.
+What are Tags and Elements?
+Detailed explanation about some of the Basic Tags that are most commonly used.
+Created our First Web Page to print &amp;ldquo;Hello World!&amp;rdquo; in different sizes.
+Prerequisites: Before starting the project, we first need to download a suitable code editor for writing our code.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Understanding and Building Project Structure </title>
+      <link>/html/html-course-understanding-and-building-project-structure-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-understanding-and-building-project-structure-/</guid>
+      <description>HTML Course | Understanding and Building Project Structure Course Navigation We have created all of the directories needed for our project. Let&amp;rsquo;s just start writing our HTML code. Since we are designing a single page website &amp;ndash; Website with a single HTML page( No internal links ). So, we will write all of our codes in the file &amp;ldquo;index.html&amp;rdquo;. We donot need any other HTML to create for this project.Before we begin with writing code, keep in mind these two things: All of our HTML code will be in the &amp;ldquo;index.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Creating Navigation Menu </title>
+      <link>/html/html-course-creating-navigation-menu-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-creating-navigation-menu-/</guid>
+      <description>HTML Course | Creating Navigation Menu Course Navigation In the last article, we created the entire structure of our website using HTML elements and Tags. Let&amp;rsquo;s now start building the website in parts.
+The first part of the website is the header. So the first thing we will create is the navigation menu in the Header of the webpage.
+The navigation bar contains: A logo aligned to the left.
+A menu of five items aligned to the right.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Building Header of the Website </title>
+      <link>/html/html-course-building-header-of-the-website-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-building-header-of-the-website-/</guid>
+      <description>HTML Course | Building Header of the Website Course Navigation So far, we have created the navigation bar for the header of our website. The next thing to complete the header is to include the image and text above the image as shown in below screenshot: Let&amp;rsquo;s again look at the part of the code for the header in our index.html file. The highlighted part of the code shows the image menu of the header: HTML &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Building Main Content -- Section 1 </title>
+      <link>/html/html-course-building-main-content--section-1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-building-main-content--section-1-/</guid>
+      <description>HTML Course | Building Main Content &amp;ndash; Section 1 Course Navigation We just completed building the header for our website. Let&amp;rsquo;s start building the main content for the website. As we described while creating the HTML layout of the website, the main content was divided into three sections as shown below: HTML &amp;lt;!-- Main content between Header and Footer --&amp;gt; &amp;lt;main&amp;gt; &amp;lt;!-- Section 1 of Main content --&amp;gt; &amp;lt;section&amp;gt; &amp;lt;/section&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Building Main Content -- Section 2 </title>
+      <link>/html/html-course-building-main-content--section-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-building-main-content--section-2-/</guid>
+      <description>HTML Course | Building Main Content &amp;ndash; Section 2 Course Navigation In the last article, we began building the main section of the website and have completed the first section. Let us now move to the section 2 of Main Content.You can see the Section 2 of the Main Content in the below image: If you observe carefully, you can say that the section 2 is divided into three columns as shown below: This is also referred to as 3-Column layout in terminology of Web Development.</description>
+    </item>
+    
+    <item>
+      <title>HTML course | Building Main Content -- Section 3 </title>
+      <link>/html/html-course-building-main-content--section-3-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-building-main-content--section-3-/</guid>
+      <description>HTML course | Building Main Content &amp;ndash; Section 3 Course Navigation In the previous article we have seen the 3-Column layout and completed the Section 2 of the main content. The main content of the website is now almost complete. We just need to build the Section 3 of the main content. The Section 3 is shown in the below image: If you look at the above image carefully then it can be seen that the Section 3 is almost the same as that of the Section 2 of the Website.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Building Footer </title>
+      <link>/html/html-course-building-footer-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-building-footer-/</guid>
+      <description>HTML Course | Building Footer Course Navigation So, we have completed building all parts of our website except the footer. So, let&amp;rsquo;s take a look at what our final footer will look like: Our footer mainly consists of two sections: Company Details: This contains of three columns with address details, phone details and Email details.
+Copyright Information: This contains information about the Copyright and links to social media handles.
+Before we start building the Footer.</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Practice Quiz 1 </title>
+      <link>/html/html-course-practice-quiz-1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-practice-quiz-1-/</guid>
+      <description>HTML Course | Practice Quiz 1 HTML Course | Practice Quiz 1 Which of the following characters indicate closing of a tag? . / // ! How many attributes are there in HTML5?
+2
+4
+1
+None of the Above</description>
+    </item>
+    
+    <item>
+      <title>HTML Course | Practice Quiz 2 </title>
+      <link>/html/html-course-practice-quiz-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/html-course-practice-quiz-2-/</guid>
+      <description>HTML Course | Practice Quiz 2 HTML Course | Practice Quiz 2 </description>
+    </item>
+    
+    <item>
+      <title>Create a Sticky Social Media Bar using HTML and CSS </title>
+      <link>/html/create-a-sticky-social-media-bar-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/create-a-sticky-social-media-bar-using-html-and-css-/</guid>
+      <description>Create a Sticky Social Media Bar using HTML and CSS To create a sticky social media bar on any website HTML and CSS are used. If you want to attach the icons with the sticky social media then you need a font-awesome CDN link. These days social media is the best platform to advertise your stuff. Social media, where you can inform the client or the user about your product easily, the user can share the details of the product on their social media account if they like your product.</description>
+    </item>
+    
+    <item>
+      <title>Create a Search Bar using HTML and CSS </title>
+      <link>/html/create-a-search-bar-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/create-a-search-bar-using-html-and-css-/</guid>
+      <description>Create a Search Bar using HTML and CSS To create a search bar in the navigation bar is easy, just like creating another option in the navbar that will search the database. You need to be careful about the timing of placing the search bar. Make sure separately placed in the navbar. To create a navbar containing a search bar you will need HTML and CSS. The below explanation will guide you stepwise on how to create a search bar.</description>
+    </item>
+    
+    <item>
+      <title>How to add a Login Form to an Image using HTML and CSS ? </title>
+      <link>/html/how-to-add-a-login-form-to-an-image-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-add-a-login-form-to-an-image-using-html-and-css-/</guid>
+      <description>How to add a Login Form to an Image using HTML and CSS ? The login form on an Image is used on many websites. Like hotels website that contains the pictures of the hotels or some organizations that organize some special events holding that events picture and login form on that. In that case, you can design a login or registration form on that picture. This design will make the website more attractive than a regular login or registration form.</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Tab Image Gallery ? </title>
+      <link>/html/how-to-create-a-tab-image-gallery-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-a-tab-image-gallery-/</guid>
+      <description>How to Create a Tab Image Gallery ? To create a tab image gallery you need to use HTML, CSS, and JavaScript. HTML will make the structure of the body, and CSS will make it looks good. This kind of tab image gallery looks attractive on a website. By using JavaScript you can easily change the displayed pictures from the gallery.
+Creating Structure: In the HTML section, we will create a basic website structure for the tab image gallery.</description>
+    </item>
+    
+    <item>
+      <title>How to create a Hero Image using HTML and CSS ? </title>
+      <link>/html/how-to-create-a-hero-image-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-a-hero-image-using-html-and-css-/</guid>
+      <description>How to create a Hero Image using HTML and CSS ? Hero image can be designed using HTML and CSS. This article contains two sections. The first section attaches the image and design the basic structure. The second section design the image and texts on the images. The hero image looks attractive when you are using it as a banner. Suppose you want to inform others about your newly added features then it will be the best procedure to proceed to use those features.</description>
+    </item>
+    
+    <item>
+      <title>How to design Meet the Team Page using HTML and CSS ? </title>
+      <link>/html/how-to-design-meet-the-team-page-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-design-meet-the-team-page-using-html-and-css-/</guid>
+      <description>How to design Meet the Team Page using HTML and CSS ? Creating Structure: In this section, we will create a basic structure for the meet the team page. We will attach the icon and put the text that will be placed on the card of members will add button.
+CDN links for the Icons from the Font Awesome: HTML code: The HTML code is used to create a structure of meet the team page.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Browsers Window using HTML and CSS ? </title>
+      <link>/html/how-to-create-browsers-window-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-browsers-window-using-html-and-css-/</guid>
+      <description>How to Create Browsers Window using HTML and CSS ? The browser window is a tool to view the pages from the internet. It is used to search the content on the internet and get the relevant information from internet.Creating Structure: In this section, we will create a basic site structure and also attach the CDN link of the Font-Awesome for the icons which will be used as a menu icon.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Section Counter using HTML and CSS ? </title>
+      <link>/html/how-to-create-section-counter-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-section-counter-using-html-and-css-/</guid>
+      <description>How to Create Section Counter using HTML and CSS ? Section counter is like a card and is useful for webpage footer. It contains details about the company. In this article, we will introduce some predicted data about some companies. We divide this article into two sections, in the first section we will create the normal structure then we will work on the design.Creating the Structure: In this section, we will use simple HTML code to create three section to display few details about the company.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Toggle Switch by using HTML and CSS ? </title>
+      <link>/html/how-to-create-toggle-switch-by-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-toggle-switch-by-using-html-and-css-/</guid>
+      <description>How to Create Toggle Switch by using HTML and CSS ? To create a toggle switch, we will use HTML and CSS. If you want to add a more attractive toggle switch then you can add sliding animation, bouncing effect, etc. In this article, we will divide the whole thing into two different sections structure creating and designing the structure.
+Creating Structure: In this section, we will just create a basic structure for the toggle button.</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Cutout Text using HTML and CSS ? </title>
+      <link>/html/how-to-create-a-cutout-text-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-create-a-cutout-text-using-html-and-css-/</guid>
+      <description>How to Create a Cutout Text using HTML and CSS ? Cutout text is used as a background header of the webpage. The cutout text creates an attractive look on the webpage. To create a cutout text we will use only HTML and CSS. We display the cutout text and then we make the text blending of an element&amp;rsquo;s background with the element&amp;rsquo;s parent. The CSS mix-blend-mode property is required to do that.</description>
+    </item>
+    
+    <item>
+      <title>How to make a Pagination using HTML and CSS ? </title>
+      <link>/html/how-to-make-a-pagination-using-html-and-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/html/how-to-make-a-pagination-using-html-and-css-/</guid>
+      <description>How to make a Pagination using HTML and CSS ? Creating pagination is quite simple, you can easily do that by using Bootstrap, and JavaScript. However, in this article, we will use HTML and CSS to create pagination. Pagination is helpful when the website contains lots of content on a single page, and a single page will not look good with all those topics together. Few websites use the scroll to avoid pagination and vice versa.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

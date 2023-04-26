@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Unix on SATHEE</title>
+    <link>/unix/</link>
+    <description>Recent content in Unix on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/unix/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Introduction to UNIX System </title>
+      <link>/unix/introduction-to-unix-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/introduction-to-unix-system-/</guid>
+      <description>Introduction to UNIX System Unix is an Operating System that is truly the base of all Operating Systems like Ubuntu, Solaris, POSIX, etc. It was developed in the 1970s by Ken Thompson, Dennis Ritchie, and others in the AT&amp;amp;T Laboratories. It was originally meant for programmers developing software rather than non-programmers. Unix and the C were found by AT&amp;amp;T and distributed to government and academic institutions, which led to both being ported to a wider variety of machine families than any other operating system.</description>
+    </item>
+    
+    <item>
+      <title>Important Linux Commands (leave, diff, cal, ncal, locate and ln) </title>
+      <link>/unix/important-linux-commands-leave-diff-cal-ncal-locate-and-ln-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/important-linux-commands-leave-diff-cal-ncal-locate-and-ln-/</guid>
+      <description>Important Linux Commands (leave, diff, cal, ncal, locate and ln) Linux provides some important tricks. Here are a few and important one&amp;rsquo;s:
+leave &amp;mdash; remind you when you have to leaveSyntax: leave +hhmmleave waits until the specified time (within the next 12 hours), then reminds you that you have to leave by writing to the TTY that you executed leave on. You are reminded 5 minutes and 1 minute before the actual time, at the time, and every minute thereafter.</description>
+    </item>
+    
+    <item>
+      <title>Process states and Transitions in a UNIX Process </title>
+      <link>/unix/process-states-and-transitions-in-a-unix-process-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/process-states-and-transitions-in-a-unix-process-/</guid>
+      <description>Process states and Transitions in a UNIX Process Process is an instance of a program in execution. A set of processes combined together make a complete program. There are two categories of processes in Unix, namely
+User processes: They are operated in user mode.
+Kernel processes: They are operated in kernel mode.
+Process States
+The lifetime of a process can be divided into a set of states, each with certain characteristics that describe the process.</description>
+    </item>
+    
+    <item>
+      <title>The Linux Kernel </title>
+      <link>/unix/the-linux-kernel-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/the-linux-kernel-/</guid>
+      <description>The Linux Kernel The main purpose of a computer is to run a predefined sequence of instructions, known as a program. A program under execution is often referred to as a process. Now, most special purpose computers are meant to run a single process, but in a sophisticated system such a general purpose computer, are intended to run many processes simultaneously. Any kind of process requires hardware resources such as Memory, Processor time, Storage space, etc.</description>
+    </item>
+    
+    <item>
+      <title>Kernel IO Subsystem in Operating System </title>
+      <link>/unix/kernel-io-subsystem-in-operating-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/kernel-io-subsystem-in-operating-system-/</guid>
+      <description>Kernel I/O Subsystem in Operating System Prerequisite &amp;ndash; Microkernel The kernel provides many services related to I/O. Several services such as scheduling, caching, spooling, device reservation, and error handling &amp;ndash; are provided by the kernel, s I/O subsystem built on the hardware and device-driver infrastructure. The I/O subsystem is also responsible for protecting itself from errant processes and malicious users. I/O Scheduling &amp;ndash; To schedule a set of I/O requests means to determine a good order in which to execute them.</description>
+    </item>
+    
+    <item>
+      <title>Monolithic Kernel and key differences from Microkernel </title>
+      <link>/unix/monolithic-kernel-and-key-differences-from-microkernel-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/monolithic-kernel-and-key-differences-from-microkernel-/</guid>
+      <description>Monolithic Kernel and key differences from Microkernel Apart from microkernel, Monolithic Kernel is another classification of Kernel. Like microkernel, this one also manages system resources between application and hardware, but user services and kernel services are implemented under the same address space. It increases the size of the kernel, thus increasing the size of the operating system as well. This kernel provides CPU scheduling, memory management, file management, and other operating system functions through system calls.</description>
+    </item>
+    
+    <item>
+      <title>Introduction of System Call </title>
+      <link>/unix/introduction-of-system-call-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/introduction-of-system-call-/</guid>
+      <description>Introduction of System Call In computing, a system call is a programmatic way in which a computer program requests a service from the kernel of the operating system it is executed on. A system call is a way for programs to interact with the operating system. A computer program makes a system call when it makes a request to the operating system&amp;rsquo;s kernel. System call provides the services of the operating system to the user programs via Application Program Interface(API).</description>
+    </item>
+    
+    <item>
+      <title>GetSet process resource limits in C </title>
+      <link>/unix/getset-process-resource-limits-in-c-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/getset-process-resource-limits-in-c-/</guid>
+      <description>Get/Set process resource limits in C The getrlimit() and setrlimit() system calls can be used to get and set the resource limits such as files, CPU, memory etc. associated with a process.
+Each resource has an associated soft and hard limit.
+soft limit: The soft limit is the actual limit enforced by the kernel for the corresponding resource.
+hard limit: The hard limit acts as a ceiling for the soft limit.</description>
+    </item>
+    
+    <item>
+      <title>Dual Mode operations in OS </title>
+      <link>/unix/dual-mode-operations-in-os-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/dual-mode-operations-in-os-/</guid>
+      <description>Dual Mode operations in OS An error in one program can adversely affect many processes, it might modify data of another program or also can affect the operating system. For example, if a process stuck in the infinite loop then this infinite loop could affect the correct operation of other processes. So to ensure the proper execution of the operating system, there are two modes of operation: User mode &amp;ndash; When the computer system is run by user applications like creating a text document or using any application program, then the system is in user mode.</description>
+    </item>
+    
+    <item>
+      <title>Privileged and Non-Privileged Instructions in Operating System </title>
+      <link>/unix/privileged-and-non-privileged-instructions-in-operating-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/privileged-and-non-privileged-instructions-in-operating-system-/</guid>
+      <description>Privileged and Non-Privileged Instructions in Operating System In any Operating System, it is necessary to have a Dual Mode Operation to ensure the protection and security of the System from unauthorized or errant users. This Dual Mode separates the User Mode from the System Mode or Kernel Mode. What are Privileged Instructions? The Instructions that can run only in Kernel Mode are called Privileged Instructions .
+Privileged Instructions possess the following characteristics : (i) If any attempt is made to execute a Privileged Instruction in User Mode, then it will not be executed and treated as an illegal instruction.</description>
+    </item>
+    
+    <item>
+      <title>Introduction of Process Management </title>
+      <link>/unix/introduction-of-process-management-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/introduction-of-process-management-/</guid>
+      <description>Introduction of Process Management Program vs Process: A process is a program in execution. For example, when we write a program in C or C++ and compile it, the compiler creates binary code. The original code and binary code are both programs. When we actually run the binary code, it becomes a process. A process is an &amp;lsquo;active&amp;rsquo; entity instead of a program, which is considered a &amp;lsquo;passive&amp;rsquo; entity. A single program can create many processes when run multiple times; for example, when we open a .</description>
+    </item>
+    
+    <item>
+      <title>States of a Process in Operating Systems </title>
+      <link>/unix/states-of-a-process-in-operating-systems-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/states-of-a-process-in-operating-systems-/</guid>
+      <description>States of a Process in Operating Systems The procedure has several stages that it passes through from beginning to end. There must be a minimum of five states. Even though during execution the process could be in one of these states, the names of the states are not standardized. Each process goes through several stages throughout its life cycle.
+Process States in Operating System The states of a process are as follows: New (Create): In this step, the process is about to be created but not yet created, it is the program that is present in secondary memory that will be picked up by OS to create the process.</description>
+    </item>
+    
+    <item>
+      <title>Process Table and Process Control Block (PCB) </title>
+      <link>/unix/process-table-and-process-control-block-pcb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/process-table-and-process-control-block-pcb-/</guid>
+      <description>Process Table and Process Control Block (PCB) While creating a process the operating system performs several operations. To identify the processes, it assigns a process identification number (PID) to each process. As the operating system supports multi-programming, it needs to keep track of all the processes. For this task, the process control block (PCB) is used to track the process&amp;rsquo;s execution status. Each block of memory contains information about the process state, program counter, stack pointer, status of opened files, scheduling algorithms, etc.</description>
+    </item>
+    
+    <item>
+      <title>Process Schedulers in Operating System </title>
+      <link>/unix/process-schedulers-in-operating-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/process-schedulers-in-operating-system-/</guid>
+      <description>Process Schedulers in Operating System Process scheduling is the activity of the process manager that handles the removal of the running process from the CPU and the selection of another process on the basis of a particular strategy.
+Process scheduling is an essential part of a Multiprogramming operating system. Such operating systems allow more than one process to be loaded into the executable memory at a time and the loaded process shares the CPU using time multiplexing.</description>
+    </item>
+    
+    <item>
+      <title>CPU Scheduling in Operating Systems </title>
+      <link>/unix/cpu-scheduling-in-operating-systems-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/cpu-scheduling-in-operating-systems-/</guid>
+      <description>CPU Scheduling in Operating Systems Scheduling of processes/work is done to finish the work on time. CPU Scheduling is a process that allows one process to use the CPU while another process is delayed (in standby) due to unavailability of any resources such as I / O etc, thus making full use of the CPU. The purpose of CPU Scheduling is to make the system more efficient, faster, and fairer.</description>
+    </item>
+    
+    <item>
+      <title>Preemptive and Non-Preemptive Scheduling </title>
+      <link>/unix/preemptive-and-non-preemptive-scheduling-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/preemptive-and-non-preemptive-scheduling-/</guid>
+      <description>Preemptive and Non-Preemptive Scheduling Prerequisite &amp;ndash; CPU Scheduling 1. Preemptive Scheduling: Preemptive scheduling is used when a process switches from running state to ready state or from the waiting state to ready state. The resources (mainly CPU cycles) are allocated to the process for a limited amount of time and then taken away, and the process is again placed back in the ready queue if that process still has CPU burst time remaining.</description>
+    </item>
+    
+    <item>
+      <title>Measure the time spent in context switch? </title>
+      <link>/unix/measure-the-time-spent-in-context-switch-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/measure-the-time-spent-in-context-switch-/</guid>
+      <description>Measure the time spent in context switch? A Context switch is a time spent between two processes (i.e., bringing a waiting process into execution and sending an executing process into a waiting-for state). This happens in multitasking. The operating system must bring the state information if waiting for the process into memory and save the state information of the currently running process. In order to solve this problem, we would like to record the timestamps of the first and last instructions of the swapping processes.</description>
+    </item>
+    
+    <item>
+      <title>Difference between dispatcher and scheduler </title>
+      <link>/unix/difference-between-dispatcher-and-scheduler-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/difference-between-dispatcher-and-scheduler-/</guid>
+      <description>Difference between dispatcher and scheduler Schedulers are special system software that handles process scheduling in various ways. Their main task is to select the jobs to be submitted into the system and to decide which process to run. There are three types of Scheduler:
+Long-term (job) scheduler &amp;ndash; Due to the smaller size of main memory initially all programs are stored in secondary memory. When they are stored or loaded in the main memory they are called processes.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Spooling and Buffering </title>
+      <link>/unix/difference-between-spooling-and-buffering-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/difference-between-spooling-and-buffering-/</guid>
+      <description>Difference between Spooling and Buffering There are two ways by which Input/output subsystems can improve the performance and efficiency of the computer by using a memory space in the main memory or on the disk and these two are spooling and buffering. Spooling &amp;ndash; Spooling stands for Simultaneous peripheral operation online. A spool is similar to buffer as it holds the jobs for a device until the device is ready to accept the job.</description>
+    </item>
+    
+    <item>
+      <title>Free space management in Operating System </title>
+      <link>/unix/free-space-management-in-operating-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/free-space-management-in-operating-system-/</guid>
+      <description>Free space management in Operating System Introduction: Free space management is a critical aspect of operating systems as it involves managing the available storage space on the hard disk or other secondary storage devices. The operating system uses various techniques to manage free space and optimize the use of storage devices. Here are some of the commonly used free space management techniques:
+Linked Allocation: In this technique, each file is represented by a linked list of disk blocks.</description>
+    </item>
+    
+    <item>
+      <title>Disk Scheduling Algorithms </title>
+      <link>/unix/disk-scheduling-algorithms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/disk-scheduling-algorithms-/</guid>
+      <description>Disk Scheduling Algorithms Disk scheduling is done by operating systems to schedule I/O requests arriving for the disk. Disk scheduling is also known as I/O scheduling. Disk scheduling is important because:
+Multiple I/O requests may arrive by different processes and only one I/O request can be served at a time by the disk controller. Thus other I/O requests need to wait in the waiting queue and need to be scheduled.</description>
+    </item>
+    
+    <item>
+      <title>Program for SSTF disk scheduling algorithm </title>
+      <link>/unix/program-for-sstf-disk-scheduling-algorithm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/program-for-sstf-disk-scheduling-algorithm-/</guid>
+      <description>Program for SSTF disk scheduling algorithm Prerequisite &amp;ndash; Disk scheduling algorithms Given an array of disk track numbers and initial head position, our task is to find the total number of seek operations done to access all the requested tracks if Shortest Seek Time First (SSTF) is a disk scheduling algorithm is used.
+Shortest Seek Time First (SSTF) &amp;ndash; Basic idea is the tracks which are closer to current disk head position should be serviced first in order to minimise the seek operations.</description>
+    </item>
+    
+    <item>
+      <title>SCAN (Elevator) Disk Scheduling Algorithms </title>
+      <link>/unix/scan-elevator-disk-scheduling-algorithms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/scan-elevator-disk-scheduling-algorithms-/</guid>
+      <description>SCAN (Elevator) Disk Scheduling Algorithms Prerequisite-Disk scheduling algorithms.Given an array of disk track numbers and initial head position, our task is to find the total number of seek operations done to access all the requested tracks if SCAN disk scheduling algorithm is used.
+SCAN (Elevator) algorithm In SCAN disk scheduling algorithm, head starts from one end of the disk and moves towards the other end, servicing requests in between one by one and reach the other end.</description>
+    </item>
+    
+    <item>
+      <title>C-SCAN Disk Scheduling Algorithm </title>
+      <link>/unix/c-scan-disk-scheduling-algorithm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/c-scan-disk-scheduling-algorithm-/</guid>
+      <description>C-SCAN Disk Scheduling Algorithm Prerequisite: Disk Scheduling Algorithms and SCAN Disk Scheduling Algorithm
+Given an array of disk track numbers and initial head position, our task is to find the total number of seek operations done to access all the requested tracks if a C-SCAN disk scheduling algorithm is used.
+C-SCAN (Circular Elevator) Disk Scheduling Algorithm The circular SCAN (C-SCAN) scheduling algorithm is a modified version of the SCAN disk scheduling algorithm that deals with the inefficiency of the SCAN algorithm by servicing the requests more uniformly.</description>
+    </item>
+    
+    <item>
+      <title>LOOK Disk Scheduling Algorithm </title>
+      <link>/unix/look-disk-scheduling-algorithm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/look-disk-scheduling-algorithm-/</guid>
+      <description>LOOK Disk Scheduling Algorithm Prerequisite: Disk Scheduling Algorithms
+The LOOK disk scheduling algorithm is a variation of the SCAN algorithm for disk scheduling. It is used to reduce the amount of time it takes to access data on a hard disk drive by minimizing the seek time between read/write operations. The LOOK algorithm operates by scanning the disk in a specific direction, but instead of going all the way to the end of the disk before reversing direction like the SCAN algorithm, it reverses direction as soon as it reaches the last request in the current direction.</description>
+    </item>
+    
+    <item>
+      <title>Sed Command in LinuxUnix with examples </title>
+      <link>/unix/sed-command-in-linuxunix-with-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/sed-command-in-linuxunix-with-examples-/</guid>
+      <description>Sed Command in Linux/Unix with examples SED command in UNIX stands for stream editor and it can perform lots of functions on file like searching, find and replace, insertion or deletion. Though most common use of SED command in UNIX is for substitution or for find and replace. By using SED you can edit files even without opening them, which is much quicker way to find and replace something in file, than first opening that file in VI Editor and then changing it.</description>
+    </item>
+    
+    <item>
+      <title>AWK command in UnixLinux with examples </title>
+      <link>/unix/awk-command-in-unixlinux-with-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/awk-command-in-unixlinux-with-examples-/</guid>
+      <description>AWK command in Unix/Linux with examples Awk is a scripting language used for manipulating data and generating reports. The awk command programming language requires no compiling and allows the user to use variables, numeric functions, string functions, and logical operators. Awk is a utility that enables a programmer to write tiny but effective programs in the form of statements that define text patterns that are to be searched for in each line of a document and the action that is to be taken when a match is found within a line.</description>
+    </item>
+    
+    <item>
+      <title>grep command in UnixLinux </title>
+      <link>/unix/grep-command-in-unixlinux-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/grep-command-in-unixlinux-/</guid>
+      <description>grep command in Unix/Linux The grep filter searches a file for a particular pattern of characters, and displays all lines that contain that pattern. The pattern that is searched in the file is referred to as the regular expression (grep stands for global search for regular expression and print out). Syntax: grep [options] pattern [files] Options Description -c : This prints only a count of the lines that match a pattern -h : Display the matched lines, but do not display the filenames.</description>
+    </item>
+    
+    <item>
+      <title>cut command in Linux with examples </title>
+      <link>/unix/cut-command-in-linux-with-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/cut-command-in-linux-with-examples-/</guid>
+      <description>cut command in Linux with examples The cut command in UNIX is a command for cutting out the sections from each line of files and writing the result to standard output. It can be used to cut parts of a line by byte position, character and field. Basically the cut command slices a line and extracts the text. It is necessary to specify option with command otherwise it gives error. If more than one file name is provided then data from each file is not precedes by its file name.</description>
+    </item>
+    
+    <item>
+      <title>cp command in Linux with examples </title>
+      <link>/unix/cp-command-in-linux-with-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/unix/cp-command-in-linux-with-examples-/</guid>
+      <description>cp command in Linux with examples cp stands for copy. This command is used to copy files or group of files or directory. It creates an exact image of a file on a disk with different file name. cp command require at least two filenames in its arguments.
+Syntax:
+cp [OPTION] Source Destination cp [OPTION] Source Directory cp [OPTION] Source-1 Source-2 Source-3 Source-n Directory First and second syntax is used to copy Source file to Destination file or Directory.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

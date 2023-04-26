@@ -1,0 +1,803 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Angular on SATHEE</title>
+    <link>/angular/</link>
+    <description>Recent content in Angular on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/angular/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>AngularJS </title>
+      <link>/angular/angularjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-/</guid>
+      <description>AngularJS AngularJS was developed in 2008-2009 by Misko Hevery and Adam Abrons and is now maintained by Google. AngularJS is a Javascript open-source front-end framework that is mainly used to develop single-page web applications(SPAs). It is a continuously growing and expanding framework which provides better ways for developing web applications.
+It changes the static HTML to dynamic HTML. Its features like dynamic binding and dependency injection eliminate the need for code that we have to write otherwise.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AngularJS </title>
+      <link>/angular/introduction-to-angularjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/introduction-to-angularjs-/</guid>
+      <description>Introduction to AngularJS AngularJS is a Javascript open-source front-end structural framework that is mainly used to develop single-page web applications(SPAs). It is a continuously growing and expanding framework which provides better ways for developing web applications. It changes the static HTML to dynamic HTML. Its features like dynamic binding and dependency injection eliminate the need for code that we have to write otherwise. AngularJS is rapidly growing and because of this reason, we have different versions of AngularJS with the latest stable being 1.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Expressions </title>
+      <link>/angular/angularjs-expressions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-expressions-/</guid>
+      <description>AngularJS Expressions In this article, we will see the Expressions in AngularJS, along with understanding their implementation through the examples.
+Expressions in AngularJS are used to bind application data to HTML. The expressions are resolved by AngularJS and the result is returned back to where the expression is written. The expressions in AngularJS are written in double braces: {{ expression }}. They behave similar to ng-bind directives: ng-bind=&amp;ldquo;expression&amp;rdquo;.
+Syntax:
+{{ expression }} Example 1: This example displays the name that we feed in the ng-init directive.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Modules </title>
+      <link>/angular/angularjs-modules-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-modules-/</guid>
+      <description>AngularJS Modules The AngularJS module defines the functionality of the application which is applied on the entire HTML page. It helps to link many components. So it is just a group of related components. It is a container that consists of different parts like controllers, services, and directives.
+Note: These modules should be made in normal HTML files like index.html and no need to create a new project in VisualStudio for this section.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-model Directive </title>
+      <link>/angular/angularjs-ng-model-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-model-directive-/</guid>
+      <description>AngularJS ng-model Directive The ngModel directive is a directive that is used to bind the values of the HTML controls (input, select, and textarea) or any custom form controls, and stores the required user value in a variable and we can use that variable whenever we require that value. It also is used during form validations. The various form input types (text, checkbox, radio, number, email, URL, date, datetime-local time, month, week) can be used with the ngModel directive.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Data Binding </title>
+      <link>/angular/angularjs-data-binding-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-data-binding-/</guid>
+      <description>AngularJS Data Binding In this article, we will see the Data Binding in AngularJS, along with understanding the various types of Data Binding available with their implementations.
+Angular provides a function Data Binding which helps us to have an almost real-time reflection of the input given by the user i.e. it creates a connection between Model and View. Data Binding is a way to synchronize the data between the model and view components automatically.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Controllers </title>
+      <link>/angular/angularjs-controllers-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-controllers-/</guid>
+      <description>AngularJS Controllers In this article, we will see the Controller in AngularJS along with knowing how Controller works, the concept of the Controller method &amp;amp; how the Controller can be implemented in an external. We will understand all these aspects with the help of their implementation &amp;amp; accordingly will its illustrations.
+AngularJS controllers play a significant role in AngularJS applications. All the AngularJS application mainly relies on the controllers to control the flow of data in that application.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | Scope </title>
+      <link>/angular/angularjs-scope-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-scope-/</guid>
+      <description>AngularJS | Scope Scope in AngularJS is the binding part of HTML view and JavaScript controller. When you add properties into the scope object in the JavaScript controller, only then the HTML view gets access to those properties. There are two types of Scope in AngularJS. $Scope
+$rootScope
+Scope: There is few specific features in Scope those are listed below The HTML view
+The data which is available for the current view known as Model</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Services </title>
+      <link>/angular/angularjs-services-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-services-/</guid>
+      <description>AngularJS Services The Services is a function or an object that avails or limit to the application in AngularJS, ie., it is used to create variables/data that can be shared and can be used outside the component in which it is defined. Service facilitates built-in service or can make our own service. The Service can only be used inside the controller if it is defined as a dependency. In the case of many Services, the object that can be utilized, which is defined in DOM already, has few constraints in the AngularJS application.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | Tables </title>
+      <link>/angular/angularjs-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-tables-/</guid>
+      <description>AngularJS | Tables The data in tables are basically repeatable, so you can use ng-repeat directives to create tables easilyThe example will clear the approach.
+Syntax:
+Content.. Displayed Data in table.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;AngularJS ng-repeat Directive&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;h1 style=&amp;quot;color:green;&amp;quot;&amp;gt;GeekforRenewbuy&amp;lt;/h1&amp;gt; &amp;lt;table&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;Course&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Duration&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr ng-repeat = &amp;quot;subject in student.subjects&amp;quot;&amp;gt; &amp;lt;td&amp;gt;{{ Course.name }}&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;{{ Duration.time }}&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt; &amp;lt;/center&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:
+Displayed with CSS style</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Select Boxes </title>
+      <link>/angular/angularjs-select-boxes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-select-boxes-/</guid>
+      <description>AngularJS Select Boxes The Select Boxes in AngularJS can be utilized to create dropdown lists, that are based on the objects or an array. The Select box can be created in 2 ways, i.e., either by using the ng-options directive that is used to build and bind HTML elements with options to model property or by using the ng-repeat directive that is used to repeat a set of HTML code for a number of times or once per item in a collection of items, &amp;amp; is mostly used on arrays and objects.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | SQL </title>
+      <link>/angular/angularjs-sql-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-sql-/</guid>
+      <description>AngularJS | SQL In any web application we need to save, update, insert and fetch data to and from a database. AngularJS is a JavaScript MVC or Model-View-Controller framework developed by Google. It helps developers to build well structured, easily testable, and maintainable front-end applications.
+Features Important concepts in Angular JS Library is given below:
+Concept
+Template
+Directives
+Model
+Scope
+Expressions
+Compiler
+Filter
+Data Binding
+Controller
+Module
+Service
+Need of AngularJS Framework explanation with a basic example With the directives to the HTML elements and attributes, dynamic web pages are easily created by adding additional coding.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS HTML DOM </title>
+      <link>/angular/angularjs-html-dom-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-html-dom-/</guid>
+      <description>AngularJS HTML DOM The HTML DOM in AngularJS facilitates the directives that bind the application data with the attributes of HTML DOM elements. In this article, we will see such directives that help to bind the data to the HTML DOM element&amp;rsquo;s attribute, along with their basic implementations through the illustrations.
+ng-show &amp;amp; ng-hide Directive: Both the directives are used to show or hide the element of HTML. It depends upon either of the value of directives, i.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Events </title>
+      <link>/angular/angularjs-events-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-events-/</guid>
+      <description>AngularJS Events An Events in AngularJS can be used to perform particular tasks, based on the action taken. Both Angular Event &amp;amp; the HTML Event will be executed &amp;amp; will not overwrite with an HTML Event. It can be added using the Directives mentioned below:
+ng-mousemove: The movement of the mouse leads to the execution of the event.
+ng-mouseup: Movement of the mouse upwards leads to the execution of the event.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | Forms </title>
+      <link>/angular/angularjs-forms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-forms-/</guid>
+      <description>AngularJS | Forms Forms are collection of controls that is input field, buttons, checkbox and these can be validatedreal time. As soon as a user of the form completes writing a field and moves to the next one itgets validated and suggests the user where he might have went wrong.
+So a form can be consisting of the many number of controlsHowever we will be focusing on
+Input field
+Checkbox</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Form Validation </title>
+      <link>/angular/angularjs-form-validation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-form-validation-/</guid>
+      <description>AngularJS Form Validation AngularJS performs form validation on the client side. AngularJS monitors the state of the form and input fields (input, text-area, select), and notify the user about the current state. AngularJS also holds information about whether the input fields have been touched, modified, or not. Form input fields have the following states:
+$untouched: It shows that field has not been touched yet.
+$touched: It shows that field has been touched.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | API </title>
+      <link>/angular/angularjs-api-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-api-/</guid>
+      <description>AngularJS | API AngularJS APIs are used for comparing, iterating and converting objects.Basic AngularJS API includes
+angular.isString()
+angular.lowercase()
+angular.uppercase()
+angular.isNumber()
+1. angular.isString()It is used to check whether an object is a string or not.It returns true if the object is string otherwise false.Example:
+&amp;lt;!-- Write HTML code here --&amp;gt; &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js&amp;quot;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div ng-app=&amp;quot;gfg&amp;quot; ng-controller=&amp;quot;gfgCntrl&amp;quot;&amp;gt; &amp;lt;p&amp;gt;{{ object }}&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;{{ apiRes }}&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script&amp;gt; var app = angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS and W3.CSS </title>
+      <link>/angular/angularjs-and-w3.css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-and-w3.css-/</guid>
+      <description>AngularJS and W3.CSS What is W3.CSS?
+W3.CSS is a modern framework with built-in responsiveness and easy to learn and use compared to other CSS framework.
+Its aim is to speed up and simplify web development and support modern responsive devices like Mobile, Laptop, Tablet and Desktop
+W3.CSS was designed to be a high quality alternative to Bootstrap and is developed by w3school.com
+What is angularJS?
+AngularJS is a structural framework for dynamic web apps which extends HTML with new attributes.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Includes </title>
+      <link>/angular/angularjs-includes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-includes-/</guid>
+      <description>AngularJS Includes The ng-include directive can be utilized for including the HTML from the external file, i.e. it can be used for embedding an HTML page within HTML, which is not supported by HTML. The ng-controller directive also facilitates adding the AngularJS code into the HTML file. Adding the AngularJS code to the external HTML file will also be executed, even though, it is included in the external file. This helps to accomplish the overall tasks in an easier manner.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Animations </title>
+      <link>/angular/angularjs-animations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-animations-/</guid>
+      <description>AngularJS Animations To create animation effects in AngularJS using the ngAnimate module, which provides support for CSS-based animations. Animation is something that is used to give a dynamic motion effect. Here HTML is transformed to give an illusion of motion using the ngAnimate module that gives us a combined effect of Javascript and CSS. Using this sample code, the demonstration of hiding the division/section is shown up by checking the checkbox.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Routing </title>
+      <link>/angular/angularjs-routing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-routing-/</guid>
+      <description>AngularJS Routing Routing in AngularJS is used when the user wants to navigate to different pages in an application but still wants it to be a single page application. AngularJS routes enable the user to create different URLs for different content in an application. The ngRoute module helps in accessing different pages of an application without reloading the entire application.
+Important:
+$routeProvider is used to configure the routes. It helps to define what page to display when a user clicks a link.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | Application </title>
+      <link>/angular/angularjs-application-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-application-/</guid>
+      <description>AngularJS | Application Applications in AngularJS enable the creation of real-time Applications. There are four primary steps involved in creation of Applications in AngularJS:
+Creation of List for an Application.
+Adding elements in the List.
+Removing elements from the List.
+Error Handling
+Below are the steps for creations a Subject List Application:
+Step 1: To start with, choose the list which you want to create. Then using, controller and ng-repeat directive display the elements of the array as a list.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-app Directive </title>
+      <link>/angular/angularjs-ng-app-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-app-directive-/</guid>
+      <description>AngularJS ng-app Directive The ng-app Directive in AngularJS is used to define the root element of an AngularJS application. This directive automatically initializes the AngularJS application on page load. It can be used to load various modules in AngularJS applications. The ng-app directive declares only once in the HTML document. In case if it is declared more than once then the first ng-app directive appears will be used.
+Syntax:
+Contents... Parameter value:</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-bind Directive </title>
+      <link>/angular/angularjs-ng-bind-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-bind-directive-/</guid>
+      <description>AngularJS ng-bind Directive The ng-bind Directive in AngularJS is used to bind/replace the text content of any particular HTML element with the value that is entered in the given expression. The value of specified HTML content updates whenever the value of the expression changes in the ng-bind directive.
+Syntax:
+Contents... Parameter value:
+expression: It is used to specify the expression to be evaluated or the variable.
+Example 1: This example implements the ng-bind Directive to bind the product of two numbers to the element.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-bind-html Directive </title>
+      <link>/angular/angularjs-ng-bind-html-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-bind-html-directive-/</guid>
+      <description>AngularJS ng-bind-html Directive The ng-bind-html Directive in AngularJS is used to bind the innerHTML of an HTML element to application data and remove dangerous code from the HTML string. $sanitize service is a must for the ng-bind-html directive. It is supported by all HTML elements. Syntax:
+Contents... Parameter Value:
+expression: It specifies the variable or the expression that is to be evaluated.
+Example 1: This example illustrates the ng-bind-html Directive in AngularJS.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-bind-template Directive </title>
+      <link>/angular/angularjs-ng-bind-template-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-bind-template-directive-/</guid>
+      <description>AngularJS ng-bind-template Directive The ng-bind-template Directive in AngularJS is used to replace the content of an HTML element with the value of the given expression. It is used to bind more than one expression. It can have multiple {{ }} expressions. It is supported by all HTML elements.
+Syntax: The ng-bind-template Directive can be used:
+As an attribute:
+Contents... As an element:
+Content... Parameter value:
+expression: This parameter specifies more than one expression will be evaluated, where each expression is surrounded with {{}}.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-blur Directive </title>
+      <link>/angular/angularjs-ng-blur-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-blur-directive-/</guid>
+      <description>AngularJS ng-blur Directive The ng-blur Directive in AngularJS is fired when an HTML element loses their focus. It doesn&amp;rsquo;t override with element&amp;rsquo;s original onblur event i.e. both the ng-blur expression and original onblur event will execute. Syntax:
+Contents... Parameter:
+expression: It refers to the variable or the expression to be evaluated. Note: The ng-blur directive is supported by , , and
+. Example 1: This example displays the text message &amp;ldquo;Enter your text here&amp;rdquo; when the input is focused and hides it when the input focus loses.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-change Directive </title>
+      <link>/angular/angularjs-ng-change-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-change-directive-/</guid>
+      <description>AngularJS ng-change Directive The ng-change Directive in AngularJS is used whenever the value of an input element changes. The expression is evaluated immediately whenever there is a change in the input value. It requires an ng-model directive to be present. It is triggered whenever there is any single change in the input. It can be used with input elements like ,
+, and .
+Syntax:
+Contents... Parameter Value:
+expression: It refers to the expression to execute whenever the value of input changes.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-checked Directive </title>
+      <link>/angular/angularjs-ng-checked-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-checked-directive-/</guid>
+      <description>AngularJS ng-checked Directive The ng-checked Directive in AngularJS is used to read the checked or unchecked state of the checkbox or radio button to true or false. If the expression inside the ng-checked attribute returns true then the checkbox/radio button will be checked otherwise it will be unchecked. Syntax:
+Contents... If the expression returns true then the element&amp;rsquo;s checked attribute will be checked. Example: This example uses the ng-checked Directive to select the checkbox and return the all selected checkbox value.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-class Directive </title>
+      <link>/angular/angularjs-ng-class-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-class-directive-/</guid>
+      <description>AngularJS ng-class Directive The ng-class Directive in AngularJS is used to specify the CSS classes on HTML elements. It is used to dynamically bind classes on an HTML element. The value for the ng-class has either string, an object, or an array. It must contain more than one class name, which is separated by space, in the case of a string. If it is an object, it will contain the key-value pairs, where the key represents the class name for the class that wants to add &amp;amp; value represent the boolean value.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-class-even Directive </title>
+      <link>/angular/angularjs-ng-class-even-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-class-even-directive-/</guid>
+      <description>AngularJS ng-class-even Directive The ng-class-even Directive in AngularJS is used to specify the CSS classes on every even appearance of HTML elements. It is used to dynamically bind classes on every even HTML element. If the expression inside the ng-class-even directive returns true then only the class is added else it is not added. The ng-repeat directive is required for the ng-class-even directive to work. It is supported by all HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-class-odd Directive </title>
+      <link>/angular/angularjs-ng-class-odd-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-class-odd-directive-/</guid>
+      <description>AngularJS ng-class-odd Directive The ng-class-odd Directive in AngularJS is used to specify the CSS classes on every odd appearance of HTML elements. It is used to dynamically bind classes on every odd HTML element. If the expression inside the ng-class-odd directive returns true then only the class is added else it is not added. The ng-repeat directive is required for the ng-class-odd directive to work. This directive can be utilized for the styling of the items in a list or rows in a table, although, can be used for remaining HTML elements, as well.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-click Directive </title>
+      <link>/angular/angularjs-ng-click-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-click-directive-/</guid>
+      <description>AngularJS ng-click Directive The ng-click Directive in AngluarJS is used to apply custom behavior when an element is clicked. It can be used to show/hide some element or it can pop up an alert when the button is clicked. Syntax:
+Contents... Parameter Value:
+expression: It specifies when the particular element is clicked then the specific expression will be evaluated.
+Supported tag: It is supported by all the elements in HTML.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-cloak Directive </title>
+      <link>/angular/angularjs-ng-cloak-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-cloak-directive-/</guid>
+      <description>AngularJS ng-cloak Directive In this article, we will see how to prevent the document from getting rendered the AngularJS code in an unfinished manner while the code is being loaded with the help of the ng-cloak Directive in AngularJS.
+Many times, AngularJS applications would show the flickering of the HTML document when the main application gets started up. This will show the AngularJS code for quite some time. The use of the ng-cloak directive is to keep the elements in the AngularJS from being shortly presented by the web browser in a state of unfinished, incomplete, uncompiled &amp;amp; raw form, while the fundamental program is still on the verge of being loaded.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS ng-controller Directive </title>
+      <link>/angular/angularjs-ng-controller-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-ng-controller-directive-/</guid>
+      <description>AngularJS ng-controller Directive The ng-controller Directive in AngularJS is used to add a controller to the application. It can be used to add methods, functions, and variables that can be called on some event like click, etc to perform certain actions. Syntax:
+Contents... Parameter value:
+expression: It refers to the name of the controller.
+Example 1: This example uses the ng-controller Directive to display the input elements. HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;ng-controller Directive&amp;lt;/title&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Directives Complete Reference </title>
+      <link>/angular/angularjs-directives-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-directives-complete-reference-/</guid>
+      <description>AngularJS Directives Complete Reference Directives are markers in the Document Object Model(DOM). Directives can be used with any of controller or HTML tag which will tell the compiler what exact operation or behavior is expected. There are some directives present which is predefined but if a developer wants he can create new directives (custom-directive).
+Example: This example uses ng-app Directive to define a default AngularJS application.
+&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;AngularJS Directives&amp;lt;/title&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | Filters </title>
+      <link>/angular/angularjs-filters-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-filters-/</guid>
+      <description>AngularJS | Filters There are some filters that are added in the AngularJS for the sake of making the formatting and working with data easier. There are several in-built filters in AngularJS. They are listed here along with some examples to make the understanding easier.
+Basic Syntax:Filters are generally added to the expressions by using the pipe (|) character.For example, the filter {{ fullName | uppercase }} formats the fullName into the uppercase format.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS currency Filter </title>
+      <link>/angular/angularjs-currency-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-currency-filter-/</guid>
+      <description>AngularJS currency Filter AngularJS currency filter is used to convert a number into a currency format. If no currency format is specified currency filter uses the local currency format.
+Syntax: {{ currency_expression | currency : symbol : fractionSize}} Parameters: It contains 2 parameters as mentioned above and described below: symbol: It is an optional parameter. It is used to specify the currency symbol. The currency symbol can be any character or text.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | date Filter </title>
+      <link>/angular/angularjs-date-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-date-filter-/</guid>
+      <description>AngularJS | date Filter AngularJS date filter is used to convert a date into a specified format. When the date format is not specified, the default date format is &amp;lsquo;MMM d, yyyy&amp;rsquo;. Syntax: {{ date | date : format : timezone }} Parameter Values: The date filter contains format and timezone parameters which is optional.Some common values used in format are as follow: &amp;lsquo;yyyy&amp;rsquo; &amp;ndash; define year ex. 2019
+&amp;lsquo;yy&amp;rsquo; &amp;ndash; define year ex.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS filter Filter </title>
+      <link>/angular/angularjs-filter-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-filter-filter-/</guid>
+      <description>AngularJS filter Filter The &amp;ldquo;filter&amp;rdquo; Filter in AngularJS is used to filter the array and object elements and return the filtered items. In other words, this filter selects a subset (a smaller array containing elements that meet the filter criteria) of an array from the original array.
+Syntax:
+{{arrayexpression | filter: expression : comparator : anyPropertyKey}}
+Parameter Values:
+arrayexpression: The source array on which the filter will be applied.
+expression: It is used to select the items from the array after the filter conditions are met.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS json Filter </title>
+      <link>/angular/angularjs-json-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-json-filter-/</guid>
+      <description>AngularJS json Filter The json filter in AngularJs is used to convert a JavaScript object into a JSON. string.JavaScript object that we are using can be of any kind of JavaScript Object. The json filter piped the object or any expression with JSON so that the result will be displayed in the form of a list, which is bound with the expression syntax.
+Syntax:
+{{ object | json : spacing }} Parameter value:</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | limitTo Filter </title>
+      <link>/angular/angularjs-limitto-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-limitto-filter-/</guid>
+      <description>AngularJS | limitTo Filter The limitTo filter in AngularJS is used to returns an array or a string which contains a specified number of elements. This filter can be used with arrays, strings, and numbers. The basic principle, however, remains the same in all the three cases.
+For arrays, it returns an array containing only the specified number of items.
+When used for strings, it returns another string containing the specified number of characters.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS lowercase Filter </title>
+      <link>/angular/angularjs-lowercase-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-lowercase-filter-/</guid>
+      <description>AngularJS lowercase Filter AngularJS provides different filters to format the data. The lowercase Filter formats the given string to the lowercase. In order to transmit &amp;amp; render the data from a TypeScript code to an HTML template (view), the interpolation concept can be utilized. The lowercase filter is piped with an expression that is declared inside the interpolation syntax.
+Syntax:
+{{expression|lowercase}} Example 1: This example describes the AngularJS lowercase Filter by converting the entered string to lowercase.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS number Filter </title>
+      <link>/angular/angularjs-number-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-number-filter-/</guid>
+      <description>AngularJS number Filter AngularJS number filter is used to convert a number into a string or text. We can also define a limit to display a number of decimal digits. The number filter rounds off the number to specified decimal digits. Syntax:
+{{ string| number : fractionSize}} Parameter Values: It contains single parameter value fractionsize which is of type number and used to specify the number of decimals. Example 1: This example format the number and set it into the fraction with two decimal places.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS orderBy Filter </title>
+      <link>/angular/angularjs-orderby-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-orderby-filter-/</guid>
+      <description>AngularJS orderBy Filter An orderBy Filter in AngularJS is used to sort the given array to the specific order. The default order of sorting the string is in alphabetical order whereas the numbers are numerically sorted. By default, all the items are sorted in ascending order, if the ordering sequence is not specified.
+Syntax:
+{{ orderBy_expression | orderBy : expression : reverse : comparator }} Parameter Values:
+expression: This parameter value can be used to determine the order while filtering the items.</description>
+    </item>
+    
+    <item>
+      <title>AngularJs uppercase Filter </title>
+      <link>/angular/angularjs-uppercase-filter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-uppercase-filter-/</guid>
+      <description>AngularJs uppercase Filter The uppercase Filter in AngularJS is used to change a string to an uppercase string or letters. Syntax:
+{{ string | uppercase}} Example: This example describes the use of the uppercase Filter in AngularJS.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;uppercase Filter&amp;lt;/title&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js&amp;quot;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body ng-app=&amp;quot;app&amp;quot; style=&amp;quot;text-align:Center&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color:green&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;AngularJS uppercase Filter&amp;lt;/h2&amp;gt; &amp;lt;div ng-controller=&amp;quot;geek&amp;quot;&amp;gt; &amp;lt;p&amp;gt; &amp;lt;span style=&amp;quot;color:green&amp;quot;&amp;gt; {{msg | uppercase}} &amp;lt;/span&amp;gt; is the computer science portal for Renewbuy.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.lowercase() Function </title>
+      <link>/angular/angularjs-angular.lowercase-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.lowercase-function-/</guid>
+      <description>AngularJS angular.lowercase() Function The angular.lowercase() Function in AngularJS is used to convert the string into lowercase. It can be used when the user wants to show the text in lowercase instead of uppercase or one wants to compare two strings. Syntax:
+angular.lowercase(string) Example 1: This example describes the implementation of the angular.lowercase() Function in AngularJS by specifying the button to transform the string to lowercase.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.uppercase() Function </title>
+      <link>/angular/angularjs-angular.uppercase-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.uppercase-function-/</guid>
+      <description>AngularJS angular.uppercase() Function The angular.uppercase() Function in AngularJS is used to convert the string into uppercase. It can be used when the user wants to show the text in uppercase instead of lowercase. Syntax:
+angular.uppercase(string) Example: This example illustrates the angular.uppercase() Function by specifying the string is converted into uppercase. HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;script src= &amp;quot;https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js&amp;quot;&amp;gt; &amp;lt;/script&amp;gt; &amp;lt;title&amp;gt;angular.uppercase()&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center&amp;quot; ng-app=&amp;quot;app&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color:green&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;angular.uppercase()&amp;lt;/h2&amp;gt; &amp;lt;div ng-controller=&amp;quot;geek&amp;quot;&amp;gt; &amp;lt;br&amp;gt; &amp;lt;b&amp;gt;Before: &amp;lt;/b&amp;gt;{{ string1 }} &amp;lt;br&amp;gt; &amp;lt;button id=&amp;quot;myButton&amp;quot; ng-mousedown=&amp;quot;upper()&amp;quot;&amp;gt; Click it!</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.forEach() Function </title>
+      <link>/angular/angularjs-angular.foreach-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.foreach-function-/</guid>
+      <description>AngularJS angular.forEach() Function The angular.forEach() Function in AngularJS is used to iterate through each item in an array or object. It works similar to the for loop and this loop contains all properties of an object in key-value pairs of an object. Syntax:
+angular.forEach(object, iterator, [context]) Parameter Values:
+object: It refers to the object to be iterated.
+iterator: It refers to the iterator function(value, key, obj).
+context: This is optional. It refers to the object which becomes the context for the iterator function.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isArray() Function </title>
+      <link>/angular/angularjs-angular.isarray-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isarray-function-/</guid>
+      <description>AngularJS angular.isArray() Function The angular.isArray() Function in AngularJS is used to return TRUE if the reference is an array and FALSE if it is not an array. Syntax:
+angular.isArray(value); Parameter:
+value: It specifies the reference to check the value.
+Return value: Returns TRUE if the value is an array else it will return FALSE. Example 1: This example describes the basic usage of angular.isArray() Function in AngularJS.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isDate() Function </title>
+      <link>/angular/angularjs-angular.isdate-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isdate-function-/</guid>
+      <description>AngularJS angular.isDate() Function The angular.isDate() function in AngularJS is used to determine whether the value of the date is valid or not. It returns true if the reference is a date else false. Syntax:
+angular.isDate( value ); Parameters: This function accepts a single parameter:
+value: It stores the data object. Return Value: It returns true if the value passed is a date else return false.
+Example 1: This example uses angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isDefined() Function </title>
+      <link>/angular/angularjs-angular.isdefined-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isdefined-function-/</guid>
+      <description>AngularJS angular.isDefined() Function The angular.isDefined() function in AngularJS is used to determine the value inside isDefined function is defined or not. It returns true if the reference is defined otherwise returns false. Syntax:
+angular.isDefined( value ); Parameter value:
+value: This parameter is a reference to check whether the entered value is defined or not.
+Return Value: It returns true if the passed value is defined otherwise returns false. Example: This example uses angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isElement() Function </title>
+      <link>/angular/angularjs-angular.iselement-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.iselement-function-/</guid>
+      <description>AngularJS angular.isElement() Function The angular.isElement() Function in AngularJS is used to determine if the parameter inside isElement function is a HTML DOM element or not. It returns true if the reference is a DOM element or else false. Syntax:
+angular.isElement(value) Parameter:
+value: It is used to validate whether the passed argument is an HTML DOM element or not.
+Return Value: It returns a boolean value, i.e, returns true if the value passed is an HTML DOM element or else returns false.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isFunction() Function </title>
+      <link>/angular/angularjs-angular.isfunction-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isfunction-function-/</guid>
+      <description>AngularJS angular.isFunction() Function The angular.isFunction() Function in AngularJS is used to determine if the parameter inside isFunction function is a function or not. It returns true if the reference is a function else false. Syntax:
+angular.isFunction(value); Parameter:
+value: This parameter specifies whether the passed value is a function or not.
+Return Value: It returns true if the value passed is a function else false.
+Example 1: This example describes the basic usage of angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isNumber() Function </title>
+      <link>/angular/angularjs-angular.isnumber-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isnumber-function-/</guid>
+      <description>AngularJS angular.isNumber() Function The angular.isNumber() function in AngularJS is used to determine the parameter inside isNumber function is a number or not. It returns true if the reference is a number otherwise returns false. Syntax:
+angular.isNumber( value ); Parameter value:
+value: It determines whether the entered value is a number or not.
+Return Value: It returns a boolean value if the passed value is a number as true, otherwise returns false.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isObject() Function </title>
+      <link>/angular/angularjs-angular.isobject-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isobject-function-/</guid>
+      <description>AngularJS angular.isObject() Function The angular.isobject() Function in AngularJS is used to determine if the parameter inside isobject function is an object or not. It returns true if the reference is an object or else false. Syntax:
+angular.isobject(value); Parameter:
+value: This parameter value validates whether the entered value is an object or not.
+Return Value: It returns true if the value passed is an object else false.
+Example 1: This example describes the angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS | angular.isString() Function </title>
+      <link>/angular/angularjs-angular.isstring-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isstring-function-/</guid>
+      <description>AngularJS | angular.isString() Function The angular.isString() function in AngularJS is used to determine the parameter inside isString function is a string or not. It returns true if the reference is a string otherwise returns false.
+Syntax:
+angular.isString( value ) Return Value: It returns true if the value passed is a string otherwise return false.
+Example: This example uses angular.isString() function to determine the parameter inside isString function is a string or not.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.isUndefined() Function </title>
+      <link>/angular/angularjs-angular.isundefined-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.isundefined-function-/</guid>
+      <description>AngularJS angular.isUndefined() Function The angular.isUndefined() function in AngularJS is used to determine the value inside isUndefined function is undefined or not. It returns true if the reference is undefined otherwise returns false. Syntax:
+angular.isUndefined( value ) Parameter value:
+value: It is used to reference the value to check whether the value is defined or undefined.
+Return Value: It returns true if the value passed is undefined else returns false. Example 1: This example uses angular.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.equals() Function </title>
+      <link>/angular/angularjs-angular.equals-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.equals-function-/</guid>
+      <description>AngularJS angular.equals() Function The angular.equals() Function in AngularJS is used to compare two objects or two values whether these are the same or not. If the two values are the same, it returns TRUE else it will return FALSE. The angular.equals() Function supports value types, regular expressions, arrays and objects.
+Syntax:
+angular.equals(val1, val2); Parameter value:
+val1 &amp;amp; val2: It specifies the values or the objects that is to be compared.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS angular.toJson() Function </title>
+      <link>/angular/angularjs-angular.tojson-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/angularjs-angular.tojson-function-/</guid>
+      <description>AngularJS angular.toJson() Function The angular.toJson() Function in AngularJS is used to serialize the javascript object into a JSON &amp;ndash; formatted string. It takes the javascript object and returns a JSON string. Syntax:
+angular.toJson(object); Parameter:
+object: It specifies the input will be serialized into the JSON.
+Example 1: This example describes the use of the angular.toJson() Function in AngularJS, where
+tag is utilized to group the related elements in the form, and it creates the box over the elements, in order to serialize the javascript object into a JSON string format.</description>
+    </item>
+    
+    <item>
+      <title>How to bundle an Angular app for production? </title>
+      <link>/angular/how-to-bundle-an-angular-app-for-production-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-bundle-an-angular-app-for-production-/</guid>
+      <description>How to bundle an Angular app for production? IntroductionBefore deploying the web app, Angular provides a way to check the behavior of the web application with the help of a few CLI-commands. Usually, ng serves command is used to build, watch, and serve the application from local memory. But for deployment, the behavior of the application is seen by running ng build command.
+Difference between ng serve and ng build</description>
+    </item>
+    
+    <item>
+      <title>How to add many functions in one ng-click directive? </title>
+      <link>/angular/how-to-add-many-functions-in-one-ng-click-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-add-many-functions-in-one-ng-click-directive-/</guid>
+      <description>How to add many functions in one ng-click directive? The ng-click Directive in AngluarJS is used to apply custom behavior when an element is clicked. It can be used to show/hide some element or it can popup alert when the button is clicked. The ng-click directive is a very handy tool used in AngularJS. When an HTML is clicked, the ng-click directive tells the AngularJS script what to do.In this article, we will learn how to get many/multiple functions to the ng-click directive passed, in just one click.</description>
+    </item>
+    
+    <item>
+      <title>How to directly update a field by using ng-click in AngularJS ? </title>
+      <link>/angular/how-to-directly-update-a-field-by-using-ng-click-in-angularjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-directly-update-a-field-by-using-ng-click-in-angularjs-/</guid>
+      <description>How to directly update a field by using ng-click in AngularJS ? In this article, we will see how to update the field directly with the help of the ng-click directive in AngularJS, along with understanding different ways to implement it through the implementations.
+Any field can be updated with ng-click using a custom JavaScript function. For this, we can make a clickable object in HTML (usually a button) and attach an ng-click directive with it that calls this custom function.</description>
+    </item>
+    
+    <item>
+      <title>How to Add Dynamic Options for Multiple Selects Inside ng-repeat Directive ? </title>
+      <link>/angular/how-to-add-dynamic-options-for-multiple-selects-inside-ng-repeat-directive-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-add-dynamic-options-for-multiple-selects-inside-ng-repeat-directive-/</guid>
+      <description>How to Add Dynamic Options for Multiple Selects Inside ng-repeat Directive ? Given an HTML document containing some options element and the task is to add an array of javascript objects dynamically with multiple selects using ng-repeat in angularJS.
+Approach: The task is done using ng-repeat which loops through an array. Let&amp;rsquo;s call this array &amp;ldquo;models&amp;rdquo;. Each select menu present in the DOM is modeled to its specific index in the array.</description>
+    </item>
+    
+    <item>
+      <title>How to detect when an @Input() value changes in Angular? </title>
+      <link>/angular/how-to-detect-when-an-@input-value-changes-in-angular-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-detect-when-an-@input-value-changes-in-angular-/</guid>
+      <description>How to detect when an @Input() value changes in Angular? @Input() is basically a decorator to bind a property as an input. It is used to pass data i.e property binding from one component to other or we can say, from parent to child component. It is bound with the DOM element. When the DOM element value is changed, Angular automatically updates this property with the changed value. Here we will see how can we use it.</description>
+    </item>
+    
+    <item>
+      <title>How to open popup using Angular and Bootstrap ? </title>
+      <link>/angular/how-to-open-popup-using-angular-and-bootstrap-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-open-popup-using-angular-and-bootstrap-/</guid>
+      <description>How to open popup using Angular and Bootstrap ? Adding Bootstrap to your Angular application is an easy process. Just write the following command in your Angular CLI. It will add bootstrap into your node_modules folder.
+ng add @ng-bootstrap/ng-bootstrap Approach: Import NgbModal module in the TypeScript file of the corresponding component, and then we have to write code for the popup model by using the above module in the HTML file of the corresponding component.</description>
+    </item>
+    
+    <item>
+      <title>How to reload or re-render the entire page using AngularJS? </title>
+      <link>/angular/how-to-reload-or-re-render-the-entire-page-using-angularjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-reload-or-re-render-the-entire-page-using-angularjs-/</guid>
+      <description>How to reload or re-render the entire page using AngularJS? While working with AngularJS we might come across a time when we want our user to switch contexts and re-render everything again.AngularJS provides a method by which we can re-render or even reload the entire page. So in this article, we will see how we can reload the route instead of just reloading the entire page or application as refreshing the entire page just for some small chances may get problematic from time to time as well as we will also see how we can reload the entire page from the server or from the cache itself.</description>
+    </item>
+    
+    <item>
+      <title>How to add input fields dynamically on button click in AngularJS ? </title>
+      <link>/angular/how-to-add-input-fields-dynamically-on-button-click-in-angularjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-add-input-fields-dynamically-on-button-click-in-angularjs-/</guid>
+      <description>How to add input fields dynamically on button click in AngularJS ? The task is to add an input field on the page when the user clicks on the button using AngularJs.
+Steps:
+The required component for the operation is created (add-inputComponent).
+In that component, html file (add-input.component.html) required html is written.
+In that HTML, the main div for input fields are there and button is created.
+There is a (click) event on ADD button that redirects on the working user defined function in add-input.</description>
+    </item>
+    
+    <item>
+      <title>How to create button dynamically with click event in Angular ? </title>
+      <link>/angular/how-to-create-button-dynamically-with-click-event-in-angular-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/how-to-create-button-dynamically-with-click-event-in-angular-/</guid>
+      <description>How to create button dynamically with click event in Angular ? The task is to create a button dynamically with click event using angular. In these examples when someone clicks on the button then a new button gets created.
+The easiest way to create a button in AngularJS is to use the ng-repeat directive. We can easily hook up a repeat logic inside a button click event.
+Syntax:
+Contents... Example: Here we have a counter variable that keeps the count of buttons currently present in the DOM.</description>
+    </item>
+    
+    <item>
+      <title>--- </title>
+      <link>/angular/---/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/angular/---/</guid>
+      <description>title: Jquery in Angular How to use jQuery in Angular ? Before starting with using jQuery in angular, we need to install it on our system. Now basically there are two general methods to install jQuery:Note: Before starting with this tutorial, you show know the software used here is Microsoft visual studio code with NodeJs and typescript already installed to work with angular.
+Using NPM method:Now to install jQuery Using NPM method, we need to create a new angular application by running the command at the VS Code Terminal.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

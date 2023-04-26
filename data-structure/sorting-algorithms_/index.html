@@ -1,0 +1,2581 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Sorting Algorithms </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Sorting Algorithms " />
+<meta property="og:description" content="Sorting Algorithms Learn more about Sorting in DSA Self Paced CoursePractice Problems on SortingRecent articles on Sorting AlgorithmsSome Quizzes on Sorting Algorithms
+What is Sorting? A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+For Example: The below list of characters is sorted in increasing order of their ASCII values." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/data-structure/sorting-algorithms_/" /><meta property="article:section" content="data structure" />
+
+
+
+
+
+    
+    
+	<meta name="description" content="Sorting Algorithms " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/data-structure/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/data-structure/a-time-complexity-question_/"><div class="panelist" >A Time Complexity Question </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/advanced-data-structures_/"><div class="panelist" >Advanced Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/algorithms_/"><div class="panelist" >Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/array-data-structure_/"><div class="panelist" >Array Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/asymptotic-notation-and-analysis-based-on-input-size-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/automata-tutorial_/"><div class="panelist" >Automata Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/backtracking-algorithms_/"><div class="panelist" >Backtracking Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-search-tree_/"><div class="panelist" >Binary Search Tree </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-tree-data-structure_/"><div class="panelist" >Binary Tree Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/bitwise-algorithms_/"><div class="panelist" >Bitwise Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/branch-and-bound-algorithm_/"><div class="panelist" >Branch and Bound Algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/calculus_/"><div class="panelist" >Calculus </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/data-structures_/"><div class="panelist" >Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/design-and-analysis-of-algorithms_/"><div class="panelist" >Design and Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/geometric-algorithms_/"><div class="panelist" >Geometric Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/greedy-algorithms_/"><div class="panelist" >Greedy Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/"><div class="panelist" >How to Analyse Loops for Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/linked-list-data-structure_/"><div class="panelist" >Linked List Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/mathematical-algorithms_/"><div class="panelist" >Mathematical Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/pseudo-polynomial-algorithms_/"><div class="panelist" >Pseudo-polynomial Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/randomized-algorithms_/"><div class="panelist" >Randomized Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/searching-algorithms_/"><div class="panelist" >Searching Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/sorting-algorithms_/"><div class="panelist" id="activetab">Sorting Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Types of Asymptotic Notations in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/worst-average-and-best-case-analysis-of-algorithms_/"><div class="panelist" >Worst, Average and Best Case Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h1 id="sorting-algorithms">Sorting Algorithms</h1>
+<p>Learn more about Sorting in DSA Self Paced CoursePractice Problems on
+SortingRecent articles on Sorting AlgorithmsSome Quizzes on Sorting
+Algorithms</p>
+<h2 id="what-is-sorting">What is Sorting?</h2>
+<p>A Sorting Algorithm is used to rearrange a given array or list of
+elements according to a comparison operator on the elements. The
+comparison operator is used to decide the new order of elements in the
+respective data structure.</p>
+<p>For Example: The below list of characters is sorted in increasing order
+of their ASCII values. That is, the character with a lesser ASCII value
+will be placed first than the character with a higher ASCII value.</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222170509/sortexample.png" alt="Example ofSorting">{.size-full
+.wp-image-929330 width=&ldquo;321&rdquo; height=&ldquo;341&rdquo;
+sizes=&quot;(max-width: 321px) 100vw, 321px&quot;
+srcset=&ldquo;<a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222170509/sortexample.png">https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222170509/sortexample.png</a> 321w, <a href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222170509/sortexample-282x300.png">https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221222170509/sortexample-282x300.png</a> 282w&rdquo;}</p>
+<p>Example of Sorting</p>
+<p>Sorting Algorithms:</p>
+<p>Selection Sort</p>
+<p>Bubble Sort</p>
+<p>Insertion Sort</p>
+<p>Merge Sort</p>
+<p>Quick Sort</p>
+<p>Heap Sort</p>
+<p>Counting Sort</p>
+<p>Radix Sort</p>
+<p>Bucket Sort</p>
+<p>Bingo Sort Algorithm</p>
+<p>ShellSort</p>
+<p>TimSort</p>
+<p>Comb Sort</p>
+<p>Pigeonhole Sort</p>
+<p>Cycle Sort</p>
+<p>Cocktail Sort</p>
+<p>Strand Sort</p>
+<p>Bitonic Sort</p>
+<p>Pancake sorting</p>
+<p>BogoSort or Permutation Sort</p>
+<p>Gnome Sort</p>
+<p>Sleep Sort &ndash; The King of Laziness</p>
+<p>Structure Sorting in C++</p>
+<p>Stooge Sort</p>
+<p>Tag Sort (To get both sorted and original)</p>
+<p>Tree Sort</p>
+<p>Odd-Even Sort / Brick Sort</p>
+<p>3-way Merge Sort</p>
+<p>Table of Complexity Comparison:</p>
+<p>NameBest Case  Average Case  Worst Case MemoryStable   Method UsedQuick
+SortNoPartitioningMerge SortnYesMergingHeap Sort1NoSelectionInsertion
+Sortn1YesInsertionTim SortnnYesInsertion &amp; MergingSelection
+Sort1NoSelectionShell Sort1NoInsertionBubble Sortn1YesExchangingTree
+SortnYesInsertionCycle Sort1NoSelectionStrand SortnnYesSelectionCocktail
+Shaker Sortn1YesExchangingComb Sort1NoExchangingGnome
+Sortn1YesExchangingOdd&ndash;even Sortn1YesExchanging<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-ccc84d013faba839d19d0ec320d06442_l3.png" alt="logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;49&rdquo; height=&ldquo;23&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-8527b67c75dc6781dfc95028e577c2d5_l3.png" alt="n\^{4/3}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;46&rdquo;
+height=&ldquo;25&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-4496d830de34b88c4fe45e063b54ba8e_l3.png" alt="n\^{3/2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;46&rdquo;
+height=&ldquo;25&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-57b736efe48d4e5e56fd32ce52bb2dfd_l3.png" alt="n logn" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;66&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo;
+height=&ldquo;24&rdquo;}<img src="https://www.geeksforgeeks.org/wp-content/ql-cache/quicklatex.com-7e4de21ca06ca511c64968b029fd13a9_l3.png" alt="n\^{2}" title="Rendered by QuickLaTeX.com">{.ql-img-inline-formula
+.quicklatex-auto-format width=&ldquo;26&rdquo; height=&ldquo;24&rdquo;}</p>
+<p>Library Implementations:</p>
+<p>Introsort &ndash; C++&rsquo;s Sorting Weapon</p>
+<p>Comparator function of qsort() in C</p>
+<p>sort() in C++ STL</p>
+<p>C qsort() vs C++ sort()</p>
+<p>Arrays.sort() in Java with examples</p>
+<p>Collections.sort() in Java with Examples</p>
+<p>Some standard problems on Sorting:</p>
+<p>Easy:Sort elements by frequencySort an array of 0s, 1s and 2sSort
+numbers stored on different machinesSort an array in wave formCheck if
+any two intervals overlap among a given set of intervalsHow to sort an
+array of dates in C/C++?Sorting Strings using Bubble SortFind missing
+elements of a rangeSort an array according to count of set bitsSort
+even-placed elements in increasing and odd-placed in decreasing
+orderSort an array when two halves are sortedSorting Big IntegersSort a
+linked list of 0s, 1s and 2s</p>
+<p>Sort elements by frequency</p>
+<p>Sort an array of 0s, 1s and 2s</p>
+<p>Sort numbers stored on different machines</p>
+<p>Sort an array in wave form</p>
+<p>Check if any two intervals overlap among a given set of intervals</p>
+<p>How to sort an array of dates in C/C++?</p>
+<p>Sorting Strings using Bubble Sort</p>
+<p>Find missing elements of a range</p>
+<p>Sort an array according to count of set bits</p>
+<p>Sort even-placed elements in increasing and odd-placed in decreasing
+order</p>
+<p>Sort an array when two halves are sorted</p>
+<p>Sorting Big Integers</p>
+<p>Sort a linked list of 0s, 1s and 2s</p>
+<p>Medium:Inversion count in Array using Merge SortFind the Minimum length
+Unsorted Subarray, sorting which makes the complete array sortedSort a
+nearly sorted (or K sorted) arraySort n numbers in range from 0 to n^2
+&ndash; 1 in linear timeSort an array according to the order defined by
+another arrayFind the point where maximum intervals overlapFind a
+permutation that causes worst case of Merge SortSort Vector of Pairs in
+ascending order in C++Minimum swaps to make two arrays
+identicalChocolate Distribution ProblemPermute two arrays such that sum
+of every pair is greater or equal to KBucket Sort To Sort an Array with
+Negative NumbersSort a Matrix in all way increasing orderConvert an
+Array to reduced form using Vector of pairsSmallest Difference Triplet
+from Three arraysCheck if it is possible to sort an array with
+conditional swapping of adjacent allowed</p>
+<p>Inversion count in Array using Merge Sort</p>
+<p>Find the Minimum length Unsorted Subarray, sorting which makes the
+complete array sorted</p>
+<p>Sort a nearly sorted (or K sorted) array</p>
+<p>Sort n numbers in range from 0 to n^2 &ndash; 1 in linear time</p>
+<p>Sort an array according to the order defined by another array</p>
+<p>Find the point where maximum intervals overlap</p>
+<p>Find a permutation that causes worst case of Merge Sort</p>
+<p>Sort Vector of Pairs in ascending order in C++</p>
+<p>Minimum swaps to make two arrays identical</p>
+<p>Chocolate Distribution Problem</p>
+<p>Permute two arrays such that sum of every pair is greater or equal to K</p>
+<p>Bucket Sort To Sort an Array with Negative Numbers</p>
+<p>Sort a Matrix in all way increasing order</p>
+<p>Convert an Array to reduced form using Vector of pairs</p>
+<p>Smallest Difference Triplet from Three arrays</p>
+<p>Check if it is possible to sort an array with conditional swapping of
+adjacent allowed</p>
+<p>Hard:Find Surpasser Count of each element in arrayCount distinct
+occurrences as a subsequenceCount minimum number of subsets (or
+subsequences) with consecutive numbersChose k array elements such that
+difference of maximum and minimum is minimizedMinimum swap required to
+convert binary tree to binary search treeK-th smallest element after
+removing some integers from natural numbersMaximum difference between
+frequency of two elements such that element having greater frequency is
+also greaterMinimum swaps to reach permuted array with at most 2
+positions left swaps allowedFind whether it is possible to make array
+elements same using one external numberSort an array after applying the
+given equationPrint array of strings in sorted order without copying one
+string into another</p>
+<p>Find Surpasser Count of each element in array</p>
+<p>Count distinct occurrences as a subsequence</p>
+<p>Count minimum number of subsets (or subsequences) with consecutive
+numbers</p>
+<p>Chose k array elements such that difference of maximum and minimum is
+minimized</p>
+<p>Minimum swap required to convert binary tree to binary search tree</p>
+<p>K-th smallest element after removing some integers from natural numbers</p>
+<p>Maximum difference between frequency of two elements such that element
+having greater frequency is also greater</p>
+<p>Minimum swaps to reach permuted array with at most 2 positions left
+swaps allowed</p>
+<p>Find whether it is possible to make array elements same using one
+external number</p>
+<p>Sort an array after applying the given equation</p>
+<p>Print array of strings in sorted order without copying one string into
+another</p>
+<p>Quick Links :</p>
+<p>&lsquo;Practice Problems&rsquo; on Sorting</p>
+<p>&lsquo;Quizzes&rsquo; on Sorting</p>
+<p>Recomended:</p>
+<p>Learn Data Structure and Algorithms | DSA Tutorial</p>
+<p>If you like GeeksforGeeks and would like to contribute, you can also
+write an article and mail your article to
+review-team@geeksforgeeks.org. See your article appearing on the
+GeeksforGeeks main page and help other Geeks.Please write comments if
+you find anything incorrect, or if you want to share more information
+about the topic discussed above.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/" title="Types of Asymptotic Notations in Complexity Analysis of Algorithms " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/data-structure/searching-algorithms_/" title="Searching Algorithms " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

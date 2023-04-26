@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Django on SATHEE</title>
+    <link>/django/</link>
+    <description>Recent content in Django on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/django/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Django Tutorial </title>
+      <link>/django/django-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-tutorial-/</guid>
+      <description>Django Tutorial Django is a Python-based web framework that allows you to quickly create efficient web applications. It is also called batteries included framework because Django provides built-in features for everything including Django Admin Interface, default database &amp;ndash; SQLlite3, etc. When you&amp;rsquo;re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.</description>
+    </item>
+    
+    <item>
+      <title>Django Basics </title>
+      <link>/django/django-basics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-basics-/</guid>
+      <description>Django Basics Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks.When you&amp;rsquo;re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc. Django gives you ready-made components to use.</description>
+    </item>
+    
+    <item>
+      <title>Django Introduction and Installation </title>
+      <link>/django/django-introduction-and-installation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-introduction-and-installation-/</guid>
+      <description>Django Introduction and Installation What is Django? Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks.When you&amp;rsquo;re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.</description>
+    </item>
+    
+    <item>
+      <title>Django Project MVT Structure </title>
+      <link>/django/django-project-mvt-structure-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-project-mvt-structure-/</guid>
+      <description>Django Project MVT Structure Django is based on MVT (Model-View-Template) architecture. MVT is a software design pattern for developing a web application. MVT Structure has the following three parts &amp;ndash; Model: The model is going to act as the interface of your data. It is responsible for maintaining data. It is the logical data structure behind the entire application and is represented by a database (generally relational databases such as MySql, Postgres).</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Basic Project using MVT in Django ? </title>
+      <link>/django/how-to-create-a-basic-project-using-mvt-in-django-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/how-to-create-a-basic-project-using-mvt-in-django-/</guid>
+      <description>How to Create a Basic Project using MVT in Django ? Prerequisite &amp;ndash; Django Project MVT Structure Assuming you have gone through the previous article. This article focuses on creating a basic project to render a template using MVT architecture. We will use MVT (Models, Views, Templates) to render data to a local server. Create a basic Project: To initiate a project of Django on Your PC, open Terminal and Enter the following command django-admin startproject projectName A New Folder with the name projectName will be created.</description>
+    </item>
+    
+    <item>
+      <title>How to Create an App in Django ? </title>
+      <link>/django/how-to-create-an-app-in-django-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/how-to-create-an-app-in-django-/</guid>
+      <description>How to Create an App in Django ? Prerequisite &amp;ndash; How to Create a Basic Project using MVT in Django?
+Django is famous for its unique and fully managed app structure. For every functionality, an app can be created like a completely independent module. This article will take you through how to create a basic app and add functionalities using that app.For example, if you are creating a Blog, Separate modules should be created for Comments, Posts, Login/Logout, etc.</description>
+    </item>
+    
+    <item>
+      <title>Django Forms </title>
+      <link>/django/django-forms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-forms-/</guid>
+      <description>Django Forms When one creates a Form class, the most important part is defining the fields of the form. Each field has custom validation logic, along with a few other hooks. This article revolves around various fields one can use in a form along with various features and techniques concerned with Django Forms. Forms are basically used for taking input from the user in some manner and using that information for logical operations on databases.</description>
+    </item>
+    
+    <item>
+      <title>Render HTML Forms (GET &amp; POST) in Django </title>
+      <link>/django/render-html-forms-get-post-in-django-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/render-html-forms-get-post-in-django-/</guid>
+      <description>Render HTML Forms (GET &amp;amp; POST) in Django Django is often called &amp;ldquo;Batteries Included Framework&amp;rdquo; because it has a default setting for everything and has features that can help anyone develop a website rapidly. Talking about forms, In HTML, a form is a collection of elements inside
+&amp;hellip;
+that allow a visitor to do things like entering text, select options, manipulate objects or controls, and so on, and then send that information back to the server.</description>
+    </item>
+    
+    <item>
+      <title>Django form field custom widgets </title>
+      <link>/django/django-form-field-custom-widgets-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-form-field-custom-widgets-/</guid>
+      <description>Django form field custom widgets A widget is Django&amp;rsquo;s representation of an HTML input element. The widget handles the rendering of the HTML, and the extraction of data from a GET/POST dictionary that corresponds to the widget. Whenever you specify a field on a form, Django will use a default widget that is appropriate to the type of data that is to be displayed. To find which widget is used on which field, see the documentation about Built-in Field classes.</description>
+    </item>
+    
+    <item>
+      <title>Django ModelForm -- Create form from Models </title>
+      <link>/django/django-modelform--create-form-from-models-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-modelform--create-form-from-models-/</guid>
+      <description>Django ModelForm &amp;ndash; Create form from Models Django ModelForm is a class that is used to directly convert a model into a Django form. If you&amp;rsquo;re building a database-driven app, chances are you&amp;rsquo;ll have forms that map closely to Django models. For example, a User Registration model and form would have the same quality and quantity of model fields and form fields. So instead of creating a redundant code to first create a form and then map it to the model in a view, we can directly use ModelForm.</description>
+    </item>
+    
+    <item>
+      <title>Django Formsets </title>
+      <link>/django/django-formsets-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-formsets-/</guid>
+      <description>Django Formsets Formsets in a Django is an advanced way of handling multiple forms on a single webpage. In other words, Formsets are a group of forms in Django. One might want to initialize multiple forms on a single page all of which may involve multiple POST requests, for example
+from django import forms class RenewbuyForm(forms.Form): title = forms.CharField() pub_date = forms.DateField() Now one might want to permit the user to create articles at once, so if thought in a conventional manner one uses multiple forms and different names for each form to handle data on a single page but this would complicate the code as well as functionality.</description>
+    </item>
+    
+    <item>
+      <title>Django ModelFormSets </title>
+      <link>/django/django-modelformsets-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-modelformsets-/</guid>
+      <description>Django ModelFormSets ModelFormsets in a Django is an advanced way of handling multiple forms created using a model and use them to create model instances. In other words, ModelFormsets are a group of forms in Django. One might want to initialize multiple forms on a single page all of which may involve multiple POST requests, for example
+class RenewbuyModel(models.Model): title = models.CharField(max_length = 200) description = models.TextField() Now if one wants to create a modelformset for this model, modelformset_factory needs to be used.</description>
+    </item>
+    
+    <item>
+      <title>Django Templates </title>
+      <link>/django/django-templates-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-templates-/</guid>
+      <description>Django Templates Templates are the third and most important part of Django&amp;rsquo;s MVT Structure. A template in Django is basically written in HTML, CSS, and Javascript in a .html file. Django framework efficiently handles and generates dynamically HTML web pages that are visible to the end-user. Django mainly functions with a backend so, in order to provide a frontend and provide a layout to our website, we use templates. There are two methods of adding the template to our website depending on our needs.</description>
+    </item>
+    
+    <item>
+      <title>Views In Django | Python </title>
+      <link>/django/views-in-django-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/views-in-django-python-/</guid>
+      <description>Views In Django | Python Django Views are one of the vital participants of MVT Structure of Django. As per Django Documentation, A view function is a Python function that takes a Web request and returns a Web response. This response can be the HTML contents of a Web page, or a redirect, or a 404 error, or an XML document, or an image, anything that a web browser can display.</description>
+    </item>
+    
+    <item>
+      <title>Django CRUD (Create, Retrieve, Update, Delete) Function Based Views </title>
+      <link>/django/django-crud-create-retrieve-update-delete-function-based-views-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-crud-create-retrieve-update-delete-function-based-views-/</guid>
+      <description>Django CRUD (Create, Retrieve, Update, Delete) Function Based Views Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks. Django is based on MVT (Model View Template) architecture and revolves around CRUD (Create, Retrieve, Update, Delete) operations. CRUD can be best explained as an approach to building a Django web application.</description>
+    </item>
+    
+    <item>
+      <title>Class Based Generic Views Django (Create, Retrieve, Update, Delete) </title>
+      <link>/django/class-based-generic-views-django-create-retrieve-update-delete-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/class-based-generic-views-django-create-retrieve-update-delete-/</guid>
+      <description>Class Based Generic Views Django (Create, Retrieve, Update, Delete) Django is a Python-based web framework that allows you to quickly create web applications. It has built-in admin interface which makes easy to work with it. It is often called Batteries included framework because it provides built-in facilities for every functionality. Class Based Generic Views are advanced set of Built-in views which are used for implementation of selective view strategies such as Create, Retrieve, Update, Delete.</description>
+    </item>
+    
+    <item>
+      <title>Django Models </title>
+      <link>/django/django-models-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-models-/</guid>
+      <description>Django Models A Django model is the built-in feature that Django uses to create tables, their fields, and various constraints. In short, Django Models is the SQL of Database one uses with Django. SQL (Structured Query Language) is complex and involves a lot of different queries for creating, deleting, updating or any other stuff related to database. Django models simplify the tasks and organize tables into models. Generally, each model maps to a single database table.</description>
+    </item>
+    
+    <item>
+      <title>Django ORM -- Inserting, Updating &amp; Deleting Data </title>
+      <link>/django/django-orm--inserting-updating-deleting-data-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-orm--inserting-updating-deleting-data-/</guid>
+      <description>Django ORM &amp;ndash; Inserting, Updating &amp;amp; Deleting Data Prerequisite: Django models
+Django lets us interact with its database models, i.e. add, delete, modify and query objects, using a database-abstraction API called ORM(Object Relational Mapper). This article discusses all the useful operations we can perform using Django ORM.
+For demonstration purposes, we will use the following Django models.
+class Album(models.Model): title = models.CharField(max_length = 30) artist = models.CharField(max_length = 30) genre = models.</description>
+    </item>
+    
+    <item>
+      <title>Django Basic App Model -- Makemigrations and Migrate </title>
+      <link>/django/django-basic-app-model--makemigrations-and-migrate-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/django/django-basic-app-model--makemigrations-and-migrate-/</guid>
+      <description>Django Basic App Model &amp;ndash; Makemigrations and Migrate In this article, we will create a basic model of an app. Say, we have a project Renewbuy in which we will create a new app in order to simplify and make independent model units.
+To create an app run command through terminal :
+python manage.py startapp Renewbuy and add Renewbuy to INSTALLED_APPS list in settings.py. Now directory structure of the app will be,</description>
+    </item>
+    
+    
+  </channel>
+</rss>

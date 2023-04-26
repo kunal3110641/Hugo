@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Structure on SATHEE</title>
+    <link>/data-structure/</link>
+    <description>Recent content in Data Structure on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/data-structure/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>A Time Complexity Question </title>
+      <link>/data-structure/a-time-complexity-question_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/a-time-complexity-question_/</guid>
+      <description>A Time Complexity Question Difficulty Level : Easy
+Last Updated : 27 Dec, 2021
+Read
+Discuss(40+)
+Courses
+Practice
+Video
+What is the time complexity of following function fun()? Assume that log(x) returns log value in base 2. C++ void fun(){ int i, j; for (i = 1; i &amp;lt;= n; i++) for (j = 1; j &amp;lt;= log(i); j++) cout &amp;lt;&amp;lt; &amp;quot;GeeksforGeeks&amp;quot;;} // This code is contributed by SHUBHAMSINGH10.
+C void fun(){ int i, j; for (i = 1; i &amp;lt;= n; i++) for (j = 1; j &amp;lt;= log(i); j++) printf(&amp;quot;GeeksforGeeks&amp;quot;);}</description>
+    </item>
+    
+    <item>
+      <title>Advanced Data Structures </title>
+      <link>/data-structure/advanced-data-structures_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/advanced-data-structures_/</guid>
+      <description>Advanced Data Structures Learn more about Advanced Data Structures in DSA Self Paced CoursePractice Problems on all Advanced Data StructureRecent Articles on Advanced Data Structures
+Data Structures are used to store and manage data in an efficient and organised way for faster and easy access and modification of Data. Some of the basic data structures are Arrays, LinkedList, Stacks, Queues etc.
+This page will contain some of the complex and advanced Data Structures like Disjoint Sets, Self-Balancing Trees, Segment Trees, Tries etc.</description>
+    </item>
+    
+    <item>
+      <title>Algorithms </title>
+      <link>/data-structure/algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/algorithms_/</guid>
+      <description>Algorithms Learn more about Algorithms in DSA Self Paced CoursePractice Problems on all AlgorithmsRecent articles on AlgorithmsSome Quizzes on Algorithms
+What is an Algorithm? The word Algorithm means &amp;quot; A set of rules to be followed in calculations or other problem-solving operations &amp;quot; Or &amp;quot; A procedure for solving a mathematical problem in a finite number of steps that frequently by recursive operations &amp;ldquo;. Therefore Algorithm refers to a sequence of finite steps to solve a particular problem.</description>
+    </item>
+    
+    <item>
+      <title>Array Data Structure </title>
+      <link>/data-structure/array-data-structure_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/array-data-structure_/</guid>
+      <description>Array Data Structure Learn more about Array in DSA Self Paced CoursePractice Problems on ArraysRecent articles on ArraysSome Quizzes on Arrays
+What is Array? An array is a collection of items stored at contiguous memory locations. The idea is to store multiple items of the same type together. This makes it easier to calculate the position of each element by simply adding an offset to a base value, i.e., the memory location of the first element of the array (generally denoted by the name of the array).</description>
+    </item>
+    
+    <item>
+      <title>Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </title>
+      <link>/data-structure/asymptotic-notation-and-analysis-based-on-input-size-in-complexity-analysis-of-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/asymptotic-notation-and-analysis-based-on-input-size-in-complexity-analysis-of-algorithms_/</guid>
+      <description>Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms Difficulty Level : Basic
+Last Updated : 14 Mar, 2023
+Read
+Discuss(70+)
+Courses
+Practice
+Video
+Asymptotic Analysis is defined as the big idea that handles the above issues in analyzing algorithms. In Asymptotic Analysis, we evaluate the performance of an algorithm in terms of input size (we don&amp;rsquo;t measure the actual running time). We calculate, how the time (or space) taken by an algorithm increases with the input size.</description>
+    </item>
+    
+    <item>
+      <title>Automata Tutorial </title>
+      <link>/data-structure/automata-tutorial_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/automata-tutorial_/</guid>
+      <description>Automata Tutorial Automata theory is a branch of the theory of computation. It deals with the study of abstract machines and their capacities for computation. An abstract machine is called the automata. It includes the design and analysis of automata, which are mathematical models that can perform computations on strings of symbols according to a set of rules.
+Theory of computation is the branch of computer science that studies the nature and ranges of computation.</description>
+    </item>
+    
+    <item>
+      <title>Backtracking Algorithms </title>
+      <link>/data-structure/backtracking-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/backtracking-algorithms_/</guid>
+      <description>Backtracking Algorithms Learn more about Backtracking Algorithms in DSA Self Paced CoursePractice Problems on Backtracking AlgorithmsRecent Articles on Backtracking Algorithmsb&amp;gt;Recent Articles on Backtracking Algorithms
+What is Backtracking? Backtracking can be defined as a general algorithmic technique that considers searching every possible combination in order to solve a computational problem.
+What is Backtracking Algorithm? Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time (by time, here, is referred to the time elapsed till reaching any level of the search tree).</description>
+    </item>
+    
+    <item>
+      <title>Binary Search Tree </title>
+      <link>/data-structure/binary-search-tree_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/binary-search-tree_/</guid>
+      <description>Binary Search Tree Learn more about Binary Search Tree in DSA Self Paced CoursePractice Problems on Binary Search Tree !Recent Articles on Binary Search Tree !
+What is Binary Search Tree? Binary Search Tree is a node-based binary tree data structure which has the following properties:
+The left subtree of a node contains only nodes with keys lesser than the node&amp;rsquo;s key.
+The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key.</description>
+    </item>
+    
+    <item>
+      <title>Binary Tree Data Structure </title>
+      <link>/data-structure/binary-tree-data-structure_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/binary-tree-data-structure_/</guid>
+      <description>Binary Tree Data Structure Learn more about Binary Tree in DSA Self Paced CoursePractice Problems on Binary Tree !Recent Articles on Binary Tree !Some Quizzes on Binary Tree
+What is Binary Tree Data Structure? Binary Tree is defined as a tree data structure where each node has at most 2 children. Since each element in a binary tree can have only 2 children, we typically name them the left and right child.</description>
+    </item>
+    
+    <item>
+      <title>Bitwise Algorithms </title>
+      <link>/data-structure/bitwise-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/bitwise-algorithms_/</guid>
+      <description>Bitwise Algorithms Learn more about Bitwise Algorithms in DSA Self Paced CoursePractice Problems on Bit Magic !Recent Articles on Bit Magic !Some Quizses on Bit Magic
+The Bitwise Algorithms is used to perform operations at the bit-level or to manipulate bits in different ways. The bitwise operations are found to be much faster and are sometimes used to improve the efficiency of a program.
+For example: To check if a number is even or odd.</description>
+    </item>
+    
+    <item>
+      <title>Branch and Bound Algorithm </title>
+      <link>/data-structure/branch-and-bound-algorithm_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/branch-and-bound-algorithm_/</guid>
+      <description>Branch and Bound Algorithm Learn more about Branch and Bound in DSA Self Paced CourseRecent Articles on Branch and Bound
+What is Branch and Bound Algorithm? Branch and bound is an algorithm design paradigm which is generally used for solving combinatorial optimization problems. These problems are typically exponential in terms of time complexity and may require exploring all possible permutations in worst case. The Branch and Bound Algorithm technique solves these problems relatively quickly.</description>
+    </item>
+    
+    <item>
+      <title>Calculus </title>
+      <link>/data-structure/calculus_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/calculus_/</guid>
+      <description>Calculus Difficulty Level : Basic
+Last Updated : 15 Mar, 2023
+Read
+Discuss
+Courses
+Practice
+Video
+Calculus is a subset of mathematics concerned with the study of continuous transition. Calculus is also known as infinitesimal calculus or &amp;ldquo;infinite calculus.&amp;rdquo; The analysis of continuous change of functions is known as classical calculus. Derivatives and integrals are the two most important ideas of calculus. The integral is the measure of the region under the curve, while the derivative is the measure of the rate of change of a function.</description>
+    </item>
+    
+    <item>
+      <title>Data Structures </title>
+      <link>/data-structure/data-structures_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/data-structures_/</guid>
+      <description>Data Structures Learn more about Data Structure in DSA Self Paced CoursePractice Problems on all Data StructuresRecent articles on Data StructuresSome Quizzes on Data Structures
+What is Data Structure: A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently.
+A data structure is not only used for organizing the data.</description>
+    </item>
+    
+    <item>
+      <title>Design and Analysis of Algorithms </title>
+      <link>/data-structure/design-and-analysis-of-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/design-and-analysis-of-algorithms_/</guid>
+      <description>Design and Analysis of Algorithms What is meant by Algorithm Analysis? Algorithm analysis is an important part of computational complexity theory, which provides theoretical estimation for the required resources of an algorithm to solve a specific computational problem. Analysis of algorithms is the determination of the amount of time and space resources required to execute it.
+Why Analysis of Algorithms is important? To predict the behavior of an algorithm without implementing it on a specific computer.</description>
+    </item>
+    
+    <item>
+      <title>Geometric Algorithms </title>
+      <link>/data-structure/geometric-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/geometric-algorithms_/</guid>
+      <description>Geometric Algorithms Learn more about Geometric Algorithms in DSA Self Paced CoursePractice Problems on Geometric AlgorithmsRecent Articles on Geometric Algorithms
+These algorithms are designed to solve Geometric Problems. They require in-depth knowledge of different mathematical subjects like combinatorics, topology, algebra, differential geometry, etc.
+For Example: Comparing Slopes of two lines, Finding Equation of a plane etc.
+Topics:
+Pattern Printing
+Lines
+Triangle
+Rectangle | Square | Circle
+Quadilateral
+3D Objects
+Polygon &amp;amp; Convex Hull</description>
+    </item>
+    
+    <item>
+      <title>Greedy Algorithms </title>
+      <link>/data-structure/greedy-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/greedy-algorithms_/</guid>
+      <description>Greedy Algorithms Learn more about Greedy Algorithms in DSA Self Paced CoursePractice Problems on Greedy AlgorithmsRecent Articles on Greedy AlgorithmsSome Quizzes on Greedy Algorithms
+What is Greedy Algorithm? Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece that offers the most obvious and immediate benefit. So the problems where choosing locally optimal also leads to global solution are the best fit for Greedy.</description>
+    </item>
+    
+    <item>
+      <title>How to Analyse Loops for Complexity Analysis of Algorithms </title>
+      <link>/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/</guid>
+      <description>How to Analyse Loops for Complexity Analysis of Algorithms Difficulty Level : Easy
+Last Updated : 06 Apr, 2023
+Read
+Discuss(130+)
+Courses
+Practice
+Video
+We have discussed Asymptotic Analysis, Worst, Average and Best Cases and Asymptotic Notations in previous posts. In this post, an analysis of iterative programs with simple examples is discussed. The analysis of loops for the complexity analysis of algorithms involves finding the number of operations performed by a loop as a function of the input size.</description>
+    </item>
+    
+    <item>
+      <title>Linked List Data Structure </title>
+      <link>/data-structure/linked-list-data-structure_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/linked-list-data-structure_/</guid>
+      <description>Linked List Data Structure Learn more about Linked List in DSA Self Paced CoursePractice Problems on Linked ListRecent Articles on Linked ListSome Quizzes on Linked List
+What is Linked List A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations. The elements in a linked list are linked using pointers as shown in the below image:
+{.aligncenter .size-full width=&amp;ldquo;759&amp;rdquo; height=&amp;ldquo;169&amp;rdquo;}
+In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.</description>
+    </item>
+    
+    <item>
+      <title>Mathematical Algorithms </title>
+      <link>/data-structure/mathematical-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/mathematical-algorithms_/</guid>
+      <description>Mathematical Algorithms Learn more about Mathematical Algorithms in DSA Self Paced CoursePractice Problems on Mathematical AlgorithmsRecent Articles on Mathematical Algorithms
+Topics:
+Divisibility &amp;amp; Large Numbers
+GCD and LCM
+Series
+Number Digits
+Algebra
+Number System
+Prime numbers &amp;amp; Primality Tests
+Prime Factorization &amp;amp; Divisors
+Modular Arithmetic
+Factorial
+Fibonacci Numbers
+Catalan Numbers
+nCr Computations
+Set Theory
+Sieve Algorithms
+Euler Totient Function
+Chinese Remainder Theorem
+Some practice Problems
+Divisibility &amp;amp; Large Numbers:
+Check if a large number is divisible by 3 or not</description>
+    </item>
+    
+    <item>
+      <title>Pseudo-polynomial Algorithms </title>
+      <link>/data-structure/pseudo-polynomial-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/pseudo-polynomial-algorithms_/</guid>
+      <description>Pseudo-polynomial Algorithms Difficulty Level : Easy
+Last Updated : 22 Aug, 2021
+Read
+Discuss
+Courses
+Practice
+Video
+What is a pseudo-polynomial algorithm? A pseudo-polynomial algorithm is an algorithm whose worst-case time complexity is polynomial in the numeric value of input (not number of inputs).For example, consider the problem of counting frequencies of all elements in an array of positive numbers. A pseudo-polynomial time solution for this is to first find the maximum value, then iterate from 1 to maximum value and for each value, find its frequency in array.</description>
+    </item>
+    
+    <item>
+      <title>Randomized Algorithms </title>
+      <link>/data-structure/randomized-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/randomized-algorithms_/</guid>
+      <description>Randomized Algorithms Learn more about Randomized Algorithms in DSA Self Paced CourseRecent articles on Randomized Algorithms
+What is Randomized Algorithm? An algorithm that uses random numbers to decide what to do next anywhere in its logic is called Randomized Algorithm.
+For example, in Randomized Quick Sort, we use a random number to pick the next pivot (or we randomly shuffle the array). Typically, this randomness is used to reduce time complexity or space complexity in other standard algorithms.</description>
+    </item>
+    
+    <item>
+      <title>Searching Algorithms </title>
+      <link>/data-structure/searching-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/searching-algorithms_/</guid>
+      <description>Searching Algorithms Learn more about Searching Algorithms in DSA Self Paced CoursePractice Problems on Searching AlgorithmsRecent Articles on Searching AlgorithmsRecent Articles on Searching Algorithms
+What is Searching Algorithm? Searching Algorithms are designed to check for an element or retrieve an element from any data structure where it is stored.
+Based on the type of search operation, these algorithms are generally classified into two categories:
+Sequential Search: In this, the list or array is traversed sequentially and every element is checked.</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms </title>
+      <link>/data-structure/sorting-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/sorting-algorithms_/</guid>
+      <description>Sorting Algorithms Learn more about Sorting in DSA Self Paced CoursePractice Problems on SortingRecent articles on Sorting AlgorithmsSome Quizzes on Sorting Algorithms
+What is Sorting? A Sorting Algorithm is used to rearrange a given array or list of elements according to a comparison operator on the elements. The comparison operator is used to decide the new order of elements in the respective data structure.
+For Example: The below list of characters is sorted in increasing order of their ASCII values.</description>
+    </item>
+    
+    <item>
+      <title>Types of Asymptotic Notations in Complexity Analysis of Algorithms </title>
+      <link>/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/</guid>
+      <description>Types of Asymptotic Notations in Complexity Analysis of Algorithms Difficulty Level : Easy
+Last Updated : 28 Feb, 2023
+Read
+Discuss(120+)
+Courses
+Practice
+Video
+We have discussed Asymptotic Analysis, and Worst, Average, and Best Cases of Algorithms. The main idea of asymptotic analysis is to have a measure of the efficiency of algorithms that don&amp;rsquo;t depend on machine-specific constants and don&amp;rsquo;t require algorithms to be implemented and time taken by programs to be compared.</description>
+    </item>
+    
+    <item>
+      <title>Worst, Average and Best Case Analysis of Algorithms </title>
+      <link>/data-structure/worst-average-and-best-case-analysis-of-algorithms_/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/data-structure/worst-average-and-best-case-analysis-of-algorithms_/</guid>
+      <description>Worst, Average and Best Case Analysis of Algorithms Difficulty Level : Easy
+Last Updated : 29 Mar, 2023
+Read
+Discuss(90+)
+Courses
+Practice
+Video
+In the previous post, we discussed how Asymptotic analysis overcomes the problems of the naive way of analyzing algorithms. But let&amp;rsquo;s take an overview of the asymptotic notation and learn about What is Worst, Average, and Best cases of an algorithm:
+Popular Notations in Complexity Analysis of Algorithms Big-O Notation We define an algorithm&amp;rsquo;s worst-case time complexity by using the Big-O notation, which determines the set of functions grows slower than or at the same rate as the expression.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

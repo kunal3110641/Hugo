@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on SATHEE</title>
+    <link>/machine-learning/</link>
+    <description>Recent content in machine learning on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/machine-learning/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Machine Learning Tutorial </title>
+      <link>/machine-learning/machine-learning-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/machine-learning-tutorial-/</guid>
+      <description>Machine Learning Tutorial Machine Learning tutorial covers basic and advanced concepts, specially designed to cater to both students and experienced working professionals.
+This machine learning tutorial helps you gain a solid introduction to the fundamentals of machine learning and explore a wide range of techniques, including supervised, unsupervised, and reinforcement learning.
+What is Machine Learning? Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed.</description>
+    </item>
+    
+    <item>
+      <title>An introduction to Machine Learning </title>
+      <link>/machine-learning/an-introduction-to-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/an-introduction-to-machine-learning-/</guid>
+      <description>An introduction to Machine Learning Definition of Machine Learning: Arthur Samuel, an early American leader in the field of computer gaming and artificial intelligence, coined the term &amp;ldquo;Machine Learning &amp;quot; in 1959 while at IBM. He defined machine learning as &amp;ldquo;the field of study that gives computers the ability to learn without being explicitly programmed &amp;ldquo;. However, there is no universally accepted definition for machine learning. Different authors define the term differently.</description>
+    </item>
+    
+    <item>
+      <title>ML | Introduction to Data in Machine Learning </title>
+      <link>/machine-learning/ml-introduction-to-data-in-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-introduction-to-data-in-machine-learning-/</guid>
+      <description>ML | Introduction to Data in Machine Learning Data is a crucial component in the field of Machine Learning. It refers to the set of observations or measurements that can be used to train a machine-learning model. The quality and quantity of data available for training and testing play a significant role in determining the performance of a machine-learning model. Data can be in various forms such as numerical, categorical, or time-series data, and can come from various sources such as databases, spreadsheets, or APIs.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning -- Applications </title>
+      <link>/machine-learning/machine-learning--applications-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/machine-learning--applications-/</guid>
+      <description>Machine Learning &amp;ndash; Applications Introduction
+Machine learning is one of the most exciting technologies that one would have ever come across. As it is evident from the name, it gives the computer that which makes it more similar to humans: The ability to learn. Machine learning is actively being used today, perhaps in many more places than one would expect. We probably use a learning algorithm dozens of time without even knowing it.</description>
+    </item>
+    
+    <item>
+      <title>Best Python libraries for Machine Learning </title>
+      <link>/machine-learning/best-python-libraries-for-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/best-python-libraries-for-machine-learning-/</guid>
+      <description>Best Python libraries for Machine Learning Machine Learning, as the name suggests, is the science of programming a computer by which they are able to learn from different kinds of data. A more general definition given by Arthur Samuel is &amp;ndash; &amp;ldquo;Machine Learning is the field of study that gives computers the ability to learn without being explicitly programmed.&amp;rdquo; They are typically used to solve various types of life problems. In the older days, people used to perform Machine Learning tasks by manually coding all the algorithms and mathematical and statistical formulas.</description>
+    </item>
+    
+    <item>
+      <title>Difference Between Machine Learning and Artificial Intelligence </title>
+      <link>/machine-learning/difference-between-machine-learning-and-artificial-intelligence-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/difference-between-machine-learning-and-artificial-intelligence-/</guid>
+      <description>Difference Between Machine Learning and Artificial Intelligence Introduction :
+Artificial Intelligence (AI) and Machine Learning (ML) are two closely related but distinct fields within the broader field of computer science. AI is a discipline that focuses on creating intelligent machines that can perform tasks that typically require human intelligence, such as visual perception, speech recognition, decision-making, and natural language processing. It involves the development of algorithms and systems that can reason, learn, and make decisions based on input data.</description>
+    </item>
+    
+    <item>
+      <title>ML | Understanding Data Processing </title>
+      <link>/machine-learning/ml-understanding-data-processing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-understanding-data-processing-/</guid>
+      <description>ML | Understanding Data Processing Data Processing is the task of converting data from a given form to a much more usable and desired form i.e. making it more meaningful and informative. Using Machine Learning algorithms, mathematical modeling, and statistical knowledge, this entire process can be automated. The output of this complete process can be in any desired form like graphs, videos, charts, tables, images, and many more, depending on the task we are performing and the requirements of the machine.</description>
+    </item>
+    
+    <item>
+      <title>Generate Test Datasets for Machine learning </title>
+      <link>/machine-learning/generate-test-datasets-for-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/generate-test-datasets-for-machine-learning-/</guid>
+      <description>Generate Test Datasets for Machine learning Whenever we think of Machine Learning, the first thing that comes to our mind is a dataset. While there are many datasets that you can find on websites such as Kaggle, sometimes it is useful to extract data on your own and generate your own dataset. Generating your own dataset gives you more control over the data and allows you to train your machine-learning model.</description>
+    </item>
+    
+    <item>
+      <title>ML | Overview of Data Cleaning </title>
+      <link>/machine-learning/ml-overview-of-data-cleaning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-overview-of-data-cleaning-/</guid>
+      <description>ML | Overview of Data Cleaning Data cleaning is one of the important parts of machine learning. It plays a significant part in building a model. It surely isn&amp;rsquo;t the fanciest part of machine learning and at the same time, there aren&amp;rsquo;t any hidden tricks or secrets to uncover. However, the success or failure of a project relies on proper data cleaning. Professional data scientists usually invest a very large portion of their time in this step because of the belief that &amp;ldquo;Better data beats fancier algorithms&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>ML | Feature Scaling -- Part 1 </title>
+      <link>/machine-learning/ml-feature-scaling--part-1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-feature-scaling--part-1-/</guid>
+      <description>ML | Feature Scaling &amp;ndash; Part 1 Feature Scaling is a technique to standardize the independent features present in the data in a fixed range. It is performed during the data pre-processing. Working: Given a data-set with features- Age, Salary, BHK Apartment with the data size of 5000 people, each having these independent data features. Each data point is labeled as: Class1- YES (means with the given Age, Salary, BHK Apartment feature value one can buy the property)</description>
+    </item>
+    
+    <item>
+      <title>ML | Feature Scaling -- Part 2 </title>
+      <link>/machine-learning/ml-feature-scaling--part-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-feature-scaling--part-2-/</guid>
+      <description>ML | Feature Scaling &amp;ndash; Part 2 Feature Scaling is a technique to standardize the independent features present in the data in a fixed range. It is performed during the data pre-processing to handle highly varying magnitudes or values or units. If feature scaling is not done, then a machine learning algorithm tends to weigh greater values, higher and consider smaller values as the lower values, regardless of the unit of the values.</description>
+    </item>
+    
+    <item>
+      <title>ML | Label Encoding of datasets in Python </title>
+      <link>/machine-learning/ml-label-encoding-of-datasets-in-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-label-encoding-of-datasets-in-python-/</guid>
+      <description>ML | Label Encoding of datasets in Python In machine learning, we usually deal with datasets that contain multiple labels in one or more than one columns. These labels can be in the form of words or numbers. To make the data understandable or in human-readable form, the training data is often labelled in words. Label Encoding refers to converting the labels into a numeric form so as to convert them into the machine-readable form.</description>
+    </item>
+    
+    <item>
+      <title>One Hot Encoding in Machine Learning </title>
+      <link>/machine-learning/one-hot-encoding-in-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/one-hot-encoding-in-machine-learning-/</guid>
+      <description>One Hot Encoding in Machine Learning Most real-life datasets we encounter during our data science project development have columns of mixed data type. These datasets consist of both categorical as well as numerical columns. However, various Machine Learning models do not work with categorical data and to fit this data into the machine learning model it needs to be converted into numerical data. For example, suppose a dataset has a Gender column with categorical elements like Male and Female.</description>
+    </item>
+    
+    <item>
+      <title>ML | Linear Algebra Operations </title>
+      <link>/machine-learning/ml-linear-algebra-operations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-linear-algebra-operations-/</guid>
+      <description>ML | Linear Algebra Operations Linear Algebra principles are crucial for understanding the concept behind Machine Learning, as well as Deep Learning, even many ideas struggle to create a precise mathematical model, linear algebra continues to be an important tool for researching them. Algebra gives you a better understanding of how algorithms actually operate under the hood so a developer can make better choices and one can&amp;rsquo;t escape learning some of these techniques if one wants to be a professional in Machine Learning or Deep Learning.</description>
+    </item>
+    
+    <item>
+      <title>ML | Linear Regression </title>
+      <link>/machine-learning/ml-linear-regression-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-linear-regression-/</guid>
+      <description>ML | Linear Regression Linear Regression is a machine learning algorithm based on supervised learning. It performs a regression task. Regression models a target prediction value based on independent variables. It is mostly used for finding out the relationship between variables and forecasting. Different regression models differ based on &amp;ndash; the kind of relationship between dependent and independent variables they are considering, and the number of independent variables getting used. There are many names for a regression&amp;rsquo;s dependent variable.</description>
+    </item>
+    
+    <item>
+      <title>Mathematics | Mean, Variance and Standard Deviation </title>
+      <link>/machine-learning/mathematics-mean-variance-and-standard-deviation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/mathematics-mean-variance-and-standard-deviation-/</guid>
+      <description>Mathematics | Mean, Variance and Standard Deviation Mean is average of a given set of data. Let us consider below example These eight data points have the mean (average) of 5: Where μ is mean and x1, x2, x3&amp;hellip;., xi are elements.Also note that mean is sometimes denoted by Variance is the sum of squares of differences between all numbers and means. Deviation for above example. First, calculate the deviations of each data point from the mean, and square the result of each: variance = = 4.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Hypothesis Testing </title>
+      <link>/machine-learning/understanding-hypothesis-testing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/understanding-hypothesis-testing-/</guid>
+      <description>Understanding Hypothesis Testing Hypothesis are statement about the given problem. Hypothesis testing is a statistical method that is used in making a statistical decision using experimental data. Hypothesis testing is basically an assumption that we make about a population parameter. It evaluates two mutually exclusive statements about a population to determine which statement is best supported by the sample data.Example:You say an average student in the class is 30 or a boy is taller than girls.</description>
+    </item>
+    
+    <item>
+      <title>Find a matrix or vector norm using NumPy </title>
+      <link>/machine-learning/find-a-matrix-or-vector-norm-using-numpy-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/find-a-matrix-or-vector-norm-using-numpy-/</guid>
+      <description>Find a matrix or vector norm using NumPy To find a matrix or vector norm we use function numpy.linalg.norm() of Python library Numpy. This function returns one of the seven matrix norms or one of the infinite vector norms depending upon the value of its parameters. Syntax: numpy.linalg.norm(x, ord=None, axis=None)Parameters: x: input ord: order of norm axis: None, returns either a vector or a matrix norm and if it is an integer value, it specifies the axis of x along which the vector norm will be computed Example 1: Python3 # import library import numpy as np # initialize vector vec = np.</description>
+    </item>
+    
+    <item>
+      <title>Separating Hyperplanes in SVM </title>
+      <link>/machine-learning/separating-hyperplanes-in-svm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/separating-hyperplanes-in-svm-/</guid>
+      <description>Separating Hyperplanes in SVM Support Vector Machine is the supervised machine learning algorithm, that is used in both classification and regression of models. The idea behind it is simple to just find a plane or a boundary that separates the data between two classes.
+Support Vectors:
+Support vectors are the data points that are close to the decision boundary, they are the data points most difficult to classify, they hold the key for SVM to be optimal decision surface.</description>
+    </item>
+    
+    <item>
+      <title>Uni-variate Optimization -- Data Science </title>
+      <link>/machine-learning/uni-variate-optimization--data-science-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/uni-variate-optimization--data-science-/</guid>
+      <description>Uni-variate Optimization &amp;ndash; Data Science Wikipedia defines optimization as a problem where you maximize or minimize a real function by systematically choosing input values from an allowed set and computing the value of the function. That means when we talk about optimization we are always interested in finding the best solution. So, let say that one has some functional form(e.g in the form of f(x)) and he is trying to find the best solution for this functional form.</description>
+    </item>
+    
+    <item>
+      <title>Multivariate Optimization and its Types -- Data Science </title>
+      <link>/machine-learning/multivariate-optimization-and-its-types--data-science-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/multivariate-optimization-and-its-types--data-science-/</guid>
+      <description>Multivariate Optimization and its Types &amp;ndash; Data Science Wikipedia defines optimization as a problem where you maximize or minimize a real function by systematically choosing input values from an allowed set and computing the value of the function. That means when we talk about optimization we are always interested in finding the best solution. So, let say that one has some functional form(e.g in the form of f(x)) and he is trying to find the best solution for this functional form.</description>
+    </item>
+    
+    <item>
+      <title>ML | Types of Learning -- Supervised Learning </title>
+      <link>/machine-learning/ml-types-of-learning--supervised-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-types-of-learning--supervised-learning-/</guid>
+      <description>ML | Types of Learning &amp;ndash; Supervised Learning Let us discuss what is learning for a machine is as shown below media as follows: A machine is said to be learning from past Experiences(data feed-in) with respect to some class of tasks if its Performance in a given Task improves with the Experience. For example, assume that a machine has to predict whether a customer will buy a specific product let&amp;rsquo;s say &amp;ldquo;Antivirus&amp;rdquo; this year or not.</description>
+    </item>
+    
+    <item>
+      <title>Classification vs Regression in Machine Learning </title>
+      <link>/machine-learning/classification-vs-regression-in-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/classification-vs-regression-in-machine-learning-/</guid>
+      <description>Classification vs Regression in Machine Learning Classification and Regression are two major prediction problems that are usually dealt with in Data Mining and Machine Learning. Classification Algorithms Classification is the process of finding or discovering a model or function which helps in separating the data into multiple categorical classes i.e. discrete values. In classification, data is categorized under different labels according to some parameters given in the input and then the labels are predicted for the data.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Classification </title>
+      <link>/machine-learning/getting-started-with-classification-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/getting-started-with-classification-/</guid>
+      <description>Getting started with Classification As the name suggests, Classification is the task of &amp;ldquo;classifying things&amp;rdquo; into sub-categories. But, by a machine! If that doesn&amp;rsquo;t sound like much, imagine your computer being able to differentiate between you and a stranger. Between a potato and a tomato. Between an A grade and an F. Now, it sounds interesting now. In Machine Learning and Statistics, Classification is the problem of identifying to which of a set of categories (subpopulations), a new observation belongs, on the basis of a training set of data containing observations and whose categories membership is known.</description>
+    </item>
+    
+    <item>
+      <title>Basic Concept of Classification (Data Mining) </title>
+      <link>/machine-learning/basic-concept-of-classification-data-mining-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/basic-concept-of-classification-data-mining-/</guid>
+      <description>Basic Concept of Classification (Data Mining) Data Mining: Data mining in general terms means mining or digging deep into data that is in different forms to gain patterns, and to gain knowledge on that pattern. In the process of data mining, large data sets are first sorted, then patterns are identified and relationships are established to perform data analysis and solve problems. Classification is a task in data mining that involves assigning a class label to each instance in a dataset based on its features.</description>
+    </item>
+    
+    <item>
+      <title>Types of Regression Techniques in ML </title>
+      <link>/machine-learning/types-of-regression-techniques-in-ml-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/types-of-regression-techniques-in-ml-/</guid>
+      <description>Types of Regression Techniques in ML A regression problem is when the output variable is a real or continuous value, such as &amp;ldquo;salary&amp;rdquo; or &amp;ldquo;weight&amp;rdquo;. Many different models can be used, the simplest is linear regression. It tries to fit data with the best hyperplane which goes through the points.
+What is Regression Analysis? Regression Analysis is a statistical process for estimating the relationships between the dependent variables or criterion variables and one or more independent variables or predictors.</description>
+    </item>
+    
+    <item>
+      <title>Gradient Descent algorithm and its variants </title>
+      <link>/machine-learning/gradient-descent-algorithm-and-its-variants-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/gradient-descent-algorithm-and-its-variants-/</guid>
+      <description>Gradient Descent algorithm and its variants Gradient Descent (GD) is a popular optimization algorithm used in machine learning to minimize the cost function of a model. It works by iteratively adjusting the weights or parameters of the model in the direction of the negative gradient of the cost function, until the minimum of the cost function is reached.
+There are several variants of gradient descent that differ in the way the step size or learning rate is chosen and the way the updates are made.</description>
+    </item>
+    
+    <item>
+      <title>Gradient Descent in Linear Regression </title>
+      <link>/machine-learning/gradient-descent-in-linear-regression-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/gradient-descent-in-linear-regression-/</guid>
+      <description>Gradient Descent in Linear Regression In linear regression, the model targets to get the best-fit regression line to predict the value of y based on the given input value (x). While training the model, the model calculates the cost function which measures the Root Mean Squared error between the predicted value (pred) and true value (y). The model targets to minimize the cost function. To minimize the cost function, the model needs to have the best value of θ1 and θ2.</description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression in Machine Learning </title>
+      <link>/machine-learning/logistic-regression-in-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/logistic-regression-in-machine-learning-/</guid>
+      <description>Logistic Regression in Machine Learning Logistic regression is a supervised machine learning algorithm mainly used for classification tasks where the goal is to predict the probability that an instance of belonging to a given class or not. It is a kind of statistical algorithm, which analyze the relationship between a set of independent variables and the dependent binary variables. It is a powerful tool for decision-making. For example email spam or not.</description>
+    </item>
+    
+    <item>
+      <title>ML | Why Logistic Regression in Classification ? </title>
+      <link>/machine-learning/ml-why-logistic-regression-in-classification-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-why-logistic-regression-in-classification-/</guid>
+      <description>ML | Why Logistic Regression in Classification ? Using Linear Regression, all predictions &amp;gt;= 0.5 can be considered as 1 and rest all &amp;lt; 0.5 can be considered as 0. But then the question arises why classification can&amp;rsquo;t be performed using it? Problem &amp;ndash; Suppose we are classifying a mail as spam or not spam and our output is y, it can be 0(spam) or 1(not spam). In case of Linear Regression, hθ(x) can be &amp;gt; 1 or &amp;lt; 0.</description>
+    </item>
+    
+    <item>
+      <title>Logistic Regression using Python </title>
+      <link>/machine-learning/logistic-regression-using-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/logistic-regression-using-python-/</guid>
+      <description>Logistic Regression using Python User Database &amp;ndash; This dataset contains information about users from a company&amp;rsquo;s database. It contains information about UserID, Gender, Age, EstimatedSalary, and Purchased. We are using this dataset for predicting whether a user will purchase the company&amp;rsquo;s newly launched product or not.
+Prerequisite: Understanding Logistic Regression
+Do refer to the below table from where data is being fetched from the dataset.
+Let us make the Logistic Regression model, predicting whether a user will purchase the product or not.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Support Vector Machines (SVM) </title>
+      <link>/machine-learning/introduction-to-support-vector-machines-svm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-support-vector-machines-svm-/</guid>
+      <description>Introduction to Support Vector Machines (SVM) INTRODUCTION: Support Vector Machines (SVMs) are a type of supervised learning algorithm that can be used for classification or regression tasks. The main idea behind SVMs is to find a hyperplane that maximally separates the different classes in the training data. This is done by finding the hyperplane that has the largest margin, which is defined as the distance between the hyperplane and the closest data points from each class.</description>
+    </item>
+    
+    <item>
+      <title>Decision Tree </title>
+      <link>/machine-learning/decision-tree-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/decision-tree-/</guid>
+      <description>Decision Tree Decision Tree is the most powerful and popular tool for classification and prediction. A Decision tree is a flowchart-like tree structure, where each internal node denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (terminal node) holds a class label. A decision tree for the concept PlayTennis. Construction of Decision Tree: A tree can be &amp;ldquo;learned&amp;rdquo; by splitting the source set into subsets based on an attribute value test.</description>
+    </item>
+    
+    <item>
+      <title>Supervised and Unsupervised learning </title>
+      <link>/machine-learning/supervised-and-unsupervised-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/supervised-and-unsupervised-learning-/</guid>
+      <description>Supervised and Unsupervised learning Supervised learning
+Supervised learning, as the name indicates, has the presence of a supervisor as a teacher. Basically supervised learning is when we teach or train the machine using data that is well labelled. Which means some data is already tagged with the correct answer. After that, the machine is provided with a new set of examples(data) so that the supervised learning algorithm analyses the training data(set of training examples) and produces a correct outcome from labelled data.</description>
+    </item>
+    
+    <item>
+      <title>Clustering in Machine Learning </title>
+      <link>/machine-learning/clustering-in-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/clustering-in-machine-learning-/</guid>
+      <description>Clustering in Machine Learning Introduction to Clustering It is basically a type of unsupervised learning method. An unsupervised learning method is a method in which we draw references from datasets consisting of input data without labeled responses. Generally, it is used as a process to find meaningful structure, explanatory underlying processes, generative features, and groupings inherent in a set of examples. Clustering is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group and dissimilar to the data points in other groups.</description>
+    </item>
+    
+    <item>
+      <title>Different Types of Clustering Algorithm </title>
+      <link>/machine-learning/different-types-of-clustering-algorithm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/different-types-of-clustering-algorithm-/</guid>
+      <description>Different Types of Clustering Algorithm The introduction to clustering is discussed in this article and is advised to be understood first. The clustering Algorithms are of many types. The following overview will only list the most prominent examples of clustering algorithms, as there are possibly over 100 published clustering algorithms. Not all provide models for their clusters and can thus not easily be categorized. Distribution based methods : It is a clustering model in which we will fit the data on the probability that how it may belong to the same distribution.</description>
+    </item>
+    
+    <item>
+      <title>K means Clustering -- Introduction </title>
+      <link>/machine-learning/k-means-clustering--introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/k-means-clustering--introduction-/</guid>
+      <description>K means Clustering &amp;ndash; Introduction K-Means Clustering is an Unsupervised Machine Learning algorithm, which groups the unlabeled dataset into different clusters.
+K means Clustering Unsupervised Machine Learning learning is the process of teaching a computer to use unlabeled, unclassified data and enabling the algorithm to operate on that data without supervision. Without any previous data training, the machine&amp;rsquo;s job in this case is to organize unsorted data according to parallels, patterns, and variations.</description>
+    </item>
+    
+    <item>
+      <title>ML | K-means&#43;&#43; Algorithm </title>
+      <link>/machine-learning/ml-k-means&#43;&#43;-algorithm-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-k-means&#43;&#43;-algorithm-/</guid>
+      <description>ML | K-means++ Algorithm Prerequisite: K-means Clustering &amp;ndash; Introduction Drawback of standard K-means algorithm: One disadvantage of the K-means algorithm is that it is sensitive to the initialization of the centroids or the mean points. So, if a centroid is initialized to be a &amp;ldquo;far-off&amp;rdquo; point, it might just end up with no points associated with it, and at the same time, more than one cluster might end up linked with a single centroid.</description>
+    </item>
+    
+    <item>
+      <title>ML | Fuzzy Clustering </title>
+      <link>/machine-learning/ml-fuzzy-clustering-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-fuzzy-clustering-/</guid>
+      <description>ML | Fuzzy Clustering Prerequisite: Clustering in Machine Learning Clustering is an unsupervised machine learning technique that divides the given data into different clusters based on their distances (similarity) from each other. The unsupervised k-means clustering algorithm gives the values of any point lying in some particular cluster to be either as 0 or 1 i.e., either true or false. But the fuzzy logic gives the fuzzy values of any particular data point to be lying in either of the clusters.</description>
+    </item>
+    
+    <item>
+      <title>ML | Spectral Clustering </title>
+      <link>/machine-learning/ml-spectral-clustering-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-spectral-clustering-/</guid>
+      <description>ML | Spectral Clustering Prerequisites: K-Means Clustering Spectral Clustering is a growing clustering algorithm which has performed better than many traditional clustering algorithms in many cases. It treats each data point as a graph node and thus transforms the clustering problem into a graph-partitioning problem. A typical implementation consists of three fundamental steps:-
+Building the Similarity Graph: This step builds the Similarity Graph in the form of an adjacency matrix which is represented by A.</description>
+    </item>
+    
+    <item>
+      <title>ML | OPTICS Clustering Explanation </title>
+      <link>/machine-learning/ml-optics-clustering-explanation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-optics-clustering-explanation-/</guid>
+      <description>ML | OPTICS Clustering Explanation Prerequisites: DBSCAN Clustering OPTICS Clustering stands for Ordering Points To Identify Cluster Structure. It draws inspiration from the DBSCAN clustering algorithm. It adds two more terms to the concepts of DBSCAN clustering. OPTICS (Ordering Points To Identify the Clustering Structure) is a density-based clustering algorithm, similar to DBSCAN (Density-Based Spatial Clustering of Applications with Noise), but it can extract clusters of varying densities and shapes. It is useful for identifying clusters of different densities in large, high-dimensional datasets.</description>
+    </item>
+    
+    <item>
+      <title>Reinforcement learning </title>
+      <link>/machine-learning/reinforcement-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/reinforcement-learning-/</guid>
+      <description>Reinforcement learning Reinforcement learning is an area of Machine Learning. It is about taking suitable action to maximize reward in a particular situation. It is employed by various software and machines to find the best possible behavior or path it should take in a specific situation. Reinforcement learning differs from supervised learning in a way that in supervised learning the training data has the answer key with it so the model is trained with the correct answer itself whereas in reinforcement learning, there is no answer but the reinforcement agent decides what to do to perform the given task.</description>
+    </item>
+    
+    <item>
+      <title>ML | Reinforcement Learning Algorithm : Python Implementation using Q-learning </title>
+      <link>/machine-learning/ml-reinforcement-learning-algorithm-python-implementation-using-q-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-reinforcement-learning-algorithm-python-implementation-using-q-learning-/</guid>
+      <description>ML | Reinforcement Learning Algorithm : Python Implementation using Q-learning Prerequisites: Q-Learning technique.
+Reinforcement Learning is a type of Machine Learning paradigms in which a learning algorithm is trained not on preset data but rather based on a feedback system. These algorithms are touted as the future of Machine Learning as these eliminate the cost of collecting and cleaning the data.
+In this article, we are going to demonstrate how to implement a basic Reinforcement Learning algorithm which is called the Q-Learning technique.</description>
+    </item>
+    
+    <item>
+      <title>Q-Learning in Python </title>
+      <link>/machine-learning/q-learning-in-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/q-learning-in-python-/</guid>
+      <description>Q-Learning in Python Pre-Requisite : Reinforcement Learning Reinforcement Learning briefly is a paradigm of Learning Process in which a learning agent learns, overtime, to behave optimally in a certain environment by interacting continuously in the environment. The agent during its course of learning experience various different situations in the environment it is in. These are called states. The agent while being in that state may choose from a set of allowable actions which may fetch different rewards(or penalties).</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Thompson Sampling | Reinforcement Learning </title>
+      <link>/machine-learning/introduction-to-thompson-sampling-reinforcement-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-thompson-sampling-reinforcement-learning-/</guid>
+      <description>Introduction to Thompson Sampling | Reinforcement Learning Reinforcement Learning is a branch of Machine Learning, also called Online Learning. It is used to decide what action to take at t+1 based on data up to time t. This concept is used in Artificial Intelligence applications such as walking. A popular example of reinforcement learning is a chess engine. Here, the agent decides upon a series of moves depending on the state of the board (the environment), and the reward can be defined as a win or lose at the end of the game.</description>
+    </item>
+    
+    <item>
+      <title>Genetic Algorithm for Reinforcement Learning : Python implementation </title>
+      <link>/machine-learning/genetic-algorithm-for-reinforcement-learning-python-implementation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/genetic-algorithm-for-reinforcement-learning-python-implementation-/</guid>
+      <description>Genetic Algorithm for Reinforcement Learning : Python implementation Most beginners in Machine Learning start with learning Supervised Learning techniques such as classification and regression. However, one of the most important paradigms in Machine Learning is Reinforcement Learning (RL) which is able to tackle many challenging tasks. It is an aspect of Machine learning where an agent learns to behave in an environment, by performing certain actions and observing the rewards(results) which it gets from those actions.</description>
+    </item>
+    
+    <item>
+      <title>SARSA Reinforcement Learning </title>
+      <link>/machine-learning/sarsa-reinforcement-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/sarsa-reinforcement-learning-/</guid>
+      <description>SARSA Reinforcement Learning Prerequisites: Q-Learning techniqueSARSA algorithm is a slight variation of the popular Q-Learning algorithm. For a learning agent in any Reinforcement Learning algorithm it&amp;rsquo;s policy can be of two types:- On Policy: In this, the learning agent learns the value function according to the current action derived from the policy currently being used.
+Off Policy: In this, the learning agent learns the value function according to the action derived from another policy.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Dimensionality Reduction </title>
+      <link>/machine-learning/introduction-to-dimensionality-reduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-dimensionality-reduction-/</guid>
+      <description>Introduction to Dimensionality Reduction Machine Learning: As discussed in this article, machine learning is nothing but a field of study which allows computers to &amp;ldquo;learn&amp;rdquo; like humans without any need of explicit programming. What is Predictive Modeling: Predictive modeling is a probabilistic process that allows us to forecast outcomes, on the basis of some predictors. These predictors are basically features that come into play when deciding the final result, i.e. the outcome of the model.</description>
+    </item>
+    
+    <item>
+      <title>ML | Principal Component Analysis(PCA) </title>
+      <link>/machine-learning/ml-principal-component-analysispca-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-principal-component-analysispca-/</guid>
+      <description>ML | Principal Component Analysis(PCA) This method was introduced by Karl Pearson. It works on a condition that while the data in a higher dimensional space is mapped to data in a lower dimension space, the variance of the data in the lower dimensional space should be maximum.
+Principal Component Analysis (PCA) is a statistical technique used to reduce the dimensionality of a large dataset. It is a commonly used method in machine learning, data science, and other fields that deal with large datasets.</description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis with Python </title>
+      <link>/machine-learning/principal-component-analysis-with-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/principal-component-analysis-with-python-/</guid>
+      <description>Principal Component Analysis with Python Principal Component Analysis is basically a statistical procedure to convert a set of observations of possibly correlated variables into a set of values of linearly uncorrelated variables. Each of the principal components is chosen in such a way so that it would describe most of them still available variance and all these principal components are orthogonal to each other. In all principal components first principal component has a maximum variance.</description>
+    </item>
+    
+    <item>
+      <title>Eigenvector Computation and Low-Rank Approximations </title>
+      <link>/machine-learning/eigenvector-computation-and-low-rank-approximations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/eigenvector-computation-and-low-rank-approximations-/</guid>
+      <description>Eigenvector Computation and Low-Rank Approximations Prerequisites: Eigen Values and Eigen Vectors
+Before getting into the in-depth math behind computations involved with Eigenvectors, let us briefly discuss what an eigenvalue and eigenvector actually are.
+Eigenvalue and Eigenvectors: The word &amp;rsquo;eigen&amp;rsquo; means &amp;lsquo;characteristics&amp;rsquo;. In general terms, the eigenvalues and eigenvectors give the characteristics of a matrix or a vector.
+Eigenvector: It is a vector represented by a matrix X such that when X is multiplied with any matrix A, then the direction of the resultant matrix remains the same as vector X.</description>
+    </item>
+    
+    <item>
+      <title>ML | Linear Discriminant Analysis </title>
+      <link>/machine-learning/ml-linear-discriminant-analysis-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-linear-discriminant-analysis-/</guid>
+      <description>ML | Linear Discriminant Analysis Linear Discriminant Analysis (LDA) is a supervised learning algorithm used for classification tasks in machine learning. It is a technique used to find a linear combination of features that best separates the classes in a dataset.
+LDA works by projecting the data onto a lower-dimensional space that maximizes the separation between the classes. It does this by finding a set of linear discriminants that maximize the ratio of between-class variance to within-class variance.</description>
+    </item>
+    
+    <item>
+      <title>ML | Underfitting and Overfitting </title>
+      <link>/machine-learning/ml-underfitting-and-overfitting-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-underfitting-and-overfitting-/</guid>
+      <description>ML | Underfitting and Overfitting When we talk about the Machine Learning model, we actually talk about how well it performs and its accuracy which is known as prediction errors. Let us consider that we are designing a machine learning model. A model is said to be a good machine learning model if it generalizes any new input data from the problem domain in a proper way. This helps us to make predictions about future data, that the data model has never seen.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Natural Language Processing </title>
+      <link>/machine-learning/introduction-to-natural-language-processing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-natural-language-processing-/</guid>
+      <description>Introduction to Natural Language Processing The essence of Natural Language Processing lies in making computers understand the natural language. That&amp;rsquo;s not an easy task though. Computers can understand the structured form of data like spreadsheets and the tables in the database, but human languages, texts, and voices form an unstructured category of data, and it gets difficult for the computer to understand it, and there arises the need for Natural Language Processing.</description>
+    </item>
+    
+    <item>
+      <title>Text Preprocessing in Python | Set -- 1 </title>
+      <link>/machine-learning/text-preprocessing-in-python-set--1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/text-preprocessing-in-python-set--1-/</guid>
+      <description>Text Preprocessing in Python | Set &amp;ndash; 1 Prerequisites: Introduction to NLPWhenever we have textual data, we need to apply several pre-processing steps to the data to transform words into numerical features that work with machine learning algorithms. The pre-processing steps for a problem depend mainly on the domain and the problem itself, hence, we don&amp;rsquo;t need to apply all steps to every problem. In this article, we are going to see text preprocessing in Python.</description>
+    </item>
+    
+    <item>
+      <title>Text Preprocessing in Python | Set 2 </title>
+      <link>/machine-learning/text-preprocessing-in-python-set-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/text-preprocessing-in-python-set-2-/</guid>
+      <description>Text Preprocessing in Python | Set 2 Prerequisite: Introduction to NLP, Text Preprocessing in Python | Set 1
+In the previous post, we saw the basic preprocessing steps when working with textual data. In this article, we will look at some more advanced text preprocessing techniques. We can use these techniques to gain more insights into the data that we have.
+Let&amp;rsquo;s import the necessary libraries.
+# import the necessary libraries import nltk import string import re Part of Speech Tagging: The part of speech explains how a word is used in a sentence.</description>
+    </item>
+    
+    <item>
+      <title>Removing stop words with NLTK in Python </title>
+      <link>/machine-learning/removing-stop-words-with-nltk-in-python-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/removing-stop-words-with-nltk-in-python-/</guid>
+      <description>Removing stop words with NLTK in Python The process of converting data to something a computer can understand is referred to as pre-processing. One of the major forms of pre-processing is to filter out useless data. In natural language processing, useless words (data), are referred to as stop words.
+What are Stop words?
+Stop Words: A stop word is a commonly used word (such as &amp;ldquo;the&amp;rdquo;, &amp;ldquo;a&amp;rdquo;, &amp;ldquo;an&amp;rdquo;, &amp;ldquo;in&amp;rdquo;) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query.</description>
+    </item>
+    
+    <item>
+      <title>Python | Stemming words with NLTK </title>
+      <link>/machine-learning/python-stemming-words-with-nltk-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/python-stemming-words-with-nltk-/</guid>
+      <description>Python | Stemming words with NLTK Stemming is the process of producing morphological variants of a root/base word. Stemming programs are commonly referred to as stemming algorithms or stemmers. A stemming algorithm reduces the words &amp;ldquo;chocolates&amp;rdquo;, &amp;ldquo;chocolatey&amp;rdquo;, and &amp;ldquo;choco&amp;rdquo; to the root word, &amp;ldquo;chocolate&amp;rdquo; and &amp;ldquo;retrieval&amp;rdquo;, &amp;ldquo;retrieved&amp;rdquo;, &amp;ldquo;retrieves&amp;rdquo; reduce to the stem &amp;ldquo;retrieve&amp;rdquo;.
+Prerequisite: Introduction to Stemming
+Some more example of stemming for root word &amp;quot;like&amp;quot; include: -&amp;gt; &amp;quot;likes&amp;quot; -&amp;gt; &amp;quot;liked&amp;quot; -&amp;gt; &amp;quot;likely&amp;quot; -&amp;gt; &amp;quot;liking&amp;quot; Errors in Stemming: There are mainly two errors in stemming &amp;ndash; Overstemming and Understemming.</description>
+    </item>
+    
+    <item>
+      <title>Python | Lemmatization with NLTK </title>
+      <link>/machine-learning/python-lemmatization-with-nltk-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/python-lemmatization-with-nltk-/</guid>
+      <description>Python | Lemmatization with NLTK Lemmatization is the process of grouping together the different inflected forms of a word so they can be analyzed as a single item. Lemmatization is similar to stemming but it brings context to the words. So it links words with similar meanings to one word. Text preprocessing includes both Stemming as well as Lemmatization. Many times people find these two terms confusing. Some treat these two as the same.</description>
+    </item>
+    
+    <item>
+      <title>Python | Lemmatization with TextBlob </title>
+      <link>/machine-learning/python-lemmatization-with-textblob-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/python-lemmatization-with-textblob-/</guid>
+      <description>Python | Lemmatization with TextBlob Lemmatization is the process of grouping together the different inflected forms of a word so they can be analyzed as a single item. Lemmatization is similar to stemming but it brings context to the words. So it links words with similar meanings to one word.Text preprocessing includes both Stemming as well as Lemmatization. Many times people find these two terms confusing. Some treat these two as the same.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Artificial Neutral Networks | Set 1 </title>
+      <link>/machine-learning/introduction-to-artificial-neutral-networks-set-1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-artificial-neutral-networks-set-1-/</guid>
+      <description>Introduction to Artificial Neutral Networks | Set 1 ANN learning is robust to errors in the training data and has been successfully applied for learning real-valued, discrete-valued, and vector-valued functions containing problems such as interpreting visual scenes, speech recognition, and learning robot control strategies. The study of artificial neural networks (ANNs) has been inspired in part by the observation that biological learning systems are built of very complex webs of interconnected neurons in brains.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Artificial Neural Network | Set 2 </title>
+      <link>/machine-learning/introduction-to-artificial-neural-network-set-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-artificial-neural-network-set-2-/</guid>
+      <description>Introduction to Artificial Neural Network | Set 2 Prerequisite : Introduction to Artificial Neural NetworkThis article provides the outline for understanding the Artificial Neural Network.Characteristics of Artificial Neural Network
+It is neurally implemented mathematical model
+It contains huge number of interconnected processing elements called neurons to do all operations
+Information stored in the neurons are basically the weighted linkage of neurons
+The input signals arrive at the processing elements through connections and connecting weights.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to ANN (Artificial Neural Networks) | Set 3 (Hybrid Systems) </title>
+      <link>/machine-learning/introduction-to-ann-artificial-neural-networks-set-3-hybrid-systems-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-ann-artificial-neural-networks-set-3-hybrid-systems-/</guid>
+      <description>Introduction to ANN (Artificial Neural Networks) | Set 3 (Hybrid Systems) Prerequisites: Genetic algorithms, Artificial Neural Networks, Fuzzy Logic Hybrid systems: A Hybrid system is an intelligent system that is framed by combining at least two intelligent technologies like Fuzzy Logic, Neural networks, Genetic algorithms, reinforcement learning, etc. The combination of different techniques in one computational model makes these systems possess an extended range of capabilities. These systems are capable of reasoning and learning in an uncertain and imprecise environment.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to ANN | Set 4 (Network Architectures) </title>
+      <link>/machine-learning/introduction-to-ann-set-4-network-architectures-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-ann-set-4-network-architectures-/</guid>
+      <description>Introduction to ANN | Set 4 (Network Architectures) Prerequisites: Introduction to ANN | Set-1, Set-2, Set-3 An Artificial Neural Network (ANN) is an information processing paradigm that is inspired by the brain. ANNs, like people, learn by examples. An ANN is configured for a specific application, such as pattern recognition or data classification, through a learning process. Learning largely involves adjustments to the synaptic connections that exist between the neurons. Artificial Neural Networks (ANNs) are a type of machine learning model that are inspired by the structure and function of the human brain.</description>
+    </item>
+    
+    <item>
+      <title>Activation functions in Neural Networks </title>
+      <link>/machine-learning/activation-functions-in-neural-networks-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/activation-functions-in-neural-networks-/</guid>
+      <description>Activation functions in Neural Networks It is recommended to understand Neural Networks before reading this article. In the process of building a neural network, one of the choices you get to make is what Activation Function to use in the hidden layer as well as at the output layer of the network. This article discusses some of the choices.
+Elements of a Neural Network Input Layer: This layer accepts input features.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Convolution Neural Network </title>
+      <link>/machine-learning/introduction-to-convolution-neural-network-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-convolution-neural-network-/</guid>
+      <description>Introduction to Convolution Neural Network A Convolutional Neural Network (CNN) is a type of Deep Learning neural network architecture commonly used in Computer Vision. Computer vision is a field of Artificial Intelligence that enables a computer to understand and interpret the image or visual data. When it comes to Machine Learning, Artificial Neural Networks perform really well. Neural Networks are used in various datasets like images, audio, and text. Different types of Neural Networks are used for different purposes, for example for predicting the sequence of words we use Recurrent Neural Networks more precisely an LSTM, similarly for image classification we use Convolution Neural networks.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Recurrent Neural Network </title>
+      <link>/machine-learning/introduction-to-recurrent-neural-network-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/introduction-to-recurrent-neural-network-/</guid>
+      <description>Introduction to Recurrent Neural Network Recurrent Neural Network(RNN) is a type of Neural Network where the output from the previous step are fed as input to the current step. In traditional neural networks, all the inputs and outputs are independent of each other, but in cases like when it is required to predict the next word of a sentence, the previous words are required and hence there is a need to remember the previous words.</description>
+    </item>
+    
+    <item>
+      <title>Generative Adversarial Network (GAN) </title>
+      <link>/machine-learning/generative-adversarial-network-gan-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/generative-adversarial-network-gan-/</guid>
+      <description>Generative Adversarial Network (GAN) A Generative Adversarial Network (GAN) is a deep learning architecture that consists of two neural networks competing against each other in a zero-sum game framework. The goal of GANs is to generate new, synthetic data that resembles some known data distribution.
+What is a Generative Adversarial Network? Generative Adversarial Networks (GANs) are a powerful class of neural networks that are used for unsupervised learning. It was developed and introduced by Ian J.</description>
+    </item>
+    
+    <item>
+      <title>Deploy your Machine Learning web app (Streamlit) on Heroku </title>
+      <link>/machine-learning/deploy-your-machine-learning-web-app-streamlit-on-heroku-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/deploy-your-machine-learning-web-app-streamlit-on-heroku-/</guid>
+      <description>Deploy your Machine Learning web app (Streamlit) on Heroku In this article, We will go through some simple and easy steps to deploy Machine Learning web app, built using Streamlit on Heroku cloud. This article is easy to follow as this approach does not require you to have a knowledge of Heroku CLI. What is Heroku? Heroku is a Platform as a Service (PaaS). It is a cloud platform where one can build, operate and run his/her applications in the cloud itself.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a Machine Learning Model using Streamlit Library </title>
+      <link>/machine-learning/deploy-a-machine-learning-model-using-streamlit-library-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/deploy-a-machine-learning-model-using-streamlit-library-/</guid>
+      <description>Deploy a Machine Learning Model using Streamlit Library Machine Learning:A computer is able to learn from experience without being explicitly programmed. Machine Learning is one of the top fields to enter currently and top companies all over the world are using it for improving their services and products. But there is no use of a Machine Learning model which is trained in your Jupyter Notebook. And so we need to deploy these models so that everyone can use them.</description>
+    </item>
+    
+    <item>
+      <title>Deploy Machine Learning Model using Flask </title>
+      <link>/machine-learning/deploy-machine-learning-model-using-flask-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/deploy-machine-learning-model-using-flask-/</guid>
+      <description>Deploy Machine Learning Model using Flask Machine learning is a process that is widely used for prediction. N number of algorithms are available in various libraries which can be used for prediction. In this article, we are going to build a prediction model on historical data using different machine learning algorithms and classifiers, plot the results, and calculate the accuracy of the model on the testing data. Building/Training a model using various algorithms on a large dataset is one part of the data.</description>
+    </item>
+    
+    <item>
+      <title>Deploying Scrapy spider on ScrapingHub </title>
+      <link>/machine-learning/deploying-scrapy-spider-on-scrapinghub-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/deploying-scrapy-spider-on-scrapinghub-/</guid>
+      <description>Deploying Scrapy spider on ScrapingHub What is ScrapingHub ?
+Scrapy is an open source framework for web-crawling. This framework is written in python and originally made for web scraping. Web scraping can also be used to extract data using API. ScrapingHub provides the whole service to crawl the data from web pages, even for complex web pages.
+Why ScrapingHub ?
+Let&amp;rsquo;s say a website which gives 1-input field and in return one get response based on the search query.</description>
+    </item>
+    
+    <item>
+      <title>Wine Quality Prediction -- Machine Learning </title>
+      <link>/machine-learning/wine-quality-prediction--machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/wine-quality-prediction--machine-learning-/</guid>
+      <description>Wine Quality Prediction &amp;ndash; Machine Learning Here we will predict the quality of wine on the basis of given features. We use the wine quality dataset available on Internet for free. This dataset has the fundamental features which are responsible for affecting the quality of the wine. By the use of several Machine learning models, we will predict the quality of the wine.
+Importing libraries and Dataset: Pandas is a useful library in data handling.</description>
+    </item>
+    
+    <item>
+      <title>ML | Credit Card Fraud Detection </title>
+      <link>/machine-learning/ml-credit-card-fraud-detection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ml-credit-card-fraud-detection-/</guid>
+      <description>ML | Credit Card Fraud Detection The challenge is to recognize fraudulent credit card transactions so that the customers of credit card companies are not charged for items that they did not purchase.
+Main challenges involved in credit card fraud detection are:
+Enormous Data is processed every day and the model build must be fast enough to respond to the scam in time.
+Imbalanced Data i.e most of the transactions (99.</description>
+    </item>
+    
+    <item>
+      <title>Disease Prediction Using Machine Learning </title>
+      <link>/machine-learning/disease-prediction-using-machine-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/disease-prediction-using-machine-learning-/</guid>
+      <description>Disease Prediction Using Machine Learning This article aims to implement a robust machine-learning model that can efficiently predict the disease of a human, based on the symptoms that he/she possesses. Let us look into how we can approach this machine-learning problem:
+Approach:
+Gathering the Data: Data preparation is the primary step for any machine learning problem. We will be using a dataset from Kaggle for this problem. This dataset consists of two CSV files one for training and one for testing.</description>
+    </item>
+    
+    <item>
+      <title>Prediction of Wine type using Deep Learning </title>
+      <link>/machine-learning/prediction-of-wine-type-using-deep-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/prediction-of-wine-type-using-deep-learning-/</guid>
+      <description>Prediction of Wine type using Deep Learning We use deep learning for the large data sets but to understand the concept of deep learning, we use the small data set of wine quality. You can find the wine quality data set from the UCI Machine Learning Repository which is available for free. The aim of this article is to get started with the libraries of deep learning such as Keras, etc and to be familiar with the basis of neural network.</description>
+    </item>
+    
+    <item>
+      <title>Predicting Stock Price Direction using Support Vector Machines </title>
+      <link>/machine-learning/predicting-stock-price-direction-using-support-vector-machines-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/predicting-stock-price-direction-using-support-vector-machines-/</guid>
+      <description>Predicting Stock Price Direction using Support Vector Machines We are going to implement an End-to-End project using Support Vector Machines to live Trade For us. You Probably must have Heard of the term stock market which is known to have made the lives of thousands and to have destroyed the lives of millions. If you are not familiar with the stock market you can surf some basic Stuff about markets.</description>
+    </item>
+    
+    <item>
+      <title>Handwritten Digit Recognition using Neural Network </title>
+      <link>/machine-learning/handwritten-digit-recognition-using-neural-network-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/handwritten-digit-recognition-using-neural-network-/</guid>
+      <description>Handwritten Digit Recognition using Neural Network Introduction: Handwritten digit recognition using MNIST dataset is a major project made with the help of Neural Network. It basically detects the scanned images of handwritten digits. We have taken this a step further where our handwritten digit recognition system not only detects scanned images of handwritten digits but also allows writing digits on the screen with the help of an integrated GUI for recognition.</description>
+    </item>
+    
+    <item>
+      <title>Human Activity Recognition -- Using Deep Learning Model </title>
+      <link>/machine-learning/human-activity-recognition--using-deep-learning-model-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/human-activity-recognition--using-deep-learning-model-/</guid>
+      <description>Human Activity Recognition &amp;ndash; Using Deep Learning Model Human activity recognition using smartphone sensors like accelerometer is one of the hectic topics of research. HAR is one of the time series classification problem. In this project various machine learning and deep learning models have been worked out to get the best final result. In the same sequence, we can use LSTM (long short term memory) model of the Recurrent Neural Network (RNN) to recognize various activities of humans like standing, climbing upstairs and downstairs etc.</description>
+    </item>
+    
+    <item>
+      <title>AI Driven Snake Game using Deep Q Learning </title>
+      <link>/machine-learning/ai-driven-snake-game-using-deep-q-learning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/ai-driven-snake-game-using-deep-q-learning-/</guid>
+      <description>AI Driven Snake Game using Deep Q Learning Introduction: This Project is based on Reinforcement Learning which trains the snake to eat the food present in the environment.
+A sample gif is given below so that you can get an idea of what we are going to build.
+Snake Driven by AI
+The Prerequisite for this project are:
+Reinforcement Learning
+Deep Learning (Dense Neural Network)
+Pygame
+To understand how can we manually build this snake 2D animation simulation using pygame, please follow the link: https://www.</description>
+    </item>
+    
+    <item>
+      <title>Age Detection using Deep Learning in OpenCV </title>
+      <link>/machine-learning/age-detection-using-deep-learning-in-opencv-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/age-detection-using-deep-learning-in-opencv-/</guid>
+      <description>Age Detection using Deep Learning in OpenCV In this tutorial, we are going to see the entire process of creating an Age predictor and Gender classifier project using OpenCV.
+Age Detection Our goal here is to create a program that will predict the gender and age of the person using an image. But predicting age might not be as simple as you think, why? You might be thinking that age prediction is a regression problem, right?</description>
+    </item>
+    
+    <item>
+      <title>Face and Hand Landmarks Detection using Python -- Mediapipe, OpenCV </title>
+      <link>/machine-learning/face-and-hand-landmarks-detection-using-python--mediapipe-opencv-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/face-and-hand-landmarks-detection-using-python--mediapipe-opencv-/</guid>
+      <description>Face and Hand Landmarks Detection using Python &amp;ndash; Mediapipe, OpenCV In this article, we will use mediapipe python library to detect face and hand landmarks. We will be using a Holistic model from mediapipe solutions to detect all the face and hand landmarks. We will be also seeing how we can access different landmarks of the face and hands which can be used for different computer vision applications such as sign language detection, drowsiness detection, etc.</description>
+    </item>
+    
+    <item>
+      <title>Detecting COVID-19 From Chest X-Ray Images using CNN </title>
+      <link>/machine-learning/detecting-covid-19-from-chest-x-ray-images-using-cnn-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/detecting-covid-19-from-chest-x-ray-images-using-cnn-/</guid>
+      <description>Detecting COVID-19 From Chest X-Ray Images using CNN A Django Based Web Application built for the purpose of detecting the presence of COVID-19 from Chest X-Ray images with multiple machine learning models trained on pre-built architectures. Three different machine learning models were used to build this project namely Xception, ResNet50, and VGG16. The Deep Learning model was trained on a publicly available dataset, the SARS-COV-2-Ct-Scan Dataset. The purpose of this project is to apply Convolutional Neural Network (CNN) Architectures in solving problems of the pandemic on a preliminary stage.</description>
+    </item>
+    
+    <item>
+      <title>Fine-tuning BERT model for Sentiment Analysis </title>
+      <link>/machine-learning/fine-tuning-bert-model-for-sentiment-analysis-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/fine-tuning-bert-model-for-sentiment-analysis-/</guid>
+      <description>Fine-tuning BERT model for Sentiment Analysis Google created a transformer-based machine learning approach for natural language processing pre-training called Bidirectional Encoder Representations from Transformers. It has a huge number of parameters, hence training it on a small dataset would lead to overfitting. This is why we use a pre-trained BERT model that has been trained on a huge dataset. Using the pre-trained model and try to &amp;ldquo;tune&amp;rdquo; it for the current dataset, i.</description>
+    </item>
+    
+    <item>
+      <title>Human Scream Detection and Analysis for Controlling Crime Rate -- Project Idea </title>
+      <link>/machine-learning/human-scream-detection-and-analysis-for-controlling-crime-rate--project-idea-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/human-scream-detection-and-analysis-for-controlling-crime-rate--project-idea-/</guid>
+      <description>Human Scream Detection and Analysis for Controlling Crime Rate &amp;ndash; Project Idea Project Title: Human Scream Detection and Analysis for Controlling Crime Rate using Machine Learning and Deep Learning
+Crime is the biggest social problem of our society which is spreading day by day. Thousands of crimes are committed every day, and still many are occurring right now also all over the world. A crime occurs in many faces, it can happen in any face like robberies, murders, rapes, aggravated and simple assault, homicide, etc.</description>
+    </item>
+    
+    <item>
+      <title>10 Basic Machine Learning Interview Questions </title>
+      <link>/machine-learning/10-basic-machine-learning-interview-questions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/machine-learning/10-basic-machine-learning-interview-questions-/</guid>
+      <description>10 Basic Machine Learning Interview Questions Explain the difference between supervised and unsupervised machine learning? In supervised machine learning algorithms, we have to provide labeled data, for example, prediction of stock market prices, whereas in unsupervised we do not have labeled data where we group the unlabeled data, for example, conducting market segmentation.
+Explain the difference between KNN and K-Means clustering? K-Nearest Neighbours is a supervised machine learning algorithm where we need to provide the labeled data to the model it then classifies the points based on the distance of the point from the nearest points.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

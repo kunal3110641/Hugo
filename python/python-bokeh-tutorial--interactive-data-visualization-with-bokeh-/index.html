@@ -1,0 +1,13920 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Python Bokeh tutorial -- Interactive Data Visualization with Bokeh </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Python Bokeh tutorial -- Interactive Data Visualization with Bokeh " />
+<meta property="og:description" content="Python Bokeh tutorial &ndash; Interactive Data Visualization with Bokeh Python Bokeh is a Data Visualization library that provides interactive charts and plots. Bokeh renders its plots using HTML and JavaScript that uses modern web browsers for presenting elegant, concise construction of novel graphics with high-level interactivity. Features of Bokeh:
+Flexibility: Bokeh can be used for common plotting requirements and for custom and complex use-cases.
+Productivity: Its interaction with other popular Pydata tools (such as Pandas and Jupyter notebook) is very easy." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/python/python-bokeh-tutorial--interactive-data-visualization-with-bokeh-/" /><meta property="article:section" content="python" />
+
+
+
+
+    
+    
+	<meta name="description" content="Python Bokeh tutorial -- Interactive Data Visualization with Bokeh " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/python/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/python/python-tutorial-/"><div class="panelist" >Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-python-/"><div class="panelist" >Introduction To PYTHON </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-language-advantages-and-applications-/"><div class="panelist" >Python Language advantages and applications </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/download-and-install-python-3-latest-version-/"><div class="panelist" >Download and Install Python 3 Latest Version </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-3-basics-/"><div class="panelist" >Python 3 basics </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-keywords-/"><div class="panelist" >Python Keywords </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/namespaces-and-scope-in-python-/"><div class="panelist" >Namespaces and Scope in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/statement-indentation-and-comment-in-python-/"><div class="panelist" >Statement, Indentation and Comment in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-assign-values-to-variables-in-python-and-other-languages-/"><div class="panelist" >How to assign values to variables in Python and other languages </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-input-in-python-/"><div class="panelist" >Taking input in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-input-from-console-in-python-/"><div class="panelist" >Taking input from console in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-multiple-inputs-from-user-in-python-/"><div class="panelist" >Taking multiple inputs from user in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-output-using-print-function-/"><div class="panelist" >Python | Output using print() function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-print-without-newline-in-python-/"><div class="panelist" >How to print without newline in Python? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-end-parameter-in-print-/"><div class="panelist" >Python end parameter in print() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-sep-parameter-in-print-/"><div class="panelist" >Python | sep parameter in print() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-output-formatting-/"><div class="panelist" >Python | Output Formatting </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-operators-/"><div class="panelist" >Python Operators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/ternary-operator-in-python-/"><div class="panelist" >Ternary Operator in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/division-operators-in-python-/"><div class="panelist" >Division Operators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/operator-overloading-in-python-/"><div class="panelist" >Operator Overloading in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/any-all-in-python-/"><div class="panelist" >Any All in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/operator-functions-in-python-set-1-/"><div class="panelist" >Operator Functions in Python | Set 1 </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/operator-functions-in-python-set-2-/"><div class="panelist" >Operator Functions in Python | Set 2 </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/difference-between-and-is-operator-in-python-/"><div class="panelist" >Difference between == and is operator in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-membership-and-identity-operators-/"><div class="panelist" >Python Membership and Identity Operators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-set-3-strings-lists-tuples-iterations-/"><div class="panelist" >Python | Set 3 (Strings, Lists, Tuples, Iterations) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-string-/"><div class="panelist" >Python String </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-lists-/"><div class="panelist" >Python Lists </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tuples-/"><div class="panelist" >Python Tuples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-sets-/"><div class="panelist" >Python Sets </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-dictionary-/"><div class="panelist" >Python Dictionary </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-arrays-/"><div class="panelist" >Python Arrays </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-if-else-/"><div class="panelist" >Python If Else </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/chaining-comparison-operators-in-python-/"><div class="panelist" >Chaining comparison operators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-for-loops-/"><div class="panelist" >Python For Loops </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-while-loop-/"><div class="panelist" >Python While Loop </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-break-statement-/"><div class="panelist" >Python break statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-continue-statement-/"><div class="panelist" >Python Continue Statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pass-statement-/"><div class="panelist" >Python pass Statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/looping-techniques-in-python-/"><div class="panelist" >Looping Techniques in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-functions-/"><div class="panelist" >Python Functions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/args-and-kwargs-in-python-/"><div class="panelist" >*args and **kwargs in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/when-to-use-yield-instead-of-return-in-python-/"><div class="panelist" >When to use yield instead of return in Python? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/generators-in-python-/"><div class="panelist" >Generators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-lambda-/"><div class="panelist" >Python lambda </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/global-and-local-variables-in-python-/"><div class="panelist" >Global and Local Variables in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/global-keyword-in-python-/"><div class="panelist" >Global keyword in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/first-class-functions-in-python-/"><div class="panelist" >First Class functions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-closures-/"><div class="panelist" >Python Closures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/decorators-in-python-/"><div class="panelist" >Decorators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/decorators-with-parameters-in-python-/"><div class="panelist" >Decorators with parameters in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/memoization-using-decorators-in-python-/"><div class="panelist" >Memoization using decorators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-classes-and-objects-/"><div class="panelist" >Python Classes and Objects </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/constructors-in-python-/"><div class="panelist" >Constructors in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/destructors-in-python-/"><div class="panelist" >Destructors in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/inheritance-in-python-/"><div class="panelist" >Inheritance in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/types-of-inheritance-python-/"><div class="panelist" >Types of inheritance Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/encapsulation-in-python-/"><div class="panelist" >Encapsulation in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/polymorphism-in-python-/"><div class="panelist" >Polymorphism in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/class-or-static-variables-in-python-/"><div class="panelist" >Class or Static Variables in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/class-method-vs-static-method-in-python-/"><div class="panelist" >Class method vs Static method in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-exception-handling-/"><div class="panelist" >Python Exception Handling </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-try-except-/"><div class="panelist" >Python Try Except </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/errors-and-exceptions-in-python-/"><div class="panelist" >Errors and Exceptions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/built-in-exceptions-in-python-/"><div class="panelist" >Built-in Exceptions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/user-defined-exceptions-in-python-with-examples-/"><div class="panelist" >User-defined Exceptions in Python with Examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/nzec-error-in-python-/"><div class="panelist" >NZEC error in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/file-handling-in-python-/"><div class="panelist" >File Handling in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/open-a-file-in-python-/"><div class="panelist" >Open a File in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-read-from-a-file-in-python-/"><div class="panelist" >How to read from a file in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/writing-to-file-in-python-/"><div class="panelist" >Writing to file in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-append-to-a-file-/"><div class="panelist" >Python append to a file </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/regular-expression-in-python-with-examples-set-1-/"><div class="panelist" >Regular Expression in Python with Examples | Set 1 </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/regular-expressions-in-python--set-2-search-match-and-find-all-/"><div class="panelist" >Regular Expressions in Python -- Set 2 (Search, Match and Find All) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-regex-re.search-vs-re.findall-/"><div class="panelist" >Python Regex: re.search() VS re.findall() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/verbose-in-python-regex-/"><div class="panelist" >Verbose in Python Regex </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/password-validation-in-python-/"><div class="panelist" >Password validation in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-collections-module-/"><div class="panelist" >Python Collections Module </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/counters-in-python-set-1-initialization-and-updation-/"><div class="panelist" >Counters in Python | Set 1 (Initialization and Updation) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/ordereddict-in-python-/"><div class="panelist" >OrderedDict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/defaultdict-in-python-/"><div class="panelist" >Defaultdict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/chainmap-in-python-/"><div class="panelist" >ChainMap in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/namedtuple-in-python-/"><div class="panelist" >Namedtuple in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/deque-in-python-/"><div class="panelist" >Deque in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/heap-queue-or-heapq-in-python-/"><div class="panelist" >Heap queue (or heapq) in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userdict-in-python-/"><div class="panelist" >Collections.UserDict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userlist-in-python-/"><div class="panelist" >Collections.UserList in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userstring-in-python-/"><div class="panelist" >Collections.UserString in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/os-module-in-python-with-examples-/"><div class="panelist" >OS Module in Python with Examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/functional-programming-in-python-/"><div class="panelist" >Functional Programming in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/metaprogramming-with-metaclasses-in-python-/"><div class="panelist" >Metaprogramming with Metaclasses in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/abstract-classes-in-python-/"><div class="panelist" >Abstract Classes in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/multithreading-in-python-set-1-/"><div class="panelist" >Multithreading in Python | Set 1 </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/multithreading-in-python-set-2-synchronization-/"><div class="panelist" >Multithreading in Python | Set 2 (Synchronization) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/multiprocessing-in-python-set-1-introduction-/"><div class="panelist" >Multiprocessing in Python | Set 1 (Introduction) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/multiprocessing-in-python-set-2-communication-between-processes-/"><div class="panelist" >Multiprocessing in Python | Set 2 (Communication between processes) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/socket-programming-in-python-/"><div class="panelist" >Socket Programming in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/socket-programming-with-multi-threading-in-python-/"><div class="panelist" >Socket Programming with Multi-threading in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-tutorial-/"><div class="panelist" >NumPy Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-numpy-/"><div class="panelist" >Python Numpy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-ndarray-/"><div class="panelist" >Numpy | ndarray </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-array-creation-/"><div class="panelist" >Numpy | Array Creation </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-indexing-/"><div class="panelist" >Numpy | Indexing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/basic-slicing-and-advanced-indexing-in-numpy-python-/"><div class="panelist" >Basic Slicing and Advanced Indexing in NumPy Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-data-type-objects-/"><div class="panelist" >Numpy | Data Type Objects </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-iterating-over-array-/"><div class="panelist" >Numpy | Iterating Over Array </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-binary-operations-/"><div class="panelist" >Numpy | Binary Operations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-mathematical-function-/"><div class="panelist" >Numpy | Mathematical Function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-string-operations-/"><div class="panelist" >Numpy | String Operations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-linear-algebra-/"><div class="panelist" >Numpy | Linear Algebra </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-sorting-searching-and-counting-/"><div class="panelist" >Numpy | Sorting, Searching and Counting </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/random-sampling-in-numpy-randint-function-/"><div class="panelist" >Random sampling in numpy | randint() function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/random-sampling-in-numpy-random_sample-function-/"><div class="panelist" >Random sampling in numpy | random_sample() function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/random-sampling-in-numpy-ranf-function-/"><div class="panelist" >Random sampling in numpy | ranf() function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/random-sampling-in-numpy-random_integers-function-/"><div class="panelist" >Random sampling in numpy | random_integers() function </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/numpy-ufunc-universal-functions-/"><div class="panelist" >Numpy ufunc | Universal functions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/pandas-tutorial-/"><div class="panelist" >Pandas Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-pandas-in-python-/"><div class="panelist" >Introduction to Pandas in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-install-python-pandas-on-windows-and-linux-/"><div class="panelist" >How to Install Python Pandas on Windows and Linux? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-dataframe-/"><div class="panelist" >Python Pandas DataFrame </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/creating-a-pandas-dataframe-/"><div class="panelist" >Creating a Pandas DataFrame </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-series-/"><div class="panelist" >Python Pandas Series </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/creating-a-pandas-series-/"><div class="panelist" >Creating a Pandas Series </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-dataframeseries.head-method-/"><div class="panelist" >Python | Pandas DataframeSeries.head() method </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/pandas-dataframe-describe-method-/"><div class="panelist" >Pandas DataFrame describe() Method </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/dealing-with-rows-and-columns-in-pandas-dataframe-/"><div class="panelist" >Dealing with Rows and Columns in Pandas DataFrame </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-extracting-rows-using-.loc-/"><div class="panelist" >Python | Pandas Extracting rows using .loc[] </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/extracting-rows-using-pandas-.iloc-in-python-/"><div class="panelist" >Extracting rows using Pandas .iloc[] in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/indexing-and-selecting-data-with-pandas-/"><div class="panelist" >Indexing and Selecting Data with Pandas </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/boolean-indexing-in-pandas-/"><div class="panelist" >Boolean Indexing in Pandas </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/pandas-groupby-/"><div class="panelist" >Pandas GroupBy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-merging-joining-and-concatenating-/"><div class="panelist" >Python | Pandas Merging, Joining, and Concatenating </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-working-with-date-and-time-using-pandas-/"><div class="panelist" >Python | Working with date and time using Pandas </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-working-with-text-data-/"><div class="panelist" >Python | Pandas Working With Text Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/read-csv-using-pandas.read_csv-in-python-/"><div class="panelist" >Read csv using pandas.read_csv() in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-working-with-pandas-and-xlsxwriter-set--1-/"><div class="panelist" >Python | Working with Pandas and XlsxWriter | Set -- 1 </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-json-/"><div class="panelist" >Python JSON </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/working-with-json-data-in-python-/"><div class="panelist" >Working With JSON Data in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/read-write-and-parse-json-using-python-/"><div class="panelist" >Read, Write and Parse JSON using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/append-to-json-file-using-python-/"><div class="panelist" >Append to JSON file using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/serializing-json-data-in-python-/"><div class="panelist" >Serializing JSON data in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/deserialize-json-to-object-in-python-/"><div class="panelist" >Deserialize JSON to Object in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/working-with-csv-files-in-python-/"><div class="panelist" >Working with csv files in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/reading-csv-files-in-python-/"><div class="panelist" >Reading CSV files in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/writing-csv-files-in-python-/"><div class="panelist" >Writing CSV files in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql-/"><div class="panelist" >Python MySQL </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/connect-mysql-database-using-mysql-connector-python-/"><div class="panelist" >Connect MySQL database using MySQL-Connector Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--create-database-/"><div class="panelist" >Python MySQL -- Create Database </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql-create-table-/"><div class="panelist" >Python: MySQL Create Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--insert-into-table-/"><div class="panelist" >Python MySQL -- Insert into Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--select-query-/"><div class="panelist" >Python MySQL -- Select Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--where-clause-/"><div class="panelist" >Python MySQL -- Where Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--order-by-clause-/"><div class="panelist" >Python MySQL -- Order By Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--delete-query-/"><div class="panelist" >Python MySQL -- Delete Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--drop-table-/"><div class="panelist" >Python MySQL -- Drop Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--update-query-/"><div class="panelist" >Python MySQL -- Update Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--limit-clause-/"><div class="panelist" >Python MySQL -- Limit Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--join-/"><div class="panelist" >Python MySQL -- Join </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb-tutorial-/"><div class="panelist" >Python MongoDB Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/installing-mongodb-on-windows-with-python-/"><div class="panelist" >Installing MongoDB on Windows with Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/mongodb-and-python-/"><div class="panelist" >MongoDB and Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/create-a-database-in-mongodb-using-python-/"><div class="panelist" >Create a database in MongoDB using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--insert_one-query-/"><div class="panelist" >Python MongoDB -- insert_one Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--insert_many-query-/"><div class="panelist" >Python MongoDB -- insert_many Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--find-/"><div class="panelist" >Python MongoDB -- Find </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--query-/"><div class="panelist" >Python MongoDB -- Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--sort-/"><div class="panelist" >Python MongoDB -- Sort </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/mongodb-python-delete-data-and-drop-collection-/"><div class="panelist" >MongoDB python | Delete Data and Drop Collection </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--delete_one-/"><div class="panelist" >Python Mongodb -- Delete_one() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--delete_many-/"><div class="panelist" >Python Mongodb -- Delete_many() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--update_one-/"><div class="panelist" >Python MongoDB -- Update_one() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--update_many-query-/"><div class="panelist" >Python MongoDB -- Update_many Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--limit-query-/"><div class="panelist" >Python MongoDB -- Limit Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--create_index-query-/"><div class="panelist" >Python MongoDB -- create_index Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--drop_index-query-/"><div class="panelist" >Python MongoDB -- drop_index Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/opencv-python-tutorial-/"><div class="panelist" >OpenCV Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-opencv-/"><div class="panelist" >Introduction to OpenCV </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-install-opencv-for-python-on-windows-/"><div class="panelist" >How to Install OpenCV for Python on Windows? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/reading-an-image-in-opencv-using-python-/"><div class="panelist" >Reading an image in OpenCV using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/opencv-saving-an-image-/"><div class="panelist" >OpenCV | Saving an Image </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/arithmetic-operations-on-images-using-opencv-set-1-addition-and-subtraction-/"><div class="panelist" >Arithmetic Operations on Images using OpenCV | Set-1 (Addition and Subtraction) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/arithmetic-operations-on-images-using-opencv-set-2-bitwise-operations-on-binary-images-/"><div class="panelist" >Arithmetic Operations on Images using OpenCV | Set-2 (Bitwise Operations on Binary Images) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/image-resizing-using-opencv-python-/"><div class="panelist" >Image Resizing using OpenCV | Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/image-processing-in-python-scaling-rotating-shifting-and-edge-detection-/"><div class="panelist" >Image Processing in Python (Scaling, Rotating, Shifting and Edge Detection) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-image-blurring-using-opencv-/"><div class="panelist" >Python | Image blurring using OpenCV </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/erosion-and-dilation-of-images-using-opencv-in-python-/"><div class="panelist" >Erosion and Dilation of images using OpenCV in python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-thresholding-techniques-using-opencv-set-1-simple-thresholding-/"><div class="panelist" >Python | Thresholding techniques using OpenCV | Set-1 (Simple Thresholding) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-thresholding-techniques-using-opencv-set-2-adaptive-thresholding-/"><div class="panelist" >Python | Thresholding techniques using OpenCV | Set-2 (Adaptive Thresholding) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-thresholding-techniques-using-opencv-set-3-otsu-thresholding-/"><div class="panelist" >Python | Thresholding techniques using OpenCV | Set-3 (Otsu Thresholding) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/filter-color-with-opencv-/"><div class="panelist" >Filter Color with OpenCV </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-bilateral-filtering-/"><div class="panelist" >Python | Bilateral Filtering </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-background-subtraction-using-opencv-/"><div class="panelist" >Python | Background subtraction using OpenCV </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-play-a-video-using-opencv-/"><div class="panelist" >Python | Play a video using OpenCV </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/extract-images-from-video-in-python-/"><div class="panelist" >Extract images from video in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/face-detection-using-python-and-opencv-with-webcam-/"><div class="panelist" >Face Detection using Python and OpenCV with webcam </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/selenium-python-tutorial-/"><div class="panelist" >Selenium Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/selenium-basics--components-features-uses-and-limitations-/"><div class="panelist" >Selenium Basics -- Components, Features, Uses and Limitations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/components-of-selenium-/"><div class="panelist" >Components of Selenium </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/selenium-python-introduction-and-installation-/"><div class="panelist" >Selenium Python Introduction and Installation </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/navigating-links-using-get-method--selenium-python-/"><div class="panelist" >Navigating links using get method -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/interacting-with-webpage--selenium-python-/"><div class="panelist" >Interacting with Webpage -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/locating-single-elements-in-selenium-python-/"><div class="panelist" >Locating single elements in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/locating-multiple-elements-in-selenium-python-/"><div class="panelist" >Locating multiple elements in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/locator-strategies--selenium-python-/"><div class="panelist" >Locator Strategies -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/action-chains-in-selenium-python-/"><div class="panelist" >Action Chains in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/exceptions--selenium-python-/"><div class="panelist" >Exceptions -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-tutorial-/"><div class="panelist" >Python Tkinter Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-tkinter-/"><div class="panelist" >Introduction to Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/what-are-widgets-in-tkinter-/"><div class="panelist" >What are Widgets in Tkinter? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-creating-a-button-in-tkinter-/"><div class="panelist" >Python | Creating a button in tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--label-/"><div class="panelist" >Python Tkinter -- Label </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/radiobutton-in-tkinter-python-/"><div class="panelist" >RadioButton in Tkinter | Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--checkbutton-widget-/"><div class="panelist" >Python Tkinter -- Checkbutton Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--canvas-widget-/"><div class="panelist" >Python Tkinter -- Canvas Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/combobox-widget-in-tkinter-python-/"><div class="panelist" >Combobox Widget in tkinter | Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--entry-widget-/"><div class="panelist" >Python Tkinter -- Entry Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--text-widget-/"><div class="panelist" >Python Tkinter -- Text Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--message-/"><div class="panelist" >Python Tkinter -- Message </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-menu-widget-in-tkinter-/"><div class="panelist" >Python | Menu widget in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--spinbox-/"><div class="panelist" >Python Tkinter -- SpinBox </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/progressbar-widget-in-tkinter-python-/"><div class="panelist" >Progressbar widget in Tkinter | Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-scrollbar-/"><div class="panelist" >Python-Tkinter Scrollbar </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--scrolledtext-widget-/"><div class="panelist" >Python Tkinter -- ScrolledText Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--listbox-widget-/"><div class="panelist" >Python Tkinter -- ListBox Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--frame-widget-/"><div class="panelist" >Python Tkinter -- Frame Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--scale-widget-/"><div class="panelist" >Python Tkinter -- Scale Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/hierarchical-treeview-in-python-gui-application-/"><div class="panelist" >Hierarchical treeview in Python GUI application </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-treeview-scrollbar-/"><div class="panelist" >Python-Tkinter Treeview scrollbar </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--toplevel-widget-/"><div class="panelist" >Python Tkinter -- Toplevel Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-askopenfile-function-in-tkinter-/"><div class="panelist" >Python | askopenfile() function in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-asksaveasfile-function-in-tkinter-/"><div class="panelist" >Python | asksaveasfile() function in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python--tkinter-askquestion-dialog-/"><div class="panelist" >Python -- Tkinter askquestion Dialog </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--messagebox-widget-/"><div class="panelist" >Python Tkinter -- MessageBox Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-place-method-in-tkinter-/"><div class="panelist" >Python | place() method in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-grid-method-in-tkinter-/"><div class="panelist" >Python | grid() method in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pack-method-in-tkinter-/"><div class="panelist" >Python | pack() method in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-panedwindow-widget-in-tkinter-/"><div class="panelist" >Python | PanedWindow Widget in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-binding-function-in-tkinter-/"><div class="panelist" >Python | Binding function in Tkinter </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--validating-entry-widget-/"><div class="panelist" >Python Tkinter -- Validating Entry Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/kivy-tutorial-/"><div class="panelist" >Kivy Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-kivy-a-cross-platform-python-framework-/"><div class="panelist" >Introduction to Kivy ; A Cross-platform Python Framework </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-add-label-to-a-kivy-window-/"><div class="panelist" >Python | Add Label to a kivy window </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-textinput-widget-in-kivy-/"><div class="panelist" >Python | Textinput widget in kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-canvas-in-kivy-/"><div class="panelist" >Python | Canvas in kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-checkbox-widget-in-kivy-/"><div class="panelist" >Python | Checkbox widget in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-dropdown-list-in-kivy-/"><div class="panelist" >Python | Dropdown list in kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-carousel-widget-in-kivy-/"><div class="panelist" >Python | Carousel Widget In Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-boxlayout-widget-in-kivy-/"><div class="panelist" >Python | BoxLayout widget in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-slider-widget-in-kivy-/"><div class="panelist" >Python | Slider widget in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-popup-widget-in-kivy-/"><div class="panelist" >Python | Popup widget in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-switch-widget-in-kivy-/"><div class="panelist" >Python | Switch widget in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-spinner-widget-in-kivy-/"><div class="panelist" >Python | Spinner widget in kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-progress-bar-widget-in-kivy-/"><div class="panelist" >Python | Progress Bar widget in kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-working-with-buttons-in-kivy-/"><div class="panelist" >Python | Working with buttons in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-float-layout-in-kivy-/"><div class="panelist" >Python | Float Layout in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/gridlayouts-in-kivy-python-/"><div class="panelist" >GridLayouts in Kivy | Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-stacklayout-in-kivy-/"><div class="panelist" >Python | StackLayout in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-anchorlayout-in-kivy-/"><div class="panelist" >Python| AnchorLayout in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-relative-layout-in-kivy-/"><div class="panelist" >Python | Relative Layout in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pagelayout-in-kivy-/"><div class="panelist" >Python | PageLayout in Kivy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/matplotlib-tutorial-/"><div class="panelist" >Matplotlib Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-seaborn-tutorial-/"><div class="panelist" >Python Seaborn Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-plotly-tutorial-/"><div class="panelist" >Python Plotly tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-bokeh-tutorial--interactive-data-visualization-with-bokeh-/"><div class="panelist" id="activetab">Python Bokeh tutorial -- Interactive Data Visualization with Bokeh </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/tableau-tutorial-/"><div class="panelist" >Tableau Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-programs-/"><div class="panelist" >Python Programs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-exercises-practice-questions-and-solutions-/"><div class="panelist" >Python Exercises, Practice Questions and Solutions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-multiple-choice-questions-/"><div class="panelist" >Python Multiple Choice Questions </div></a>
+              
+            
+            
+            
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="python-bokeh-tutorial----interactive-data-visualization-with-bokeh">Python Bokeh tutorial &ndash; Interactive Data Visualization with Bokeh</h2>
+<p>Python Bokeh is a Data Visualization library that provides interactive charts and plots. Bokeh renders its plots using HTML and JavaScript that uses modern web browsers for presenting elegant, concise construction of novel graphics with high-level interactivity. </p>
+<p>Features of Bokeh:</p>
+<p>Flexibility: Bokeh can be used for common plotting requirements and for custom and complex use-cases.</p>
+<p>Productivity: Its interaction with other popular Pydata tools (such as Pandas and Jupyter notebook) is very easy.</p>
+<p>Interactivity: It creates interactive plots that change with the user interaction.</p>
+<p>Powerful: Generation of visualizations for specialized use-cases can be done by adding JavaScript.</p>
+<p>Shareable: Visual data are shareable. They can also be rendered in Jupyter notebooks.</p>
+<p>Open source: Bokeh is an open-source project.</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210219160041/PythonBokehmin.jpg" alt="targets"></p>
+<p>This tutorial aims at providing insight to Bokeh using well-explained concepts and examples with the help of a huge dataset. So let&rsquo;s dive deep into the Bokeh and learn all it from basic to advance.</p>
+<p>Table Of Content </p>
+<p>Installation</p>
+<p>Bokeh Interfaces &ndash; Basic Concepts of Bokeh</p>
+<p>Getting Started</p>
+<p>Annotations and Legends Customizing Legends  </p>
+<p>Customizing Legends  </p>
+<p>Plotting Different Types of Plots Bar PlotScatter PlotPatch PlotArea PlotPie Chart</p>
+<p>Bar Plot</p>
+<p>Scatter Plot</p>
+<p>Patch Plot</p>
+<p>Area Plot</p>
+<p>Pie Chart</p>
+<p>Creating Different Shapes CircleOvalTriangleRectanglePolygon</p>
+<p>Circle</p>
+<p>Oval</p>
+<p>Triangle</p>
+<p>Rectangle</p>
+<p>Polygon</p>
+<p>Plotting Multiple Plots Vertical LayoutsHorizontal LayoutGrid Layout</p>
+<p>Vertical Layouts</p>
+<p>Horizontal Layout</p>
+<p>Grid Layout</p>
+<p>Interactive Data Visualization Configuring Plot ToolsInteractive LegendsAdding Widgets to the Plot</p>
+<p>Configuring Plot Tools</p>
+<p>Interactive Legends</p>
+<p>Adding Widgets to the Plot</p>
+<p>Creating Different Types of Glyphs</p>
+<p>Visualizing Different Types of Data</p>
+<p>More Topics on Bokeh</p>
+<h2 id="installation">Installation</h2>
+<p>Bokeh is supported by CPython 3.6 and older with both standard distribution and anaconda distribution. Bokeh package has the following dependencies.</p>
+<p>1. Required Dependencies</p>
+<p>PyYAML&gt;=3.10</p>
+<p>python-dateutil&gt;=2.1</p>
+<p>Jinja2&gt;=2.7</p>
+<p>numpy&gt;=1.11.3</p>
+<p>pillow&gt;=4.0</p>
+<p>packaging&gt;=16.8</p>
+<p>tornado&gt;=5</p>
+<p>typing_extensions &gt;=3.7.4</p>
+<p>2. Optional Dependencies</p>
+<p>Jupyter</p>
+<p>NodeJS</p>
+<p>NetworkX</p>
+<p>Pandas</p>
+<p>psutil</p>
+<p>Selenium, GeckoDriver, Firefox</p>
+<p>Sphinx</p>
+<p>Bokeh can be installed using both conda package manager and pip. To install it using conda type the below command in the terminal.</p>
+<pre><code>conda install bokeh
+</code></pre>
+<p>This will install all the dependencies. If all the dependencies are installed then you can install the bokeh from PyPI using pip. Type the below command in the terminal.</p>
+<pre><code>pip install bokeh
+</code></pre>
+<p>Refer to the below article to get detailed information about the installation of Bokeh.</p>
+<p>Python &ndash; Setting up the Bokeh Environment</p>
+<h2 id="bokeh-interfaces----basic-concepts-of-bokeh">Bokeh Interfaces &ndash; Basic Concepts of Bokeh</h2>
+<p>Bokeh is simple to use as it provides a simple interface to the data scientists who do not want to be distracted by its implementation and also provides a detailed interface to developers and software engineers who may want more control over the Bokeh to create more sophisticated features. To do this Bokeh follows the layered approach. </p>
+<h2 id="bokehmodels">Bokeh.models</h2>
+<p>This class is the Python Library for Bokeh that contains model classes that handle the JSON data created by Bokeh&rsquo;s JavaScript library (BokehJS). Most of the models are very basic consisting of very few attributes or no methods.</p>
+<h2 id="bokehplotting">bokeh.plotting</h2>
+<p>This is the mid-level interface that provides Matplotlib or MATLAB like features for plotting. It deals with the data that is to be plotted and creating the valid axes, grids, and tools. The main class of this interface is the Figure class.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>After the installation and learning about the basic concepts of Bokeh let&rsquo;s create a simple plot.</p>
+<p>Example:</p>
+<h2 id="python3">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Line Graph&quot;) 
+  
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [5, 4, 3, 2, 1] 
+  
+# plotting the line graph 
+graph.line(x, y) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210208185539/bokehtutorialsimpleplot.png" alt="targets"></p>
+<p>In the above example, we have created a simple Plot with the Title as Bokeh Line Graph. If you are using Jupyter then the output will be created in a new tab in the browser.</p>
+<h2 id="annotations-and-legends">Annotations and Legends</h2>
+<p>Annotations are the supplemental information such as titles, legends, arrows, etc that can be added to the graphs. In the above example, we have already seen how to add the titles to the graph. In this section, we will see about the legends.</p>
+<p>Adding legends to your figures can help to properly describe and define them. Hence, giving more clarity. Legends in Bokeh are simple to implement. They can be basic, automatically grouped, manually mentioned, explicitly indexed, and also interactive.</p>
+<p>Example:</p>
+<h2 id="python3-1">Python3</h2>
+<pre><code># importing the modules
+from bokeh.plotting import figure, output_file, show
+  
+# instantiating the figure object
+graph = figure(title=&quot;Bokeh Line Graph&quot;)
+  
+# the points to be plotted
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+  
+# plotting the 1st line graph
+graph.line(x, x, legend_label=&quot;Line 1&quot;)
+  
+# plotting the 2nd line graph with a
+# different color
+graph.line(y, x, legend_label=&quot;Line 2&quot;,
+           line_color=&quot;green&quot;)
+  
+# displaying the model
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210208190521/Bokehtutorialannotationsandlegends.png" alt="targets"></p>
+<p>In the above example, we have plotted two different lines with a legend that simply states that which is line 1 and which is line 2. The color in the legends is also differentiated by the color.</p>
+<p>Refer to the below articles to get detailed information about the annotations and legends</p>
+<p>Bokeh &ndash; Annotations and Legends</p>
+<h2 id="customizing-legends">Customizing Legends</h2>
+<p>Legends in Bokeh can be customized using the following properties.</p>
+<p>Example:</p>
+<h2 id="python3-2">Python3</h2>
+<pre><code># importing the modules
+from bokeh.plotting import figure, output_file, show
+  
+# instantiating the figure object
+graph = figure(title=&quot;Bokeh Line Graph&quot;)
+  
+# the points to be plotted
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+  
+# plotting the 1st line graph
+graph.line(x, x, legend_label=&quot;Line 1&quot;)
+  
+# plotting the 2nd line graph with a
+# different color
+graph.line(y, x, legend_label=&quot;Line 2&quot;,
+           line_color=&quot;green&quot;)
+  
+graph.legend.title = &quot;Title of the legend&quot;
+graph.legend.location =&quot;top_left&quot;
+graph.legend.label_text_font_size = &quot;17pt&quot;
+  
+# displaying the model
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210163252/bokehtutorialcustomizelegend.png" alt="targets"></p>
+<h2 id="plotting-different-types-of-plots">Plotting Different Types of Plots</h2>
+<p>Glyphs in Bokeh terminology means the basic building blocks of the Bokeh plots such as lines, rectangles, squares, etc. Bokeh plots are created using the bokeh.plotting interface which uses a default set of tools and styles.</p>
+<h2 id="line-plot">Line Plot</h2>
+<p>Line charts are used to represent the relation between two data X and Y on a different axis. A line plot can be created using the line() method of the plotting module.</p>
+<p>Syntax:</p>
+<p>line(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-3">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Line Graph&quot;) 
+  
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [5, 4, 3, 2, 1] 
+  
+# plotting the line graph 
+graph.line(x, y) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210208192936/bokehtutoriallineplot.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the line plots.</p>
+<p>Python Bokeh &ndash; Plotting a Line Graph</p>
+<p>Python Bokeh &ndash; Plotting Multiple Lines on a Graph</p>
+<h2 id="bar-plot">Bar Plot</h2>
+<p>Bar plot or Bar chart is a graph that represents the category of data with rectangular bars with lengths and heights that is proportional to the values which they represent. It can be of two types horizontal bars and vertical bars. Each can be created using the hbar() and vbar() functions of the plotting interface respectively.</p>
+<p>Syntax:</p>
+<p>hbar(parameters)</p>
+<p>vbar(parameters)</p>
+<p>Example 1: Creating horizontal bars.</p>
+<h2 id="python3-4">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Bar Graph&quot;) 
+  
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [1, 2, 3, 4, 5]  
+  
+# height / thickness of the plot
+height = 0.5
+  
+# plotting the bar graph 
+graph.hbar(x, right = y, height = height) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210208194150/bokehtutorialhbar.png" alt="targets"></p>
+<p>Example 2: Creating the vertical bars</p>
+<h2 id="python3-5">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Bar Graph&quot;) 
+  
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [1, 2, 3, 4, 5]  
+  
+# height / thickness of the plot
+width = 0.5
+  
+# plotting the bar graph 
+graph.vbar(x, top = y, width = width) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210208194408/bokehtutorialvbar.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the bar charts.</p>
+<p>Python Bokeh &ndash; Plotting Horizontal Bar Graphs</p>
+<p>Python Bokeh &ndash; Plotting Vertical Bar Graphs</p>
+<h2 id="scatter-plot">Scatter Plot</h2>
+<p>A scatter plot is a set of dotted points to represent individual pieces of data in the horizontal and vertical axis. A graph in which the values of two variables are plotted along X-axis and Y-axis, the pattern of the resulting points reveals a correlation between them. It can be plotted using the scatter() method of the plotting module.</p>
+<p>Syntax:</p>
+<pre><code>scatter(parameters)
+</code></pre>
+<p>Example:</p>
+<h2 id="python3-6">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+from bokeh.palettes import magma 
+import random 
+  
+      
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Scatter Graph&quot;) 
+  
+# points to be plotted 
+x = [n for n in range(256)] 
+y = [random.random() + 1 for n in range(256)] 
+  
+  
+# plotting the graph 
+graph.scatter(x, y) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209180742/bokehtutorialscatterplot.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the scatter plots.</p>
+<p>Python Bokeh &ndash; Plotting a Scatter Plot on a Graph</p>
+<h2 id="patch-plot">Patch Plot</h2>
+<p>Patch Plot shades a region of area to show a group having same properties. It can be created using the patch() method of the plotting module.</p>
+<p>Syntax:</p>
+<p>patch(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-7">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+from bokeh.palettes import magma 
+import random 
+  
+      
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Patch Plo&quot;) 
+  
+# points to be plotted 
+x = [n for n in range(256)] 
+y = [random.random() + 1 for n in range(256)] 
+  
+# plotting the graph 
+graph.patch(x, y) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209182138/patchplotbokehtutorial.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the Patch Plot.</p>
+<p>Python Bokeh &ndash; Plotting Patches on a Graph</p>
+<h2 id="area-plot">Area Plot</h2>
+<p>Area plots are defined as the filled regions between two series that share a common areas. Bokeh Figure class has two methods which are &ndash; varea(), harea()</p>
+<p>Syntax:</p>
+<p>varea(x, y1, y2, **kwargs)</p>
+<p>harea(x1, x2, y, **kwargs)</p>
+<p>Example 1: Creating vertical area plot</p>
+<h2 id="python">Python</h2>
+<pre><code># Implementation of bokeh function
+import numpy as np 
+from bokeh.plotting import figure, output_file, show 
+      
+x = [1, 2, 3, 4, 5] 
+y1 = [2, 4, 5, 2, 4] 
+y2 = [1, 2, 2, 3, 6] 
+  
+p = figure(plot_width=300, plot_height=300) 
+  
+# area plot 
+p.varea(x=x, y1=y1, y2=y2,fill_color=&quot;green&quot;) 
+  
+show(p)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20200618231309/varea.JPG" alt="targets"></p>
+<p>Example 2: Creating horizontal area plot</p>
+<h2 id="python3-8">Python3</h2>
+<pre><code># Implementation of bokeh function 
+      
+import numpy as np 
+from bokeh.plotting import figure, output_file, show 
+      
+y = [1, 2, 3, 4, 5] 
+x1 = [2, 4, 5, 2, 4] 
+x2 = [1, 2, 2, 3, 6] 
+  
+p = figure(plot_width=300, plot_height=300) 
+  
+# area plot 
+p.harea(x1=x1, x2=x2, y=y,fill_color=&quot;green&quot;) 
+  
+show(p)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20200618231307/harea.JPG" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the area charts</p>
+<p>Make an area plot in Python using Bokeh</p>
+<h2 id="pie-chart">Pie Chart</h2>
+<p>Bokeh Does not provide a direct method to plot the Pie Chart. It can be created using the wedge() method. In the wedge() function, the primary parameters are the x and y coordinates of the wedge, the radius, the start_angle and the end_angle of the wedge. In order to plot the wedges in such a way that they look like a pie chart, the x, y, and radius parameters of all the wedges will be the same. We will only adjust the start_angle and the end_angle.</p>
+<p>Syntax:</p>
+<p>wedge(parameters)</p>
+<p>Example: </p>
+<h2 id="python3-9">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+          
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Wedge Graph&quot;) 
+      
+# the points to be plotted 
+x = 0
+y = 0
+  
+# radius of the wedge 
+radius = 15
+  
+# start angle of the wedge 
+start_angle = 1
+  
+# end angle of the wedge 
+end_angle = 2
+  
+# plotting the graph 
+graph.wedge(x, y, radius = radius, 
+            start_angle = start_angle, 
+            end_angle = end_angle) 
+      
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20200706011148/bokeh-wedge-default.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the pie charts.</p>
+<p>Python Bokeh &ndash; Plotting Wedges on a Graph</p>
+<p>Python Bokeh &ndash; Making a Pie Chart</p>
+<h2 id="creating-different-shapes">Creating Different Shapes</h2>
+<p>The Figure class in Bokeh allows us create vectorised glyphs of different shapes such as circle, rectangle, oval, polygon, etc. Let&rsquo;s discuss them in detail.</p>
+<h2 id="circle">Circle</h2>
+<p>Bokeh Figure class following methods to draw circle glyphs which are given below:</p>
+<p>circle() method is a used to add a circle glyph to the figure and needs x and y coordinates of its center.</p>
+<p>circle_cross() method is a used to add a circle glyph with a &lsquo;+&rsquo; cross through the center to the figure and needs x and y coordinates of its center.</p>
+<p>circle_x() method is a used to add a circle glyph with a &lsquo;X&rsquo; cross through the center. to the figure and needs x and y coordinates of its center.</p>
+<p>Example:</p>
+<h2 id="python3-10">Python3</h2>
+<pre><code>import numpy as np 
+from bokeh.plotting import figure, output_file, show 
+  
+# creating the figure object
+plot = figure(plot_width = 300, plot_height = 300) 
+  
+plot.circle(x = [1, 2, 3], y = [3, 7, 5], size = 20) 
+  
+show(plot) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209201208/bokehtutorialcircle.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the circle glyphs</p>
+<p>Make an Circle Glyphs in Python using Bokeh</p>
+<h2 id="oval">Oval</h2>
+<p>oval() method can be used to plot ovals on the graph.</p>
+<p>Syntax:</p>
+<p>oval(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-11">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+      
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Oval Graph&quot;) 
+      
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [i * 2 for i in x] 
+  
+# plotting the graph 
+graph.oval(x, y, 
+        height = 0.5, 
+        width = 1) 
+      
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209201718/boekhtutorialoval.png" alt="targets"></p>
+<p>Refer o the below articles to get detailed information about the oval glyphs.</p>
+<p>Python Bokeh &ndash; Plotting Ovals on a Graph</p>
+<h2 id="triangle">Triangle</h2>
+<p>Triangle can be created using the triangle() method.</p>
+<p>Syntax:</p>
+<p>triangle(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-12">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Triangle Graph&quot;) 
+      
+# the points to be plotted 
+x = 1
+y = 1
+  
+# plotting the graph 
+graph.triangle(x, y, size = 150) 
+      
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209202809/bokehtutorialtriangle.png" alt="targets"></p>
+<p>Refer to the below article to get detailed information about the triangles.</p>
+<p>Python Bokeh &ndash; Plotting Triangles on a Graph</p>
+<h2 id="rectangle">Rectangle</h2>
+<p>Just like circles and ovals rectangle can also be plotted in Bokeh. It can be plotted using the rect() method.</p>
+<p>Syntax:</p>
+<p>rect(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-13">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+          
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Rectangle Graph&quot;, match_aspect = True) 
+  
+# the points to be plotted 
+x = 0
+y = 0
+width = 10
+height = 5
+  
+# plotting the graph 
+graph.rect(x, y, width, height) 
+      
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209202331/bokehtutorialrectanlge.png" alt="targets"></p>
+<h2 id="polygon">Polygon</h2>
+<p>Bokeh can also be used to plot multiple polygons on a graph. Plotting multiple polygons on a graph can be done using the multi_polygons() method of the plotting module.</p>
+<p>Syntax:</p>
+<p>multi_polygons(parameters)</p>
+<p>Example:</p>
+<h2 id="python3-14">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+      
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Multiple Polygons Graph&quot;) 
+      
+# the points to be plotted 
+xs = [[[[1, 1, 3, 4]]]] 
+ys = [[[[1, 3, 2 ,1]]]] 
+      
+# plotting the graph 
+graph.multi_polygons(xs, ys) 
+      
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209203219/bokehtutorialploygon.png" alt="targets"></p>
+<p>Refer to the below articles to get detailed information about the polygon glyphs.</p>
+<p>Python Bokeh &ndash; Plotting Multiple Polygons on a Graph</p>
+<h2 id="plotting-multiple-plots">Plotting Multiple Plots</h2>
+<p>There are several layouts provided by the Bokeh in order to create Multiple Plots. These layouts are:</p>
+<p>Vertical Layout</p>
+<p>Horizontal Layout</p>
+<p>Grid Layout</p>
+<h2 id="vertical-layouts">Vertical Layouts</h2>
+<p>Vertical Layout set all the plots in the vertical fashion and can be created using the column() method.</p>
+<h2 id="python3-15">Python3</h2>
+<pre><code>from bokeh.io import output_file, show
+from bokeh.layouts import column
+from bokeh.plotting import figure
+  
+  
+x = [1, 2, 3, 4, 5, 6]
+y0 = x
+y1 = [i * 2 for i in x]
+y2 = [i ** 2 for i in x]
+  
+# create a new plot
+s1 = figure(width=200, plot_height=200)
+s1.circle(x, y0, size=10, alpha=0.5)
+  
+# create another one
+s2 = figure(width=200, height=200)
+s2.triangle(x, y1, size=10, alpha=0.5)
+  
+# create and another
+s3 = figure(width=200, height=200)
+s3.square(x, y2, size=10, alpha=0.5)
+  
+# put all the plots in a VBox
+p = column(s1, s2, s3)
+  
+# show the results
+show(p)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209205340/bokehtutorialcolumn.png" alt="targets"></p>
+<h2 id="horizontal-layout">Horizontal Layout </h2>
+<p>Horizontal Layout set all the plots in the horizontal fashion. It can be created using the row() method.</p>
+<p>Example:</p>
+<h2 id="python3-16">Python3</h2>
+<pre><code>from bokeh.io import output_file, show
+from bokeh.layouts import row
+from bokeh.plotting import figure
+  
+  
+x = [1, 2, 3, 4, 5, 6]
+y0 = x
+y1 = [i * 2 for i in x]
+y2 = [i ** 2 for i in x]
+  
+# create a new plot
+s1 = figure(width=200, plot_height=200)
+s1.circle(x, y0, size=10, alpha=0.5)
+  
+# create another one
+s2 = figure(width=200, height=200)
+s2.triangle(x, y1, size=10, alpha=0.5)
+  
+# create and another
+s3 = figure(width=200, height=200)
+s3.square(x, y2, size=10, alpha=0.5)
+  
+# put all the plots in a VBox
+p = row(s1, s2, s3)
+  
+# show the results
+show(p)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209205822/BokehTutorialroe.png" alt="targets"></p>
+<h2 id="grid-layout">Grid Layout</h2>
+<p>gridplot() method can be used to arrange all the plots in the grid fashion. we can also pass None to leave a space empty for a plot.</p>
+<p>Example:</p>
+<h2 id="python3-17">Python3</h2>
+<pre><code>from bokeh.io import output_file, show
+from bokeh.layouts import gridplot
+from bokeh.plotting import figure
+  
+  
+x = [1, 2, 3, 4, 5, 6]
+y0 = x
+y1 = [i * 2 for i in x]
+y2 = [i ** 2 for i in x]
+  
+# create a new plot
+s1 = figure()
+s1.circle(x, y0, size=10, alpha=0.5)
+  
+# create another one
+s2 = figure()
+s2.triangle(x, y1, size=10, alpha=0.5)
+  
+# create and another
+s3 = figure()
+s3.square(x, y2, size=10, alpha=0.5)
+  
+# put all the plots in a grid
+p = gridplot([[s1, None], [s2, s3]], plot_width=200, plot_height=200)
+  
+# show the results
+show(p)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209210323/Bokehtutorialgrid.png" alt="targets"></p>
+<h2 id="interactive-data-visualization">Interactive Data Visualization</h2>
+<p>One of the key feature of Bokeh which differentiate it from other visualizing libraries is adding interaction to the Plot. Let&rsquo;s see various interactions that can be added to the plot.</p>
+<h2 id="configuring-plot-tools">Configuring Plot Tools</h2>
+<p>In all the above graphs you must have noticed a toolbar that appears mostly at the right of the plot. Bokeh provides us the methods to handle these tools. Tools can be classified into four categories.</p>
+<p>Gestures: These tools handle the gestures such as pan movement. There are three types of gestures:Pan/Drag ToolsClick/Tap ToolsScroll/Pinch Tools</p>
+<p>Pan/Drag Tools</p>
+<p>Click/Tap Tools</p>
+<p>Scroll/Pinch Tools</p>
+<p>Actions: These tools handle when a button is pressed.</p>
+<p>Inspectors: These tools report information or annotate the graph such as  HoverTool.</p>
+<p>Edit Tools: These are multi gestures tools that can add, delete glyphs from the graph.</p>
+<h2 id="adjusting-the-position-of-the-toolbar">Adjusting the Position of the ToolBar</h2>
+<p>We can specify the position of the toolbar according to our own needs. It can be done by passing the toolbar_location parameter to the figure() method. The possible value to this parameter is &ndash; </p>
+<p>&ldquo;above&rdquo;</p>
+<p>&ldquo;below&rdquo;</p>
+<p>&ldquo;left&rdquo;</p>
+<p>&ldquo;right&rdquo;</p>
+<p>Example: </p>
+<h2 id="python3-18">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh ToolBar&quot;, toolbar_location=&quot;below&quot;) 
+  
+# the points to be plotted 
+x = [1, 2, 3, 4, 5] 
+y = [1, 2, 3, 4, 5]  
+  
+# height / thickness of the plot
+width = 0.5
+  
+# plotting the scatter graph 
+graph.scatter(x, y) 
+  
+# displaying the model 
+show(graph)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210209215203/BokehTutorialtoolbar.png" alt="targets"></p>
+<h2 id="interactive-legends">Interactive Legends</h2>
+<p>In the section annotations and legends we have seen the list of all the parameters of the legends, however, we have not discussed the click_policy parameter yet. This property makes the legend interactive. There are two types of interactivity &ndash;</p>
+<p>Hiding: Hides the Glyphs.</p>
+<p>Muting: Hiding the glyph makes it vanish completely, on the other hand, muting the glyph just de-emphasizes the glyph based on the parameters.</p>
+<p>Example 1: Hiding the legend</p>
+<h2 id="python3-19">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# file to save the model 
+output_file(&quot;gfg.html&quot;) 
+          
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Hiding Glyphs&quot;) 
+  
+# plotting the graph 
+graph.vbar(x = 1, top = 5, 
+        width = 1, color = &quot;violet&quot;, 
+        legend_label = &quot;Violet Bar&quot;) 
+graph.vbar(x = 2, top = 5, 
+        width = 1, color = &quot;green&quot;, 
+        legend_label = &quot;Green Bar&quot;) 
+graph.vbar(x = 3, top = 5, 
+        width = 1, color = &quot;yellow&quot;, 
+        legend_label = &quot;Yellow Bar&quot;) 
+graph.vbar(x = 4, top = 5, 
+        width = 1, color = &quot;red&quot;, 
+        legend_label = &quot;Red Bar&quot;) 
+  
+# enable hiding of the glyphs 
+graph.legend.click_policy = &quot;hide&quot;
+  
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210171603/bokehtutorialhidinglegend.gif" alt="targets"></p>
+<p>Example 2: Muting the legend</p>
+<h2 id="python3-20">Python3</h2>
+<pre><code># importing the modules 
+from bokeh.plotting import figure, output_file, show 
+  
+# file to save the model 
+output_file(&quot;gfg.html&quot;) 
+          
+# instantiating the figure object 
+graph = figure(title = &quot;Bokeh Hiding Glyphs&quot;) 
+  
+# plotting the graph 
+graph.vbar(x = 1, top = 5, 
+        width = 1, color = &quot;violet&quot;, 
+        legend_label = &quot;Violet Bar&quot;, 
+        muted_alpha=0.2) 
+graph.vbar(x = 2, top = 5, 
+        width = 1, color = &quot;green&quot;, 
+        legend_label = &quot;Green Bar&quot;, 
+        muted_alpha=0.2) 
+graph.vbar(x = 3, top = 5, 
+        width = 1, color = &quot;yellow&quot;, 
+        legend_label = &quot;Yellow Bar&quot;, 
+        muted_alpha=0.2) 
+graph.vbar(x = 4, top = 5, 
+        width = 1, color = &quot;red&quot;, 
+        legend_label = &quot;Red Bar&quot;, 
+        muted_alpha=0.2) 
+  
+# enable hiding of the glyphs 
+graph.legend.click_policy = &quot;mute&quot;
+  
+# displaying the model 
+show(graph) 
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210171452/mutinglegendbokeh.gif" alt="targets"></p>
+<h2 id="adding-widgets-to-the-plot">Adding Widgets to the Plot</h2>
+<p>Bokeh provides GUI features similar to HTML forms like buttons, slider, checkbox, etc. These provide an interactive interface to the plot that allows to change the parameters of the plot, modifying plot data, etc. Let&rsquo;s see how to use and add some commonly used widgets. </p>
+<p>Buttons: This widget adds a simple button widget to the plot. We have to pass a custom JavaScript function to the CustomJS() method of the models class.</p>
+<p>Syntax:</p>
+<p>Button(label, icon, callback)</p>
+<p>Example:</p>
+<h2 id="python3-21">Python3</h2>
+<pre><code>from bokeh.io import show
+from bokeh.models import Button, CustomJS
+  
+button = Button(label=&quot;GFG&quot;)
+button.js_on_click(CustomJS(
+  code=&quot;console.log('button: click!', this.toString())&quot;))
+  
+show(button)
+</code></pre>
+<p>Output: </p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210175740/bokehtutorialbutton.png" alt="targets"></p>
+<p>CheckboxGroup: Adds a standard check box to the plot. Similarly to buttons we have to pass the custom JavaScript function to the CustomJS() method of the models class.</p>
+<p>Example:</p>
+<h2 id="python3-22">Python3</h2>
+<pre><code>from bokeh.io import show
+from bokeh.models import CheckboxGroup, CustomJS
+  
+L = [&quot;First&quot;, &quot;Second&quot;, &quot;Third&quot;]
+  
+# the active parameter sets checks the selected value 
+# by default
+checkbox_group = CheckboxGroup(labels=L, active=[0, 2])
+  
+checkbox_group.js_on_click(CustomJS(code=&quot;&quot;&quot;
+    console.log('checkbox_group: active=' + this.active, this.toString())
+&quot;&quot;&quot;))
+  
+show(checkbox_group)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210180650/bokehtutorialcheckbox.png" alt="targets"></p>
+<p>RadioGroup: Adds a simple radio button and accepts a custom JavaScript function.</p>
+<p>Syntax:</p>
+<p>RadioGroup(labels, active)</p>
+<p>Example:</p>
+<h2 id="python3-23">Python3</h2>
+<pre><code>from bokeh.io import show
+from bokeh.models import RadioGroup, CustomJS
+  
+L = [&quot;First&quot;, &quot;Second&quot;, &quot;Third&quot;]
+  
+# the active parameter sets checks the selected value 
+# by default
+radio_group = RadioGroup(labels=L, active=1)
+  
+radio_group.js_on_click(CustomJS(code=&quot;&quot;&quot;
+    console.log('radio_group: active=' + this.active, this.toString())
+&quot;&quot;&quot;))
+  
+show(radio_group)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210181845/bokehtutorialradiobutton.png" alt="targets"></p>
+<p>Sliders: Adds a slider to the plot. It also needs a custom JavaScript function.</p>
+<p>Syntax:</p>
+<p>Slider(start, end, step, value)</p>
+<p>Example:</p>
+<h2 id="python3-24">Python3</h2>
+<pre><code>from bokeh.io import show
+from bokeh.models import CustomJS, Slider
+  
+slider = Slider(start=1, end=20, value=1, step=2, title=&quot;Slider&quot;)
+  
+slider.js_on_change(&quot;value&quot;, CustomJS(code=&quot;&quot;&quot;
+    console.log('slider: value=' + this.value, this.toString())
+&quot;&quot;&quot;))
+  
+show(slider)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210182505/bokehtutorialslider.gif" alt="targets"></p>
+<p>DropDown: Adds a dropdown to the plot and like every other widget it also needs a custom JavaScript function as callback.</p>
+<p>Example:</p>
+<h2 id="python3-25">Python3</h2>
+<pre><code>from bokeh.io import show
+from bokeh.models import CustomJS, Dropdown
+  
+menu = [(&quot;First&quot;, &quot;First&quot;), (&quot;Second&quot;, &quot;Second&quot;), (&quot;Third&quot;, &quot;Third&quot;)]
+  
+dropdown = Dropdown(label=&quot;Dropdown Menu&quot;, button_type=&quot;success&quot;, menu=menu)
+  
+dropdown.js_on_event(&quot;menu_item_click&quot;, CustomJS(
+    code=&quot;console.log('dropdown: ' + this.item, this.toString())&quot;))
+  
+show(dropdown)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210190822/bokehtutorialdropdown.gif" alt="targets"></p>
+<p>Tab Widget: Tab Widget adds tabs and each tab show a different plot.</p>
+<p>Example:</p>
+<h2 id="python3-26">Python3</h2>
+<pre><code>from bokeh.plotting import figure, output_file, show
+from bokeh.models import Panel, Tabs
+import numpy as np
+import math
+  
+  
+fig1 = figure(plot_width=300, plot_height=300)
+  
+x = [1, 2, 3, 4, 5]
+y = [5, 4, 3, 2, 1]
+  
+fig1.line(x, y, line_color='green')
+tab1 = Panel(child=fig1, title=&quot;Tab 1&quot;)
+  
+fig2 = figure(plot_width=300, plot_height=300)
+  
+fig2.line(y, x, line_color='red')
+tab2 = Panel(child=fig2, title=&quot;Tab 2&quot;)
+  
+all_tabs = Tabs(tabs=[tab1, tab2])
+  
+show(all_tabs)
+</code></pre>
+<p>Output:</p>
+<p><img src="/images/pythonimg/wp-content/uploads/20210210191552/bokehtutorialtabs.gif" alt="targets"></p>
+<h2 id="creating-different-types-of-glyphs">Creating Different Types of Glyphs</h2>
+<p>Diamond Glyph</p>
+<p>Dash Glyph</p>
+<p>Cross Glyph</p>
+<p>Diamond Glyph</p>
+<p>Diamond Cross Glyph</p>
+<p>Diamond Dot Glyph</p>
+<p>Ray Glyph</p>
+<p>Triangle Pins Glyph</p>
+<p>Triangle with Dots Glyph</p>
+<p>Inverted Triangle Glyph</p>
+<p>Plus Glyph</p>
+<p>Quadrilateral Glyph</p>
+<p>Y Glyph</p>
+<p>X Glyph</p>
+<p>Oval Glyph</p>
+<p>Hexagon Glyph</p>
+<p>Hexagon Tiles Glyph</p>
+<p>Hexagon Dots Glyph</p>
+<p>Square with Cross Glyph</p>
+<p>Square with Dots Glyph</p>
+<p>Square with X&rsquo;s Glyph</p>
+<p>Ellipse glyph</p>
+<p>Annulus Glyph</p>
+<p>Bezier Glyph</p>
+<p>Asterisk Glyph</p>
+<p>AnnularWedge Glyph</p>
+<p>Step Glyph</p>
+<h2 id="visualizing-different-types-of-data">Visualizing Different Types of Data</h2>
+<p>Python Bokeh &ndash; Visualizing the Iris Dataset</p>
+<p>Python Bokeh &ndash; Visualizing Stock Data</p>
+<p>Interactive visualization of data using Bokeh</p>
+<h2 id="more-topics-on-bokeh">More Topics on Bokeh</h2>
+<p>Python Bokeh &ndash; Colors Class</p>
+<p>How to use Color Palettes in Python-Bokeh?</p>
+<p>Python Bokeh &ndash; Plotting Quadratic Curves on a Graph</p>
+<p>Python Bokeh &ndash; Plotting Line Segments on a Graph</p>
+<p>Python Bokeh &ndash; Plotting Multiple Lines on a Graph</p>
+<p>Python Bokeh &ndash; Plotting glyphs over a Google Map</p>
+<p>Python Bokeh &ndash; Plot for all Types of Google Maps ( roadmap, satellite, hybrid, terrain)</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/python/python-plotly-tutorial-/" title="Python Plotly tutorial " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/python/tableau-tutorial-/" title="Tableau Tutorial " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

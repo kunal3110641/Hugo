@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pragmatic Programmer on SATHEE</title>
+    <link>/pragmatic-programmer/</link>
+    <description>Recent content in Pragmatic Programmer on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/pragmatic-programmer/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Chapter 1 A Pragmatic Philosophy </title>
+      <link>/pragmatic-programmer/f_0017/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0017/</guid>
+      <description>A Pragmatic Philosophy Make no mistake, it is your career, and more importantly, Topic 1, ​It&amp;rsquo;s Your Life​. You own it. You&amp;rsquo;re here because you know you can become a better developer and help others become better as well. You can become a Pragmatic Programmer.
+What distinguishes Pragmatic Programmers? We feel it&amp;rsquo;s an attitude, a style, a philosophy of approaching problems and their solutions. They think beyond the immediate problem, placing it in its larger context and seeking out the bigger picture.</description>
+    </item>
+    
+    <item>
+      <title>Topic 1 It&#39;s Your Life</title>
+      <link>/pragmatic-programmer/f_0018/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0018/</guid>
+      <description>It&amp;rsquo;s Your Life I&amp;rsquo;m not in this world to live up to your expectations and you&amp;rsquo;re not in this world to live up to mine. :::
+Bruce Lee ::: :::
+It is your life. You own it. You run it. You create it.
+Many developers we talk to are frustrated. Their concerns are varied. Some feel they&amp;rsquo;re stagnating in their job, others that technology has passed them by. Folks feel they are under appreciated, or underpaid, or that their teams are toxic.</description>
+    </item>
+    
+    <item>
+      <title>Topic 2 The Cat Ate My Source Code</title>
+      <link>/pragmatic-programmer/f_0019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0019/</guid>
+      <description>The Cat Ate My Source Code The greatest of all weaknesses is the fear of appearing weak. :::
+J.B. Bossuet, Politics from Holy Writ, 1709 ::: :::
+One of the cornerstones of the pragmatic philosophy is the idea of taking responsibility for yourself and your actions in terms of your career advancement, your learning and education, your project, and your day-to-day work. Pragmatic Programmers take charge of their own career, and aren&amp;rsquo;t afraid to admit ignorance or error.</description>
+    </item>
+    
+    <item>
+      <title>Topic 3 Software Entropy</title>
+      <link>/pragmatic-programmer/f_0020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0020/</guid>
+      <description>Software Entropy While software development is immune from almost all physical laws, the inexorable increase in entropy hits us hard. Entropy is a term from physics that refers to the amount of &amp;ldquo;disorder&amp;rdquo; in a system. Unfortunately, the laws of thermodynamics guarantee that the entropy in the universe tends toward a maximum. When disorder increases in software, we call it &amp;ldquo;software rot.&amp;rdquo; Some folks might call it by the more optimistic term, &amp;ldquo;technical debt,&amp;rdquo; with the implied notion that they&amp;rsquo;ll pay it back someday.</description>
+    </item>
+    
+    <item>
+      <title>Topic 4 Software Entropy</title>
+      <link>/pragmatic-programmer/f_0021/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0021/</guid>
+      <description>Stone Soup and Boiled Frogs The three soldiers returning home from war were hungry. When they saw the village ahead their spirits lifted&amp;mdash;they were sure the villagers would give them a meal. But when they got there, they found the doors locked and the windows closed. After many years of war, the villagers were short of food, and hoarded what they had.
+Undeterred, the soldiers boiled a pot of water and carefully placed three stones into it.</description>
+    </item>
+    
+    <item>
+      <title>Topic 5 Good-Enough Software  </title>
+      <link>/pragmatic-programmer/f_0022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0022/</guid>
+      <description>Good-Enough Software Striving to better, oft we mar what&amp;rsquo;s well. :::
+Shakespeare, King Lear 1.4 ::: :::
+There&amp;rsquo;s an old(ish) joke about a company that places an order for 100,000 ICs with a Japanese manufacturer. Part of the specification was the defect rate: one chip in 10,000. A few weeks later the order arrived: one large box containing thousands of ICs, and a small one containing just ten. Attached to the small box was a label that read: &amp;ldquo;These are the faulty ones.</description>
+    </item>
+    
+    <item>
+      <title>Topic 6 Your Knowledge Portfolio </title>
+      <link>/pragmatic-programmer/f_0023/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0023/</guid>
+      <description>Your Knowledge Portfolio An investment in knowledge always pays the best interest. :::
+Benjamin Franklin ::: :::
+Ah, good old Ben Franklin&amp;mdash;never at a loss for a pithy homily. Why, if we could just be early to bed and early to rise, we&amp;rsquo;d be great programmers&amp;mdash;right? The early bird might get the worm, but what happens to the early worm?
+In this case, though, Ben really hit the nail on the head.</description>
+    </item>
+    
+    <item>
+      <title>Topic 7 Communicate! </title>
+      <link>/pragmatic-programmer/f_0024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0024/</guid>
+      <description>Communicate! I believe that it is better to be looked over than it is to be overlooked. :::
+Mae West, Belle of the Nineties, 1934 ::: :::
+Maybe we can learn a lesson from Ms. West. It&amp;rsquo;s not just what you&amp;rsquo;ve got, but also how you package it. Having the best ideas, the finest code, or the most pragmatic thinking is ultimately sterile unless you can communicate with other people. A good idea is an orphan without effective communication.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 2 A Pragmatic Approach</title>
+      <link>/pragmatic-programmer/f_0025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0025/</guid>
+      <description>A Pragmatic Approach There are certain tips and tricks that apply at all levels of software development, processes that are virtually universal, and ideas that are almost axiomatic. However, these approaches are rarely documented as such; you&amp;rsquo;ll mostly find them written down as odd sentences in discussions of design, project management, or coding. But for your convenience, we&amp;rsquo;ll bring these ideas and processes together here.
+The first and maybe most important topic gets to the heart of software development: Topic 8, ​The Essence of Good Design​.</description>
+    </item>
+    
+    <item>
+      <title>Topic 8 The Essence of Good Design</title>
+      <link>/pragmatic-programmer/f_0026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0026/</guid>
+      <description>The Essence of Good Design The world is full of gurus and pundits, all eager to pass on their hard-earned wisdom when it comes to How to Design Software. There are acronyms, lists (which seem to favor five entries), patterns, diagrams, videos, talks, and (the internet being the internet) probably a cool series on the Law of Demeter explained using interpretive dance.
+And we, your gentle authors, are guilty of this too.</description>
+    </item>
+    
+    <item>
+      <title>Topic 9 DRY---The Evils of Duplication</title>
+      <link>/pragmatic-programmer/f_0027/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0027/</guid>
+      <description>DRY&amp;mdash;The Evils of Duplication Giving a computer two contradictory pieces of knowledge was Captain James T. Kirk&amp;rsquo;s preferred way of disabling a marauding artificial intelligence. Unfortunately, the same principle can be effective in bringing down your code.
+As programmers, we collect, organize, maintain, and harness knowledge. We document knowledge in specifications, we make it come alive in running code, and we use it to provide the checks needed during testing.</description>
+    </item>
+    
+    <item>
+      <title>Topic 10 Orthogonality  </title>
+      <link>/pragmatic-programmer/f_0028/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0028/</guid>
+      <description>Orthogonality Orthogonality is a critical concept if you want to produce systems that are easy to design, build, test, and extend. However, the concept of orthogonality is rarely taught directly. Often it is an implicit feature of various other methods and techniques you learn. This is a mistake. Once you learn to apply the principle of orthogonality directly, you&amp;rsquo;ll notice an immediate improvement in the quality of systems you produce.</description>
+    </item>
+    
+    <item>
+      <title>Topic 11 Reversibility  </title>
+      <link>/pragmatic-programmer/f_0029/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0029/</guid>
+      <description>Reversibility Nothing is more dangerous than an idea if it&amp;rsquo;s the only one you have. :::
+Emil-Auguste Chartier (Alain), Propos sur la religion, 1938 ::: :::
+Engineers prefer simple, singular solutions to problems. Math tests that allow you to proclaim with great confidence that {#d24e4794 .inline width=&amp;ldquo;47&amp;rdquo; height=&amp;ldquo;25&amp;rdquo;} are much more comfortable than fuzzy, warm essays about the myriad causes of the French Revolution. Management tends to agree with the engineers: singular, easy answers fit nicely on spreadsheets and project plans.</description>
+    </item>
+    
+    <item>
+      <title>Topic 12 Tracer Bullets </title>
+      <link>/pragmatic-programmer/f_0030/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0030/</guid>
+      <description>Tracer Bullets Ready, fire, aim&amp;hellip; :::
+Anon ::: :::
+We often talk about hitting targets when we develop software. We&amp;rsquo;re not actually firing anything at the shooting range, but it&amp;rsquo;s still a useful and very visual metaphor. In particular, it&amp;rsquo;s interesting to consider how to hit a target in a complex and shifting world.
+The answer, of course, depends on the nature of the device you&amp;rsquo;re aiming with. With many you only get one chance to aim, and then get to see if you hit the bullseye or not.</description>
+    </item>
+    
+    <item>
+      <title>Topic 13 Prototypes and Post-it Notes</title>
+      <link>/pragmatic-programmer/f_0031/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0031/</guid>
+      <description>Prototypes and Post-it Notes Many industries use prototypes to try out specific ideas; prototyping is much cheaper than full-scale production. Car makers, for example, may build many different prototypes of a new car design. Each one is designed to test a specific aspect of the car&amp;mdash;the aerodynamics, styling, structural characteristics, and so on. Old school folks might use a clay model for wind tunnel testing, maybe a balsa wood and duct tape model will do for the art department, and so on.</description>
+    </item>
+    
+    <item>
+      <title>Topic 14 Domain Languages</title>
+      <link>/pragmatic-programmer/f_0032/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0032/</guid>
+      <description>Domain Languages The limits of language are the limits of one&amp;rsquo;s world. :::
+Ludwig Wittgenstein ::: :::
+Computer languages influence how you think about a problem, and how you think about communicating. Every language comes with a list of features: buzzwords such as static versus dynamic typing, early versus late binding, functional versus OO, inheritance models, mixins, macros&amp;mdash;all of which may suggest or obscure certain solutions. Designing a solution with C++ in mind will produce different results than a solution based on Haskell-style thinking, and vice versa.</description>
+    </item>
+    
+    <item>
+      <title>Topic 15 Estimating </title>
+      <link>/pragmatic-programmer/f_0033/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0033/</guid>
+      <description>Estimating The Library of Congress in Washington, DC, currently has about 75 terabytes of digital information online. Quick! How long will it take to send all that information over a 1Gbps network? How much storage will you need for a million names and addresses? How long does it take to compress 100Mb of text? How many months will it take to deliver your project?
+At one level, these are all meaningless questions&amp;mdash;they are all missing information.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 3 The Basic Tools</title>
+      <link>/pragmatic-programmer/f_0034/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0034/</guid>
+      <description>The Basic Tools Every maker starts their journey with a basic set of good-quality tools. A woodworker might need rules, gauges, a couple of saws, some good planes, fine chisels, drills and braces, mallets, and clamps. These tools will be lovingly chosen, will be built to last, will perform specific jobs with little overlap with other tools, and, perhaps most importantly, will feel right in the budding woodworker&amp;rsquo;s hands.
+Then begins a process of learning and adaptation.</description>
+    </item>
+    
+    <item>
+      <title>Topic 16 The Power of Plain Text</title>
+      <link>/pragmatic-programmer/f_0035/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0035/</guid>
+      <description>The Power of Plain Text As Pragmatic Programmers, our base material isn&amp;rsquo;t wood or iron, it&amp;rsquo;s knowledge. We gather requirements as knowledge, and then express that knowledge in our designs, implementations, tests, and documents. And we believe that the best format for storing knowledge persistently is plain text. With plain text, we give ourselves the ability to manipulate knowledge, both manually and programmatically, using virtually every tool at our disposal.</description>
+    </item>
+    
+    <item>
+      <title>Topic 17 Shell Games   </title>
+      <link>/pragmatic-programmer/f_0036/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0036/</guid>
+      <description>Shell Games Every woodworker needs a good, solid, reliable workbench, somewhere to hold work pieces at a convenient height while they&amp;rsquo;re being shaped. The workbench becomes the center of the woodshop, the maker returning to it time and time again as a piece takes shape.
+For a programmer manipulating files of text, that workbench is the command shell. From the shell prompt, you can invoke your full repertoire of tools, using pipes to combine them in ways never dreamt of by their original developers.</description>
+    </item>
+    
+    <item>
+      <title>Topic 18 Power Editing </title>
+      <link>/pragmatic-programmer/f_0037/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0037/</guid>
+      <description>Power Editing We&amp;rsquo;ve talked before about tools being an extension of your hand. Well, this applies to editors more than to any other software tool. You need to be able to manipulate text as effortlessly as possible, because text is the basic raw material of programming.
+In the first edition of this book we recommended using a single editor for everything: code, documentation, memos, system administration, and so on. We&amp;rsquo;ve softened that position a little.</description>
+    </item>
+    
+    <item>
+      <title>Topic 19 Version Control</title>
+      <link>/pragmatic-programmer/f_0038/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0038/</guid>
+      <description>Version Control Progress, far from consisting in change, depends on retentiveness. Those who cannot remember the past are condemned to repeat it. :::
+George Santayana, Life of Reason ::: :::
+One of the important things we look for in a user interface is the undo key&amp;mdash;a single button that forgives us our mistakes. It&amp;rsquo;s even better if the environment supports multiple levels of undo and redo, so you can go back and recover from something that happened a couple of minutes ago.</description>
+    </item>
+    
+    <item>
+      <title>Topic 20 Debugging</title>
+      <link>/pragmatic-programmer/f_0039/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0039/</guid>
+      <description>Debugging It is a painful thing
+To look at your own trouble and know
+That you yourself and no one else has made it :::
+Sophocles, Ajax :::
+The word bug has been used to describe an &amp;ldquo;object of terror&amp;rsquo;&#39; ever since the fourteenth century. Rear Admiral Dr. Grace Hopper, the inventor of COBOL, is credited with observing the first computer bug&amp;mdash;literally, a moth caught in a relay in an early computer system.</description>
+    </item>
+    
+    <item>
+      <title>Topic 21 Text Manipulation</title>
+      <link>/pragmatic-programmer/f_0040/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0040/</guid>
+      <description>Text Manipulation Pragmatic Programmers manipulate text the same way woodworkers shape wood. In previous sections we discussed some specific tools&amp;mdash;shells, editors, debuggers&amp;mdash;that we use. These are similar to a woodworker&amp;rsquo;s chisels, saws, and planes&amp;mdash;tools specialized to do one or two jobs well. However, every now and then we need to perform some transformation not readily handled by the basic tool set. We need a general-purpose text manipulation tool.
+Text manipulation languages are to programming what routers^[28]^ are to woodworking.</description>
+    </item>
+    
+    <item>
+      <title>Topic 22 Engineering Daybooks</title>
+      <link>/pragmatic-programmer/f_0041/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0041/</guid>
+      <description>Engineering Daybooks Dave once worked for a small computer manufacturer, which meant working alongside electronic and sometimes mechanical engineers.
+Many of them walked around with a paper notebook, normally with a pen stuffed down the spine. Every now and then when we were talking, they&amp;rsquo;d pop the notebook open and scribble something.
+Eventually Dave asked the obvious question. It turned out that they&amp;rsquo;d been trained to keep an engineering daybook, a kind of journal in which they recorded what they did, things they&amp;rsquo;d learned, sketches of ideas, readings from meters: basically anything to do with their work.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 4 Pragmatic Paranoia</title>
+      <link>/pragmatic-programmer/f_0042/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0042/</guid>
+      <description>Pragmatic Paranoia Tip 36 You Can&amp;rsquo;t Write Perfect Software
+Did that hurt? It shouldn&amp;rsquo;t. Accept it as an axiom of life. Embrace it. Celebrate it. Because perfect software doesn&amp;rsquo;t exist. No one in the brief history of computing has ever written a piece of perfect software. It&amp;rsquo;s unlikely that you&amp;rsquo;ll be the first. And unless you accept this as a fact, you&amp;rsquo;ll end up wasting time and energy chasing an impossible dream.</description>
+    </item>
+    
+    <item>
+      <title>Topic 23 Design by Contract </title>
+      <link>/pragmatic-programmer/f_0043/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0043/</guid>
+      <description>Design by Contract Nothing astonishes men so much as common sense and plain dealing. :::
+Ralph Waldo Emerson, Essays ::: :::
+Dealing with computer systems is hard. Dealing with people is even harder. But as a species, we&amp;rsquo;ve had longer to figure out issues of human interactions. Some of the solutions we&amp;rsquo;ve come up with during the last few millennia can be applied to writing software as well. One of the best solutions for ensuring plain dealing is the contract.</description>
+    </item>
+    
+    <item>
+      <title>Topic 24 Dead Programs Tell No Lies  </title>
+      <link>/pragmatic-programmer/f_0044/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0044/</guid>
+      <description>Dead Programs Tell No Lies Have you noticed that sometimes other people can detect that things aren&amp;rsquo;t well with you before you&amp;rsquo;re aware of the problem yourself? It&amp;rsquo;s the same with other people&amp;rsquo;s code. If something is starting to go awry with one of our programs, sometimes it is a library or framework routine that catches it first. Maybe we&amp;rsquo;ve passed in a nil value, or an empty list. Maybe there&amp;rsquo;s a missing key in that hash, or the value we thought contained a hash really contains a list instead.</description>
+    </item>
+    
+    <item>
+      <title>Topic 25 Assertive Programming  </title>
+      <link>/pragmatic-programmer/f_0045/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0045/</guid>
+      <description>Assertive Programming There is a luxury in self-reproach. When we blame ourselves we feel no one else has a right to blame us. :::
+Oscar Wilde, The Picture of Dorian Gray :::
+It seems that there&amp;rsquo;s a mantra that every programmer must memorize early in his or her career. It is a fundamental tenet of computing, a core belief that we learn to apply to requirements, designs, code, comments, just about everything we do.</description>
+    </item>
+    
+    <item>
+      <title>Topic 26 How to Balance Resources  </title>
+      <link>/pragmatic-programmer/f_0046/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0046/</guid>
+      <description>How to Balance Resources To light a candle is to cast a shadow... :::
+Ursula K. Le Guin, A Wizard of Earthsea :::
+We all manage resources whenever we code: memory, transactions, threads, network connections, files, timers&amp;mdash;all kinds of things with limited availability. Most of the time, resource usage follows a predictable pattern: you allocate the resource, use it, and then deallocate it.
+However, many developers have no consistent plan for dealing with resource allocation and deallocation.</description>
+    </item>
+    
+    <item>
+      <title>Topic 27 Don&#39;t Outrun Your Headlights </title>
+      <link>/pragmatic-programmer/f_0047/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0047/</guid>
+      <description>Don&amp;rsquo;t Outrun Your Headlights It&amp;rsquo;s tough to make predictions, especially about the future. :::
+Lawrence &amp;quot;Yogi&amp;quot; Berra, after a Danish Proverb :::
+It&amp;rsquo;s late at night, dark, pouring rain. The two-seater whips around the tight curves of the twisty little mountain roads, barely holding the corners. A hairpin comes up and the car misses it, crashing though the skimpy guardrail and soaring to a fiery crash in the valley below. State troopers arrive on the scene, and the senior officer sadly shakes their head.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 5 Bend, or Break</title>
+      <link>/pragmatic-programmer/f_0048/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0048/</guid>
+      <description>Chapter 5 Bend, or Break Life doesn&amp;rsquo;t stand still. Neither can the code that we write. In order to keep up with today&amp;rsquo;s near-frantic pace of change, we need to make every effort to write code that&amp;rsquo;s as loose&amp;mdash;as flexible&amp;mdash;as possible. Otherwise we may find our code quickly becoming outdated, or too brittle to fix, and may ultimately be left behind in the mad dash toward the future.
+Back in Topic 11, ​Reversibility​ we talked about the perils of irreversible decisions.</description>
+    </item>
+    
+    <item>
+      <title>Topic 28  Decoupling</title>
+      <link>/pragmatic-programmer/f_0049/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0049/</guid>
+      <description>Decoupling When we try to pick out anything by itself, we find it hitched to everything else in the Universe. :::
+John Muir, My First Summer in the Sierra :::
+In Topic 8, ​The Essence of Good Design​ we claim that using good design principles will make the code you write easy to change. Coupling is the enemy of change, because it links together things that must change in parallel. This makes change more difficult: either you spend time tracking down all the parts that need changing, or you spend time wondering why things broke when you changed &amp;ldquo;just one thing&amp;rdquo; and not the other things to which it was coupled.</description>
+    </item>
+    
+    <item>
+      <title>Topic 29  Juggling the Real World  </title>
+      <link>/pragmatic-programmer/f_0050/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0050/</guid>
+      <description>Juggling the Real World Things don&amp;rsquo;t just happen; they are made to happen. :::
+John F. Kennedy :::
+In the old days, when your authors still had their boyish good looks, computers were not particularly flexible. We&amp;rsquo;d typically organize the way we interacted with them based on their limitations.
+Today, we expect more: computers have to integrate into our world, not the other way around. And our world is messy: things are constantly happening, stuff gets moved around, we change our minds, &amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Topic 30 Transforming Programming</title>
+      <link>/pragmatic-programmer/f_0051/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0051/</guid>
+      <description>Transforming Programming If you can&amp;rsquo;t describe what you are doing as a process, you don&amp;rsquo;t know what you&amp;rsquo;re doing. :::
+W. Edwards Deming, (attr) :::
+All programs transform data, converting an input into an output. And yet when we think about design, we rarely think about creating transformations. Instead we worry about classes and modules, data structures and algorithms, languages and frameworks.
+We think that this focus on code often misses the point: we need to get back to thinking of programs as being something that transforms inputs into outputs.</description>
+    </item>
+    
+    <item>
+      <title>Topic 31 Inheritance Tax</title>
+      <link>/pragmatic-programmer/f_0052/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0052/</guid>
+      <description>Inheritance Tax You wanted a banana but what you got was a gorilla holding the banana and the entire jungle. :::
+Joe Armstrong :::
+Do you program in an object-oriented language? Do you use inheritance?
+If so, stop! It probably isn&amp;rsquo;t what you want to do.
+Let&amp;rsquo;s see why.
+Some Background Inheritance first appeared in Simula 67 in 1969. It was an elegant solution to the problem of queuing multiple types of events on the same list.</description>
+    </item>
+    
+    <item>
+      <title>Topic 32 Configuration</title>
+      <link>/pragmatic-programmer/f_0053/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0053/</guid>
+      <description>Configuration Let all your things have their places; let each part of your business have its time. :::
+Benjamin Franklin, Thirteen Virtues, autobiography :::
+When code relies on values that may change after the application has gone live, keep those values external to the app. When your application will run in different environments, and potentially for different customers, keep the environment- and customer-specific values outside the app. In this way, you&amp;rsquo;re parameterizing your application; the code adapts to the places it runs.</description>
+    </item>
+    
+    <item>
+      <title>Chapter 6 Concurrency</title>
+      <link>/pragmatic-programmer/f_0054/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0054/</guid>
+      <description>Concurrency Chapter 6 Concurrency Just so we&amp;rsquo;re all on the same page, let&amp;rsquo;s start with some definitions:
+Concurrency is when the execution of two or more pieces of code act as if they run at the same time. Parallelism is when they do run at the same time.
+To have concurrency, you need to run code in an environment that can switch execution between different parts of your code when it is running.</description>
+    </item>
+    
+    <item>
+      <title> Everything Is Concurrent </title>
+      <link>/pragmatic-programmer/f_0055/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0055/</guid>
+      <description>Everything Is Concurrent It&amp;rsquo;s almost impossible to write code in a decent-sized system that doesn&amp;rsquo;t have concurrent aspects to it. They may be explicit, or they may be buried inside a library. Concurrency is a requirement if you want your application to be able to deal with the real world, where things are asynchronous: users are interacting, data is being fetched, external services are being called, all at the same time.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 33 Breaking Temporal Coupling </title>
+      <link>/pragmatic-programmer/f_0056/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0056/</guid>
+      <description>Breaking Temporal Coupling &amp;ldquo;What is temporal coupling all about?&amp;rdquo;, you may ask. It&amp;rsquo;s about time.
+Time is an often ignored aspect of software architectures. The only time that preoccupies us is the time on the schedule, the time left until we ship&amp;mdash;but this is not what we&amp;rsquo;re talking about here. Instead, we are talking about the role of time as a design element of the software itself. There are two aspects of time that are important to us: concurrency (things happening at the same time) and ordering (the relative positions of things in time).</description>
+    </item>
+    
+    <item>
+      <title>  Topic 34 Shared State Is Incorrect State </title>
+      <link>/pragmatic-programmer/f_0057/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0057/</guid>
+      <description>Shared State Is Incorrect State You&amp;rsquo;re in your favorite diner. You finish your main course, and ask your server if there&amp;rsquo;s any apple pie left. He looks over his shoulder, sees one piece in the display case, and says yes. You order it and sigh contentedly.
+Meanwhile, on the other side of the restaurant, another customer asks their server the same question. She also looks, confirms there&amp;rsquo;s a piece, and that customer orders.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 35 Actors and Processes</title>
+      <link>/pragmatic-programmer/f_0058/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0058/</guid>
+      <description>Actors and Processes Without writers, stories would not be written,
+Without actors, stories could not be brought to life. :::
+Angie-Marie Delsante ::: :::
+Actors and processes offer interesting ways of implementing concurrency without the burden of synchronizing access to shared memory.
+Before we get into them, however, we need to define what we mean. And this is going to sound academic. Never fear, we&amp;rsquo;ll be working through it all in a short while.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 36 Blackboards</title>
+      <link>/pragmatic-programmer/f_0059/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0059/</guid>
+      <description>Blackboards The writing is on the wall&amp;hellip; :::
+Daniel 5 (ref) :::
+Consider how detectives might use a blackboard to coordinate and solve a murder investigation. The chief inspector starts off by setting up a large blackboard in the conference room. On it, she writes a single question:
+H. Dumpty (Male, Egg): Accident? Murder?
+Did Humpty really fall, or was he pushed? Each detective may make contributions to this potential murder mystery by adding facts, statements from witnesses, any forensic evidence that might arise, and so on.</description>
+    </item>
+    
+    <item>
+      <title> Chapter 7 While You Are Coding</title>
+      <link>/pragmatic-programmer/f_0060/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0060/</guid>
+      <description>Chapter 7 While You Are Coding Conventional wisdom says that once a project is in the coding phase, the work is mostly mechanical, transcribing the design into executable statements. We think that this attitude is the single biggest reason that software projects fail, and many systems end up ugly, inefficient, poorly structured, unmaintainable, or just plain wrong.
+Coding is not mechanical. If it were, all the CASE tools that people pinned their hopes on way back in the early 1980s would have replaced programmers long ago.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 37  Listen to Your Lizard Brain</title>
+      <link>/pragmatic-programmer/f_0061/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0061/</guid>
+      <description>Listen to Your Lizard Brain Only human beings can look directly at something, have all the information they need to make an accurate prediction, perhaps even momentarily make the accurate prediction, and then say that it isn&amp;rsquo;t so. :::
+Gavin de Becker, The Gift of Fear :::
+Gavin de Becker&amp;rsquo;s life&amp;rsquo;s work is helping people to protect themselves. His book, The Gift of Fear: And Other Survival Signals That Protect Us from Violence [de 98], encapsulates his message.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 38  Programming by Coincidence</title>
+      <link>/pragmatic-programmer/f_0062/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0062/</guid>
+      <description>Topic 38 Programming by Coincidence Do you ever watch old black-and-white war movies? The weary soldier advances cautiously out of the brush. There&amp;rsquo;s a clearing ahead: are there any land mines, or is it safe to cross? There aren&amp;rsquo;t any indications that it&amp;rsquo;s a minefield&amp;mdash;no signs, barbed wire, or craters. The soldier pokes the ground ahead of him with his bayonet and winces, expecting an explosion. There isn&amp;rsquo;t one. So he proceeds painstakingly through the field for a while, prodding and poking as he goes.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 39 Algorithm Speed  </title>
+      <link>/pragmatic-programmer/f_0063/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0063/</guid>
+      <description>Topic 39 Algorithm Speed In Topic 15, ​Estimating​, we talked about estimating things such as how long it takes to walk across town, or how long a project will take to finish. However, there is another kind of estimating that Pragmatic Programmers use almost daily: estimating the resources that algorithms use&amp;mdash;time, processor, memory, and so on.
+This kind of estimating is often crucial. Given a choice between two ways of doing something, which do you pick?</description>
+    </item>
+    
+    <item>
+      <title>  Topic 40 Refactoring</title>
+      <link>/pragmatic-programmer/f_0064/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0064/</guid>
+      <description>Topic 40 Refactoring Change and decay in all around I see... :::
+H. F. Lyte, Abide With Me :::
+As a program evolves, it will become necessary to rethink earlier decisions and rework portions of the code. This process is perfectly natural. Code needs to evolve; it&amp;rsquo;s not a static thing.
+Unfortunately, the most common metaphor for software development is building construction. Bertrand Meyer&amp;rsquo;s classic work Object-Oriented Software Construction [Mey97] uses the term &amp;ldquo;Software Construction,&amp;rdquo; and even your humble authors edited the Software Construction column for IEEE Software in the early 2000s.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 41 Test to Code</title>
+      <link>/pragmatic-programmer/f_0065/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0065/</guid>
+      <description>Topic 41 Test to Code The first edition of this book was written in more primitive times, when most developers wrote no tests&amp;mdash;why bother, they thought, the world was going to end in the year 2000 anyway.
+In that book, we had a section on how to build code that was easy to test. It was a sneaky way of convincing developers to actually write tests.
+These are more enlightened times.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 42 Property-Based Testing</title>
+      <link>/pragmatic-programmer/f_0066/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0066/</guid>
+      <description>Topic 42 Property-Based Testing (Trust, but verify) :::
+Russian proverb ::: :::
+We recommend writing unit tests for your functions. You do that by thinking about typical things that might be a problem, based on your knowledge of the thing you&amp;rsquo;re testing.
+There&amp;rsquo;s a small but potentially significant problem lurking in that paragraph, though. If you write the original code and you write the tests, is it possible that an incorrect assumption could be expressed in both?</description>
+    </item>
+    
+    <item>
+      <title>  Topic 43 Stay Safe Out There </title>
+      <link>/pragmatic-programmer/f_0067/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0067/</guid>
+      <description>Topic 43 Stay Safe Out There Good fences make good neighbors. :::
+Robert Frost, Mending Wall :::
+In the first edition&amp;rsquo;s discussion of code coupling we made a bold and naive statement: &amp;ldquo;we don&amp;rsquo;t need to be as paranoid as spies or dissidents.&amp;rdquo; We were wrong. In fact, you do need to be that paranoid, every day.
+As we write this, the daily news is filled with stories of devastating data breaches, hijacked systems, and cyberfraud.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 44 Naming Things</title>
+      <link>/pragmatic-programmer/f_0068/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0068/</guid>
+      <description>Topic 44 Naming Things The beginning of wisdom is to call things by their proper name. :::
+Confucius :::
+What&amp;rsquo;s in a name? When we&amp;rsquo;re programming, the answer is &amp;ldquo;everything!&amp;rdquo;
+We create names for applications, subsystems, modules, functions, variables&amp;mdash;we&amp;rsquo;re constantly creating new things and bestowing names on them. And those names are very, very important, because they reveal a lot about your intent and belief.
+We believe that things should be named according to the role they play in your code.</description>
+    </item>
+    
+    <item>
+      <title> Chapter 8 Before the Project</title>
+      <link>/pragmatic-programmer/f_0069/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0069/</guid>
+      <description>Chapter 8 Before the Project At the very beginning of a project, you and the team need to learn the requirements. Simply being told what to do or listening to users is not enough: read Topic 45, ​The Requirements Pit​ and learn how to avoid the common traps and pitfalls.
+Conventional wisdom and constraint management are the topics of Topic 46, ​Solving Impossible Puzzles​. Whether you are performing requirements, analysis, coding, or testing, difficult problems will crop up.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 45 The Requirements Pit</title>
+      <link>/pragmatic-programmer/f_0070/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0070/</guid>
+      <description>Topic 45 The Requirements Pit Perfection is achieved, not when there is nothing left to add
+but when there is nothing left to take away... :::
+Antoine de St. Exupery, Wind, Sand, and Stars, 1939 ::: :::
+Many books and tutorials refer to requirements gathering as an early phase of the project. The word &amp;ldquo;gathering&amp;rdquo; seems to imply a tribe of happy analysts, foraging for nuggets of wisdom that are lying on the ground all around them while the Pastoral Symphony plays gently in the background.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 46 Solving Impossible Puzzles </title>
+      <link>/pragmatic-programmer/f_0071/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0071/</guid>
+      <description>Topic 46 Solving Impossible Puzzles Gordius, the King of Phrygia, once tied a knot that no one could untie. It was said that whoever solved the riddle of the Gordian Knot would rule all of Asia. So along comes Alexander the Great, who chops the knot to bits with his sword. Just a little different interpretation of the requirements, that&amp;rsquo;s all&amp;hellip;. And he did end up ruling most of Asia. :::</description>
+    </item>
+    
+    <item>
+      <title>  Topic 47 Working Together </title>
+      <link>/pragmatic-programmer/f_0072/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0072/</guid>
+      <description>Topic 47 Working Together I&amp;rsquo;ve never met a human being who would want to read 17,000 pages of documentation, and if there was, I&amp;rsquo;d kill him to get him out of the gene pool. :::
+Joseph Costello, President of Cadence :::
+It was one of those &amp;ldquo;impossible&amp;rdquo; projects, the kind you hear about that sounds both exhilarating and terrifying at the same time. An ancient system was approaching end-of-life, the hardware was physically going away, and a brand-new system had to be crafted that would match the (often undocumented) behavior exactly.</description>
+    </item>
+    
+    <item>
+      <title>  Topic 48 The Essence of Agility  </title>
+      <link>/pragmatic-programmer/f_0073/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0073/</guid>
+      <description>Topic 48 The Essence of Agility You keep using that word, I do not think it means
+what you think it means. :::
+Inigo Montoya, The Princess Bride :::
+Agile is an adjective: it&amp;rsquo;s how you do something. You can be an agile developer. You can be on a team that adopts agile practices, a team that responds to change and setbacks with agility. Agility is your style, not you.</description>
+    </item>
+    
+    <item>
+      <title> Chapter 9 Pragmatic Projects </title>
+      <link>/pragmatic-programmer/f_0074/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0074/</guid>
+      <description>Chapter 9 Pragmatic Projects As your project gets under way, we need to move away from issues of individual philosophy and coding to talk about larger, project-sized issues. We aren&amp;rsquo;t going to go into specifics of project management, but we will talk about a handful of critical areas that can make or break any project.
+As soon as you have more than one person working on a project, you need to establish some ground rules and delegate parts of the project accordingly.</description>
+    </item>
+    
+    <item>
+      <title>Topic 49 Pragmatic Teams  </title>
+      <link>/pragmatic-programmer/f_0075/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0075/</guid>
+      <description>Topic 49 Pragmatic Teams At Group L, Stoffel oversees six first-rate programmers, a managerial challenge roughly comparable to herding cats. :::
+The Washington Post Magazine, June 9, 1985 :::
+Even in 1985, the joke about herding cats was getting old. By the time of the first edition at the turn of the century, it was positively ancient. Yet it persists, because it has a ring of truth to it. Programmers are a bit like cats: intelligent, strong willed, opinionated, independent, and often worshiped by the net.</description>
+    </item>
+    
+    <item>
+      <title>Topic 50 Coconuts Don&#39;t Cut It   </title>
+      <link>/pragmatic-programmer/f_0076/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0076/</guid>
+      <description>Topic 50 Coconuts Don&amp;rsquo;t Cut It The native islanders had never seen an airplane before, or met people such as these strangers. In return for use of their land, the strangers provided mechanical birds that flew in and out all day long on a &amp;ldquo;runway,&amp;rdquo; bringing incredible material wealth to their island home. The strangers mentioned something about war and fighting. One day it was over and they all left, taking their strange riches with them.</description>
+    </item>
+    
+    <item>
+      <title>Topic 51 Pragmatic Starter Kit  </title>
+      <link>/pragmatic-programmer/f_0077/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0077/</guid>
+      <description>Topic 51 Pragmatic Starter Kit Civilization advances by extending the number of important
+operations we can perform without thinking. :::
+Alfred North Whitehead :::
+Back when cars were a novelty, the instructions for starting a Model-T Ford were more than two pages long. With modern cars, you just push a button&amp;mdash;the starting procedure is automatic and foolproof. A person following a list of instructions might flood the engine, but the automatic starter won&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>Topic 52 Delight Your Users  </title>
+      <link>/pragmatic-programmer/f_0078/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0078/</guid>
+      <description>Topic 52 Delight Your Users When you enchant people, your goal is not to make money
+from them or to get them to do what you want, but
+to fill them with great delight. :::
+Guy Kawasaki :::
+Our goal as developers is to delight users. That&amp;rsquo;s why we&amp;rsquo;re here. Not to mine them for their data, or count their eyeballs or empty their wallets. Nefarious goals aside, even delivering working software in a timely manner isn&amp;rsquo;t enough.</description>
+    </item>
+    
+    <item>
+      <title>Topic 53 Pride and Prejudice </title>
+      <link>/pragmatic-programmer/f_0079/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0079/</guid>
+      <description>Topic 53 Pride and Prejudice You have delighted us long enough. :::
+Jane Austen, Pride and Prejudice :::
+Pragmatic Programmers don&amp;rsquo;t shirk from responsibility. Instead, we rejoice in accepting challenges and in making our expertise well known. If we are responsible for a design, or a piece of code, we do a job we can be proud of.
+Tip 97 Sign Your Work
+Artisans of an earlier age were proud to sign their work.</description>
+    </item>
+    
+    <item>
+      <title>The Moral Compass</title>
+      <link>/pragmatic-programmer/f_0080/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0080/</guid>
+      <description>The Moral Compass The price of this unexpected power is vigilance. Our actions directly affect people. No longer the hobby program on the 8-bit CPU in the garage, the isolated batch business process on the mainframe in the data center, or even just the desktop PC; our software weaves the very fabric of daily modern life.
+We have a duty to ask ourselves two questions about every piece of code we deliver:</description>
+    </item>
+    
+    <item>
+      <title>Imagine the Future you Want</title>
+      <link>/pragmatic-programmer/f_0081/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0081/</guid>
+      <description>Imagine the Future you Want It&amp;rsquo;s up to you. It&amp;rsquo;s your imagination, your hopes, your concerns that provide the pure thought-stuff that builds the next twenty years and beyond.
+You are building the future, for yourselves and for your descendants. Your duty is to make it a future that we&amp;rsquo;d all want to inhabit. Recognize when you&amp;rsquo;re doing something against this ideal, and have the courage to say &amp;ldquo;no!&amp;rdquo; Envision the future we could have, and have the courage to create it.</description>
+    </item>
+    
+    <item>
+      <title>Appendix 1 Bibliography</title>
+      <link>/pragmatic-programmer/f_0082/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/pragmatic-programmer/f_0082/</guid>
+      <description>Appendix 1 Bibliography [ADSS18] Vard Antinyan, Jesper Derehag, Anna Sandberg, and Miroslaw Staron. Mythical Unit Test Coverage. IEEE Software. 35:73-79, 2018. [And10] Jackie Andrade. What does doodling do? Applied Cognitive Psychology. 24(1):100-106, 2010, January. [Arm07] Joe Armstrong. Programming Erlang: Software for a Concurrent World. The Pragmatic Bookshelf, Raleigh, NC, 2007. [BR89] Albert J. Bernstein and Sydney Craft Rozen. Dinosaur Brains: Dealing with All Those Impossible People at Work. John Wiley &amp;amp; Sons, New York, NY, 1989.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

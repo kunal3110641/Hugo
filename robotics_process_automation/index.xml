@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Robotics_Process_Automation on SATHEE</title>
+    <link>/robotics_process_automation/</link>
+    <description>Recent content in Robotics_Process_Automation on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/robotics_process_automation/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Robotics Process Automation -- An Introduction </title>
+      <link>/robotics_process_automation/robotics-process-automation--an-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/robotics_process_automation/robotics-process-automation--an-introduction-/</guid>
+      <description>Robotics Process Automation &amp;ndash; An Introduction Robotics Process Automation (RPA) is a useful and widely emerging technology in the business world nowadays. RPA is based on Machine Learning and Artificial Intelligence (AI) which uses various software robots to perform business-oriented tasks. Previously, in many organizations, the large volume of data was handled by the humans themselves. But with the use of RPA, all the maintenance of data can be done easily with the help of a few software and no manual or human interference is needed.</description>
+    </item>
+    
+    <item>
+      <title>Artificial Intelligence | An Introduction </title>
+      <link>/robotics_process_automation/artificial-intelligence-%5C-an-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/robotics_process_automation/artificial-intelligence-%5C-an-introduction-/</guid>
+      <description>Artificial Intelligence | An Introduction Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and act like humans. It involves the development of algorithms and computer programs that can perform tasks that typically require human intelligence such as visual perception, speech recognition, decision-making, and language translation. AI has the potential to revolutionize many industries and has a wide range of applications, from virtual personal assistants to self-driving cars.</description>
+    </item>
+    
+    <item>
+      <title>Agents in Artificial Intelligence </title>
+      <link>/robotics_process_automation/agents-in-artificial-intelligence-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/robotics_process_automation/agents-in-artificial-intelligence-/</guid>
+      <description>Agents in Artificial Intelligence In artificial intelligence, an agent is a computer program or system that is designed to perceive its environment, make decisions and take actions to achieve a specific goal or set of goals. The agent operates autonomously, meaning it is not directly controlled by a human operator.
+Agents can be classified into different types based on their characteristics, such as whether they are reactive or proactive, whether they have a fixed or dynamic environment, and whether they are single or multi-agent systems.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

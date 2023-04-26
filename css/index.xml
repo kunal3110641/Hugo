@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on SATHEE</title>
+    <link>/css/</link>
+    <description>Recent content in CSS on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/css/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>CSS </title>
+      <link>/css/css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-/</guid>
+      <description>CSS CSS (Cascading Style Sheets)is used to apply styles to web pages. Cascading Style Sheets are fondly referred to as CSS. It is used to make web pages presentable. The reason for using this is to simplify the process of making web pages presentable. It allows you to apply styles on web pages. More importantly, it enables you to do this independently of the HTML that makes up each web page.</description>
+    </item>
+    
+    <item>
+      <title>CSS Introduction </title>
+      <link>/css/css-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-introduction-/</guid>
+      <description>CSS Introduction Cascading Style Sheets, fondly referred to as CSS, is a simply designed language intended to simplify the process of making web pages presentable. CSS allows you to apply styles to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web page. It describes how a webpage should look: it prescribes colors, fonts, spacing, and much more. In short, you can make your website look however you want.</description>
+    </item>
+    
+    <item>
+      <title>Internal CSS </title>
+      <link>/css/internal-css/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/internal-css/</guid>
+      <description>CSS Full Form CSS stands for Cascading Style Sheet, it is a style sheet language used to shape the HTML elements that will be displayed in the browsers as a web-page. Without using CSS, the website which has been created by using HTML, will look dull. Basically CSS gives the outer cover on any HTML elements. If you consider HTML as a skeleton of the web-page then the CSS will be the skin of the skeleton.</description>
+    </item>
+    
+    <item>
+      <title>What is the best way to include CSS file? Why use @import? </title>
+      <link>/css/what-is-the-best-way-to-include-css-file-why-use-@import-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/what-is-the-best-way-to-include-css-file-why-use-@import-/</guid>
+      <description>What is the best way to include CSS file? Why use @import? CSS property can be include in the HTML page in a number of different ways. HTML documents are formatted according to the information in the style sheet which is to be included.There are many ways to include CSS file which are listed below: External style sheet (Using HTML Tag): External CSS contains separate CSS file which contains only style property with the help of tag attributes (For example class, id, heading, &amp;hellip; etc).</description>
+    </item>
+    
+    <item>
+      <title>CSS Comments </title>
+      <link>/css/css-comments-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-comments-/</guid>
+      <description>CSS Comments The Comments in CSS, are the statements in your code that are ignored by the compiler and are not executed. Comments are used to explain the code. They make the program more readable and understandable.
+Syntax:
+/* content */ Comment can be single-line or multi-line. The /* */ comment syntax can be used for both single and multiline comments. We may use syntax for hiding in CSS for older browsers, but this is no longer recommended for use.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Colors </title>
+      <link>/css/css-colors-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-colors-/</guid>
+      <description>CSS | Colors CSS Color property is used to set the color of HTML elements. This property is used to set font color, background color etc.
+Color of an element can be defined in the following ways:
+Built-In Color
+RGB Format
+RGBA Format
+Hexadecimal Notation
+HSL
+HSLA
+Built-In Color: These are a set of predefined colors which are used by its name. For example: red, blue, green etc.Syntax:
+h1 { color: color-name; } Example:</description>
+    </item>
+    
+    <item>
+      <title>CSS Background </title>
+      <link>/css/css-background-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-background-/</guid>
+      <description>CSS Background The CSS background properties are used to define the background effects for elements. There are lots of properties to design the background. CSS background properties are as follows: CSS Background-color Property: The background-color property in CSS is used to specify the background color of an element.
+CSS Background-image Property: The background-image property is used to set one or more background images to an element.
+CSS Background-repeat Property: The background-repeat property in CSS is used to repeat the background image both horizontally and vertically.</description>
+    </item>
+    
+    <item>
+      <title>CSS Borders </title>
+      <link>/css/css-borders-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-borders-/</guid>
+      <description>CSS Borders CSS border properties allow us to set the style, color, and width of the border. Note: Different properties can be set for all the different borders i.e.top border, right border, bottom border, and left border. Properties of CSS Borders: 1. Border Style
+CSS border-top style Property
+border-right-style Property
+border-bottom-style Property
+border-left-style Property
+2. Border Width
+border-top-width Property
+border-right-width Property
+border-bottom-width Property
+border-left-width Property
+3. Border Color
+border-top-color Property</description>
+    </item>
+    
+    <item>
+      <title>CSS Margins and Padding </title>
+      <link>/css/css-margins-and-padding-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-margins-and-padding-/</guid>
+      <description>CSS Margins and Padding In this article, we will learn about the CSS Margin &amp;amp; Padding properties of the Box Model &amp;amp; understand their implementation through the example. CSS Margins: CSS margins are used to create space around the element. We can set the different sizes of margins for individual sides(top, right, bottom, left).
+Margin properties can have the following values:
+Length in cm, px, pt, etc.
+Width % of the element.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Height and Width </title>
+      <link>/css/css-height-and-width-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-height-and-width-/</guid>
+      <description>CSS | Height and Width Height and Width in CSS are used to set the height and width of boxes. It&amp;rsquo;s value can be set using length, percentage or auto. Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;width and height&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .GFG{ height: 120px; width: 50%; border: 5px solid black; padding-left: 50px; padding-top: 50px; font-size:42px; font-weight:bold; color:green; margin-left:50px; margin-top:50px; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class = &amp;quot;GFG&amp;quot;&amp;gt; Renewbuy &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output: Height and width of Image: It is used to set the height and width of an image.</description>
+    </item>
+    
+    <item>
+      <title>CSS Box model </title>
+      <link>/css/css-box-model-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-box-model-/</guid>
+      <description>CSS Box model The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages. It can be used as a toolkit for customizing the layout of different elements. The web browser renders every element as a rectangular box according to the CSS box model. Box-Model has multiple properties in CSS. Some of them are given below: content: This property is used to displays the text, images, etc, that can be sized using the width &amp;amp; height property.</description>
+    </item>
+    
+    <item>
+      <title>CSS Outline </title>
+      <link>/css/css-outline-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-outline-/</guid>
+      <description>CSS Outline The outline CSS shorthand property allows drawing a line around the element, outside the border. It is used to set all the properties of the outline in a single declaration. CSS outline properties can be categorized into 4 types, namely, Outline-style, Outline-color, Outline-width &amp;amp; Outline-offset. We will discuss all the types of outline properties sequentially through the examples.
+Properties: There are lots of properties comes under the CSS outline collection all of them are well described with the example.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Text Formatting </title>
+      <link>/css/css-text-formatting-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-text-formatting-/</guid>
+      <description>CSS | Text Formatting CSS text formatting properties is used to format text and style text.CSS text formatting include following properties:1.Text-color2.Text-alignment3.Text-decoration4.Text-transformation5.Text-indentation6.Letter spacing7.Line height8.Text-direction9.Text-shadow10.Word spacing
+1.TEXT COLORText-color property is used to set the color of the text.Text-color can be set by using the name &amp;ldquo;red&amp;rdquo;, hex value &amp;ldquo;#ff0000&amp;rdquo; or by its RGB value&amp;quot;rgb(255, 0, 0)&amp;quot;.
+Syntax: body { color:color name; } Example:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h1 { color:red; } h2 { color:green; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt; GEEKS FOR GEEKS &amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; TEXT FORMATTING &amp;lt;/h2&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; OUTPUT: 2.</description>
+    </item>
+    
+    <item>
+      <title>CSS Fonts </title>
+      <link>/css/css-fonts-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-fonts-/</guid>
+      <description>CSS Fonts Example: In this example we will use few CSS Font&amp;rsquo;s properties.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CSS Font&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .gfg { font-family: &amp;quot;Arial, Helvetica, sans-serif&amp;quot;; font-size: 60px; color: #090; text-align: center; } .Renewbuy { font-family: &amp;quot;Comic Sans MS&amp;quot;, cursive, sans-serif; font-variant:small-caps; text-align: center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;quot;gfg&amp;quot;&amp;gt;Renewbuy&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;Renewbuy&amp;quot;&amp;gt; A computer science portal for Renewbuy &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output: The CSS font is used to set the font&amp;rsquo;s content of the HTML element.</description>
+    </item>
+    
+    <item>
+      <title>CSS Icons </title>
+      <link>/css/css-icons-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-icons-/</guid>
+      <description>CSS Icons In this article, we will know how to use the CSS icons to add to the HTML page from the icon library. All the icons in the library can be formatted using CSS. They can be customized according to size, color, shadow, etc. The icon is a graphical representation that conveys the specific meaning for which it is used &amp;amp; helps to navigate accordingly.
+There are 3 types of icon libraries available, namely</description>
+    </item>
+    
+    <item>
+      <title>CSS | Links </title>
+      <link>/css/css-links-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-links-/</guid>
+      <description>CSS | Links Link is a connection from one web page to another web pages. CSS property can be used to style the links in various different ways.States of Link: Before discussing CSS properties, it is important to know the states of a link. Links can exist in different states and they can be styled using pseudo classes. There are four state of links given below: a:link =&amp;gt; This is a normal, unvisited link.</description>
+    </item>
+    
+    <item>
+      <title>CSS Lists </title>
+      <link>/css/css-lists-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-lists-/</guid>
+      <description>CSS Lists The List in CSS specifies the listing of the contents or items in a particular manner i.e., it can either be organized orderly or unorder way, which helps to make a clean webpage. It can be used to arrange the huge with a variety of content as they are flexible and easy to manage. The default style for the list is borderless. The list can be categorized into 2 types:</description>
+    </item>
+    
+    <item>
+      <title>CSS Tables </title>
+      <link>/css/css-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-tables-/</guid>
+      <description>CSS Tables A table in CSS is used to apply the various styling properties to the HTML Table elements to arrange the data in rows and columns, or possibly in a more complex structure in a properly organized manner. Tables are widely used in communication, research, and data analysis. The table-layout property in CSS can be utilized to display the layout of the table. This property is basically used to sets the algorithm that is used to layout</description>
+    </item>
+    
+    <item>
+      <title>CSS | Overflow </title>
+      <link>/css/css-overflow-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-overflow-/</guid>
+      <description>CSS | Overflow The CSS overflow controls the big content. It tells whether to clip content or to add scroll bars. The overflow contains the following property: visible
+hidden
+scroll
+auto
+Visible: The content is not clipped and visible outside the element box. Example: html &amp;lt;!DOCTYPE&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; p { width:100px; height:80px; border:1px solid; overflow:visible; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h2&amp;gt; GEEKSFORGEEKS &amp;lt;/h2&amp;gt; &amp;lt;p&amp;gt; The CSS overflow controls big content. It tells whether to clip content or to add scroll bars.</description>
+    </item>
+    
+    <item>
+      <title>CSS Float </title>
+      <link>/css/css-float-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-float-/</guid>
+      <description>CSS Float The float CSS property is used to position the elements to the left, right, of its container along with permitting the text and inline elements to wrap around it. The float property defines the flow of content in the page. The remaining elements will be part of the flow if the element is removed from the normal flow of the content. This property is ignored by the absolutely positioned elements.</description>
+    </item>
+    
+    <item>
+      <title>CSS Align </title>
+      <link>/css/css-align-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-align-/</guid>
+      <description>CSS Align The align in CSS is used for positioning the items along with setting the distribution of space between and around content items. We can align the items either horizontally or vertically. The various methods and techniques are used to center them, by taking care of the left and the right margin, etc. The various method for aligning &amp;amp; its usage are discussed below:
+margin:auto: This property is used to align a block element into the center.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Combinators </title>
+      <link>/css/css-combinators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-combinators-/</guid>
+      <description>CSS | Combinators CSS combinators are explaining the relationship between two selectors. CSS selectors are the patterns used to select the elements for style purpose. A CSS selector can be a simple selector or a complex selector consisting of more than one selector connected using combinators. There are four types of combinators available in CSS which are discussed below: General Sibling selector (~)
+Adjacent Sibling selector (+)
+Child selector (&amp;gt;)</description>
+    </item>
+    
+    <item>
+      <title>CSS | Pseudo-classes </title>
+      <link>/css/css-pseudo-classes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-pseudo-classes-/</guid>
+      <description>CSS | Pseudo-classes A Pseudo class in CSS is used to define the special state of an element. It can be combined with a CSS selector to add an effect to existing elements based on their states. For Example, changing the style of an element when the user hovers over it, or when a link is visited. All of these can be done using Pseudo Classes in CSS.
+Note that pseudo-class names are not case-sensitive.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Pseudo Elements </title>
+      <link>/css/css-pseudo-elements-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-pseudo-elements-/</guid>
+      <description>CSS | Pseudo Elements A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected elements. For Example, Styling the first letter or line of an element,
+Insert content before or after the content of an element. All of these can be done using Pseudo Elements in CSS.
+Note that in contrast to pseudo-elements, pseudo-classes can be used to style an element based on its state.</description>
+    </item>
+    
+    <item>
+      <title>CSS Opacity  Transparency </title>
+      <link>/css/css-opacity-transparency-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-opacity-transparency-/</guid>
+      <description>CSS Opacity / Transparency The opacity in CSS is the property of an element that describes the transparency of the element. It is the opposite of transparency &amp;amp; represents the degree to which the content will be hidden behind an element.
+We can apply the opacity with different styling properties to the elements. A few of them are discussed below:
+Image Opacity: The opacity property is used in the image to describe the transparency of the image.</description>
+    </item>
+    
+    <item>
+      <title>CSS | DropDowns </title>
+      <link>/css/css-dropdowns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-dropdowns-/</guid>
+      <description>CSS | DropDowns Dropdowns are one of the most important parts of an interactive website. CSS is used to design the drop-down menus. A drop-down is a bunch of lists under an unordered list i.e.
+as it is popularly known in HTML world. Nested list (
+) tags under the
+tag used to create drop-down structure. To bring out the effects use CSS for the components present in the structure. The CSS is very straightforward property used to create the drop-down menu.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Image Gallery </title>
+      <link>/css/css-image-gallery-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-image-gallery-/</guid>
+      <description>CSS | Image Gallery Image Gallery is used to store and display collection of pictures. This example create a responsive Image Gallery using HTML and CSS.
+Steps 1: Creating a basic gallery structure
+Each gallery contains number of div section.
+Each div section contains an image and its description.
+Image Added Here Text Added Here Steps 2: Styling the file using CSS
+Styling the gallery container:Set the display property to flex.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Image Sprites </title>
+      <link>/css/css-image-sprites-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-image-sprites-/</guid>
+      <description>CSS | Image Sprites It is basically an image which is a collection of different images put together to form a single image. The use of image sprites is done for two main reasons:
+For faster page loading since use only single image.
+It reduce the bandwidth used to load multiple images. This way less data is consume.
+Image sprites are generally used for designing a graphic social media bar or a navigation bar to make it more attractive and efficient at the same time.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Styling Forms </title>
+      <link>/css/css-styling-forms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-styling-forms-/</guid>
+      <description>CSS | Styling Forms CSS form is used to create interactive form for user. It provides many ways to set the style.
+There are many CSS properties available which can be used to create and style HTML forms to make them more interactive, some of which are listed below:
+Attribute Selector: The attribute type of the input form can take a variety of form depending on user&amp;rsquo;s choice. It could be anything out of the possible types like text, search, url, tel, email, password, date pickers, number, checkbox, radio, file etc.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Counters </title>
+      <link>/css/css-counters-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-counters-/</guid>
+      <description>CSS | Counters Counters in CSS are basically variables which can be used for numbering and values of CSS counters may be incremented by CSS rules. For example, CSS counters can be used to increment the numbering of the headings automatically. In HTML,
+tag is used to give the ordered numbers to list items but CSS contains counter to give order elements in some other fashion. CSS counters properties: CSS counters contains the following properties:</description>
+    </item>
+    
+    <item>
+      <title>CSS | Website Layout </title>
+      <link>/css/css-website-layout-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-website-layout-/</guid>
+      <description>CSS | Website Layout A website can be divided into various sections comprising of header, menus, content and footer based on which there are many different layout design available for developer. Different layouts can be created by using div tag and use CSS property to style it. The most common structure of website layout is given below: Notice: Header section contains a website logo, a search bar and profile of user.</description>
+    </item>
+    
+    <item>
+      <title>CSS Units </title>
+      <link>/css/css-units-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-units-/</guid>
+      <description>CSS Units CSS has several different units for expressing the length and measurement. CSS units are needed to specify the measurement in stylesheet like padding:&amp;ldquo;5px&amp;rdquo;. Mainly there are two types of units in CSS. Absolute Length
+Relative Length
+Absolute Length: It is not good for use on-screen, cause screen size varies so much depending on the device used for that page it is recommended to use for print layout and where the output medium is known.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Specificity </title>
+      <link>/css/css-specificity-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-specificity-/</guid>
+      <description>CSS | Specificity When more than one set of CSS rules apply to the same element, the browser will have to decide which specific set will be applied to the element. The rules the browser follows are collectively called Specificity Specificity Rules include: CSS style applied by referencing external stylesheet has lowest precedence and is overridden by Internal and inline CSS.
+Internal CSS is overridden by inline CSS.
+Inline CSS has highest priority and overrides all other selectors.</description>
+    </item>
+    
+    <item>
+      <title>CSS | all Property </title>
+      <link>/css/css-all-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-all-property-/</guid>
+      <description>CSS | all Property The all property in CSS is the shorthand property that is used to set all the elements values to their initial or inherited values or in some cases used to set the values to another spreadsheet origin. This property is used to reset all the CSS property in a document.
+Syntax: all: initial|inherit|unset|revert|revert-layer; Default Value : Its default value is none.
+Property Values: initial: This property is used to set all property to its default value.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Display property </title>
+      <link>/css/css-display-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-display-property-/</guid>
+      <description>CSS | Display property The Display property in CSS defines how the components(div, hyperlink, heading, etc) are going to be placed on the web page. As the name suggests, this property is used to define the display of the different parts of a web page. Syntax: display: value; Property values Few important values are described below with the example.Block: This property is used as the default property of div. This property places the div one after another vertically.</description>
+    </item>
+    
+    <item>
+      <title>CSS Positioning Elements </title>
+      <link>/css/css-positioning-elements-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-positioning-elements-/</guid>
+      <description>CSS Positioning Elements The position property in CSS tells about the method of positioning for an element or an HTML entity. There are five different types of position property available in CSS:
+Fixed
+Static
+Relative
+Absolute
+Sticky
+The positioning of an element can be done using the top, right, bottom, and left properties. These specify the distance of an HTML element from the edge of the viewport. To set the position by these four properties, we have to declare the positioning method.</description>
+    </item>
+    
+    <item>
+      <title>CSS border Property </title>
+      <link>/css/css-border-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-border-property-/</guid>
+      <description>CSS border Property The border property in CSS is used to style the border of an element. This property is a combination of three other properties border-width, border-style, and border-color as can be used as a shorthand notation for these three properties. It sets or returns the border-width, border-style, border-color Properties. Syntax: border = &amp;quot;width style color|initial|inherit&amp;quot; Default Value : Its default value is initial.
+Property Values: width: This value specifies the weight or the width of the border.</description>
+    </item>
+    
+    <item>
+      <title>CSS | border-image Property </title>
+      <link>/css/css-border-image-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-border-image-property-/</guid>
+      <description>CSS | border-image Property The border-image property in CSS is used to set the border of an element.
+Syntax:
+border-image: source slice width outset repeat|initial|inherit; The border-image property is the combination of many properties which are listed below:
+border-image-source
+border-image-slice
+border-image-width
+border-image-outset
+border-image-repeat
+Property Values:
+border-image-source: This property is used to set the source location of border image.Syntax:border-image-source: url(image source location);
+border-image-source: url(image source location); border-image-slice: The border-image-slice property is used to divide or slice an image specified by border-image-source property.</description>
+    </item>
+    
+    <item>
+      <title>CSS filter Property </title>
+      <link>/css/css-filter-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-filter-property-/</guid>
+      <description>CSS filter Property The filter property is used to set the visual effect of an element. This property is mostly used in image content for adjusting the image rendering, background, border, etc.
+Syntax: filter: none|blur()|brightness()|contrast()|drop-shadow()| grayscale()|hue-rotate()|invert()|opacity()|saturate()|sepia()| url(); Note: More than one filter can be added to the HTML element which is separated by the space.
+Example: This example applies two filter functions to the image element in a webpage.
+img { filter: brightness(20%) blur(20px); } The filter property accepts both percentage value &amp;amp; decimal value.</description>
+    </item>
+    
+    <item>
+      <title>CSS flex Property </title>
+      <link>/css/css-flex-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-flex-property-/</guid>
+      <description>CSS flex Property The flex CSS shorthand property is the combination of flex-grow, flex-shrink, and flex-basis property. It is used to set the length of flexible items. The flex property is much responsive and mobile-friendly. It is easy to position child elements and the main container. The margin doesn&amp;rsquo;t collapse with the content margins. The order of any element can be easily changed without editing the HTML section.
+Syntax:
+flex: flex-grow flex-shrink flex-basis|auto|initial|inherit; Property Values:</description>
+    </item>
+    
+    <item>
+      <title>CSS font-family Property </title>
+      <link>/css/css-font-family-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-font-family-property-/</guid>
+      <description>CSS font-family Property The font-family property specifies the font of an element. It can have multiple fonts as a backup system i.e. if the browser doesn&amp;rsquo;t support one font then the other can be used. In other words, this property is used to specifies the family-name &amp;amp;/or generic-family, based on the priority from the list, for the selected element.
+The font-family can be categorized into 2 types:
+family-name: It contains the name of a font-family, such as &amp;ldquo;times&amp;rdquo;, &amp;ldquo;courier&amp;rdquo;, &amp;ldquo;arial&amp;rdquo;, etc.</description>
+    </item>
+    
+    <item>
+      <title>CSS | grid Property </title>
+      <link>/css/css-grid-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-grid-property-/</guid>
+      <description>CSS | grid Property It is a CSS property that offers a grid-based layout system, with rows and columns, making it easier to design web pages without floats and positioning. Syntax:
+grid: none|grid-template-rows / grid-template-columns|grid-template-areas| grid-template-rows / [grid-auto-flow] grid-auto-columns|[grid-auto-flow] grid-auto-rows / grid-template-columns|initial|inherit; Property values:
+Example 1: Grid with 2-rows and 4-column. html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; CSS | grid Property &amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .main { display: grid; grid: auto auto / auto auto auto auto; grid-gap: 10px; background-color: green; padding: 10px; } .</description>
+    </item>
+    
+    <item>
+      <title>CSS | height Property </title>
+      <link>/css/css-height-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-height-property-/</guid>
+      <description>CSS | height Property The height property is used to set the height of an element. The height property does not contains padding and margin and border of element. Syntax: height: auto|length|initial|inherit; Default Value: auto Property Values: auto: It is used to set height property to its default value. If the height property set to auto then the browser calculates the height of element.
+Syntax: height: auto; Example: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; CSS height Property &amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>CSS Properties Complete Reference </title>
+      <link>/css/css-properties-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-properties-complete-reference-/</guid>
+      <description>CSS Properties Complete Reference CSS property is used to set the style or assign behavior of HTML elements. The CSS property contains two parts, property_name, and property_value. The property_value is enclosed within double quotes (&amp;quot; &amp;ldquo;).
+Example: In this example, we will see the use of many properties usage, all the keywords mentioned inside of { and } braces are properties.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; #myDIV { width: 400px; height: 299px; background-color: green; background-repeat: no-repeat; background-image: url(&amp;quot;https://media.</description>
+    </item>
+    
+    <item>
+      <title>CSS Syntax and Selectors </title>
+      <link>/css/css-syntax-and-selectors-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-syntax-and-selectors-/</guid>
+      <description>CSS Syntax and Selectors A CSS Syntax rule consists of a selector, property, and its value. The selector points to the HTML element where CSS style is to be applied. The CSS property is separated by semicolons. It is a combination of selector name followed by the property: value pair that is defined for the specific selector. Syntax:
+selector { Property: value; } For instance, we have declared a heading tag(h1) along with having assigned some property: value pair that is used to style the heading tag.</description>
+    </item>
+    
+    <item>
+      <title>CSS | #id Selector </title>
+      <link>/css/css-#id-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-#id-selector-/</guid>
+      <description>CSS | #id Selector The &amp;ldquo;#&amp;rdquo; CSS id selector is used to set the style of the given id. The id attribute is the unique identifier in an HTML document. The id selector is used with a # character. Syntax:
+#id { // CSS property } Example 1: HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;#id selector&amp;lt;/title&amp;gt; &amp;lt;!-- CSS property using id attribute --&amp;gt; &amp;lt;style&amp;gt; #gfg1 { color: green; text-align: center; } #gfg2 { text-align: center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>CSS | * Selector </title>
+      <link>/css/css-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-selector-/</guid>
+      <description>CSS | * Selector The * selector in CSS is used to select all the elements in a HTML document. It also selects all elements which are inside under another element. It is also called universal selector.
+Syntax: * { // CSS property } Example 1: HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;* Selector&amp;lt;/title&amp;gt; &amp;lt;!-- CSS property of * selector --&amp;gt; &amp;lt;style&amp;gt; * { color:green; text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;*(Universal) Selector&amp;lt;/h2&amp;gt; &amp;lt;div&amp;gt; &amp;lt;p&amp;gt;GFG&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Renewbuy&amp;lt;/p&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p&amp;gt;It is a computer science portal for Renewbuy.</description>
+    </item>
+    
+    <item>
+      <title>CSS Class Selector </title>
+      <link>/css/css-class-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-class-selector-/</guid>
+      <description>CSS Class Selector The .class selector is used to select all elements which belong to a particular class attribute. In order to select the elements with a particular class, use the period (.) character specifying the class name ie., it will match the HTML element based on the contents of their class attribute. The class name is mostly used to set the CSS property to a given class.
+Syntax: .class { // CSS property } Example 1: This example demonstrates the class Selector for the specific HTML element.</description>
+    </item>
+    
+    <item>
+      <title>CSS | element Selector </title>
+      <link>/css/css-element-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-element-selector-/</guid>
+      <description>CSS | element Selector The element selector in CSS is used to select HTML elements which are required to be styled. In a selector declaration, there is the name of the HTML element and the CSS properties which are to be applied to that element is written inside the brackets {}.
+Syntax:
+element { \\ CSS property } Example 1:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;element selector&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; /* h1 element selected here */ h1 { color:green; text-align:center; } /* h2 element selected here */ h2 { text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;element Selector&amp;lt;/h2&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:</description>
+    </item>
+    
+    <item>
+      <title>CSS :hover Selector </title>
+      <link>/css/css-hover-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-hover-selector-/</guid>
+      <description>CSS :hover Selector The :hover selector CSS pseudo-class is used to style elements when the mouse hovers over them. It can be used on every element.
+We can style the links for unvisited pages using the :link selector, for styling the links to visited pages, use the :visited selector &amp;amp; for styling the active link, use the :active selector. If the :link and :visited selectors are present in the CSS definition then in order to see the effect, we must add :hover selector after it.</description>
+    </item>
+    
+    <item>
+      <title>CSS | :lang Selector </title>
+      <link>/css/css-lang-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-lang-selector-/</guid>
+      <description>CSS | :lang Selector The :lang Selector is used to target the element which is based on language attributes for a specific value. This selector work with the help of language-code. Syntax:
+:lang(lang-code) { //property } Language Codes:
+en: for English.
+hi: for Hindi.
+fr: for French.
+de: for German
+it: for Italian
+ca: for Canadian
+Example-1: HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; h3:lang(en) { background: limegreen; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h3 lang=&amp;quot;en&amp;quot;&amp;gt;&amp;quot;en&amp;quot; is lang-code for english.</description>
+    </item>
+    
+    <item>
+      <title>CSS :nth-child() Selector </title>
+      <link>/css/css-nth-child-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-nth-child-selector-/</guid>
+      <description>CSS :nth-child() Selector The :nth-child() CSS pseudo-class selector is used to match the elements based on their position in a group of siblings. It matches every element that is the nth-child, regardless of the type, of its parent.
+Syntax:
+:nth-child(number) { // CSS Property } Where number is the single argument that represents the pattern for matching elements. It can be odd, even, or in a functional notation.
+odd: It represents elements whose position is odd in a series: 1, 3, 5, etc.</description>
+    </item>
+    
+    <item>
+      <title>CSS | :visited Selector </title>
+      <link>/css/css-visited-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-visited-selector-/</guid>
+      <description>CSS | :visited Selector The :visited selector in CSS is used to select the visited links. For example, visit some link on website and again see it, then it will find changed color of that link. This change in color is done by :visited selector. The allowed CSS property of :visited selectors are listed below: color
+border-color
+background-color
+outline color
+column-rule-color
+fill-color and stroke
+Syntax: :visited { // CSS Properties } Example: HTML &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>Wildcard Selectors (*, ^ and $) in CSS for classes </title>
+      <link>/css/wildcard-selectors-and-in-css-for-classes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/wildcard-selectors-and-in-css-for-classes-/</guid>
+      <description>Wildcard Selectors (*, ^ and $) in CSS for classes Wildcard selector is used to select multiple elements simultaneously. It selects similar type of class name or attribute and use CSS property. * wildcard also known as containing wildcard. [attribute*=&amp;ldquo;str&amp;rdquo;] Selector: The [attribute*=&amp;ldquo;str&amp;rdquo;] selector is used to select that elements whose attribute value contains the specified sub string str. This example shows how to use a wildcard to select all div with a class that contains str.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Selectors in CSS </title>
+      <link>/css/advanced-selectors-in-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/advanced-selectors-in-css-/</guid>
+      <description>Advanced Selectors in CSS Selectors are used for selecting the HTML elements in the attributes. Some different types of selectors are given below: Adjacent Sibling Selector: It selects all the elements that are adjacent siblings of specified elements. It selects the second element if it immediately follows the first element. Syntax: It select ul tags which immediately follows the h4 tag.
+html h4+ul{ border: 4px solid red; } Example:
+html &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>10 CSS Selectors Every Developer Should Know </title>
+      <link>/css/10-css-selectors-every-developer-should-know-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/10-css-selectors-every-developer-should-know-/</guid>
+      <description>10 CSS Selectors Every Developer Should Know What&amp;rsquo;s the first thing for any website to create a good impression on a user? &amp;hellip; Yes&amp;hellip;it&amp;rsquo;s the user interface for any website. Every developer knows how important it is to create a beautiful design for users to interact with any website. Giving styling to the web pages smartly in a minimal amount of time is not an easy task if you don&amp;rsquo;t have a good knowledge of CSS and it&amp;rsquo;s selectors.</description>
+    </item>
+    
+    <item>
+      <title>CSS Selectors Complete Reference </title>
+      <link>/css/css-selectors-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-selectors-complete-reference-/</guid>
+      <description>CSS Selectors Complete Reference CSS selectors are used to select HTML elements based on their element name, id, class, attribute, and many more. Example: Below the HTML/CSS code shows the functionality of ::after selector.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; p::after { content: &amp;quot; - Remember this&amp;quot;; background-color: blue; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h3&amp;gt;After Selector&amp;lt;/h3&amp;gt; &amp;lt;p&amp;gt;User ID: @dmor1&amp;lt;/p&amp;gt; &amp;lt;p&amp;gt;Name: GFG&amp;lt;/p&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:
+The complete reference of CSS selectors is listed below:</description>
+    </item>
+    
+    <item>
+      <title>CSS | attr() Function </title>
+      <link>/css/css-attr-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-attr-function-/</guid>
+      <description>CSS | attr() Function The attr() function is an inbuilt function in CSS which returns the value of an attribute of the selected elements.
+Syntax: attr( attr_name ) Parameter: This function accepts single parameter attr_name which is used to hold the name of attribute in HTML element. It is mandatory parameter.
+Return Value: This function returns the value of attribute of selected elements.
+Below example illustrates the attr() function in CSS:</description>
+    </item>
+    
+    <item>
+      <title>CSS | calc() Function </title>
+      <link>/css/css-calc-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-calc-function-/</guid>
+      <description>CSS | calc() Function The calc() function is an inbuilt function in CSS which is used to perform calculations based on CSS property.Syntax: calc( Expression ) Parameters: This function accepts single parameter Expression which is mandatory. This parameter contains mathematical expression which need to implement. The operators used by this parameters are: +, -, *, /Below program illustrates the calc() function in CSS:Program: html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;calc function&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .</description>
+    </item>
+    
+    <item>
+      <title>CSS env() Function </title>
+      <link>/css/css-env-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-env-function-/</guid>
+      <description>CSS env() Function The env() function is used to insert the value of a user agent-defined environment variable into your CSS. It is almost the same as var() in CSS except these values are user-agent-defined rather than user-defined. These variables are globally scoped. Syntax:
+env( , ) Note: Please note that env() property values are case-sensitive.
+Property values:
+SAFE-AREA-INSET-TOP: It defines the top of the rectangle from the edge of the viewport.</description>
+    </item>
+    
+    <item>
+      <title>CSS | hsl() Function </title>
+      <link>/css/css-hsl-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-hsl-function-/</guid>
+      <description>CSS | hsl() Function The hsl() function is an inbuilt function in CSS which is used to define the colors using the Hue-saturation-lightness model (HSL).
+Syntax: hsl( hue, saturation, lightness ) Parameters: This function accepts three parameters as mentioned above and described below: hue: This parameter is used to define the degree on the color wheel. Its value lies between 0 to 360 where 0 or 360 represents red, 120 represents green and 240 represents blue.</description>
+    </item>
+    
+    <item>
+      <title>CSS | rgb() Function </title>
+      <link>/css/css-rgb-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-rgb-function-/</guid>
+      <description>CSS | rgb() Function The rgb() function is an inbuilt function in CSS which is used to define the colors using the Red Green Blue (RGB) model. Syntax:
+rgb( red, green, blue ) Parameters: This function accepts three parameters as mentioned above and described below:
+red: This parameter is used to define the intensity of red color. It is an integer value lies between 0 to 255, or as a percentage value between 0% to 100%.</description>
+    </item>
+    
+    <item>
+      <title>CSS | url() Function </title>
+      <link>/css/css-url-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-url-function-/</guid>
+      <description>CSS | url() Function The url() function is an inbuilt function which is used to include a file. The parameter of this function is absolute URL, relative URL or a data URI. The url() function can be used for background-image, border-image, list-style-image, content, cursor, border-image, border-image-source, src as part of a @font-face block, and @counter-style/symbol. Syntax:
+url( * ) Parameters: This function accepts single parameter url which holds the url in string format.</description>
+    </item>
+    
+    <item>
+      <title>CSS | var() Function </title>
+      <link>/css/css-var-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-var-function-/</guid>
+      <description>CSS | var() Function The var() function in CSS is used to insert a value for custom property.
+Syntax:
+var( custom_property, value ) Parameters: This function accepts two parameters which are listed below:
+custom_property: It is the required parameter. The name of custom property must start with two dashes(&amp;ndash;).
+value: It is optional parameter. It is used if custom property is invalid.
+Below program illustrates the var() function in CSS:</description>
+    </item>
+    
+    <item>
+      <title>CSS Functions Complete Reference </title>
+      <link>/css/css-functions-complete-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-functions-complete-reference-/</guid>
+      <description>CSS Functions Complete Reference CSS functions are used to set the various CSS property. For example, the attr() function is used to retrieve the value of the HTML attribute. Example: Below example illustrates the radial-gradient() function in CSS:
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;CSS Gradients&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; #main { height: 250px; width: 600px; background-color: white; background-image: radial-gradient(#090, #fff, #2a4f32); } .gfg { text-align:center; font-size:40px; font-weight:bold; padding-top:80px; } .Renewbuy { font-size:17px; text-align:center; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div id=&amp;quot;main&amp;quot;&amp;gt; &amp;lt;div class = &amp;quot;gfg&amp;quot;&amp;gt;Renewbuy&amp;lt;/div&amp;gt; &amp;lt;div class = &amp;quot;Renewbuy&amp;quot;&amp;gt; A computer science portal for Renewbuy &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:</description>
+    </item>
+    
+    <item>
+      <title>CSS 2D Transforms </title>
+      <link>/css/css-2d-transforms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-2d-transforms-/</guid>
+      <description>CSS 2D Transforms A transformation in CSS is used to modify an element by its shape, size and position. It transforms the elements along the X-axis and Y-axis. There are 6 main types of transformation which are listed below:
+translate()
+rotate()
+scale()
+skewX()
+skewY()
+matrix()
+We will implement all these functions &amp;amp; will understand their concepts through the examples.
+translate() Method: The translate() method is used to move the element from its actual position along the X-axis and Y-axis.</description>
+    </item>
+    
+    <item>
+      <title>CSS | 3D Transforms </title>
+      <link>/css/css-3d-transforms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-3d-transforms-/</guid>
+      <description>CSS | 3D Transforms It allows to change elements using 3D transformations. In 3D transformation, the elements are rotated along X-axis, Y-axis and Z-axis.
+There are three main types of transformation which are listed below:
+rotateX()
+rotateY()
+rotateZ()
+The rotateX() Method: This rotation is used to rotate an elements around X-axis at a given degree.Example:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;3D Transformation&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; .normal_div { width: 300px; height: 150px; color: white; font-size:25px; background-color: green; border: 1px solid black; margin-bottom:20px; } #rotateX { width: 300px; height: 150px; color: white; font-size:25px; background-color: green; border: 1px solid black; -webkit-transform: rotateX(180deg); /* Safari */ transform: rotateX(180deg); /* Standard syntax */ } .</description>
+    </item>
+    
+    <item>
+      <title>CSS media queries </title>
+      <link>/css/css-media-queries-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-media-queries-/</guid>
+      <description>CSS media queries The Media query in CSS is used to create a responsive web design. It means that the view of a web page differs from system to system based on screen or media types. The breakpoint specifies for what device-width size, the content is just starting to break or deform.
+Media queries can be used to check many things:
+width and height of the viewport
+width and height of the device</description>
+    </item>
+    
+    <item>
+      <title>CSS | Pagination </title>
+      <link>/css/css-pagination-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-pagination-/</guid>
+      <description>CSS | Pagination Pagination is the process of dividing the document into pages and providing them with numbers.Types of Pagination: There are many types of pagination in CSS. Some of them are given below:
+Simple Pagination
+Active and Hoverable Pagination
+Rounded Active and Hoverable Buttons
+Hoverable Transition Effect
+Bordered Pagination
+Rounded Border Pagination
+Centered Pagination
+Space between Pagination
+Pagination Size
+Simple Pagination: This is the basic form of pagination.Syntax:
+.pagination { display:type } .</description>
+    </item>
+    
+    <item>
+      <title>CSS Gradients </title>
+      <link>/css/css-gradients-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-gradients-/</guid>
+      <description>CSS Gradients The Gradient in CSS is a special type of image that is made up of progressive &amp;amp; smooth transition between two or more colors. CSS is the way to add style to various web documents. By using the gradient in CSS, we can create variants styling of images which can help to make an attractive webpage. The Gradients can be categorized into 2 types:
+Linear Gradients: It includes the smooth color transitions to going up, down, left, right, and diagonally.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Shadow Effect </title>
+      <link>/css/css-shadow-effect-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-shadow-effect-/</guid>
+      <description>CSS | Shadow Effect The shadow effect property in CSS is used to add text and images shadow in HTML document.
+Text Shadow: The CSS text-shadow property is used to display the text with shadow. This property holds the pixel length, breadth, and width of the shadow and the color of the shadow.
+Syntax:
+Text-shadow: 3px 3px 3px green; Example:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;text-shadow property&amp;lt;/title&amp;gt; &amp;lt;style&amp;gt; h1 { color: green; text-shadow: 3px 3px 3px lightgreen; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy For Renewbuy | A computer Science portal for Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:</description>
+    </item>
+    
+    <item>
+      <title>CSS Animations </title>
+      <link>/css/css-animations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-animations-/</guid>
+      <description>CSS Animations CSS Animation: CSS Animations is a technique to change the appearance and behavior of various elements in web pages. It is used to control the elements by changing their motions or display. It has two parts, one which contains the CSS properties which describe the animation of the elements and the other contains certain keyframes which indicate the animation properties of the element and the specific time intervals at which those have to occur.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Border Images </title>
+      <link>/css/css-border-images-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-border-images-/</guid>
+      <description>CSS | Border Images The border-image property in CSS is used to specify the border of an image. This property creates a border using an image instead of a normal border. The property contains three-part that are listed below:
+Complete image is used as border.
+Slice of image is used as border
+Middle section of image is used (repeated or stretched) as border
+The border-image property is used to slice an image into nine sections, like a tic-tac-toe board.</description>
+    </item>
+    
+    <item>
+      <title>CSS Buttons </title>
+      <link>/css/css-buttons-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-buttons-/</guid>
+      <description>CSS Buttons The CSS Buttons are used to decorate the web pages by applying the various styling properties to the button. Buttons are used for event processing and interacting with the user. From submitting a form to getting to view some information, we have to click on buttons. Button tag is used to create buttons in HTML. Example: This simple example describes the button tag.
+HTML &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; button tag &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;button tag&amp;lt;/h2&amp;gt; &amp;lt;button&amp;gt;Button&amp;lt;/button&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output:</description>
+    </item>
+    
+    <item>
+      <title>Advance CSS layout with flexbox </title>
+      <link>/css/advance-css-layout-with-flexbox-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/advance-css-layout-with-flexbox-/</guid>
+      <description>Advance CSS layout with flexbox It is also called a flexible box model. It is basically a layout model that provides an easy and clean way to arrange items within container. Flexbox is different from the block model which is vertically bias and the inline which is horizontally bias. Flexbox was created for small-scales layouts and there&amp;rsquo;s another standard called grids which is geared more towards larger scale layouts, It works similar to the way to Twitter bootstrap grid system works.</description>
+    </item>
+    
+    <item>
+      <title>CSS Variables </title>
+      <link>/css/css-variables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-variables-/</guid>
+      <description>CSS Variables The variables in CSS are just like simple variables of any other programming language. These variables are used to store values and have a scope in which the variables can be used. A variable is defined by using two dashes(&amp;ndash;) at the beginning and then the name which is case-sensitive. The benefit of variables is that it allows the same values to be reused at multiple places and updated/modified from one place.</description>
+    </item>
+    
+    <item>
+      <title>Adding HTML entities using CSS content </title>
+      <link>/css/adding-html-entities-using-css-content-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/adding-html-entities-using-css-content-/</guid>
+      <description>Adding HTML entities using CSS content HTML provides some method to display reserved character. Reserved characters are those characters which are either reserved for HTML or those which are not present in the basic keyboard. For Example: &amp;lsquo;&amp;lt;&amp;rsquo; is already reserved in HTML language. Sometimes this character needs to display on the web page which creates ambiguity in code. Along with these are the character which is normally not present in the basic keyboard ( £, ¥, €, © ), etc.</description>
+    </item>
+    
+    <item>
+      <title>CSS | Web Fonts </title>
+      <link>/css/css-web-fonts-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-web-fonts-/</guid>
+      <description>CSS | Web Fonts Web fonts are used to allow the use of fonts in CSS, which are not installed on the local system. After choosing the not installed font, just include the font file on the web server and it will be automatically downloaded when needed.
+Syntax:
+@font-face { font details } Types of Font Formats: There are many types of font formats which are listed below:
+TrueType Fonts (TTF): Whether one uses Microsoft Operating Systems or Mac Operating System, the most commonly used font format is TrueType.</description>
+    </item>
+    
+    <item>
+      <title>CSS MarqueeMenu Plugin </title>
+      <link>/css/css-marqueemenu-plugin-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-marqueemenu-plugin-/</guid>
+      <description>CSS MarqueeMenu Plugin In this article, we will learn how to implement the marquee effect for a menu using CSS MarqueeMenu plugin. Marquee is a type of animation effect used in developing web pages for getting some attractive text or image scrolling in vertical or horizontal directions.
+Note: Please download the CSS MarqueeMenu plugin in the working folder and include the required files in the head section of your HTML code.</description>
+    </item>
+    
+    <item>
+      <title>CSS Stacking Page Plugin </title>
+      <link>/css/css-stacking-page-plugin-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-stacking-page-plugin-/</guid>
+      <description>CSS Stacking Page Plugin In this article, we will learn how to implement the stacking pages effect for a website interface using CSS codyhouse-framework plugin. It is a type of stacking web page style used in developing web pages for including some attractive interactive interface. It provides a light-weight interface or framework to the developers.
+Note: Please download the CSS codyhouse-framework plugin in the working folder and include the required files in the head section of your HTML code.</description>
+    </item>
+    
+    <item>
+      <title>How order of classes work in CSS ? </title>
+      <link>/css/how-order-of-classes-work-in-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/how-order-of-classes-work-in-css-/</guid>
+      <description>How order of classes work in CSS ? Many developers are aware of the concept of class overwriting in CSS. Well, is true but when it comes to how these classes are overwritten, most of them get confused. Classes are among the important assets of front-end development. Therefore, it is very important to have clarity about them. The attributes of style that are required to be included in the HTML elements are defined within the classes and then could be invoked using the &amp;ldquo;style&amp;rdquo; attribute within the tag.</description>
+    </item>
+    
+    <item>
+      <title>Create a transparent border with CSS </title>
+      <link>/css/create-a-transparent-border-with-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/create-a-transparent-border-with-css-/</guid>
+      <description>Create a transparent border with CSS In CSS, we can create a transparent border by using the border property in a nested div tag.
+The steps to create this are:Step 1: Create a nested div tag.Step 2: Specify the outer div tag&amp;rsquo;s border-style to be solid and the border-width property can be of any desired size.Step 3: The size of the inner div tag is made smaller than the outer div tag.</description>
+    </item>
+    
+    <item>
+      <title>What is the use of asterisk (*) selector in CSS ? </title>
+      <link>/css/what-is-the-use-of-asterisk-selector-in-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/what-is-the-use-of-asterisk-selector-in-css-/</guid>
+      <description>What is the use of asterisk (*) selector in CSS ? The asterisk (*) is known as the CSS universal selectors. It can be used to select any and all types of elements in an HTML page. The asterisk can also be followed by a selector while using to select a child object. This selector is useful when we want to select all the elements on the page. For example: * { property : value; } While selecting elements, if we use just asterisk (*), then all the elements of the HTML page gets selected irrespective of the parent-child relation.</description>
+    </item>
+    
+    <item>
+      <title>How to Create Wave Background using CSS ? </title>
+      <link>/css/how-to-create-wave-background-using-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/how-to-create-wave-background-using-css-/</guid>
+      <description>How to Create Wave Background using CSS ? The wave background can be easily generated by using before selector. We will use a wave image of .png file format which you can create on your own or can download from here.HTML Code: In this section, we will design the basic structure of the code. html &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content= &amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt; &amp;lt;title&amp;gt; How to Create Wave Background using CSS ?</description>
+    </item>
+    
+    <item>
+      <title>How to create shapes using CSS ? </title>
+      <link>/css/how-to-create-shapes-using-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/how-to-create-shapes-using-css-/</guid>
+      <description>How to create shapes using CSS ? In this article, we will design some different types of shapes using CSS. CSS is capable of making all types of shapes. Creating a square: html &amp;lt;!-- Write HTML code here --&amp;gt; &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;style&amp;gt; .square { height: 50px; width: 50px; background-color: green; } &amp;lt;/style&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;quot;square&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Output: Creating Triangle Upward: Upward: html &amp;lt;!-- Write HTML code here --&amp;gt; &amp;lt;!</description>
+    </item>
+    
+    <item>
+      <title>How to create wave ball effect using CSS? </title>
+      <link>/css/how-to-create-wave-ball-effect-using-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/how-to-create-wave-ball-effect-using-css-/</guid>
+      <description>How to create wave ball effect using CSS? Wave ball effect is a new entry in the world of animation effects that are used in the designing of modern web apps. In this effect, we have some balls which are animated like a wave. Now you can add different elements to it make it unique like a different color for balls and animation-delay or by changing the axis of animation.</description>
+    </item>
+    
+    <item>
+      <title>How to create text-fill animation using CSS ? </title>
+      <link>/css/how-to-create-text-fill-animation-using-css-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/how-to-create-text-fill-animation-using-css-/</guid>
+      <description>How to create text-fill animation using CSS ? Text-fill animation on hover is a type of text-animation of modern web design concepts. In this animation, the text is filled with a color different from that of the original text-color in a particular direction i.e. left to right, right to left, top to bottom, or bottom to top.This type of animations is not limited to only text. You can use the same technique to fill any part or shape like filling a glass or cup can be a good implementation of this animation.</description>
+    </item>
+    
+    <item>
+      <title>CSS Examples </title>
+      <link>/css/css-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-examples-/</guid>
+      <description>CSS Examples The following CSS section contains a wide collection of CSS programming examples. The CSS examples are categorized based on the topics including properties, selectors, functions, and many more. Each example contains multiple approaches to solve the problem.
+CSS Programming TutorialRecent articles on CSSCSS Output &amp;amp; Multiple Choice Questions
+Topics Basics
+Properties
+Selectors
+Functions
+Misc
+Basics Questions How to apply inline CSS?
+How to create a progress bar using HTML and CSS?</description>
+    </item>
+    
+    <item>
+      <title>CSS Preprocessor SASS </title>
+      <link>/css/css-preprocessor-sass-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/css-preprocessor-sass-/</guid>
+      <description>CSS Preprocessor SASS The SASS is the abbreviation of Syntactically Awesome Style Sheets. It is a CSS pre-processor with syntax advancements. The style sheets in the advanced syntax are processed by the program and compiled into regular CSS style sheets, which can be used in the website. It is a CSS extension that allows to use feature like variables, nesting, imports, mixins, inheritance, etc, all in a CSS-compatible syntax ie., it is compatible with all the CSS versions.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Introduction </title>
+      <link>/css/sass-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-introduction-/</guid>
+      <description>SASS | Introduction Sass is the short form of Syntactically Awesome Style Sheet. It is an upgrade to Cascading Style Sheets (CSS). Sass is a CSS pre-processor. It is fully compatible with every version of CSS. Sass reduces the repetition of CSS and therefore saves time. It was designed by Hampton Catlin and developed by Natalie Weizenbaum in 2006. Sass is free to download and use.
+Pre-Requisites: HTML
+CSS
+Working: A web browser does not understand the Sass code itself.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Syntax </title>
+      <link>/css/sass-syntax-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-syntax-/</guid>
+      <description>SASS | Syntax SASS supports two types of syntax. Each one can be differently used to load your required CSS or even the other syntax.
+1. SCSS: The SCSS syntax uses .scss file extension. It is quite similar to CSS. You can even say that SCSS is a superset of CSS, meaning that all the valid CSS is also valid SCSS too. Due to its similarity with CSS, it is the easiest and popular SASS syntax used.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Comments </title>
+      <link>/css/sass-comments-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-comments-/</guid>
+      <description>SASS | Comments Comments in SASS is very similar to the comments in any other programming language. But the difference comes when we talk about the type of comments will be there in the compiled CSS file.
+There are two types of comments in Sass:
+Silent Comments: Silent comments are single-line comments. When we compile Sass file these comments don&amp;rsquo;t reflect in compiled CSS file means these comments will not be there in CSS file.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Variables </title>
+      <link>/css/sass-variables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-variables-/</guid>
+      <description>SASS | Variables This article includes information about how to define a variable in SASS and scope of a variable.
+Prerequisite: Variables in CSS
+Advantages of a variable:
+Reduces the repetition of the same thing again and again.
+We can perform mathematical operations over variable like +,-,/,* etc&amp;hellip; , which makes our work lot more easier.
+Declaration of a variable in SASS: In SASS, you can define a variable by using $ symbol at the starting of the name of the variable and followed by its value.</description>
+    </item>
+    
+    <item>
+      <title>SASS | @import </title>
+      <link>/css/sass-@import-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-@import-/</guid>
+      <description>SASS | @import Using @import we can import SCSS or CSS files in our main file, So basically we can combine multiple files together.
+Syntax:
+@import &#39;Relative path to the file1&#39;, &#39;Relative path to the file2&#39;, ...; We do not have to include .scss or .css extension after file name in the path. You can import as many files as you want. To understand relative path go through this article.</description>
+    </item>
+    
+    <item>
+      <title>SASS | @mixin and @include </title>
+      <link>/css/sass-@mixin-and-@include-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-@mixin-and-@include-/</guid>
+      <description>SASS | @mixin and @include Mixins can be used to group styles that can be assigned different values and can be used multiple times like function. We can also pass arguments in mixin like function, which allows us to write reusable code.
+Mixins are defined using @mixin at-rule and it can be used in the current context using @include at-rule.
+Mixins can be used in two ways: Without Arguments and With Arguments.</description>
+    </item>
+    
+    <item>
+      <title>Sass @extend Rule </title>
+      <link>/css/sass-@extend-rule-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-@extend-rule-/</guid>
+      <description>Sass @extend Rule Sass @extend rule can be used when it is necessary for a class to have the styles of another class, along with its own specific styles. This rule tells Sass that one selector should inherit the class from another selector.
+Syntax:
+@extend &amp;lt;selector&amp;gt; Example:
+SASS .gfg border: 1px green background-color: black font-family: sans-serif &amp;amp;--Renewbuy @extend .gfg border-width: 4px Output:
+.gfg, .gfg--Renewbuy { border: 1px green; background-color: black; font-family: sans-serif; } .</description>
+    </item>
+    
+    <item>
+      <title>Sass @each Rule </title>
+      <link>/css/sass-@each-rule-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-@each-rule-/</guid>
+      <description>Sass @each Rule The @each rule is used to emit styles or evaluate codes for each element of a list or each pair of a map. It is mostly advantageous for repeating styles that have a few differences in them. The section is evaluated for every element of the list or pair of the map which has been assigned to the provided variable name.
+Syntax:
+@each &amp;lt;variable&amp;gt; in &amp;lt;expression&amp;gt; { .</description>
+    </item>
+    
+    <item>
+      <title>SASS | @if and @else </title>
+      <link>/css/sass-@if-and-@else-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-@if-and-@else-/</guid>
+      <description>SASS | @if and @else @if, @else, @else-if allows us to control flow in SASS file compilation like JavaScript.
+@if: @if block will be compiled if the value of the conditional expression is true.Syntax:@if { ... }Example 1: SASS file @mixin button-format( $round-button, $size ) { color: white; background-color: blue; width: $size; @if $round-button { height: $size; border-radius: $size / 2; } } .mybutton{ @include button-format(false, 100px); } Example 1: Compiled CSS file .</description>
+    </item>
+    
+    <item>
+      <title>SASS | Operators </title>
+      <link>/css/sass-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-operators-/</guid>
+      <description>SASS | Operators SASS provides and supports a variety of useful operators in order to work with different values. These operators consist of the standard mathematical operators like +, -, /, and *, and apart from them operators of various other types listed below:
++, -, *, /, and % have their usual meaning of mathematics for the numbers with special behavior for some units that match the behavior of using units in scientific math.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Numeric operators </title>
+      <link>/css/sass-numeric-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-numeric-operators-/</guid>
+      <description>SASS | Numeric operators Sass supports the standard mathematical numeric operators. They can automatically convert between compatible units, like minutes can be added with seconds and they will be automatically converted. Numeric Operators:
++ operator adds two values or expressions or we can say adds the first value to the second value.
+&amp;ndash; operator subtracts the first value from the second one. This needs to be remembered.
+* operator multiplies the two values.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Placeholder Selectors </title>
+      <link>/css/sass-placeholder-selectors-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-placeholder-selectors-/</guid>
+      <description>SASS | Placeholder Selectors Placeholder is another special kind of selector. It is used when you are writing your own SASS library. Its work is very similar to mixin without arguments.
+Placeholder selector starts with a % sign.
+Syntax:
+%( name_of_selector ) { property: value; ... } Placeholder selectors are excluded in the compilation of the SASS file ( This defines the main functionality of it. See the &amp;lsquo;Use of Placeholder selector&amp;rsquo; below ).</description>
+    </item>
+    
+    <item>
+      <title>SASS | Nesting </title>
+      <link>/css/sass-nesting-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-nesting-/</guid>
+      <description>SASS | Nesting SASS Nesting makes our work very efficient, we don&amp;rsquo;t have to repeat outer selectors again and again. We can write nested selectors in the order they appear in the HTML file (i.e., Parent-Outer and Child-Inner Selector form ). SASS will automatically do the work of combining.
+See the example below:SASS file:
+ul { list-style-type: none; li { display: inline-block; a { text-decoration: none; display: inline-block; padding: 10px 15px; color: blue; } } } Compiled CSS file:</description>
+    </item>
+    
+    <item>
+      <title>SASS | Parent Selector </title>
+      <link>/css/sass-parent-selector-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-parent-selector-/</guid>
+      <description>SASS | Parent Selector Parent selector is a special type of selector in SASS, which allows us to reuse the outer(Parent) selector in an efficient way. See the example below to get the idea:
+For example: Suppose we have following CSS style block,
+a { text-decoration: none; display: inline-block; background-color: lightgray; } Now, You want to add hover effect to the anchor block, then you will write
+a:hover { background-color: gray; } Using SASS you need not repeat the outer selector(a), either you can do the following:SASS file:</description>
+    </item>
+    
+    <item>
+      <title>SASS | Booleans and Boolean operators </title>
+      <link>/css/sass-booleans-and-boolean-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-booleans-and-boolean-operators-/</guid>
+      <description>SASS | Booleans and Boolean operators SASS supports boolean values:
+true
+false
+It is used in conditional compilation where the expression evaluates to either of these values.
+Assign a boolean value to the variable:
+$variable: true; or $variable: false; Usage in Conditional Compilation: We can use boolean values in conditional compilation. See the example below, we have passed a true value in the mixin so that the @if block will be compiled.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Shadowing and Flow Control </title>
+      <link>/css/sass-shadowing-and-flow-control-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-shadowing-and-flow-control-/</guid>
+      <description>SASS | Shadowing and Flow Control Shadowing and Flow control are methods of changing the value of variables. These two methods are very useful when we are working with a SASS library. We will discuss it one by one.
+Shadowing:Local variables can be declared with the same name as Global variables. If we do that then the value of that variable in the local scope will be the value of the variable in that local scope and not global value.</description>
+    </item>
+    
+    <item>
+      <title>SASS | Interpolation </title>
+      <link>/css/sass-interpolation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/css/sass-interpolation-/</guid>
+      <description>SASS | Interpolation Interpolation is basically an insertion. Interpolation allows us to interpolate sass expressions into a simple SASS or CSS code. Means, you can define ( some part or the whole ) selector name, property name, CSS at-rules, quoted or unquoted strings etc, as a variable. Interpolation is a new principle and it is widely used in SASS.
+To interpolate an expression we need to wrap the expression using #{ }.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

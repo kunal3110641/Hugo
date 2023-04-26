@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kafka on SATHEE</title>
+    <link>/kafka/</link>
+    <description>Recent content in Kafka on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/kafka/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Apache POI | Getting Started </title>
+      <link>/kafka/apache-poi-%5C-getting-started-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/apache-poi-%5C-getting-started-/</guid>
+      <description>Apache POI | Getting Started POI stands For &amp;ldquo;Poor Obfuscation Implementation&amp;rdquo;. Apache POI is an API provided by Apache foundation which is a collection of different java libraries. These libraries gives the facility to read, write and manipulate different Microsoft files such as excel sheet, power-point, and word files. It&amp;rsquo;s first version release on 30 December 2001.
+Apache POI Architecture Apache POI have different classes and method to work upon different MS Office Document.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Apache POI </title>
+      <link>/kafka/introduction-to-apache-poi-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/introduction-to-apache-poi-/</guid>
+      <description>Introduction to Apache POI Apache POI is an open-source java library to create and manipulate various file formats based on Microsoft Office. Using POI, one should be able to perform create, modify and display/read operations on the following file formats. For Example, Java doesn&amp;rsquo;t provide built-in support for working with excel files, so we need to look for open-source APIs for the job. Apache POI provides Java API for manipulating various file formats based on the Office Open XML (OOXML) standard and OLE2 standard from Microsoft.</description>
+    </item>
+    
+    <item>
+      <title>Apache Kafka | Introduction </title>
+      <link>/kafka/apache-kafka-%5C-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/apache-kafka-%5C-introduction-/</guid>
+      <description>Apache Kafka | Introduction Apache Kafka is a publish-subscribe messaging system. A messaging system let you send messages between processes, applications, and servers. Broadly Speaking, Apache Kafka is a software where topics (A topic might be a category) can be defined and further processed. Applications may connect to this system and transfer a message onto the topic. A message can include any kind of information ,from any event on your Personal blog or can be a very simple text message that would trigger any other event.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Computing </title>
+      <link>/kafka/cloud-computing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/cloud-computing-/</guid>
+      <description>Cloud Computing In Simplest terms, cloud computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer&amp;rsquo;s hard drive or local server. Cloud computing is also referred to as Internet-based computing. Cloud Computing Architecture: Cloud computing architecture refers to the components and sub-components required for cloud computing. These components typically refer to:
+Front end(fat client, thin client)
+Back-end platforms(servers, storage)</description>
+    </item>
+    
+    <item>
+      <title>Cloud Based Services </title>
+      <link>/kafka/cloud-based-services-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/cloud-based-services-/</guid>
+      <description>Cloud Based Services Cloud Computing can be defined as the practice of using a network of remote servers hosted on the Internet to store, manage, and process data, rather than a local server or a personal computer. Companies offering such kinds of cloud computing services are called cloud providers and typically charge for cloud computing services based on usage. Grids and clusters are the foundations for cloud computing.
+Types of Cloud Computing Most cloud computing services fall into five broad categories: Software as a service (SaaS)</description>
+    </item>
+    
+    <item>
+      <title>Characteristics of Cloud Computing </title>
+      <link>/kafka/characteristics-of-cloud-computing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/characteristics-of-cloud-computing-/</guid>
+      <description>Characteristics of Cloud Computing There are many characteristics of Cloud Computing here are few of them :
+On-demand self-services: The Cloud computing services does not require any human administrators, user themselves are able to provision, monitor and manage computing resources as needed.
+Broad network access: The Computing services are generally provided over standard networks and heterogeneous devices.
+Rapid elasticity: The Computing services should have IT resources that are able to scale out and in quickly and on as needed basis.</description>
+    </item>
+    
+    <item>
+      <title>Anatomy of Cloud Computing </title>
+      <link>/kafka/anatomy-of-cloud-computing-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/anatomy-of-cloud-computing-/</guid>
+      <description>Anatomy of Cloud Computing Provisioning and Configuration Module:It is the lowest level of cloud and typically resides on bare hardware (as a firmware) or on the top of the hypervisor layer. Its function is to abstract the underlying hardware and provide a standard mechanism to spawn instance of virtual machine on demand. It also handles the post-configuration of the operating systems and applications residing on the VM
+Monitoring and Optimization:This layer handles the monitoring of all services, storage, networking and applications components in cloud.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Computing Services in Financial Market </title>
+      <link>/kafka/cloud-computing-services-in-financial-market-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/kafka/cloud-computing-services-in-financial-market-/</guid>
+      <description>Cloud Computing Services in Financial Market A Cloud Computing readiness approach can be adopted by capital market and other financial firms to make clear decisions upon their approach of handling day to day fiscal problems and to adapt the cloud computing services on the go. In this digital age of computers and networks, one of the major discovery in information technology is Cloud computing. Cloud Computing is a wireless shared stream of resources networked to offer wide range of services.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

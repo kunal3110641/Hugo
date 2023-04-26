@@ -1,0 +1,332 @@
+---
+title: "Creating Breadcrumbs
+"
+draft: false
+menu:
+sidebar:
+name: "Creating Breadcrumbs
+"
+parent: "HTML"
+weight: 127
+---
+
+How to Create Breadcrumbs using HTML and CSS ?
+----------------------------------------------
+
+![](https://media.geeksforgeeks.org/auth/avatar.png)
+
+Read
+
+Discuss
+
+Courses
+
+Practice
+
+Video
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200324013426/Screenshot-from-2020-03-24-01-29-24.png)
+
+Create an attractive Breadcrumbs navigation is quite difficult for NON-CSS experts. Without using CSS, the Breadcrumbs navigation will steal your website's gorgeousness. By using only HTML and CSS we can create an attractive Breadcrumbs navigation. In this article, the main focus will be CSS. We will create the structure for the breadcrumbs first after that we will design the structure as we want.
+
+Creating Structure: Here we will create a normal structure by using
+
+tag. That will create a simple interface you can check that by running the following code:
+
+HTML Code:
+
+  
+
+  
+
+    
+
+GeeksforGeeks
+=============
+
+    **Creating Breadcrumbs**    
+
+-               [Web Technologies](#)        
+-               [HTML](#)        
+-               [Tags](#)        
+-               [Attributes](#)        
+
+  
+
+    <!DOCTYPE html>
+    <html>
+      
+    <head>
+        <title>Creating Breadcrumbs</title>
+      
+    </head>
+      
+    <body>
+        <h1>GeeksforGeeks</h1>
+        <b>Creating Breadcrumbs</b>
+        <ul class="addressLink">
+            <li>
+                <a href="#">Web Technologies</a>
+            </li>
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">Tags</a>
+            </li>
+            <li>
+                <a href="#">Attributes</a>
+            </li>
+        </ul>
+    </body>
+      
+    </html>
+
+Designing Structure: Here is the most difficult task is to create arrow-shaped into the right side of the Breadcrumbs. To create that arrow-shaped we will use ::after selector. Place one list on another list by using the z-index property. Other things are quite easy for a CSS developer.
+
+CSS Code:
+
+    <style>
+        body {
+            text-align: center;
+        }
+        h1{
+            color: green;
+        }
+          
+        .addressLink {
+            list-style: none;
+            overflow: hidden;
+            font: 16px;
+            margin: 30px;
+            padding: 0px;
+            border: 2px solid black;
+            font-style: italic;
+        }
+          
+        .addressLink li {
+            float: left;
+        }
+          
+        .addressLink li a {
+            background: #006600;
+            color: white;
+            text-decoration: none;
+            padding: 5px 0px 5px 65px;
+            position: relative;
+            float: left;
+        }
+          
+        .addressLink li a:after {
+            content: " ";
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid #006600;
+            margin-top: -50px;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            z-index: 2;
+        }
+          
+        .addressLink li a:before {
+            content: " ";
+            border-top: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-left: 30px solid white;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            z-index: 1;
+        }
+          
+        .addressLink li:first-child a {
+            padding-left: 10px;
+        }
+          
+        .addressLink li:nth-child(2) a {
+            background: #009933;
+        }
+          
+        .addressLink li:nth-child(2) a:after {
+            border-left-color: #009933;
+        }
+          
+        .addressLink li:nth-child(3) a {
+            background: #33cc33;
+        }
+          
+        .addressLink li:nth-child(3) a:after {
+            border-left-color: #33cc33;
+        }
+          
+          
+        .addressLink li:last-child a {
+            background: transparent !important;
+            color: black;
+        }
+          
+        .addressLink li:last-child a:after {
+            border: 0;
+        }
+          
+        .addressLink li a:hover {
+            background: #99ff99;
+        }
+          
+        .addressLink li a:hover:after {
+            border-left-color: #99ff99 !important;
+        }
+    </style>
+
+Final Solution: In this section, we will combine both the HTML and CSS code to Create Breadcrumbs.
+
+    <!DOCTYPE html>
+    <html>
+      
+    <head>
+        <title>Creating Breadcrumbs</title>
+        <style>
+            body {
+                text-align: center;
+            }
+            h1{
+                color: green;
+            }
+              
+            /* Styling addressLink class */
+            .addressLink {
+                list-style: none;
+                overflow: hidden;
+                font: 16px;
+                margin: 30px;
+                padding: 0px;
+                border: 2px solid black;
+                font-style: italic;
+            }
+              
+            /* Floating addressLink list */
+            .addressLink li {
+                float: left;
+            }
+              
+            /* Styling addressLink list's anchor element*/
+            .addressLink li a {
+                background: #006600;
+                color: white;
+                text-decoration: none;
+                padding: 5px 0px 5px 65px;
+                position: relative;
+                float: left;
+            }
+              
+            .addressLink li a:after {
+                content: " ";
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 30px solid #006600;
+                margin-top: -50px;
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                z-index: 2;
+            }
+              
+            .addressLink li a:before {
+                content: " ";
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+                border-left: 30px solid white;
+                position: absolute;
+                top: 50%;
+                left: 100%;
+                z-index: 1;
+            }
+              
+            /* First child padding */
+            .addressLink li:first-child a {
+                padding-left: 10px;
+            }
+              
+            /* Second child bg-color */
+            .addressLink li:nth-child(2) a {
+                background: #009933;
+            }
+              
+            /* Second child Second half bg-color */
+            .addressLink li:nth-child(2) a:after {
+                border-left-color: #009933;
+            }
+              
+            /* Third child bg-color */
+            .addressLink li:nth-child(3) a {
+                background: #33cc33;
+            }
+              
+            /* Third child Second half bg-color */
+            .addressLink li:nth-child(3) a:after {
+                border-left-color: #33cc33;
+            }
+              
+            /* Last child bg-color and text-color */
+            .addressLink li:last-child a {
+                background: transparent !important;
+                color: black;
+            }
+              
+            .addressLink li:last-child a:after {
+                border: 0px;
+            }
+              
+            /* Hover on list's anchor element */
+            .addressLink li a:hover {
+                background: #99ff99;
+            }
+              
+            .addressLink li a:hover:after {
+                border-left-color: #99ff99 !important;
+            }
+        </style>
+    </head>
+      
+    <body>
+        <h1>GeeksforGeeks</h1>
+        <b>Creating Breadcrumbs</b>
+        <ul class="addressLink">
+            <li>
+                <a href="#">Web Technologies</a>
+            </li>
+            <li>
+                <a href="#">HTML</a>
+            </li>
+            <li>
+                <a href="#">Tags</a>
+            </li>
+            <li>
+                <a href="#">Attributes</a>
+            </li>
+        </ul>
+    </body>
+      
+    </html>
+
+Output:
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20200324013700/Screencast-2020-03-24-013555.gif)
+
+Please Login to comment\...
+---------------------------
+
+![](https://media.geeksforgeeks.org/auth/avatar.png)
+
+CSS-Misc
+
+HTML-Misc
+
+CSS
+
+HTML
+
+Web Technologies
+
+HTML

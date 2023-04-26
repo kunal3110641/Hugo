@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Day-2 on SATHEE</title>
+    <link>/day2/</link>
+    <description>Recent content in Day-2 on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/day2/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>DRY - Don&#39;t Repeat Yourself 💧 </title>
+      <link>/day2/dry-dont-repeat-yourself/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/dry-dont-repeat-yourself/</guid>
+      <description>DRY - Don&amp;rsquo;t Repeat Yourself 💧 Repeating code is a common issue. Instead, try to make your code reusable and modular. This makes it easier to maintain and troubleshoot. For example, instead of writing the same code multiple times, you can create a function:
+Python: def greet(name): return f&amp;#34;Hello, {name}!&amp;#34; print(greet(&amp;#34;Alice&amp;#34;)) print(greet(&amp;#34;Bob&amp;#34;)) In terms of the DRY (Don&amp;rsquo;t Repeat Yourself) principle, the given code is a good example of how to avoid duplication of code.</description>
+    </item>
+    
+    <item>
+      <title>Orthogonality 🔀 </title>
+      <link>/day2/orthogonality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/orthogonality/</guid>
+      <description>Orthogonality 🔀 Orthogonal components are independent, meaning a change in one doesn&amp;rsquo;t affect the others. This reduces the risk of creating bugs when modifying your code. For example, instead of intertwining different functionalities in a single function, separate them:
+Python def calculate_area(width, height): return width * height def calculate_perimeter(width, height): return 2 * (width + height) width = 4 height = 5 area = calculate_area(width, height) perimeter = calculate_perimeter(width, height)</description>
+    </item>
+    
+    <item>
+      <title>Code Generality 🌐 </title>
+      <link>/day2/code-generality/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/code-generality/</guid>
+      <description>Code Generality 🌐 Python is a versatile programming language that allows developers to create code that can handle a variety of situations. One way to make code more reusable and versatile is by using functions with parameters instead of hardcoding values. This allows the same function to be used with different values, making the code more flexible and easier to maintain.
+Python def multiply_numbers(a, b): return a * b result = multiply_numbers(3, 4)</description>
+    </item>
+    
+    <item>
+      <title>Incremental Development ⏳ </title>
+      <link>/day2/incremental-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/incremental-development/</guid>
+      <description>Incremental Development ⏳ Develop your code in small, incremental steps to ensure that each part works correctly before moving on. This helps you catch bugs early and keeps your code maintainable. For example, instead of writing a large program all at once, break it into smaller functions and test each one:
+Define the problem: Start by defining the problem you are trying to solve. For example, you might want to write a program that calculates the average of a list of numbers.</description>
+    </item>
+    
+    <item>
+      <title>Debugging and Testing 🐛
+</title>
+      <link>/day2/debugging-and-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/debugging-and-testing/</guid>
+      <description>Debugging and Testing 🐛 Make debugging and testing an integral part of your development process. This helps you identify and fix issues early on. Use Python&amp;rsquo;s built-in debugger (pdb) and testing libraries like pytest or unittest to test your code:
+python
+import pdb def divide_numbers(a, b): pdb.set_trace() return a / b result = divide_numbers(6, 3) This code is an example of testing and debugging, as it uses the Python debugger module (pdb) to set a breakpoint in the code and pause the execution at a specific point, allowing the programmer to examine the state of the program and test its functionality.</description>
+    </item>
+    
+    <item>
+      <title>Code Readability and Documentation 📚 </title>
+      <link>/day2/code-readability-and-documentation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/day2/code-readability-and-documentation/</guid>
+      <description>Code Readability and Documentation 📚 Write clear, easy-to-read code with helpful comments and documentation. This makes it easier for others to understand and maintain your code. Use descriptive variable and function names, and follow the PEP 8 style guide for Python:
+Good Example:
+Python
+# Calculate the area of a rectangle def calculate_area(length, width): &amp;#34;&amp;#34;&amp;#34; This function takes in the length and width of a rectangle and returns the area. &amp;#34;&amp;#34;&amp;#34; area = length * width return area rectangle_length = 5 rectangle_width = 10 rectangle_area = calculate_area(rectangle_length, rectangle_width) print(f&amp;#34;The area of the rectangle is {rectangle_area}.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

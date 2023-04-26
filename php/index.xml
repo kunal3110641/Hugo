@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phps on SATHEE</title>
+    <link>/php/</link>
+    <description>Recent content in Phps on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/php/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>fast-api</title>
+      <link>/php/fastapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/php/fastapi/</guid>
+      <description>::: {md-component=&amp;ldquo;skip&amp;rdquo;} Skip to content{.md-skip} :::
+::: {md-component=&amp;ldquo;announce&amp;rdquo;} ::: {.md-banner__inner .md-grid .md-typeset} ::: {.announce-wrapper} ::: {#announce-left} ::: {.item style=&amp;ldquo;display: block;&amp;rdquo;} Follow @fastapi on Twitter to stay updated :::
+::: {.item style=&amp;ldquo;display: none;&amp;rdquo;} Subscribe to the FastAPI and friends newsletter 🎉 :::
+::: {.item style=&amp;ldquo;display: none;&amp;rdquo;} You can now sponsor FastAPI 🍰{.announce-link} ::: :::
+::: {#announce-right style=&amp;ldquo;position: relative;&amp;rdquo;} ::: {.item style=&amp;ldquo;display: block;&amp;rdquo;} [sponsor]{.sponsor-badge} {.sponsor-image} :::
+::: {.item style=&amp;ldquo;display: none;&amp;rdquo;} [sponsor]{.sponsor-badge} {.sponsor-image} :::</description>
+    </item>
+    
+    <item>
+      <title>Motor Insurance</title>
+      <link>/php/motor-insurance-training-sessions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/php/motor-insurance-training-sessions/</guid>
+      <description>﻿
+Motor Insurance
+Training - Session 1
+• By - vikas.sharma@renewbuy.com
+Rules
+● Undivided focus
+“Right knowledge is the
+ultimate solution to all our
+problems.”
+- Bhagavad Gita
+● What is Motor Insurance
+● Types of Motor Insurance
+● Components of the Premium
+● RB tech platform and Motor
+Insurance
+Overview
+What is Motor Insurance
+● A safety cover for your vehicle
+● Mandatory - Motor Vehicle Act 1988
+● Regulator - IRDAI (Insurance Regulatory</description>
+    </item>
+    
+    <item>
+      <title>php chapter-01</title>
+      <link>/php/sample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/php/sample/</guid>
+      <description></description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,5653 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Python String </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Python String " />
+<meta property="og:description" content="Python String Difficulty Level : Easy
+Last Updated : 24 Mar, 2023
+Read
+Discuss(20)
+Courses
+Practice
+Video
+A string is a data structure in Python that represents a sequence of characters. It is an immutable data type, meaning that once you have created a string, you cannot change it. Strings are used widely in many different applications, such as storing and manipulating text data, representing names, addresses, and other types of data that can be represented as text." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/python/python-string_/" /><meta property="article:section" content="python" />
+
+
+
+
+
+    
+    
+	<meta name="description" content="Python String " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/python/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/python/introduction-to-python_/"><div class="panelist" >Introduction To PYTHON </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-language-advantages-and-applications_/"><div class="panelist" >Python Language advantages and applications </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/download-and-install-python-3-latest-version_/"><div class="panelist" >Download and Install Python 3 Latest Version </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-3-basics_/"><div class="panelist" >Python 3 basics </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-keywords_/"><div class="panelist" >Python Keywords </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/namespaces-and-scope-in-python_/"><div class="panelist" >Namespaces and Scope in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/statement-indentation-and-comment-in-python_/"><div class="panelist" >Statement, Indentation and Comment in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-assign-values-to-variables-in-python-and-other-languages_/"><div class="panelist" >How to assign values to variables in Python and other languages </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-input-in-python_/"><div class="panelist" >Taking input in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-input-from-console-in-python_/"><div class="panelist" >Taking input from console in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/taking-multiple-inputs-from-user-in-python_/"><div class="panelist" >Taking multiple inputs from user in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-print-without-newline-in-python__/"><div class="panelist" >How to print without newline in Python? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-end-parameter-in-print_/"><div class="panelist" >Python end parameter in print() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-operators_/"><div class="panelist" >Python Operators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/ternary-operator-in-python_/"><div class="panelist" >Ternary Operator in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/division-operators-in-python_/"><div class="panelist" >Division Operators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/operator-overloading-in-python_/"><div class="panelist" >Operator Overloading in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/any-all-in-python_/"><div class="panelist" >Any All in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/difference-between-and-is-operator-in-python_/"><div class="panelist" >Difference between == and is operator in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-membership-and-identity-operators_/"><div class="panelist" >Python Membership and Identity Operators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-string_/"><div class="panelist" id="activetab">Python String </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-lists_/"><div class="panelist" >Python Lists </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tuples_/"><div class="panelist" >Python Tuples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-sets_/"><div class="panelist" >Python Sets </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-dictionary_/"><div class="panelist" >Python Dictionary </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-arrays_/"><div class="panelist" >Python Arrays </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-if-else_/"><div class="panelist" >Python If Else </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/chaining-comparison-operators-in-python_/"><div class="panelist" >Chaining comparison operators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-for-loops_/"><div class="panelist" >Python For Loops </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-while-loop_/"><div class="panelist" >Python While Loop </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-continue-statement_/"><div class="panelist" >Python Continue Statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pass-statement_/"><div class="panelist" >Python pass Statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/looping-techniques-in-python_/"><div class="panelist" >Looping Techniques in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-functions_/"><div class="panelist" >Python Functions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/when-to-use-yield-instead-of-return-in-python__/"><div class="panelist" >When to use yield instead of return in Python? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/generators-in-python_/"><div class="panelist" >Generators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-lambda_/"><div class="panelist" >Python lambda </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/global-and-local-variables-in-python_/"><div class="panelist" >Global and Local Variables in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/global-keyword-in-python_/"><div class="panelist" >Global keyword in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/first-class-functions-in-python_/"><div class="panelist" >First Class functions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-closures_/"><div class="panelist" >Python Closures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/decorators-in-python_/"><div class="panelist" >Decorators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/decorators-with-parameters-in-python_/"><div class="panelist" >Decorators with parameters in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/memoization-using-decorators-in-python_/"><div class="panelist" >Memoization using decorators in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-classes-and-objects_/"><div class="panelist" >Python Classes and Objects </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/constructors-in-python_/"><div class="panelist" >Constructors in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/destructors-in-python_/"><div class="panelist" >Destructors in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/inheritance-in-python_/"><div class="panelist" >Inheritance in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/types-of-inheritance-python_/"><div class="panelist" >Types of inheritance Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/encapsulation-in-python_/"><div class="panelist" >Encapsulation in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/polymorphism-in-python_/"><div class="panelist" >Polymorphism in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-exception-handling_/"><div class="panelist" >Python Exception Handling </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-try-except_/"><div class="panelist" >Python Try Except </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/errors-and-exceptions-in-python_/"><div class="panelist" >Errors and Exceptions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/built-in-exceptions-in-python_/"><div class="panelist" >Built-in Exceptions in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/user-defined-exceptions-in-python-with-examples_/"><div class="panelist" >User-defined Exceptions in Python with Examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/nzec-error-in-python_/"><div class="panelist" >NZEC error in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/file-handling-in-python_/"><div class="panelist" >File Handling in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/open-a-file-in-python_/"><div class="panelist" >Open a File in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-read-from-a-file-in-python_/"><div class="panelist" >How to read from a file in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/writing-to-file-in-python_/"><div class="panelist" >Writing to file in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-append-to-a-file_/"><div class="panelist" >Python append to a file </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/regular-expressions-in-python--set-2-search-match-and-find-all_/"><div class="panelist" >Regular Expressions in Python -- Set 2 (Search, Match and Find All) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-regex_-re.search-vs-re.findall_/"><div class="panelist" >Python Regex: re.search() VS re.findall() </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/verbose-in-python-regex_/"><div class="panelist" >Verbose in Python Regex </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/password-validation-in-python_/"><div class="panelist" >Password validation in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-collections-module_/"><div class="panelist" >Python Collections Module </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/ordereddict-in-python_/"><div class="panelist" >OrderedDict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/defaultdict-in-python_/"><div class="panelist" >Defaultdict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/chainmap-in-python_/"><div class="panelist" >ChainMap in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/namedtuple-in-python_/"><div class="panelist" >Namedtuple in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/deque-in-python_/"><div class="panelist" >Deque in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/heap-queue-or-heapq-in-python_/"><div class="panelist" >Heap queue (or heapq) in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userdict-in-python_/"><div class="panelist" >Collections.UserDict in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userlist-in-python_/"><div class="panelist" >Collections.UserList in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/collections.userstring-in-python_/"><div class="panelist" >Collections.UserString in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/os-module-in-python-with-examples_/"><div class="panelist" >OS Module in Python with Examples </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/functional-programming-in-python_/"><div class="panelist" >Functional Programming in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/metaprogramming-with-metaclasses-in-python_/"><div class="panelist" >Metaprogramming with Metaclasses in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/abstract-classes-in-python_/"><div class="panelist" >Abstract Classes in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/action-chains-in-selenium-python_/"><div class="panelist" >Action Chains in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/append-to-json-file-using-python_/"><div class="panelist" >Append to JSON file using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/basic-slicing-and-advanced-indexing-in-numpy-python_/"><div class="panelist" >Basic Slicing and Advanced Indexing in NumPy Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/connect-mysql-database-using-mysql-connector-python_/"><div class="panelist" >Connect MySQL database using MySQL-Connector Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/create-a-database-in-mongodb-using-python_/"><div class="panelist" >Create a database in MongoDB using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/data-science-with-python-tutorial_/"><div class="panelist" >Data Science With Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/deserialize-json-to-object-in-python_/"><div class="panelist" >Deserialize JSON to Object in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/erosion-and-dilation-of-images-using-opencv-in-python_/"><div class="panelist" >Erosion and Dilation of images using OpenCV in python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/exceptions--selenium-python_/"><div class="panelist" >Exceptions -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/extract-images-from-video-in-python_/"><div class="panelist" >Extract images from video in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/face-detection-using-python-and-opencv-with-webcam_/"><div class="panelist" >Face Detection using Python and OpenCV with webcam </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/hierarchical-treeview-in-python-gui-application_/"><div class="panelist" >Hierarchical treeview in Python GUI application </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-install-opencv-for-python-on-windows__/"><div class="panelist" >How to Install OpenCV for Python on Windows? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/how-to-install-python-pandas-on-windows-and-linux__/"><div class="panelist" >How to Install Python Pandas on Windows and Linux? </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/image-processing-in-python-scaling-rotating-shifting-and-edge-detection_/"><div class="panelist" >Image Processing in Python (Scaling, Rotating, Shifting and Edge Detection) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/installing-mongodb-on-windows-with-python_/"><div class="panelist" >Installing MongoDB on Windows with Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/interacting-with-webpage--selenium-python_/"><div class="panelist" >Interacting with Webpage -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-kivy-a-cross-platform-python-framework_/"><div class="panelist" >Introduction to Kivy ; A Cross-platform Python Framework </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/introduction-to-pandas-in-python_/"><div class="panelist" >Introduction to Pandas in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/locating-multiple-elements-in-selenium-python_/"><div class="panelist" >Locating multiple elements in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/locating-single-elements-in-selenium-python_/"><div class="panelist" >Locating single elements in Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/locator-strategies--selenium-python_/"><div class="panelist" >Locator Strategies -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/mongodb-and-python_/"><div class="panelist" >MongoDB and Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/navigating-links-using-get-method--selenium-python_/"><div class="panelist" >Navigating links using get method -- Selenium Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/opencv-python-tutorial_/"><div class="panelist" >OpenCV Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/python--tkinter-askquestion-dialog_/"><div class="panelist" >Python -- Tkinter askquestion Dialog </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-bokeh-tutorial--interactive-data-visualization-with-bokeh_/"><div class="panelist" >Python Bokeh tutorial -- Interactive Data Visualization with Bokeh </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-break-statement_/"><div class="panelist" >Python break statement </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-exercises-practice-questions-and-solutions_/"><div class="panelist" >Python Exercises, Practice Questions and Solutions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-json_/"><div class="panelist" >Python JSON </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--find_/"><div class="panelist" >Python MongoDB -- Find </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--limit-query_/"><div class="panelist" >Python MongoDB -- Limit Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--query_/"><div class="panelist" >Python MongoDB -- Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb--sort_/"><div class="panelist" >Python MongoDB -- Sort </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mongodb-tutorial_/"><div class="panelist" >Python MongoDB Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-multiple-choice-questions_/"><div class="panelist" >Python Multiple Choice Questions </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql_/"><div class="panelist" >Python MySQL </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--create-database_/"><div class="panelist" >Python MySQL -- Create Database </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--delete-query_/"><div class="panelist" >Python MySQL -- Delete Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--drop-table_/"><div class="panelist" >Python MySQL -- Drop Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--insert-into-table_/"><div class="panelist" >Python MySQL -- Insert into Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--join_/"><div class="panelist" >Python MySQL -- Join </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--limit-clause_/"><div class="panelist" >Python MySQL -- Limit Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--order-by-clause_/"><div class="panelist" >Python MySQL -- Order By Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--select-query_/"><div class="panelist" >Python MySQL -- Select Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--update-query_/"><div class="panelist" >Python MySQL -- Update Query </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-mysql--where-clause_/"><div class="panelist" >Python MySQL -- Where Clause </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-numpy_/"><div class="panelist" >Python Numpy </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-dataframe_/"><div class="panelist" >Python Pandas DataFrame </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-pandas-series_/"><div class="panelist" >Python Pandas Series </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-plotly-tutorial_/"><div class="panelist" >Python Plotly tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-programs_/"><div class="panelist" >Python Programs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-seaborn-tutorial_/"><div class="panelist" >Python Seaborn Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--canvas-widget_/"><div class="panelist" >Python Tkinter -- Canvas Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--checkbutton-widget_/"><div class="panelist" >Python Tkinter -- Checkbutton Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--entry-widget_/"><div class="panelist" >Python Tkinter -- Entry Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--frame-widget_/"><div class="panelist" >Python Tkinter -- Frame Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--label_/"><div class="panelist" >Python Tkinter -- Label </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--listbox-widget_/"><div class="panelist" >Python Tkinter -- ListBox Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--message_/"><div class="panelist" >Python Tkinter -- Message </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--messagebox-widget_/"><div class="panelist" >Python Tkinter -- MessageBox Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--scale-widget_/"><div class="panelist" >Python Tkinter -- Scale Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--scrolledtext-widget_/"><div class="panelist" >Python Tkinter -- ScrolledText Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--spinbox_/"><div class="panelist" >Python Tkinter -- SpinBox </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--text-widget_/"><div class="panelist" >Python Tkinter -- Text Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--toplevel-widget_/"><div class="panelist" >Python Tkinter -- Toplevel Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter--validating-entry-widget_/"><div class="panelist" >Python Tkinter -- Validating Entry Widget </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-tutorial_/"><div class="panelist" >Python Tkinter Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tutorial_/"><div class="panelist" >Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-scrollbar_/"><div class="panelist" >Python-Tkinter Scrollbar </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python-tkinter-treeview-scrollbar_/"><div class="panelist" >Python-Tkinter Treeview scrollbar </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/python_-mysql-create-table_/"><div class="panelist" >Python: MySQL Create Table </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/read-write-and-parse-json-using-python_/"><div class="panelist" >Read, Write and Parse JSON using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/reading-an-image-in-opencv-using-python_/"><div class="panelist" >Reading an image in OpenCV using Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/reading-csv-files-in-python_/"><div class="panelist" >Reading CSV files in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/selenium-python-introduction-and-installation_/"><div class="panelist" >Selenium Python Introduction and Installation </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/selenium-python-tutorial_/"><div class="panelist" >Selenium Python Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/serializing-json-data-in-python_/"><div class="panelist" >Serializing JSON data in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/socket-programming-in-python_/"><div class="panelist" >Socket Programming in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/socket-programming-with-multi-threading-in-python_/"><div class="panelist" >Socket Programming with Multi-threading in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/working-with-csv-files-in-python_/"><div class="panelist" >Working with csv files in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/python/working-with-json-data-in-python_/"><div class="panelist" >Working With JSON Data in Python </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/python/writing-csv-files-in-python_/"><div class="panelist" >Writing CSV files in Python </div></a>
+              
+            
+            
+            
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="python-string">Python String</h2>
+<p>Difficulty Level : Easy</p>
+<p>Last Updated : 24 Mar, 2023</p>
+<p>Read</p>
+<p>Discuss(20)</p>
+<p>Courses</p>
+<p>Practice</p>
+<p>Video</p>
+<p>A string is a data structure in Python that represents a sequence of
+characters. It is an immutable data type, meaning that once you have
+created a string, you cannot change it. Strings are used widely in many
+different applications, such as storing and manipulating text data,
+representing names, addresses, and other types of data that can be
+represented as text.</p>
+<p>Example:</p>
+<pre><code>&quot;Geeksforgeeks&quot; or 'Geeksforgeeks'
+</code></pre>
+<p>Python does not have a character data type, a single character is simply
+a string with a length of 1. Square brackets can be used to access
+elements of the string.</p>
+<h2 id="python3">Python3</h2>
+<p>print(&quot;A Computer Science portal for geeks&quot;)</p>
+<p>Output:</p>
+<pre><code>A Computer Science portal for geeks
+</code></pre>
+<h2 id="creating-a-string-in-python">Creating a String in Python</h2>
+<p>Strings in Python can be created using single quotes or double quotes or
+even triple quotes. </p>
+<h2 id="python3-1">Python3</h2>
+<p># Python Program for# Creation of String # Creating a String# with
+single QuotesString1 = 'Welcome to the Geeks World'print(&quot;String with
+the use of Single Quotes: &quot;)print(String1) # Creating a String# with
+double QuotesString1 = &quot;I'm a Geek&quot;print(&quot;\nString with the use of
+Double Quotes: &quot;)print(String1) # Creating a String# with triple
+QuotesString1 = '''I'm a Geek and I live in a world of
+&quot;Geeks&quot;'''print(&quot;\nString with the use of Triple Quotes:
+&quot;)print(String1) # Creating String with triple# Quotes allows
+multiple linesString1 =
+'''Geeks            For            Life'''print(&quot;\nCreating a
+multiline String: &quot;)print(String1)</p>
+<p>Output: </p>
+<pre><code>String with the use of Single Quotes: 
+Welcome to the Geeks World
+
+String with the use of Double Quotes: 
+I'm a Geek
+
+String with the use of Triple Quotes: 
+I'm a Geek and I live in a world of &quot;Geeks&quot;
+
+Creating a multiline String: 
+Geeks
+            For
+            Life
+</code></pre>
+<h2 id="accessing-characters-in-python-string">Accessing characters in Python String</h2>
+<p>In Python, individual characters of a String can be accessed by using
+the method of Indexing. Indexing allows negative address references to
+access characters from the back of the String, e.g. -1 refers to the
+last character, -2 refers to the second last character, and so on. </p>
+<p>While accessing an index out of the range will cause an IndexError. Only
+Integers are allowed to be passed as an index, float or other types that
+will cause a TypeError.</p>
+<p> Python3</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200204160843/strings.jpg" alt="String inPython"></p>
+<p> </p>
+<h2 id="python3-2">Python3</h2>
+<p># Python Program to Access# characters of String String1 =
+&quot;GeeksForGeeks&quot;print(&quot;Initial String: &quot;)print(String1) # Printing
+First characterprint(&quot;\nFirst character of String is:
+&quot;)print(String1[0]) # Printing Last characterprint(&quot;\nLast
+character of String is: &quot;)print(String1[-1])</p>
+<p>Output: </p>
+<pre><code>Initial String: 
+GeeksForGeeks
+
+First character of String is: 
+G
+
+Last cha racter of String is: 
+s
+</code></pre>
+<h2 id="reversing-a-python-string">Reversing a Python String</h2>
+<p>With Accessing Characters from a string, we can also reverse them. We
+can Reverse a string by writing [::-1] and the string will be
+reversed.</p>
+<h2 id="python3-3">Python3</h2>
+<p>#Program to reverse a stringgfg = &quot;geeksforgeeks&quot;print(gfg[::-1])</p>
+<p>Output:</p>
+<pre><code>skeegrofskeeg
+</code></pre>
+<p>We can also reverse a string by using built-in join and reversed
+function.</p>
+<h2 id="python3-4">Python3</h2>
+<p># Program to reverse a string gfg = &quot;geeksforgeeks&quot; # Reverse the
+string using reversed and join functiongfg =
+&quot;&quot;.join(reversed(gfg)) print(gfg)</p>
+<p>Output:</p>
+<pre><code>skeegrofskeeg
+</code></pre>
+<h2 id="string-slicing">String Slicing</h2>
+<p>To access a range of characters in the String, the method of slicing is
+used. Slicing in a String is done by using a Slicing operator (colon). </p>
+<h2 id="python3-5">Python3</h2>
+<p># Python Program to# demonstrate String slicing # Creating a
+StringString1 = &quot;GeeksForGeeks&quot;print(&quot;Initial String:
+&quot;)print(String1) # Printing 3rd to 12th characterprint(&quot;\nSlicing
+characters from 3-12: &quot;)print(String1[3:12]) # Printing characters
+between# 3rd and 2nd last characterprint(&quot;\nSlicing characters
+between &quot; +      &quot;3rd and 2nd last character:
+&quot;)print(String1[3:-2])</p>
+<p>Output: </p>
+<pre><code>Initial String: 
+GeeksForGeeks
+
+Slicing characters from 3-12: 
+ksForGeek
+
+Slicing characters between 3rd and 2nd last character: 
+ksForGee
+</code></pre>
+<h2 id="deletingupdating-from-a-string">Deleting/Updating from a String</h2>
+<p>In Python, the Updation or deletion of characters from a String is not
+allowed. This will cause an error because item assignment or item
+deletion from a String is not supported. Although deletion of the entire
+String is possible with the use of a built-in del keyword. This is
+because Strings are immutable, hence elements of a String cannot be
+changed once it has been assigned. Only new strings can be reassigned to
+the same name. </p>
+<h2 id="updation-of-a-character">Updation of a character: </h2>
+<h2 id="python3-6">Python3</h2>
+<p># Python Program to Update# character of a String String1 = &quot;Hello,
+I'm a Geek&quot;print(&quot;Initial String: &quot;)print(String1) # Updating a
+character of the String## As python strings are immutable, they don't
+support item updation directly### there are following two
+ways#1list1 = list(String1)list1[2] = 'p'String2 =
+''.join(list1)print(&quot;\nUpdating character at 2nd Index:
+&quot;)print(String2) #2String3 = String1[0:2] + 'p' +
+String1[3:]print(String3)</p>
+<p>Output: </p>
+<p>Initial String: Hello, I&rsquo;m a Geek</p>
+<p>Updating character at 2nd Index: Heplo, I&rsquo;m a GeekHeplo, I&rsquo;m a Geek</p>
+<h2 id="updating-entire-string">Updating Entire String:</h2>
+<h2 id="python3-7">Python3</h2>
+<p># Python Program to Update# entire String String1 = &quot;Hello, I'm a
+Geek&quot;print(&quot;Initial String: &quot;)print(String1) # Updating a
+StringString1 = &quot;Welcome to the Geek World&quot;print(&quot;\nUpdated String:
+&quot;)print(String1)</p>
+<p>Output: </p>
+<pre><code>Initial String: 
+Hello, I'm a Geek
+
+Updated String: 
+Welcome to the Geek World 
+</code></pre>
+<h2 id="deletion-of-a-character">Deletion of a character: </h2>
+<h2 id="python3-8">Python3</h2>
+<p># Python Program to Delete# characters from a String String1 =
+&quot;Hello, I'm a Geek&quot;print(&quot;Initial String: &quot;)print(String1) #
+Deleting a character# of the StringString2 = String1[0:2] +
+String1[3:]print(&quot;\nDeleting character at 2nd Index:
+&quot;)print(String2)</p>
+<p>Output: </p>
+<p>Initial String: Hello, I&rsquo;m a Geek</p>
+<p>Deleting character at 2nd Index: Helo, I&rsquo;m a Geek</p>
+<h2 id="deleting-entire-string">Deleting Entire String:</h2>
+<p>Deletion of the entire string is possible with the use of del keyword.
+Further, if we try to print the string, this will produce an error
+because String is deleted and is unavailable to be printed.  </p>
+<h2 id="python3-9">Python3</h2>
+<p># Python Program to Delete# entire String String1 = &quot;Hello, I'm a
+Geek&quot;print(&quot;Initial String: &quot;)print(String1) # Deleting a String#
+with the use of deldel String1print(&quot;\nDeleting entire String:
+&quot;)print(String1)</p>
+<p>Error: </p>
+<p>Traceback (most recent call last): File
+&ldquo;/home/e4b8f2170f140da99d2fe57d9d8c6a94.py&rdquo;, line 12,
+in print(String1) NameError: name &lsquo;String1&rsquo; is not defined </p>
+<h2 id="escape-sequencing-in-python">Escape Sequencing in Python</h2>
+<p>While printing Strings with single and double quotes in it causes
+SyntaxError because String already contains Single and Double Quotes and
+hence cannot be printed with the use of either of these. Hence, to print
+such a String either Triple Quotes are used or Escape sequences are used
+to print such Strings. </p>
+<p>Escape sequences start with a backslash and can be interpreted
+differently. If single quotes are used to represent a string, then all
+the single quotes present in the string must be escaped and same is done
+for Double Quotes. </p>
+<h2 id="python3-10">Python3</h2>
+<p># Python Program for# Escape Sequencing# of String # Initial
+StringString1 = '''I'm a &quot;Geek&quot;'''print(&quot;Initial String with
+use of Triple Quotes: &quot;)print(String1) # Escaping Single QuoteString1
+= 'I\'m a &quot;Geek&quot;'print(&quot;\nEscaping Single Quote:
+&quot;)print(String1) # Escaping Double QuotesString1 = &quot;I'm a
+\&quot;Geek\&quot;&quot;print(&quot;\nEscaping Double Quotes: &quot;)print(String1) #
+Printing Paths with the# use of Escape SequencesString1 =
+&quot;C:\\Python\\Geeks\\&quot;print(&quot;\nEscaping Backslashes:
+&quot;)print(String1) # Printing Paths with the# use of TabString1 =
+&quot;Hi\tGeeks&quot;print(&quot;\nTab: &quot;)print(String1) # Printing Paths with
+the# use of New LineString1 = &quot;Python\nGeeks&quot;print(&quot;\nNew Line:
+&quot;)print(String1)</p>
+<p>Output:</p>
+<pre><code>Initial String with use of Triple Quotes: 
+I'm a &quot;Geek&quot;
+
+Escaping Single Quote: 
+I'm a &quot;Geek&quot;
+
+Escaping Double Quotes: 
+I'm a &quot;Geek&quot;
+
+Escaping Backslashes: 
+C:\Python\Geeks\
+
+Tab: 
+Hi    Geeks
+
+New Line: 
+Python
+Geeks
+</code></pre>
+<p>To ignore the escape sequences in a String, r or R is used, this implies
+that the string is a raw string and escape sequences inside it are to be
+ignored.</p>
+<h2 id="python3-11">Python3</h2>
+<p># Printing hello in octalString1 =
+&quot;\110\145\154\154\157&quot;print(&quot;\nPrinting in Octal with the use
+of Escape Sequences: &quot;)print(String1) # Using raw String to# ignore
+Escape SequencesString1 = r&quot;This is
+\110\145\154\154\157&quot;print(&quot;\nPrinting Raw String in Octal
+Format: &quot;)print(String1) # Printing Geeks in HEXString1 = &quot;This is
+\x47\x65\x65\x6b\x73 in \x48\x45\x58&quot;print(&quot;\nPrinting in HEX
+with the use of Escape Sequences: &quot;)print(String1) # Using raw String
+to# ignore Escape SequencesString1 = r&quot;This is
+\x47\x65\x65\x6b\x73 in \x48\x45\x58&quot;print(&quot;\nPrinting Raw
+String in HEX Format: &quot;)print(String1)</p>
+<p>Output:</p>
+<pre><code>Printing in Octal with the use of Escape Sequences: 
+Hello
+
+Printing Raw String in Octal Format: 
+This is \110\145\154\154\157
+
+Printing in HEX with the use of Escape Sequences: 
+This is Geeks in HEX
+
+Printing Raw String in HEX Format: 
+This is \x47\x65\x65\x6b\x73 in \x48\x45\x58
+</code></pre>
+<h2 id="formatting-of-strings">Formatting of Strings</h2>
+<p>Strings in Python can be formatted with the use of format() method which
+is a very versatile and powerful tool for formatting Strings. Format
+method in String contains curly braces {} as placeholders which can hold
+arguments according to position or keyword to specify the order.</p>
+<h2 id="python3-12">Python3</h2>
+<p># Python Program for# Formatting of Strings # Default orderString1 =
+&quot;{} {} {}&quot;.format('Geeks', 'For', 'Life')print(&quot;Print String in
+default order: &quot;)print(String1) # Positional FormattingString1 = &quot;{1}
+{0} {2}&quot;.format('Geeks', 'For', 'Life')print(&quot;\nPrint String in
+Positional order: &quot;)print(String1) # Keyword FormattingString1 = &quot;{l}
+{f} {g}&quot;.format(g='Geeks', f='For', l='Life')print(&quot;\nPrint
+String in order of Keywords: &quot;)print(String1)</p>
+<p>Output: </p>
+<pre><code>Print String in default order: 
+Geeks For Life
+
+Print String in Positional order: 
+For Geeks Life
+
+Print String in order of Keywords: 
+Life For Geeks
+</code></pre>
+<p>Integers such as Binary, hexadecimal, etc., and floats can be rounded or
+displayed in the exponent form with the use of format specifiers. </p>
+<h2 id="python3-13">Python3</h2>
+<p># Formatting of IntegersString1 = &quot;{0:b}&quot;.format(16)print(&quot;\nBinary
+representation of 16 is &quot;)print(String1) # Formatting of FloatsString1
+= &quot;{0:e}&quot;.format(165.6458)print(&quot;\nExponent representation of
+165.6458 is &quot;)print(String1) # Rounding off IntegersString1 =
+&quot;{0:.2f}&quot;.format(1/6)print(&quot;\none-sixth is : &quot;)print(String1)</p>
+<p>Output: </p>
+<pre><code>Binary representation of 16 is 
+10000
+
+Exponent representation of 165.6458 is 
+1.656458e+02
+
+one-sixth is : 
+0.17
+</code></pre>
+<p>A string can be left() or center(^) justified with the use of format
+specifiers, separated by a colon(:).  </p>
+<h2 id="python3-14">Python3</h2>
+<p># String alignmentString1 =
+&quot;|{:&lt;10}|{:^10}|{:&gt;10}|&quot;.format('Geeks',                                          'for',                                          'Geeks')print(&quot;\nLeft,
+center and right alignment with Formatting: &quot;)print(String1) # To
+demonstrate aligning of spacesString1 = &quot;\n{0:^16} was founded in
+{1:&lt;4}!&quot;.format(&quot;GeeksforGeeks&quot;,                                                    2009)print(String1)</p>
+<p>Output: </p>
+<pre><code>Left, center and right alignment with Formatting: 
+|Geeks     |   for    |     Geeks|
+
+ GeeksforGeeks   was founded in 2009 !
+</code></pre>
+<p>Old style formatting was done without the use of format method by using
+% operator </p>
+<h2 id="python3-15">Python3</h2>
+<p># Python Program for# Old Style Formatting# of Integers Integer1 =
+12.3456789print(&quot;Formatting in 3.2f format: &quot;)print('The value of
+Integer1 is %3.2f' % Integer1)print(&quot;\nFormatting in 3.4f format:
+&quot;)print('The value of Integer1 is %3.4f' % Integer1)</p>
+<p>Output: </p>
+<pre><code>Formatting in 3.2f format: 
+The value of Integer1 is 12.35
+
+Formatting in 3.4f format: 
+The value of Integer1 is 12.3457
+</code></pre>
+<h2 id="useful-python-string-operations">Useful Python String Operations  </h2>
+<p>Logical Operators on String</p>
+<p>String Formatting using %</p>
+<p>String Template Class</p>
+<p>Split a string</p>
+<p>Python Docstrings</p>
+<p>String slicing</p>
+<p>Find all duplicate characters in string</p>
+<p>Reverse string in Python (5 different ways)</p>
+<p>Python program to check if a string is palindrome or not</p>
+<h2 id="python-string-constants">Python String constants </h2>
+<p>Built-In FunctionDescriptionstring.ascii_lettersConcatenation of the
+ascii_lowercase and ascii_uppercase
+constants.string.ascii_lowercaseConcatenation of lowercase
+lettersstring.ascii_uppercaseConcatenation of uppercase
+lettersstring.digitsDigit in stringsstring.hexdigitsHexadigit in
+stringsstring.lettersconcatenation of the strings lowercase and
+uppercasestring.lowercaseA string must contain lowercase
+letters.string.octdigitsOctadigit in a stringstring.punctuationASCII
+characters having punctuation characters.string.printableString of
+characters which are printableString.endswith()Returns True if a string
+ends with the given suffix otherwise returns
+FalseString.startswith()Returns True if a string starts with the given
+prefix otherwise returns FalseString.isdigit()Returns &ldquo;True&rdquo; if all
+characters in the string are digits, Otherwise, It returns
+&ldquo;False&rdquo;.String.isalpha()Returns &ldquo;True&rdquo; if all characters in the string
+are alphabets, Otherwise, It returns &ldquo;False&rdquo;.string.isdecimal()Returns
+true if all characters in a string are decimal.str.format()one of the
+string formatting methods in Python3, which allows multiple
+substitutions and value formatting.String.indexReturns the position of
+the first occurrence of substring in a stringstring.uppercaseA string
+must contain uppercase letters.string.whitespaceA string containing all
+characters that are considered whitespace.string.swapcase()Method
+converts all uppercase characters to lowercase and vice versa of the
+given string, and returns itreplace()returns a copy of the string where
+all occurrences of a substring is replaced with another substring.</p>
+<h2 id="deprecated-string-functions">Deprecated string functions</h2>
+<p>Built-In FunctionDescriptionstring.IsdecimalReturns true if all
+characters in a string are decimalString.IsalnumReturns true if all the
+characters in a given string are alphanumeric.string.IstitleReturns True
+if the string is a title cased stringString.partitionsplits the string
+at the first occurrence of the separator and returns a
+tuple.String.IsidentifierCheck whether a string is a valid identifier or
+not.String.lenReturns the length of the string.String.rindexReturns the
+highest index of the substring inside the string if substring is
+found.String.MaxReturns the highest alphabetical character in a
+string.String.minReturns the minimum alphabetical character in a
+string.String.splitlinesReturns a list of lines in the
+string.string.capitalizeReturn a word with its first character
+capitalized.string.expandtabsExpand tabs in a string replacing them by
+one or more spacesstring.findReturn the lowest indexing a sub
+string.string.rfindfind the highest index.string.countReturn the number
+of (non-overlapping) occurrences of substring sub in
+stringstring.lowerReturn a copy of s, but with upper case, letters
+converted to lower case.string.splitReturn a list of the words of the
+string, If the optional second argument sep is absent or
+Nonestring.rsplit()Return a list of the words of the string s, scanning
+s from the end.rpartition()Method splits the given string into three
+partsstring.splitfieldsReturn a list of the words of the string when
+only used with two arguments.string.joinConcatenate a list or tuple of
+words with intervening occurrences of sep.string.strip()It returns a
+copy of the string with both leading and trailing white spaces
+removedstring.lstripReturn a copy of the string with leading white
+spaces removed.string.rstripReturn a copy of the string with trailing
+white spaces removed.string.swapcaseConverts lower case letters to upper
+case and vice versa.string.translateTranslate the characters using
+tablestring.upperlower case letters converted to upper
+case.string.ljustleft-justify in a field of given
+width.string.rjustRight-justify in a field of given
+width.string.center()Center-justify in a field of given
+width.string-zfillPad a numeric string on the left with zero digits
+until the given width is reached.string.replaceReturn a copy of string s
+with all occurrences of substring old replaced by
+new.string.casefold()Returns the string in lowercase which can be used
+for caseless comparisons.string.encodeEncodes the string into any
+encoding supported by Python. The default encoding is
+utf-8.string.maketransReturns a translation table usable for
+str.translate()</p>
+<h2 id="advantages-of-string-in-python">Advantages of String in Python:</h2>
+<p>Strings are used at a larger scale i.e. for a wide areas of operations
+such as storing and manipulating text data, representing names,
+addresses, and other types of data that can be represented as text.</p>
+<p>Python has a rich set of string methods that allow you to manipulate and
+work with strings in a variety of ways. These methods make it easy to
+perform common tasks such as converting strings to uppercase or
+lowercase, replacing substrings, and splitting strings into lists.</p>
+<p>Strings are immutable, meaning that once you have created a string, you
+cannot change it. This can be beneficial in certain situations because
+it means that you can be confident that the value of a string will not
+change unexpectedly.</p>
+<p>Python has built-in support for strings, which means that you do not
+need to import any additional libraries or modules to work with strings.
+This makes it easy to get started with strings and reduces the
+complexity of your code.</p>
+<p>Python has a concise syntax for creating and manipulating strings, which
+makes it easy to write and read code that works with strings.</p>
+<h2 id="drawbacks-of-string-in-python">Drawbacks of String in Python:</h2>
+<p>When we are dealing with large text data, strings can be inefficient.
+For instance, if you need to perform a large number of operations on a
+string, such as replacing substrings or splitting the string into
+multiple substrings, it can be slow and consume a lot resources.</p>
+<p>Strings can be difficult to work with when you need to represent complex
+data structures, such as lists or dictionaries. In these cases, it may
+be more efficient to use a different data type, such as a list or a
+dictionary, to represent the data.</p>
+<h2 id="recent-articles-on-python-string">Recent Articles on Python String </h2>
+<h2 id="more-videos-on-python-strings">More Videos on Python Strings</h2>
+<p>Python String Methods &ndash; Part1</p>
+<p>Python String Methods &ndash; Part2 </p>
+<p>Python String Methods &ndash; Part 3 </p>
+<p>Logical Operations and Splitting in Strings </p>
+<p>Programs of Python Strings  </p>
+<p>Strings &ndash; Set 1, Set 2</p>
+<p>String Methods &ndash; Set 1 , Set 2 , Set 3</p>
+<p>Regular Expressions (Search, Match and Find All)</p>
+<p>Python String Title method</p>
+<p>Swap commas and dots in a String</p>
+<p>Program to convert String to a List</p>
+<p>Count and display vowels in a string</p>
+<p>Python program to check the validity of a Password</p>
+<p>Python program to count number of vowels using sets in given string</p>
+<p>Check for URL in a String</p>
+<p>Check if a Substring is Present in a Given String</p>
+<p>Check if two strings are anagram or not</p>
+<p>Map function and Dictionary in Python to sum ASCII values</p>
+<p>Map function and Lambda expression in Python to replace characters</p>
+<p>SequenceMatcher in Python for Longest Common Substring</p>
+<p>Print the initials of a name with last name in full</p>
+<p>The k most frequent words from data set in Python</p>
+<p>Find all close matches of input string from a list</p>
+<p>Check if there are K consecutive 1&rsquo;s in a binary number</p>
+<p>Lambda and filter in Python</p>
+<p>Concatenated string with uncommon characters in Python</p>
+<p>Check if both halves of the string have same set of characters in Python</p>
+<p>Find the first repeated word in a string in Python</p>
+<p>Second most repeated word in a sequence in Python</p>
+<p>K&rsquo;th Non-repeating Character in Python </p>
+<p>Reverse words in a given String in Python</p>
+<p>Print number with commas as 1000 separators in Python</p>
+<p>Prefix matching in Python using pytrie module</p>
+<p>Python Regex to extract maximum numeric value from a string</p>
+<p>Pairs of complete strings in two sets</p>
+<p>Remove all duplicates words from a given sentence</p>
+<p>Sort words of sentence in ascending order</p>
+<p>Reverse each word in a sentence</p>
+<p>Python code to print common characters of two Strings in alphabetical
+order</p>
+<p>Python program to split and join a string</p>
+<p>Python code to move spaces to front of string in single traversal</p>
+<p>Run Length Encoding in Python</p>
+<p>Remove all duplicates from a given string in Python</p>
+<p>Ways to increment a character in Python</p>
+<p>Prefix matching in Python using pytrie module</p>
+<p>Print number with commas as 1000 separators in Python</p>
+<p>Reverse words in a given String in Python</p>
+<p>Execute a String of Code in Python</p>
+<p>String slicing in Python to check if a string can become empty by
+recursive deletion</p>
+<p>Ways to print escape characters in Python</p>
+<p>String slicing in Python to rotate a string</p>
+<p>Count occurrences of a word in string</p>
+<p>Find the k most frequent words from data set in Python</p>
+<p>Python | Print the initials of a name with last name in full</p>
+<p>Zip function in Python to change to a new character set</p>
+<p>Python String isnumeric() and its application</p>
+<p>Sort the words in lexicographical order in Python</p>
+<p>Find the Number Occurring Odd Number of Times using Lambda expression
+and reduce function</p>
+<p>Python String Title method</p>
+<p>Sort words of sentence in ascending order</p>
+<p>Convert a list of characters into a string</p>
+<p>Python groupby method to remove all consecutive duplicates</p>
+<p>Python groupby method to remove all consecutive duplicates</p>
+<p>Python program for removing i-th character from a string</p>
+<p>Replacing strings with numbers in Python for Data Analysis</p>
+<p>Formatted string literals (f-strings) in Python</p>
+<p>Python Docstrings</p>
+<p>Permutation of a given string using inbuilt function</p>
+<p>Find frequency of each word in a string in Python</p>
+<p>Program to accept the strings which contains all vowels</p>
+<p>Count the Number of matching characters in a pair of string</p>
+<p>Count all prefixes in given string with greatest frequency</p>
+<p>Program to check if a string contains any special character</p>
+<p>Generating random strings until a given string is generated</p>
+<p>Python program to count upper and lower case characters without using
+inbuilt functions</p>
+<h2 id="please-login-to-comment">Please Login to comment...</h2>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200717172614/authPreLogo.png" alt="https://media.geeksforgeeks.org/auth/avatar.png">{.img-fluid
+.restrict-popup-gfg}</p>
+<p>SkFayazuddin</p>
+<p>nikhilaggarwal3</p>
+<p>lina3</p>
+<p>surindertarika1234</p>
+<p>prajapatirahul28</p>
+<p>sarajadhav12052009</p>
+<p>susobhanakhuli</p>
+<p>aniketjadhav320</p>
+<p>kumar_satyam</p>
+<p>n161298</p>
+<p>sagar0719kumar</p>
+<p>shreyasnaphad</p>
+<p>mahimkapoor86</p>
+<p>bipin_kumar</p>
+<p>python-string</p>
+<p>Python</p>
+<p>python</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/python/python-membership-and-identity-operators_/" title="Python Membership and Identity Operators " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/python/python-lists_/" title="Python Lists " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

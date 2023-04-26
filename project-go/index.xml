@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Project GO on SATHEE</title>
+    <link>/project-go/</link>
+    <description>Recent content in Project GO on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/project-go/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Authentication and Authorization </title>
+      <link>/project-go/authentication-and-authorization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/authentication-and-authorization/</guid>
+      <description>﻿
+Authentication and Authorization Authentication Authentication would be done through a central AMS which would be responsible for all the login, signup related activities.
+User role, like DP/SP, information would be stored in AMS and would be available to the backend services through the fetch user information API. The following roles need to be available:
+MISP -&amp;gt; DP
+MISP -&amp;gt; SP
+MISP -&amp;gt; Admin
+Insurer -&amp;gt; Admin
+Superuser
+The UI would send user credentials to AMS, which in return would create and send the token back to the UI.</description>
+    </item>
+    
+    <item>
+      <title>Communication Service </title>
+      <link>/project-go/communication-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/communication-service-design/</guid>
+      <description>﻿
+Communication Service Sl No Date Version Author Change description
+1 17-Aug-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Sending priority communications This service would send out priority messages like - verification links, otp, forgot password communications etc. We would have a separate queue for priority messages which would have dedicated workers to process the requests.
+Communication service would expose a package which would enable other services to publish events to the kafka queue.</description>
+    </item>
+    
+    <item>
+      <title>Customer Service </title>
+      <link>/project-go/customer-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/customer-service-design/</guid>
+      <description>﻿
+Customer Service Sl No Date Version Author Change description
+1 18-July-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Storing the customer data The customer PII and other related information would be stored in customer service. This would serve as a centralized store for all customer information across different business verticals.
+The data would be sent in a POST request and in return, the service would return a customer_id.</description>
+    </item>
+    
+    <item>
+      <title>Dataverse Service </title>
+      <link>/project-go/dataverse-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/dataverse-service-design/</guid>
+      <description>﻿
+Dataverse Service Sl No Date Version Author Change description
+1 15-June-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Fetching masters The following masters would be available:
+Country
+City
+State
+Pincode
+RTO
+Financier
+Vehicle class
+Vehicle type
+Vehicle cover
+Policy Type
+Proposer type
+Coverage Type
+OEM
+Models
+Variants
+Discounts
+Addons
+Bundles
+Insurers
+NCB
+The above master data would be returned</description>
+    </item>
+    
+    <item>
+      <title>Document Creation Service </title>
+      <link>/project-go/document-creation-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/document-creation-service-design/</guid>
+      <description>﻿
+Document Creation Service Sl No Date Version Author Change description
+1 27-July-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Creating the policy document This service would create the policy schedule (i.e policy document) for the given transaction. The user would pass the transaction id, through which this service would extract all information while creating the policy document by reaching out to other services.</description>
+    </item>
+    
+    <item>
+      <title>Endorsements </title>
+      <link>/project-go/endorsements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/endorsements/</guid>
+      <description>﻿
+Status Workflow Endorsement Workflow Dataverse changes: Table NCBType {
+id int pk
+name varchar
+created_at datetime
+modified_at datetime
+}
+Table TypeOfTransfer {
+id int pk
+name varchar
+proposer_type_id int // individual or corporate
+created_at datetime
+modified_at datetime
+}
+Table EndorsementType{
+id int pk
+name varchar
+premium_bearing bool
+prev_policy_ncb_type int [ref: &amp;gt; NCBType.id]
+created_at datetime
+modified_at datetime
+}
+And APIs to expose the above tables.
+Policy Service Changes Table EndorsementState {</description>
+    </item>
+    
+    <item>
+      <title>Payment Service </title>
+      <link>/project-go/payment-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/payment-service-design/</guid>
+      <description>﻿
+Payment Service Sl No Date Version Author Change description
+1 19-July-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Storing the Payment data This service would store all data regarding the payments for a given transaction. It would track the payment in the following states:
+Started
+Consent Pending
+Consent Done
+Redirected to Payment Gateway
+Success
+Failure
+Unknown</description>
+    </item>
+    
+    <item>
+      <title>Policy Service </title>
+      <link>/project-go/policy-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/policy-service-design/</guid>
+      <description>﻿
+Policy Service Sl No Date Version Author Change description
+1 19-July-2022 1.0 Ipinder Singh Initial draft 2 29-Aug-2022 1.1 Ipinder Singh Added Break-in/NCB changes
+Changelog: 29 August 2022 - Updated DB fields and API Schema to handle NCB/Breakin
+Service Use Cases This service would be used for the following use cases:
+Case 1: Generating the policy on insurer This service would generate the policy on insurer or create the policy number offline.</description>
+    </item>
+    
+    <item>
+      <title>Proposal Service </title>
+      <link>/project-go/proposal-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/proposal-service-design/</guid>
+      <description>﻿
+Proposal Service Sl No Date Version Author Change description
+1 19-July-2022 1.0 Ipinder Singh Initial draft 2 29-Aug-2022 1.1 Ipinder Singh Breakin/NCB changes
+Changelog 29-Aug-2022: Added fields about status on NCB, Handicapped and Breaking/Inspection Documents. Also, added inspection type
+Service Use Cases This service would be used for the following use cases:
+Case 1: Storing the Proposal data All proposal data would be stored in this service. Proposal data consist of the following:</description>
+    </item>
+    
+    <item>
+      <title>Quotes Service </title>
+      <link>/project-go/quotes-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/quotes-service-design/</guid>
+      <description>﻿
+Quotes Service Sl No Date Version Author Change description
+1 2-July-2021 1.0 Ipinder Singh Initial draft 2 25-Feb-2022 1.1 Ipinder Singh Using Kafka instead of Redis Queue 3 14-June-2022 1.2 Ipinder Singh Using track_id instead of request_id
+Service Use Cases Sequence diagram:
+This service would be used for the following use cases:
+Case 1: Fetching Quotes for all Insurers The process works as follows:
+The UI sends a request for initiating the quotes process.</description>
+    </item>
+    
+    <item>
+      <title>Verification Service </title>
+      <link>/project-go/verification-service-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project-go/verification-service-design/</guid>
+      <description>﻿
+Verification Service Sl No Date Version Author Change description
+1 30-Aug-2022 1.0 Ipinder Singh Initial draft
+Service Use Cases This service would be used for the following use cases:
+Case 1: Sending verification communication There are different mediums and types on which we can send communications.
+Mediums:
+SMS
+Whatsapp
+Email
+Type:
+Link
+OTP
+Based on the request, the verification service would call the communication service, which would send out the final email/text.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

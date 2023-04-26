@@ -1,0 +1,2649 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: How to Analyse Loops for Complexity Analysis of Algorithms </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="How to Analyse Loops for Complexity Analysis of Algorithms " />
+<meta property="og:description" content="How to Analyse Loops for Complexity Analysis of Algorithms Difficulty Level : Easy
+Last Updated : 06 Apr, 2023
+Read
+Discuss(130&#43;)
+Courses
+Practice
+Video
+We have discussed Asymptotic Analysis, Worst, Average and Best Cases and Asymptotic Notations in previous posts. In this post, an analysis of iterative programs with simple examples is discussed. The analysis of loops for the complexity analysis of algorithms involves finding the number of operations performed by a loop as a function of the input size." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/" /><meta property="article:section" content="data structure" />
+
+
+
+
+
+    
+    
+	<meta name="description" content="How to Analyse Loops for Complexity Analysis of Algorithms " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/data-structure/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/data-structure/a-time-complexity-question_/"><div class="panelist" >A Time Complexity Question </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/advanced-data-structures_/"><div class="panelist" >Advanced Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/algorithms_/"><div class="panelist" >Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/array-data-structure_/"><div class="panelist" >Array Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/asymptotic-notation-and-analysis-based-on-input-size-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/automata-tutorial_/"><div class="panelist" >Automata Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/backtracking-algorithms_/"><div class="panelist" >Backtracking Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-search-tree_/"><div class="panelist" >Binary Search Tree </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-tree-data-structure_/"><div class="panelist" >Binary Tree Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/bitwise-algorithms_/"><div class="panelist" >Bitwise Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/branch-and-bound-algorithm_/"><div class="panelist" >Branch and Bound Algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/calculus_/"><div class="panelist" >Calculus </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/data-structures_/"><div class="panelist" >Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/design-and-analysis-of-algorithms_/"><div class="panelist" >Design and Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/geometric-algorithms_/"><div class="panelist" >Geometric Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/greedy-algorithms_/"><div class="panelist" >Greedy Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/"><div class="panelist" id="activetab">How to Analyse Loops for Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/linked-list-data-structure_/"><div class="panelist" >Linked List Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/mathematical-algorithms_/"><div class="panelist" >Mathematical Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/pseudo-polynomial-algorithms_/"><div class="panelist" >Pseudo-polynomial Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/randomized-algorithms_/"><div class="panelist" >Randomized Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/searching-algorithms_/"><div class="panelist" >Searching Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/sorting-algorithms_/"><div class="panelist" >Sorting Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Types of Asymptotic Notations in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/worst-average-and-best-case-analysis-of-algorithms_/"><div class="panelist" >Worst, Average and Best Case Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="how-to-analyse-loops-for-complexity-analysis-of-algorithms">How to Analyse Loops for Complexity Analysis of Algorithms</h2>
+<p>Difficulty Level : Easy</p>
+<p>Last Updated : 06 Apr, 2023</p>
+<p>Read</p>
+<p>Discuss(130+)</p>
+<p>Courses</p>
+<p>Practice</p>
+<p>Video</p>
+<p>We have discussed Asymptotic Analysis,  Worst, Average and Best Cases
+and Asymptotic Notations in previous posts. In this post, an analysis of
+iterative programs with simple examples is discussed. </p>
+<p>The analysis of loops for the complexity analysis of algorithms involves
+finding the number of operations performed by a loop as a function of
+the input size. This is usually done by determining the number of
+iterations of the loop and the number of operations performed in each
+iteration.</p>
+<p>Here are the general steps to analyze loops for complexity analysis:</p>
+<p>Determine the number of iterations of the loop. This is usually done by
+analyzing the loop control variables and the loop termination condition.</p>
+<p>Determine the number of operations performed in each iteration of the
+loop. This can include both arithmetic operations and data access
+operations, such as array accesses or memory accesses.</p>
+<p>Express the total number of operations performed by the loop as a
+function of the input size. This may involve using mathematical
+expressions or finding a closed-form expression for the number of
+operations performed by the loop.</p>
+<p>Determine the order of growth of the expression for the number of
+operations performed by the loop. This can be done by using techniques
+such as big O notation or by finding the dominant term and ignoring
+lower-order terms.</p>
+<h2 id="constant-time-complexity-o1">Constant Time Complexity O(1):</h2>
+<p>The time complexity of a function (or set of statements) is considered
+as O(1) if it doesn&rsquo;t contain a loop, recursion, and call to any other
+non-constant time function.  i.e. set of non-recursive and non-loop
+statements</p>
+<p>In computer science, O(1) refers to constant time complexity, which
+means that the running time of an algorithm remains constant and does
+not depend on the size of the input. This means that the execution time
+of an O(1) algorithm will always take the same amount of time regardless
+of the input size. An example of an O(1) algorithm is accessing an
+element in an array using an index.</p>
+<p>Example: </p>
+<p>swap() function has O(1) time complexity. </p>
+<p>A loop or recursion that runs a constant number of times is also
+considered O(1). For example, the following loop is O(1).</p>
+<h2 id="c">C</h2>
+<p>// Here c is a constantfor (int i = 1; i &lt;= c; i++) {    // some O(1)
+expressions}</p>
+<h2 id="java">Java</h2>
+<p>// Here c is a constantfor (int i = 1; i &lt;= c; i++) {    // some O(1)
+expressions} // This code is contributed by Utkarsh</p>
+<h2 id="python3">Python3</h2>
+<p># Here c is a constantfor i in range(1, c+1):    # some O(1)
+expressions     # This code is contributed by Pushpesh Raj.</p>
+<h2 id="javascript">Javascript</h2>
+<p>   // Here c is a constantfor (var i = 1; i &lt;= c; i++) {    // some
+O(1) expressions}</p>
+<h2 id="linear-time-complexity-on">Linear Time Complexity O(n):</h2>
+<p>The Time Complexity of a loop is considered as O(n) if the loop
+variables are incremented/decremented by a constant amount. For example
+following functions have O(n) time complexity. Linear time complexity,
+denoted as O(n), is a measure of the growth of the running time of an
+algorithm proportional to the size of the input. In an O(n) algorithm,
+the running time increases linearly with the size of the input. For
+example, searching for an element in an unsorted array or iterating
+through an array and performing a constant amount of work for each
+element would be O(n) operations. In simple words, for an input of size
+n, the algorithm takes n steps to complete the operation.</p>
+<h2 id="c-1">C</h2>
+<p>// Here c is a positive integer constantfor (int i = 1; i &lt;= n; i += c)
+{    // some O(1) expressions} for (int i = n; i &gt; 0; i -= c) {    //
+some O(1) expressions}</p>
+<h2 id="java-1">Java</h2>
+<p>// Here c is a positive integer constantfor (int i = 1; i &lt;= n; i += c)
+{    // some O(1) expressions}   for (int i = n; i &gt; 0; i -= c) {    //
+some O(1) expressions} // This code is contributed by Utkarsh</p>
+<h2 id="python3-1">Python3</h2>
+<p># Here c is a positive integer constantfor i in range(1, n+1, c):    #
+some O(1) expressions for i in range(n, 0, -c):    # some O(1)
+expressions     # This code is contributed by Pushpesh Raj</p>
+<h2 id="javascript-1">Javascript</h2>
+<p>// Here c is a positive integer constantfor (var i = 1; i &lt;= n; i += c)
+{    // some O(1) expressions} for (var i = n; i &gt; 0; i -= c) {    //
+some O(1) expressions}</p>
+<h2 id="quadratic-time-complexity-onc">Quadratic Time Complexity O(nc):</h2>
+<p>The time complexity is defined as an algorithm whose performance is
+directly proportional to the squared size of the input data, as in
+nested loops it is equal to the number of times the innermost statement
+is executed. For example, the following sample loops have O(n2) time
+complexity </p>
+<p>Quadratic time complexity, denoted as O(n^2), refers to an algorithm
+whose running time increases proportional to the square of the size of
+the input. In other words, for an input of size n, the algorithm takes n
+* n steps to complete the operation. An example of an O(n^2) algorithm
+is a nested loop that iterates over the entire input for each element,
+performing a constant amount of work for each iteration. This results in
+a total of n * n iterations, making the running time quadratic in the
+size of the input.</p>
+<h2 id="c-2">C</h2>
+<p>for (int i = 1; i &lt;= n; i += c) {    for (int j = 1; j &lt;= n; j += c)
+{        // some O(1) expressions    }} for (int i = n; i &gt; 0; i -= c)
+{    for (int j = i + 1; j &lt;= n; j += c) {        // some O(1)
+expressions    }</p>
+<h2 id="java-2">Java</h2>
+<p>for (int i = 1; i &lt;= n; i += c) {    for (int j = 1; j &lt;= n; j += c)
+{        // some O(1) expressions    }}   for (int i = n; i &gt; 0; i -=
+c) {    for (int j = i + 1; j &lt;= n; j += c) {        // some O(1)
+expressions    } // This code is contributed by Utkarsh</p>
+<h2 id="python3-2">Python3</h2>
+<p>for i in range(1, n+1, c):    for j in range(1, n+1, c):        # some
+O(1) expressions for i in range(n, 0, -c):    for j in range(i+1, n+1,
+c):        # some O(1) expressions         # This code is contributed
+by Pushpesh Raj</p>
+<h2 id="javascript-2">Javascript</h2>
+<p>for (var i = 1; i &lt;= n; i += c) {    for (var j = 1; j &lt;= n; j += c)
+{        // some O(1) expressions    }} for (var i = n; i &gt; 0; i -= c)
+{    for (var j = i + 1; j &lt;= n; j += c) {        // some O(1)
+expressions    }</p>
+<p>Example:  Selection sort and Insertion Sort have O(n2) time complexity. </p>
+<h2 id="logarithmic-time-complexity-olog-n">Logarithmic Time Complexity O(Log n):</h2>
+<p>The time Complexity of a loop is considered as O(Logn) if the loop
+variables are divided/multiplied by a constant amount. And also for
+recursive calls in the recursive function, the Time Complexity is
+considered as O(Logn).</p>
+<h2 id="c-3">C</h2>
+<p>for (int i = 1; i &lt;= n; i *= c) {    // some O(1) expressions}for (int
+i = n; i &gt; 0; i /= c) {    // some O(1) expressions}</p>
+<h2 id="java-3">Java</h2>
+<p>for (int i = 1; i &lt;= n; i *= c) {    // some O(1) expressions}for (int
+i = n; i &gt; 0; i /= c) {    // some O(1) expressions} // This code is
+contributed by Utkarsh</p>
+<h2 id="python3-3">Python3</h2>
+<p>i = 1while(i &lt;= n):    # some O(1) expressions    i = i*c i =
+nwhile(i &gt; 0):    # some O(1) expressions    i = i//c # This code is
+contributed by Pushpesh Raj</p>
+<h2 id="javascript-3">Javascript</h2>
+<p>for (var i = 1; i &lt;= n; i *= c) {    // some O(1) expressions}for (var
+i = n; i &gt; 0; i /= c) {    // some O(1) expressions}</p>
+<h2 id="c-4">C</h2>
+<p>// Recursive functionvoid recurse(n){    if (n ==
+0)        return;    else {        // some O(1)
+expressions    }    recurse(n/c);  // Here c is positive integer  //
+contant greater than 1}</p>
+<h2 id="java-4">Java</h2>
+<p>// Recursive functionvoid recurse(n){    if (n ==
+0)        return;    else {        // some O(1)
+expressions    }    recurse(n/c);  // Here c is positive integer  //
+greater than 1 }// This code is contributed by Utkarsh</p>
+<h2 id="python3-4">Python3</h2>
+<p># Recursive functiondef recurse(n):    if(n ==
+0):        return    else:        # some O(1)
+expressions    recurse(n/c)# Here c is positive integer# contant
+greater than 1# This code is contributed by Pushpesh Raj</p>
+<h2 id="javascript-4">Javascript</h2>
+<p>// Recursive functionfunction recurse(n){    if (n ==
+0)        return;    else {        // some O(1)
+expressions    }    recurse(n/c);    / Here c is positive integer  //
+contant greater than 1}</p>
+<p>Example: Binary Search(refer iterative implementation) has O(Logn) time
+complexity.</p>
+<h2 id="logarithmic-time-complexity-olog-log-n">Logarithmic Time Complexity O(Log Log n):</h2>
+<p>The Time Complexity of a loop is considered as O(LogLogn) if the loop
+variables are reduced/increased exponentially by a constant amount. </p>
+<h2 id="c-5">C</h2>
+<p>// Here c is a constant greater than 1for (int i = 2; i &lt;= n; i =
+pow(i, c)) {    // some O(1) expressions}// Here fun is sqrt or cuberoot
+or any other constant rootfor (int i = n; i &gt; 1; i = fun(i)) {    //
+some O(1) expressions}</p>
+<h2 id="java-5">Java</h2>
+<p>// Here c is a constant greater than 1for (int i = 2; i &lt;= n; i =
+Math.pow(i, c)) {    // some O(1) expressions}// Here fun is sqrt or
+cuberoot or any other constant rootfor (int i = n; i &gt; 1; i = fun(i))
+{    // some O(1) expressions} // This code is contributed by Utkarsh</p>
+<h2 id="python3-5">Python3</h2>
+<p># Here c is a constant greater than 1i = 2while(i &lt;= n):    # some
+O(1) expressions    i = i**c # Here fun is sqrt or cuberoot or any
+other constant rooti = nwhile(i &gt; 1):    # some O(1) expressions    i
+= fun(i) # This code is contributed by Pushpesh Raj</p>
+<h2 id="javascript-5">Javascript</h2>
+<p>// Here c is a constant greater than 1for (var i = 2; i &lt;= n; i =
+i**c) {    // some O(1) expressions}// Here fun is sqrt or cuberoot or
+any other constant rootfor (var i = n; i &gt; 1; i = fun(i)) {    // some
+O(1) expressions}</p>
+<p>See this for mathematical details. </p>
+<h2 id="how-to-combine-the-time-complexities-of-consecutive-loops">How to combine the time complexities of consecutive loops? </h2>
+<p>When there are consecutive loops, we calculate time complexity as a sum
+of the time complexities of individual loops. </p>
+<p>To combine the time complexities of consecutive loops, you need to
+consider the number of iterations performed by each loop and the amount
+of work performed in each iteration. The total time complexity of the
+algorithm can be calculated by multiplying the number of iterations of
+each loop by the time complexity of each iteration and taking the
+maximum of all possible combinations.</p>
+<p>For example, consider the following code:</p>
+<pre><code>for i in range(n):
+  for j in range(m):
+    # some constant time operation
+</code></pre>
+<p>Here, the outer loop performs n iterations, and the inner loop performs
+m iterations for each iteration of the outer loop. So, the total number
+of iterations performed by the inner loop is n * m, and the total time
+complexity is O(n * m).</p>
+<p>In another example, consider the following code:</p>
+<pre><code>for i in range(n):
+  for j in range(i):
+    # some constant time operation
+</code></pre>
+<p>Here, the outer loop performs n iterations, and the inner loop performs
+i iterations for each iteration of the outer loop, where i is the
+current iteration count of the outer loop. The total number of
+iterations performed by the inner loop can be calculated by summing the
+number of iterations performed in each iteration of the outer loop,
+which is given by the formula sum(i) from i=1 to n, which is equal to n
+* (n + 1) / 2. Hence, the total time complex</p>
+<h2 id="c-6">C</h2>
+<p>for (int i = 1; i &lt;= m; i += c) {    // some O(1) expressions}for (int
+i = 1; i &lt;= n; i += c) {    // some O(1) expressions} // Time
+complexity of above code is O(m) + O(n) which is O(m + n)// If m == n,
+the time complexity becomes O(2n) which is O(n).</p>
+<h2 id="java-6">Java</h2>
+<p>for (int i = 1; i &lt;= m; i += c) {    // some O(1) expressions}for (int
+i = 1; i &lt;= n; i += c) {    // some O(1) expressions}   // Time
+complexity of above code is O(m) + O(n) which is O(m + n)// If m == n,
+the time complexity becomes O(2n) which is O(n). // This code is
+contributed by Utkarsh</p>
+<h2 id="python3-6">Python3</h2>
+<p>for i in range(1, m+1, c):    # some O(1) expressions for i in range(1,
+n+1, c):    # some O(1) expressions  # Time complexity of above code
+is O(m) + O(n) which is O(m + n)# If m == n, the time complexity
+becomes O(2n) which is O(n).</p>
+<h2 id="javascript-6">Javascript</h2>
+<p>for (var i = 1; i &lt;= m; i += c) {    // some O(1) expressions}for (var
+i = 1; i &lt;= n; i += c) {    // some O(1) expressions} // Time
+complexity of above code is O(m) + O(n) which is O(m + n)// If m == n,
+the time complexity becomes O(2n) which is O(n).</p>
+<h2 id="how-to-calculate-time-complexity-when-there-are-many-if-else-statements-inside-loops">  How to calculate time complexity when there are many if, else statements inside loops? </h2>
+<p>As discussed here, the worst-case time complexity is the most useful
+among best, average and worst. Therefore we need to consider the worst
+case. We evaluate the situation when values in if-else conditions cause
+a maximum number of statements to be executed. For example, consider the
+linear search function where we consider the case when an element is
+present at the end or not present at all. When the code is too complex
+to consider all if-else cases, we can get an upper bound by ignoring
+if-else and other complex control statements. </p>
+<h2 id="how-to-calculate-the-time-complexity-of-recursive-functions">How to calculate the time complexity of recursive functions? </h2>
+<p>The time complexity of a recursive function can be written as a
+mathematical recurrence relation. To calculate time complexity, we must
+know how to solve recurrences. We will soon be discussing
+recurrence-solving techniques as a separate post. </p>
+<h2 id="algorithms-cheat-sheet">Algorithms Cheat Sheet:</h2>
+<p>AlgorithmBest CaseAverage CaseWorst CaseSelection
+SortO(n^2)O(n^2)O(n^2)Bubble SortO(n)O(n^2)O(n^2)Insertion
+SortO(n)O(n^2)O(n^2)Tree SortO(nlogn)O(nlogn)O(n^2)Radix
+SortO(dn)O(dn)O(dn)Merge SortO(nlogn)O(nlogn)O(nlogn)Heap
+SortO(nlogn)O(nlogn)O(nlogn)Quick SortO(nlogn)O(nlogn)O(n^2)Bucket
+SortO(n+k)O(n+k)O(n^2)Counting SortO(n+k)O(n+k)O(n+k)</p>
+<p>Quiz on Analysis of Algorithms For more details, please refer: Design
+and Analysis of Algorithms.</p>
+<p>Please write comments if you find anything incorrect, or you want to
+share more information about the topic discussed above.</p>
+<p>Solve DSA problems on GfG Practice.</p>
+<h2 id="please-login-to-comment">Please Login to comment...</h2>
+<p><img src="https://media.geeksforgeeks.org/wp-content/uploads/20200717172614/authPreLogo.png" alt="https://media.geeksforgeeks.org/auth/avatar.png">{.img-fluid
+.restrict-popup-gfg}</p>
+<p>meghajatana</p>
+<p>23603vaibhav2021</p>
+<p>susobhanakhuli</p>
+<p>shreyasnaphad</p>
+<p>purushottamnawle</p>
+<p>janardansthox</p>
+<p>pushpeshrajdx01</p>
+<p>satwiksuman</p>
+<p>utkarshstm2016</p>
+<p>snehalmahasagar</p>
+<p>Complexity-analysis</p>
+<p>Algorithms</p>
+<p>Analysis</p>
+<p>Articles</p>
+<p>DSA</p>
+<p>Algorithms</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/data-structure/linked-list-data-structure_/" title="Linked List Data Structure " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/data-structure/greedy-algorithms_/" title="Greedy Algorithms " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

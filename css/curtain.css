@@ -1,0 +1,39 @@
+.curtain-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: stretch;
+}
+
+.leftcurtain {
+  width: 50%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  z-index: 9999999999;
+}
+.rightcurtain {
+  width: 51%;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  z-index: 9999999999;
+}
+.rightcurtain img,
+.leftcurtain img {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.rope {
+  position: absolute;
+  top: -40px;
+  right: 5%;
+  z-index: 99999999999;
+  border: none;
+}
+
+.curtain-wrapper div.leftcurtain,
+.curtain-wrapper div.rightcurtain {
+  height: 100%;
+}

@@ -1,0 +1,10039 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Query Parameters and String Validations </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Query Parameters and String Validations " />
+<meta property="og:description" content="Query Parameters and String Validations FastAPI allows you to declare additional information and validation for your parameters.
+Let&#39;s take this application as example:
+from fastapi import FastAPI app = FastAPI() @app.get(&quot;/items/&quot;) async def read_items(q: str | None = None): results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]} if q: results.update({&quot;q&quot;: q}) return results from typing import Union from fastapi import FastAPI app = FastAPI() @app.get(&quot;/items/&quot;) async def read_items(q: Union[str, None] = None): results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]} if q: results." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/fastapi/query-parameters-and-string-validations/" /><meta property="article:section" content="fastapi" />
+
+
+
+
+    
+    
+	<meta name="description" content="Query Parameters and String Validations " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/fastapi/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/fastapi/tutorial-user-guide-intro/"><div class="panelist" >Tutorial - User Guide - Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/first-steps/"><div class="panelist" >First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters/"><div class="panelist" >Path Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters/"><div class="panelist" >Query Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-body/"><div class="panelist" >Request Body </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations/"><div class="panelist" id="activetab">Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/query-parameters-and-string-validations-/"><div class="panelist" >Query Parameters and String Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-parameters-and-numeric-validations-/"><div class="panelist" >Path Parameters and Numeric Validations </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-multiple-parameters/"><div class="panelist" >Body - Multiple Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-fields/"><div class="panelist" >Body - Fields </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-nested-models/"><div class="panelist" >Body - Nested Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/declare-request-example-data-/"><div class="panelist" >Declare Request Example Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-data-types/"><div class="panelist" >Extra Data Types </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cookie-parameters/"><div class="panelist" >Cookie Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/header-parameters/"><div class="panelist" >Header Parameters </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-model-return-type/"><div class="panelist" >Response Model - Return Type </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/extra-models/"><div class="panelist" >Extra Models </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/response-status-code/"><div class="panelist" >Response Status Code </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/form-data/"><div class="panelist" >Form Data </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-files/"><div class="panelist" >Request Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/request-forms-and-files/"><div class="panelist" >Request Forms and Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/handling-errors/"><div class="panelist" >Handling Errors </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/path-operation-configuration-/"><div class="panelist" >Path Operation Configuration </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/json-compatible-encoder/"><div class="panelist" >JSON Compatible Encoder </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/body-updates/"><div class="panelist" >Body - Updates </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-first-steps/"><div class="panelist" >Dependencies - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/classes-as-dependencies/"><div class="panelist" >Classes as Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sub-dependencies/"><div class="panelist" >Sub-dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-in-path-operation-decorators-/"><div class="panelist" >Dependencies in path operation decorators </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/global-dependencies/"><div class="panelist" >Global Dependencies </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/dependencies-with-yield/"><div class="panelist" >Dependencies with yield </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-intro/"><div class="panelist" >Security Intro </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/security-first-steps/"><div class="panelist" >Security - First Steps </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/get-current-user/"><div class="panelist" >Get Current User </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/simple-oauth2-with-password-and-bearer-/"><div class="panelist" >Simple OAuth2 with Password and Bearer </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/oauth2-with-password-and-hashing-bearer-with-jwt-tokens-/"><div class="panelist" >OAuth2 with Password (and hashing), Bearer with JWT tokens </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/middleware/"><div class="panelist" >Middleware </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/cors-cross-origin-resource-sharing-/"><div class="panelist" >CORS (Cross-Origin Resource Sharing) </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/sql-relational-databases-/"><div class="panelist" >SQL (Relational) Databases </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/bigger-applications-multiple-files/"><div class="panelist" >Bigger Applications - Multiple Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/background-tasks/"><div class="panelist" >Background Tasks </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/metadata-and-docs-urls/"><div class="panelist" >Metadata and Docs URLs </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/static-files/"><div class="panelist" >Static Files </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/testing/"><div class="panelist" >Testing </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/fastapi/debugging/"><div class="panelist" >Debugging </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h2 id="query-parameters-and-string-validations">Query Parameters and String Validations</h2>
+<p>FastAPI allows you to declare additional information and validation for
+your parameters.</p>
+<p>Let's take this application as example:</p>
+<pre><code>from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str | None = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[str, None] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>The query parameter q is of type Union[str, None] (or str | None in
+Python 3.10), that means that it's of type str but could also be None,
+and indeed, the default value is None, so FastAPI will know it's not
+required.</p>
+<p>Note</p>
+<p>FastAPI will know that the value of q is not required because of the
+default value = None.</p>
+<p>The Union in Union[str, None] will allow your editor to give you
+better support and detect errors.</p>
+<h2 id="additional-validation">Additional validation</h2>
+<p>We are going to enforce that even though q is optional, whenever it is
+provided, its length doesn't exceed 50 characters.</p>
+<h2 id="import-query-and-annotated">Import Query and Annotated</h2>
+<p>To achieve that, first import:</p>
+<p>Query from fastapi</p>
+<p>Annotated from typing (or from typing_extensions in Python below 3.9)</p>
+<p>In Python 3.9 or above, Annotated is part of the standard library, so
+you can import it from typing.</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str | None, Query(max_length=50)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>In versions of Python below Python 3.9 you import Annotation from
+typing_extensions.</p>
+<p>It will already be installed with FastAPI.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(max_length=50)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<h2 id="use-annotated-in-the-type-for-the-q-parameter">Use Annotated in the type for the q parameter</h2>
+<p>Remember I told you before that Annotated can be used to add metadata to
+your parameters in the Python Types Intro?</p>
+<p>Now it's the time to use it with FastAPI. 🚀</p>
+<p>We had this type annotation:</p>
+<pre><code>q: str | None = None
+
+q: Union[str, None] = None
+</code></pre>
+<p>What we will do is wrap that with Annotated, so it becomes:</p>
+<pre><code>q: Annotated[str | None] = None
+
+q: Annotated[Union[str, None]] = None
+</code></pre>
+<p>Both of those versions mean the same thing, q is a parameter that can be
+a str or None, and by default, it is None.</p>
+<p>Now let's jump to the fun stuff. 🎉</p>
+<h2 id="add-query-to-annotated-in-the-q-parameter">Add Query to Annotated in the q parameter</h2>
+<p>Now that we have this Annotated where we can put more metadata, add
+Query to it, and set the parameter max_length to 50:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str | None, Query(max_length=50)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(max_length=50)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Notice that the default value is still None, so the parameter is still
+optional.</p>
+<p>But now, having Query(max_length=50) inside of Annotated, we are
+telling FastAPI that we want it to extract this value from the query
+parameters (this would have been the default anyway 🤷) and that we want
+to have additional validation for this value (that's why we do this, to
+get the additional validation). 😎</p>
+<p>FastAPI wll now:</p>
+<p>Validate the data making sure that the max length is 50 characters</p>
+<p>Show a clear error for the client when the data is not valid</p>
+<p>Document the parameter in the OpenAPI schema path operation (so it will
+show up in the automatic docs UI)</p>
+<h2 id="alternative-old-query-as-the-default-value">Alternative (old) Query as the default value</h2>
+<p>Previous versions of FastAPI (before 0.95.0) required you to use Query
+as the default value of your parameter, instead of putting it in
+Annotated, there's a high chance that you will see code using it
+around, so I'll explain it to you.</p>
+<p>Tip</p>
+<p>For new code and whenever possible, use Annotated as explained above.
+There are multiple advantages (explained below) and no disadvantages. 🍰</p>
+<p>This is how you would use Query() as the default value of your function
+parameter, setting the parameter max_length to 50:</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str | None = Query(default=None, max_length=50)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[str, None] = Query(default=None, max_length=50)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>As in this case (without using Annotated) we have to replace the default
+value None in the function with Query(), we now need to set the default
+value with the parameter Query(default=None), it serves the same purpose
+of defining that default value (at least for FastAPI).</p>
+<p>So:</p>
+<pre><code>q: Union[str, None] = Query(default=None)
+</code></pre>
+<p>...makes the parameter optional, with a default value of None, the same
+as:</p>
+<pre><code>q: Union[str, None] = None
+</code></pre>
+<p>And in Python 3.10 and above:</p>
+<pre><code>q: str | None = Query(default=None)
+</code></pre>
+<p>...makes the parameter optional, with a default value of None, the same
+as:</p>
+<pre><code>q: str | None = None
+</code></pre>
+<p>But it declares it explicitly as being a query parameter.</p>
+<p>Info</p>
+<p>Have in mind that the most important part to make a parameter optional
+is the part:</p>
+<pre><code>= None
+</code></pre>
+<p>or the:</p>
+<pre><code>= Query(default=None)
+</code></pre>
+<p>as it will use that None as the default value, and that way make the
+parameter not required.</p>
+<p>The Union[str, None] part allows your editor to provide better
+support, but it is not what tells FastAPI that this parameter is not
+required.</p>
+<p>Then, we can pass more parameters to Query. In this case, the
+max_length parameter that applies to strings:</p>
+<pre><code>q: Union[str, None] = Query(default=None, max_length=50)
+</code></pre>
+<p>This will validate the data, show a clear error when the data is not
+valid, and document the parameter in the OpenAPI schema path operation.</p>
+<h2 id="query-as-the-default-value-or-in-annotated">Query as the default value or in Annotated</h2>
+<p>Have in mind that when using Query inside of Annotated you cannot use
+the default parameter for Query.</p>
+<p>Instead use the actual default value of the function parameter.
+Otherwise, it would be inconsistent.</p>
+<p>For example, this is not allowed:</p>
+<pre><code>q: Annotated[str Query(default=&quot;rick&quot;)] = &quot;morty&quot;
+</code></pre>
+<p>...because it's not clear if the default value should be &quot;rick&quot; or
+&quot;morty&quot;.</p>
+<p>So, you would use (preferably):</p>
+<pre><code>q: Annotated[str, Query()] = &quot;rick&quot;
+</code></pre>
+<p>...or in older code bases you will find:</p>
+<pre><code>q: str = Query(default=&quot;rick&quot;)
+</code></pre>
+<h2 id="advantages-of-annotated">Advantages of Annotated</h2>
+<p>Using Annotated is recommended instead of the default value in function
+parameters, it is better for multiple reasons. 🤓</p>
+<p>The default value of the function parameter is the actual default value,
+that's more intuitive with Python in general. 😌</p>
+<p>You could call that same function in other places without FastAPI, and
+it would work as expected. If there's a required parameter (without a
+default value), your editor will let you know with an error, Python will
+also complain if you run it without passing the required parameter.</p>
+<p>When you don't use Annotated and instead use the (old) default value
+style, if you call that function without FastAPI in other place, you
+have to remember to pass the arguments to the function for it to work
+correctly, otherwise the values will be different from what you expect
+(e.g. QueryInfo or something similar instead of str). And your editor
+won't complain, and Python won't complain running that function, only
+when the operations inside error out.</p>
+<p>Because Annotated can have more than one metadata annotation, you could
+now even use the same function with other tools, like Typer. 🚀</p>
+<h2 id="add-more-validations">Add more validations</h2>
+<p>You can also add a parameter min_length:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[str | None, Query(min_length=3, max_length=50)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[Union[str, None], Query(min_length=3, max_length=50)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[Union[str, None], Query(min_length=3, max_length=50)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str | None = Query(default=None, min_length=3, max_length=50)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Union[str, None] = Query(default=None, min_length=3, max_length=50)
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<h2 id="add-regular-expressions">Add regular expressions</h2>
+<p>You can define a regular expression that the parameter should match:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        str | None, Query(min_length=3, max_length=50, regex=&quot;^fixedquery$&quot;)
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None], Query(min_length=3, max_length=50, regex=&quot;^fixedquery$&quot;)
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None], Query(min_length=3, max_length=50, regex=&quot;^fixedquery$&quot;)
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: str
+    | None = Query(default=None, min_length=3, max_length=50, regex=&quot;^fixedquery$&quot;)
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Union[str, None] = Query(
+        default=None, min_length=3, max_length=50, regex=&quot;^fixedquery$&quot;
+    )
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>This specific regular expression checks that the received parameter
+value:</p>
+<p>^: starts with the following characters, doesn't have characters
+before.</p>
+<p>fixedquery: has the exact value fixedquery.</p>
+<p>$: ends there, doesn't have any more characters after fixedquery.</p>
+<p>If you feel lost with all these &quot;regular expression&quot; ideas, don't
+worry. They are a hard topic for many people. You can still do a lot of
+stuff without needing regular expressions yet.</p>
+<p>But whenever you need them and go and learn them, know that you can
+already use them directly in FastAPI.</p>
+<h2 id="default-values">Default values</h2>
+<p>You can, of course, use default values other than None.</p>
+<p>Let's say that you want to declare the q query parameter to have a
+min_length of 3, and to have a default value of &quot;fixedquery&quot;:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = &quot;fixedquery&quot;):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = &quot;fixedquery&quot;):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str = Query(default=&quot;fixedquery&quot;, min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Note</p>
+<p>Having a default value of any type, including None, makes the parameter
+optional (not required).</p>
+<h2 id="make-it-required">Make it required</h2>
+<p>When we don't need to declare more validations or metadata, we can make
+the q query parameter required just by not declaring a default value,
+like:</p>
+<pre><code>q: str
+</code></pre>
+<p>instead of:</p>
+<pre><code>q: Union[str, None] = None
+</code></pre>
+<p>But we are now declaring it with Query, for example like:</p>
+<pre><code>q: Annotated[Union[str, None], Query(min_length=3)] = None
+
+q: Union[str, None] = Query(default=None, min_length=3)
+</code></pre>
+<p>So, when you need to declare a value as required while using Query, you
+can simply not declare a default value:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)]):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)]):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str = Query(min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Notice that, even though in this case the Query() is used as the
+function parameter default value, we don't pass the default=None to
+Query().</p>
+<p>Still, probably better to use the Annotated version. 😉</p>
+<h2 id="required-with-ellipsis-">Required with Ellipsis (...)</h2>
+<p>There's an alternative way to explicitly declare that a value is
+required. You can set the default to the literal value ...:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = ...):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = ...):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str = Query(default=..., min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Info</p>
+<p>If you hadn't seen that ... before: it is a special single value, it
+is part of Python and is called &quot;Ellipsis&quot;.</p>
+<p>It is used by Pydantic and FastAPI to explicitly declare that a value is
+required.</p>
+<p>This will let FastAPI know that this parameter is required.</p>
+<h2 id="required-with-none">Required with None</h2>
+<p>You can declare that a parameter can accept None, but that it's still
+required. This would force clients to send a value, even if the value is
+None.</p>
+<p>To do that, you can declare that None is a valid type but still use ...
+as the default:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str | None, Query(min_length=3)] = ...):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(min_length=3)] = ...):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(min_length=3)] = ...):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str | None = Query(default=..., min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[str, None] = Query(default=..., min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Pydantic, which is what powers all the data validation and serialization
+in FastAPI, has a special behavior when you use Optional or
+Union[Something, None] without a default value, you can read more
+about it in the Pydantic docs about Required Optional fields.</p>
+<h2 id="use-pydantics-required-instead-of-ellipsis-">Use Pydantic's Required instead of Ellipsis (...)</h2>
+<p>If you feel uncomfortable using ..., you can also import and use
+Required from Pydantic:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+from pydantic import Required
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = Required):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from fastapi import FastAPI, Query
+from pydantic import Required
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str, Query(min_length=3)] = Required):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+from pydantic import Required
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str = Query(default=Required, min_length=3)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Remember that in most of the cases, when something is required, you can
+simply omit the default, so you normally don't have to use ... nor
+Required.</p>
+<h2 id="query-parameter-list--multiple-values">Query parameter list / multiple values</h2>
+<p>When you define a query parameter explicitly with Query you can also
+declare it to receive a list of values, or said in other way, to receive
+multiple values.</p>
+<p>For example, to declare a query parameter q that can appear multiple
+times in the URL, you can write:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[list[str] | None, Query()] = None):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[list[str], None], Query()] = None):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+
+from typing import List, Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[List[str], None], Query()] = None):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: list[str] | None = Query(default=None)):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[list[str], None] = Query(default=None)):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import List, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[List[str], None] = Query(default=None)):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Then, with a URL like:</p>
+<pre><code>http://localhost:8000/items/?q=foo&amp;q=bar
+</code></pre>
+<p>you would receive the multiple q query parameters' values (foo and bar)
+in a Python list inside your path operation function, in the function
+parameter q.</p>
+<p>So, the response to that URL would be:</p>
+<pre><code>{
+  &quot;q&quot;: [
+    &quot;foo&quot;,
+    &quot;bar&quot;
+  ]
+}
+</code></pre>
+<p>Tip</p>
+<p>To declare a query parameter with a type of list, like in the example
+above, you need to explicitly use Query, otherwise it would be
+interpreted as a request body.</p>
+<p>The interactive API docs will update accordingly, to allow multiple
+values:</p>
+<p><img src="/img/tutorial/query-params-str-validations/image02.png" alt=""></p>
+<h2 id="query-parameter-list--multiple-values-with-defaults">Query parameter list / multiple values with defaults</h2>
+<p>And you can also define a default list of values if none are provided:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[list[str], Query()] = [&quot;foo&quot;, &quot;bar&quot;]):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+
+from typing import List
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[List[str], Query()] = [&quot;foo&quot;, &quot;bar&quot;]):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: list[str] = Query(default=[&quot;foo&quot;, &quot;bar&quot;])):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import List
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: List[str] = Query(default=[&quot;foo&quot;, &quot;bar&quot;])):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>If you go to:</p>
+<pre><code>http://localhost:8000/items/
+</code></pre>
+<p>the default of q will be: [&quot;foo&quot;, &quot;bar&quot;] and your response will
+be:</p>
+<pre><code>{
+  &quot;q&quot;: [
+    &quot;foo&quot;,
+    &quot;bar&quot;
+  ]
+}
+</code></pre>
+<h2 id="using-list">Using list</h2>
+<p>You can also use list directly instead of List[str] (or list[str] in
+Python 3.9+):</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[list, Query()] = []):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[list, Query()] = []):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: list = Query(default=[])):
+    query_items = {&quot;q&quot;: q}
+    return query_items
+</code></pre>
+<p>Note</p>
+<p>Have in mind that in this case, FastAPI won't check the contents of the
+list.</p>
+<p>For example, List[int] would check (and document) that the contents of
+the list are integers. But list alone wouldn't.</p>
+<h2 id="declare-more-metadata">Declare more metadata</h2>
+<p>You can add more information about the parameter.</p>
+<p>That information will be included in the generated OpenAPI and used by
+the documentation user interfaces and external tools.</p>
+<p>Note</p>
+<p>Have in mind that different tools might have different levels of OpenAPI
+support.</p>
+<p>Some of them might not show all the extra information declared yet,
+although in most of the cases, the missing feature is already planned
+for development.</p>
+<p>You can add a title:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[str | None, Query(title=&quot;Query string&quot;, min_length=3)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[Union[str, None], Query(title=&quot;Query string&quot;, min_length=3)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[Union[str, None], Query(title=&quot;Query string&quot;, min_length=3)] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: str | None = Query(default=None, title=&quot;Query string&quot;, min_length=3)
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Union[str, None] = Query(default=None, title=&quot;Query string&quot;, min_length=3)
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>And a description:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        str | None,
+        Query(
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None],
+        Query(
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None],
+        Query(
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: str
+    | None = Query(
+        default=None,
+        title=&quot;Query string&quot;,
+        description=&quot;Query string for the items to search in the database that have a good match&quot;,
+        min_length=3,
+    )
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Union[str, None] = Query(
+        default=None,
+        title=&quot;Query string&quot;,
+        description=&quot;Query string for the items to search in the database that have a good match&quot;,
+        min_length=3,
+    )
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<h2 id="alias-parameters">Alias parameters</h2>
+<p>Imagine that you want the parameter to be item-query.</p>
+<p>Like in:</p>
+<pre><code>http://127.0.0.1:8000/items/?item-query=foobaritems
+</code></pre>
+<p>But item-query is not a valid Python variable name.</p>
+<p>The closest would be item_query.</p>
+<p>But you still need it to be exactly item-query...</p>
+<p>Then you can declare an alias, and that alias is what will be used to
+find the parameter value:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[str | None, Query(alias=&quot;item-query&quot;)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(alias=&quot;item-query&quot;)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Annotated[Union[str, None], Query(alias=&quot;item-query&quot;)] = None):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: str | None = Query(default=None, alias=&quot;item-query&quot;)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(q: Union[str, None] = Query(default=None, alias=&quot;item-query&quot;)):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<h2 id="deprecating-parameters">Deprecating parameters</h2>
+<p>Now let's say you don't like this parameter anymore.</p>
+<p>You have to leave it there a while because there are clients using it,
+but you want the docs to clearly show it as deprecated.</p>
+<p>Then pass the parameter deprecated=True to Query:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        str | None,
+        Query(
+            alias=&quot;item-query&quot;,
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+            max_length=50,
+            regex=&quot;^fixedquery$&quot;,
+            deprecated=True,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None],
+        Query(
+            alias=&quot;item-query&quot;,
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+            max_length=50,
+            regex=&quot;^fixedquery$&quot;,
+            deprecated=True,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Annotated[
+        Union[str, None],
+        Query(
+            alias=&quot;item-query&quot;,
+            title=&quot;Query string&quot;,
+            description=&quot;Query string for the items to search in the database that have a good match&quot;,
+            min_length=3,
+            max_length=50,
+            regex=&quot;^fixedquery$&quot;,
+            deprecated=True,
+        ),
+    ] = None
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: str
+    | None = Query(
+        default=None,
+        alias=&quot;item-query&quot;,
+        title=&quot;Query string&quot;,
+        description=&quot;Query string for the items to search in the database that have a good match&quot;,
+        min_length=3,
+        max_length=50,
+        regex=&quot;^fixedquery$&quot;,
+        deprecated=True,
+    )
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    q: Union[str, None] = Query(
+        default=None,
+        alias=&quot;item-query&quot;,
+        title=&quot;Query string&quot;,
+        description=&quot;Query string for the items to search in the database that have a good match&quot;,
+        min_length=3,
+        max_length=50,
+        regex=&quot;^fixedquery$&quot;,
+        deprecated=True,
+    )
+):
+    results = {&quot;items&quot;: [{&quot;item_id&quot;: &quot;Foo&quot;}, {&quot;item_id&quot;: &quot;Bar&quot;}]}
+    if q:
+        results.update({&quot;q&quot;: q})
+    return results
+</code></pre>
+<p>The docs will show it like this:</p>
+<p><img src="/img/tutorial/query-params-str-validations/image01.png" alt=""></p>
+<h2 id="exclude-from-openapi">Exclude from OpenAPI</h2>
+<p>To exclude a query parameter from the generated OpenAPI schema (and
+thus, from the automatic documentation systems), set the parameter
+include_in_schema of Query to False:</p>
+<pre><code>from typing import Annotated
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    hidden_query: Annotated[str | None, Query(include_in_schema=False)] = None
+):
+    if hidden_query:
+        return {&quot;hidden_query&quot;: hidden_query}
+    else:
+        return {&quot;hidden_query&quot;: &quot;Not found&quot;}
+
+from typing import Annotated, Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    hidden_query: Annotated[Union[str, None], Query(include_in_schema=False)] = None
+):
+    if hidden_query:
+        return {&quot;hidden_query&quot;: hidden_query}
+    else:
+        return {&quot;hidden_query&quot;: &quot;Not found&quot;}
+
+from typing import Union
+
+from fastapi import FastAPI, Query
+from typing_extensions import Annotated
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    hidden_query: Annotated[Union[str, None], Query(include_in_schema=False)] = None
+):
+    if hidden_query:
+        return {&quot;hidden_query&quot;: hidden_query}
+    else:
+        return {&quot;hidden_query&quot;: &quot;Not found&quot;}
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    hidden_query: str | None = Query(default=None, include_in_schema=False)
+):
+    if hidden_query:
+        return {&quot;hidden_query&quot;: hidden_query}
+    else:
+        return {&quot;hidden_query&quot;: &quot;Not found&quot;}
+</code></pre>
+<p>Tip</p>
+<p>Prefer to use the Annotated version if possible.</p>
+<pre><code>from typing import Union
+
+from fastapi import FastAPI, Query
+
+app = FastAPI()
+
+
+@app.get(&quot;/items/&quot;)
+async def read_items(
+    hidden_query: Union[str, None] = Query(default=None, include_in_schema=False)
+):
+    if hidden_query:
+        return {&quot;hidden_query&quot;: hidden_query}
+    else:
+        return {&quot;hidden_query&quot;: &quot;Not found&quot;}
+</code></pre>
+<h2 id="recap">Recap</h2>
+<p>You can declare additional validations and metadata for your parameters.</p>
+<p>Generic validations and metadata:</p>
+<p>alias</p>
+<p>title</p>
+<p>description</p>
+<p>deprecated</p>
+<p>Validations specific for strings:</p>
+<p>min_length</p>
+<p>max_length</p>
+<p>regex</p>
+<p>In these examples you saw how to declare validations for str values.</p>
+<p>See the next chapters to see how to declare validations for other types,
+like numbers.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/fastapi/query-parameters-and-string-validations-/" title="Query Parameters and String Validations " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/fastapi/path-parameters-and-numeric-validations-/" title="Path Parameters and Numeric Validations " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>

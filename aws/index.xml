@@ -1,0 +1,1036 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on SATHEE</title>
+    <link>/aws/</link>
+    <description>Recent content in AWS on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/aws/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>Amazon Web Services (AWS) Tutorial </title>
+      <link>/aws/amazon-web-services-aws-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services-aws-tutorial-/</guid>
+      <description>Amazon Web Services (AWS) Tutorial This AWS tutorial is designed for beginners and professionals to learn AWS&amp;rsquo;s basic and advanced concepts. Learn about the various topics of AWS such as introduction, history of AWS, global infrastructure, features of AWS, IAM, storage services, database services, application Services, etc., and other AWS products such as S3, EC2, Lambda, and more. By the end of this tutorial, readers will have a basic understanding of what AWS is and how it can be used to support their computing needs.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Amazon Web Services </title>
+      <link>/aws/introduction-to-amazon-web-services-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-amazon-web-services-/</guid>
+      <description>Introduction to Amazon Web Services Amazon Web Services (AWS), a subsidiary of Amazon.com, has invested billions of dollars in IT resources distributed across the globe. These resources are shared among all the AWS account holders across the globe. These account themselves are entirely isolated from each other. AWS provides on-demand IT resources to its account holders on a pay-as-you-go pricing model with no upfront cost. Amazon Web services offers flexibility because you can only pay for services you use or you need.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Setting Up an AWS Account </title>
+      <link>/aws/amazon-web-services--setting-up-an-aws-account-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--setting-up-an-aws-account-/</guid>
+      <description>Amazon Web Services &amp;ndash; Setting Up an AWS Account Amazon web services is a cloud service platform that provides on-demand computational services, databases, storage space, and many more services. AWS allows its user to choose products from its wide variety of services and use them on-demand with no upfront payment for most of the services. Individually an AWS service may lack some functionality but, given the right AWS architecture, AWS services can be easily integrated to make highly complex and robust applications.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services (AWS) -- Free Tier Account Set up </title>
+      <link>/aws/amazon-web-services-aws--free-tier-account-set-up-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services-aws--free-tier-account-set-up-/</guid>
+      <description>Amazon Web Services (AWS) &amp;ndash; Free Tier Account Set up Amazon Web Service(AWS) is the world&amp;rsquo;s most comprehensive and broadly adopted cloud platform, offering over 200 fully featured services from data centers globally. Millions of customers including the fastest-growing startups, largest enterprises, and leading government agencies are using AWS to lower costs, become more agile, and innovate faster. AWS offers new subscribers a 12-month free tier to get hands-on experience with all AWS cloud services.</description>
+    </item>
+    
+    <item>
+      <title>Identity and Access Management </title>
+      <link>/aws/identity-and-access-management-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/identity-and-access-management-/</guid>
+      <description>Identity and Access Management In a recent study by Verizon, 63% of the confirmed data breaches are due to either weak, stolen, or default passwords used. There is a saying in the cybersecurity world that goes like this &amp;ldquo;No matter how good your chain is it&amp;rsquo;s only as strong as your weakest link.&amp;rdquo; and exactly hackers use the weakest links in the organization to infiltrate. They usually use phishing attacks to infiltrate an organization and if they get at least one person to fall for it, it&amp;rsquo;s a serious turn of events from thereon.</description>
+    </item>
+    
+    <item>
+      <title>SAML Authentication </title>
+      <link>/aws/saml-authentication-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/saml-authentication-/</guid>
+      <description>SAML Authentication SAML is an XML based framework that stands for Security Assertion Markup Language. Let us see how SAML is used to enable SSO (Single-Sign-On). SSO is a term used for a type of login method where a company configures all of its web apps in such a way that the user can log in to all of these apps by just signing in once.
+Example &amp;ndash; When one logs in on gmail.</description>
+    </item>
+    
+    <item>
+      <title>Identity and Access Management (IAM) in Amazon Web Services (AWS) </title>
+      <link>/aws/identity-and-access-management-iam-in-amazon-web-services-aws-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/identity-and-access-management-iam-in-amazon-web-services-aws-/</guid>
+      <description>Identity and Access Management (IAM) in Amazon Web Services (AWS) Identity and Access Management (IAM) manages Amazon Web Services (AWS) users and their access to AWS accounts and services. It controls the level of access a user can have over an AWS account &amp;amp; set users, grant permission and allows a user to use different features of AWS account. Identity and access management is mostly used to manage users, groups, roles and Access polices</description>
+    </item>
+    
+    <item>
+      <title>How to Create IAM roles for Amazon EC2? </title>
+      <link>/aws/how-to-create-iam-roles-for-amazon-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-create-iam-roles-for-amazon-ec2-/</guid>
+      <description>How to Create IAM roles for Amazon EC2? In this article, we will cover how we can easily create an IAM role and can use it with an EC2 instance easily, and provide the required permissions with the S3 policies. These IAM Roles are the identities that we are creating in our account so that we can provide specific permissions to the users. So these Roles provide us the temporary credentials of security for our session.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Denying Access using IAM policy for EC2 and EBS Instance </title>
+      <link>/aws/amazon-web-services--denying-access-using-iam-policy-for-ec2-and-ebs-instance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--denying-access-using-iam-policy-for-ec2-and-ebs-instance-/</guid>
+      <description>Amazon Web Services &amp;ndash; Denying Access using IAM policy for EC2 and EBS Instance In this article, we will look into how to use AWS identity and access management policy conditions to create an IAM policy that denies access to create amazon elastic compute cloud instances and amazon elastic block store volumes when the required tags are not passed along with the creation request.
+We will also look into how you can use the IAM policy tags to restrict the launch of EC2 instances by using Deny with the StringNotLike condition operator.</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 -- Creating an Elastic Cloud Compute Instance </title>
+      <link>/aws/amazon-ec2--creating-an-elastic-cloud-compute-instance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-ec2--creating-an-elastic-cloud-compute-instance-/</guid>
+      <description>Amazon EC2 &amp;ndash; Creating an Elastic Cloud Compute Instance This article will educate you all about Amazon EC2. EC2 or Elastic Compute Cloud is a scalable computing service launched on the AWS cloud platform. In simpler words, EC2 is nothing but a virtual computer on which we can perform all our tasks and we have the authority to configure, launch or even dissipate this virtual computer. Hereby configuration, I mean RAM, ROM, storage, and so on, along with an extra secured environment.</description>
+    </item>
+    
+    <item>
+      <title>Amazon EC2 -- Instance Types </title>
+      <link>/aws/amazon-ec2--instance-types-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-ec2--instance-types-/</guid>
+      <description>Amazon EC2 &amp;ndash; Instance Types Different Amazon EC2 instance types are designed for certain activities. Consider the unique requirements of your workloads and applications when choosing an instance type. This might include needs for computing, memory, or storage.
+Before starting this article, we would recommend having a basic understanding of Amazon EC2 in order to get things more clear.
+The types of Amazon EC2 Instances are: Memory-Optimized Instances: Memory-optimized instances are geared for workloads that need huge datasets to be processed in memory.</description>
+    </item>
+    
+    <item>
+      <title>Pricing Models for Amazon EC2 </title>
+      <link>/aws/pricing-models-for-amazon-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/pricing-models-for-amazon-ec2-/</guid>
+      <description>Pricing Models for Amazon EC2 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud.You can select from a variety of operating systems and resource configurations like memory, CPU, storage that is required for your application. Amazon EC2 enables you to obtain and configure capacity within minutes. You can use one or hundreds or even thousands of server instances simultaneously. Some of the considerations for estimating Amazon EC2 cost are Operating systems, Clock hours of server time, Pricing Model, Instance type and Number of instances.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to EC2 Spot Instances </title>
+      <link>/aws/amazon-web-services--introduction-to-ec2-spot-instances-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-ec2-spot-instances-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to EC2 Spot Instances In this article, we will look into the process of profiling your applications and workloads to confirm if they can take advantage of Amazon EC2 spot instances.
+Spot instances are spare compute capacity available to you at steep discounts(often as much as 90% cheaper) compared to on-demand prices. The reason you need to qualify for the spot is that the spot is unused easy to capacity and spot instances can be interrupted by EC2 with a two-minute notification when EC2 needs that capacity back.</description>
+    </item>
+    
+    <item>
+      <title>Create a Windows EC2 Instance and Connect Using RDP </title>
+      <link>/aws/create-a-windows-ec2-instance-and-connect-using-rdp-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/create-a-windows-ec2-instance-and-connect-using-rdp-/</guid>
+      <description>Create a Windows EC2 Instance and Connect Using RDP EC2 stands for Elastic Compute Cloud. EC2 is an on-demand computing service on the AWS cloud platform. Under computing, it includes all the services a computing device can offer to you along with the flexibility of a virtual environment. In this article, we will see how to create an EC2 instance on AWS and how we can access that instance using RDP applications.</description>
+    </item>
+    
+    <item>
+      <title>Create an EC2 Instance With EC2 User Data Script To Launch Website </title>
+      <link>/aws/create-an-ec2-instance-with-ec2-user-data-script-to-launch-website-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/create-an-ec2-instance-with-ec2-user-data-script-to-launch-website-/</guid>
+      <description>Create an EC2 Instance With EC2 User Data Script To Launch Website Amazon EC2 is one of the most popular AWS offerings. It stands for Elastic Compute Cloud. This is the way to do Infrastructure as a Service on AWS. EC2 is not just one service. It&amp;rsquo;s composed of many things at a high level.
+You can rent virtual machines on EC2, they&amp;rsquo;re called EC2 instances.
+You can store data on virtual drives or EBS volumes.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Flexibility in EC2 Spot Instances </title>
+      <link>/aws/amazon-web-services--flexibility-in-ec2-spot-instances-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--flexibility-in-ec2-spot-instances-/</guid>
+      <description>Amazon Web Services &amp;ndash; Flexibility in EC2 Spot Instances In this article, we are going to look into the key points to keep in mind while using an Amazon EC2 Spot Instances effectively with instance flexibility. Here we will try to answer the three key questions:
+Why is Instance Flexibility needed?
+How to manage Spot instance using EC2 Fleet for your environment?
+Why is Instance Flexibility needed? Spot instances are unused EC2 capacity which means the amount of it available in any one specific instance type and size varies over time.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Spot Rules in EC2 Spot Instances </title>
+      <link>/aws/amazon-web-services--spot-rules-in-ec2-spot-instances-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--spot-rules-in-ec2-spot-instances-/</guid>
+      <description>Amazon Web Services &amp;ndash; Spot Rules in EC2 Spot Instances In this article, we are going to walk through a few simple rules to follow when launching Amazon EC2 spot instances. Spot instances enable you to optimize costs on an AWS cloud and scale the throughput of your application up to 10 times for the same budget.
+In this article, we will discuss two simple rules to follow when thinking about launching spot instances:</description>
+    </item>
+    
+    <item>
+      <title>How to Install Python3 on AWS EC2? </title>
+      <link>/aws/how-to-install-python3-on-aws-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-install-python3-on-aws-ec2-/</guid>
+      <description>How to Install Python3 on AWS EC2? AWS or Amazon web services is a cloud service platform that provides on-demand computational services, databases, storage space, and many more services. EC2 or Elastic Compute Cloud is a scalable computing service launched on the AWS cloud platform. In simpler words, EC2 is nothing but a virtual computer on which we can perform all our tasks and we have the authority to configure, launch or even dissipate this virtual computer.</description>
+    </item>
+    
+    <item>
+      <title>How to Install Go on AWS EC2? </title>
+      <link>/aws/how-to-install-go-on-aws-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-install-go-on-aws-ec2-/</guid>
+      <description>How to Install Go on AWS EC2? EC2 or Elastic Compute Cloud is a scalable computing service launched on the AWS cloud platform. In simpler words, EC2 is nothing but a virtual computer on which we can perform all our tasks and we have the authority to configure, launch or even dissipate this virtual computer.Go is an open-source, statically typed, compiled programming language developed by Google. It is also referred to as Golang.</description>
+    </item>
+    
+    <item>
+      <title>Connecting an AWS EC2 Instance of a Private Subnet using Bastion Host </title>
+      <link>/aws/connecting-an-aws-ec2-instance-of-a-private-subnet-using-bastion-host-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/connecting-an-aws-ec2-instance-of-a-private-subnet-using-bastion-host-/</guid>
+      <description>Connecting an AWS EC2 Instance of a Private Subnet using Bastion Host In this article, we will see how we can connect an instance present in a private subnet with the help of an instance present in a private subnet. Let us first have look over the following mentioned Key terminologies where we will first try to understand few things (like EC2 instance and other things) theoretically and then we will jump into the implementation section.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Elastic Beanstalk </title>
+      <link>/aws/introduction-to-aws-elastic-beanstalk-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-elastic-beanstalk-/</guid>
+      <description>Introduction to AWS Elastic Beanstalk AWS Elastic Beanstalk is an AWS managed service for web applications. Elastic beanstalk is a pre-configured EC2 server that can directly take up your application code and environment configurations and use it to automatically provision and deploy the required resources within AWS to run the web application. Unlike EC-2 which is Infrastructure as a service, Elastic beanstalk is a Platform As A service (PAAS) as it allows users to directly us a pre-configured server for their application.</description>
+    </item>
+    
+    <item>
+      <title>How to Attach EBS Volume in EC2 Instance? </title>
+      <link>/aws/how-to-attach-ebs-volume-in-ec2-instance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-attach-ebs-volume-in-ec2-instance-/</guid>
+      <description>How to Attach EBS Volume in EC2 Instance? Pre-requisite: AWS, EC2, and EBS
+Elastic Block Store is a type of storage in AWS. It behaves like a virtual hard drive device in AWS and it is persistent storage. In EC2- The instance root volume will be destroyed when we terminate the EC2 instance, as well as data, will also be deleted. That&amp;rsquo;s why we attach extra volume with our EC2-Instance for the data availability it does not matter EC2 instance is terminated or not.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Replacing Unhealthy EC2 Instance in Elastic Beanstalk Environment </title>
+      <link>/aws/amazon-web-services--replacing-unhealthy-ec2-instance-in-elastic-beanstalk-environment-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--replacing-unhealthy-ec2-instance-in-elastic-beanstalk-environment-/</guid>
+      <description>Amazon Web Services &amp;ndash; Replacing Unhealthy EC2 Instance in Elastic Beanstalk Environment In this article, we will look into how to automate the replacement of EC2 instances in an AWS Elastic Beanstalk environment that are failing Elastic Load Balancer health checks.
+By default, the Elastic Beanstalk environment&amp;rsquo;s Auto Scaling group health check configuration is set to the EC2 type which simply performs a status check of EC2 instances. This means that if you want to automate the replacement of unhealthy EC2 instances you must change the health check type of the environment&amp;rsquo;s auto-scaling group from EC2 to ELB by using an .</description>
+    </item>
+    
+    <item>
+      <title>Launching an Application on AWS Beanstalk </title>
+      <link>/aws/launching-an-application-on-aws-beanstalk-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/launching-an-application-on-aws-beanstalk-/</guid>
+      <description>Launching an Application on AWS Beanstalk AWS Beanstalk is an application that makes your task of hosting your web application and you do not have to create or configure any kind of webservers by yourself. All the in fractures like virtual machines, load balancer, etc all these things are provided by Elastic beanstalk and also provide the OS, language, frameworks, web, and application server. Languages supported by Elastic Beanstalk Java</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Adding Security Group to Elastic Beanstalk Environment </title>
+      <link>/aws/amazon-web-services--adding-security-group-to-elastic-beanstalk-environment-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--adding-security-group-to-elastic-beanstalk-environment-/</guid>
+      <description>Amazon Web Services &amp;ndash; Adding Security Group to Elastic Beanstalk Environment The AWS Elastic Beanstalk is a service provided by AWS that is used to deploy and scale web applications built on Java, Python, Go, Ruby, Node.js and Docker, etc.
+In this article, we will look into how users can add their own security group to their AWS Elastic Beanstalk environment.
+To do so follow the below steps:
+Step 1: Login to the AWS management console and then navigate to the Amazon Elastic Compute Cloud console.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Elastic Block Store(EBS) </title>
+      <link>/aws/introduction-to-aws-elastic-block-storeebs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-elastic-block-storeebs-/</guid>
+      <description>Introduction to AWS Elastic Block Store(EBS) AWS Storage Services: AWS offers a wide range of storage services that can be provisioned depending on your project requirements and use case. AWS storage services have different provisions for highly confidential data, frequently accessed data, and the not so frequently accessed data. You can choose from various storage types namely, object storage, file storage, block storage services, backups,, and data migration options. All of which fall under the AWS Storage Services list.</description>
+    </item>
+    
+    <item>
+      <title>AWS EBS (Elastic Block Store) Snapshot </title>
+      <link>/aws/aws-ebs-elastic-block-store-snapshot-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-ebs-elastic-block-store-snapshot-/</guid>
+      <description>AWS EBS (Elastic Block Store) Snapshot Data is the most important thing anywhere over the internet. Everyone wants to be more secure and save when it comes to their Data security. Data on your Amazon EBS volume can also be back up to Amazon S3 Bucket by taking the point-in-time Snapshot. Snapshots can be used to create a backup of critical workloads, such as a large database or a file system that spans across multiple EBS volumes.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Changing the Elastic Block Store Encryption Key </title>
+      <link>/aws/amazon-web-services--changing-the-elastic-block-store-encryption-key-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--changing-the-elastic-block-store-encryption-key-/</guid>
+      <description>Amazon Web Services &amp;ndash; Changing the Elastic Block Store Encryption Key In this article, we will look into the process of changing the encryption key used by an Amazon Elastic Block Store(EBS) volume. Before we begin, it is important to note that the encryption key for EBS volumes cannot be changed once generated. But there is a workaround for it. In this article, we will be discussing the same.
+To do so follow the below steps:</description>
+    </item>
+    
+    <item>
+      <title>What is Amazon Machine Image (AMI)? </title>
+      <link>/aws/what-is-amazon-machine-image-ami-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/what-is-amazon-machine-image-ami-/</guid>
+      <description>What is Amazon Machine Image (AMI)? An Amazon Machine Image is a special type of virtual appliance that is used to instantiate (create) a virtual machine within EC2. It serves as the basic unit of deployment for services delivered using EC2. Whenever you want to launch an instance, you need to specify AMI. To launch instances, you can also use different AMI&amp;rsquo;s. If you want to launch multiple instances from a single AMI, then you need multiple instances of the same configuration.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Creating an Amazon Machine Image(AMI) </title>
+      <link>/aws/amazon-web-services--creating-an-amazon-machine-imageami-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--creating-an-amazon-machine-imageami-/</guid>
+      <description>Amazon Web Services &amp;ndash; Creating an Amazon Machine Image(AMI) In this article, we will look into the process of creating an Amazon Machine Image on AWS in detail. An Amazon Machine Image (AMI) is a type of virtual appliance that is used to create a virtual machine within the Amazon Elastic Compute Cloud (EC2). To create an Amazon Machine Image (AMI) first log in to AWS Account. Then go to Services Section and Click on EC2.</description>
+    </item>
+    
+    <item>
+      <title>Elastic Load Balancer in AWS </title>
+      <link>/aws/elastic-load-balancer-in-aws-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/elastic-load-balancer-in-aws-/</guid>
+      <description>Elastic Load Balancer in AWS In simplest terms, cloud computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer&amp;rsquo;s hard drive or local server. It is also referred to as Internet-based computing.
+Features of cloud No up-front investment
+Lowering operating cost
+Highly scalable and efficient
+Easy access
+Reducing business risks and maintenance expenses
+Advantages of Elastic Load Balancer ELB automatically distributes incoming application traffic across multiple targets, such as EC2 instances, containers, and IP addresses, to achieve high availability.</description>
+    </item>
+    
+    <item>
+      <title>Introduction To AWS Lambda </title>
+      <link>/aws/introduction-to-aws-lambda-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-lambda-/</guid>
+      <description>Introduction To AWS Lambda AWS Lambda is the new computing system that offers a variety of benefits like real-time data processing and custom back-end service. With so much information available about AWS Lambda, it can be hard to know what it is without an introduction.
+AWS Lambda Here&amp;rsquo;s a breakdown of the introduction in the form of frequently asked questions about this system, to help a person determine if it&amp;rsquo;s the right option or not.</description>
+    </item>
+    
+    <item>
+      <title>How to Configure AWS Lambda? </title>
+      <link>/aws/how-to-configure-aws-lambda-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-configure-aws-lambda-/</guid>
+      <description>How to Configure AWS Lambda? AWS Lambda is a responsive cloud service that examines the steps followed within any application and responds to them by compiling the codes that have been defined by the users, also known as functions. The service automatically computes and manages the resources across multiple availability zones and functions through them whenever new actions are called. AWS Lambda supports languages like Java, Python, and Node.js for writing the codes, and the service can also launch its processes in languages that are supported by Amazon Linux (like Bash, Go &amp;amp; Ruby).</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Insert Data Using AWS Lambda </title>
+      <link>/aws/aws-dynamodb--insert-data-using-aws-lambda-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--insert-data-using-aws-lambda-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Insert Data Using AWS Lambda In this article, we will look into the process of inserting data into a DynamoDB table using AWS Lambda. Amazon DynamoDB is a completely owned NoSQL proprietary provider that helps key-value and textual statistics systems and is supplied via way of means of Amazon.com as a part of Amazon Web Services. AWS Lambda is an event-driven, serverless computing platform supplied via way means of Amazon as part of Amazon Web Services.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Amazon Cloudwatch </title>
+      <link>/aws/introduction-to-amazon-cloudwatch-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-amazon-cloudwatch-/</guid>
+      <description>Introduction to Amazon Cloudwatch Amazon CloudWatch is a service used for monitoring and observing resources in real-time, built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides users with data and actionable insights to monitor their respective applications, stimulate system-wide performance changes, and optimize resource utilization. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing its users with an aggregated view of AWS resources, applications, and services that run on AWS.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Amazon CloudWatch Synthetics </title>
+      <link>/aws/amazon-web-services--introduction-to-amazon-cloudwatch-synthetics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-amazon-cloudwatch-synthetics-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Amazon CloudWatch Synthetics In this article, we will get an introduction to Amazon Cloudwatch Synthetics. With this feature, you can create different kinds of Canaries to continually verify your user experience even when you don&amp;rsquo;t have traffic, monitor and test for unusual behavior, and trace issues to their source for faster resolution.
+Let&amp;rsquo;s start by navigating to CloudWatch synthetics.
+Amazon CloudWatch synthetics allows you to create configurable scripts called canaries to continuously monitor your application endpoints and APIs.</description>
+    </item>
+    
+    <item>
+      <title>Difference between AWS Cloudwatch and AWS Cloudtrail </title>
+      <link>/aws/difference-between-aws-cloudwatch-and-aws-cloudtrail-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-aws-cloudwatch-and-aws-cloudtrail-/</guid>
+      <description>Difference between AWS Cloudwatch and AWS Cloudtrail 1. AWS Cloudwatch: It is a monitoring tool used for real-time monitoring of AWS resources and applications. It provides a report on the basis of monitoring which can be used to analyze the performance of the system. CloudWatch also detect irregular behavior in your environments. It also sets the alarm. It monitors various AWS resources like Amazon EC2, Amazon RDS, Amazon S3, Elastic Load Balancer, etc.</description>
+    </item>
+    
+    <item>
+      <title>Bash Script -- Features </title>
+      <link>/aws/bash-script--features-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/bash-script--features-/</guid>
+      <description>Bash Script &amp;ndash; Features These days, there are various shell writing options available out there, and each one of them has its own unique features. Just as it does, Bash Shell contains some of the best features that make it more productive and usable. For each project, there are specific requirements for the features, and the developers choose the shell according to those specific features. Therefore, it is important that you know about the features of Bash Scripting before you start using it.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Scaling Amazon EC2 </title>
+      <link>/aws/amazon-web-services--scaling-amazon-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--scaling-amazon-ec2-/</guid>
+      <description>Amazon Web Services &amp;ndash; Scaling Amazon EC2 Scalability refers to the capacity of a software solution to manage rising workloads. In simple terms, it is the ability of a system to readily add extra processing resources to handle the increased loads. Scaling Amazon EC2 means you start with the resources you require at the time of starting your service and build your architecture to automatically scale in or out, in response to the changing demand.</description>
+    </item>
+    
+    <item>
+      <title>Create and Configure the Auto Scaling Group in EC2 </title>
+      <link>/aws/create-and-configure-the-auto-scaling-group-in-ec2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/create-and-configure-the-auto-scaling-group-in-ec2-/</guid>
+      <description>Create and Configure the Auto Scaling Group in EC2 Pre-requisite:- AWS and EC2
+Auto Scaling is an Amazon Web Services it allows instance scalable when the traffic increases or CPU load increases. Auto-scaling is a service monitoring all instances that are configured into the Auto Scaling group and it ensures that loads are balanced in all instances. Depending on the load scaling group increase the instance according to the configuration. When we create the Auto Scaling Group we configured the Desired capacity, Minimum capacity, or Maximum capacity and also configured CPU utilization.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Amazon Elastic Container Service (ECS) </title>
+      <link>/aws/introduction-to-amazon-elastic-container-service-ecs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-amazon-elastic-container-service-ecs-/</guid>
+      <description>Introduction to Amazon Elastic Container Service (ECS) Amazon Elastic Container Service (ECS), also known as Amazon EC-2 Container Service, is a managed service that allows users to run Docker-based applications packaged as containers across a cluster of EC2 instances. Running simple containers on a single EC-2 instance is simple but running these applications on a cluster of instances and managing the cluster is being administratively heavy process. With ECS, Fargate launch type, the load, and responsibility of managing the EC2 cluster is transferred over to the AWS and you can focus on application development rather than management of your cluster architecture.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Amazon EKS </title>
+      <link>/aws/amazon-web-services--introduction-to-amazon-eks-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-amazon-eks-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Amazon EKS Amazon Elastic Kubernetes Service(EKS), is a fully managed service that you can use to run Kubernetes on Amazon Web Service. Kubernetes is open-source software that enables you to install and manage applications at a high scale. Its characteristics are:
+Availability: In order to ensure high availability Kubernetes executes and scales itself to various AWS AZs.
+Strength: Kubernetes automatically scales itself to avoid loads and unwanted control plane issues.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Generating Log Bundle for EKS Instance </title>
+      <link>/aws/amazon-web-services--generating-log-bundle-for-eks-instance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--generating-log-bundle-for-eks-instance-/</guid>
+      <description>Amazon Web Services &amp;ndash; Generating Log Bundle for EKS Instance Amazon SageMaker is used by data scientists and developers to easily and quickly prepare, build, train, and deploy high-quality machine learning (ML) models by bringing together a broad set of capabilities purpose-built for ML. In this article, we will look into how users can generate a log bundle for their Amazon Elastic Kubernetes Service instances. To do so follow the below steps:</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Amazon Elastic Container Registry </title>
+      <link>/aws/introduction-to-amazon-elastic-container-registry-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-amazon-elastic-container-registry-/</guid>
+      <description>Introduction to Amazon Elastic Container Registry Amazon Web Services is a subsidiary of Amazon.com that provides on-demand cloud computing platforms to individuals, companies, and governments, on a paid subscription basis.
+Cloud Computing:Cloud computing is the on-demand delivery of compute power, database storage, applications, and other IT resources through a cloud services platform via the internet with pay-as-you-go pricing.
+What Is Amazon Elastic Container Registry?Amazon Elastic Container Registry (ECR) is a managed AWS Docker registry service.</description>
+    </item>
+    
+    <item>
+      <title>Difference Between Amazon EBS and Amazon EFS </title>
+      <link>/aws/difference-between-amazon-ebs-and-amazon-efs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-amazon-ebs-and-amazon-efs-/</guid>
+      <description>Difference Between Amazon EBS and Amazon EFS The AWS EFS(Elastic file system) and AWS EBS(Elastic block storage) are two different types of storage services provided by Amazon Web Services. This article highlights some major differences between Amazon EFS and Amazon EBS.
+What is AWS EBS? EBS(Elastic block storage) is a block-level storage service provided by Amazon and it is basically designed to be used exclusively with separate EC2 instances, no two instances can have the same EBS volume attached to them.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Simple Storage Service (AWS S3) </title>
+      <link>/aws/introduction-to-aws-simple-storage-service-aws-s3-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-simple-storage-service-aws-s3-/</guid>
+      <description>Introduction to AWS Simple Storage Service (AWS S3) AWS Storage Services: AWS offers a wide range of storage services that can be provisioned depending on your project requirements and use case. AWS storage services have different provisions for highly confidential data, frequently accessed data, and the not so frequently accessed data. You can choose from various storage types namely, object storage, file storage, block storage services, backups, and data migration options.</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 -- Storage Classes </title>
+      <link>/aws/amazon-s3--storage-classes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-s3--storage-classes-/</guid>
+      <description>Amazon S3 &amp;ndash; Storage Classes Amazon Simple Storage Service (S3) is used for storing data in the form of objects S3 is quite different from any other file storage device or service. Amazon S3 also provides industry-leading scalability, data availability, security, and performance. The data which is uploaded by the user in S3, that data is stored as objects and provided an ID. Moreover, they store in shapes like buckets and can upload the maximum file size is of 5 Terabyte(TB).</description>
+    </item>
+    
+    <item>
+      <title>Amazon Simple Storage Service(S3) -- Versioning </title>
+      <link>/aws/amazon-simple-storage-services3--versioning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-simple-storage-services3--versioning-/</guid>
+      <description>Amazon Simple Storage Service(S3) &amp;ndash; Versioning Amazon Simple storage service (S3) it is an object oriented storage service which provides the features such as data availability data scalability, security, and also used for enhance the performance. S3 also allows you to store as many objects as you&amp;rsquo;d like with an individual object size limit of five terabytes. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize data, and configure fine-tuned access controls to meet specific business, organizational, and compliance requirements.</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 -- Creating a S3 Bucket </title>
+      <link>/aws/amazon-s3--creating-a-s3-bucket-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-s3--creating-a-s3-bucket-/</guid>
+      <description>Amazon S3 &amp;ndash; Creating a S3 Bucket Amazon Simple Storage Service (Amazon S3) or Amazon S3 is an object type, high-speed or with minimal latency, low-cost and scalable storage service provided by AWS. S3 also allows you to store as many objects as you&amp;rsquo;d like with an individual object size limit of five terabytes. It provides 99.999999999 (11 &amp;lsquo;9&amp;rsquo;s) percent durability and 99.99 percent availability of the objects which reside in it.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Amazon S3 and Box </title>
+      <link>/aws/difference-between-amazon-s3-and-box-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-amazon-s3-and-box-/</guid>
+      <description>Difference between Amazon S3 and Box 1. Amazon S3 : Amazon S3 stands for Amazon Simple Storage Service. It is a cloud storage service which is provided by Amazon Web Services. It provides object storage through a web service interface. It allows to store any type of objects like data lakes for analytics, data archives, backup and recovery, disaster recovery, hybrid cloud storage and internet applications. It was launched by AWS in 2006.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Amazon S3 and TitanFile </title>
+      <link>/aws/difference-between-amazon-s3-and-titanfile-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-amazon-s3-and-titanfile-/</guid>
+      <description>Difference between Amazon S3 and TitanFile 1. Amazon S3 : Amazon S3 stands for Amazon Simple Storage Service. It is a cloud storage service which is provided by Amazon Web Services. It provides object storage through a web service interface. It allows to store any type of objects like data lakes for analytics, data archives, backup and recovery, disaster recovery, hybrid cloud storage and internet applications. It was launched by AWS in 2006.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Amazon S3 and SecureSafe </title>
+      <link>/aws/difference-between-amazon-s3-and-securesafe-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-amazon-s3-and-securesafe-/</guid>
+      <description>Difference between Amazon S3 and SecureSafe 1. Amazon S3 : Amazon S3 stands for Amazon Simple Storage Service. It is a cloud storage service that is provided by Amazon Web Services. It provides object storage through a web service interface. It allows us to store any type of objects like data lakes for analytics, data archives, backup and recovery, disaster recovery, hybrid cloud storage and internet applications. It was launched by AWS in 2006.</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 -- Lifecycle Management </title>
+      <link>/aws/amazon-s3--lifecycle-management-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-s3--lifecycle-management-/</guid>
+      <description>Amazon S3 &amp;ndash; Lifecycle Management An S3 Lifecycle Management in simple terms when in an S3 bucket some data is stored for a longer time in standard storage even when not needed. The need to shift this old data to cheaper storage or delete it after a span of time gives rise to life cycle management.
+Why is it needed? Assume a lot of data is updated in an S3 bucket regularly, and if all the data is maintained by standard storage it will cost you more(even if previous data is of no use after some time).</description>
+    </item>
+    
+    <item>
+      <title>Amazon S3 -- Cross Region Replication </title>
+      <link>/aws/amazon-s3--cross-region-replication-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-s3--cross-region-replication-/</guid>
+      <description>Amazon S3 &amp;ndash; Cross Region Replication The AWS S3 &amp;ndash; Cross-region replication (CRR) allows you to replicate or copy your data in two different regions. But why do you need to set up CRR? There are many possible scenarios where setting up cross-region replication will prove helpful. Some of them are enlisted below:
+Improving latency and enhancing availability: If you are running a big organization with customers all around the world then making objects available to them with low latency is of great importance.</description>
+    </item>
+    
+    <item>
+      <title>What is Amazon Glacier? </title>
+      <link>/aws/what-is-amazon-glacier-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/what-is-amazon-glacier-/</guid>
+      <description>What is Amazon Glacier? AWS offers a wide range of storage services that can be provisioned depending on your project requirements and use case. AWS storage services have different provisions for highly confidential data, frequently accessed data, and the not so frequently accessed data. You can choose from various storage types namely, object storage, file storage, block storage services, backups, and data migration options. All of which fall under the AWS Storage Services list.</description>
+    </item>
+    
+    <item>
+      <title>Amazon RDS -- Working with Backups </title>
+      <link>/aws/amazon-rds--working-with-backups-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-rds--working-with-backups-/</guid>
+      <description>Amazon RDS &amp;ndash; Working with Backups This article aims to make you aware of &amp;ldquo;Working with Backups&amp;rdquo; on Amazon RDS. The prime objective of backups is to create a copy of our data that can be recovered in situations like data failure, data theft, and so on. As we all know, RDS deals with a lot of crucial data and there can be chances of data loss. To avoid such losses RDS has incorporated several backup strategies in RDS for the clients as per their requirements.</description>
+    </item>
+    
+    <item>
+      <title>AWS Disaster Recovery Strategies </title>
+      <link>/aws/aws-disaster-recovery-strategies-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-disaster-recovery-strategies-/</guid>
+      <description>AWS Disaster Recovery Strategies Disaster recovery is one of the main requirements of making Cloud architectures today. This disaster may be a production bug, fault made by the developers, or maybe a flaw at the end of AWS Service itself. Disaster recovery is an essential part of applications. Before diving into AWS Disaster recovery strategies let&amp;rsquo;s understand some terms related to Disaster Recovery.
+Recovery Time Objective (RTO): RTO is the maximum time span in which a service can remain unavailable before being damaging to the business.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Elastic File System(EFS) </title>
+      <link>/aws/introduction-to-aws-elastic-file-systemefs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-elastic-file-systemefs-/</guid>
+      <description>Introduction to AWS Elastic File System(EFS) AWS Storage Services: AWS offers a wide range of storage services that can be provisioned depending on your project requirements and use case. AWS storage services have different provisions for highly confidential data, frequently accessed data, and the not so frequently accessed data. You can choose from various storage types namely, object storage, file storage, block storage services, backups, and data migration options. All of which fall under the AWS Storage Services list.</description>
+    </item>
+    
+    <item>
+      <title>Difference Between AWS S3 and AWS EBS </title>
+      <link>/aws/difference-between-aws-s3-and-aws-ebs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-aws-s3-and-aws-ebs-/</guid>
+      <description>Difference Between AWS S3 and AWS EBS The AWS S3(simple storage service ) and AWS EBS(elastic block storage) are two different types of storage services provided by Amazon Web Services. This article highlights some major differences between Amazon S3 and Amazon EBS.
+AWS Storage Options: Amazon S3: Amazon S3 is a simple storage service offered by Amazon and it is useful for hosting website images and videos, data analytics, etc. S3 is an object-level data storage that distributes the data objects across several machines and allows the users to access the storage via the internet from any corner of the world.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Simple Queue Service(SQS) </title>
+      <link>/aws/amazon-web-services--introduction-to-simple-queue-servicesqs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-simple-queue-servicesqs-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Simple Queue Service(SQS) This article will provide you with an introduction to AWS SQS. We will cover the difference between the queues and create our own.
+What is SQS? Amazon Simple Queue Service (SQS) will let you send the messages, store the messages, and receive the messages between various software components at any amount, without losing of actual messages. Also, without requiring some other services to should be available.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Simple Workflow Service </title>
+      <link>/aws/amazon-web-services--introduction-to-simple-workflow-service-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-simple-workflow-service-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Simple Workflow Service In this article, we are going to discuss one of the important aspects of Amazon AWS, which is called Amazon SWS or SWF. it stands for Amazon simple workflow services. It&amp;rsquo;s a part of Amazon Web Services (AWS). AWS a cloud provider server. Which provides services in areas like computing, storage, administration, and networking, as well as on-demand services. This implies that customers can request a specific set of services.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Amazon S3 Notifications to SNS </title>
+      <link>/aws/amazon-web-services--amazon-s3-notifications-to-sns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--amazon-s3-notifications-to-sns-/</guid>
+      <description>Amazon Web Services &amp;ndash; Amazon S3 Notifications to SNS In this article, we will see how the Amazon S3 bucket publishes notifications to SNS topics on object creation events. An object that creates an event is of four types. They are Put, Post, Copy, Multipart Upload, Remove, Replicate and Restore. Thus, whenever any of the event occur in our S3 bucket, it will publish a notification to a topic and the subscribers to that topic can view those messages.</description>
+    </item>
+    
+    <item>
+      <title>How To Install AWS CLI -- Amazon Simple Notification Service (SNS)? </title>
+      <link>/aws/how-to-install-aws-cli--amazon-simple-notification-service-sns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/how-to-install-aws-cli--amazon-simple-notification-service-sns-/</guid>
+      <description>How To Install AWS CLI &amp;ndash; Amazon Simple Notification Service (SNS)? Amazon Simple Notification Service (SNS) is used for the Application to Application (A2A) and Application to Person (A2P) communication. It provides developers with a highly scalable, flexible, and cost-effective capability to publish messages from an application and immediately deliver them to subscribers or other applications. Using AWS Console it is easy to publish messages to your endpoint of choice (HTTP, SQS, Lambda, mobile push, email, or SMS) and edit topic policies to control publisher and subscriber access.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Elastic Transcoder Service </title>
+      <link>/aws/amazon-web-services--introduction-to-elastic-transcoder-service-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-elastic-transcoder-service-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Elastic Transcoder Service Amazon Elastic Transcoder is a cloud-based media transcoding service. It is intended to be a highly scalable, simple-to-use, and cost-effective way for developers and organizations to convert their media files from their original format into versions that can be played on devices such as smartphones, tablets, and Computers.
+To be able to use the service you can start by login into AWS Management Console.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Service -- Introduction to API Gateway </title>
+      <link>/aws/amazon-web-service--introduction-to-api-gateway-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-service--introduction-to-api-gateway-/</guid>
+      <description>Amazon Web Service &amp;ndash; Introduction to API Gateway Firstly, API stands for Application Program Interface. An API Gateway is a management tool that acts as an interface between users and microservices. The Amazon API Gateway is an AWS service that allows users to create, publish, secure, maintain and monitor APIs at any scale. You can create APIs in your own client application and can also make them available to third-party developers.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Relational database and NoSQL </title>
+      <link>/aws/difference-between-relational-database-and-nosql-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-relational-database-and-nosql-/</guid>
+      <description>Difference between Relational database and NoSQL 1. Relational Database : RDBMS stands for Relational Database Management Systems. It is most popular database. In it, data is store in the form of row that is in the form of tuple. It contain numbers of table and data can be easily accessed because data is store in the table. This Model was proposed by E.F. Codd. 2. NoSQL : NoSQL Database stands for a non-SQL database.</description>
+    </item>
+    
+    <item>
+      <title>DynamoDB -- Introduction </title>
+      <link>/aws/dynamodb--introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/dynamodb--introduction-/</guid>
+      <description>DynamoDB &amp;ndash; Introduction DynamoDB allows users to create databases capable of storing and retrieving any amount of data and comes in handy while serving any amount of traffic. It dynamically manages each customer&amp;rsquo;s requests and provides high performance by automatically distributing data and traffic over servers. It is a fully managed NoSQL database service that is fast, predictable in terms of performance, and seamlessly scalable. It relieves the user from the administrative burdens of operating and scaling a distributed database as the user doesn&amp;rsquo;t have to worry about hardware provisioning, patching Softwares, or cluster scaling.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Working with Tables </title>
+      <link>/aws/aws-dynamodb--working-with-tables-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--working-with-tables-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Working with Tables In this article, we will work on DynamoDB tables. DynamoDB is a NoSQL database that stores document data or key-value pairs. A Dynamodb table consists of items and each item is made up of attributes. Different items can have different attributes. See the below example:
+Example 1: { &amp;quot;MovieID&amp;quot;: 123, &amp;quot;Name&amp;quot;: &amp;quot;Godfather&amp;quot;, &amp;quot;Rating&amp;quot;: 9.1, &amp;quot;Year&amp;quot;: 1972 } Example 2: { &amp;quot;Director&amp;quot;: &amp;quot;Quentin Tarantino&amp;quot;, &amp;quot;MovieID&amp;quot;: 200, &amp;quot;Name&amp;quot;: &amp;quot;Pulp Fiction&amp;quot;, &amp;quot;Year&amp;quot;: 1994 } Each table has a partition key which acts as a primary key in items.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Introduction to NoSQL Workbench </title>
+      <link>/aws/aws-dynamodb--introduction-to-nosql-workbench-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--introduction-to-nosql-workbench-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Introduction to NoSQL Workbench This article intends to introduce you to the basics of NoSQL Workbench. NoSQL is basically a nonrelational database, with numerous other extra advantages too. NoSQL Workbench is nothing but a virtual development as well as a testing environment for developers anywhere in the world. It allows its users to test their data models over a large number of aspects of functionality and it also allows us to develop our software right from the scratch with a lesser amount of effort.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Creating a Table </title>
+      <link>/aws/aws-dynamodb--creating-a-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--creating-a-table-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Creating a Table DynamoDB allows users to create databases capable of storing and retrieving any amount of data and comes in handy while serving any amount of traffic. It dynamically manages each customer&amp;rsquo;s request and provides high performance by automatically distributing data and traffic over servers. It is a fully managed NoSQL database service that is fast, predictable in terms of performance, and seamlessly scalable. It relieves the user from the administrative burdens of operating and scaling a distributed database as the user doesn&amp;rsquo;t have to worry about hardware provisioning, patching Software, or cluster scaling.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Query Data in a Table </title>
+      <link>/aws/aws-dynamodb--query-data-in-a-table-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--query-data-in-a-table-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Query Data in a Table Amazon DynamoDB is a NoSQL managed database that stores semi-structured data i.e. key-value pair and document data. A table in DynamoDB stores data in form of an item and each item has a primary key. Example: { &amp;quot;Color&amp;quot;: true, &amp;quot;Director&amp;quot;: &amp;quot;Christopher Nolan&amp;quot;, &amp;quot;MovieID&amp;quot;: 1, &amp;quot;Name&amp;quot;: &amp;quot;Inception&amp;quot;, &amp;quot;Rating&amp;quot;: 8.7, &amp;quot;Year&amp;quot;: 2010 } The Query operation in Amazon DynamoDB finds items based on primary key values.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Working with Queries </title>
+      <link>/aws/aws-dynamodb--working-with-queries-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--working-with-queries-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Working with Queries Amazon DynamoDB is a NoSQL managed database service provided by Amazon that stores semi-structured data like key-value pairs. A DynamoDB table consists of items. Each item consists of one partition key and one or more attributes. An example of an item is given below:
+Example: { &amp;quot;MovieID&amp;quot;: 101, &amp;quot;Name&amp;quot;: &amp;quot;The Shawshank Redemption&amp;quot;, &amp;quot;Rating&amp;quot;: 9.2, &amp;quot;Year&amp;quot;: 1994 } In the above example, MovieID is the partition key.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Working with Backups </title>
+      <link>/aws/aws-dynamodb--working-with-backups-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--working-with-backups-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Working with Backups Amazon DynamoDB supports on-demand backup and restores features. Those features are available to the user independent of whether the user uses AWS Backup or not. Users can use the DynamoDB on-demand backup capability to create full backups of its tables for a long-term period and archival for regulatory observation needs. DynamoDB also removes the complexity of the operation involved in protecting sensitive data. While using DynamoDB, users don&amp;rsquo;t have to worry about cluster scaling, managing nodes, reputation, hardware supervising, etc.</description>
+    </item>
+    
+    <item>
+      <title>AWS DynamoDB -- Web Based Setup </title>
+      <link>/aws/aws-dynamodb--web-based-setup-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws-dynamodb--web-based-setup-/</guid>
+      <description>AWS DynamoDB &amp;ndash; Web Based Setup To use the Web-based services of AWS- DynamoDB the following steps need to be followed:
+Create an AWS account by navigating to the following link:- https://portal.aws.amazon.com/billing/signup#/start
+Get the AWS access Key (used to access DynamoDB programmatically).
+Configure your credentials (used to access DynamoDB programmatically).
+Creating AWS account:
+Visit the following website:- https://aws.amazon.com/dynamodb/
+Click on the &amp;ldquo;Get Started with Amazon DynamoDB&amp;rdquo; button, or the &amp;ldquo;Create an AWS Account&amp;rdquo; button.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Amazon Aurora </title>
+      <link>/aws/amazon-web-services--introduction-to-amazon-aurora-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-amazon-aurora-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Amazon Aurora A Cloud database is a database service fabricated and accessed through a cloud platform. It serves a considerable lot of indistinguishable functions as a conventional database with the additional adaptability of cloud computing. Users install the software on a cloud framework to implement the database.
+Amazon Aurora The Amazon Aurora is a relational database service offered from amazon cloud. This is one of the widely used services for the data storage, for low latency and value-based data storage and processing.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Amazon Aurora and Amazon Redshift </title>
+      <link>/aws/difference-between-amazon-aurora-and-amazon-redshift-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-amazon-aurora-and-amazon-redshift-/</guid>
+      <description>Difference between Amazon Aurora and Amazon Redshift 1. Amazon Aurora :It is a fully managed relational database engine from Amazon Web Services that are compatible with MySQL and PostgreSQL. It is approx five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases. Features of Aurora have distributed fault-tolerant and self-healing storage system.
+2. Amazon Redshift :Amazon Redshift is an efficient solution to collect and store all your data and enables you to analyze it.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Working with Third Party Data in Redshift </title>
+      <link>/aws/amazon-web-services--working-with-third-party-data-in-redshift-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--working-with-third-party-data-in-redshift-/</guid>
+      <description>Amazon Web Services &amp;ndash; Working with Third Party Data in Redshift Amazon Redshift is a data warehouse product that forms a large part of the cloud-computing platform Amazon Web Services. In this article, we will look into the process of quickly moving data from AWS Data Exchange in Amazon S3 into a Warehouse.
+Implementation: Follow the below steps to move data from Amazon S3 to An amazon warehouse using Redshift:</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Copy an Amazon Redshift Cluster to Different AWS Account </title>
+      <link>/aws/amazon-web-services--copy-an-amazon-redshift-cluster-to-different-aws-account-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--copy-an-amazon-redshift-cluster-to-different-aws-account-/</guid>
+      <description>Amazon Web Services &amp;ndash; Copy an Amazon Redshift Cluster to Different AWS Account In this article, we will look into how to copy an Amazon Redshift cluster from one account to a different account. Usually, users perform this operation from a production account to a quality account but you can use the steps to move a cluster from one account to another account in the same region.
+To do so follow the below steps:</description>
+    </item>
+    
+    <item>
+      <title>Amazon RDS -- Introduction to Amazon Relational Database System </title>
+      <link>/aws/amazon-rds--introduction-to-amazon-relational-database-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-rds--introduction-to-amazon-relational-database-system-/</guid>
+      <description>Amazon RDS &amp;ndash; Introduction to Amazon Relational Database System This article intends to make you aware of Amazon RDS or Amazon Relational Database System. Amazon RDS is nothing but a relational database management system along with the facilities of the AWS cloud platform. It facilitates us in creating database instances as per our requirements, i.e. resizable, variety of database type, etc. AWS Relational Database Service (RDS) Architecture Traditionally, database management used to be a very scattered service, from the webserver to the application server and then finally to the database.</description>
+    </item>
+    
+    <item>
+      <title>Create a database on Relational Database Service (RDS) of Amazon Web Services(AWS) </title>
+      <link>/aws/create-a-database-on-relational-database-service-rds-of-amazon-web-servicesaws-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/create-a-database-on-relational-database-service-rds-of-amazon-web-servicesaws-/</guid>
+      <description>Create a database on Relational Database Service (RDS) of Amazon Web Services(AWS) Make a database on cloud platform using AWS (Amazon Web Services).
+Introduction to Cloud
+Cloud computing is an information technology paradigm that enables ubiquitous access to shared pools of configurable system resources and higher-level services that can be rapidly provisioned with minimal management effort, often over the Internet.
+Now the question comes in front of us that what is AWS (Amazon web services )?</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Elastic Cache </title>
+      <link>/aws/amazon-web-services--introduction-to-elastic-cache-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-elastic-cache-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Elastic Cache This article intends to make the readers aware of one of the core services of AWS or Amazon Web Services called the Amazon Elastic Cache. Amazon ElastiCache is a complete caching solution proposed by AWS. It elevates the overall data accessing the experience of a user because of its wide range of multiple real-time use cases support. ElastiCache from Amazon is a fully managed and in-memory caching system which supports for flexible and real-time use cases.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Working with DNS </title>
+      <link>/aws/amazon-web-services--working-with-dns-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--working-with-dns-/</guid>
+      <description>Amazon Web Services &amp;ndash; Working with DNS In this article, we will look into how DNS works, and how you can troubleshoot partial DNS failures when using AWS services. This can be done using available online tools and the command-line interface.
+Let&amp;rsquo;s start with a brief introduction of how DNS works. The Domain Name System is built using a distributed architecture. When the host needs to resolve the IP address of a domain name, the host device hands over this process to a DNS server.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Amazon Route53 </title>
+      <link>/aws/introduction-to-amazon-route53-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-amazon-route53-/</guid>
+      <description>Introduction to Amazon Route53 In Simplest terms, cloud computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer&amp;rsquo;s hard drive or local server. It is also referred to as Internet-based computing. Features of cloud No up-front investment
+Lowering operating cost Highly scalable Easy access
+Reducing business risks and maintenance expenses No need to guess the capacity Flexible
+Amazon Web Services is a subsidiary of Amazon.</description>
+    </item>
+    
+    <item>
+      <title>AWS -- Removing Restrictions from Port 25 in Amazon Elastic Compute Cloud Instance </title>
+      <link>/aws/aws--removing-restrictions-from-port-25-in-amazon-elastic-compute-cloud-instance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/aws--removing-restrictions-from-port-25-in-amazon-elastic-compute-cloud-instance-/</guid>
+      <description>AWS &amp;ndash; Removing Restrictions from Port 25 in Amazon Elastic Compute Cloud Instance The Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides computational capacity in a secure and scalable way to its users. It is elastic in nature meaning you need to pay exactly what you use. It also provides utilities like processor, storage, networking, operating system, and purchase model.
+Amazon EC2 restricts traffic on port 25 of all EC2 instances by default.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC -- Introduction to Amazon Virtual Cloud </title>
+      <link>/aws/amazon-vpc--introduction-to-amazon-virtual-cloud-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc--introduction-to-amazon-virtual-cloud-/</guid>
+      <description>Amazon VPC &amp;ndash; Introduction to Amazon Virtual Cloud This article will take you through a brief introduction to Amazon VPC. Amazon VPC or Amazon Virtual Private Cloud is nothing but a service that allows its users to launch their virtual machines in a protected as well as isolated virtual environment defined by them. You have complete control over your VPC, from creation to customization and even deletion. It&amp;rsquo;s applicable to organizations where the data is scattered and needs to be managed well.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC Networking Components </title>
+      <link>/aws/amazon-vpc-networking-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc-networking-components-/</guid>
+      <description>Amazon VPC Networking Components Amazon Virtual Private Cloud is a networking service that you can use to establish boundaries around your AWS resources. So, in simpler words, Amazon Virtual Private Cloud (Amazon VPC) enables the users to define some virtual network and then launch the AWS resources into that virtual network. It gives you full control over various network environments, resources, connectivity, and security. Moreover, it defines how a network should communicate across different Availability Zones or regions.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC -- View Information About Your VPC </title>
+      <link>/aws/amazon-vpc--view-information-about-your-vpc-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc--view-information-about-your-vpc-/</guid>
+      <description>Amazon VPC &amp;ndash; View Information About Your VPC This article intends to make you aware of Viewing Information About Your VPC. This is very essential to keep an eye on our VPC&amp;rsquo;s when you have a decent amount of confidential datasets. A VPC is nothing but an isolated network or group of networks dedicated or belonging to you and your organization only. For any root account user, there is a significant and predefined VPC associated with their accounts.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC -- Working with VPCs and Subnets </title>
+      <link>/aws/amazon-vpc--working-with-vpcs-and-subnets-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc--working-with-vpcs-and-subnets-/</guid>
+      <description>Amazon VPC &amp;ndash; Working with VPCs and Subnets Amazon web service(AWS) is designed to help organizations and application providers to easily and securely host their applications. The Basic Security level that every organization follows is to form their own network, which is Virtual Network or also termed as Virtual Private Cloud(VPC).
+VPC helps to create a private-cloud like computing environment inside the shared public cloud infrastructure. It basically provides an organization authorization and control over a virtual network that is customized by them which basically isolates them from all other public cloud tenants, creating a private, secure place on the public cloud.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC -- Working with Direct Connect Service </title>
+      <link>/aws/amazon-vpc--working-with-direct-connect-service-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc--working-with-direct-connect-service-/</guid>
+      <description>Amazon VPC &amp;ndash; Working with Direct Connect Service Amazon Virtual Private Cloud or Amazon VPC is a service that enables customers to create their virtual network in a secure and Isolated environment. VPC offers us a secure environment in which we can create our network and use Amazon services as needed. You can have full control over VPC. whether its creation, customization or deletion. The user can control it easily.</description>
+    </item>
+    
+    <item>
+      <title>Amazon VPC -- Security in Amazon Virtual Private Cloud </title>
+      <link>/aws/amazon-vpc--security-in-amazon-virtual-private-cloud-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-vpc--security-in-amazon-virtual-private-cloud-/</guid>
+      <description>Amazon VPC &amp;ndash; Security in Amazon Virtual Private Cloud This article revolves around all the security services available under Amazon VPC. Along with the basic security infrastructure of AWS cloud, VPC also comes with several advanced security services embedded in it. All these services are incorporated with VPC to ensure the maximum attainable security on AWS premise. Let us have a deeper vision of Security in the Amazon Virtual Private Cloud.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to NAT Gateways </title>
+      <link>/aws/amazon-web-services--introduction-to-nat-gateways-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-nat-gateways-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to NAT Gateways NAT Gateway &amp;ndash; stands for Network Address Translation. It is a managed AWS service that is scaled based on your usage. You don&amp;rsquo;t need to manage it by yourself.
+There are two types of NAT Gateways: Public &amp;ndash; a NAT Gateway that resides in a public subnet. A public subnet is a subnet that has an Internet Gateway thus access.
+Private &amp;ndash; this type of NAT Gateways mostly used for communication between VPCs or between VPC and Transit Gateway.</description>
+    </item>
+    
+    <item>
+      <title>What is AWS Bastion Host? </title>
+      <link>/aws/what-is-aws-bastion-host-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/what-is-aws-bastion-host-/</guid>
+      <description>What is AWS Bastion Host? Security plays an important role in all sectors. When a user is using any service its concern is that his/her data should be secured while sharing their data in that service. There is always a chance that some malicious attacks or threats take place when the user is using some services. Although Amazon is capable of providing excellent security to its service. Amazon suggested to use SSH or RDP for more security to instances and services.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Security Group and Network ACL in AWS </title>
+      <link>/aws/difference-between-security-group-and-network-acl-in-aws-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/difference-between-security-group-and-network-acl-in-aws-/</guid>
+      <description>Difference between Security Group and Network ACL in AWS 1. Security Group : Security group like a virtual firewall. It has inbound and outbound security rules in which all inbound traffic is blocked by default in private on AWS EC2. It does not allow particular protocol no one will able to access our instances using this protocol you can stop traffic by using that rule by default everything that is denied.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to Amazon Lightsail </title>
+      <link>/aws/amazon-web-services--introduction-to-amazon-lightsail-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-amazon-lightsail-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to Amazon Lightsail Amazon Lightsail is a VPS(virtual private server) provisioning service, much like the Amazon EC2. But unlike the Amazon EC2, Lightsail doesn&amp;rsquo;t have as many configurations required to boot up the VPS. Lightsail is the easiest way for developers to get started with aws. It is specifically designed to be a quick and simple solution for small scale applications at fairly low costs. For example, to host a simple small website like blogs and portfolio pages, Lightsail can be a cheap and fairly better solution as compared to EC2.</description>
+    </item>
+    
+    <item>
+      <title>Launch a WordPress Instance Using Amazon Lightsail </title>
+      <link>/aws/launch-a-wordpress-instance-using-amazon-lightsail-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/launch-a-wordpress-instance-using-amazon-lightsail-/</guid>
+      <description>Launch a WordPress Instance Using Amazon Lightsail WordPress is a content management system (WCM) which is a tool that organizes the whole process of creating, storing, and showcasing web-content in an optimal way. But, the process of creating a WordPress is not that easy it requires a lot of understanding of the topic. To make this easy Amazon Web Service(AWS) has launched a tool named Amazon Lightsail which is the easiest way to get started with virtual servers, storage, databases, and networking, plus a cost-effective, monthly plan.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Resolving Domain Pending Verification Status in Amazon SES </title>
+      <link>/aws/amazon-web-services--resolving-domain-pending-verification-status-in-amazon-ses-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--resolving-domain-pending-verification-status-in-amazon-ses-/</guid>
+      <description>Amazon Web Services &amp;ndash; Resolving Domain Pending Verification Status in Amazon SES In this article, we are going to look into how to resolve pending verification for your domain in Amazon Simple Email Service(SES) by recreation. This procedure resolves the problem that occurs when the domain.txt record was initially defined incorrectly and then was correct after it later and as a result the verification status is still shown as pending.</description>
+    </item>
+    
+    <item>
+      <title>What is AWS Cloudformation? </title>
+      <link>/aws/what-is-aws-cloudformation-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/what-is-aws-cloudformation-/</guid>
+      <description>What is AWS Cloudformation? In Simplest terms, cloud computing means storing and accessing the data and programs on remote servers that are hosted on the internet instead of the computer&amp;rsquo;s hard drive or local server. It is also referred to as Internet-based computing.
+Features of the cloud: No up-front investment
+Lowering operating cost
+Highly scalable
+Easy access
+Reducing business risks and maintenance expenses
+AWS Cloudformation benefits: 1. Automation: AWS CloudFormation helps to automate the process of creating, configuring and managing AWS resources.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Understanding Unregistered Function Error in Athena </title>
+      <link>/aws/amazon-web-services--understanding-unregistered-function-error-in-athena-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--understanding-unregistered-function-error-in-athena-/</guid>
+      <description>Amazon Web Services &amp;ndash; Understanding Unregistered Function Error in Athena In this article, we will look into the process of checking the functions that are available in amazon Athena and how to use them in Athena. There are many functions that can be used with select operations in our Athena. As a good practice before using it, we better check if the function is supported and present with the restore version that Athena is currently using.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to AWS Amplify </title>
+      <link>/aws/introduction-to-aws-amplify-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/introduction-to-aws-amplify-/</guid>
+      <description>Introduction to AWS Amplify Amazon Web Services are some of the most useful products we have access to. One such service that is becoming increasingly popular as days go by is AWS Amplify. It was released in 2018 and it runs on Amazon&amp;rsquo;s cloud infrastructure. It is in direct competition with Firebase, but there are features that set them apart.
+Why is it needed? User experience on any application is the most important aspect that needs to be taken care of.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Creating a User Pool in AWS Cognito </title>
+      <link>/aws/amazon-web-services--creating-a-user-pool-in-aws-cognito-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--creating-a-user-pool-in-aws-cognito-/</guid>
+      <description>Amazon Web Services &amp;ndash; Creating a User Pool in AWS Cognito A User pool in AWS Cognito is a user directory, which helps users to sign in to your web or mobile app through AWS Cognito. Users can also sign in through other social platforms like Google, Facebook, Amazon, or Apple. It doesn&amp;rsquo;t matter users can directly sign in or use a third-party authentication, all these users in the User pool have a profile directory that you can access through Software Development Kit (SDK).</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Introduction to AWS Cost Explorer &amp; Cost Management </title>
+      <link>/aws/amazon-web-services--introduction-to-aws-cost-explorer-cost-management-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--introduction-to-aws-cost-explorer-cost-management-/</guid>
+      <description>Amazon Web Services &amp;ndash; Introduction to AWS Cost Explorer &amp;amp; Cost Management AWS Cost Explorer will help you to visualize, understand, and manage your AWS costs and usage over time. Use Cost explorer to find your higher spending first and start from there. There has been a lot of product updates that will help with costs. AWS released cost categories where you can group your cost together and deal with some of the misspelled tags.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services Budget Setup </title>
+      <link>/aws/amazon-web-services-budget-setup-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services-budget-setup-/</guid>
+      <description>Amazon Web Services Budget Setup In this article, we will see AWS Budget Setup. It is a good idea to set up a billing budget so that we know when we go over spending some money and we can get alerted in case of that.
+Steps: Step 1. Login into the AWS management console. Click on My Account (Top right corner of console) and then click on Billing dashboard.
+AWS Management Console</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Cost and Usage Report </title>
+      <link>/aws/amazon-web-services--cost-and-usage-report-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--cost-and-usage-report-/</guid>
+      <description>Amazon Web Services &amp;ndash; Cost and Usage Report In this article, we are going to set up AWS Cost and Usage reports. AWS Cost and Usage Reports track your AWS usage and provide estimated charges associated with your account. The AWS Cost and usage report contain the most encyclopedic set of cost and usage data available. You can use cost and usage reports to get your AWS billing data in the form of reports.</description>
+    </item>
+    
+    <item>
+      <title>What is SageMaker in AWS? </title>
+      <link>/aws/what-is-sagemaker-in-aws-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/what-is-sagemaker-in-aws-/</guid>
+      <description>What is SageMaker in AWS? Machine Learning is the hottest topic in the current era and the leading cloud provider Amazon web service (AWS) provides lots of tools to explore Machine Learning, creating models with a high accuracy rate. This article makes you familiar with one of those services on AWS i.e Amazon Sagemaker which helps in creating efficient and more accurate rate Machine learning models the other benefit is that you can use other AWS services in your model such as S3 bucket, amazon Lambda for monitoring the performance of your ML model you can use AWS Cloudwatch which is a monitoring tool.</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Using Custom UI Templates in Sagemaker </title>
+      <link>/aws/amazon-web-services--using-custom-ui-templates-in-sagemaker-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--using-custom-ui-templates-in-sagemaker-/</guid>
+      <description>Amazon Web Services &amp;ndash; Using Custom UI Templates in Sagemaker In this article, we will look into how you can use a custom UI template with AWS Lambda functions in Amazon Sagemaker ground truth. Here we will be using a Jupyter notebook to create a ground truth labeling job using a custom UI template with AWS-provided lambda functions using an AWS SDK such as boto3. To do so follow the below steps:</description>
+    </item>
+    
+    <item>
+      <title>Amazon Web Services -- Key IOT Products </title>
+      <link>/aws/amazon-web-services--key-iot-products-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws/amazon-web-services--key-iot-products-/</guid>
+      <description>Amazon Web Services &amp;ndash; Key IOT Products This article is intended to give you a brief overview of the key IoT products provided by Amazon Web Services(AWS). There are 3 key categories of IoT products on AWS namely:
+Devices Software: It includes services such as the FreeRTOS and AWS IoT Greengrass, etc.
+Connectivity &amp;amp; Control Services: It includes services like AWS IoT Core, AWS IoT Device Defender &amp;amp; AWS IoT Device Management, etc.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

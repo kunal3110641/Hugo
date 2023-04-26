@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascript on SATHEE</title>
+    <link>/javascript/</link>
+    <description>Recent content in Javascript on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/javascript/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>JavaScript Tutorial </title>
+      <link>/javascript/javascript-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-tutorial-/</guid>
+      <description>JavaScript Tutorial This Javascript Tutorial is designed to help both beginners and experienced professionals master the fundamentals of JavaScript and unleash their creativity to build powerful web applications. From basic syntax and data types to advanced topics such as object-oriented programming and DOM manipulation.
+What is JavaScript? JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It can be used for both Client-side as well as Server-side developments. JavaScript also known as a scripting language for web pages.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to JavaScript </title>
+      <link>/javascript/introduction-to-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/introduction-to-javascript-/</guid>
+      <description>Introduction to JavaScript JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is also known as the scripting language for webpages. It is well-known for the development of web pages, many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments. Javascript is both imperative and declarative type of language. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements.</description>
+    </item>
+    
+    <item>
+      <title>JS Full Form </title>
+      <link>/javascript/js-full-form-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/js-full-form-/</guid>
+      <description>JS Full Form JS stands for JavaScript. It is a lightweight, cross-platform, and interpreted scripting language. It is well-known for the development of web pages, and many non-browser environments also use it. JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript contains a standard library of objects, like Array, Date, and Math, and a core set of language elements like operators, control structures, and statements. You can check the Introduction to JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>Where to put JavaScript in an HTML Document ? </title>
+      <link>/javascript/where-to-put-javascript-in-an-html-document-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/where-to-put-javascript-in-an-html-document-/</guid>
+      <description>Where to put JavaScript in an HTML Document ? Scripts can be placed inside the body or the head section of an HTML page or inside both the head and body. We can also place javascript outside the HTML file which can be linked by specifying its source in the script tag.
+JavaScript in head: A JavaScript function is placed inside the head section of an HTML page and the function is invoked when a button is clicked.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Statements </title>
+      <link>/javascript/javascript-statements-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-statements-/</guid>
+      <description>JavaScript Statements The programming instructions written in a program in a programming language are known as statements. The order of execution of Statements is the same as they are written.
+1. Semicolons:
+Semicolons separate JavaScript statements.
+A semicolon marks the end of a statement in javascript. Example: html &amp;lt;h2&amp;gt;Welcome&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;geek&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; let a, b, c; a = 2; b = 3; c = a + b; document.getElementById(&amp;quot;geek&amp;quot;) .innerHTML = &amp;quot;The value of c is &amp;quot; + c + &amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Basic Syntax </title>
+      <link>/javascript/javascript-basic-syntax-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-basic-syntax-/</guid>
+      <description>JavaScript Basic Syntax JavaScript is a lightweight and dynamic computer programming language. It is used to create client-side dynamic pages. It is an open-source and cross-platform language.
+Basic Syntax: Javascript &amp;lt;script&amp;gt; document.write(&amp;quot;Basic Print method in JavaScript&amp;quot;); &amp;lt;/script&amp;gt; JavaScript syntax refers to the set of rules that determines how JavaScript programs are constructed: // Variable declaration var c, d, e; // Assign value to the variable c = 5; // Computer value of variables d = c; e = c/d; JavaScript Variables: A JavaScript variable is the simple name of storage location where data to be stored.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Output </title>
+      <link>/javascript/javascript-output-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-output-/</guid>
+      <description>JavaScript Output JavaScript Output defines the ways to display the output of a given code. The output can be displayed by using four different ways which are listed below:
+1. innerHTML: It is used to access an element. It defines the HTML content.
+Syntax:
+document.getElementById(&amp;quot;id&amp;quot;).innerHTML; Example: This example uses innerHTML to display the data. html &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt; JavaScript Display Possibilities Using innerHTML &amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;GFG&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;!-- Script to use innerHTML --&amp;gt; &amp;lt;script&amp;gt; document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Comments </title>
+      <link>/javascript/javascript-comments-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-comments-/</guid>
+      <description>JavaScript Comments Javascript comments explain the code design. They can also be used to prevent the execution of a section of code if necessary. Comments are ignored while the compiler executes the code. Comments are user-friendly as users can get explanations of code using comments. Syntax:
+// For single line comment /* For block of lines comment ... ... */ Return Value: During the execution of code, comments are ignored. Example 1: This example illustrates the single-line comment using //.</description>
+    </item>
+    
+    <item>
+      <title>Variables and Datatypes in JavaScript </title>
+      <link>/javascript/variables-and-datatypes-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/variables-and-datatypes-in-javascript-/</guid>
+      <description>Variables and Datatypes in JavaScript There are majorly two types of languages. Statically typed language
+Dynamically typed languages
+Statically typed language: Where each variable and expression type is already known at compile time. Once a variable is declared to be of a certain data type, it cannot hold values of other data types.
+Example: C, C++, Java. Java // Java(Statically typed) int x = 5 // variable x is of type int and it will not store any other type.</description>
+    </item>
+    
+    <item>
+      <title>Global and Local variables in JavaScript </title>
+      <link>/javascript/global-and-local-variables-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/global-and-local-variables-in-javascript-/</guid>
+      <description>Global and Local variables in JavaScript Global Variable: These are variables that are defined in global scope i.e. outside of functions. These variables have global scope, so they can be accessed by any function directly. In the case of global scope variables, the keyword they are declared with does not matter they all act the same. A variable declared without a keyword is also considered global even though it is declared in the function.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Let </title>
+      <link>/javascript/javascript-let-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-let-/</guid>
+      <description>JavaScript Let JavaScript let is a keyword used to declare variables in JavaScript that are block scoped. Two new keywords were added in the ES6 or ES2015 version of javascript. Generally, it is suggested that we must use the let keyword while working with javascript.
+Syntax:
+let variable_name = value; Block Scope: The variables which are declared inside the { } block are known as block-scoped variables. variables declared by the var keyword cannot be block-scoped.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Const </title>
+      <link>/javascript/javascript-const-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-const-/</guid>
+      <description>JavaScript Const ES2015 (ES6) introduced the const keyword to define a new variable. The difference in const variable declaration to others is that it cannot be re-assigned.
+Properties:
+Cannot be reassigned.
+It&amp;rsquo;s Block Scope
+It can be assigned to the variable on the declaration line.
+It&amp;rsquo;s a Primitive value.
+The property of a const object can be changed but it cannot be changed to a reference to the new object</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Numbers </title>
+      <link>/javascript/javascript-numbers-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-numbers-/</guid>
+      <description>JavaScript Numbers Javascript Numbers are primitive data types. Unlike other programming languages, you don&amp;rsquo;t need int, float, etc to declare different numeric values. JavaScript numbers are always stored in double-precision 64-bit binary format IEEE 754. This format stores numbers in 64 bits, 0-51 bit stores value(fraction)
+52-62 bit stores exponent
+63-bit stores sign
+Number Literals: The types of number literals You can use decimal, binary, octal, and hexadecimal.
+Decimal Numbers: JavaScript Numbers does not have different types of numbers(ex: int, float, long, short) which other programming languages do.</description>
+    </item>
+    
+    <item>
+      <title>Functions in JavaScript </title>
+      <link>/javascript/functions-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/functions-in-javascript-/</guid>
+      <description>Functions in JavaScript A function is a set of statements that take inputs, do some specific computation, and produce output. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can call that function. Example: A basic javascript function, here we create a function that divides the 1st element by the second element.</description>
+    </item>
+    
+    <item>
+      <title>Objects in Javascript </title>
+      <link>/javascript/objects-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/objects-in-javascript-/</guid>
+      <description>Objects in Javascript Objects, in JavaScript, are the most important data type and form the building blocks for modern JavaScript. These objects are quite different from JavaScript&amp;rsquo;s primitive data types (Number, String, Boolean, null, undefined, and symbol) in the sense that these primitive data types all store a single value each (depending on their types).
+Syntax:
+new Object(value) Object(value) let object_name = { key_name : value, ... } Note:- Object() can be called with or without new.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Events </title>
+      <link>/javascript/javascript-events-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-events-/</guid>
+      <description>JavaScript Events Javascript has events to provide a dynamic interface to a webpage. These events are hooked to elements in the Document Object Model(DOM). These events by default use bubbling propagation i.e, upwards in the DOM from children to parent. We can bind events either as inline or in an external script. Syntax:
+These are some javascript events: JavaScript onclick events: This is a mouse event and provokes any logic defined if the user clicks on the element it is bound to.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript if-else </title>
+      <link>/javascript/javascript-if-else-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-if-else-/</guid>
+      <description>JavaScript if-else The if-else or conditional statement will perform some action for a specific condition. If the condition meets then a particular block of action will be executed otherwise it will execute another block of action that satisfies that particular condition. Such control statements are used to cause the flow of execution to advance and branch based on changes to the state of a program.
+Example: This example describes the if-statement in Javascript.</description>
+    </item>
+    
+    <item>
+      <title>Switch Case in JavaScript </title>
+      <link>/javascript/switch-case-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/switch-case-in-javascript-/</guid>
+      <description>Switch Case in JavaScript We have learned about decision-making in JavaScript using if-else statements in our previous article on if-else statements in JavaScript. We have seen in our previous article that we can use the if-else statements to perform actions based on some particular condition. That is if a condition is true then perform some task or else if the condition is false then execute some other task. The switch case statement in JavaScript is also used for decision-making purposes.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript break and continue </title>
+      <link>/javascript/javascript-break-and-continue-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-break-and-continue-/</guid>
+      <description>JavaScript break and continue Break statement: The break statement is used to jump out of a loop. It can be used to &amp;ldquo;jump out&amp;rdquo; of a switch() statement. It breaks the loop and continues executing the code after the loop.
+Example:
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; JavaScript Break statement &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style=&amp;quot;text-align:center;&amp;quot;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;JavaScript Break&amp;lt;/h2&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;p id=&amp;quot;GFG&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; var content = &amp;quot;&amp;quot;; var i; for (i = 1; i &amp;lt; 1000; i++) { if (i === 6) { break; } content += &amp;quot;Renewbuy&amp;quot; + i + &amp;quot;&amp;lt;br&amp;gt;&amp;quot;; } document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Type Conversion </title>
+      <link>/javascript/javascript-type-conversion-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-type-conversion-/</guid>
+      <description>JavaScript Type Conversion JavaScript is a loosely typed language and most of the time operators automatically convert a value to the right type but there are also cases when we need to explicitly do type conversions. While JavaScript provides numerous ways to convert data from one type to another but there are two most common data conversions :
+Converting Values to String
+Converting Values to Numbers
+Implicit Conversion: There are various operator and functions in JavaScript which automatically converts a value to the right type like alert() function in JavaScript accepts any value and convert it into a string.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript RegExp(Regular Expression) </title>
+      <link>/javascript/javascript-regexpregular-expression-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-regexpregular-expression-/</guid>
+      <description>JavaScript RegExp(Regular Expression) A regular expression is a sequence of characters that forms a search pattern. The search pattern can be used for text search and text to replace operations. A regular expression can be a single character or a more complicated pattern. Regular expressions can be used to perform all types of text search and text replacement operations.
+Syntax:
+/pattern/modifiers; Example:
+var patt = /Renewbuy/i; Explanation : /Renewbuy/i is a regular expression.</description>
+    </item>
+    
+    <item>
+      <title>Understanding variable scopes in JavaScript </title>
+      <link>/javascript/understanding-variable-scopes-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/understanding-variable-scopes-in-javascript-/</guid>
+      <description>Understanding variable scopes in JavaScript In JavaScript, there are two types of variable scopes:
+Global Scope: Variables declared Globally (outside of any function) have Global Scope and Global variables can be accessed from anywhere in a program. Similar to function scope variables declared with var, let and const are quite similar when declared outside a block.Scope outside the outermost function attached to the window.
+Local Scope: Variables declared inside a function become local to the function.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Hoisting </title>
+      <link>/javascript/javascript-hoisting-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-hoisting-/</guid>
+      <description>JavaScript Hoisting Hoisting is a concept that enables us to extract values of variables and functions even before initializing/assigning value without getting errors and this happens during the 1st phase (memory creation phase) of the Execution Context.
+Features of Hoisting:
+In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Strict Mode </title>
+      <link>/javascript/javascript-strict-mode-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-strict-mode-/</guid>
+      <description>JavaScript Strict Mode JavaScript is a dynamic language i.e. to elaborate, each Javascript component is dynamic starting from variables to the code itself. With the help of JavaScript, you can create variables in the runtime, change it&amp;rsquo;s data-type, create new functions or replace existing logic. In other words, while using JavaScript the developer is in almost full control. Why Almost? There is a famous saying,
+&amp;ldquo;With great power comes great responsibility.</description>
+    </item>
+    
+    <item>
+      <title>this in JavaScript </title>
+      <link>/javascript/this-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/this-in-javascript-/</guid>
+      <description>this in JavaScript JavaScript this keyword always holds the reference to a single object, which defines the current line of code&amp;rsquo;s execution context which means this keyword refers to the object that is currently executing the code. Functions in JavaScript, are essentially objects. Like objects, they can be assigned to variables, passed to other functions, and returned from functions. And much like objects, they have their own properties. The value that this store is the current execution context of the JavaScript program.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Reserved Words </title>
+      <link>/javascript/javascript-reserved-words-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-reserved-words-/</guid>
+      <description>JavaScript | Reserved Words In JavaScript, you cannot use these reserved words as variable names, label names, or function names.
+Reserved Words:
+Reserved Words added in ECMAScript 5 and 6:
+Removed Reserved Words: The following reserved words have been removed from ECMAScript 5 and 6.
+Other Reserved Words: JavaScript can be used as the programming language in many applications.
+HTML Event Handlers: The name of all HTML event handlers should not be used in javascript</description>
+    </item>
+    
+    <item>
+      <title>JavaScript JSON </title>
+      <link>/javascript/javascript-json-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-json-/</guid>
+      <description>JavaScript JSON What is JSON?JSON or JavaScript Object Notation is a format for structuring data.
+What is it used for?Like XML, it is one of the way of formatting the data. Such format of data is used by web applications to communicate with each other.
+Why JSON?
+The fact that whenever we declare a variable and assign a value to it, it&amp;rsquo;s not the variable that holds the value but rather the variable just holds an address in the memory where the initialized value is stored.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Style Guide and Coding Conventions </title>
+      <link>/javascript/javascript-style-guide-and-coding-conventions-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-style-guide-and-coding-conventions-/</guid>
+      <description>JavaScript | Style Guide and Coding Conventions The JavaScript style guidelines are directions to regulate programming in javascript. These coding prescription are beneficiary to write code in javascript without any syntactical errors. It covers the naming of variables, direction to put whitespaces and semicolons and various statement guidelines. It also can improve the Quality, Readability &amp;amp; make code maintenance easier.
+This article basically covers coding conventions like: Indentation
+Spaces, all brackets</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Common Mistakes </title>
+      <link>/javascript/javascript-common-mistakes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-common-mistakes-/</guid>
+      <description>JavaScript | Common Mistakes JavaScript is an easy language to get started with, but to achieve mastery takes a lot of effort, time and patience. Beginners often make a few well-known mistakes that come back and bite them. In this article, we&amp;rsquo;ll cover some of the most common learning mistakes people make and find out how to overcome them. Many of these tips will be applicable outside of JavaScript or even web development.</description>
+    </item>
+    
+    <item>
+      <title>How to include a JavaScript file in another JavaScript file ? </title>
+      <link>/javascript/how-to-include-a-javascript-file-in-another-javascript-file-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-include-a-javascript-file-in-another-javascript-file-/</guid>
+      <description>How to include a JavaScript file in another JavaScript file ? In native JavaScript, before ES6 Modules 2015 has been introduced had no import, include, or require, functionalities. Before that, we can load a JavaScript file into another JavaScript file using a script tag inside the DOM that script will be downloaded and executed immediately. Now after the invention of ES6 modules there are so many different approaches to solve this problem have been developed and discussed below.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Operators </title>
+      <link>/javascript/javascript-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-operators-/</guid>
+      <description>JavaScript Operators JavaScript operators operate the operands, these are symbols that are used to manipulate a certain value or operand. Operators are used to performing specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands. In JavaScript, operators are used to compare values, perform arithmetic operations, etc.
+JavaScript Operators: There are various operators supported by JavaScript.
+JS Arithmetic Operators
+JS Assignment Operators</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Arithmetic Operators </title>
+      <link>/javascript/javascript-arithmetic-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-arithmetic-operators-/</guid>
+      <description>JavaScript Arithmetic Operators JavaScript Arithmetic Operators are the operators that operate upon the numerical values and return a numerical value. Any kind arithmetic operations performance required these operators.
+JavaScript Assignment Operators list: There are so many arithmetic operators as shown in the table with the description.
+OPERATOR NAME
+USAGE
+OPERATION
+Addition (+): The addition operator takes two numerical operands and gives their numerical sum. It also concatenates two strings or numbers.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Assignment Operators </title>
+      <link>/javascript/javascript-assignment-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-assignment-operators-/</guid>
+      <description>JavaScript Assignment Operators JavaScript assignment operator is equal (=) which assigns the value of the right-hand operand to its left-hand operand. That is if a = b assigns the value of b to a.
+The simple assignment operator is used to assign a value to a variable. The assignment operation evaluates the assigned value. Chaining the assignment operator is possible in order to assign a single value to multiple variables. See the example.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Comparison Operators </title>
+      <link>/javascript/javascript-comparison-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-comparison-operators-/</guid>
+      <description>JavaScript Comparison Operators JavaScript Comparison operators are mainly used to perform the logical operations that determine the equality or difference between the values. Comparison operators are used in logical expressions to determine their equality or differences in variables or values. JavaScript Comparison Operators list: There are so many comparison operators as shown in the table with the description.
+OPERATOR NAME
+USAGE
+OPERATION
+Equality (==): This operator is used to compare the equality of two operands.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Bitwise Operators </title>
+      <link>/javascript/javascript-bitwise-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-bitwise-operators-/</guid>
+      <description>JavaScript Bitwise Operators JavaScript uses 32 bits Bitwise operands. A number is stored as a 64-bit floating-point number but the bit-wise operation is performed on a 32-bit binary number i.e. to perform a bit-operation JavaScript converts the number into a 32-bit binary number (signed) and performs the operation and converts back the result to a 64-bit number.
+Below is a list of bitwise operators:
+Below are a few bit-wise logical operators used in JavaScript:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript delete Operator </title>
+      <link>/javascript/javascript-delete-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-delete-operator-/</guid>
+      <description>JavaScript delete Operator This article is going to discuss the delete operator available in JavaScript. Delete is comparatively a lesser-known operator in JavaScript. This operator is more specifically used to delete JavaScript object properties.
+The JavaScript pop(), shift(), or splice() methods are available to delete an element from an array. But because of the key-value pair in an object, deleting is more complicated. Note that, the delete operator only works on objects and not on variables or functions.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Comma Operator </title>
+      <link>/javascript/javascript-comma-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-comma-operator-/</guid>
+      <description>JavaScript Comma Operator A comma operator (,) mainly evaluates its operands from left to right sequentially and returns the value of the rightmost operand. A comma operator is used as a separator for multiple expressions at a place that requires a single expression. When a comma operator is placed in an expression, it executes each expression and returns the rightmost expression.
+Syntax:
+Expression1, Expression2, Expression3, ....so on In the above syntax, multiple expressions are separated using a comma operator.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Grouping Operator </title>
+      <link>/javascript/javascript-grouping-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-grouping-operator-/</guid>
+      <description>JavaScript Grouping Operator The Grouping operator consists of a pair of parentheses around an expression or sub-expression to override the normal operator precedence so that expressions with lower precedence can be evaluated before an expression with higher priority. This operator can only contain expressions. The parameter list is passed to a function within this operator which will treat it as an expression.
+Syntax:
+( ) This ( ) operator controls the precedence of evaluation in expressions</description>
+    </item>
+    
+    <item>
+      <title>Javascript Short Circuiting Operators </title>
+      <link>/javascript/javascript-short-circuiting-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-short-circuiting-operators-/</guid>
+      <description>Javascript Short Circuiting Operators In JavaScript short-circuiting, an expression is evaluated from left to right until it is confirmed that the result of the remaining conditions is not going to affect the already evaluated result. If the result is clear even before the complete evaluation of the expression, it short circuits and the result will be returned. Short circuit evaluation avoids unnecessary work and leads to efficient processing. AND(&amp;amp;&amp;amp;) short circuit: In the case of AND, the expression is evaluated until we get one false result because the result will always be false, independent of the further conditions.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Nullish Coalescing(??) Operator </title>
+      <link>/javascript/javascript-nullish-coalescing-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-nullish-coalescing-operator-/</guid>
+      <description>JavaScript Nullish Coalescing(??) Operator Nullish Coalescing Operator is a new feature introduced in this ECMA proposal that has now been adopted into the official JavaScript Specification. This operator returns the right-hand value if the left-hand value is null or undefined. If not null or undefined then it will return left-hand value.
+There are values in JavaScript like 0 and an empty string that are logically false by nature. These values may change the expected behavior of the programs written in JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Ternary Operator </title>
+      <link>/javascript/javascript-ternary-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-ternary-operator-/</guid>
+      <description>JavaScript Ternary Operator Ternary Operator: The &amp;ldquo;Question mark&amp;rdquo; or &amp;ldquo;conditional&amp;rdquo; operator in JavaScript is a ternary operator that has three operands. It is the simplified operator of if/else.
+Examples:
+Input: let result = (10 &amp;gt; 0) ? true : false; Output: true Input: let message = (20 &amp;gt; 15) ? &amp;quot;Yes&amp;quot; : &amp;quot;No&amp;quot;; Output: Yes Syntax:
+condition ? value if true : value if false condition: Expression to be evaluated which returns a boolean value.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Instanceof Operator </title>
+      <link>/javascript/javascript-instanceof-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-instanceof-operator-/</guid>
+      <description>JavaScript Instanceof Operator The instanceof operator in JavaScript is used to check the type of an object at run time. It returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not. Syntax:
+var gfg = objectName instanceof objectType Parameters: This method accepts a single parameter.
+objectName: States the name of the Object.
+Return Value: This method returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Spread Operator </title>
+      <link>/javascript/javascript-spread-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-spread-operator-/</guid>
+      <description>JavaScript Spread Operator The Spread operator allows an iterable to expand in places where 0+ arguments are expected. It is mostly used in the variable array where there is more than 1 value is expected. It allows us the privilege to obtain a list of parameters from an array. The syntax of the Spread operator is the same as the Rest parameter but it works completely opposite of it. Syntax:</description>
+    </item>
+    
+    <item>
+      <title>What is JavaScript &gt;&gt;&gt; Operator and how to use it ? </title>
+      <link>/javascript/what-is-javascript-operator-and-how-to-use-it-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/what-is-javascript-operator-and-how-to-use-it-/</guid>
+      <description>What is JavaScript &amp;gt;&amp;gt;&amp;gt; Operator and how to use it ? The JavaScript &amp;gt;&amp;gt;&amp;gt; represents the zero-fill right shift operator. It is also called the unsigned right-bit shift operator. It comes under the category of Bitwise operators. Bitwise operators treat operands as 32-bit integer numbers and operate on their binary representation. Zero-fill right shift (&amp;gt;&amp;gt;&amp;gt;) operator: It is a binary operator, where the first operand specifies the number and the second operand specifies the number of bits to shift.</description>
+    </item>
+    
+    <item>
+      <title>What does &#43;_ operator mean in JavaScript ? </title>
+      <link>/javascript/what-does-&#43;_-operator-mean-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/what-does-&#43;_-operator-mean-in-javascript-/</guid>
+      <description>What does +_ operator mean in JavaScript ? Unary Operator: A unary operation contain only one operand. Here, the &amp;lsquo;+&amp;rsquo; unary plus operator converts its operand to Number type. While it also acts as an arithmetic operator with two operands which returns an addition result on calculation.
+JavaScript Identifiers: Javascript Identifiers are used to name variables (and keywords, functions, and labels). In Javascript, the first character must be a letter, or an underscore ( _ ), or a dollar sign ( $ ) but not a digit and subsequent characters may be letters, digits, underscores, or dollar signs.</description>
+    </item>
+    
+    <item>
+      <title>How to get negative result using modulo operator in JavaScript ? </title>
+      <link>/javascript/how-to-get-negative-result-using-modulo-operator-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-get-negative-result-using-modulo-operator-in-javascript-/</guid>
+      <description>How to get negative result using modulo operator in JavaScript ? The %(modulo) operator in JavaScript gives the remainder obtained by dividing two numbers. There is a difference between the %(modulo) and the remainder operator. When remainder or %(modulo) is calculated on positive numbers then both behave similarly but when negative numbers are used then both behave differently. The JavaScript %(modulo) behaves like a remainder operation and gives the remainder and as the number is negative therefore remainder also comes out to be negative.</description>
+    </item>
+    
+    <item>
+      <title>Loops in JavaScript </title>
+      <link>/javascript/loops-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/loops-in-javascript-/</guid>
+      <description>Loops in JavaScript Looping in programming languages is a feature that facilitates the execution of a set of instructions/functions repeatedly while some condition evaluates to true. For example, suppose we want to print &amp;ldquo;Hello World&amp;rdquo; 10 times. This can be done in two ways as shown below:
+Iterative Method: The iterative method to do this is to write the document.write() statement 10 times. JavaScript &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; document.write(&amp;quot;Hello World&amp;lt;br&amp;gt;&amp;quot;); document.write(&amp;quot;Hello World&amp;lt;br&amp;gt;&amp;quot;); document.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript For Loop </title>
+      <link>/javascript/javascript-for-loop-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-for-loop-/</guid>
+      <description>JavaScript For Loop Looping in programming languages is a feature that facilitates the execution of a set of instructions repeatedly until some condition evaluates and becomes false. We come across for loop which provides a brief and systematic way of writing the loop structure. Syntax:
+for (statement 1 ; statement 2 ; statement 3){ code here... } Statement 1: It is the initialization of the counter. It is executed once before the execution of the code block.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript While Loop </title>
+      <link>/javascript/javascript-while-loop-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-while-loop-/</guid>
+      <description>JavaScript While Loop A While Loop in Javascript is a control flow statement that allows the code to be executed repeatedly based on the given boolean condition. The while loop can be thought of as a repeating if statement.
+The loop can be used to execute the specific block of code multiple times until it failed to match the condition.
+There are mainly two types of loops:
+Entry Controlled loops: In this type of loop, the test condition is tested before entering the loop body.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript for-in Loop </title>
+      <link>/javascript/javascript-for-in-loop-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-for-in-loop-/</guid>
+      <description>JavaScript for-in Loop For-in loop in JavaScript is used to iterate over the properties of an object. It can be a great debugging tool if we want to show the contents of an object. The for-in loop iterates only over those keys of an object which have their enumerable property set to &amp;ldquo;true&amp;rdquo;. The key values in an object have four attributes (value, writable, enumerable, and configurable). Enumerable when set to &amp;ldquo;true&amp;rdquo; means that we can iterate over that property.</description>
+    </item>
+    
+    <item>
+      <title>Explain the differences between for(..in) and for(..of) statement in JavaScript. </title>
+      <link>/javascript/explain-the-differences-between-for..in-and-for..of-statement-in-javascript.-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/explain-the-differences-between-for..in-and-for..of-statement-in-javascript.-/</guid>
+      <description>Explain the differences between for(..in) and for(..of) statement in JavaScript. Often in a JavaScript script, we iterate over some objects of few built-in classes like Arrays, Dictionaries, Strings, Maps, etc. We iterate the objects using loops. JavaScript supports different kinds of loops:
+for loop
+for (..in) loop
+for (..of) loop
+while loop
+do-while loop
+In this article, we will be learning about the difference between for (..in) and for (..of) Loops.</description>
+    </item>
+    
+    <item>
+      <title>How to add a delay in a JavaScript loop? </title>
+      <link>/javascript/how-to-add-a-delay-in-a-javascript-loop-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-add-a-delay-in-a-javascript-loop-/</guid>
+      <description>How to add a delay in a JavaScript loop? JavaScript doesn&amp;rsquo;t offer any wait command to add a delay to the loops but we can do so using setTimeout method. This method executes a function, after waiting a specified number of milliseconds. Below given example illustrates how to add a delay to various loops:
+For loop:for (let i=0; i&amp;lt;10; i++) { task(i);} function task(i) { setTimeout(function() { // Add tasks to do }, 2000 * i);}In the code given above you have to do 2000 * i at line 8 because setTimeout method inside the loop doesn&amp;rsquo;t makes the loop pause but actually adds a delay to each iteration.</description>
+    </item>
+    
+    <item>
+      <title>Ways of iterating over a array in JavaScript </title>
+      <link>/javascript/ways-of-iterating-over-a-array-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/ways-of-iterating-over-a-array-in-javascript-/</guid>
+      <description>Ways of iterating over a array in JavaScript In this article, we will learn, we will learn how to iterate over an array using JavaScript, there are multiple ways to do so. Arrays in Javascript, are single variables used to store different kinds of elements.
+Example: Simple array access may be something like this.
+javascript &amp;lt;script&amp;gt; array = [ &#39;Renewbuy&#39;, &#39;4&#39;, &#39;Renewbuy&#39; ]; // Accessing array elements one by one console.</description>
+    </item>
+    
+    <item>
+      <title>How to ignore loop in else condition using JavaScript ? </title>
+      <link>/javascript/how-to-ignore-loop-in-else-condition-using-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-ignore-loop-in-else-condition-using-javascript-/</guid>
+      <description>How to ignore loop in else condition using JavaScript ? In this article, we will see the methods to ignore the loop in the else conditions using JavaScript. There are two ways to ignore the loop in the else condition:
+Continue
+Break
+Please see this, for explanations of the same. In simple terms, The Break statement exits out of the loop while the continue statement exits out of the particular iteration.</description>
+    </item>
+    
+    <item>
+      <title>Debugging in JavaScript </title>
+      <link>/javascript/debugging-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/debugging-in-javascript-/</guid>
+      <description>Debugging in JavaScript It is common to have errors while writing codes and the errors can be due to syntax or logical. These errors create a lot of ambiguity in the logic and understanding of both users and programmers. There can also be errors in the code which can remain invisible to the programmer&amp;rsquo;s eye and can create havoc. To identify these errors we need Debuggers that can go through the entire code or program, identify the errors and also fix them.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Performance </title>
+      <link>/javascript/javascript-performance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-performance-/</guid>
+      <description>JavaScript | Performance Performance in Javascript
+JavaScript is an essential part of almost every web app and web-based software. JavaScript&amp;rsquo;s client-side scripting capabilities can make applications more dynamic and interactive, but it also increases the chance of inefficiencies in code. Thus, poorly written JavaScript can make it difficult to ensure a consistent and healthy experience for all users.
+Guide below will enlighten you about the causes of JavaScript performance issues and provide some of the best practices for optimizing JavaScript code.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Errors Throw and Try to Catch </title>
+      <link>/javascript/javascript-errors-throw-and-try-to-catch-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-errors-throw-and-try-to-catch-/</guid>
+      <description>JavaScript Errors Throw and Try to Catch When executing JavaScript code, errors will most definitely occur. These errors can occur due to a fault from the programmer&amp;rsquo;s side or the input is wrong or even if there is a problem with the logic of the program. But all errors can be solved and to do so we use five statements that will now be explained.
+The try statement lets you test a block of code to check for errors.</description>
+    </item>
+    
+    <item>
+      <title>Debouncing in JavaScript </title>
+      <link>/javascript/debouncing-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/debouncing-in-javascript-/</guid>
+      <description>Debouncing in JavaScript Debouncing is a programming practice used to ensure that time-consuming tasks do not fire so often, that it stalls the performance of the web page. In other words, it limits the rate at which a function gets invoked.
+Debouncing in JavaScript is a practice used to improve browser performance. There might be some functionality in a web page that requires time-consuming computations. If such a method is invoked frequently, it might greatly affect the performance of the browser, as JavaScript is a single-threaded language.</description>
+    </item>
+    
+    <item>
+      <title>Arrays in JavaScript </title>
+      <link>/javascript/arrays-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/arrays-in-javascript-/</guid>
+      <description>Arrays in JavaScript JavaScript array is a single variable that is used to store different elements. It is often used when we want to store a list of elements and access them by a single variable. Unlike most languages where the array is a reference to the multiple variables, in JavaScript, an array is a single variable that stores multiple elements.
+Declaration of an Array: There are basically two ways to declare an array.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Basic Array Methods </title>
+      <link>/javascript/javascript-basic-array-methods-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-basic-array-methods-/</guid>
+      <description>JavaScript Basic Array Methods It&amp;rsquo;s recommended to go through Arrays in JavaScript. We would be discussing the following array function:
+Javascript Array.push() Method: Adding Element at the end of an Array. As arrays in JavaScript are mutable objects, we can easily add or remove elements from the Array. And it dynamically changes as we modify the elements from the array. Syntax :
+Array.push(item1, item2 …) Parameters: Items to be added to an array.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Array sort() Method </title>
+      <link>/javascript/javascript-array-sort-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-array-sort-method-/</guid>
+      <description>JavaScript Array sort() Method JavaScript Array.sort() Method is used to sort the array in place in a given order according to the compare() function. If the method is omitted then the array is sorted in ascending order.
+Syntax:
+arr.sort(compareFunction) Parameters: This method accepts a single parameter as mentioned above and described below:
+compareFunction: This parameter is used to sort the elements according to different attributes and in a different order.compareFunction(a,b) &amp;lt; 0compareFunction(a,b) &amp;gt; 0compareFunction(a,b) = 0</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Array Iteration Methods </title>
+      <link>/javascript/javascript-array-iteration-methods-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-array-iteration-methods-/</guid>
+      <description>JavaScript | Array Iteration Methods Array iteration methods perform some operation on each element of array. There are some different examples of Array iteration methods are given below. Array.forEach() function: The array.forEach() function calls the provided function(a callback function) once for each element of the array. The provided function is user defined, it can perform any kind of operation on array.Syntax: array.forEach(function callback(value, index, array){ }[ThisArgument]); Parameters: This function accepts three parameters as mentioned above and described below: value: This is the current value being processed by the function.</description>
+    </item>
+    
+    <item>
+      <title>How to select a random element from array in JavaScript ? </title>
+      <link>/javascript/how-to-select-a-random-element-from-array-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-select-a-random-element-from-array-in-javascript-/</guid>
+      <description>How to select a random element from array in JavaScript ? The task is to select the random element from the array using JavaScript.
+Approach 1: Use Math.random() function to get the random number between(0-1, 1 exclusive).
+Multiply it by the array length to get the numbers between(0-arrayLength).
+Use Math.floor() to get the index ranging from(0 to arrayLength-1).
+Example: This example implements the above approach. html &amp;lt;body style=&amp;quot;text-align:center;&amp;quot;&amp;gt; &amp;lt;h1 style=&amp;quot;color:green;&amp;quot;&amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;p id=&amp;quot;GFG_UP&amp;quot; style=&amp;quot;font-size: 15px; font-weight: bold;&amp;quot;&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;button id=&amp;quot;button&amp;quot; onclick=&amp;quot;GFG_Fun()&amp;quot;&amp;gt; click here &amp;lt;/button&amp;gt; &amp;lt;p id=&amp;quot;GFG_DOWN&amp;quot; style=&amp;quot;font-size: 24px; font-weight: bold; color: green;&amp;quot;&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; var up = document.</description>
+    </item>
+    
+    <item>
+      <title>Check if an array is empty or not in JavaScript </title>
+      <link>/javascript/check-if-an-array-is-empty-or-not-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/check-if-an-array-is-empty-or-not-in-javascript-/</guid>
+      <description>Check if an array is empty or not in JavaScript In this article, we will check f an array is empty or not in Javascript. We have many methods to do this, some of which are described below.
+Method 1: Using array.isArray() method and array.length property.
+The array can be checked if it is actually an array and if it exists by the Array.isArray() method. This method returns true if the Object passed as a parameter is an array.</description>
+    </item>
+    
+    <item>
+      <title>How to check if a variable is an array in JavaScript? </title>
+      <link>/javascript/how-to-check-if-a-variable-is-an-array-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-check-if-a-variable-is-an-array-in-javascript-/</guid>
+      <description>How to check if a variable is an array in JavaScript? In JavaScript, we can check if a variable is an array by using 3 methods, using the isArray method, using the instanceof operator, and using checking the constructor type if it matches an Array object.
+Method 1: Using javascript isArray method checks whether the passed variable is an Array object. Syntax:
+Array.isArray(variableName) It returns a true boolean value if the variable is an array and a false if it is not.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript String </title>
+      <link>/javascript/javascript-string-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-string-/</guid>
+      <description>JavaScript String JavaScript String is a primitive data type and is used for storing and manipulating a sequence of characters. It can contain zero or more characters within quotes single or double.
+We will see various ways to work with string in JavaScript. Creating a string in JavaScript is similar to other languages we just have to put the string data in between single quotes(&amp;rsquo; &amp;lsquo;)/double quotes(&amp;quot; &amp;ldquo;). Another way is to pass the string in the String Constructor.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript String Methods </title>
+      <link>/javascript/javascript-string-methods-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-string-methods-/</guid>
+      <description>JavaScript String Methods Strings are texts that help in holding data that can be represented. A JavaScript string stores a series of characters like &amp;ldquo;Renewbuy&amp;rdquo;. A string can be any text inside double or single quotes.
+JavaScript String Methods and Property: String methods and properties are important to perform any operation on the given string, the string search methods have a separate article for better understanding. Below we have described a few important methods with the proper example code.</description>
+    </item>
+    
+    <item>
+      <title>Replace multiple strings with multiple other strings in JavaScript </title>
+      <link>/javascript/replace-multiple-strings-with-multiple-other-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/replace-multiple-strings-with-multiple-other-strings-in-javascript-/</guid>
+      <description>Replace multiple strings with multiple other strings in JavaScript In this article, we are given a Sentence having multiple strings. The task is to replace multiple strings with new strings simultaneously instead of doing it one by one, using javascript. Below are a few methods to understand:
+JavaScript replace() method This method searches a string for a defined value, or a regular expression, and returns a new string with the replaced defined value.</description>
+    </item>
+    
+    <item>
+      <title>Compare the Case Insensitive strings in JavaScript </title>
+      <link>/javascript/compare-the-case-insensitive-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/compare-the-case-insensitive-strings-in-javascript-/</guid>
+      <description>Compare the Case Insensitive strings in JavaScript Comparing strings in a case-insensitive manner means comparing them without taking care of the uppercase and lowercase letters. To perform this operation the most preferred method is to use either toUpperCase() or toLowerCase() function.
+JavaScript toUpperCase() function: The str.toUpperCase() function converts the entire string to Upper case. This function does not affect any of the special characters, digits, and alphabets that are already in upper case.</description>
+    </item>
+    
+    <item>
+      <title>How to create multi-line strings in JavaScript ? </title>
+      <link>/javascript/how-to-create-multi-line-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-create-multi-line-strings-in-javascript-/</guid>
+      <description>How to create multi-line strings in JavaScript ? The multi-line strings were not supported by JavaScript 2015 but when ES6 came out and introduced string literals. The ES6 supports multi-line strings. There are various ways to handle multi-line strings if older browser support is essential. Method 1: Multiline-strings are created by using template literals. The strings are delimited using backticks, unlike normal single/double quotes delimiter. Example: This example uses template literals to create multi-line strings.</description>
+    </item>
+    
+    <item>
+      <title>Optimum way to compare strings in JavaScript </title>
+      <link>/javascript/optimum-way-to-compare-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/optimum-way-to-compare-strings-in-javascript-/</guid>
+      <description>Optimum way to compare strings in JavaScript In this article, we will know the optimal way to compare the strings using build-in Javascript methods &amp;amp; will see their implementation through the examples. The question is to compare 2 JavaScript strings optimally. To do so, here are a few of the most used techniques discussed. The method discussed below is used in the following examples. String localeCompare() method: This method compares two strings in the current locale.</description>
+    </item>
+    
+    <item>
+      <title>Sort an array of Strings in JavaScript ? </title>
+      <link>/javascript/sort-an-array-of-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/sort-an-array-of-strings-in-javascript-/</guid>
+      <description>Sort an array of Strings in JavaScript ? In this article, we will sort strings in Javascript. We can sort the strings in JavaScript by the following methods described below:
+Using sort() method
+Using loop in Javascript
+Using sort() method: In this method, we use the predefined sort() method of JavaScript to sort the array of strings. This method is used only when the string is alphabetic. It will produce wrong results if we store numbers in an array and apply this method.</description>
+    </item>
+    
+    <item>
+      <title>What are the builtin strings in JavaScript ? </title>
+      <link>/javascript/what-are-the-builtin-strings-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/what-are-the-builtin-strings-in-javascript-/</guid>
+      <description>What are the builtin strings in JavaScript ? A sequence of letters, special characters, numbers, etc., or a combination of all of them is known as a string. Strings are created by enclosing the string characters within a single quote (&amp;rsquo;) or within double quotes (&amp;quot;). Syntax:
+var myString = &#39;Good Morning123!&#39;; // Single quoted string var myString = &amp;quot;Good Morning123!&amp;quot;; // Double quoted string In Javascript, many string methods are either built-in or user-defined.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math Object </title>
+      <link>/javascript/javascript-math-object-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-object-/</guid>
+      <description>JavaScript Math Object The Javascript Math object is used to perform mathematical operations on numbers. Example 1: This example uses math object properties to return their values. html &amp;lt;h1&amp;gt;Renewbuy&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;JavaScript Math Object&amp;lt;/h2&amp;gt; &amp;lt;p id=&amp;quot;GFG&amp;quot;&amp;gt;&amp;lt;/p&amp;gt; &amp;lt;!-- Script to return math property values --&amp;gt; &amp;lt;script&amp;gt; document.getElementById(&amp;quot;GFG&amp;quot;).innerHTML = &amp;quot;Math.LN10: &amp;quot; + Math.LN10 + &amp;quot;&amp;lt;br&amp;gt;&amp;quot; + &amp;quot;Math.LOG2E: &amp;quot; + Math.LOG2E + &amp;quot;&amp;lt;br&amp;gt;&amp;quot; + &amp;quot;Math.Log10E: &amp;quot; + Math.LOG10E + &amp;quot;&amp;lt;br&amp;gt;&amp;quot; + &amp;quot;Math.SQRT2: &amp;quot; + Math.SQRT2 + &amp;quot;&amp;lt;br&amp;gt;&amp;quot; + &amp;quot;Math.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math random() Method </title>
+      <link>/javascript/javascript-math-random-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-random-method-/</guid>
+      <description>JavaScript Math random() Method The Javascript Math.random() function is used to return a floating-point pseudo-random number between range [0,1), 0 (inclusive), and 1 (exclusive). This random number can then be scaled according to the desired range.
+Syntax :
+Math.random(); Parameters: This function does not accept any parameter.
+Return Value: The math.random() function returns a floating-point, pseudo-random number between range [0,1) , 0 (inclusive) and 1 (exclusive). More codes for the above method are as follows</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math abs() Method </title>
+      <link>/javascript/javascript-math-abs-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-abs-method-/</guid>
+      <description>JavaScript Math abs() Method The Javascript Math.abs() method is used to return the absolute value of a number. It takes a number as its parameter and returns its absolute value. Syntax:
+Math.abs(value) Parameters: This method accepts a single parameter as mentioned above and described below:
+value: The number whose absolute value is to be found is passed as the parameter to this function.
+Returns: Absolute value of the number passed as a parameter.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math.ceil( ) function </title>
+      <link>/javascript/javascript-math.ceil-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math.ceil-function-/</guid>
+      <description>JavaScript Math.ceil( ) function The Math.ceil() function in JavaScript is used to round the number passed as a parameter to its nearest integer in an Upward direction of rounding i.e towards the greater value.
+Syntax :
+Math.ceil(value) Parameters: This function accepts a single parameter as the number to be rounded to its nearest integer in the upward rounding method. Returns: Result after rounding the number passed as a parameter to the function.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math floor() Method </title>
+      <link>/javascript/javascript-math-floor-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-floor-method-/</guid>
+      <description>JavaScript Math floor() Method The Javascript Math.floor() method is used to round off the number passed as a parameter to its nearest integer in a Downward direction of rounding i.e. towards the lesser value.
+Syntax: Math.floor(value) Parameters: This method accepts a single parameter as mentioned above and described below: Value: It is the value that is to be tested for Math.floor.
+Return Value: The Math.floor() method returns the smallest integer greater than or equal to the given number.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math log() Method </title>
+      <link>/javascript/javascript-math-log-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-log-method-/</guid>
+      <description>JavaScript Math log() Method The JavaScript Math log( ) Method is used to return the natural logarithm (base e) of a number. The JavaScript Math.log() method is equivalent to ln(x) in mathematics. If the value of x is negative, then the math.log() method return NaN. The log() is a static method of Math, therefore, it is always used as Math.log(), rather than as a method of a Math object created. Syntax:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math max() Method </title>
+      <link>/javascript/javascript-math-max-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-max-method-/</guid>
+      <description>JavaScript Math max() Method The JavaScript Math max() Method is used to return the largest of zero or more numbers. The result is &amp;ldquo;-Infinity&amp;rdquo; if no arguments are passed and the result is NaN if at least one of the arguments cannot be converted to a number.
+The max() is a static method of Math, therefore, it is always used as Math.max(), rather than as a method of a Math object created.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math min() Method </title>
+      <link>/javascript/javascript-math-min-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-min-method-/</guid>
+      <description>JavaScript Math min() Method The JavaScript Math min( ) Method is used to return the lowest-valued number passed in the method. The Math.min() method returns NaN if any parameter isn&amp;rsquo;t a number and can&amp;rsquo;t be converted into one. The min() is a static method of Math, therefore, it is always used as Math.min(), rather than as a method of a Math object created. Syntax:
+Math.min(value1, value2, ...) Parameters: This method accepts a single parameter that can be used n number of times as mentioned above and described below:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math pow() Method </title>
+      <link>/javascript/javascript-math-pow-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-pow-method-/</guid>
+      <description>JavaScript Math pow() Method The Math.pow() method is used to power a number i.e., the value of the number raised to some exponent. Since Math.pow() is a static method of Math and therefore it is always used as Math.pow() and not as a method of an object created in Math class. Syntax:
+Math.pow(base, exponent) Parameters:
+base: It is the base number that is to be raised.
+exponent: It is the value used to raise the base.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math.round( ) function </title>
+      <link>/javascript/javascript-math.round-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math.round-function-/</guid>
+      <description>JavaScript Math.round( ) function JavaScript Math.round( ) function is used to round the number passed as a parameter to its nearest integer. Syntax:
+Math.round(value) Parameters:
+value: The number to be rounded to its nearest integer.
+Example 1: Rounding Off a number to its nearest integer
+To round off a number to its nearest integer, the math.round() function should be implemented in the following way: Javascript &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; var round =Math.round(5.8); console.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math sqrt() Method </title>
+      <link>/javascript/javascript-math-sqrt-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-sqrt-method-/</guid>
+      <description>JavaScript Math sqrt() Method The JavaScript Math sqrt( ) Method in JavaScript is used to square the root of the number passed as a parameter to the function. Syntax:
+Math.sqrt(value) Parameters: This method accepts a single parameter as mentioned above and described below: Value: which holds the number whose square root is to be calculated.
+Returns: Square root of the number passed as a parameter.
+Below is an example of the Math sqrt() Method.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Math Reference </title>
+      <link>/javascript/javascript-math-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-math-reference-/</guid>
+      <description>JavaScript Math Reference JavaScript Math object is used to perform mathematical operations on numbers. Math is an inbuilt object that works with numbers types but it does not work with BigInt.
+Example: Below example will give you a brief idea of JavaScript math objects.
+javascript // Return PI value(3.141592653589793) console.log(Math.PI); Output: This will print the value of Pi on the console.
+3.141592653589793 JavaScript Math object properties and methods in JavaScript are listed below:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date </title>
+      <link>/javascript/javascript-date-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-/</guid>
+      <description>JavaScript Date The Javascript Date object in JavaScript is used to represent a moment in time. This time value is since 1 January 1970 UTC (Coordinated Universal Time). We can create a date using the Date object by calling the new Date() constructor as shown in the below syntax.
+Syntax: new Date(); new Date(value); new Date(dateString); new Date(year, month, day, hours, minutes, seconds, milliseconds); Parameters: All of the parameters as shown in the above syntax are described below: value: This value is the number of milliseconds since January 1, 1970, 00:00:00 UTC.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript | Date Formats </title>
+      <link>/javascript/javascript-date-formats-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-formats-/</guid>
+      <description>JavaScript | Date Formats JavaScript Date Input: There are many ways in which one can format the date in JavaScript.
+Formats:
+ISO Date&amp;quot;2019-03-06&amp;quot; (The International Standard)
+&amp;quot;2019-03-06&amp;quot; (The International Standard) Short Date&amp;quot;03/06/2019&amp;quot;
+&amp;quot;03/06/2019&amp;quot; Long Date&amp;quot;Mar 06 2019&amp;quot; or &amp;quot;06 Mar 2019&amp;quot;
+&amp;quot;Mar 06 2019&amp;quot; or &amp;quot;06 Mar 2019&amp;quot; Example 1: This example uses ISO date format to display the date.
+&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Date format&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;center&amp;gt; &amp;lt;div style=&amp;quot;background-color: white;&amp;quot;&amp;gt; &amp;lt;h1&amp;gt;Welcome to Renewbuy!</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date constructor Property </title>
+      <link>/javascript/javascript-date-constructor-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-constructor-property-/</guid>
+      <description>JavaScript Date constructor Property JavaScript Date constructor property returns the constructor function for an object. It is an ES1 feature and is supported by all browsers. The function which is returned by this property is just the reference to this function, not a date containing the function&amp;rsquo;s name. The JavaScript date constructor, string constructor, and boolean constructor return function Date() { [native code] }., function String() { [native code] } and function Boolean() { [native code] } respectively.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Get Date Methods </title>
+      <link>/javascript/javascript-get-date-methods-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-get-date-methods-/</guid>
+      <description>JavaScript Get Date Methods In this article, we will know how to get the various date method from the date object in Javascript. There are various methods that retrieve the date in JavaScript. The data values can get like years, months, days, hours, minutes, seconds, milliseconds from a Date Object.
+The following is the list of the date method to retrieve the various dates from the Date object in Javascript.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Set Date Methods </title>
+      <link>/javascript/javascript-set-date-methods-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-set-date-methods-/</guid>
+      <description>JavaScript Set Date Methods There are various methods to set the date in JavaScript. The data values can be set like years, months, days, hours, minutes, seconds, and milliseconds for a Date Object. Method:
+setDate(): It is used to set the day as a number (1-31).
+setFullYear(): It is used to set the year (optionally month and day).
+setHours(): It is used to set the hour (0-23).
+setMilliseconds(): It is used to set the milliseconds (0-999).</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date getUTCDate() Method </title>
+      <link>/javascript/javascript-date-getutcdate-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-getutcdate-method-/</guid>
+      <description>JavaScript Date getUTCDate() Method The date.getUTCDate() method is used to fetch the date of a month according to universal time from a given Date object ranging from 1 to 31.
+Syntax:
+DateObj.getUTCDate(); Parameter: This method does not accept any parameter. It is just used along with a Date Object from which we want to fetch the date of the month according to universal time.
+Return Values: It returns the date of the month for the given date object according to universal time.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date now() Method </title>
+      <link>/javascript/javascript-date-now-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-now-method-/</guid>
+      <description>JavaScript Date now() Method JavaScript date.now() method is used to return the number of milliseconds elapsed since January 1, 1970, 00:00:00 UTC. Since now() is a static method of Date, it will always be used as Date.now(). Syntax:
+var A = Date.now(); Parameters: This method does not accept any parameter. Return Values: It returns the number of milliseconds elapsed since January 1, 1970, 00:00:00 UTC.
+Below examples illustrate the JavaScript Date now() Method:</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date parse() Method </title>
+      <link>/javascript/javascript-date-parse-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-parse-method-/</guid>
+      <description>JavaScript Date parse() Method The JavaScript Date parse() Method is used to know the exact number of milliseconds that have passed since midnight, January 1, 1970, till the date we provide.
+Syntax: Date.parse(datestring); Parameters: This method accepts a single parameter:
+datestring: This parameter holds the date as a string.
+Return Values: It returns an integer value representing the number of a millisecond between midnight January 1, 1970, and the date provided.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Date Reference </title>
+      <link>/javascript/javascript-date-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-date-reference-/</guid>
+      <description>JavaScript Date Reference JavaScript Date object is used to represent a moment in time It is used to work with date and time This time value is since 1 January 1970 UTC (Coordinated Universal Time).
+Syntax:
+new Date(); Example: If nothing as the parameter is given, it returns the present date and time.
+Javascript // If nothing as a parameter is given, // it represents the present date and time. var A = new Date(); // Printing present date and time.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Boolean </title>
+      <link>/javascript/javascript-boolean-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-boolean-/</guid>
+      <description>JavaScript Boolean Boolean is a datatype that returns either of two values i.e. true or false. In JavaScript, Boolean is used as a function to get the value of a variable, object, conditions, expressions, etc. in terms of true or false.
+Note: A variable or object which has a value is treated as a true boolean value. &amp;lsquo;0&amp;rsquo;, &amp;lsquo;NaN&amp;rsquo;, empty string, &amp;lsquo;undefined&amp;rsquo;, and &amp;rsquo;null&amp;rsquo; is treated as false boolean values. Here a1 and a2 store the boolean value i.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Boolean Constructor Property </title>
+      <link>/javascript/javascript-boolean-constructor-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-boolean-constructor-property-/</guid>
+      <description>JavaScript Boolean Constructor Property JavaScript boolean constructor property returns the constructor function for an object. The function which is returned by this property is just the reference to this function, not a Boolean containing the function&amp;rsquo;s name The JavaScript number constructor, string constructor, and boolean constructor return function Boolean() { [native code] }, function Number() { [native code] }, and function String() { [native code] } respectively.Syntax: boolean.constructor Parameter: This method does not accept any parameter.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Boolean valueOf() Method </title>
+      <link>/javascript/javascript-boolean-valueof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-boolean-valueof-method-/</guid>
+      <description>JavaScript Boolean valueOf() Method The boolean.valueOf() method is used to return a boolean value either &amp;ldquo;true&amp;rdquo; or &amp;ldquo;false&amp;rdquo; depending upon the value of the specified boolean object.
+Syntax: boolean.valueOf() Parameter: This method does not accept any parameter.
+Return value: It returns a boolean value either &amp;ldquo;true&amp;rdquo; or &amp;ldquo;false&amp;rdquo; depending upon the value of the specified boolean object.
+Example 1: Below is an example of the Boolean valueOf() method. javascript &amp;lt;script&amp;gt; // Here Boolean object obj // is created for the value 27 var obj = new Boolean(27); // Here boolean.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Boolean() Constructor </title>
+      <link>/javascript/javascript-boolean-constructor-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-boolean-constructor-/</guid>
+      <description>JavaScript Boolean() Constructor The Boolean() constructor in JavaScript is a built-in function that can be used to create a new Boolean object. The Boolean() constructor takes a single argument and returns a Boolean object with a value of true or false depending on the type and value of the argument passed in. Syntax:
+Boolean(value) Parameter: This constructor accepts a single argument value: The parameter contains the value of the boolean</description>
+    </item>
+    
+    <item>
+      <title>How to generate a random boolean using JavaScript ? </title>
+      <link>/javascript/how-to-generate-a-random-boolean-using-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-generate-a-random-boolean-using-javascript-/</guid>
+      <description>How to generate a random boolean using JavaScript ? The task is to generate random boolean value. Here we are going to use JavaScript to achieve the goal.
+Approach 1:
+Calculate Math.random() function.
+If it is less than 0.5, then true otherwise false.
+Example 1: This example implements the above approach.
+&amp;lt;!DOCTYPE HTML&amp;gt; &amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt; How to generate a random boolean using JavaScript? &amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body style = &amp;quot;text-align:center;&amp;quot; id = &amp;quot;body&amp;quot;&amp;gt; &amp;lt;h1 id = &amp;quot;h1&amp;quot; style = &amp;quot;color:green;&amp;quot; &amp;gt; Renewbuy &amp;lt;/h1&amp;gt; &amp;lt;p id = &amp;quot;GFG_UP&amp;quot; style = &amp;quot;font-size: 15px; font-weight: bold;&amp;quot;&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;button onclick = &amp;quot;gfg_Run()&amp;quot;&amp;gt; Click here &amp;lt;/button&amp;gt; &amp;lt;p id = &amp;quot;GFG_DOWN&amp;quot; style = &amp;quot;font-size: 23px; font-weight: bold; color: green; &amp;quot;&amp;gt; &amp;lt;/p&amp;gt; &amp;lt;script&amp;gt; var el_up = document.</description>
+    </item>
+    
+    <item>
+      <title>How to toggle a boolean using JavaScript ? </title>
+      <link>/javascript/how-to-toggle-a-boolean-using-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-toggle-a-boolean-using-javascript-/</guid>
+      <description>How to toggle a boolean using JavaScript ? A boolean value can be toggled in JavaScript by using two approaches which are discussed below:
+Method 1: Using the logical NOT operator: The logical NOT operator in Boolean algebra is used to negate an expression or value. Using this operator on a true value would return false and using it on a false value would return true. This property can be used to toggle a boolean value.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript DataView.getFloat32() Method </title>
+      <link>/javascript/javascript-dataview.getfloat32-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dataview.getfloat32-method-/</guid>
+      <description>JavaScript DataView.getFloat32() Method The dataView.getFloat32() is an inbuilt function in dataView that is used to get a 32-bit float at the specified location i.e, at byte offset from the start of the data view. The range of 32-bit floating-point numbers is from -3.4E+38 to +3.4E+38
+Syntax: dataView.getFloat32(byteOffset) Parameters: It has the parameter byteOffset which is offset in a byte and it says where to read the data from the beginning(start) of the view.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript dataView.getUint32() Method </title>
+      <link>/javascript/javascript-dataview.getuint32-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dataview.getuint32-method-/</guid>
+      <description>JavaScript dataView.getUint32() Method The dataView.getUint32() is an inbuilt function in dataView that is used to get an unsigned 32-bit integer at the specified location i.e, at byte offset from the start of the dataView. Syntax: dataView.getUint32(byteOffset) Parameters: It has the parameter byteOffset which is offset in byte i.e. from the start of the view where to read the data.
+Return value: It returns an unsigned 32-bit integer.
+Below are examples of the dataView.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript dataView.setFloat32() Method </title>
+      <link>/javascript/javascript-dataview.setfloat32-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dataview.setfloat32-method-/</guid>
+      <description>JavaScript dataView.setFloat32() Method The dataView.setFloat32() is an inbuilt function in dataView that is used to store a signed 32-bit float value at the specified location i.e, at byte offset from the start of the dataView. Syntax: dataView.setFloat32(byteOffset) Parameters: It has the parameter byteOffset which is offset in a byte and it says from the start of the view where to read the data.
+Return value: This function does not return anything.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript dataView.setInt32() Method </title>
+      <link>/javascript/javascript-dataview.setint32-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dataview.setint32-method-/</guid>
+      <description>JavaScript dataView.setInt32() Method The dataView.setInt32() is an inbuilt function in dataView that is used to store a signed 32-bit integer at the specified location i.e, at byte offset from the start of the dataView. Syntax: dataView.setInt32(byteOffset) Parameters: It has the parameter byteOffset which is offset in a byte and it says from the start of the view where to read the data.
+Return value: This function does not return anything.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript dataView.setUint32() Method </title>
+      <link>/javascript/javascript-dataview.setuint32-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dataview.setuint32-method-/</guid>
+      <description>JavaScript dataView.setUint32() Method The dataView.setUint32() is an inbuilt function in dataView which is used to store an unsigned 32-bit integer at the specified location i.e, at byte offset from the start of the dataView. Syntax: dataView.setUint32(byteOffset,ValueToStoreAsUint32) Parameters: byteOffset is the offset from the start of the data view.
+Return value: This function does not return anything.
+Below are examples of the dataView.setUint32() Method. Example 1: javascript var buffer = new ArrayBuffer(20); var dataview1 = new DataView(buffer, 0, 10); dataview1.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Boolean Reference </title>
+      <link>/javascript/javascript-boolean-reference-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-boolean-reference-/</guid>
+      <description>JavaScript Boolean Reference JavaScript Boolean is a datatype that returns either true or false In JavaScript, a boolean is used as a function to get the value of a variable, object, conditions, expressions, etc in terms of true or false
+Syntax:
+Boolean(variable/expression) Example: If the operands are equal, the equal to operator == returns true
+Javascript &amp;lt;script&amp;gt; console.log(15 == 15) console.log(15 == 11) &amp;lt;/script&amp;gt; Output:
+true false The complete list of JavaScript Boolean has listed below:</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Form Dynamically with the JavaScript? </title>
+      <link>/javascript/how-to-create-a-form-dynamically-with-the-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/how-to-create-a-form-dynamically-with-the-javascript-/</guid>
+      <description>How to Create a Form Dynamically with the JavaScript? The task is to create an HTML form dynamically with the help of JavaScript. There are two approaches that are discussed below.Approach 1: Use document.createElement() to create the new elements and use setAttribute() method to set the attributes of elements. Append these elements to the
+element by appendChild() method. Finally append the
+element to the
+element of the document. This example creates a Registration form.</description>
+    </item>
+    
+    <item>
+      <title>Form validation using HTML and JavaScript </title>
+      <link>/javascript/form-validation-using-html-and-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/form-validation-using-html-and-javascript-/</guid>
+      <description>Form validation using HTML and JavaScript Forms are used on webpages for the user to enter their required details that further send to the server for processing. A form is also known as a web form or HTML form. Examples of form use are prevalent in e-commerce websites, online banking, and online surveys to name a few. Prerequisites:
+HTML is used to create the form.
+CSS to design the layout of the form.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Auto-filling one field same as other </title>
+      <link>/javascript/javascript-auto-filling-one-field-same-as-other-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-auto-filling-one-field-same-as-other-/</guid>
+      <description>JavaScript Auto-filling one field same as other (This article takes some prior knowledge of HTML, CSS, and JavaScript.) You might have noticed that sometimes websites like e-commerce or some government website have two address fields in their forms. One for the primary address and another for the secondary address(or one for the billing address and another for the shipping address etc). Most of the time people have the same primary and secondary addresses and to save us from the tedious work of re-entering the same data again they have some kind of option to automatically copy the contents of one field into another.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Dialogue Boxes </title>
+      <link>/javascript/javascript-dialogue-boxes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-dialogue-boxes-/</guid>
+      <description>JavaScript Dialogue Boxes Dialogue boxes are a kind of popup notification, this kind of informative functionality is used to show success, failure, or any particular/important notification to the user.
+JavaScript uses 3 kinds of dialog boxes: Alert
+Prompt
+Confirm
+These dialog boxes can be of very much help in making our website look more attractive. Alert Box: An alert box is used on the website to show a warning message to the user that they have entered the wrong value other than what is required to fill in that position.</description>
+    </item>
+    
+    <item>
+      <title>What is the arrow function, and how to create it ? </title>
+      <link>/javascript/what-is-the-arrow-function-and-how-to-create-it-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/what-is-the-arrow-function-and-how-to-create-it-/</guid>
+      <description>What is the arrow function, and how to create it ? Function in any programming language is the basic building block to create and combine the related bits of code. Every programming language provides certain kinds of practices to write any function. The arrow function syntax is one of the most used and efficient ones to create a function in JavaScript.
+How to create an arrow function: To write the arrow function, simply create any variable it can be const, let, or var but always do prefer const to avoid unnecessary problems.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Rest parameter </title>
+      <link>/javascript/javascript-rest-parameter-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-rest-parameter-/</guid>
+      <description>JavaScript Rest parameter The rest parameter is an improved way to handle function parameters, allowing us to more easily handle various inputs as parameters in a function. The rest parameter syntax allows us to represent an indefinite number of arguments as an array. With the help of a rest parameter, a function can be called with any number of arguments, no matter how it was defined. Rest parameter is added in ES2015 or ES6 which improved the ability to handle parameter.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Importing and Exporting Modules </title>
+      <link>/javascript/javascript-importing-and-exporting-modules-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-importing-and-exporting-modules-/</guid>
+      <description>JavaScript Importing and Exporting Modules JavaScript Modules are basically libraries which are included in the given program. They are used for connecting two JavaScript programs together to call the functions written in one program without writing the body of the functions itself in another program. Importing a library: It means include a library in a program so that use the function is defined in that library. For this, use &amp;lsquo;require&amp;rsquo; function in which pass the library name with its relative path.</description>
+    </item>
+    
+    <item>
+      <title>Classes In JavaScript </title>
+      <link>/javascript/classes-in-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/classes-in-javascript-/</guid>
+      <description>Classes In JavaScript The new version of JavaScript (ES6) introduced the use of classes instead of functions. Prior to ES6, there were only classes and, functions which are callable objects. A class in javascript is basically a blueprint or template of the object. New objects can be created from a class. Class In JavaScript
+Classes are similar to functions. Here, a class keyword is used instead of a function keyword. Unlike functions classes in JavaScript are not hoisted.</description>
+    </item>
+    
+    <item>
+      <title>JavaScript Examples </title>
+      <link>/javascript/javascript-examples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/javascript/javascript-examples-/</guid>
+      <description>JavaScript Examples The following JavaScript section contains a wide collection of JavaScript examples. The examples are categorized based on the topics, including objects, functions, arrays, DOM, and many more. Many of these program examples contain multiple approaches to solve the problem.
+Introduction to JavaScriptRecent articles on JavaScriptJavaScript Output &amp;amp; Multiple Choice Questions
+Topics: ES6
+Objects
+Function
+Recursion
+Math
+Array
+DateTime
+String/Text
+Regular Expression
+DOM
+JSON
+Mini Projects
+ES6 Questions: Difference between ES6 and TypeScript</description>
+    </item>
+    
+    
+  </channel>
+</rss>

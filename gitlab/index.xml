@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gitlab on SATHEE</title>
+    <link>/gitlab/</link>
+    <description>Recent content in Gitlab on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/gitlab/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>How to Download and Install GIT Lab? </title>
+      <link>/gitlab/how-to-download-and-install-git-lab-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-download-and-install-git-lab-/</guid>
+      <description>How to Download and Install GIT Lab? Git Lab is an essential tool for those who are in a project development role. Every organization needs some employees who will develop certain projects for their clients. For this purpose, developers use some very important technical tools. Git Lab is one of them. It has a similar type of work to Git. But it also has some new features. Git Lab is a complete DevOps platform.</description>
+    </item>
+    
+    <item>
+      <title>How to Install GitKraken Git GUI on Linux? </title>
+      <link>/gitlab/how-to-install-gitkraken-git-gui-on-linux-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-install-gitkraken-git-gui-on-linux-/</guid>
+      <description>How to Install GitKraken Git GUI on Linux? GitKraken is software available for Git. Usually, while developing any software, developers develop certain parts of the project. Then they join the parts of the project using Git software. But for any project many innovations developers should make. For implementing new innovations in code developers should implement branch concepts in Git. in a project a huge amount of branches is present. Managing that amount of branches is not an easy task for developers.</description>
+    </item>
+    
+    <item>
+      <title>How to Install Git in VS Code? </title>
+      <link>/gitlab/how-to-install-git-in-vs-code-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-install-git-in-vs-code-/</guid>
+      <description>How to Install Git in VS Code? Git is a free and open-source distributed version control system. It is designed to manage every type of project even a small or a large project with good speed and efficiency. It is more focused on distributed development of software so that more developers can have the access to the source code and can modify the application.
+Features of Git:
+Performance: Git supports rapid branching and merging, and includes specific tools for visualizing and navigating a non-linear development history in the most optimized way possible.</description>
+    </item>
+    
+    <item>
+      <title>How to integrate Git Bash with Visual Studio Code? </title>
+      <link>/gitlab/how-to-integrate-git-bash-with-visual-studio-code-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-integrate-git-bash-with-visual-studio-code-/</guid>
+      <description>How to integrate Git Bash with Visual Studio Code? Git Bash is an application that provides Git command line experience on the Operating System. It is a command-line shell for enabling git with the command line in the system. VSCode is a Text editor that provides support for development operations and version control systems. It provides tools for a user to build hassle-free codes. One should have an adequate understanding of these as they serve as pre-requisites.</description>
+    </item>
+    
+    <item>
+      <title>Handling repositories with Git remote </title>
+      <link>/gitlab/handling-repositories-with-git-remote-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/handling-repositories-with-git-remote-/</guid>
+      <description>Handling repositories with Git remote Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. Syncing ability of the git allows the developers to access and work on any project anytime anywhere. The collaboration among developers via git takes place when git provides each individual developer a separate copy of the repository.
+Git relies on the basis of distributed development of software where more than one developer may have access to the source code of a specific application and can modify changes to it which may be seen by other developers.</description>
+    </item>
+    
+    <item>
+      <title>Working on Git Bash </title>
+      <link>/gitlab/working-on-git-bash-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/working-on-git-bash-/</guid>
+      <description>Working on Git Bash Git Bash is an application that provides Git command line experience on the Operating System. It is a command-line shell for enabling git with the command line in the system. A shell is a terminal application used to interface with an operating system through written commands. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system. In Git Bash the user interacts with the repository and git elements through the commands.</description>
+    </item>
+    
+    <item>
+      <title>Using Git on CommandLine </title>
+      <link>/gitlab/using-git-on-commandline-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/using-git-on-commandline-/</guid>
+      <description>Using Git on CommandLine Git is very important and powerful tool when it comes to the software development life cycle. Now in this article, we are going to see why git is used vastly in the software industry and what kinds of operations we can perform with git. So git is basically a distributed version control system for tracking changes in source code during software development. Git is designed for coordinating work among developers, but it can be used to track changes in any set of files.</description>
+    </item>
+    
+    <item>
+      <title>Using Patches in Git </title>
+      <link>/gitlab/using-patches-in-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/using-patches-in-git-/</guid>
+      <description>Using Patches in Git GIT patch or GIT diff is used to share the changes made by you to others without pushing it to main branch of the repository. This way other people can check your changes from the GIT patch file you made and suggest the necessary corrections. After making all the corrections you can push the changes to main branch of the repository. There are different ways to create GIT patches.</description>
+    </item>
+    
+    <item>
+      <title>Patch Operation in Git </title>
+      <link>/gitlab/patch-operation-in-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/patch-operation-in-git-/</guid>
+      <description>Patch Operation in Git Git patch is a feature in git which enables you to create a patch file from a feature in one branch and apply it in another branch.A patch file has all the differences between the two branches. Using the patch file, we can apply the changes in a different branch.This can be visualized as &amp;ndash; Suppose you are working on a project. The main project is in the &amp;ldquo;master&amp;rdquo; branch.</description>
+    </item>
+    
+    <item>
+      <title>What is Collaboration in Git? </title>
+      <link>/gitlab/what-is-collaboration-in-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/what-is-collaboration-in-git-/</guid>
+      <description>What is Collaboration in Git? Collaboration is the way different people can work on the same project together. It is like creating a group in GitHub just like Groups in other social media. The people added to the collaborator&amp;rsquo;s list can be able to push, merge, and do other kinds of similar things on the project. For doing collaboration you need to follow the steps given below: Step 1: Create a Repository Step 2: Add files to your project.</description>
+    </item>
+    
+    <item>
+      <title>Recovering Lost Commits in Git </title>
+      <link>/gitlab/recovering-lost-commits-in-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/recovering-lost-commits-in-git-/</guid>
+      <description>Recovering Lost Commits in Git Git is a very powerful tool, and with great power comes great responsibilities. If not used and handles properly, It might cause you to lose your commits. There might be situations when you may find all of your work missing at once.
+If you have regularly committed your work, there is a way to recover these lost commits.This tutorial will aim at using the
+git reflog and the</description>
+    </item>
+    
+    <item>
+      <title>Working on BitBucket using Git </title>
+      <link>/gitlab/working-on-bitbucket-using-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/working-on-bitbucket-using-git-/</guid>
+      <description>Working on BitBucket using Git Git provides various tools and applications to perform better handling of the work environment. Git is a type of version control system that is used to allow more than one developer to access the source code of a specific application and can modify changes to it that may be seen by other developers. BitBucket is a git-based tool that helps with collaborations on large projects across various teams and helps keep a track of different versions of a project that can access it from your local machine.</description>
+    </item>
+    
+    <item>
+      <title>Working on Git for GUI </title>
+      <link>/gitlab/working-on-git-for-gui-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/working-on-git-for-gui-/</guid>
+      <description>Working on Git for GUI Git has its native environment within the terminal. All the new features are updated first at the command line, and only there is the full power of Git. But plain text isn&amp;rsquo;t the simplest choice for all tasks; sometimes some users are much more comfortable with a point-and-click interface, a visual representation is what they need.
+Note: There&amp;rsquo;s nothing these graphical clients can do that the command-line client can&amp;rsquo;t; the command-line is still where you&amp;rsquo;ll have the most power and control when working with your repositories.</description>
+    </item>
+    
+    <item>
+      <title>Pushing changes to a Git Repository </title>
+      <link>/gitlab/pushing-changes-to-a-git-repository-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/pushing-changes-to-a-git-repository-/</guid>
+      <description>Pushing changes to a Git Repository Git allows performing various operations on the Repositories including the local repositories and remote repositories. The user when downloads a project to work upon, a local repository is created to store a copy of the original project. This local repository stores the changes that are being made by the user. This way, the user can edit the changes before adding them to the main project.</description>
+    </item>
+    
+    <item>
+      <title>Bare Repositories in Git </title>
+      <link>/gitlab/bare-repositories-in-git-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/bare-repositories-in-git-/</guid>
+      <description>Bare Repositories in Git Repositories in Git are a snapshot of the folder in which you are working on your project. You can track the progress and changes made to the project by making commits and also revert changes if not satisfactory.Repositories can be divided into two types based on the usage on a server. These are:
+Non-bare Repositories
+Bare Repositories
+What is a Non-bare repository?A non-bare or default git repository has a .</description>
+    </item>
+    
+    <item>
+      <title>Working with Git Repositories </title>
+      <link>/gitlab/working-with-git-repositories-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/working-with-git-repositories-/</guid>
+      <description>Working with Git Repositories Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.Git relies on the basis of distributed development of software where more than one developer may have access to the source code of a specific application and can modify changes to it which may be seen by other developers. It allows the user to have &amp;ldquo;versions&amp;rdquo; of a project, which show the changes that were made to the code over time, and allows the user to backtrack if necessary and undo those changes.</description>
+    </item>
+    
+    <item>
+      <title>Git Features </title>
+      <link>/gitlab/git-features-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/git-features-/</guid>
+      <description>Git Features Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.Git relies on the basis of distributed development of software where more than one developer may have access to the source code of a specific application and can modify changes to it which may be seen by other developers. It allows the user to have &amp;ldquo;versions&amp;rdquo; of a project, which show the changes that were made to the code over time, and allows the user to backtrack if necessary and undo those changes.</description>
+    </item>
+    
+    <item>
+      <title>An Ultimate Guide to Git and Github </title>
+      <link>/gitlab/an-ultimate-guide-to-git-and-github-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/an-ultimate-guide-to-git-and-github-/</guid>
+      <description>An Ultimate Guide to Git and Github Highlights of the article: Introduction to Git
+Git Repository Structure
+Github
+Accessing Github central repository via HTTPS or ssh
+Working with git &amp;ndash; Important Git commands
+Introduction to Git For installation purposes on ubuntu, you can refer to this article: How to Install, Configure and Use GIT on Ubuntu? Git is a distributed version control system. So, What is a Version Control System? A version Control system is a system that maintains different versions of your project when we work in a team or as an individual.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Github </title>
+      <link>/gitlab/introduction-to-github-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/introduction-to-github-/</guid>
+      <description>Introduction to Github Nowadays software development takes place in a distributive way. This article focuses on one such technology that supports distributed software development i.e., GIT and it&amp;rsquo;s application via GitHub. What GIT is about? Git is a free and open-source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+Git relies on the basis of distributed development of software where more than one developer may have access to the source code of a specific application and can modify changes to it that may be seen by other developers.</description>
+    </item>
+    
+    <item>
+      <title>What is a GIT Repository? </title>
+      <link>/gitlab/what-is-a-git-repository-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/what-is-a-git-repository-/</guid>
+      <description>What is a GIT Repository? Repositories in GIT contain a collection of files of various different versions of a Project. These files are imported from the repository into the local server of the user for further updations and modifications in the content of the file. A VCS or the Version Control System is used to create these versions and store them in a specific place termed a repository. The process of copying the content from an existing Git Repository with the help of various Git Tools is termed cloning.</description>
+    </item>
+    
+    <item>
+      <title>Version Control Systems </title>
+      <link>/gitlab/version-control-systems-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/version-control-systems-/</guid>
+      <description>Version Control Systems What is a &amp;ldquo;version control system&amp;rdquo;? Version control systems are a category of software tools that helps in recording changes made to files by keeping a track of modifications done in the code. Why Version Control system is so Important?
+As we know that a software product is developed in collaboration by a group of developers they might be located at different locations and each one of them contributes to some specific kind of functionality/features.</description>
+    </item>
+    
+    <item>
+      <title>Centralized vs Distributed Version Control: Which One Should We Choose? </title>
+      <link>/gitlab/centralized-vs-distributed-version-control-which-one-should-we-choose-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/centralized-vs-distributed-version-control-which-one-should-we-choose-/</guid>
+      <description>Centralized vs Distributed Version Control: Which One Should We Choose? Many of us are aware of version control when it comes to work with multiple developers on a single project and collaborate with them. There is no doubt that version control makes developers work more easily and fast. In most of the organization, developers use either Centralized Version Control System(CVCS) like Subversion(SVN) or Concurrent Version System(CVS) or Distributed Version Control System(DVCS) like Git (Written in C), Mercurial (Written in Python) or Bazaar (Written in Python).</description>
+    </item>
+    
+    <item>
+      <title>Comparison -- Centralized, Decentralized and Distributed Systems </title>
+      <link>/gitlab/comparison--centralized-decentralized-and-distributed-systems-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/comparison--centralized-decentralized-and-distributed-systems-/</guid>
+      <description>Comparison &amp;ndash; Centralized, Decentralized and Distributed Systems In this article, we will try to understand and compare different aspects of centralized, decentralized, and distributed systems. CENTRALIZED SYSTEMS: We start with centralized systems because they are the most intuitive and easy to understand and define. Centralized systems are systems that use client/server architecture where one or more client nodes are directly connected to a central server. This is the most commonly used type of system in many organizations where a client sends a request to a company server and receives the response.</description>
+    </item>
+    
+    <item>
+      <title>Difference between Centralized Database and Distributed Database </title>
+      <link>/gitlab/difference-between-centralized-database-and-distributed-database-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/difference-between-centralized-database-and-distributed-database-/</guid>
+      <description>Difference between Centralized Database and Distributed Database Centralized Database: A centralized database is basically a type of database that is stored, located as well as maintained at a single location only. This type of database is modified and managed from that location itself. This location is thus mainly any database system or a centralized computer system. The centralized location is accessed via an internet connection (LAN, WAN, etc). This centralized database is mainly used by institutions or organizations.</description>
+    </item>
+    
+    <item>
+      <title>Distributed Database System </title>
+      <link>/gitlab/distributed-database-system-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/distributed-database-system-/</guid>
+      <description>Distributed Database System A distributed database is basically a database that is not limited to one system, it is spread over different sites, i.e, on multiple computers or over a network of computers. A distributed database system is located on various sites that don&amp;rsquo;t share physical components. This may be required when a particular database needs to be accessed by various users globally. It needs to be managed such that for the users it looks like one single database.</description>
+    </item>
+    
+    <item>
+      <title>How to Install PIP on Windows ? </title>
+      <link>/gitlab/how-to-install-pip-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-install-pip-on-windows-/</guid>
+      <description>How to Install PIP on Windows ? Prerequisite: Python Language Introduction
+Before we start with how to install pip for Python on Windows, let&amp;rsquo;s first go through the basic introduction to Python. Python is a widely-used general-purpose, high-level programming language. Python is a programming language that lets you work quickly and integrate systems more efficiently. PIP is a package management system used to install and manage software packages/libraries written in Python.</description>
+    </item>
+    
+    <item>
+      <title>How to Find the Wi-Fi Password Using CMD in Windows? </title>
+      <link>/gitlab/how-to-find-the-wi-fi-password-using-cmd-in-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-find-the-wi-fi-password-using-cmd-in-windows-/</guid>
+      <description>How to Find the Wi-Fi Password Using CMD in Windows? It happens sometimes that we forget our Wi-Fi password and it is painful to reset our Wi-Fi password as all our home devices and system are connected with the same network and we have to save the new password again to all our devices.
+But we can save ourself from resetting Wi-Fi password if we ever connected our Windows 10 PC to that Wi-Fi network.</description>
+    </item>
+    
+    <item>
+      <title>How to install Jupyter Notebook on Windows? </title>
+      <link>/gitlab/how-to-install-jupyter-notebook-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-install-jupyter-notebook-on-windows-/</guid>
+      <description>How to install Jupyter Notebook on Windows? Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations, and narrative text. Uses include data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+Jupyter has support for over 40 different programming languages and Python is one of them. Python is a requirement (Python 3.3 or greater, or Python 2.</description>
+    </item>
+    
+    <item>
+      <title>How to Install OpenCV for Python on Windows? </title>
+      <link>/gitlab/how-to-install-opencv-for-python-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gitlab/how-to-install-opencv-for-python-on-windows-/</guid>
+      <description>How to Install OpenCV for Python on Windows? Prerequisite: Python Language Introduction OpenCV is the huge open-source library for computer vision, machine learning, and image processing and now it plays a major role in real-time operation which is very important in today&amp;rsquo;s systems. By using it, one can process images and videos to identify objects, faces, or even the handwriting of a human. When it integrated with various libraries, such as Numpy, python is capable of processing the OpenCV array structure for analysis.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

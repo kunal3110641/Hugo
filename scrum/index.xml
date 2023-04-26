@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scrum on SATHEE</title>
+    <link>/scrum/</link>
+    <description>Recent content in Scrum on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/scrum/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>What is scrum? </title>
+      <link>/scrum/what-is-scrum-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-scrum-/</guid>
+      <description>What is scrum? Scrum is an agile project management framework that helps teams structure and manage their work through a set of values, principles, and practices. Much like a rugby team (where it gets its name) training for the big game, scrum encourages teams to learn through experiences, self-organize while working on a problem, and reflect on their wins and losses to continuously improve.
+While the scrum I&amp;rsquo;m talking about is most frequently used by software development teams, its principles and lessons can be applied to all kinds of teamwork.</description>
+    </item>
+    
+    <item>
+      <title>What are sprints? </title>
+      <link>/scrum/what-are-sprints-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-are-sprints-/</guid>
+      <description>What are sprints? A sprint is a short, time-boxed period when a scrum team works to complete a set amount of work. Sprints are at the very heart of scrum and agile methodologies, and getting sprints right will help your agile team ship better software with fewer headaches. &amp;ldquo;With scrum, a product is built in a series of iterations called sprints that break down big, complex projects into bite-sized pieces,&amp;quot; said Megan Cook, Group Product Manager for Jira Software at Atlassian.</description>
+    </item>
+    
+    <item>
+      <title>What is sprint planning? </title>
+      <link>/scrum/what-is-sprint-planning-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-sprint-planning-/</guid>
+      <description>What is sprint planning? Sprint planning is an event in scrum that kicks off the sprint. The purpose of sprint planning is to define what can be delivered in the sprint and how that work will be achieved. Sprint planning is done in collaboration with the whole scrum team.
+Unlike in sport, scrum encourages you to be always sprinting so you can deliver working software, while continuously learning and improving.</description>
+    </item>
+    
+    <item>
+      <title>What are scrum ceremonies? </title>
+      <link>/scrum/what-are-scrum-ceremonies-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-are-scrum-ceremonies-/</guid>
+      <description>What are scrum ceremonies? Scrum meetings are when the scrum master, product owner, and development team meet to plan work, discuss work in progress, gather feedback, and more. Not every agile scrum team needs to practice all scrum meetings, and a team doesn&amp;rsquo;t necessarily have to be a scrum team to practice scrum meetings. The following are some agile scrum meetings that help to empower teams of all sorts. Note: A number of these ceremonies come from the practice of scrum, which is an iterative, time-boxed approach to implementing agile.</description>
+    </item>
+    
+    <item>
+      <title>What is a product backlog? </title>
+      <link>/scrum/what-is-a-product-backlog-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-a-product-backlog-/</guid>
+      <description>What is a product backlog? A product backlog is a prioritized list of work for the development team that is derived from the roadmap and its requirements. The most important items are shown at the top of the product backlog so the team knows what to deliver first. The development team doesn&#39;t work through the backlog at the product owner&#39;s pace and the product owner isn&#39;t pushing work to the development team.</description>
+    </item>
+    
+    <item>
+      <title>What is a stand-up in scrum? </title>
+      <link>/scrum/what-is-a-stand-up-in-scrum-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-a-stand-up-in-scrum-/</guid>
+      <description>What is a stand-up in scrum? The daily stand-up is a short, daily meeting to discuss progress and identify blockers. The reason it&amp;rsquo;s called a &amp;ldquo;stand-up&amp;rdquo; is because if attendees participate while standing, the meeting should be kept short.
+For software teams, a stand-up is like a sports team&amp;rsquo;s huddle. Like (American) football and rugby, the team huddles before each play. The huddle is strategic: it keeps the team informed, connected, and calibrated throughout the game.</description>
+    </item>
+    
+    <item>
+      <title>What is a scrum master? </title>
+      <link>/scrum/what-is-a-scrum-master-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-a-scrum-master-/</guid>
+      <description>What is a scrum master? Scrum masters are the facilitators of scrum, the lightweight agile framework with a focus on time-boxed iterations called sprints. As facilitators, scrum masters act as coaches to the rest of the team. &amp;ldquo;Servant leaders&amp;rdquo; as the Scrum Guide puts it. Good scrum masters are committed to the scrum foundation and values, but remain flexible and open to opportunities for the team to improve their workflow.</description>
+    </item>
+    
+    <item>
+      <title>What is a distributed scrum team? </title>
+      <link>/scrum/what-is-a-distributed-scrum-team-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-is-a-distributed-scrum-team-/</guid>
+      <description>What is a distributed scrum team? A distributed scrum team is just that -- a scrum team that is either fully or partially remote. In order for a distributed scrum team to be successful, new approaches to adopting scrum need to be implemented. Because of constraints on ad hoc collaboration and informal communication, remote teams need to be more disciplined about their scrum rituals and create new opportunities for bonding and collaboration.</description>
+    </item>
+    
+    <item>
+      <title>What are the three scrum roles? </title>
+      <link>/scrum/what-are-the-three-scrum-roles-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-are-the-three-scrum-roles-/</guid>
+      <description>What are the three scrum roles? Scrum has three roles: product owner, scrum master, and the development team members. While this is pretty clear, what to do with existing job titles can get confusing. Many teams ask if they need to change their titles when adopting scrum. The short answer is no.
+In this article, we&amp;rsquo;ll define scrum roles and how you can fold them into your organization, without printing new business cards.</description>
+    </item>
+    
+    <item>
+      <title>The history of Scrum of Scrums </title>
+      <link>/scrum/the-history-of-scrum-of-scrums-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/the-history-of-scrum-of-scrums-/</guid>
+      <description>The history of Scrum of Scrums The Scrum of Scrums methodology was first implemented in 1996 by Jeff Sutherland and Ken Schwaber, two pioneers of the Scrum framework. Both Sutherland and Schwaber needed a way to coordinate eight business units with multiple product lines per business unit and synchronize individual teams with each other. So they tried a new way to scale scrum teams to accomplish this goal. The experience inspired Sutherland to publish an article in 2001 titled &amp;ldquo;Agile Can Scale: Inventing and Reinventing SCRUM in Five Companies,&amp;rdquo; which mentioned Scrum of Scrums for the first time publicly.</description>
+    </item>
+    
+    <item>
+      <title>What are agile scrum artifacts? </title>
+      <link>/scrum/what-are-agile-scrum-artifacts-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-are-agile-scrum-artifacts-/</guid>
+      <description>What are agile scrum artifacts? Agile scrum artifacts are information that a scrum team and stakeholders use to detail the product being developed, actions to produce it, and the actions performed during the project. These artifacts provide metadata points that give insight into the performance of a sprint. They are essential tools for every scrum team since they enable core scrum attributes of transparency, inspection, and adaption.
+Artifacts are created during the main activities of a scrum sprint: Plan work and future goals</description>
+    </item>
+    
+    <item>
+      <title>What are scrum metrics? </title>
+      <link>/scrum/what-are-scrum-metrics-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/what-are-scrum-metrics-/</guid>
+      <description>What are scrum metrics? Scrum metrics are specific data points that scrum teams track and use to improve efficiency and effectiveness. When defined, understood, and implemented, scrum metrics can become insights that help guide and improve a team&amp;rsquo;s agile journey.
+Scrum teams use metrics to inform decision-making and become more efficient in planning and execution. They can also be used to establish a baseline on the status quo and set target goals and improvement plans.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with Jira, Confluence, and the scrum framework </title>
+      <link>/scrum/getting-started-with-jira-confluence-and-the-scrum-framework/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/getting-started-with-jira-confluence-and-the-scrum-framework/</guid>
+      <description>Getting started with Jira, Confluence, and the scrum framework Need-to-know agile terminology Getting started with the implementation of agile tools can sometimes feel a bit overwhelming. To help combat this, we&amp;rsquo;ve gathered some need-to-know terms that will get your team &amp;lsquo;sprinting&amp;rsquo; in no time. Let&amp;rsquo;s take a look at two of the most common scrum events used in agile project management.
+Sprint A sprint is a short, time-boxed period during which a scrum team works to complete a set amount of work.</description>
+    </item>
+    
+    <item>
+      <title>Sprint reviews </title>
+      <link>/scrum/sprint-reviews-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/scrum/sprint-reviews-/</guid>
+      <description>Sprint reviews Step 1: Define &amp;lsquo;done&amp;rsquo; As a regular user of Jira, there&amp;rsquo;s nothing more satisfying to me than moving a task from &amp;lsquo;code review&amp;rsquo; to &amp;lsquo;done.&amp;rsquo; That swoosh of an agile card represents completed work we set out to accomplish as a team. Done and done!
+{#7065159f .component__image}
+Crossing the finish line and completing work requires good planning, a clear definition of &amp;lsquo;done,&amp;rsquo; and focused execution. Most of this happens during sprint planning, but to have a successful sprint review and sprint, teams need to do a little more than plan.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

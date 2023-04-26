@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>React on SATHEE</title>
+    <link>/react/</link>
+    <description>Recent content in React on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/react/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>ReactJS Tutorials </title>
+      <link>/react/reactjs-tutorials-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-tutorials-/</guid>
+      <description>ReactJS Tutorials React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It is an open-source, component-based front-end library that is responsible only for the view layer of the application. ReactJS is not a framework, it is just a library developed by Facebook to solve some problems that we were facing earlier.
+Reasons to learn ReactJS React is a declarative, efficient, and flexible JavaScript library for building user interfaces.</description>
+    </item>
+    
+    <item>
+      <title>React.js Introduction and Working </title>
+      <link>/react/react.js-introduction-and-working-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/react.js-introduction-and-working-/</guid>
+      <description>React.js Introduction and Working React.js Introduction and Working React is a declarative, efficient, and flexible JavaScript library for building user interfaces. ReactJS is an open-source, component-based front-end library responsible only for the view layer of the application. React is used to create modular user interfaces. It promotes the development of reusable UI components that display dynamic data.
+React uses a declarative paradigm, react application aims to be both efficient and flexible.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS -- Development Environment Setup </title>
+      <link>/react/reactjs--development-environment-setup-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs--development-environment-setup-/</guid>
+      <description>ReactJS &amp;ndash; Development Environment Setup ReactJS &amp;ndash; Development Environment Setup To run any React application, we need to first setup a ReactJS development environment. In this article, we will show you step-by-step how to set up and configure a working React development environment.
+We must have NodeJS installed on our PC. So, the very first step will be to install NodeJS.
+Step 1: Install NodeJS. You may visit the official download link of NodeJS to download and install the latest version of NodeJS.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Introduction to JSX </title>
+      <link>/react/reactjs-introduction-to-jsx-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-introduction-to-jsx-/</guid>
+      <description>ReactJS | Introduction to JSX ReactJS | Introduction to JSX We had already stated in our article on Introduction to ReactJS that React is a declarative, efficient, and flexible JavaScript library for building user interfaces. But instead of using regular JavaScript, React code should be written in something called JSX. Let us see a sample JSX code: const ele = This is sample JSX; The above code snippet somewhat looks like HTML and it also uses a JavaScript-like variable but is neither HTML nor JavaScript, it is JSX.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Introduction to Babel </title>
+      <link>/react/reactjs-introduction-to-babel-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-introduction-to-babel-/</guid>
+      <description>ReactJS | Introduction to Babel ReactJS | Introduction to Babel Introduction to Babel Babel is a very famous transpiler that basically allows us to use future JavaScript in today&amp;rsquo;s browsers. In simple words, it can convert the latest version of JavaScript code into the one that the browser understands. The latest standard version which JavaScript follows is ES2020 which is not fully supported by all the browsers and hence we make use of a tool such as &amp;lsquo;babel&amp;rsquo; so that we can convert it into the code that today&amp;rsquo;s browser understands.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Virtual DOM </title>
+      <link>/react/reactjs-virtual-dom-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-virtual-dom-/</guid>
+      <description>ReactJS | Virtual DOM ReactJS | Virtual DOM DOM: DOM stands for &amp;lsquo;Document Object Model&amp;rsquo;. In simple terms, it is a structured representation of the HTML elements that are present in a webpage or web-app. DOM represents the entire UI of your application. The DOM is represented as a tree data structure. It contains a node for each UI element present in the web document. It is very useful as it allows web developers to modify content through JavaScript, also it being in structured format helps a lot as we can choose specific targets and all the code becomes much easier to work with.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | ReactDOM </title>
+      <link>/react/reactjs-reactdom-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-reactdom-/</guid>
+      <description>ReactJS | ReactDOM ReactJS | ReactDOM In the previous article on introduction to JSX, we learned that we can use JSX to store HTML markups within Javascript variables. Now, ReactJS is a library to build active User Interfaces thus rendering is one of the integral parts of ReactJS. React provides the developers with a package react-dom a.k.a ReactDOM to access and modify the DOM. Let&amp;rsquo;s see in brief what is the need of having the package.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Lists </title>
+      <link>/react/reactjs-lists-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-lists-/</guid>
+      <description>ReactJS | Lists ReactJS | Lists Lists are very useful when it comes to developing the UI of any website. Lists are mainly used for displaying menus in a website, for example, the navbar menu. In regular JavaScript, we can use arrays for creating lists. We can create lists in React in a similar manner as we do in regular JavaScript. We will see how to do this in detail further in this article.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | forms </title>
+      <link>/react/reactjs-forms-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-forms-/</guid>
+      <description>ReactJS | forms ReactJS | forms Forms are really important in any website for login, signup, or whatever. It is easy to make a form but forms in React work a little differently. If you make a simple form in React it works, but it&amp;rsquo;s good to add some JavaScript code to our form so that it can handle the form submission and retrieve data that the user entered. To do this we use controlled components.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Keys </title>
+      <link>/react/reactjs-keys-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-keys-/</guid>
+      <description>ReactJS | Keys ReactJS | Keys In the previous article on ReactJS | Lists, we had discussed Keys and also told why they are needed while creating lists. We will continue the discussion further in this article.
+A &amp;ldquo;key&amp;rdquo; is a special string attribute you need to include when creating lists of elements in React. Keys are used in React to identify which items in the list are changed, updated, or deleted.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Refs </title>
+      <link>/react/reactjs-refs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-refs-/</guid>
+      <description>ReactJS Refs ReactJS Refs Refs are a function provided by React to access the DOM element and the React element that you might have created on your own. They are used in cases where we want to change the value of a child component, without making use of props and all. They have wide functionality as we can use callbacks with them. How to Create Refs: Refs can be created using React.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Rendering Elements </title>
+      <link>/react/reactjs-rendering-elements-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-rendering-elements-/</guid>
+      <description>ReactJS | Rendering Elements ReactJS | Rendering Elements In the previous article on introduction to JSX, we got to see how to create a React element. React element is the smallest renderable unit available in React. We can render such elements using the ReactDOM as described in the previous article. React elements are different from DOM elements as React elements are simple javascript objects and are efficient to create. React elements are the building blocks of any React app and should not be confused with React components which will be discussed in further articles.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Conditional Rendering </title>
+      <link>/react/reactjs-conditional-rendering-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-conditional-rendering-/</guid>
+      <description>ReactJS | Conditional Rendering ReactJS | Conditional Rendering We have discussed how to create components, how to render components, using proptypes, using states to store information, and much more. In our previous articles, we had also developed a basic Calculator Application in ReactJS. There may arise a situation when we want to render something based on some condition. For example, consider the situation of handling a login/logout button. Both the buttons have different functions so they will be separate components.</description>
+    </item>
+    
+    <item>
+      <title>Code Splitting in React </title>
+      <link>/react/code-splitting-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/code-splitting-in-react-/</guid>
+      <description>Code Splitting in React Code Splitting in React Code-Splitting is a feature supported by bundlers like Webpack, Rollup, and Browserify which can create multiple bundles that can be dynamically loaded at runtime.As websites grow larger and go deeper into components, it becomes heavier. This is especially the case when libraries from third parties are included. Code Splitting is a method that helps to generate bundles that are able to run dynamically.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Components </title>
+      <link>/react/reactjs-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-components-/</guid>
+      <description>ReactJS Components ReactJS Components A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. Components make the task of building UIs much easier. You can see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Components -- Set 2 </title>
+      <link>/react/reactjs-components--set-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-components--set-2-/</guid>
+      <description>ReactJS | Components &amp;ndash; Set 2 ReactJS | Components &amp;ndash; Set 2 In our previous article on ReactJS | Components we had to discuss components, types of components, and how to render components. In this article, we will see some more properties of components. Composing Components: Remember in our previous article, our first example of Renewbuy&amp;rsquo;s homepage which we used to explain components? Let&amp;rsquo;s recall what we have told, &amp;ldquo;we can merge all of these individual components to make a parent component&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Pure Components </title>
+      <link>/react/reactjs-pure-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-pure-components-/</guid>
+      <description>ReactJS Pure Components ReactJS Pure Components Generally, In ReactJS, we use shouldComponentUpdate() Lifecycle method to customize the default behavior and implement it when the React component should re-render or update itself.
+Prerequisite: ReactJS Components
+ReactJS Components &amp;ndash; Set 2
+Now, ReactJS has provided us a Pure Component. If we extend a class with Pure Component, there is no need for shouldComponentUpdate() Lifecycle Method. ReactJS Pure Component Class compares current state and props with new props and states to decide whether the React component should re-render itself or Not.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Functional Components </title>
+      <link>/react/reactjs-functional-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-functional-components-/</guid>
+      <description>ReactJS Functional Components ReactJS Functional Components Functional components are some of the more common components that will come across while working in React. These are simply JavaScript functions. We can create a functional component to React by writing a JavaScript function. These functions may or may not receive data as parameters. In the functional Components, the return value is the JSX code to render to the DOM tree.Example: Program to demonstrate the creation of functional components.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Lifecycle of Components </title>
+      <link>/react/reactjs-lifecycle-of-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-lifecycle-of-components-/</guid>
+      <description>ReactJS | Lifecycle of Components ReactJS | Lifecycle of Components Prerequisite : Introduction to ReactJs We have seen so far that React web apps are actually a collection of independent components that run according to the interactions made with them. Every React Component has a lifecycle of its own, lifecycle of a component can be defined as the series of methods that are invoked in different stages of the component&amp;rsquo;s existence.</description>
+    </item>
+    
+    <item>
+      <title>Differences between Functional Components and Class Components in React </title>
+      <link>/react/differences-between-functional-components-and-class-components-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/differences-between-functional-components-and-class-components-in-react-/</guid>
+      <description>Differences between Functional Components and Class Components in React Differences between Functional Components and Class Components in React Make a counter app that will increase the number of counts as users click on the &amp;ldquo;Add&amp;rdquo; button using Functional and Class components.
+Functional Components: Functional components are some of the more common components that will come across while working in React. These are simply JavaScript functions. We can create a functional component to React by writing a JavaScript function.</description>
+    </item>
+    
+    <item>
+      <title>Presentational vs container components </title>
+      <link>/react/presentational-vs-container-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/presentational-vs-container-components-/</guid>
+      <description>Presentational vs container components Presentational vs container components In react the components are divided into two categories: presentational components and container components. Each of these have their own characteristics. Let&amp;rsquo;s look at both of these components in details. Presentational components
+Mainly concerned with how things look.
+Have no major dependencies on the rest of the app.
+No connection with the specification of the data that is outside the component.
+Mainly receives data and callbacks exclusively via props.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Methods as Props </title>
+      <link>/react/reactjs-methods-as-props-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-methods-as-props-/</guid>
+      <description>ReactJS | Methods as Props ReactJS | Methods as Props ReactJS is a front-end JavaScript library for building user interfaces written and maintained by Facebook. We know that everything in ReactJS is a component and to pass in data to these components, props are used. Although passing in props like this is great, it surely lacks flexibility in an application. For example, we cannot let the child communicate with the parent in this way.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | PropTypes </title>
+      <link>/react/reactjs-proptypes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-proptypes-/</guid>
+      <description>ReactJS | PropTypes ReactJS | PropTypes In our previous articles on Props, we had seen how to pass information to any Component using props. We had passed different types of information like integers, strings, arrays, etc. as props to the components. So, let&amp;rsquo;s recall the process of how we were passing these props to a component. We can either create defaultProps or have passed props directly as attributes to the components.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Props -- Set 1 </title>
+      <link>/react/reactjs-props--set-1-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-props--set-1-/</guid>
+      <description>ReactJS | Props &amp;ndash; Set 1 ReactJS | Props &amp;ndash; Set 1 We have already discussed Components and it&amp;rsquo;s type in our previous articles on ReactJS | Components. Till now we were working with components using static data only. In this article, we will learn about how we can pass information to a Component.React allows us to pass information to a Component using something called props (stands for properties). Props are objects which can be used inside a component.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Props -- Set 2 </title>
+      <link>/react/reactjs-props--set-2-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-props--set-2-/</guid>
+      <description>ReactJS | Props &amp;ndash; Set 2 ReactJS | Props &amp;ndash; Set 2 In our previous article ReactJS | Props &amp;ndash; Set 1 we had discussed props, passing and accessing props, passing props from one component to another, etc. In this article, we will continue our discussion on props. So, what if we want to pass some default information using props to our components. React allows us to do so. React provides us with something called defaultProps for this purpose.</description>
+    </item>
+    
+    <item>
+      <title>Unidirectional Data Flow </title>
+      <link>/react/unidirectional-data-flow-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/unidirectional-data-flow-/</guid>
+      <description>Unidirectional Data Flow Unidirectional Data Flow Unidirectional data flow is a technique that is mainly found in functional reactive programming. It is also known as one-way data flow, which means the data has one, and only one way to be transferred to other parts of the application. In essence, this means child components are not able to update the data that is coming from the parent component. In React, data coming from a parent is called props.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | State in React </title>
+      <link>/react/reactjs-state-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-state-in-react-/</guid>
+      <description>ReactJS | State in React ReactJS | State in React In the previous article on ReactJS | Components, we got to know that React Components can be broadly classified into Functional and Class Components. It is also seen that Functional Components are faster and much simpler than Class Components. The primary difference between the two is the availability of the State. What is State?
+The state is an instance of React Component Class can be defined as an object of a set of observable properties that control the behavior of the component.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | State vs props </title>
+      <link>/react/reactjs-state-vs-props-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-state-vs-props-/</guid>
+      <description>ReactJS | State vs props ReactJS | State vs props We know that in react components are the building blocks which can be reused again and again in building the UI. Before jumping into the main difference between the state and props, let&amp;rsquo;s see how a component in react is related to a normal function in javascript Example: javascript // simple component class FakeComponent extends React.component{ render(){ return &amp;lt;div&amp;gt;Hello World!&amp;lt;/div&amp;gt; } } // simple javascript function const FakeFunction = () =&amp;gt; console.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Implementing State &amp; Lifecycle </title>
+      <link>/react/reactjs-implementing-state-lifecycle-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-implementing-state-lifecycle-/</guid>
+      <description>ReactJS | Implementing State &amp;amp; Lifecycle ReactJS | Implementing State &amp;amp; Lifecycle We have seen so far what a React web-app is, the states and lifecycle of a React component. We also created a basic clock using a function to re-render the page at each second which if you think can be achieved with or without React. React doesn&amp;rsquo;t recommend using multiple renders instead it uses a stateful approach where the page is re-rendered once a state is altered.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to React Hooks </title>
+      <link>/react/introduction-to-react-hooks-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/introduction-to-react-hooks-/</guid>
+      <description>Introduction to React Hooks Introduction to React Hooks What are Hooks? Hooks are a new addition in React 16.8. They let developers use state and other React features without writing a class For example- State of a component It is important to note that hooks are not used inside the classes. Why the need for Hooks? There are multiple reasons responsible for the introduction of the Hooks which may vary depending upon the experience of developers in developing React product.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | useState Hook </title>
+      <link>/react/reactjs-usestate-hook-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-usestate-hook-/</guid>
+      <description>ReactJS | useState Hook ReactJS | useState Hook Functional components are some of the more commonly used components in ReactJS. Most developers prefer using functional components over class-based components for the simple reason that functional components require less coding (on the developer&amp;rsquo;s part). However, two main features for the class are lost when one goes with a functional component &amp;ndash; a dedicated state which persists through render calls as well as the use of lifecycle functions to control how the component looks and behaves at separate stages of its lifecycle.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | useEffect Hook </title>
+      <link>/react/reactjs-useeffect-hook-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-useeffect-hook-/</guid>
+      <description>ReactJS | useEffect Hook ReactJS | useEffect Hook The motivation behind the introduction of useEffect Hook is to eliminate the side-effects of using class-based components. For example, tasks like updating the DOM, fetching data from API end-points, setting up subscriptions or timers, etc can lead to unwarranted side-effects. Since the render method is too quick to produce a side-effect, one needs to use life cycle methods to observe the side effects.</description>
+    </item>
+    
+    <item>
+      <title>Context in React </title>
+      <link>/react/context-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/context-in-react-/</guid>
+      <description>Context in React Context in React In this article, you will be introduced to React Context, one of the latest features in React Applications.Prerequisites: ReactJS-Basics, Typescript(with Interfaces), ES6 notation
+What is React Context?React Context is a method to pass props from parent to child component(s), by storing the props in a store(similar in Redux) and using these props from the store by child component(s) without actually passing them manually at each level of the component tree.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Router </title>
+      <link>/react/reactjs-router-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-router-/</guid>
+      <description>ReactJS | Router ReactJS | Router React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.Let us create a simple application to React to understand how the React Router works. The application will contain three components: home component, about a component, and contact component.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS | Types of Routers </title>
+      <link>/react/reactjs-types-of-routers-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-types-of-routers-/</guid>
+      <description>ReactJS | Types of Routers ReactJS | Types of Routers On the basis of the part of URL that the router will use to track the content that the user is trying to view, React Router provides three different kinds of routers: Memory Router
+Browser Router
+Hash Router
+Pre-requisite: Before start this article you need to have basic knowledge of React Router.Memory Router: Memory router keeps the URL changes in memory not in the user browsers.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Fragments </title>
+      <link>/react/reactjs-fragments-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-fragments-/</guid>
+      <description>ReactJS Fragments ReactJS Fragments We know that we make use of the render method inside a component whenever we want to render something to the screen. We may render a single element or multiple elements, though rendering multiple elements will require a &amp;lsquo;div&amp;rsquo; tag around the content as the render method will only render a single root node inside it at a time. Example: Create a React app and edit the App.</description>
+    </item>
+    
+    <item>
+      <title>How to Create ToDo App using ReactJS ? </title>
+      <link>/react/how-to-create-todo-app-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-create-todo-app-using-reactjs-/</guid>
+      <description>How to Create ToDo App using ReactJS ? How to Create ToDo App using ReactJS ? React is a JavaScript library used to develop interactive user interfaces. It is managed by Facebook and a community of individual developers and companies. React mainly focuses on developing single-page web or mobile applications. here, we will create a todo app to understand the basics of reactJS.
+Modules required:
+npm
+React
+React Bootstrapnpm install react-bootstrap bootstrap</description>
+    </item>
+    
+    <item>
+      <title>Create a Quiz App using ReactJS </title>
+      <link>/react/create-a-quiz-app-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/create-a-quiz-app-using-reactjs-/</guid>
+      <description>Create a Quiz App using ReactJS Create a Quiz App using ReactJS React is a JavaScript library used to develop interactive user interfaces. It is managed by Facebook and a community of individual developers and companies. react mainly focus on developing single-page web or mobile applications. here, we will create a quiz app to understand the basics of reactjs.
+Modules required:
+npm
+React
+React Bootstrapnpm install react-bootstrap bootstrap
+npm install react-bootstrap bootstrap Basic setup:</description>
+    </item>
+    
+    <item>
+      <title>How to Create a Coin Flipping App using ReactJS? </title>
+      <link>/react/how-to-create-a-coin-flipping-app-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-create-a-coin-flipping-app-using-reactjs-/</guid>
+      <description>How to Create a Coin Flipping App using ReactJS? How to Create a Coin Flipping App using ReactJS? Basically, we want to build an app to toss or flip the coin. each time coin is flipped randomly a side of a coin is shown from head and tail and also we want to keep track of how many times coins are flipped and how many times heads and tails appear from those.</description>
+    </item>
+    
+    <item>
+      <title>How to create a Color-Box App using ReactJS? </title>
+      <link>/react/how-to-create-a-color-box-app-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-create-a-color-box-app-using-reactjs-/</guid>
+      <description>How to create a Color-Box App using ReactJS? How to create a Color-Box App using ReactJS? Basically we want to build an app that shows the number of boxes which has different colors assigned to each of them. Each time the app loads different random colors are assigned. when a user clicks any of the boxes, it changes its color to some different random color that does not equal to its previous color value.</description>
+    </item>
+    
+    <item>
+      <title>How to create a Dice Rolling App using ReactJS ? </title>
+      <link>/react/how-to-create-a-dice-rolling-app-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-create-a-dice-rolling-app-using-reactjs-/</guid>
+      <description>How to create a Dice Rolling App using ReactJS ? How to create a Dice Rolling App using ReactJS ? Suppose there are two dice and a button to roll the dices. As we click the button both dices shake and generate a new number that shows on the upper face of the dice (in dotted form as a standard dice). The numbers shown on the upper face generates randomly each time we roll the dice.</description>
+    </item>
+    
+    <item>
+      <title>Guess the number with React </title>
+      <link>/react/guess-the-number-with-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/guess-the-number-with-react-/</guid>
+      <description>Guess the number with React Guess the number with React We create two components App and Result. App components contain all the logic, it is stateful and the Result component only shows the appropriate message on the page according to the user&amp;rsquo;s guess. The App component has a controlled input field in which the user allowed to type and guess the number. There is a default prop we set to the App component &amp;lsquo;secret&amp;rsquo; that holds the required secret number and it is generated randomly.</description>
+    </item>
+    
+    <item>
+      <title>How to Deploy Your React Websites on GitHub? </title>
+      <link>/react/how-to-deploy-your-react-websites-on-github-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-deploy-your-react-websites-on-github-/</guid>
+      <description>How to Deploy Your React Websites on GitHub? How to Deploy Your React Websites on GitHub? Building a web application is always exciting for developers especially when you step into the programming world for the first time. You build the front end of your application after a lot of struggle and you want to showcase your skill, your creativity, and of course your hard work to the world. Some of the folks might be familiar with the free hosting website where they can host their application.</description>
+    </item>
+    
+    <item>
+      <title>How to Deploy React project on Firebase? </title>
+      <link>/react/how-to-deploy-react-project-on-firebase-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-deploy-react-project-on-firebase-/</guid>
+      <description>How to Deploy React project on Firebase? How to Deploy React project on Firebase? When developing any project we must host it somewhere so that the whole world can see our hard-work. Hosting websites can be hectic sometimes, but you don&amp;rsquo;t need to worry as we can now host our React project on Firebase within a minute or two with a very simple setup. Steps to Deploy React project on Firebase:</description>
+    </item>
+    
+    <item>
+      <title>How to deploy React app to Heroku? </title>
+      <link>/react/how-to-deploy-react-app-to-heroku-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-deploy-react-app-to-heroku-/</guid>
+      <description>How to deploy React app to Heroku? How to deploy React app to Heroku? React is a very popular and widely used library for building User Interfaces. So if you are thinking about deploying your React app to the cloud platform, there are various choices for doing that such as AWS EC2 or Heroku. But for testing your React app, Heroku will be the best option as it is free and very easy to get started with.</description>
+    </item>
+    
+    <item>
+      <title>How to deploy React app to Surge ? </title>
+      <link>/react/how-to-deploy-react-app-to-surge-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-deploy-react-app-to-surge-/</guid>
+      <description>How to deploy React app to Surge ? How to deploy React app to Surge ? React is a very popular and widely used library for building User Interfaces. So if you are thinking about deploying your Static React app then we can use the surge package, Publish web apps to a CDN with a single command and no setup required.
+Prerequisites: Installed Node.js and npm. Installation of Node.js on Windows</description>
+    </item>
+    
+    <item>
+      <title>How to deploy simple frontend server-less (static) React applications on Netlify </title>
+      <link>/react/how-to-deploy-simple-frontend-server-less-static-react-applications-on-netlify-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-deploy-simple-frontend-server-less-static-react-applications-on-netlify-/</guid>
+      <description>How to deploy simple frontend server-less (static) React applications on Netlify How to deploy simple frontend server-less (static) React applications on Netlify Netlify is one of the most popular hosting services that specialize in hosting server-less services for web applications and static websites. It is a web development program that quadruples productivity. By unifying the elements of the modern decoupled web, from local development to advanced edge logic, Netlify enables a faster path to much more performant, secure, and scalable websites and apps.</description>
+    </item>
+    
+    <item>
+      <title>How to connect Django with Reactjs ? </title>
+      <link>/react/how-to-connect-django-with-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-connect-django-with-reactjs-/</guid>
+      <description>How to connect Django with Reactjs ? How to connect Django with Reactjs ? React is a JavaScript library created by Facebook. It is a tool for building a UI (User Interface) component. It is widely used for making SPA(Single Page Application) and it has a large developer community.
+Django is a Python-based web framework that encourages rapid development and clean, pragmatic design. Due to its ready-made and stack full of wonderful features, from authentication to session management, all these make it ridiculously fast.</description>
+    </item>
+    
+    <item>
+      <title>7 React Best Practices Every Web Developer Should Follow </title>
+      <link>/react/7-react-best-practices-every-web-developer-should-follow-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/7-react-best-practices-every-web-developer-should-follow-/</guid>
+      <description>7 React Best Practices Every Web Developer Should Follow 7 React Best Practices Every Web Developer Should Follow React&amp;hellip;the most popular library of Javascript for building user interfaces. For developers, this library is one of the favorite libraries to build any kind of beautiful applications. Learning React might be easy for you. You start using React and you start developing an application. You create one component to build some features and then another for some other feature.</description>
+    </item>
+    
+    <item>
+      <title>8 Ways to Style React Components </title>
+      <link>/react/8-ways-to-style-react-components-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/8-ways-to-style-react-components-/</guid>
+      <description>8 Ways to Style React Components 8 Ways to Style React Components React is a JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+There are about eight different ways to styling React Js components, there names and explanations of some of them are mentioned below.</description>
+    </item>
+    
+    <item>
+      <title>How to add Stateful component without constructor class in React? </title>
+      <link>/react/how-to-add-stateful-component-without-constructor-class-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-add-stateful-component-without-constructor-class-in-react-/</guid>
+      <description>How to add Stateful component without constructor class in React? How to add Stateful component without constructor class in React? Generally, we set the initial state of the component inside the constructor class and change the state using the setState method. In React basically, we write HTML-looking code called JSX. JSX is not a valid JavaScript code but to make the developer&amp;rsquo;s life easier BABEL takes all the responsibility to convert JSX into valid JavaScript code and allow the developers to write code in HTML-looking syntax.</description>
+    </item>
+    
+    <item>
+      <title>How to display a PDF as an image in React app using URL? </title>
+      <link>/react/how-to-display-a-pdf-as-an-image-in-react-app-using-url-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-display-a-pdf-as-an-image-in-react-app-using-url-/</guid>
+      <description>How to display a PDF as an image in React app using URL? How to display a PDF as an image in React app using URL? If we use the fetch method then it will open a new window for displaying the PDF file and let users download the PDF. But if you don&amp;rsquo;t want that then there is a way to do so. You can use the package called react-pdf, by using this package you can render the PDF in your React app by using the PDF URL.</description>
+    </item>
+    
+    <item>
+      <title>ReactJS Toast Notification </title>
+      <link>/react/reactjs-toast-notification-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/reactjs-toast-notification-/</guid>
+      <description>ReactJS Toast Notification ReactJS Toast Notification Toast Notifications are popup messages that are added so as to display a message to a user. It can be a success message, warning message, or custom message. Toast Notification is also called Toastify Notifications. This all toast notification comes under-react-toastify module so to use them we need to import this module.Prerequisites: Basics of ReactJS
+NodeJS: Installation of Node.js on WindowsInstallation of Node.js on Linux</description>
+    </item>
+    
+    <item>
+      <title>What is the use of data-reactid attribute in HTML ? </title>
+      <link>/react/what-is-the-use-of-data-reactid-attribute-in-html-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/what-is-the-use-of-data-reactid-attribute-in-html-/</guid>
+      <description>What is the use of data-reactid attribute in HTML ? What is the use of data-reactid attribute in HTML ? The data-reactid attribute is a custom attribute that react can easily identify its components within the DOM. Just like the HTML &amp;ldquo;classes&amp;rdquo; and &amp;ldquo;id&amp;rdquo; attributes, &amp;ldquo;data-reactid&amp;rdquo; helps in uniquely identifying the element .
+Since sharing the entire object references in a serialized order between the server and the client is potentially expensive.</description>
+    </item>
+    
+    <item>
+      <title>How to zoom-in and zoom-out image using ReactJS? </title>
+      <link>/react/how-to-zoom-in-and-zoom-out-image-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-zoom-in-and-zoom-out-image-using-reactjs-/</guid>
+      <description>How to zoom-in and zoom-out image using ReactJS? How to zoom-in and zoom-out image using ReactJS? React is a JavaScript library for building user interfaces. React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
+In ReactJS whatever we write that looks like HTML is not pure HTML actually.</description>
+    </item>
+    
+    <item>
+      <title>How to avoid binding by using arrow functions in callbacks in ReactJS? </title>
+      <link>/react/how-to-avoid-binding-by-using-arrow-functions-in-callbacks-in-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-avoid-binding-by-using-arrow-functions-in-callbacks-in-reactjs-/</guid>
+      <description>How to avoid binding by using arrow functions in callbacks in ReactJS? How to avoid binding by using arrow functions in callbacks in ReactJS? In React class-based components when we use event handler callbacks, it is very important to give special attention to the &amp;rsquo;this&amp;rsquo; keyword. In these cases the context this is undefined when the callback function actually gets invoked that&amp;rsquo;s why we have to bind the context of this.</description>
+    </item>
+    
+    <item>
+      <title>How to bind &#39;this&#39; keyword to resolve classical error message &#39;state of undefined&#39; in React? </title>
+      <link>/react/how-to-bind-this-keyword-to-resolve-classical-error-message-state-of-undefined-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-bind-this-keyword-to-resolve-classical-error-message-state-of-undefined-in-react-/</guid>
+      <description>How to bind &amp;rsquo;this&amp;rsquo; keyword to resolve classical error message &amp;lsquo;state of undefined&amp;rsquo; in React? How to bind &amp;rsquo;this&amp;rsquo; keyword to resolve classical error message &amp;lsquo;state of undefined&amp;rsquo; in React? The &amp;rsquo;this&amp;rsquo; keyword in JavaScript is always being somewhat tough to understand for learners. Basically this keyword inside a function is determined by looking at how the method is actually invoked. Usually in JavaScript, we invoked the method using syntax obj.</description>
+    </item>
+    
+    <item>
+      <title>How to get the height and width of an Image using ReactJS? </title>
+      <link>/react/how-to-get-the-height-and-width-of-an-image-using-reactjs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-get-the-height-and-width-of-an-image-using-reactjs-/</guid>
+      <description>How to get the height and width of an Image using ReactJS? How to get the height and width of an Image using ReactJS? In reacting whatever we write that looks like HTML is not pure HTML actually. All the HTML looking stuff are JSX, Behind the scene, they are converted to vanilla JavaScript using babel. These all work in this way to make the developers&amp;rsquo; life easier. Since JSX are not HTML that&amp;rsquo;s why we do have any direct reference to the HTML elements and that&amp;rsquo;s why we can&amp;rsquo;t direct fetch properties of any HTML element.</description>
+    </item>
+    
+    <item>
+      <title>How to handle multiple input field in react form with a single function? </title>
+      <link>/react/how-to-handle-multiple-input-field-in-react-form-with-a-single-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-handle-multiple-input-field-in-react-form-with-a-single-function-/</guid>
+      <description>How to handle multiple input field in react form with a single function? How to handle multiple input field in react form with a single function? There are two types of form, one is uncontrolled form and another one is controlled form. In uncontrolled form values of the input field stored in DOM and whenever we want to use the values we have to reach the DOM and pull out the values of each input field.</description>
+    </item>
+    
+    <item>
+      <title>How to handle states of mutable data types? </title>
+      <link>/react/how-to-handle-states-of-mutable-data-types-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-handle-states-of-mutable-data-types-/</guid>
+      <description>How to handle states of mutable data types? How to handle states of mutable data types? Mutable parameters are those whose value can be modified within a function to which they are passed as a parameter. It means that when a parameter is passed to the function using the caller function, then its value is bound to the parameter in the called function, which means any changes done to the value in that function will also be reflected in the parameter of the caller function.</description>
+    </item>
+    
+    <item>
+      <title>How to change state continuously after a certain amount of time in React? </title>
+      <link>/react/how-to-change-state-continuously-after-a-certain-amount-of-time-in-react-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-change-state-continuously-after-a-certain-amount-of-time-in-react-/</guid>
+      <description>How to change state continuously after a certain amount of time in React? How to change state continuously after a certain amount of time in React? To change a state continuously after a certain amount of time is required in a few cases for the toggling. First, make a function that is responsible for changing the state of the component. Then call the function from the constructor method for the first time.</description>
+    </item>
+    
+    <item>
+      <title>How to change the state of react component on click? </title>
+      <link>/react/how-to-change-the-state-of-react-component-on-click-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/react/how-to-change-the-state-of-react-component-on-click-/</guid>
+      <description>How to change the state of react component on click? How to change the state of react component on click? To change the state of the React component is useful when you are working on a single page application, it simply replaces the content of the existing component for the user without reloading the webpage. We have to set initial state value inside constructor function and set click event handler of the element upon which click, results in changing state.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

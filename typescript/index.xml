@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Typescript on SATHEE</title>
+    <link>/typescript/</link>
+    <description>Recent content in Typescript on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/typescript/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>TypeScript </title>
+      <link>/typescript/typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-/</guid>
+      <description>TypeScript TypeScript is a strict superset of JavaScript, which means anything that is implemented in JavaScript can be implemented using TypeScript along with the choice of adding enhanced features. It is an Open Source Object Oriented programming language and strongly typed language. As TS code is converted to JS code it makes it easier to integrate into JavaScript projects.
+For a large-scale project adopting It might result in more robust software, while still being deployable where a regular JavaScript application would run.</description>
+    </item>
+    
+    <item>
+      <title>Introduction to TypeScript </title>
+      <link>/typescript/introduction-to-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/introduction-to-typescript-/</guid>
+      <description>Introduction to TypeScript TypeScript is an Open Source Object Oriented programming language developed and maintained by Microsoft Corporation. TypeScript is a strongly typed language and its first version was introduced in 2012. It is a Strict Super Set of JavaScript, which means anything that is implemented in JavaScript can be implemented using TypeScript along with the choice of adding enhanced features (every existing JavaScript Code is a valid TypeScript Code). As TypeScript code is converted to JavaScript code it makes it easier to integrate into JavaScript projects.</description>
+    </item>
+    
+    <item>
+      <title>Difference between TypeScript and JavaScript </title>
+      <link>/typescript/difference-between-typescript-and-javascript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/difference-between-typescript-and-javascript-/</guid>
+      <description>Difference between TypeScript and JavaScript Prerequisites: JavaScript, TypeScript
+Why TypeScript is developed while having JavaScript?
+When JavaScript was developed, the JavaScript development team introduced JavaScript as a client-side programming language. But as people were using JavaScript, developers also realized that JavaScript could be used as a server-side programming language. However, as JavaScript was growing, JavaScript code became complex and heavy. Because of this, JavaScript wasn&amp;rsquo;t even able to fulfill the requirement of an Object-Oriented Programming language.</description>
+    </item>
+    
+    <item>
+      <title>How to install TypeScript ? </title>
+      <link>/typescript/how-to-install-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-install-typescript-/</guid>
+      <description>How to install TypeScript ? Typescript validates your JavaScript ahead of time with static type checking. The code is interpreted by a browser, but if your code is broken you won&amp;rsquo;t catch it until runtime when the browser rows an error. The language is a strict superset of JavaScript, which means when you open up a ts file you can write plain JavaScript with all of its extra features being completely optional.</description>
+    </item>
+    
+    <item>
+      <title>Hello World in TypeScript </title>
+      <link>/typescript/hello-world-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/hello-world-in-typescript-/</guid>
+      <description>Hello World in TypeScript TypeScript is an open-source programming language. It is developed and maintained by Microsoft. TypeScript follows javascript syntactically but adds more features to it. It is a superset of javascript. The diagram below depicts the relationship: Typescript is purely object-oriented with features like classes, objects and interfaces just like Java. Previously for javascript variables and objects, we need not mention their data types, which makes overall logic difficult to understand because we didn&amp;rsquo;t know what type of data are we dealing with.</description>
+    </item>
+    
+    <item>
+      <title>How to execute TypeScript file using command line? </title>
+      <link>/typescript/how-to-execute-typescript-file-using-command-line-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-execute-typescript-file-using-command-line-/</guid>
+      <description>How to execute TypeScript file using command line? TypeScript is an open-source programming language. It is developed and maintained by Microsoft. TypeScript follows JavaScript syntactically but adds more features to it. It is a superset of JavaScript. In order to execute or run any typescript file, first you need to install node and using it install typescript globally in your local system.
+To check node is installed, run command if not you have to installed it first:node -v</description>
+    </item>
+    
+    <item>
+      <title>Variables in TypeScript </title>
+      <link>/typescript/variables-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/variables-in-typescript-/</guid>
+      <description>Variables in TypeScript Variable: Variable is a named place in memory where some data/value can be stored. According to the word variable, it can be said that the value of a variable can be changed/vary. While declaring a variable, some rules have to be followed:
+Variable names can contains alphabets both Upper-case as well as Lower-case and digits also.
+Variable name cant start with digit.
+We can use _ and $ special character only, apart from these other special characters are not allowed.</description>
+    </item>
+    
+    <item>
+      <title>What are the different keywords to declare variables in TypeScript ? </title>
+      <link>/typescript/what-are-the-different-keywords-to-declare-variables-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-are-the-different-keywords-to-declare-variables-in-typescript-/</guid>
+      <description>What are the different keywords to declare variables in TypeScript ? Typescript variable declarations are similar to Javascript. Each keyword has a specific scope. Let&amp;rsquo;s learn about variable declarations in this article. In Typescript variables can be declared by using the following keywords:
+var
+let const
+Var keyword: Declaring a variable using the var keyword.
+var variable : number = 1; The var variables have function scope. It indicates they&amp;rsquo;re only available within the function they were formed in, or they&amp;rsquo;re globally scoped if they weren&amp;rsquo;t generated within a function.</description>
+    </item>
+    
+    <item>
+      <title>Identifiers and Keywords in TypeScript </title>
+      <link>/typescript/identifiers-and-keywords-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/identifiers-and-keywords-in-typescript-/</guid>
+      <description>Identifiers and Keywords in TypeScript Identifiers: Identifiers are nothing but the names which is given to the members of any class like a variable, method name, class name, array name etc. Certain rules to be followed while declaring Identifiers:
+Identifier name can start with both upper-case as well as lower case letter but can&amp;rsquo;t start with numbers.
+Only _ and $ symbols can be used for giving name to Identifiers, apart from these symbols, no other special symbol can be used.</description>
+    </item>
+    
+    <item>
+      <title>Data types in TypeScript </title>
+      <link>/typescript/data-types-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/data-types-in-typescript-/</guid>
+      <description>Data types in TypeScript Whenever a variable is created, the intention is to assign some value to that variable but what type of value can be assigned to that variable is dependent upon the datatype of that Variable. In typeScript, type System represents different types of datatypes which are supported by TypeScript. The data type classification is as given below:
+Built-in Datatypes: TypeScript has some pre-defined data-types-
+Examples:
+let a: null = null;</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Numbers </title>
+      <link>/typescript/typescript-numbers-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-numbers-/</guid>
+      <description>TypeScript Numbers TypeScript is like JavaScript which supports numerical values as Number objects. The numbers in typescript are used as both integers as well as floating-point values. The number class acts as wrapper and manipulates the numeric literals as they were objects.
+Syntax:
+var var_name = new Number(value) Property:
+MAX_VALUE: It has the largest possible value 1.7976931348623157E+308 in JavaScript.
+MIN_VALUE: It has the smallest possible value 5E-324 in JavaScript.
+NaN: This property has Equal to a value that is not a number.</description>
+    </item>
+    
+    <item>
+      <title>Explain the concept of null and its uses in TypeScript </title>
+      <link>/typescript/explain-the-concept-of-null-and-its-uses-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/explain-the-concept-of-null-and-its-uses-in-typescript-/</guid>
+      <description>Explain the concept of null and its uses in TypeScript Null refers to a value that is either empty or a value that doesn&amp;rsquo;t exist. It&amp;rsquo;s on purpose that there&amp;rsquo;s no value here. TypeScript does not make a variable null by default. By default unassigned variables or variables which are declared without being initialized are &amp;lsquo;undefined&amp;rsquo;. To make a variable null, we must assign Null to it. Typescript uses null to represent variables that have an absence of values or no value assigned to them in short.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript class </title>
+      <link>/typescript/typescript-class-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-class-/</guid>
+      <description>TypeScript class In terms of OOPs(Object Oriented Programming), a class is a blueprint which is used for creating objects. A class is a collection of objects having common properties.It contains methods,constructors,blocks,nested classes,interfaces etc. Objects are basically the entities that have some properties like an object in the real world(chair, table etc). Typescript is an open source programming language which is built over Javascript, also known as Superset of Javascript. Typescript has more features as when compared to the Javascript.</description>
+    </item>
+    
+    <item>
+      <title>How enums works in TypeScript ? </title>
+      <link>/typescript/how-enums-works-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-enums-works-in-typescript-/</guid>
+      <description>How enums works in TypeScript ? In this article, we will try to understand all the facts which are associated with enums in TypeScript.
+TypeScript enum: TypeScript enums allow us to define or declare a set of named constants i.e. a collection of related values which could either be in the form of a string or number or any other data type.
+Syntax: Following is the syntax that we could use to initialize an enum in TypeScript-</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Tuples </title>
+      <link>/typescript/typescript-tuples-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-tuples-/</guid>
+      <description>TypeScript Tuples As we know array consists of values of homogeneous (same) types but sometimes when we need to store a collection of a different types values in a single variable, then we will go with Tuples. They are just like structure in C programming and can also be passed as parameters in a function call. Tuples may be one or more than one types of data (like number with string or string with number and so on).</description>
+    </item>
+    
+    <item>
+      <title>What is any type, and when to use it in TypeScript ? </title>
+      <link>/typescript/what-is-any-type-and-when-to-use-it-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-is-any-type-and-when-to-use-it-in-typescript-/</guid>
+      <description>What is any type, and when to use it in TypeScript ? Any is a data type in TypeScript. Any type is used when we deal with third-party programs and expect any variable but we don&amp;rsquo;t know the exact type of variable. Any data type is used because it helps in opt-in and opt-out of type checking during compilation. In this article, we will see what is any Type and when to use it in TypeScript.</description>
+    </item>
+    
+    <item>
+      <title>What is an unknown type and when to use it in TypeScript ? </title>
+      <link>/typescript/what-is-an-unknown-type-and-when-to-use-it-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-is-an-unknown-type-and-when-to-use-it-in-typescript-/</guid>
+      <description>What is an unknown type and when to use it in TypeScript ? In Typescript, any value can be assigned to unknown, but without a type assertion, unknown can&amp;rsquo;t be assigned to anything but itself and any. Similarly, no operations on an unknown are allowed without first asserting or restricting it down to a more precise type. similar to any, we can assign any value to the unknown, just like any other; even so, unlike any, we can&amp;rsquo;t access any properties on unknown values, nor can we call or construct them.</description>
+    </item>
+    
+    <item>
+      <title>Explain the purpose of never type in TypeScript </title>
+      <link>/typescript/explain-the-purpose-of-never-type-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/explain-the-purpose-of-never-type-in-typescript-/</guid>
+      <description>Explain the purpose of never type in TypeScript In Typescript when we are certain that a particular situation will never happen, we use the never type. For example, suppose you construct a function that never returns or always throws an exception then we can use the never type on that function. Never is a new type in TypeScript that denotes values that will never be encountered.
+Example 1: The null can be assigned to void but null cannot be assigned to never type variables, nor can any other type be assigned including any.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Union </title>
+      <link>/typescript/typescript-union-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-union-/</guid>
+      <description>TypeScript Union The TypeScript union has the ability to combine one or two different types of data (i.e., number, string, float, double, etc). It is the most powerful way to express a variable with multiple types. Use pipe (&amp;rsquo;|&amp;rsquo;) symbol to combine two or more data types to achieve Union type.
+Syntax:
+(type1|type2|type3|...|type-n) Example:
+let value: number | string; value = 190; console.log(&amp;quot;Numeric value of the value: &amp;quot; + value); value = &amp;quot;Welcome to TypeScript!</description>
+    </item>
+    
+    <item>
+      <title>Explain Type assertions in TypeScript </title>
+      <link>/typescript/explain-type-assertions-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/explain-type-assertions-in-typescript-/</guid>
+      <description>Explain Type assertions in TypeScript In Typescript, Type assertion is a technique that informs the compiler about the type of a variable. Type assertion is similar to typecasting but it doesn&amp;rsquo;t reconstruct code. You can use type assertion to specify a value&amp;rsquo;s type and tell the compiler not to deduce it. When we want to change a variable from one type to another such as any to number etc, we use Type assertion.</description>
+    </item>
+    
+    <item>
+      <title>How to write a function in Typescript ? </title>
+      <link>/typescript/how-to-write-a-function-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-write-a-function-in-typescript-/</guid>
+      <description>How to write a function in Typescript ? Writing a function in TypeScript is similar to writing them in JavaScript but with added parameters and return type. Note that any JavaScript function is a perfectly valid TypeScript function. However, we can do better by adding type.
+Syntax: Let&amp;rsquo;s see a basic TypeScript function syntax (with two arguments)
+function functionName(arg1: , arg2: ): { // Function body... } Below are some functions to help better understand.</description>
+    </item>
+    
+    <item>
+      <title>How to achieve function overloading in TypeScript ? </title>
+      <link>/typescript/how-to-achieve-function-overloading-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-achieve-function-overloading-in-typescript-/</guid>
+      <description>How to achieve function overloading in TypeScript ? In this article, we will try to understand some basic details which are associated with the concept of function/method overloading, further will see how we could implement function overloading in TypeScript.
+Let us first understand some basic facts involved in function/method Overloading.
+Function/Method Overloading:
+Method overloading is the process in which one method could be used multiple times with same name and different parameter types or return types.</description>
+    </item>
+    
+    <item>
+      <title>Explain the arrow function syntax in TypeScript </title>
+      <link>/typescript/explain-the-arrow-function-syntax-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/explain-the-arrow-function-syntax-in-typescript-/</guid>
+      <description>Explain the arrow function syntax in TypeScript In this article we will try to understand how use the basic arrow function syntax in TypeScript. Arrow functions are basically the shorter way provided to all the users in order to implement the long/traditional function syntax in a much more shorter manner with ease.
+Arrow functions as implemented in JavaScript (ES6), will be implemented in a similar manner in TypeScript also; the only addition in the original syntax as provided by ES6 here in TypeScript is the addition of data types or return types along with the function syntax and also along with the arguments passed inside that function.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | toPrecision() Function </title>
+      <link>/typescript/typescript-toprecision-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-toprecision-function-/</guid>
+      <description>TypeScript | toPrecision() Function The toPrecision() method in TypeScript is used to return the string representation in exponential or fixed-point to the specified precision.
+Syntax:
+number.toPrecision( [ precision ] ) Parameter: It represents an integer value specifying the number of significant digits.
+Return Value: The toPrecision() method in TypeScript returns a string representing a Number in fixed-point or exponential notation round to precision significant digits.
+Below examples illustrate the working of toPrecision() function in TypeScript:</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | toFixed() Function </title>
+      <link>/typescript/typescript-tofixed-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-tofixed-function-/</guid>
+      <description>TypeScript | toFixed() Function The toFixed() function in TypeScript is used to format a number using fixed-point notation. It can be used to format a number with a specific number of digits to the right of the decimal.
+Syntax: number.toFixed( [digits] ); Parameters: This function accepts a parameter value- digits&amp;ndash; The number of digits to appear after the decimal point.
+Return Value: The toFixed() method in TypeScript returns a string representation of number that does not use exponential notation and has the exact number of digits after the decimal place.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | toLocaleString() Function </title>
+      <link>/typescript/typescript-tolocalestring-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-tolocalestring-function-/</guid>
+      <description>TypeScript | toLocaleString() Function The toLocaleString() method in TypeScript is to convert the number into a local specific representation of the number using the locale of the environment.
+Syntax:
+number.toLocaleString() Return Value: The toLocaleString() method in TypeScript returns a human readable string representing the number using the locale of the environment.
+Below examples illustrate the working of toLocaleString() function in TypeScript:
+Example 1:
+&amp;lt;script&amp;gt; // toLocaleString() method var num = new Number(432.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | toString() Function </title>
+      <link>/typescript/typescript-tostring-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-tostring-function-/</guid>
+      <description>TypeScript | toString() Function The toString() method in TypeScript is used to returns a string representing the specified object radix (base).
+Syntax:
+number.toString( [radix] ) Parameter: This function accept asingle parameter as mentioned above and described below:
+radix: This parameter represents an integer between 2 and 36 specifying the base to use for representing numeric values.
+Return Value: Returns a string representing the specified Number object.
+Below examples illustrates the toString() function in TypeScript</description>
+    </item>
+    
+    <item>
+      <title>What is interfaces and explain it in reference of Typescript ? </title>
+      <link>/typescript/what-is-interfaces-and-explain-it-in-reference-of-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-is-interfaces-and-explain-it-in-reference-of-typescript-/</guid>
+      <description>What is interfaces and explain it in reference of Typescript ? TypeScript is an open-source programming language. It is a superset of JavaScript language. Type-Script is designed for the development of large applications. It is developed and maintained by Microsoft. TypeScript follows JavaScript syntactically but adds more features to it. It is a superset of JavaScript.
+Interface: In general Interface is the structure or skeleton for object. Interface is programming syntax which enforce the syntax on the class.</description>
+    </item>
+    
+    <item>
+      <title>What are type aliases and how to create it in Typescript ? </title>
+      <link>/typescript/what-are-type-aliases-and-how-to-create-it-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-are-type-aliases-and-how-to-create-it-in-typescript-/</guid>
+      <description>What are type aliases and how to create it in Typescript ? In Typescript, Type aliases give a type a new name. They are similar to interfaces in that they can be used to name primitives and any other kinds that you&amp;rsquo;d have to define by hand otherwise. Aliasing doesn&amp;rsquo;t truly create a new type; instead, it gives that type a new name. Aliasing a primitive isn&amp;rsquo;t very practical as it&amp;rsquo;s easy using primitive types, however, it can be used for documentation purposes.</description>
+    </item>
+    
+    <item>
+      <title>How to Extend an Interface from a class in TypeScript ? </title>
+      <link>/typescript/how-to-extend-an-interface-from-a-class-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-extend-an-interface-from-a-class-in-typescript-/</guid>
+      <description>How to Extend an Interface from a class in TypeScript ? In this article, we will try to understand how we to extend an interface from a class in TypeScript with the help of certain coding examples. Let us first quickly understand how we can create a class as well as an interface in TypeScript using the following mentioned syntaxes:
+Syntax: This is the syntax for creating a class. We may use the below syntax for creating a class in TypeScript:</description>
+    </item>
+    
+    <item>
+      <title>How to create an object in Typescript ? </title>
+      <link>/typescript/how-to-create-an-object-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-create-an-object-in-typescript-/</guid>
+      <description>How to create an object in Typescript ? Typescript is an Object-Oriented Programming Language Created by Microsoft Corporation which is mainly designed for larger-scale projects, Typescript is Javascript code with Strictly Typed Language. We can say anything that is implemented with Javascript runs in TypeScript Syntax with some extra added features like Static Type Checking, Modularity, Class-Based Objects, Modularity, ES6 Features, Also a Syntax that is similar to High-Level Languages like Java.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Inheritance </title>
+      <link>/typescript/typescript-inheritance-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-inheritance-/</guid>
+      <description>TypeScript Inheritance Inheritance is one of the core concepts of object-oriented programming (OOPs). It is the mechanism in which one class derives the properties of another class. The class which inherits properties and methods is called the child class and the class whose properties and methods are inherited are called the parent class. Inheritance allows a class to reuse the functionality of an existing class without rewriting it.
+Inheritance in TypeScript</description>
+    </item>
+    
+    <item>
+      <title>When to use interfaces and when to use classes in TypeScript ? </title>
+      <link>/typescript/when-to-use-interfaces-and-when-to-use-classes-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/when-to-use-interfaces-and-when-to-use-classes-in-typescript-/</guid>
+      <description>When to use interfaces and when to use classes in TypeScript ? TypeScript supports object-oriented programming features like classes and interfaces etc. classes are the skeletons for the object. it encapsulates the data which is used in objects. Interfaces are just like types for classes in TypeScript. It is used for type checking. It only contains the declaration of members of the object. It helps in deriving the classes. When To Use Interface In TypeScript:</description>
+    </item>
+    
+    <item>
+      <title>Generics Interface in typescript </title>
+      <link>/typescript/generics-interface-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/generics-interface-in-typescript-/</guid>
+      <description>Generics Interface in typescript &amp;ldquo;A major part of software engineering is building components that not only have well-defined and consistent APIs but are also reusable. &amp;quot; This sentence is in the official documentation we would start with. There are languages that are strong in static typing &amp;amp; others that are weak in dynamic typing. At this point, Typescript has shown to have well-defined APIs with those languages that are weak in dynamic typing.</description>
+    </item>
+    
+    <item>
+      <title>How to use property decorators in TypeScript ? </title>
+      <link>/typescript/how-to-use-property-decorators-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-use-property-decorators-in-typescript-/</guid>
+      <description>How to use property decorators in TypeScript ? Decorators are a way of wrapping an existing piece of code with desired values and functionality to create a new modified version of it. Currently, it is supported only for a class and its components as mentioned below:
+Class itself
+Class Method
+Class Property
+Object Accessor ( Getter And Setter ) Of Class
+Parameter Of Class Method
+Note: Currently, decorators are in a stage 2 proposal for JavaScript and are available as an experimental feature of TypeScript.</description>
+    </item>
+    
+    <item>
+      <title>What are the Modules in Typescript ? </title>
+      <link>/typescript/what-are-the-modules-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/what-are-the-modules-in-typescript-/</guid>
+      <description>What are the Modules in Typescript ? In this article, we talk about what types of modules are introduced by TypeScript. Before we discuss the types of modules we will see what the module concept is. Let&amp;rsquo;s see.
+When ES6 introduced the concept of the module, JavaScript started supporting the module concepts as a part of the JavaScript library. When TypeScript comes into the picture it also shares the module with JavaScript.</description>
+    </item>
+    
+    <item>
+      <title>How to import a module in Typescript ? </title>
+      <link>/typescript/how-to-import-a-module-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-import-a-module-in-typescript-/</guid>
+      <description>How to import a module in Typescript ? Before starting with importing modules, first of all, we need to know the basics of modules in TypeScript.
+We know that JavaScript has come with the concept of modules from the ES6 version in 2015 and by 2020 had broad support in most web browsers and JavaScript runtimes. TypeScript also shares the same concept of a module. Any file which contains a top-level import or export is considered a module.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Arrays </title>
+      <link>/typescript/typescript-arrays-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-arrays-/</guid>
+      <description>TypeScript Arrays An array is a user-defined data type. An array is a homogeneous collection of similar types of elements that have a contiguous memory location and which can store multiple values of different data types.An array is a type of data structure that stores the elements of similar data type and consider it as an object too. We can store only a fixed set of elements and can&amp;rsquo;t expand its size, once its size is declared.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array push() Method </title>
+      <link>/typescript/typescript-array-push-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-push-method-/</guid>
+      <description>TypeScript | Array push() Method The Array.push() is an inbuilt TypeScript function which is used to append the given element(s) in the last of the array and returns the length of the new array. Syntax:
+array.push(element1, ..., elementN) Parameter: This method accept a single parameter as mentioned above and described below:
+element1, &amp;hellip;, elementN : This parameter is the elements to add to the end of the array.
+Return Value: This method returns the length of the new array.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array slice() Method </title>
+      <link>/typescript/typescript-array-slice-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-slice-method-/</guid>
+      <description>TypeScript Array slice() Method The Array.slice() is an inbuilt TypeScript function which is used to extract a section of an array and returns a new array.Syntax:
+array.slice( begin [,end] ); Parameter: This method accepts two parameter as mentioned above and described below:
+begin : This parameter is the Zero-based index at which to begin extraction.
+end : This parameter is the Zero-based index at which to end extraction.
+Return Value: This method returns the extracted array .</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array splice() Method </title>
+      <link>/typescript/typescript-array-splice-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-splice-method-/</guid>
+      <description>TypeScript Array splice() Method The Array.splice() is an inbuilt TypeScript function which is used to change the content of an array, adding new elements while removing old elements.Syntax: array.splice(index, howMany, [element1][, ..., elementN]); Parameter: This method accept three parameter as mentioned above and described below: index : This parameter is the index at which to start changing the array.
+howMany : This parameter is the integer indicating the number of old array elements to remove.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array reverse() Method </title>
+      <link>/typescript/typescript-array-reverse-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-reverse-method-/</guid>
+      <description>TypeScript Array reverse() Method The Array.reverse() is an inbuilt TypeScript function which is used to reverses the element of an array. Syntax:
+array.reverse(); Parameter: This methods does not accept any parameter. Return Value: This method returns the reversed single value of the array. Below examples illustrate the Array reverse() Method in TypeScript.
+Example 1: TypeScript // Driver code var arr = [ 11, 89, 23, 7, 98 ]; // use of reverse() method var val = arr.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array reduce() Method </title>
+      <link>/typescript/typescript-array-reduce-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-reduce-method-/</guid>
+      <description>TypeScript Array reduce() Method The Array.reduce() is an inbuilt TypeScript function which is used to apply a function against two values of the array as to reduce it to a single value. Syntax:
+array.reduce(callback[, initialValue]) Parameter: This method accept two parameter as mentioned and described below: callback : This parameter is the Function to execute on each value in the array.
+initialValue : This parameter is the Object to use as the first argument to the first call of the callback.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array concat() Method </title>
+      <link>/typescript/typescript-array-concat-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-concat-method-/</guid>
+      <description>TypeScript Array concat() Method The Array.concat() is an inbuilt TypeScript function which is used to merge two or more arrays together. Syntax:
+array.concat(value1, value2, ..., valueN) Parameter: This method accepts a single parameter multiple time as mentioned above and described below: valueN : These parameters are arrays and/or values to concatenate.
+Return Value: This method returns the new array. Below examples illustrate the Array concat() method in TypeScriptExample 1: JavaScript &amp;lt;script&amp;gt; // Driver code var num1 = [11, 12, 13]; var num2 = [14, 15, 16]; var num3 = [17, 18, 19]; // use of String concat() Method console.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array some() Method </title>
+      <link>/typescript/typescript-array-some-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-some-method-/</guid>
+      <description>TypeScript Array some() Method The Array.some() is an inbuilt TypeScript function which is used to check for some element in the array passes the test implemented by the provided function.Syntax:
+array.some(callback[, thisObject]) Parameter: This method accept two parameter as mentioned above and described below:
+callback : This parameter is the Function to test for each element.
+thisObject : This parameter is the Object to use as this when executing callback.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array shift() Method </title>
+      <link>/typescript/typescript-array-shift-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-shift-method-/</guid>
+      <description>TypeScript | Array shift() Method The Array.shift() is an inbuilt TypeScript function which is used to remove the first element from an array and returns that element. Syntax:
+array.shift(); Parameter: This methods does not accept any parameter. Return Value: This method returns the removed single value of the array. Below example illustrate the Array shift() method in TypeScriptJS:
+Example 1: JavaScript &amp;lt;script&amp;gt; // Driver code var arr = [ 11, 89, 23, 7, 98 ]; // use of shift() method var val = arr.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array map() Method </title>
+      <link>/typescript/typescript-array-map-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-map-method-/</guid>
+      <description>TypeScript | Array map() Method The Array.map() is an inbuilt TypeScript function that is used to create a new array with the results of calling a provided function on every element in this array.
+Syntax: array.map(callback[, thisObject]) Parameter: This method accepts two parameters as mentioned above and described below: callback : This parameter is the function that produces an element of the new Array from an element of the current one.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array indexOf() Method </title>
+      <link>/typescript/typescript-array-indexof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-indexof-method-/</guid>
+      <description>TypeScript | Array indexOf() Method The Array.indexOf() is an inbuilt TypeScript function which is used to find the index of the first occurrence of the search element provided as the argument to the function. Syntax:
+array.indexOf(searchElement[, fromIndex]) Parameter: This method accepts two parameter as mentioned above and described below: searchElement : This parameter is the Element to locate in the array.
+fromIndex : This parameter is the index at which to begin the search.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array filter() Method </title>
+      <link>/typescript/typescript-array-filter-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-filter-method-/</guid>
+      <description>TypeScript | Array filter() Method The Array.filter() is an inbuilt TypeScript function which is used to creates a new array with all elements that pass the test implemented by the provided function. Syntax:
+array.filter(callback[, thisObject]) Parameter: This methods accepts two parameter as mentioned and described below:
+callback : This parameter is the Function to test for each element.
+thisObject : This parameter is the Object to use as this when executing callback.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array reduceRight() Method </title>
+      <link>/typescript/typescript-array-reduceright-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-reduceright-method-/</guid>
+      <description>TypeScript | Array reduceRight() Method The Array.reduceRight() is an inbuilt TypeScript function which is used to apply a function against two values of the array as to reduce it to a single value in a right to left manner. Syntax:
+array.reduceRight(callback[, initialValue]) Parameter: This method accept two parameter as mentioned above and described below:
+callback : This parameter is the Function to execute on each value in the array.
+initialValue : This parameter is the Object to use as the first argument to the first call of the callback.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array join() Method </title>
+      <link>/typescript/typescript-array-join-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-join-method-/</guid>
+      <description>TypeScript | Array join() Method The Array.join() is an inbuilt TypeScript function which is used to joins all the elements of an array into a string. Syntax:
+array.join(separator) Parameter: This method accept a single parameter as mentioned above and described below:
+separator : This parameter is the a string to separate each element of the array.
+Return Value: This method returns the string after joining all the array elements. Below examples illustrate the Array join() method in TypeScript.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array sort() Method </title>
+      <link>/typescript/typescript-array-sort-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-sort-method-/</guid>
+      <description>TypeScript | Array sort() Method The Array.sort() is an inbuilt TypeScript function which is used to sort the elements of an array. Syntax:
+array.sort( compareFunction ) Parameter: This method accept a single parameter as mentioned above and described below: compareFunction : This parameter is the function that defines the sort order
+Return Value: This method returns the sorted array. Below example illustrate the Array sort() method in TypeScriptJS:Example 1: JavaScript &amp;lt;script&amp;gt; // Driver code var arr = [ 11, 89, 23, 7, 98 ]; // use of sort() method var val = arr.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array lastIndexOf() Method </title>
+      <link>/typescript/typescript-array-lastindexof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-lastindexof-method-/</guid>
+      <description>TypeScript | Array lastIndexOf() Method The Array.lastIndexOf() is an inbuilt TypeScript function which is used to get the last index at which a given element can be found in the array. Syntax:
+array.lastIndexOf(searchElement[, fromIndex]) Parameter: This method accepts two parameter as mentioned above and described below: searchElement : This parameter is the element to locate in the array.
+fromIndex : This parameter is the index at which to start searching backwards.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array pop() Method </title>
+      <link>/typescript/typescript-array-pop-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-pop-method-/</guid>
+      <description>TypeScript | Array pop() Method The Array.pop() is an inbuilt TypeScript function which is used to removes the last element from an array and returns that element. Syntax:
+array.pop(); Parameter: This methods does not accept any parameter. Return Value: This method returns the removed element from the array. Below examples illustrate Array pop() method in TypeScript.
+Example 1: JavaScript &amp;lt;script&amp;gt; // Driver code var arr = [ 11, 89, 23, 7, 98 ]; // use of pop() method var val = arr.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array unshift() Method </title>
+      <link>/typescript/typescript-array-unshift-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-unshift-method-/</guid>
+      <description>TypeScript | Array unshift() Method The Array.unshift() is an inbuilt TypeScript function that is used to add one or more elements to the beginning of an array and returns the new length of the array. Syntax:
+array.unshift( element1, ..., elementN ) Parameter: This method accepts n number of similar elements.
+element1, &amp;hellip;, elementN : This parameter is the elements to add to the front of the array.
+Return Value: This method returns the length of the new array.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | Array forEach() Method </title>
+      <link>/typescript/typescript-array-foreach-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-foreach-method-/</guid>
+      <description>TypeScript | Array forEach() Method The Array.forEach() is an inbuilt TypeScript function which is used to calls a function for each element in the array. Syntax: array.forEach(callback[, thisObject]) Parameter: This method accepts two parameter as mentioned above and described below: callback : This parameter is the Function to test for each element.
+thisObject : This parameter is the Object to use as this when executing callback.
+Return Value: This method returns created array.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript Array toString() Method </title>
+      <link>/typescript/typescript-array-tostring-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-array-tostring-method-/</guid>
+      <description>TypeScript Array toString() Method The Array.toString() is an inbuilt TypeScript function that is used to get a string representing the source code of the specified array and its elements. Syntax:
+array.toString() Parameter: This method does not accept any parameter. Return Value: This method returns the string representing the array. Below example illustrate the String toString() method in TypeScriptJS:
+Example 1: JavaScript &amp;lt;script&amp;gt; // Driver code var arr = [ 11, 89, 23, 7, 98 ]; // use of toString() method var string= arr.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript String </title>
+      <link>/typescript/typescript-string-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-/</guid>
+      <description>TypeScript String In TypeScript, the string is sequence of char values and also considered as an object. It is a type of primitive data type that is used to store text data. The string values are used between single quotation marks or double quotation marks, and also array of characters works same as a string. TypeScript string work with the series of character.
+Syntax
+var var_name = new String(string); Property:</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String Constructor Property </title>
+      <link>/typescript/typescript-string-constructor-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-constructor-property-/</guid>
+      <description>TypeScript | String Constructor Property The Constructor Property() in TypeScript which is used to returns a reference to the String function that created the object. Syntax:
+string.constructor Return Value: This method returns the reference to the String function that created the object. Below example illustrate the String Constructor Property in TypeScript
+Example 1: JavaScript &amp;lt;script&amp;gt; // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of Constructor Property var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript String toLowerCase() Method </title>
+      <link>/typescript/typescript-string-tolowercase-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-tolowercase-method-/</guid>
+      <description>TypeScript String toLowerCase() Method The toLowerCase() is an inbuilt function in TypeScript which is used to convert the characters within a string to lowercase.
+Syntax:
+string.toLowerCase( ) Parameter: This methods does not accepts any parameter. Return Value: This method returns the string in lowercase. Below examples illustrate the String toLowerCase() Method in TypeScript.
+Example : TypeScript // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of String toLowerCase() Method var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript String toString() Method </title>
+      <link>/typescript/typescript-string-tostring-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-tostring-method-/</guid>
+      <description>TypeScript String toString() Method The toString() is an inbuilt function in TypeScript which is used to return a string representing the specified object.
+Syntax: string.toString( ) Parameter: This methods does not accept any parameter. Return Value: This method returns the string representing the specified object. Below examples illustrate the String toString() method in TypeScript
+Example 1: JavaScript &amp;lt;script&amp;gt; // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of String toString() Method var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String toLocaleUpperCase() Method </title>
+      <link>/typescript/typescript-string-tolocaleuppercase-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-tolocaleuppercase-method-/</guid>
+      <description>TypeScript | String toLocaleUpperCase() Method The toLocaleLowerCase() is an inbuilt function in TypeScript which is used to convert the characters within a string to uppercase while respecting the current locale.
+Syntax: string.toLocaleUpperCase( ) Parameter: This methods does not accept any parameter. Return Value: This method returns the string in uppercase with the current locale. Below examples illustrate the String toLocaleUpperCase() method in TypeScriptExample 1: JavaScript &amp;lt;script&amp;gt; // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of String toLocaleUpperCase() Method var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String substring() Method </title>
+      <link>/typescript/typescript-string-substring-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-substring-method-/</guid>
+      <description>TypeScript | String substring() Method The substring() is an inbuilt function in TypeScript which is used to return the subset of a String object.
+Syntax: string.substring(indexA, [indexB]) Parameter: This method accepts two parameter as mentioned above and described below: indexA : This parameter is the integer between 0 and one less than the length of the string.
+indexB : This parameter is the integer between 0 and length of the string.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String substr() Method </title>
+      <link>/typescript/typescript-string-substr-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-substr-method-/</guid>
+      <description>TypeScript | String substr() Method The split() is an inbuilt function in TypeScript which is used to returns the characters in a string beginning at the specified location through the specified number of characters.
+Syntax: string.substr(start[, length]) Parameter: This method accepts two parameter as mentioned above and described below.: start &amp;ndash; This parameter is the location at which to start extracting characters.
+length &amp;ndash; This parameter is the number of characters to extract.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String split() Method </title>
+      <link>/typescript/typescript-string-split-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-split-method-/</guid>
+      <description>TypeScript | String split() Method The split() is an inbuilt function in TypeScript which is used to splits a String object into an array of strings by separating the string into sub-strings.
+Syntax:
+string.split([separator][, limit]) Parameter: This method accepts two parameter as mentioned above and described below: separator &amp;ndash; This parameter is the character to use for separating the string.
+limit &amp;ndash; This parameter is the Integer specifying a limit on the number of splits to be found.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String valueOf() Method </title>
+      <link>/typescript/typescript-string-valueof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-valueof-method-/</guid>
+      <description>TypeScript | String valueOf() Method The valueOf() is an inbuilt function in TypeScript that is used to return the primitive value of a String object.
+Syntax: string.valueOf( ) Parameter: This method does not accept any parameter. Return Value: This method returns the primitive value of a String object. Below examples illustrate the String valueOf() method in TypeScript
+Example 1: JavaScript //language is TypeScript // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of String valueOf() Method var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String replace() Method </title>
+      <link>/typescript/typescript-string-replace-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-replace-method-/</guid>
+      <description>TypeScript | String replace() Method The replace() is an inbuilt function in TypeScript which is used to find a match between a regular expression and a string, and replaces the matched substring with a new substring. Syntax:
+string.replace(regexp/substr, newSubStr/function[, flags]); Parameter: This method accept five parameter as mentioned above and described below: regexp: This parameter is a RegExp object.
+substr: This parameter is a String that is to be replaced.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String toLocaleLowerCase() Method </title>
+      <link>/typescript/typescript-string-tolocalelowercase-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-tolocalelowercase-method-/</guid>
+      <description>TypeScript | String toLocaleLowerCase() Method The toLocaleLowerCase() is an inbuilt function in TypeScript which is used to convert the characters within a string to lowercase while respecting the current locale.
+Syntax: string.toLocaleLowerCase( ) Parameter: This methods does not accepts any parameter. Return Value: This method returns the string in lowercase with the current locale. Below examples illustrate the String toLocaleLowerCase() method in TypeScriptExample 1: JavaScript &amp;lt;script&amp;gt; // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of String toLocaleLowerCase() Method var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String lastIndexOf() Method </title>
+      <link>/typescript/typescript-string-lastindexof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-lastindexof-method-/</guid>
+      <description>TypeScript | String lastIndexOf() Method The lastIndexOf() is an inbuilt function in TypeScript which is used to get the index within the calling String object of the last occurrence of the specified value. Syntax:
+string.lastIndexOf(searchValue[, fromIndex]) Parameter: This method accepts two parameter as mentioned above and described below:
+searchValue: This parameter is a string representing the value to search for.
+fromIndex: This parameter is a location within the calling string to start the search from.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String slice() Method with example </title>
+      <link>/typescript/typescript-string-slice-method-with-example-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-slice-method-with-example-/</guid>
+      <description>TypeScript | String slice() Method with example The slice() is an inbuilt function in TypeScript which is used to extracts a section of a string and returns a new string. Syntax: string.slice( beginslice [, endSlice] ) Parameter: This method accept two parameter as mentioned above and described below: beginSlice &amp;ndash; This parameter is the zero-based index at which to begin extraction.
+endSlice &amp;ndash; This parameter is the zero-based index at which to end extraction.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String concat() Method </title>
+      <link>/typescript/typescript-string-concat-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-concat-method-/</guid>
+      <description>TypeScript | String concat() Method The concat() is an inbuilt function in TypeScript which is used to add two or more strings and returns a new single string. Syntax:
+string.concat(string2, string3[, ..., stringN]); Parameter: This method accept a single parameter as mentioned above and described below.
+string2&amp;hellip;stringN: This parameter holds the strings which will be concatenate.
+Return Value: This method returns the concatenated string.
+Below example illustrate the String concat() method in TypeScriptJS:</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String indexOf() Method </title>
+      <link>/typescript/typescript-string-indexof-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-indexof-method-/</guid>
+      <description>TypeScript | String indexOf() Method The indexOf() is an inbuilt function in TypeScript which is used to get the index within the calling String object of the first occurrence of the specified value. Syntax:
+string.indexOf(searchValue[, fromIndex]) Parameter: This method accepts two parameter as mentioned above and described below . searchValue: This parameter is a string representing the value to search for.
+fromIndex: This parameter is a location within the calling string to start the search from.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String Length Property </title>
+      <link>/typescript/typescript-string-length-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-length-property-/</guid>
+      <description>TypeScript | String Length Property The Length Property() in TypeScript which is used to get the length of the string Syntax:
+string.length Return Value: This method returns the length to the String function that created the object. Below examples illustrate the String Length Property in TypeScript
+Example 1: JavaScript &amp;lt;script&amp;gt; // Original strings var str = &amp;quot;Renewbuy - Best Platform&amp;quot;; // use of length Property var newstr = str.length console.log(&amp;quot;Return Value of Length property:&amp;quot;, newstr); &amp;lt;/script&amp;gt; Output: Return Value of Length property: 29 Example 2: JavaScript &amp;lt;script&amp;gt; // Original strings var str = new String(&amp;quot;TypeScript - String length Property&amp;quot;); // use of length Property var newstr = str.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String search() Method </title>
+      <link>/typescript/typescript-string-search-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-search-method-/</guid>
+      <description>TypeScript | String search() Method The search() is an inbuilt function in TypeScript that is used to search for a match between a regular expression and this String object. Syntax:
+string.search(regexp); Parameter: This methods accept a single parameter as mentioned above and described below: regexp: This parameter is a RegExp object.
+Return Value: This method returns the index of the regular expression inside the string. Otherwise, it returns -1. Below example illustrate the String search() method in TypeScriptJS:</description>
+    </item>
+    
+    <item>
+      <title>TypeScript String Prototype Property </title>
+      <link>/typescript/typescript-string-prototype-property-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-prototype-property-/</guid>
+      <description>TypeScript String Prototype Property The Prototype Property in TypeScript which is used to add properties and methods to an object. Syntax:
+string.prototype Return Value: This method does not returns any value. Below examples illustrate the String Prototype property in TypeScriptExample 1: JavaScript function Person(name:string, job:string, yearOfBirth:number) { this.name= name; this.job= job; this.yearOfBirth= yearOfBirth; } // Driver code var emp = new Person(&amp;quot;Smith&amp;quot;, &amp;quot;ABC&amp;quot;,12214) // This will show Person&#39;s prototype property. console.</description>
+    </item>
+    
+    <item>
+      <title>TypeScript | String charCodeAt() Method </title>
+      <link>/typescript/typescript-string-charcodeat-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/typescript-string-charcodeat-method-/</guid>
+      <description>TypeScript | String charCodeAt() Method The charCodeAt() is an inbuilt function in TypeScript which is used to return the number indicating the Unicode value of the character at the specified index. Syntax:
+string.charCodeAt(index); Parameter: This method accept a single parameter as mentioned above and described below.
+index This parameter is an integer between 0 and 1 less than the length of the string.
+Return Value: This method returns number indicating the Unicode value of the character at the given index.</description>
+    </item>
+    
+    <item>
+      <title>How to use getters and setters in TypeScript? </title>
+      <link>/typescript/how-to-use-getters-and-setters-in-typescript-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/typescript/how-to-use-getters-and-setters-in-typescript-/</guid>
+      <description>How to use getters and setters in TypeScript? In TypeScript, there are two supported methods getter and setter to access and set the class members. In this very short article, I&amp;rsquo;m going to show you Typescript Accessor which includes getters/setters method.
+Actually, getters and setters are nothing but a way for you to provide access to the properties of an object. Unlike other OOP&amp;rsquo;s languages like Java, C++, etc. where you can only access variables via the getter or setter method, but things work differently in Typescript where you can access variables directly (Given in the below example).</description>
+    </item>
+    
+    
+  </channel>
+</rss>

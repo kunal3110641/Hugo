@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mongodb on SATHEE</title>
+    <link>/mongodb/</link>
+    <description>Recent content in mongodb on SATHEE</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/mongodb/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>MongoDB Tutorial </title>
+      <link>/mongodb/mongodb-tutorial-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-tutorial-/</guid>
+      <description>MongoDB Tutorial MongoDB is an open-source, document-oriented, and one of the most popular NoSQL database. NoSQL simply means a non-relational database i.e. there is no table-like relational database structure instead there is a totally different mechanism for storing and retrieving data. This format of storage is called BSON and is very much similar to JSON. This tutorial aims at providing in-depth information about MongoDB with the help of a huge dataset containing basic commands like insert, update, delete to advance features like authentication, backup, and storage, connecting Django project with MongoDB, etc.</description>
+    </item>
+    
+    <item>
+      <title>How do Document Databases Work? </title>
+      <link>/mongodb/how-do-document-databases-work-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-do-document-databases-work-/</guid>
+      <description>How do Document Databases Work? A document database has information retrieved or stored in the form of a document or other words semi-structured database. Since they are non-relational, so they are often referred to as NoSQL data. The document database fetches and accumulates data in forms of key-value pairs but here, the values are called as Documents. A document can be stated as a complex data structure. Document here can be a form of text, arrays, strings, JSON, XML, or any such format.</description>
+    </item>
+    
+    <item>
+      <title>How MongoDB works ? </title>
+      <link>/mongodb/how-mongodb-works-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-mongodb-works-/</guid>
+      <description>How MongoDB works ? MongoDB is an open-source document-oriented database. It is used to store a larger amount of data and also allows you to work with that data. MongoDB is not based on the table-like relational database structure but provides an altogether different mechanism for storage and retrieval of data, that&amp;rsquo;s why known as NoSQL database. Here, the term &amp;lsquo;NoSQL&amp;rsquo; means &amp;rsquo;non-relational&amp;rsquo;. The format of storage is called BSON ( similar to JSON format).</description>
+    </item>
+    
+    <item>
+      <title>MongoDB: An introduction </title>
+      <link>/mongodb/mongodb-an-introduction-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-an-introduction-/</guid>
+      <description>MongoDB: An introduction MongoDB, the most popular NoSQL database, is an open-source document-oriented database. The term &amp;lsquo;NoSQL&amp;rsquo; means &amp;rsquo;non-relational&amp;rsquo;. It means that MongoDB isn&amp;rsquo;t based on the table-like relational database structure but provides an altogether different mechanism for storage and retrieval of data. This format of storage is called BSON ( similar to JSON format). A simple MongoDB document Structure: { title: &#39;Renewbuy&#39;, by: &#39;Harshit Gupta&#39;, url: &#39;https://www.Renewbuy.org&#39;, type: &#39;NoSQL&#39; } SQL databases store data in tabular format.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB: Getting Started </title>
+      <link>/mongodb/mongodb-getting-started-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-getting-started-/</guid>
+      <description>MongoDB: Getting Started Introduction to MongoDB Terminologies: A MongoDB Database can be called as the container for all the collections. Collection is a bunch of MongoDB documents. It is similar to tables in RDBMS.
+Document is made of fields. It is similar to a tuple in RDBMS, but it has dynamic schema here. Documents of the same collection need not have the same set of fields
+Getting Started After you install MongoDB, you can see all the installed file inside C:\ProgramFiles\MongoDB\ (default location).</description>
+    </item>
+    
+    <item>
+      <title>What is MongoDB -- Working and Features </title>
+      <link>/mongodb/what-is-mongodb--working-and-features-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/what-is-mongodb--working-and-features-/</guid>
+      <description>What is MongoDB &amp;ndash; Working and Features MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL (Not only SQL) database because the storage and retrieval of data in the MongoDB are not in the form of tables. The MongoDB database is developed and managed by MongoDB.Inc under SSPL(Server Side Public License) and initially released in February 2009.</description>
+    </item>
+    
+    <item>
+      <title>Difference between RDBMS and MongoDB </title>
+      <link>/mongodb/difference-between-rdbms-and-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/difference-between-rdbms-and-mongodb-/</guid>
+      <description>Difference between RDBMS and MongoDB MongoDB is an open-source document-oriented database used for high volume data storage. It falls under the classification of a NoSQL database. NoSQL tool means that it doesn&amp;rsquo;t utilize the usual rows and columns. MongoDB uses BSON (document storage format) which is a binary style of JSON documents. Features of MongoDB:
+Multiple Servers: It can run over multiple servers.
+Schema-less Database: It is a schema-less database.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB vs MySQL </title>
+      <link>/mongodb/mongodb-vs-mysql-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-vs-mysql-/</guid>
+      <description>MongoDB vs MySQL Differences between MongoDB and MySQL on various parameters are discussed below:
+What are MongoDB and MySQL?
+How Data is Stored?
+HIERARCHICAL UPPER OF A RECORD
+SQL or NoSQL
+Example: In a table, if there are columns for name, address and there is need to enter &amp;lsquo;age&amp;rsquo; in new column in one of the entries, it will not take it as the column is not defined in schema.This can be achieved in MongoDB, any new field can be inserted irrespective of the schema and is thus known to have dynamic schema.</description>
+    </item>
+    
+    <item>
+      <title>How to Install and Configure MongoDB in Ubuntu? </title>
+      <link>/mongodb/how-to-install-and-configure-mongodb-in-ubuntu-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-to-install-and-configure-mongodb-in-ubuntu-/</guid>
+      <description>How to Install and Configure MongoDB in Ubuntu? MongoDB is an open-source document oriented NoSQL database which is written in C++. MongoDB is schema-less database system and hence its very easy to add new fields in it. It is a distributed system hence data recovery is instant and more reliable.
+Features of MongoDB Document Oriented
+No complex joins needed
+Indexed Database
+Scalability
+Automatic Partitioning of Big Data
+Installation of MongoDB MongoDB can be installed on Ubuntu with the use of the following commands.</description>
+    </item>
+    
+    <item>
+      <title>How to install MongoDB on MacOS ? </title>
+      <link>/mongodb/how-to-install-mongodb-on-macos-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-to-install-mongodb-on-macos-/</guid>
+      <description>How to install MongoDB on MacOS ? MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL(Not only SQL) database because the storage and retrieval of data in the MongoDB are not in the form of tables. This is the general introduction of MongoDB now we learn how to install MongoDB on your macOS ?</description>
+    </item>
+    
+    <item>
+      <title>How to Install MongoDB on Windows? </title>
+      <link>/mongodb/how-to-install-mongodb-on-windows-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-to-install-mongodb-on-windows-/</guid>
+      <description>How to Install MongoDB on Windows? MongoDB is an open-source document-oriented database that is designed to store a large scale of data and also allows you to work with that data very efficiently. It is categorized under the NoSQL(Not only SQL) database because the storage and retrieval of data in MongoDB are not in the form of tables. This is the general introduction of MongoDB now we learn how to install MongoDB on your Windows?</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Database, Collection, and Document </title>
+      <link>/mongodb/mongodb--database-collection-and-document-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--database-collection-and-document-/</guid>
+      <description>MongoDB &amp;ndash; Database, Collection, and Document Databases, collections, documents are important parts of MongoDB without them you are not able to store data on the MongoDB server. A Database contains a collection, and a collection contains documents and the documents contain data, they are related to each other. Database In MongoDB, a database contains the collections of documents. One can create multiple databases on the MongoDB server. View Database: To see how many databases are present in your MongoDB server, write the following statement in the mongo shell: show dbs For Example: Here, we freshly started MongoDB so we do not have a database except these three default databases, i.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Cursor </title>
+      <link>/mongodb/mongodb-cursor-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-cursor-/</guid>
+      <description>MongoDB Cursor In MongoDB, when the find() method is used to find the documents present in the given collection, then this method returned a pointer which will points to the documents of the collection, now this pointer is known as cursor. Or in other words we can say that a cursor is a pointer, and using this pointer we can access the document. By default, cursor iterate automatically, but you can iterate a cursor manually which we will discuss later.</description>
+    </item>
+    
+    <item>
+      <title>DataTypes in MongoDB </title>
+      <link>/mongodb/datatypes-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/datatypes-in-mongodb-/</guid>
+      <description>DataTypes in MongoDB In MongoDB, the documents are stores in BSON, which is the binary encoded format of JSON and using BSON we can make remote procedure calls in MongoDB. BSON data format supports various data-types. Below are the enlisted MongoDB data types:
+1. String: This is the most commonly used data type in MongoDB to store data, BSON strings are of UTF-8. So, the drivers for each programming language convert from the string format of the language to UTF-8 while serializing and de-serializing BSON.</description>
+    </item>
+    
+    <item>
+      <title>What is ObjectId in MongoDB </title>
+      <link>/mongodb/what-is-objectid-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/what-is-objectid-in-mongodb-/</guid>
+      <description>What is ObjectId in MongoDB Every document in the collection has an &amp;ldquo;_id&amp;rdquo; field that is used to uniquely identify the document in a particular collection it acts as the primary key for the documents in the collection. &amp;ldquo;_id&amp;rdquo; field can be used in any format and the default format is ObjectId of the document.
+An ObjectID is a 12-byte Field Of BSON type
+The first 4 bytes representing the Unix Timestamp of the document</description>
+    </item>
+    
+    <item>
+      <title>What is a MongoDB Query? </title>
+      <link>/mongodb/what-is-a-mongodb-query-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/what-is-a-mongodb-query-/</guid>
+      <description>What is a MongoDB Query? MongoDB, the most popular open-source document-oriented database is a NoSQL type of database. NoSQL database stands for Non-Structured Query Database. MongoDB stores the data in the form of the structure(field:value pair) rather than tabular form. It stores data in BSON (Binary JSON) format just like JSON format. A simple example of a MongoDB database collection.
+{
+&amp;ldquo;_id&amp;rdquo; : ObjectId(&amp;ldquo;6009585d35cce6b7b8f087f1&amp;rdquo;),
+&amp;ldquo;title&amp;rdquo; : &amp;ldquo;Math&amp;rdquo;,
+&amp;ldquo;author&amp;rdquo; : &amp;ldquo;Aditya&amp;rdquo;,</description>
+    </item>
+    
+    <item>
+      <title>MongoDB | Create Database using MongoShell </title>
+      <link>/mongodb/mongodb-create-database-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-create-database-using-mongoshell-/</guid>
+      <description>MongoDB | Create Database using MongoShell A MongoDB Database is the container for all the collections, where Collection is a bunch of MongoDB documents similar to tables in RDBMS and Document is made up of the fields similar to a tuple in RDBMS, but it has a dynamic schema here.
+Example of a Document:
+{ &amp;quot;Name&amp;quot; : &amp;quot;Aman&amp;quot;, Age : 24, Gender : &amp;quot;Male&amp;quot; } Above document contains the information of a person in JSON format.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB | Delete Database using MongoShell </title>
+      <link>/mongodb/mongodb-delete-database-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-delete-database-using-mongoshell-/</guid>
+      <description>MongoDB | Delete Database using MongoShell Prerequisite : MongoDB Introduction
+Short Description : A MongoDB Database is a container for all the collections, where Collection is a bunch of MongoDB documents similar to tables in RDBMS and Document is made of fields similar to a tuple in RDBMS, but it has a dynamic schema here.Example of a Document :
+{ &amp;quot;Name&amp;quot; : &amp;quot;Aman&amp;quot;, Age : 24, Gender : &amp;quot;Male&amp;quot; } Example of a Collection :</description>
+    </item>
+    
+    <item>
+      <title>MongoDB CRUD operations </title>
+      <link>/mongodb/mongodb-crud-operations-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-crud-operations-/</guid>
+      <description>MongoDB CRUD operations As we know that we can use MongoDB for various things like building an application (including web and mobile), or analysis of data, or an administrator of a MongoDB database, in all these cases we need to interact with the MongoDB server to perform certain operations like entering new data into the application, updating data into the application, deleting data from the application, and reading the data of the application.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Insert() Method -- db.Collection.insert() </title>
+      <link>/mongodb/mongodb-insert-method--db.collection.insert-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-insert-method--db.collection.insert-/</guid>
+      <description>MongoDB Insert() Method &amp;ndash; db.Collection.insert() In MongoDB, the insert() method inserts a document or documents into the collection. It takes two parameters, the first parameter is the document or array of the document that we want to insert and the remaining are optional.
+Using this method you can also create a collection by inserting documents.
+You can insert documents with or without _id field. If you insert a document in the collection without _id field, then MongoDB will automatically add an _id field and assign it with a unique ObjectId.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB insertOne() Method -- db.Collection.insertOne() </title>
+      <link>/mongodb/mongodb-insertone-method--db.collection.insertone-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-insertone-method--db.collection.insertone-/</guid>
+      <description>MongoDB insertOne() Method &amp;ndash; db.Collection.insertOne() In MongoDB, insertOne() method inserts a document into the collection. This method inserts only one document at a time. Using this method you can also create a collection by inserting documents.
+You can insert documents with or without _id field. If you insert a document in the collection without _id field, then MongoDB will automatically add an _id field and assign it with a unique ObjectId.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB insertMany() Method -- db.Collection.insertMany() </title>
+      <link>/mongodb/mongodb-insertmany-method--db.collection.insertmany-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-insertmany-method--db.collection.insertmany-/</guid>
+      <description>MongoDB insertMany() Method &amp;ndash; db.Collection.insertMany() The insertMany() method inserts one or more documents in the collection. It takes array of documents to insert in the collection. By default, documents are inserted in the given order if you want to insert documents in unordered, then set the value of ordered to false.
+Using this method you can also create a collection by inserting documents.
+You can insert documents with or without _id field.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Bulk.insert() Method </title>
+      <link>/mongodb/mongodb--bulk.insert-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--bulk.insert-method-/</guid>
+      <description>MongoDB &amp;ndash; Bulk.insert() Method In MongoDB, the Bulk.insert() method is used to perform insert operations in bulk. Or in other words, the Bulk.insert() method is used to insert multiple documents in one go. To use Bulk.insert() method the collection in which data has to be inserted must already exist. Syntax:
+Bulk.insert();
+Parameter:
+document: The document that has to be inserted.
+Examples:
+In the following examples, we are working with:
+Database: myDatabase</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.bulkWrite() Method </title>
+      <link>/mongodb/mongodb--db.collection.bulkwrite-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.bulkwrite-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.bulkWrite() Method MongoDB is a versatile documentum based NoSQL database and has the ability to perform DB write operations efficiently by means of its bulkWrite() method. That means multiple documents can be inserted/updated/deleted in one shot.
+This method can be used in multi-document transactions.
+If this method encounters an error in the transaction, then it will throw a BulkWriteException.
+By default, this method executes operations in order.
+Syntax :</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Update() Method </title>
+      <link>/mongodb/mongodb--update-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--update-method-/</guid>
+      <description>MongoDB &amp;ndash; Update() Method The update() method updates the values in the existing document in the collections of MongoDB. When you update your document the value of the _id field remains unchanged. By default, the db.collection.update() method updates a single document. Include the option multi: true to update all documents that match the given query. This method can be used for a single updating of documents as well as multi documents.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB updateOne() Method -- db.Collection.updateOne() </title>
+      <link>/mongodb/mongodb-updateone-method--db.collection.updateone-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-updateone-method--db.collection.updateone-/</guid>
+      <description>MongoDB updateOne() Method &amp;ndash; db.Collection.updateOne() In MongoDB, updateOne() method updates a first matched document within the collection based on the given query. When you update your document the value of the _id field remains unchanged. This method updates one document at a time and can also add new fields in the given document. It takes three parameters, the first one is the selection criteria to update the document, the second one is the new data to be updated, and the remaining are optional.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB updateMany() Method -- db.Collection.updateMany() </title>
+      <link>/mongodb/mongodb-updatemany-method--db.collection.updatemany-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-updatemany-method--db.collection.updatemany-/</guid>
+      <description>MongoDB updateMany() Method &amp;ndash; db.Collection.updateMany() The updateMany() method updates all the documents in MongoDB collections that match the given query. When you update your document, the value of the _id field remains unchanged. This method can also add new fields in the document. Specify an empty document({}) in the selection criteria to update all collection documents.
+This method can accept documents that only holds update operator expressions.
+This method can also accept aggregation pipeline.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.Find() Method </title>
+      <link>/mongodb/mongodb--db.collection.find-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.find-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.Find() Method In MongoDB, find() method is used to select documents in a collection and return a cursor to the selected documents. Cursor means a pointer that points to a document, when we use find() method it returns a pointer on the selected documents and returns one by one. If we want to return pointer on all documents then use empty() parameter that returns all documents one by one.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- FindAndModify() Method </title>
+      <link>/mongodb/mongodb--findandmodify-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--findandmodify-method-/</guid>
+      <description>MongoDB &amp;ndash; FindAndModify() Method The findAndModify() method modifies and return a single document that matches the given criteria. By default, this method returns a pre-modification document. To return the document with the modifications made on the update, use the new option and set its value to true. It takes a document as a parameter.
+If you want to find fields of the embedded document, then use the following syntax:
+&amp;ldquo;field.nestedfieldname&amp;rdquo;:</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- FindOne() Method </title>
+      <link>/mongodb/mongodb--findone-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--findone-method-/</guid>
+      <description>MongoDB &amp;ndash; FindOne() Method The findOne() method finds and returns one document that matches the given selection criteria. If multiple documents satisfy the given query expression, then this method will return the first document according to the natural order which reflects the order of documents on the disk. If no document matches the selection criteria, then this method will return null. It takes two parameters first one is the query criteria and the other is optional.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- findOneAndDelete() Method </title>
+      <link>/mongodb/mongodb--findoneanddelete-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--findoneanddelete-method-/</guid>
+      <description>MongoDB &amp;ndash; findOneAndDelete() Method The findOneAndDelete() method deletes a single document based on the selection criteria from the collection. It deletes the first document from the collection that matches the given filter query expression. It takes five parameters the first parameter is the selection criteria and the others are optional. Syntax:
+db.Collection_name.findOneAndDelete(
+Selection_criteria,
+{
+projection: ,
+sort: ,
+maxTimeMS: ,
+collation:
+})
+Parameters:
+The first parameter is a selection criteria. The type of this parameter is a document.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.findOneAndReplace() Method </title>
+      <link>/mongodb/mongodb--db.collection.findoneandreplace-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.findoneandreplace-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.findOneAndReplace() Method The findOneAndReplace() method replaces the first matched document based on the given selection criteria. By default, this method returns the original document. To return the replacement document, set the value of the returnNewDocument option to true. It takes eight parameters, the first parameter is selection criteria and the second parameter is the replacement document. And the others are optional. Using this method you can also replace embedded documents.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.findOneAndUpdate() Method </title>
+      <link>/mongodb/mongodb--db.collection.findoneandupdate-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.findoneandupdate-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.findOneAndUpdate() Method The findOneAndUpdate() method updates the first matched document in the collection that matches the selection criteria. If more than one document matched the selection criteria then it updates only the first matched document. When we update the document, the value of the _id field remains unchanged. This method will return the original document but if we want to return the updated document then we have to set the value of the returnNewDocument parameter to true.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- sort() Method </title>
+      <link>/mongodb/mongodb--sort-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--sort-method-/</guid>
+      <description>MongoDB &amp;ndash; sort() Method The sort() method specifies the order in which the query returns the matching documents from the given collection. You must apply this method to the cursor before retrieving any documents from the database. It takes a document as a parameter that contains a field: value pair that defines the sort order of the result set. The value is 1 or -1 specify an ascending or descending sort respectively.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- copyTo() Method </title>
+      <link>/mongodb/mongodb--copyto-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--copyto-method-/</guid>
+      <description>MongoDB &amp;ndash; copyTo() Method In MongoDB, copyTo() method is used to copies all the documents from one collection(Source collection) to another collection(Target collection) using server-side JavaScript and if that other collection(Target collection) is not present then MongoDB creates a new collection with that name. This method uses eval command internally. Important Note: As CopyTo() uses eval() internally &amp;amp; eval() is deprecated since version 3.0, so CopyTo() is also deprecated since version 3.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB count() Method -- db.Collection.count() </title>
+      <link>/mongodb/mongodb-count-method--db.collection.count-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-count-method--db.collection.count-/</guid>
+      <description>MongoDB count() Method &amp;ndash; db.Collection.count() The count() method counts the number of documents that match the selection criteria. It returns the number of documents that match the selection criteria. It takes two arguments first one is the selection criteria and the other is optional. This method is equivalent to db.collection.find().count(). You cannot use this method in transactions.
+One a shared cluster, if you use this method without a query predicate, then it will return an inaccurate count if orphaned documents exist or if a chunk migration is in progress.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- countDocuments() Method </title>
+      <link>/mongodb/mongodb--countdocuments-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--countdocuments-method-/</guid>
+      <description>MongoDB &amp;ndash; countDocuments() Method In MongoDB, the countDocuments() method counts the number of documents that matches to the selection criteria. It returns a numeric value that represents the total number of documents that match the selection criteria. It takes two arguments first one is the selection criteria and other is optional. This method does not use metadata to return the count. It performs aggregation of the documents and returns a precise count.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Drop Collection </title>
+      <link>/mongodb/mongodb--drop-collection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--drop-collection-/</guid>
+      <description>MongoDB &amp;ndash; Drop Collection The drop() method removes collections from the database. It also removes all indexes associated with the dropped collection. The drop method accepts an optional document. It returns true if the collection dropped successfully. It takes one parameter which is optional.
+This method creates an invalidate Event for any change streams opened for dropped collection.
+This method obtains an exclusive lock on the given collection for the duration of the operation.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Remove() Method -- db.Collection.remove() </title>
+      <link>/mongodb/mongodb-remove-method--db.collection.remove-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-remove-method--db.collection.remove-/</guid>
+      <description>MongoDB Remove() Method &amp;ndash; db.Collection.remove() The remove() method removes documents from the database. It can remove one or all documents from the collection that matches the given query expression. If you pass an empty document({}) in this method, then it will remove all documents from the specified collection. It takes four parameters and returns an object that contains the status of the operation.
+This method uses the default write concern because it uses the delete command and the delete command uses the default write concern.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.deleteone() </title>
+      <link>/mongodb/mongodb--db.collection.deleteone-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.deleteone-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.deleteone() The deleteOne() method deletes the first document from the collection that matches the given selection criteria. It will delete/remove a single document from the collection. It takes four parameters, the first parameter is the selection criteria and the others are optional. If you use this method in the capped collection, then this method will give a WriteError exception, so to delete documents from the capped collection use drop() method.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Distinct() Method </title>
+      <link>/mongodb/mongodb--distinct-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--distinct-method-/</guid>
+      <description>MongoDB &amp;ndash; Distinct() Method In MongoDB, the distinct() method finds the distinct values for a given field across a single collection and returns the results in an array. It takes three parameters first one is the field for which to return distinct values and the others are optional.
+If you are using this method in the sharded cluster, then this method may return orphaned documents.
+In this method, if the value of the given field is an array, then this method will be considered each array value as a separate value.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- limit() Method </title>
+      <link>/mongodb/mongodb--limit-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--limit-method-/</guid>
+      <description>MongoDB &amp;ndash; limit() Method In MongoDB, the limit() method limits the number of records or documents that you want. It basically defines the max limit of records/documents that you want. Or in other words, this method uses on cursor to specify the maximum number of documents/ records the cursor will return. We can use this method after the find() method and find() will give you all the records or documents in the collection.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- skip() Method </title>
+      <link>/mongodb/mongodb--skip-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--skip-method-/</guid>
+      <description>MongoDB &amp;ndash; skip() Method In MongoDB, the skip() method will skip the first n document from the query result, you just need to pass the number of records/documents to be skipped. It basically removes the first n documents from the result set. For example, if your result has 5 records in it and you want to remove the first two records from it then you can use skip(2) at the end of the query.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB | ObjectID() Function </title>
+      <link>/mongodb/mongodb-objectid-function-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-objectid-function-/</guid>
+      <description>MongoDB | ObjectID() Function ObjectID() Function: MongoDB uses ObjectID to create unique identifiers for all the documents in the database. It is different than the traditional autoincrementing integer ID, but it comes with its own set of advantages.
+An ObjectID is a GUID (Globally Unique Identifier). GUIDs are generated randomly via an algorithm to ensure uniqueness. These IDs can be generated on the server, but as seen in the snippet above, they can be generated on the client as well.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.CreateIndex() Method </title>
+      <link>/mongodb/mongodb--db.collection.createindex-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.createindex-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.CreateIndex() Method In MongoDB, indexes are special data structures that store some information related to the documents such that it becomes easy for MongoDB to find the right data file. The indexes are ordered by the value of the field specified in the index. So, MongoDB provides a createIndex() method to create one or more indexes on collections. Using this method we can create different types of indexes like text index, 2dsphere index, 2d index, etc.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- db.collection.createIndexes() Method </title>
+      <link>/mongodb/mongodb--db.collection.createindexes-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--db.collection.createindexes-method-/</guid>
+      <description>MongoDB &amp;ndash; db.collection.createIndexes() Method The createIndexes() method creates one or more indexes on the specified collection. It is used to create one or more indexes based on the field of the document. Using this method we can create different types of indexes like text index, 2dsphere index, 2d index, etc. It takes three parameters first one is a document that contains the field and value pairs where the field is the index key, and the value describes the type of index for that field, and others are optional.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- getIndexes() Method </title>
+      <link>/mongodb/mongodb--getindexes-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--getindexes-method-/</guid>
+      <description>MongoDB &amp;ndash; getIndexes() Method In MongoDB, the getIndexes() method returns an array that contains a list of documents that identify and describe the existing indexes on the specified collection. It also includes hidden indexes as well. This method does not take any parameters.
+The index information return by this method contains the keys and the options used to create an index.
+In this method, the hidden index available starting from MongoDB 4.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- dropIndex() Method </title>
+      <link>/mongodb/mongodb--dropindex-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--dropindex-method-/</guid>
+      <description>MongoDB &amp;ndash; dropIndex() Method The dropIndex() method drops or delete the specified index from the given collection. It takes only one parameter which is the index, that we want to drop and it is optional. To find the index name or the index specification document for the dropIndex() method, use getIndexes() method. Using this method you are not allowed to remove the default index of the _id field.
+You can also drop the hidden indexes.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- dropIndexes() Method </title>
+      <link>/mongodb/mongodb--dropindexes-method-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--dropindexes-method-/</guid>
+      <description>MongoDB &amp;ndash; dropIndexes() Method MongoDB is a NoSQL documentum type database. By default, _id field is an index in any collection. This indexed value uniquely identifies a document in a collection. Additionally, we can create an index for our requirement for quicker retrieval and improve the performance of a MongoDB operation. At the same time, having too many indexes also an overhead which leads to poor performance. During those times, we need to drop the indexes which are not required.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Comparison Query Operators </title>
+      <link>/mongodb/mongodb--comparison-query-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--comparison-query-operators-/</guid>
+      <description>MongoDB &amp;ndash; Comparison Query Operators MongoDB uses various comparison query operators to compare the values of the documents. The following table contains the comparison query operators:
+In the following examples, we are working with:
+Database: RenewbuyCollection: contributorDocument: three documents that contain the details of the contributors in the form of field-value pairs.
+Matching values using $nin operator: In this example, we are retrieving only those employee&amp;rsquo;s documents whose name is not Amit or Suman.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $cmp Operator </title>
+      <link>/mongodb/mongodb-cmp-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-cmp-operator-/</guid>
+      <description>MongoDB $cmp Operator MongoDB provides different types of comparison expression operators that are used in the aggregation pipeline stages $cmp operator is one of them. This operator is used to perform a comparison between two values and return the following result according to the condition:
+If the first value is greater than the second value, then this operator will return 1. If the first value is less than the second value, then this operator will return -1.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Greater than Operator $gt </title>
+      <link>/mongodb/mongodb--greater-than-operator-gt-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--greater-than-operator-gt-/</guid>
+      <description>MongoDB &amp;ndash; Greater than Operator $gt MongoDB provides different types of comparison operators and greater than operator($gt) is one of them. This operator is used to select those documents where the value of the field is greater than(&amp;gt;) the given value. You can use this operator in methods (like, find, update, etc.) according to your requirements.
+Syntax:
+{field: {$gt: value}} In the following examples, we are working with:
+Database: RenewbuyCollection: employeeDocument: four documents that contain the details of the employees in the form of field-value pairs.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Less than Operator $lt </title>
+      <link>/mongodb/mongodb--less-than-operator-lt-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--less-than-operator-lt-/</guid>
+      <description>MongoDB &amp;ndash; Less than Operator $lt MongoDB provides different types of comparison operators and less than operator ( $lt ) is one of them. This operator is used to select those documents where the value of the field is less than (&amp;lt;) the given value. You can use this operator in methods like, find(), update(), etc. as per your requirements.
+Syntax:
+{field: {$lt: value}} In the following examples, we are working with:</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Equality Operator $eq </title>
+      <link>/mongodb/mongodb--equality-operator-eq-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--equality-operator-eq-/</guid>
+      <description>MongoDB &amp;ndash; Equality Operator $eq MongoDB provides different types of comparison operators and an equality operator($eq) is one of them. The equality operator( $eq ) is used to match the documents where the value of the field is equal to the specified value. In other words, the $eq operator is used to specify the equality condition.
+Important Points:
+If the given value is a document, then the order of the fields in the document is important.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Less than equals to Operator $lte </title>
+      <link>/mongodb/mongodb--less-than-equals-to-operator-lte-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--less-than-equals-to-operator-lte-/</guid>
+      <description>MongoDB &amp;ndash; Less than equals to Operator $lte MongoDB provides different types of comparison operators and less than equals to operator( $lte ) is one of them. This operator is used to select those documents where the value of the field is less than equals to(&amp;lt;=) the given value. You can use this operator in methods like find(), update(), etc. according to your requirements.
+Syntax:
+{field: {$lte: value}} In the following examples, we are working with:</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Greater than equals to Operator $gte </title>
+      <link>/mongodb/mongodb--greater-than-equals-to-operator-gte-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--greater-than-equals-to-operator-gte-/</guid>
+      <description>MongoDB &amp;ndash; Greater than equals to Operator $gte MongoDB provides different types of comparison operators and greater than equals to operator($gte) is one of them. This operator is used to select those documents where the value of the field is greater than equals to(&amp;gt;=) the given value. You can use this operator in methods (like, find(), update(), etc.) according to your requirements.
+Syntax:
+{field: {$gte: value}} In the following examples, we are working with:</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Inequality Operator $ne </title>
+      <link>/mongodb/mongodb--inequality-operator-ne-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--inequality-operator-ne-/</guid>
+      <description>MongoDB &amp;ndash; Inequality Operator $ne MongoDB provides different types of comparison operators and inequality or not equals operator( $ne ) is one of them. This operator is used to select those documents where the value of the field does not equal to the given value. It also includes those documents that do not contain the specified field. You can use this operator in methods like find(), update(), etc. as per your requirement.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $in Operator </title>
+      <link>/mongodb/mongodb-in-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-in-operator-/</guid>
+      <description>MongoDB $in Operator MongoDB provides different types of comparison query operators and $in operator is one of them. This operator is used to select those documents where the value of the field is equal to any of the given value in the array. And if the field contains an array, then this operator selects only those documents whose field contains an array that holds at least one item that matches a value of the specified array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $nin Operator </title>
+      <link>/mongodb/mongodb--nin-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--nin-operator-/</guid>
+      <description>MongoDB &amp;ndash; $nin Operator MongoDB provides different types of comparison query operators and $nin (not in) operator is one of them. This operator is used to select those documents where the value of the field is not equal to any of the given value in the array and the field that does not exist.If the field contain an array, then this operator selects only those documents whose field contains an array that holds no item that matches a value of the specified array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Logical Query Operators </title>
+      <link>/mongodb/mongodb--logical-query-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--logical-query-operators-/</guid>
+      <description>MongoDB &amp;ndash; Logical Query Operators MongoDB supports logical query operators. These operators are used for filtering the data and getting precise results based on the given conditions. The following table contains the comparison query operators:
+In the following examples, we are working with:
+Database: Renewbuy Collection: contributor Document: three documents that contain the details of the contributors in the form of field-value pairs. Matching values using $and operator: In this example, we are retrieving only those employee&amp;rsquo;s documents whose branch is CSE and joiningYear is 2018.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB AND operator ( $and ) </title>
+      <link>/mongodb/mongodb-and-operator-and-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-and-operator-and-/</guid>
+      <description>MongoDB AND operator ( $and ) MongoDB provides different types of logical query operators and $and operator is one of them. This operator is used to perform logical AND operation on the array of one or more expressions and select or retrieve only those documents that match all the given expression in the array. You can use this operator in methods like find(), update(), etc. according to your requirements.
+This operator performs short-circuit evaluation.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB OR operator ( $or ) </title>
+      <link>/mongodb/mongodb-or-operator-or-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-or-operator-or-/</guid>
+      <description>MongoDB OR operator ( $or ) MongoDB provides different types of logical query operators and $or operator is one of them. This operator is used to perform logical OR operation on the array of two or more expressions and select or retrieve only those documents that match at least one of the given expression in the array. You can use this operator in methods like find(), update(), etc. according to your requirements.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB NOT operator ( $not ) </title>
+      <link>/mongodb/mongodb-not-operator-not-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-not-operator-not-/</guid>
+      <description>MongoDB NOT operator ( $not ) MongoDB provides different types of logical query operators and $not operator is one of them. This operator is used to perform logical NOT operation on the specified operator expressions and select or retrieve only those documents that do not match the given operator expression. It also includes those documents that don&amp;rsquo;t contain the field. You can use this operator in methods like find(), update(), etc.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB NOR operator ( $nor ) </title>
+      <link>/mongodb/mongodb-nor-operator-nor-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-nor-operator-nor-/</guid>
+      <description>MongoDB NOR operator ( $nor ) MongoDB provides different types of logical query operators and $nor operator is one of them. This operator is used to perform logical NOR operation on the array of one or more expressions and select or retrieve only those documents that do not match all the given expression in the array. You can use this operator in methods like find(), update(), etc. according to your requirements.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $add Operator </title>
+      <link>/mongodb/mongodb-add-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-add-operator-/</guid>
+      <description>MongoDB $add Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $add operator is one of them. This operator is used to add numbers or dates. If $add operator adds date, then it will treat other arguments as milliseconds and add to the specified date. Syntax: { $add: [ , , ... ] } Here, the Expression must be a valid expression like numbers or a date.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $subtract Operator </title>
+      <link>/mongodb/mongodb-subtract-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-subtract-operator-/</guid>
+      <description>MongoDB $subtract Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and an $subtract operator is one of them. This operator is used to subtract two numbers and return the difference in the numbers or to subtract two dates and return the difference in the milliseconds, or subtracts date and number in milliseconds and returns the date. Syntax: { $subtract: [ , ] } Here, the given arguments must be a valid expression like numbers or a date, and the second argument is subtracted from the first argument.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $multiply Operator </title>
+      <link>/mongodb/mongodb-multiply-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-multiply-operator-/</guid>
+      <description>MongoDB $multiply Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $multiply operator is one of them. This operator is used to multiply one number to another number and returns the result. Syntax: { $multiply: [ , , ... ] } Here, in this operator, the arguments passed in an array. The expression must be a valid expression until it resolves to a number.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $divide Operator </title>
+      <link>/mongodb/mongodb-divide-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-divide-operator-/</guid>
+      <description>MongoDB $divide Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $divide operator is one of them. This operator is used to divide one number by another number and return the result of the division. Syntax: { $divide: [ , ] } Here, in this operator, the arguments passed in an array. And the first argument is a dividend and the second argument is a divisor.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $abs operator </title>
+      <link>/mongodb/mongodb-abs-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-abs-operator-/</guid>
+      <description>MongoDB $abs operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $abs operator is one of them. This operator is used to find the absolute value of the specified number. Syntax: { $abs: } Here, the number is a valid expression until it resolves to a number. If the entered value is null, then this operator will return null.
+If the entered value is NaN, then this operator will return NaN.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $floor Operator </title>
+      <link>/mongodb/mongodb-floor-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-floor-operator-/</guid>
+      <description>MongoDB $floor Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $floor operator is one of them. This operator is used to find the largest integer less than or equal to the specified number.
+Syntax: { $floor: } Here, the number is a valid expression until it resolves to a number. If the entered value is null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $ceil Operator </title>
+      <link>/mongodb/mongodb-ceil-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-ceil-operator-/</guid>
+      <description>MongoDB $ceil Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $ceil operator is one of them. This operator is used to find the smallest integer greater than or equal to the specified number. { $ceil: } Here, the number is a valid expression until it resolves to a number. If the entered value is null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $mod Operator </title>
+      <link>/mongodb/mongodb-mod-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-mod-operator-/</guid>
+      <description>MongoDB $mod Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $mod operator is one of them. This operator is used to divide one number by another number and return the remainder.
+Syntax: { $mod: [ , ] } Here, in this operator, the arguments passed in an array. It takes two arguments, the first argument is the dividend and the second argument is the divisor.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $sqrt Operator </title>
+      <link>/mongodb/mongodb-sqrt-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-sqrt-operator-/</guid>
+      <description>MongoDB $sqrt Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages $sqrt operator is one of them. This operator is used to find the square root of a positive number and returns the result as a double.
+Syntax: { $sqrt: } Here, the number is a valid expression until it resolves to a non-negative number. If the entered value is null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $pow Operator </title>
+      <link>/mongodb/mongodb-pow-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-pow-operator-/</guid>
+      <description>MongoDB $pow Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages $pow operator is one of them. This operator is used to find a number to the specified exponent and returns the result.
+Syntax: { $pow: [ , ] } Here, the number and exponent are the valid expressions until it resolves to a number. If the entered value resolves to null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $exp Operator </title>
+      <link>/mongodb/mongodb-exp-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-exp-operator-/</guid>
+      <description>MongoDB $exp Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages $exp operator is one of them. This operator is used to raise Euler&amp;rsquo;s number (i.e. e ) to the specified exponent and returns the result.
+Syntax: { $exp: } Here, the exponent is a valid expression until it resolves to a number. If the entered value resolves to null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $log Operator </title>
+      <link>/mongodb/mongodb-log-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-log-operator-/</guid>
+      <description>MongoDB $log Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $log operator is one of them. This operator is used to find the log of a number in the specified base and returns the result as a double.
+Syntax:
+{ $log: [ , ] } Here, the number is a valid expression as long as it resolves to a non-negative number and base is a valid expression until it resolves to a positive number greater than 1.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $log10 Operator </title>
+      <link>/mongodb/mongodb-log10-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-log10-operator-/</guid>
+      <description>MongoDB $log10 Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $log10 operator is one of them. This operator is used to find the log base 10 of the specified number and returns the result as a double.
+Syntax: { $log10: } Here, the number is a valid expression until it resolves to a non-negative number. If the entered value is null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $ln Operator </title>
+      <link>/mongodb/mongodb-ln-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-ln-operator-/</guid>
+      <description>MongoDB $ln Operator MongoDB provides different types of arithmetic expression operators that are used in the aggregation pipeline stages and $ln operator is one of them. This operator is used to find the natural logarithm of a number and returns the result as a double. Syntax: { $ln: } Here, the number is a valid expression until it resolves to a non- negative number. If the entered value is null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Field Update Operators </title>
+      <link>/mongodb/mongodb--field-update-operators-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--field-update-operators-/</guid>
+      <description>MongoDB &amp;ndash; Field Update Operators MongoDB provides different types of field update operators to update the values of the fields of the documents that matches the specified condition. The following table contains the field update operators:
+In the following examples, we are working with:
+Database: RenewbuyCollection: EmployeeDocument: two documents that contain the details of the employees in the form of field-value pairs.
+Updating the value of date field using $currentDate operator: In the example, we are updating the value of joiningDate field of an employee&amp;rsquo;s document whose first name is Om.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Maximum operator ( $max ) </title>
+      <link>/mongodb/mongodb--maximum-operator-max-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--maximum-operator-max-/</guid>
+      <description>MongoDB &amp;ndash; Maximum operator ( $max ) MongoDB provides different types of field update operators to update the values of the fields in the documents and the maximum operator ( $max ) is one of them. This operator updates the field with the specified value if the specified value is greater than the current value.
+This operator will compare the values of different data types according to the BSON comparison order.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Minimum operator ( $min ) </title>
+      <link>/mongodb/mongodb--minimum-operator-min-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--minimum-operator-min-/</guid>
+      <description>MongoDB &amp;ndash; Minimum operator ( $min ) MongoDB provides different types of field update operators to update the values of the fields in the documents and minimum operator( $min ) is one of them. This operator updates the field with the specified value if the specified value is less than the current value.
+$min operator will compare the values of different data types according to the BSON comparison order. You can also use this operator in embedded/nested documents using dot notation.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Increment Operator ( $inc ) </title>
+      <link>/mongodb/mongodb--increment-operator-inc-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--increment-operator-inc-/</guid>
+      <description>MongoDB &amp;ndash; Increment Operator ( $inc ) MongoDB provides different types of field update operators to update the values of the fields of the documents and $inc operator is one of them. This operator is used to increase the values of the fields to the specified amount or to increase the field by the given value.
+You can also use this operator in embedded/nested documents. You can use this operator in methods like update(), updateOne() etc.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Multiply Operator ($mul) </title>
+      <link>/mongodb/mongodb--multiply-operator-mul-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--multiply-operator-mul-/</guid>
+      <description>MongoDB &amp;ndash; Multiply Operator ($mul) MongoDB provides different types of field update operators to update the values of the fields of the documents and $mul operator is one of them. This operator is used to multiply the value of the field by a number.
+$mul operator only updates those fields whose value are of numeric type like int, float, etc.
+If the specified field is not present in the document, then this operator will add that field in the document and assign the value of that field to zero of the same numeric type as the multiplier.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Rename Operator ($rename) </title>
+      <link>/mongodb/mongodb--rename-operator-rename-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--rename-operator-rename-/</guid>
+      <description>MongoDB &amp;ndash; Rename Operator ($rename) MongoDB provides different types of field update operators to update the values of the fields of the documents and $rename operator is one of them. This operator is used to update the names of the fields with new names. The new name of the field should be different from the existing name of the field.
+$rename operator logically first performs an $unset operation on both the old name and the new name and then performs an $set operation with the new name.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Current Date Operator ($currentDate) </title>
+      <link>/mongodb/mongodb--current-date-operator-currentdate-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--current-date-operator-currentdate-/</guid>
+      <description>MongoDB &amp;ndash; Current Date Operator ($currentDate) MongoDB provides different types of field update operators to update the values of the fields of the documents and $currentDate operator is one of them. This operator is used to set the value of a field to the current date (either as a timestamp or as a Date).
+The default type of $currentDate operator is a Date.
+This operator can also work with embedded/nested documents or arrays.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- SetOnInsert Operator ($setOnInsert) </title>
+      <link>/mongodb/mongodb--setoninsert-operator-setoninsert-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--setoninsert-operator-setoninsert-/</guid>
+      <description>MongoDB &amp;ndash; SetOnInsert Operator ($setOnInsert) MongoDB provides different types of field update operators to update the values of the fields of the documents and $setOnInsert operator is one of them. This operator is used when a new document is inserted with the help of update operation by setting the value of an upsert field to true, then $setOneInsert operator assigns the specified value to the fields in the document. If the update operation will not used to insert new document, then $setOnInsert operator will not do anything.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Bitwise Update Operator </title>
+      <link>/mongodb/mongodb-bitwise-update-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-bitwise-update-operator-/</guid>
+      <description>MongoDB Bitwise Update Operator MongoDB provides a $bit operator to perform a bitwise update of a field. This operator supports bitwise xor, bitwise or, and bitwise and operations. Syntax: { $bit: { : { : } } } Important Points: Use $bit operator only with integer fields(either 32-bit integer or 64-bit integer)
+To specify a field in embedded/nested documents or in an array use dot notation.
+All the numbers in the mongo shell are double not an integer.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $isArray Operator </title>
+      <link>/mongodb/mongodb-isarray-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-isarray-operator-/</guid>
+      <description>MongoDB $isArray Operator MongoDB provides different types of array expression operators that are used in the aggregation pipeline stages and $isArray operator is one of them. This operator is used to check if the specified expression is an array or not. Or in other words, this operator is used to check if the operand is an array. This operator will return true if the specified expression is an array. Otherwise, it will return false.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $size Operator </title>
+      <link>/mongodb/mongodb-size-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-size-operator-/</guid>
+      <description>MongoDB $size Operator MongoDB provides different types of array expression operators that are used in the aggregation pipeline stages and $size operator is one of them. This operator is used to find the total number of elements present in the specified array.
+Syntax: { $size: } Here, the given arguments must be a valid expression until it resolves to an array. If the argument of this operator is missing or the argument does not resolve to an array, then this operator will give errors.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $arrayElemAt Operator </title>
+      <link>/mongodb/mongodb-arrayelemat-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-arrayelemat-operator-/</guid>
+      <description>MongoDB $arrayElemAt Operator MongoDB provides different types of array expression operators that are used in the aggregation pipeline stages and $arrayElemAt operator is one of them. This operator is used to return the element present on the specified index of the given array. Syntax: { $arrayElemAt: [ , ] } Here, the array must be a valid expression until it resolves to an array and index must be a valid expression until it resolves to an integer.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $concatArrays Operator </title>
+      <link>/mongodb/mongodb-concatarrays-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-concatarrays-operator-/</guid>
+      <description>MongoDB $concatArrays Operator MongoDB provides different types of array expression operators that are used in the aggregation pipeline stages and $concatArrays operator is one of them. This operator is used to concatenate two or more arrays and return a concatenated array.
+Syntax: { $concatArrays: [ , , ... ] } Here, the array must be a valid expression until it resolves to an array. If the argument of this operator is a missing field or the argument resolve to a null value, then this operator will give null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $reverseArray Operator </title>
+      <link>/mongodb/mongodb-reversearray-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-reversearray-operator-/</guid>
+      <description>MongoDB $reverseArray Operator MongoDB provides different types of array expression operators that are used in the aggregation pipeline stages and $reverseArray operator is one of them. This operator is used to reverse the order of the elements of the specified array. Or in other words, this operator takes an array as an argument and returns the array with the items in reverse order.
+Syntax: { $reverseArray: } Here, the given arguments must be a valid expression until it resolves to an array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $pull Operator </title>
+      <link>/mongodb/mongodb--pull-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--pull-operator-/</guid>
+      <description>MongoDB &amp;ndash; $pull Operator MongoDB provides different types of array update operators to update the values of the array fields in the documents and $pull operator is one of them. This operator is used to remove all the instances of the value or the value that matches the specified condition from the existing array.
+Syntax:
+{ $pull: { : , : , ... } } Here, can specify with dot notation in embedded/nested documents or an array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $pop Operator </title>
+      <link>/mongodb/mongodb--pop-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--pop-operator-/</guid>
+      <description>MongoDB &amp;ndash; $pop Operator MongoDB provides different types of array update operators to update the values of the array fields in the documents and $pop operator is one of them. This operator is used to remove the first or the last item from the array.
+Syntax:
+{ $pop: { : &amp;lt;-1 | 1&amp;gt;, ... } } Here, can specify with dot notation in embedded/nested documents or an array.
+If you pass -1 value in $pop operator, then it will remove the first item from the array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $pullAll Operator </title>
+      <link>/mongodb/mongodb--pullall-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--pullall-operator-/</guid>
+      <description>MongoDB &amp;ndash; $pullAll Operator MongoDB provides different types of array update operators to update the values of the array fields in the documents and $pullAll operator is one of them. This operator is used to remove all instances of the specified values from an existing array. It is different from $pull operator, $pull operator removes items by specifying a query, whereas $pullAll operator removes items that matches the listed values. You can use this operator with methods like update(), findAndModify(), etc.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $push Operator </title>
+      <link>/mongodb/mongodb--push-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--push-operator-/</guid>
+      <description>MongoDB &amp;ndash; $push Operator MongoDB provides different types of array update operators to update the values of the array fields in the documents and $push operator is one of them. This operator is used to append a specified value to an array.
+Syntax:
+{ $push: { : , ... } } Here, can specify with dot notation in embedded/nested documents or an array.
+If the specified field in the $push operator is not present in the document, then this operator will add the array field with the value as its items.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Positional Operator ($) </title>
+      <link>/mongodb/mongodb--positional-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--positional-operator-/</guid>
+      <description>MongoDB &amp;ndash; Positional Operator ($) MongoDB provides different types of array update operators to update the values of the array fields in the documents and positional operator( $ ) is one of them. This operator recognizes an element in an array to update without explicitly specifying the position of that item in the array.
+Syntax:
+{ &amp;quot;.$&amp;quot; : value } You cannot use the $ operator with upsert operations. If you use $ operator with upsert operations, then the insert will use the $ as a field name in the inserted document.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- All Positional Operator ($[]) </title>
+      <link>/mongodb/mongodb--all-positional-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--all-positional-operator-/</guid>
+      <description>MongoDB &amp;ndash; All Positional Operator ($[]) MongoDB provides different types of array update operators to update the values of the array fields in the documents and all positional operator($[]) is one of them. This operator indicates that the update operation should modify all the items present in the specified array field. Syntax: { : { &amp;quot;.$[]&amp;quot; : } } You can also use this operator for those queries which traverse more than one array and nested arrays.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $position Modifier </title>
+      <link>/mongodb/mongodb--position-modifier-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--position-modifier-/</guid>
+      <description>MongoDB &amp;ndash; $position Modifier MongoDB provides different types of array update operators to update the values of the array fields in the documents and $position modifier is one of them. This modifier is used to specify the location in the array at which the $push operator inserts items. Without $position modifier $push operator insert items at the end of the array.
+Syntax:
+{ $push: { : { $each: [ , , .</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $addToSet Operator </title>
+      <link>/mongodb/mongodb--addtoset-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--addtoset-operator-/</guid>
+      <description>MongoDB &amp;ndash; $addToSet Operator MongoDB provides different types of array update operators to update the values of the array fields in the documents and $addToSet operator is one of them. This operator is used to add a value to an array and if the value already exists in the array, then this operator will do nothing.
+Syntax:
+{ $addToSet: { : , ... } } Here, can specify with dot notation in embedded/nested documents.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $each Modifier </title>
+      <link>/mongodb/mongodb--each-modifier-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--each-modifier-/</guid>
+      <description>MongoDB &amp;ndash; $each Modifier MongoDB provides different types of array update operators to update the values of the array fields in the documents and $each modifier is one of them. This modifier is used to append multiple values to the array field. You can use this modifier with $addToSet and $push operators:
+$each modifier with $addToSet operator &amp;ndash;If you use $each modifier with $addToSet operator, then it adds multiple values to an array field if the specified value does not present in the array field.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $sort Modifier </title>
+      <link>/mongodb/mongodb--sort-modifier-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--sort-modifier-/</guid>
+      <description>MongoDB &amp;ndash; $sort Modifier MongoDB provides different types of array update operators to update the values of the array fields in the documents and $sort modifier is one of them. This modifier is used to order the items of the array during $push operation or sort the items of the array in ascending or descending order during $push operation.Syntax:
+{ $push: { : { $each: [ , , ... ], $sort: } } } If you want to sort the items (that are not documents) of the array or the array items(that are documents) in ascending order, then set the value of the $sort modifier to 1.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- $slice Modifier </title>
+      <link>/mongodb/mongodb--slice-modifier-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--slice-modifier-/</guid>
+      <description>MongoDB &amp;ndash; $slice Modifier MongoDB provides different types of array update operators to update the values of the array fields in the documents and $slice modifier is one of them. This modifier is used to limit the number of array items during a $push operation. Syntax: { $push: { : { $each: [ , , ... ], $slice: } } } If the value of number is zero, then this modifier will update the array field to an empty array.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $concat Operator </title>
+      <link>/mongodb/mongodb-concat-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-concat-operator-/</guid>
+      <description>MongoDB $concat Operator MongoDB provides different types of string expression operators that are used in the aggregation pipeline stages $concat operator is one of them. This operator is used to concatenate two or more strings and returns a single string.
+Syntax: { $concat: [ , , ... ] } Here, the arguments passed in this operator can be any valid expression until they resolve to strings.
+If the entered argument resolves to null, then this operator will return null.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $strcasecmp Operator </title>
+      <link>/mongodb/mongodb-strcasecmp-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-strcasecmp-operator-/</guid>
+      <description>MongoDB $strcasecmp Operator MongoDB provides different types of string expression operators that are used in the aggregation pipeline stages $strcasecmp operator is one of them. This operator is used to perform a case-insensitive comparison of two strings and return the following result according to the condition:
+If the first string is greater than the second string, then this operator will return 1. If the first string is less than the second string, then this operator will return -1.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $toUpper Operator </title>
+      <link>/mongodb/mongodb-toupper-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-toupper-operator-/</guid>
+      <description>MongoDB $toUpper Operator MongoDB provides different types of string expression operators that are used in the aggregation pipeline stages $toUpper operator is one of them. This operator is used to convert the given string into uppercase.
+Syntax: { $toUpper: } Here, the argument passed in this operator can be any valid expression until they resolve to a string. If the entered argument resolves to null, then this operator will return an empty string &amp;ldquo;&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB $toLower Operator </title>
+      <link>/mongodb/mongodb-tolower-operator-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-tolower-operator-/</guid>
+      <description>MongoDB $toLower Operator MongoDB provides different types of string expression operators that are used in the aggregation pipeline stages $toLower operator is one of them. This operator is used to convert the given string into lowercase.
+Syntax: { $toLower: } Here, the argument passed in this operator can be any valid expression until they resolve to a string. If the entered argument resolves to null, then this operator will return an empty string &amp;ldquo;&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>$substrCP (aggregation) operator in MongoDB </title>
+      <link>/mongodb/substrcp-aggregation-operator-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/substrcp-aggregation-operator-in-mongodb-/</guid>
+      <description>$substrCP (aggregation) operator in MongoDB MongoDB is a NOSQL database and it is frequently getting used across in all sets of industries. The popularity of MongoDB lies in the effective way of querying, fast retrieval of data which helps to have broader insights through analytics from big data. Now we will see $substrCP (aggregation) operator and how effectively it can be used in the project.
+$substrCP operator: It is used to find the substrings from a given string.</description>
+    </item>
+    
+    <item>
+      <title>Defining, Creating and Dropping a MongoDB collection </title>
+      <link>/mongodb/defining-creating-and-dropping-a-mongodb-collection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/defining-creating-and-dropping-a-mongodb-collection-/</guid>
+      <description>Defining, Creating and Dropping a MongoDB collection MongoDB is an open-source, cross-platform document-based database.
+Document: It is the basic unit of MongoDB and a single record inside a collection is known as a document.It is a JSON object which has the data in the form of key-value pairs.
+Collection: It is the grouping of documents. A collection belongs to the single database inside MongoDB.Collection contains the data in the form of document just like the table of RDBMS which contains the data in the form of rows and columns.</description>
+    </item>
+    
+    <item>
+      <title>Adding and Querying the data in MongoDB </title>
+      <link>/mongodb/adding-and-querying-the-data-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/adding-and-querying-the-data-in-mongodb-/</guid>
+      <description>Adding and Querying the data in MongoDB Adding Data in MongoDB: MongoDB stores document in BSON, a binary form of JSON (JavaScript Object Notation). The documents are store in collection.
+To insert documents in MongoDB follow the step mentioned below:
+Step 1: Create CollectionSyntax:
+use collection_name It will create a database if it does not exist otherwise it returns the existing database.Create a collection
+Create a collection
+To show the currently selected database use &amp;lsquo;db&amp;rsquo; command as shown below:Currently selected collection Currently selected collection Step 2: Insert Data into Collection Documents in MongoDB can be inserted using two methods:</description>
+    </item>
+    
+    <item>
+      <title>How to Create Database &amp; Collection in MongoDB? </title>
+      <link>/mongodb/how-to-create-database-collection-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-to-create-database-collection-in-mongodb-/</guid>
+      <description>How to Create Database &amp;amp; Collection in MongoDB? MongoDB stores data records as documents that are stored together in collections and the database stores one or more collections of documents.
+Document: A document is a basic unit of storing data into the database. A single record of a collection is also known as a document. Basically, It is a structure that compromises key &amp;amp; value pairs which is similar to the JSON objects.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Query Documents using Mongo Shell </title>
+      <link>/mongodb/mongodb--query-documents-using-mongo-shell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--query-documents-using-mongo-shell-/</guid>
+      <description>MongoDB &amp;ndash; Query Documents using Mongo Shell MongoDB provides you read operations to retrieve documents from the collection or query a collection for a document. You can perform read operations using the db.collection.find() method. This method selects or views the documents from the collection and returns the cursor to the selected document. find() is a mongo shell method, which can be used in the multi-document transactions. The documents displayed by this method are in non-structured form.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Insert Single Document Using MongoShell </title>
+      <link>/mongodb/mongodb--insert-single-document-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--insert-single-document-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Insert Single Document Using MongoShell In MongoDB, insert operations are used to add new documents in the collection. If the collection does not exist, then the insert operations create the collection by inserting documents. Or if the collection exists, then insert operations and add new documents to the existing collection. You are allowed to add a single document in the collection using db.collection.insertOne() method. insertOne() is a mongo shell method, which can insert one document at a time.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Insert Multiple Document Using MongoShell </title>
+      <link>/mongodb/mongodb--insert-multiple-document-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--insert-multiple-document-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Insert Multiple Document Using MongoShell In MongoDB, insert operations are used to add new documents in the collection. If the collection does not exist, then the insert operations create the collection by inserting documents. Or if the collection exists, then insert operations add new documents in the existing collection. You are allowed to insert multiple documents in the collection by using db.collection.insertMany() method.
+insertMany() is a mongo shell method, which can insert multiple documents.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Update Single Document Using MongoShell </title>
+      <link>/mongodb/mongodb--update-single-document-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--update-single-document-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Update Single Document Using MongoShell In MongoDB, you can update a single document in the collection using db.collection.updateOne() method. This method updates a document in the collection according to the filter.
+updateOne() is a mongo shell method, which can updates one document at a time. This method update the first document that satisfies the given condition in the collection. Or in other words, if multiple documents satisfy the given condition, then this method will update the very first document that matches the given filter or condition.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Update Multiple Documents Using MongoShell </title>
+      <link>/mongodb/mongodb--update-multiple-documents-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--update-multiple-documents-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Update Multiple Documents Using MongoShell In MongoDB, you can update multiple documents in the collection using db.collection.updateMany() method. This method updates all the documents in the collection that match the given filter.
+updateMany() is a mongo shell method, which can update multiple document. This method only accepts the documents that contain update operator expressions.
+updateMany() method can be used in the multi-document transactions.
+When you update your documents the value of _id field in not change.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Replace Documents Using MongoShell </title>
+      <link>/mongodb/mongodb--replace-documents-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--replace-documents-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Replace Documents Using MongoShell In MongoDB, you are allowed to replace an existing document with a new document in the collection with the help of db.collection.replaceOne() method. This method will replace the existing document with the replacement document.
+replaceOne() is a mongo shell method, which only replaces one document at a time. The replacement document may contain different fields as compared to the original document.
+As we know that the _id field is immutable, so you can omit _id field in the replacement document.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Delete Single Document Using MongoShell </title>
+      <link>/mongodb/mongodb--delete-single-document-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--delete-single-document-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Delete Single Document Using MongoShell In MongoDB, you are allowed to delete an existing document from the collection using db.collection.deleteOne() method. This method deletes a single document from the collection according to the filter. deleteOne() is a mongo shell method, which updates one document at time. This method can be used in the multi-document transactions.
+If you use this method in capped collection, then it will throw an exception.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Delete Multiple Documents Using MongoShell </title>
+      <link>/mongodb/mongodb--delete-multiple-documents-using-mongoshell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--delete-multiple-documents-using-mongoshell-/</guid>
+      <description>MongoDB &amp;ndash; Delete Multiple Documents Using MongoShell In MongoDB, you are allowed to delete the existing documents from the collection using db.collection.deleteMany() method. This method deletes multiple documents from the collection according to the filter.
+deleteMany() is a mongo shell method, which can delete multiple documents. This method can be used in the multi-document transactions. If you use this method in capped collection, then it will throw an exception.
+Syntax:</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Check the existence of the fields in the specified collection </title>
+      <link>/mongodb/mongodb--check-the-existence-of-the-fields-in-the-specified-collection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--check-the-existence-of-the-fields-in-the-specified-collection-/</guid>
+      <description>MongoDB &amp;ndash; Check the existence of the fields in the specified collection In MongoDB, we can check the existence of the field in the specified collection using the $exists operator. When the value of $exists operator is set to true, then this operator matches the document that contains the specified field(including the documents where the value of that field is null). When the value of $exists operator is set to false, then this operator returns only those documents that don&amp;rsquo;t contain the specified field.</description>
+    </item>
+    
+    <item>
+      <title>Sorting Documents in MongoDB </title>
+      <link>/mongodb/sorting-documents-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/sorting-documents-in-mongodb-/</guid>
+      <description>Sorting Documents in MongoDB Sorting is the way to arrange documents in ascending or descending order. In MongoDB, we can sort documents in ascending or descending order according to field data. To sort documents in a collection we use the sort() method. This method takes a parameter that contains a field: value pair that defines the sort order of the result set, if the value of this field is 1 then this method sorts the documents in ascending order, or if the value of this field is -1 then this method sorts the documents in descending order.</description>
+    </item>
+    
+    <item>
+      <title>Capped Collections in MongoDB </title>
+      <link>/mongodb/capped-collections-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/capped-collections-in-mongodb-/</guid>
+      <description>Capped Collections in MongoDB Capped collections are fixed-size collections means when we create the collection, we must fix the maximum size of the collection(in bytes) and the maximum number of documents that it can store. After creation, if we try to add more than documents to their capacity, it overwrites the existing documents. It supports high-throughput operations, that are useful when we insert and retrieve documents based on insertion order. The working of the capped collection is similar to circular buffers, which means once the fixed space is allocated for the capped collection, it creates/makes spaces for the new documents by overwriting the oldest documents in the given collection.</description>
+    </item>
+    
+    <item>
+      <title>Create Relationship in MongoDB </title>
+      <link>/mongodb/create-relationship-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/create-relationship-in-mongodb-/</guid>
+      <description>Create Relationship in MongoDB In MongoDB, a relationship represents how different types of documents are logically related to each other. Relationships like one-to-one, one-to-many, etc., can be represented by using two different models:
+Embedded document model
+Reference model
+Embedded Document Model: In this model, the documents are embedded inside one document. For example, we have two documents one is a student(which contains the basic information of the student like id, name branch) and another is an address document(which contains the address of the student).</description>
+    </item>
+    
+    <item>
+      <title>Search Text in MongoDB </title>
+      <link>/mongodb/search-text-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/search-text-in-mongodb-/</guid>
+      <description>Search Text in MongoDB MongoDB provides a good technique that is text search. Using this technique we can find a piece of text or a specified word from the string fields. Or in other words, MongoDB allows you to perform a query operation to find the specified text from the string. In MongoDB, we can perform text search using text index and $text operator.
+Text index: MongoDB proved text indexes that are used to find the specified text from the string content.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Map Reduce </title>
+      <link>/mongodb/mongodb--map-reduce-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--map-reduce-/</guid>
+      <description>MongoDB &amp;ndash; Map Reduce In MongoDB, map-reduce is a data processing programming model that helps to perform operations on large data sets and produce aggregated results. MongoDB provides the mapReduce() function to perform the map-reduce operations. This function has two main functions, i.e., map function and reduce function. The map function is used to group all the data based on the key-value and the reduce function is used to perform operations on the mapped data.</description>
+    </item>
+    
+    <item>
+      <title>Upsert in MongoDB </title>
+      <link>/mongodb/upsert-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/upsert-in-mongodb-/</guid>
+      <description>Upsert in MongoDB In MongoDB, upsert is an option that is used for update operation e.g. update(), findAndModify(), etc. Or in other words, upsert is a combination of update and insert (update + insert = upsert). If the value of this option is set to true and the document or documents found that match the specified query, then the update operation will update the matched document or documents. Or if the value of this option is set to true and no document or documents matches the specified document, then this option inserts a new document in the collection and this new document have the fields that indicate in the operation.</description>
+    </item>
+    
+    <item>
+      <title>Indexing in MongoDB </title>
+      <link>/mongodb/indexing-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/indexing-in-mongodb-/</guid>
+      <description>Indexing in MongoDB MongoDB is leading NoSQL database written in C++. It is high scalable and provides high performance and availability. It works on the concept of collections and documents. Collection in MongoDB is group of related documents that are bound together. The collection does not follow any schema which is one of the remarkable feature of MongoDB. Indexing in MongoDB : MongoDB uses indexing in order to make the query processing more efficient.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Index Types </title>
+      <link>/mongodb/mongodb--index-types-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--index-types-/</guid>
+      <description>MongoDB &amp;ndash; Index Types The beauty of a database lies in indexing i.e. fetching the data in a short span of time without iterating over the whole dataset. MongoDB is a NoSQL document type database that follows indexing. Indexes make searching in a collection is easier with the limited number of documents. A binary tree is the data structure used by an index. In documents, the _id field is a default index which is automatically created by MongoDB and we are not allowed to drop this index.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Compound Indexes </title>
+      <link>/mongodb/mongodb--compound-indexes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--compound-indexes-/</guid>
+      <description>MongoDB &amp;ndash; Compound Indexes MongoDB provides indexing for efficient execution of queries without indexes MongoDB has to search every document to match the query which is highly inefficient. Indexes are easy to traverse and store sorted documents according to the specified fields. Unlike single field index in which indexing is done on a single field, Compound Indexes does indexing on multiple fields of the document either in ascending or descending order i.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Text Indexes </title>
+      <link>/mongodb/mongodb--text-indexes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--text-indexes-/</guid>
+      <description>MongoDB &amp;ndash; Text Indexes MongoDB is a document-based NoSQL database. As the data is stored in the format of the document, it can hold a huge amount of data and as it is a NoSQL database type, there is no strict necessity to have referential integrity relationships. So searching is an important criteria here and for that MongoDB provides Text indexes to support text search queries especially on string content. Text indexes should be either a string or an array of string elements.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Multikey Indexes </title>
+      <link>/mongodb/mongodb--multikey-indexes-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--multikey-indexes-/</guid>
+      <description>MongoDB &amp;ndash; Multikey Indexes Indexes are special data structures that store some information related to the documents such that it becomes easy for MongoDB to find the right data file. They also store the value of a specific field or set of fields, ordered by the value of the field as specified in the index. MongoDB allows to index a field that holds an array value by creating an index key for each element in the array, such type of indexing is called Multikey indexes.</description>
+    </item>
+    
+    <item>
+      <title>Export data from MongoDB </title>
+      <link>/mongodb/export-data-from-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/export-data-from-mongodb-/</guid>
+      <description>Export data from MongoDB MongoDB allows you to export its data into other file formats like JSON or CSV so that the data can be used externally by other applications. So, to export data from the MongoDB database, MongoDB provides a command-line tool known as mongoexport. Using this tool you can exports data of a collection in JSON or CSV(comma-separated value) format. Moreover, we can also use features like limit and sort on a collection while exporting the data.</description>
+    </item>
+    
+    <item>
+      <title>Import data to MongoDB </title>
+      <link>/mongodb/import-data-to-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/import-data-to-mongodb-/</guid>
+      <description>Import data to MongoDB MongoDB provides a special tool that is used to import data in the MongoDB and the tool is known as mongoimport. Using this tool you are allowed to import the files like JSON, CSV, or TSV in the MongoDB database. Generally, the mongoimport utility is present in the bin folder of mongodb but if it is not present in your system then you can install using the following steps: Step 1: To use mongoimport tool we have to first download the MongoDB database tools .</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Regex </title>
+      <link>/mongodb/mongodb--regex-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--regex-/</guid>
+      <description>MongoDB &amp;ndash; Regex MongoDB provides the functionality to search a pattern in a string during a query by writing a regular expression. A regular expression is a generalized way to match patterns with sequences of characters. MongoDB uses Perl compatible regular expressions(PCRE) version 8.42 along with UTF-8 support. In MongoDB, we can do pattern matching in two different ways:
+With $regex Operator
+Without $regex Operator
+Pattern matching using $regex operator This operator provides regular expression capabilities for pattern matching stings in the queries.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB Projection </title>
+      <link>/mongodb/mongodb-projection-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb-projection-/</guid>
+      <description>MongoDB Projection MongoDB provides a special feature that is known as Projection. It allows you to select only the necessary data rather than selecting whole data from the document. For example, a document contains 5 fields, i.e.,
+{ name: &amp;quot;Roma&amp;quot;, age: 30, branch: EEE, department: &amp;quot;HR&amp;quot;, salary: 20000 } But we only want to display the name and the age of the employee rather than displaying whole details. Now, here we use projection to display the name and age of the employee.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Embedded Documents </title>
+      <link>/mongodb/mongodb--embedded-documents-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--embedded-documents-/</guid>
+      <description>MongoDB &amp;ndash; Embedded Documents MongoDB provides you a cool feature which is known as Embedded or Nested Document. Embedded document or nested documents are those types of documents which contain a document inside another document. Or in other words, when a collection has a document, this document contains another document, another document contains another sub-document, and so on, then such types of documents are known as embedded/nested documents. Notes &amp;ndash; In MongoDB, you can only nest document up to 100 levels.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Query Embedded Documents Using Mongo Shell </title>
+      <link>/mongodb/mongodb--query-embedded-documents-using-mongo-shell-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--query-embedded-documents-using-mongo-shell-/</guid>
+      <description>MongoDB &amp;ndash; Query Embedded Documents Using Mongo Shell MongoDB provides you read operations to retrieve embedded/nested documents from the collection or query a collection for a embedded/nested document. You can perform read operations using the db.collection.find() method. This method selects or views embedded/nested documents of the collection and returns the cursor to the selected document.
+Syntax: db.collection.find(filter, projection) Parameters: filter: It is an optional parameter. It specifies the selection filter with the help of query operators.</description>
+    </item>
+    
+    <item>
+      <title>Aggregation in MongoDB </title>
+      <link>/mongodb/aggregation-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/aggregation-in-mongodb-/</guid>
+      <description>Aggregation in MongoDB In MongoDB, aggregation operations process the data records/documents and return computed results. It collects values from various documents and groups them together and then performs different types of operations on that grouped data like sum, average, minimum, maximum, etc to return a computed result. It is similar to the aggregate function of SQL.
+MongoDB provides three ways to perform aggregation
+Aggregation pipeline
+Map-reduce function
+Single-purpose aggregation
+Aggregation pipeline In MongoDB, the aggregation pipeline consists of stages and each stage transforms the document.</description>
+    </item>
+    
+    <item>
+      <title>How to Enable Authentication on MongoDB ? </title>
+      <link>/mongodb/how-to-enable-authentication-on-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/how-to-enable-authentication-on-mongodb-/</guid>
+      <description>How to Enable Authentication on MongoDB ? Authentication is enforced when access control is enabled on a MongoDB deployment, requiring users to identify themselves. Users can only conduct activities that are defined by their roles when visiting a MongoDB deployment with access control enabled.
+The following tutorial utilizes the default authentication approach to provide access control on a solo mongo instance. See Authentication Techniques for a list of all supported authentication mechanisms.</description>
+    </item>
+    
+    <item>
+      <title>Create user and add role in MongoDB </title>
+      <link>/mongodb/create-user-and-add-role-in-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/create-user-and-add-role-in-mongodb-/</guid>
+      <description>Create user and add role in MongoDB In MongoDB, we are allowed to create new users for the database. Every MongoDB user only accesses the data that is required for their role. A role in MongoDB grants privileges to perform some set of operations on a given resource. In MongoDB, users are created using createUser() method. This method creates a new user for the database, if the specified user is already present in the database then this method will return an error.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Replication and Sharding </title>
+      <link>/mongodb/mongodb--replication-and-sharding-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--replication-and-sharding-/</guid>
+      <description>MongoDB &amp;ndash; Replication and Sharding In context to the scaling of the MongoDB database, it has some features know as Replication and Sharding. Replication can be simply understood as the duplication of the data-set whereas sharding is partitioning the data-set into discrete parts. By sharding, you divided your collection into different parts. Replicating your database means you make imagers of your data-set. In terms of functionality delivered. Replication Replication is the method of duplication of data across multiple servers.</description>
+    </item>
+    
+    <item>
+      <title>MongoDB -- Backup and Restoration </title>
+      <link>/mongodb/mongodb--backup-and-restoration-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/mongodb--backup-and-restoration-/</guid>
+      <description>MongoDB &amp;ndash; Backup and Restoration Data backup is one of the most highly required processes for any database management system as data can be lost or get corrupted to overcome these drawbacks we need database backup. Database backup is a copy of a database that already exists. In MongoDB, mongodump tool is used to take the data backup. And mongorestore tool is used to restore the backup data. Data Backup In MongoDB, mongodump tool is used to take the data backup.</description>
+    </item>
+    
+    <item>
+      <title>Nodejs -- Connect MongoDB with Node app using MongooseJS </title>
+      <link>/mongodb/nodejs--connect-mongodb-with-node-app-using-mongoosejs-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/nodejs--connect-mongodb-with-node-app-using-mongoosejs-/</guid>
+      <description>Nodejs &amp;ndash; Connect MongoDB with Node app using MongooseJS Connect the MongoDB database using MongooseJS to our NodeJS application Before we dive into looking how the mongoDB connects with a nodejs app using mongooseJS, lets get a brief intro to these technologies which are ruling the web development domain of today. Node: Node.js (Node) is an open source development platform for executing JavaScript code server-side. Node is useful for developing applications that require a persistent connection from the browser to the server and is often used for real-time applications such as chat, news feeds and web push notifications.</description>
+    </item>
+    
+    <item>
+      <title>Signup Form Using Node.js and MongoDB </title>
+      <link>/mongodb/signup-form-using-node.js-and-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/signup-form-using-node.js-and-mongodb-/</guid>
+      <description>Signup Form Using Node.js and MongoDB InstallationsFirst, we need to include a few packages for our Nodejs application.
+npm install express --save Express allows us to set up middlewares to respond to HTTP Requests.
+npm install body-parser --save If you want to read HTTP POST data , you have to use the &amp;ldquo;body-parser&amp;rdquo; node module.
+npm install mongoose --save Mongoose is an object document modeling (ODM) layer which sits on the top of Node&amp;rsquo;s MongoDB driver.</description>
+    </item>
+    
+    <item>
+      <title>Login form using Node.js and MongoDB </title>
+      <link>/mongodb/login-form-using-node.js-and-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/login-form-using-node.js-and-mongodb-/</guid>
+      <description>Login form using Node.js and MongoDB Follow these simple steps to learn how to create a login form using Node.js and MongoDB. Login form allows users to login to the website after they have created their account using the signup form.
+We will be using the following technologies:
+Express is a small framework that sits on top of Node.js&amp;rsquo;s web server functionality to simplify its APIs and add helpful new features.</description>
+    </item>
+    
+    <item>
+      <title>Connect Django Project to MongoDB </title>
+      <link>/mongodb/connect-django-project-to-mongodb-/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/mongodb/connect-django-project-to-mongodb-/</guid>
+      <description>Connect Django Project to MongoDB Django is a SQL to mongodb query transpiler. Using django we can use MongoDB as a backend database for our Django project. We don&amp;rsquo;t even need to change the Django ORM. The best part is that we can setup Django with MongoDB by adding just one line of code. There is no need to change serializers, views, or any other modules.
+Official Docs &amp;ndash; https://pypi.org/project/djongo/ Working &amp;ndash; Django translates a SQL query string into a MongoDB query document.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

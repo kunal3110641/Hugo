@@ -1,0 +1,2568 @@
+
+
+
+
+
+
+
+  
+  
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SATHEE: Algorithms </title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+
+
+<link rel="stylesheet" href="/fontawesome/css/all.min.css"/>
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/sathee_huf263da6500256fbb8f194bc036f89f83_28154_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="Algorithms " />
+<meta property="og:description" content="Algorithms Learn more about Algorithms in DSA Self Paced CoursePractice Problems on all AlgorithmsRecent articles on AlgorithmsSome Quizzes on Algorithms
+What is an Algorithm? The word Algorithm means &quot; A set of rules to be followed in calculations or other problem-solving operations &quot; Or &quot; A procedure for solving a mathematical problem in a finite number of steps that frequently by recursive operations &ldquo;. Therefore Algorithm refers to a sequence of finite steps to solve a particular problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/data-structure/algorithms_/" /><meta property="article:section" content="data structure" />
+
+
+
+
+
+    
+    
+	<meta name="description" content="Algorithms " />
+    <link rel="stylesheet" href="/css/layouts/single.css"/>
+    <link rel="stylesheet" href="/css/navigators/sidebar.css">
+    
+    <link rel="stylesheet" href="/css/style.css"/>
+
+	<style>
+		.warning-card{font-size: 17px; margin-top: 5px; color: #202022; background-color: #ffeb3b; padding: 10px;}
+		.hero-area{height: 245px !important; width: 100%;}
+		.hero-area img{width: 100%; height: 100%; object-fit: cover; background-color: #000; filter: brightness(75%);}
+
+		iframe{background-color: #000;}
+		
+		@media screen and (max-width:1699px){
+			.child-vid-wrapper {max-height: 620px !important;}
+		}
+		@media screen and (max-width:1499px){
+			.child-vid-wrapper {max-height: 675px !important;}
+		}
+		@media screen and (max-width:1024px){
+			.child-vid-wrapper {max-height: 775px !important;}
+		}
+		@media screen and (max-width:991px){
+			.hero-area{height:200px !important; margin-top: 48px !important;}
+		}
+		@media screen and (max-width:767px){
+			.hero-area{height:135px !important;}
+			.child-vid-wrapper {max-height:none !important;}
+		}
+	</style>
+
+
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+</head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v15.0" nonce="TmlfCaFn"></script>
+    
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-dark top-navbar final-navbar shadow">
+	<div class="container">
+		<a class="navbar-brand" href="/">
+			
+				<img src="/images/sathe-moe-site-logo.png" id="logo" alt="Logo">
+			SATHEE</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navlinks-wrapper navbar-nav mr-auto scroll-beautify">
+				<li class="nav-item">
+					<a class="nav-link" href="/">Home</a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="/subjects">Start Learning</a>
+				</li>
+				
+			</ul>
+    
+			<ul class="navbar-nav ml-auto">
+
+				
+
+  
+
+
+<li class="nav-item dropdown visible-only-lg">
+    <a class="nav-link dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      English
+    </a>
+    <div class="dropdown-menu" aria-labelledby="languageSelector">
+      
+    </div>
+</li>
+
+				
+				
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+      
+      
+<section class="sidebar-section" id="sidebar-section">
+	<div class="sidebar-holder">
+		<div class="sidebar-back-btn-wrapper">
+			<a style="width:100%; text-align:center; border-radius:0px;" type="button" class="go-back-btn" href="/data-structure/">
+				<i class="fa fa-arrow-left" aria-hidden="true"></i> Go Back To Subjects
+			</a>
+		</div>
+
+		<div class="sidebar scroll-beautify" id="sidebar">
+		  <style>
+  .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+  background-color: #555;
+  }
+
+  .collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  }
+
+  .active:after {
+  content: "\2212";
+  }
+
+  .panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  }
+
+  .panel a{
+  display: block;
+  text-decoration:none;
+  }
+  .panel a:hover .panelist{color:#145b94}
+  #activetab{
+  background-color: #ffffff;
+  font-weight: 700;
+  color: #2196f3 !important;
+  }
+  .sidebar button.active{
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-bottom: 1px solid #fdfdfd;
+  }
+  .sidebar .panel{background-color: #fff !important; height: auto !important;}
+
+  .sidebar .panelist{
+    display: block;
+    border-bottom: 1px solid #efefef;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2a2929;
+  }
+  .sidebar button:focus{outline: none !important;}
+
+   
+  .sidebar .collapsible {
+    position: relative;
+    background-color: #343434;
+    color: #c4c4c4;
+    border-bottom: 1px solid #1a1a1a;
+    padding-right: 35px;
+    text-transform: capitalize;
+  }
+  .sidebar .collapsible:after {
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ededed;
+    border: 1px solid #121212;
+    background-color: #121212;
+    box-shadow: 3px 3px 12px -5px #dfdfdf;
+  }
+  .sidebar .collapsible.active:after{
+    color: #2e2e2e;
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+  }
+  .panel a:last-child div.panelist{border-bottom: none !important;}
+
+  .sidebar .panel{
+    overflow-y: auto;
+    -ms-overflow-style: none;   
+    scrollbar-width: none;   
+  }
+  .sidebar .panel::-webkit-scrollbar { 
+    display: none;   
+  }
+ 
+
+</style>
+
+
+
+
+
+
+  
+  
+    
+        
+        
+        
+    
+
+  
+  
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+            
+                <button class="collapsible" id="activebut">Python</button>
+            
+            <div class="panel">
+        
+              
+              <a href="/data-structure/a-time-complexity-question_/"><div class="panelist" >A Time Complexity Question </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/advanced-data-structures_/"><div class="panelist" >Advanced Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/algorithms_/"><div class="panelist" id="activetab">Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/array-data-structure_/"><div class="panelist" >Array Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/asymptotic-notation-and-analysis-based-on-input-size-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Asymptotic Notation and Analysis (Based on input size) in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/automata-tutorial_/"><div class="panelist" >Automata Tutorial </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/backtracking-algorithms_/"><div class="panelist" >Backtracking Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-search-tree_/"><div class="panelist" >Binary Search Tree </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/binary-tree-data-structure_/"><div class="panelist" >Binary Tree Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/bitwise-algorithms_/"><div class="panelist" >Bitwise Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/branch-and-bound-algorithm_/"><div class="panelist" >Branch and Bound Algorithm </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/calculus_/"><div class="panelist" >Calculus </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/data-structures_/"><div class="panelist" >Data Structures </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/design-and-analysis-of-algorithms_/"><div class="panelist" >Design and Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/geometric-algorithms_/"><div class="panelist" >Geometric Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/greedy-algorithms_/"><div class="panelist" >Greedy Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/how-to-analyse-loops-for-complexity-analysis-of-algorithms_/"><div class="panelist" >How to Analyse Loops for Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/linked-list-data-structure_/"><div class="panelist" >Linked List Data Structure </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/mathematical-algorithms_/"><div class="panelist" >Mathematical Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/pseudo-polynomial-algorithms_/"><div class="panelist" >Pseudo-polynomial Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/randomized-algorithms_/"><div class="panelist" >Randomized Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/searching-algorithms_/"><div class="panelist" >Searching Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/sorting-algorithms_/"><div class="panelist" >Sorting Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/types-of-asymptotic-notations-in-complexity-analysis-of-algorithms_/"><div class="panelist" >Types of Asymptotic Notations in Complexity Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+        
+        
+        
+    
+        
+        
+        
+        
+              
+              <a href="/data-structure/worst-average-and-best-case-analysis-of-algorithms_/"><div class="panelist" >Worst, Average and Best Case Analysis of Algorithms </div></a>
+              
+            
+            
+            
+    
+        
+        
+        
+    
+
+
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+		coll[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var content = this.nextElementSibling;
+			if (content.style.maxHeight){
+				content.style.maxHeight = null;
+			} else {
+				content.style.maxHeight = content.scrollHeight + "px";
+			} 
+		});
+	}
+	var element = document.getElementById("activebut");
+	element.classList.toggle("active");
+	var content = element.nextElementSibling;
+	if (content.style.maxHeight){
+		content.style.maxHeight = null;
+	} else {
+		content.style.maxHeight = content.scrollHeight + "px";
+	}
+</script>
+		</div>
+	</div>
+</section>
+
+
+      
+      
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="content-section" id="content-section">
+	<div class="read-area" style="padding-top: 28px;">
+		
+		
+		
+		
+		
+			
+		
+
+		<div class="hero-area col-sm-12" id="hero-area">
+			<img src="/images/hero.jpg" />
+		</div>
+
+		
+
+		<div class="page-content">
+			<div class="author-profile ml-auto align-self-lg-center">
+				<div class="satheeicon ml-auto mr-auto">
+					<img class="rounded-circle" src='/images/default-avatar_hu08086a3dd3726315dda1901e712711ce_284516_120x120_fit_box_3.png' alt="Author Image">
+					<span class="authorlang">en</span>
+				</div>
+				<h5 class="author-name">SATHEE</h5>
+				<p style="display:none;">Monday, January 1, 1</p>
+			</div>
+		</div>
+		
+
+		
+		<div class="container-fluid page-title-wrapper">
+			<div class="row mt-2">
+				<div class="col-lg-12">
+					<h1 id="title" class="title-main title-main-dark title-main-left "></h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		<div class="post-content" id="post-content">
+			
+			<h1 id="algorithms">Algorithms</h1>
+<p>Learn more about Algorithms in DSA Self Paced CoursePractice Problems on
+all AlgorithmsRecent articles on AlgorithmsSome Quizzes on Algorithms</p>
+<h2 id="what-is-an-algorithm">What is an Algorithm?</h2>
+<p>The word Algorithm means &quot; A  set of rules to be followed in
+calculations or other problem-solving operations &quot; Or &quot; A procedure for
+solving a mathematical problem in a finite number of steps that
+frequently by recursive operations &ldquo;. </p>
+<p>Therefore Algorithm refers to a sequence of finite steps to solve a
+particular problem.</p>
+<p>Algorithms can be simple and complex depending on what you want to
+achieve.</p>
+<p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191016135223/What-is-Algorithm_-1024x631.jpg" alt="What isAlgorithm?"></p>
+<h2 id="types-of-algorithms">Types of Algorithms:</h2>
+<p>There are several types of algorithms available. Some important
+algorithms are:</p>
+<p>1. Brute Force Algorithm: It is the simplest approach for a problem. A
+brute force algorithm is the first approach that comes to finding when
+we see a problem.</p>
+<p>2. Recursive Algorithm: A recursive algorithm is based on recursion. In
+this case, a problem is broken into several sub-parts and called the
+same function again and again.</p>
+<p>3. Backtracking Algorithm: The backtracking algorithm basically builds
+the solution by searching among all possible solutions. Using this
+algorithm, we keep on building the solution following criteria. Whenever
+a solution fails we trace back to the failure point and build on the
+next solution and continue this process till we find the solution or all
+possible solutions are looked after.</p>
+<p>4. Searching Algorithm: Searching algorithms are the ones that are used
+for searching elements or groups of elements from a particular data
+structure. They can be of different types based on their approach or the
+data structure in which the element should be found.</p>
+<p>5. Sorting Algorithm: Sorting is arranging a group of data in a
+particular manner according to the requirement. The algorithms which
+help in performing this function are called sorting algorithms.
+Generally sorting algorithms are used to sort groups of data in an
+increasing or decreasing manner.</p>
+<p>6. Hashing Algorithm: Hashing algorithms work similarly to the
+searching algorithm. But they contain an index with a key ID. In
+hashing, a key is assigned to specific data.</p>
+<p>7. Divide and Conquer Algorithm: This algorithm breaks a problem into
+sub-problems, solves a single sub-problem and merges the solutions
+together to get the final solution. It consists of the following three
+steps:</p>
+<p>Divide</p>
+<p>Solve</p>
+<p>Combine</p>
+<p>8. Greedy Algorithm: In this type of algorithm the solution is built
+part by part. The solution of the next part is built based on the
+immediate benefit of the next part. The one solution giving the most
+benefit will be chosen as the solution for the next part.</p>
+<p>9. Dynamic Programming Algorithm: This algorithm uses the concept of
+using the already found solution to avoid repetitive calculation of the
+same part of the problem. It divides the problem into smaller
+overlapping subproblems and solves them.</p>
+<p>10. Randomized Algorithm: In the randomized algorithm we use a random
+number so it gives immediate benefit. The random number helps in
+deciding the expected outcome.</p>
+<h2 id="topics">Topics:</h2>
+<p>Analysis of Algorithms</p>
+<p>Searching and Sorting</p>
+<p>Greedy Algorithms</p>
+<p>Dynamic Programming</p>
+<p>Pattern Searching</p>
+<p>Backtracking</p>
+<p>Divide and Conquer</p>
+<p>Geometric Algorithms</p>
+<p>Mathematical Algorithms</p>
+<p>Bit Algorithms</p>
+<p>Graph Algorithms</p>
+<p>Randomized Algorithms</p>
+<p>Branch and Bound</p>
+<p>Quizzes</p>
+<p>Analysis of Algorithms:</p>
+<p>Asymptotic Analysis</p>
+<p>Worst, Average and Best Cases</p>
+<p>Asymptotic Notations</p>
+<p>Lower and Upper Bound Theory</p>
+<p>Introduction to Amortized Analysis</p>
+<p>What does &lsquo;Space Complexity&rsquo; mean?</p>
+<p>Polynomial Time Approximation Scheme</p>
+<p>Accounting Method | Amortized Analysis</p>
+<p>Potential Method in Amortized Analysis</p>
+<p>Searching and Sorting:</p>
+<p>Introduction to Searching Algorithms</p>
+<p>Introduction to Sorting Algorithm</p>
+<p>Stable and Unstable Sorting Algorithms</p>
+<p>Lower bound for comparison based sorting algorithms</p>
+<p>Can Run Time Complexity of a comparison-based sorting algorithm be less
+than N logN?</p>
+<p>Which sorting algorithm makes minimum number of memory writes?</p>
+<p>Greedy Algorithms:</p>
+<p>Introduction to Greedy Algorithms</p>
+<p>Activity Selection Problem</p>
+<p>Huffman Coding</p>
+<p>Job Sequencing Problem</p>
+<p>Quiz on Greedy Algorithms</p>
+<p>Minimum Number of Platforms Required for a Railway/Bus Station</p>
+<p>Dynamic Programming:</p>
+<p>Introduction to Dynamic Programming</p>
+<p>Overlapping Subproblems Property</p>
+<p>Optimal Substructure Property</p>
+<p>Longest Increasing Subsequence</p>
+<p>Longest Common Subsequence</p>
+<p>Min Cost Path</p>
+<p>Coin Change</p>
+<p>Matrix Chain Multiplication</p>
+<p>0-1 Knapsack Problem</p>
+<p>Longest Palindromic Subsequence</p>
+<p>Palindrome Partitioning</p>
+<p>Pattern Searching:</p>
+<p>Introduction to Pattern Searching</p>
+<p>Naive Pattern Searching</p>
+<p>KMP Algorithm</p>
+<p>Rabin-Karp Algorithm</p>
+<p>Pattern Searching using a Trie of all Suffixes</p>
+<p>Aho-Corasick Algorithm for Pattern Searching</p>
+<p>Z algorithm (Linear time pattern searching Algorithm)</p>
+<p>Backtracking:</p>
+<p>Introduction to Backtracking</p>
+<p>Print all permutations of a given string</p>
+<p>The Knight&rsquo;s tour problem</p>
+<p>Rat in a Maze</p>
+<p>N Queen Problem</p>
+<p>Subset Sum</p>
+<p>m Coloring Problem</p>
+<p>Hamiltonian Cycle</p>
+<p>Sudoku</p>
+<p>Divide and Conquer:</p>
+<p>Introduction to Divide and Conquer</p>
+<p>Merge Sort</p>
+<p>Write your own pow(x, n) to calculate x*n</p>
+<p>Count Inversions</p>
+<p>Closest Pair of Points</p>
+<p>Strassen&rsquo;s Matrix Multiplication</p>
+<p>Geometric Algorithm:</p>
+<p>Introduction to Geometric Algorithms</p>
+<p>Closest Pair of Points | O(nlogn) Implementation</p>
+<p>How to check if a given point lies inside or outside a polygon?</p>
+<p>How to check if two given line segments intersect?</p>
+<p>Given n line segments, find if any two segments intersect</p>
+<p>How to check if given four points form a square</p>
+<p>Convex Hull using Jarvis&rsquo; Algorithm or Wrapping</p>
+<p>Mathematical Algorithms:</p>
+<p>Introduction to Mathematical Algorithms</p>
+<p>Write an Efficient Method to Check if a Number is Multiple of 3</p>
+<p>Write a program to add two numbers in base 14</p>
+<p>Program for Fibonacci numbers</p>
+<p>Average of a stream of numbers</p>
+<p>Multiply two integers without using multiplication, division and bitwise
+operators, and no loops</p>
+<p>Babylonian method for square root</p>
+<p>Sieve of Eratosthenes</p>
+<p>Pascal&rsquo;s Triangle</p>
+<p>Given a number, find the next smallest palindrome</p>
+<p>Program to add two polynomials</p>
+<p>Multiply two polynomials</p>
+<p>Count trailing zeroes in factorial of a number</p>
+<p>Bitwise Algorithms:</p>
+<p>Introduction to Bitwise Algorithms</p>
+<p>Little and Big Endian</p>
+<p>Detect opposite signs</p>
+<p>Swap bits</p>
+<p>Turn off the rightmost set bit</p>
+<p>Rotate bits</p>
+<p>Next higher number with same number of set bits</p>
+<p>Swap two nibbles in a byte</p>
+<p>Graph Algorithms:</p>
+<p>Introduction to Graph Algorithms</p>
+<p>BFS, DFS</p>
+<p>Cycles in Graph</p>
+<p>Shortest paths</p>
+<p>MST</p>
+<p>Topological Sorting</p>
+<p>Connectivity</p>
+<p>Max Flow</p>
+<p>Randomized Algorithms:</p>
+<p>Introduction to Randomized Algorithms</p>
+<p>Linearity of Expectation</p>
+<p>Expected Number of Trials until Success</p>
+<p>Randomized Algorithms | Set 0 (Mathematical Background)</p>
+<p>Randomized Algorithms | Set 1 (Introduction and Analysis)</p>
+<p>Randomized Algorithms | Set 2 (Classification and Applications)</p>
+<p>Randomized Algorithms | Set 3 (1/2 Approximate Median)</p>
+<p>Reservoir Sampling</p>
+<p>Branch and Bound:</p>
+<p>Branch and Bound | Set 1 (Introduction with 0/1 Knapsack)</p>
+<p>Branch and Bound | Set 2 (Implementation of 0/1 Knapsack)</p>
+<p>Branch and Bound | Set 3 (8 puzzle Problem)</p>
+<p>Branch And Bound | Set 4 (Job Assignment Problem)</p>
+<p>Branch and Bound | Set 5 (N Queen Problem)</p>
+<p>Branch And Bound | Set 6 (Traveling Salesman Problem)</p>
+<p>Quizzes:</p>
+<p>Analysis of Algorithms</p>
+<p>Sorting</p>
+<p>Divide and Conquer</p>
+<p>Greedy Algorithms</p>
+<p>Dynamic Programming</p>
+<p>Backtracking</p>
+<p>NP Complete</p>
+<p>Searching</p>
+<p>Recursion</p>
+<p>Bit Algorithms</p>
+<p>Please see Data Structures and Advanced Data Structures for Graph,
+Binary Tree, BST and Linked List based algorithms.</p>
+
+			
+			
+
+			
+			<div class="row vid-card-wrapper">
+					
+				
+				<div class="col-xl-6">
+					<div class="card vid-card main-video-card">
+						 
+						
+						
+						
+					</div>
+				</div>
+				
+				
+				
+				<div class="col-xl-6">
+					<div class="card vid-card child-vid-wrapper scroll-beautify">
+						<p class="vid-title">Conceptwise Videos</p>
+						
+						<div class="row" id="child-videos">
+						 
+						
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			
+
+			
+			<hr />
+			
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+
+
+
+
+
+
+
+    
+    
+
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+        
+            
+            
+        
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+    
+      
+      
+    
+
+  
+  
+
+
+
+  
+  
+
+
+
+  
+  
+
+
+
+<div class="row next-prev-navigator">
+	
+    <div class="col-lg-6 previous-article">
+      <a href="/data-structure/array-data-structure_/" title="Array Data Structure " class="btn btn-outline-secondary">
+        <div><i class="fa fa-chevron-left"></i> Prev</div>
+        <div class="next-prev-text"></div>
+      </a>
+    </div>
+	
+	
+      
+      
+        
+      
+      <div class="col-lg-6 next-article">
+        <a href="/data-structure/advanced-data-structures_/" title="Advanced Data Structures " class="btn btn-outline-secondary">
+          <div>Next <i class="fa fa-chevron-right"></i></div>
+          <div class="next-prev-text"></div>
+        </a>
+      </div>
+  
+</div>
+			<hr />
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+				
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+		
+			</div>
+			
+
+			
+			<div class="row mt-3 vid-card-wrapper">
+			  
+				
+				
+				
+				
+				
+			  
+				
+				
+				
+				
+				
+				
+			</div>
+			
+
+			
+			<div class="row mt-3">
+			  
+				
+
+				
+
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Content Contributed By</strong></p>
+				</div>
+
+				
+				
+				
+			
+			</div>
+			
+
+			
+			<div class="row mt-3 contributer-wrapper">
+				<div class="col-lg-12">
+					<p class="title-main title-main-dark title-main-left"> <strong>Feedback Form</strong></p>
+
+					<div id="response-msg" style="font-size: 17px; margin: 10px 0px;"></div>
+
+					<form name="feedbackform" id="feedbackform" method="post" enctype="multipart/form-data">
+						<div class="row">
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="name">Name*</label>
+							  <input type="text" class="form-control" id="name" name="name" placeholder="Your name here (*required)" required>
+							</div>
+							<div class="form-group">
+							  <label for="email">Email*</label>
+							  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com (*required)" required>
+							</div>
+						  </div>
+						  <div class="col-lg-6">
+							<div class="form-group">
+							  <label for="message">Message*</label>
+							  <textarea style="min-height: 124px;" class="form-control" id="message" name="message" rows="4" placeholder="Your message here... (*required)" required></textarea>
+							</div>
+						  </div>
+						</div>
+						<div class="row">
+						  <div class="col-lg-12">
+							<div class="d-flex justify-content-center">
+							  <button id="feebackSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitFeedback(); return false;">Submit</button>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+			
+
+		</div>
+		
+
+	</div>
+	
+</section>
+
+
+
+      
+       
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+	<style type="text/css">
+		.footer-bottom-wrapper{background-color: #f9fafc; padding: 10px 0px; margin-left: -15px; margin-right: -15px; width: calc(100% + 30px);}
+    #contactus input, #contactus textarea{background-color: #C0CCDA; color: #000;}
+    #contactus input:focus, #contactus textarea:focus{background-color: #fff !important;}
+
+    .floatingChatBtn{position: fixed; bottom: 175px; right: 10px; background-color: #fff; z-index: 999999999; width: 54px; height: 54px; display: flex; justify-content: center; align-items: center; border-radius: 50%; box-shadow: 0px 2px 6px -1px #ddd;}
+    .floatingChatBtn a{font-size: 36px; padding: 5px;}
+
+    #res-msg span, #response-msg span{display: block;}
+	</style>
+	
+  
+  <div class="floatingChatBtn">
+    <a target="_blank" aria-label="Chat on WhatsApp" href="https://wa.me/918953463074"><i class="fa-brands fa-whatsapp"></i></a>
+  </div>
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer">
+    <div class="container pt-5 mb-3">
+      <div class="row text-left">
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>Contact Me</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:RB2 target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>RB2</span>
+                </a></li>
+              
+            
+              
+                
+              
+            
+          </ul>
+          
+        </div>
+        
+
+        
+        <div class="col-md-8 col-sm-12">
+          <h5>Get in Touch</h5>
+          <form name="contactus" id="contactus" method="post" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="name">Name*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your name here (*required)">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com (*required)">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <label for="contactMessage">Message*</label>
+                  <textarea style="min-height: 124px;" class="form-control" id="contactMessage" rows="4" placeholder="Your message here... (*required)"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="d-flex justify-content-between">
+                  <p id="res-msg"></p>
+                  <button id="contactSubmitBtn" type="submit" class="btn btn-primary" value="submit_now" onclick="submitContact(); return false;">Submit</button>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        
+
+      </div>
+    </div>
+
+    
+
+    
+    
+    <div class="container-fluid footer-bottom-wrapper">
+      <div class="container">
+        <div class="row text-left align-items-center">
+        
+          <div class="col-md-4 text-center-m mt-2 mb-2">
+            <a href="/https:/www.education.gov.in/en" target="_blank" rel="noopener">
+            <img style="width:auto; height:40px" class="mr-3" src="/images/moe-goi-logo.png" alt="Ministry of Education Government of India">
+            </a>
+            <a href="/https:/satheejee.prutor.ai/" target="_self" rel="noopener">
+            <img style="width:auto; height:40px" src="/images/sathee.png" alt="SATHEE JEE">
+            </a>
+          </div>
+          <div class="col-md-3 text-center mt-2 mb-2" style="color: #000;">© 2023 Copyright SATHEE</div>
+        
+          <div class="col-md-2 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            <a style="color: #000; text-decoration:underline" href="/privacy-policy" target="_self" rel="noopener">Privacy Policy</a>
+          </div>
+          
+          <div class="col-md-3 text-right text-center-m mt-2 mb-2" style="color: #000;">
+            RB1 
+          </div>
+        </div>
+      </div>
+	  </div>
+
+    
+  </footer>
+
+  
+  <script type="text/javascript">
+    let resMsg = document.getElementById("res-msg");
+    function submitContact(){
+      disableBtn("contactSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email =document.getElementById('email').value|| '';
+      let message =document.getElementById('contactMessage').value|| '';
+     
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("contactSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+        
+          console.log("Response: "+res._id);
+
+          if(res._id && res._id != null && res._id != undefined && res._id != 0){
+            resMsg.innerHTML = "<span class='text-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("contactus").reset();
+          }
+          else{
+            resMsg.innerHTML = "<span class='text-warning'>Kindly fill all the required fields.</span>";
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/savecontactus"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ name, email,message }));
+    }
+  </script>
+  
+
+  <script type="text/javascript">
+    function disableBtn(id){
+      document.getElementById(id).disabled = true;
+    }
+    function enableBtn(id){
+      document.getElementById(id).disabled = false;
+    }
+  </script>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> 
+<script>
+	
+	
+	
+</script>
+
+    
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+    let responseMsg = document.getElementById("response-msg");
+    function submitFeedback(){
+      disableBtn("feebackSubmitBtn");
+      var elements = document.getElementsByClassName("form-control");
+    
+      let name = document.getElementById('name').value || '';
+      let email = document.getElementById('email').value|| '';
+      let message = document.getElementById('message').value|| '';
+	  let subject = document.getElementById('title').innerHTML|| '';
+
+	  
+
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function(){
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200){
+          enableBtn("feebackSubmitBtn");
+          let res = JSON.parse(xmlHttp.responseText);
+          console.log(res._id);
+          if(res._id){
+            responseMsg.innerHTML = "<span class='text-success alert alert-success'>Thanks, we will get back to you very soon.</span>";
+            document.getElementById("feedbackform").reset();
+          }
+          else{
+            responseMsg.innerHTML = "<span class='text-danger alert alert-danger'>Unexpected error occur. Please try after some time.</span>"
+          }
+        }
+      }
+      xmlHttp.open("post", "https://jeetest.prutor.ai/userfeedback"); 
+      xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlHttp.send(JSON.stringify({ subject, name, email, message }));
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+<a onclick="topFunction()" id="st-button" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+
+
+<script>
+$(document).ready(function(){
+    window.onscroll = function () { scrollFunction() };
+    console.log("jQuery working...");
+});
+
+ 
+function scrollFunction() {
+    var stButton = document.getElementById("st-button");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        stButton.style.display = "block";
+    } else {
+        stButton.style.display = "none";
+    }
+}
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+ 
+</script>
+    
+    
+    
+    
+    
+    
+
+    
+        
+        
+            
+            
+            
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-82HQPBL57B"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-82HQPBL57B', { 'anonymize_ip': false });
+}
+</script>
+
+        
+    
+
+
+
+
+
+    
+
+  </body>
+</html>
